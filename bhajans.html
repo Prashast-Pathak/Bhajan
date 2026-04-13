@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="सभी भजनों की सूची — देवता, अवसर, भाषा के अनुसार खोजें। Browse all bhajans by deity, occasion, language with Hindi meaning and English translation.">
+  <meta name="keywords" content="all bhajans list, भजन सूची, hanuman chalisa, ganesh bhajan, vishnu aarti, bhajan hindi english">
+  <meta name="robots" content="index, follow">
+  <title>सभी भजन — All Bhajans | सनातन ज्ञान सागर</title>
+  <link rel="canonical" href="https://sanatan-gyan-sagar.pages.dev/bhajans.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "सभी भजन — All Bhajans",
+    "url": "https://sanatan-gyan-sagar.pages.dev/bhajans.html",
+    "description": "Complete collection of Hindu devotional songs with Hindi meaning and English translation",
+    "isPartOf": { "@type": "WebSite", "url": "https://sanatan-gyan-sagar.pages.dev/" }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F5F0E8; --surface: #EDE6D8; --surface2: #E6DDD0;
+      --saffron: #C96A1F; --maroon: #6E1515; --gold: #A8832A;
+      --text: #2A1A08; --text-sec: #5C3D20; --text-muted: #8C6A45;
+      --border: #D9CDBA; --radius: 12px;
+      --shadow: 0 2px 12px rgba(42,26,8,0.08);
+      --shadow-hover: 0 8px 24px rgba(42,26,8,0.15);
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-ui); font-size: 16px; line-height: 1.6; min-height: 100vh; }
+    /* HEADER */
+    header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 16px; }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-om { width: 40px; height: 40px; background: linear-gradient(135deg, var(--saffron), var(--maroon)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-family: var(--font-hindi); }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; color: var(--maroon); font-weight: 600; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); display: none; }
+    @media(min-width:480px){ .logo-sub { display: block; } }
+    nav { display: flex; gap: 4px; align-items: center; }
+    nav a { text-decoration: none; color: var(--text-sec); font-size: 13px; padding: 6px 10px; border-radius: 8px; min-height: 44px; display: flex; align-items: center; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    nav a:hover { background: var(--surface); color: var(--saffron); }
+    nav a.active { color: var(--saffron); font-weight: 700; }
+    .header-fav { background: none; border: none; cursor: pointer; font-size: 20px; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 8px; transition: background 0.2s; color: var(--maroon); }
+    .header-fav:hover { background: var(--surface); }
+    /* BREADCRUMB */
+    .breadcrumb { max-width: 1100px; margin: 0 auto; padding: 12px 16px 0; font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; } .breadcrumb a:hover { color: var(--saffron); }
+    /* PAGE HEADER */
+    .page-header { max-width: 1100px; margin: 0 auto; padding: 16px 16px 0; }
+    .page-title { font-family: var(--font-hindi); font-size: 28px; color: var(--maroon); margin-bottom: 4px; }
+    .page-subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+    /* FILTER BAR */
+    .filter-bar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; }
+    .filter-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 10px; }
+    .filter-row:last-child { margin-bottom: 0; }
+    .filter-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 140px; }
+    .filter-label { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .filter-select, .filter-input { padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); font-size: 14px; font-family: var(--font-ui); color: var(--text); outline: none; min-height: 44px; transition: border-color 0.2s; }
+    .filter-select:focus, .filter-input:focus { border-color: var(--saffron); }
+    .filter-search { flex: 2; min-width: 200px; }
+    .filter-clear { padding: 9px 16px; border: 1px solid var(--border); border-radius: 8px; background: none; color: var(--text-muted); font-size: 13px; cursor: pointer; min-height: 44px; transition: all 0.2s; white-space: nowrap; }
+    .filter-clear:hover { border-color: var(--saffron); color: var(--saffron); }
+    .results-count { font-size: 13px; color: var(--text-muted); }
+    /* SORT PILLS */
+    .sort-pills { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .sort-label { font-size: 12px; color: var(--text-muted); font-weight: 700; white-space: nowrap; }
+    .sort-pill { padding: 5px 12px; border: 1px solid var(--border); border-radius: 50px; background: none; font-size: 12px; cursor: pointer; color: var(--text-sec); min-height: 36px; transition: all 0.2s; }
+    .sort-pill.active, .sort-pill:hover { background: var(--saffron); border-color: var(--saffron); color: #fff; }
+    /* MAIN */
+    main { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; }
+    /* CARDS */
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; text-decoration: none; color: var(--text); transition: all 0.25s ease; display: block; position: relative; overflow: hidden; }
+    .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--deity-color, var(--saffron)); opacity: 0; transition: opacity 0.25s; }
+    .card:hover { box-shadow: var(--shadow-hover); border-color: var(--deity-color, var(--saffron)); transform: translateY(-2px); }
+    .card:hover::before { opacity: 1; }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .card-badge { display: inline-block; padding: 3px 10px; border-radius: 50px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; background: var(--deity-color, var(--saffron)); }
+    .card-fav { background: none; border: none; cursor: pointer; font-size: 18px; min-width: 36px; min-height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background 0.2s; }
+    .card-fav:hover { background: var(--surface2); }
+    .card-title-hindi { font-family: var(--font-hindi); font-size: 22px; color: var(--maroon); line-height: 1.3; margin-bottom: 4px; }
+    .card-title-roman { font-size: 13px; color: var(--text-muted); font-style: italic; margin-bottom: 8px; }
+    .card-excerpt { font-family: var(--font-hindi); font-size: 15px; color: var(--text-sec); line-height: 1.5; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; }
+    .tag { padding: 2px 8px; border-radius: 50px; background: var(--surface2); border: 1px solid var(--border); font-size: 11px; color: var(--text-muted); }
+    .card-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 11px; color: var(--text-muted); }
+    /* LOADING / ERROR */
+    .loading { text-align: center; padding: 48px 16px; color: var(--text-muted); font-family: var(--font-hindi); font-size: 18px; }
+    .no-results { text-align: center; padding: 48px 16px; }
+    .no-results p { font-family: var(--font-hindi); font-size: 20px; color: var(--maroon); margin-bottom: 8px; }
+    .no-results small { color: var(--text-muted); }
+    .error-msg { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; max-width: 500px; margin: 24px auto; }
+    /* FOOTER */
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 32px 16px; text-align: center; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-om { font-family: var(--font-hindi); font-size: 32px; color: var(--saffron); margin-bottom: 8px; }
+    .footer-tagline { font-family: var(--font-hindi); font-size: 15px; color: var(--text-sec); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+    .footer-links a { color: var(--text-muted); font-size: 13px; text-decoration: none; } .footer-links a:hover { color: var(--saffron); }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+    /* BOTTOM NAV */
+    .bottom-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 99; padding: 4px 0 env(safe-area-inset-bottom); }
+    .bottom-nav-inner { display: flex; justify-content: space-around; }
+    .bnav-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--text-muted); padding: 8px 12px; min-width: 60px; min-height: 52px; justify-content: center; gap: 2px; border-radius: 8px; font-size: 10px; transition: color 0.2s; }
+    .bnav-item.active, .bnav-item:hover { color: var(--saffron); }
+    .bnav-item span:first-child { font-size: 20px; }
+    @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } .page-title { font-size: 22px; } }
+    @media(min-width:601px) { nav { display: flex; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo-om">ॐ</div>
+      <div class="logo-text">
+        <span class="logo-title">सनातन ज्ञान सागर</span>
+        <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="bhajans.html" class="active">🪔 Bhajans</a>
+      <a href="bhagavad-gita.html">📖 Gita</a>
+      <a href="wisdom.html">💬 Wisdom</a>
+    </nav>
+    <button class="header-fav" onclick="window.location.href='favorites.html'" aria-label="Saved">❤️</button>
+  </div>
+</header>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html">🏠 Home</a>
+  <span>›</span>
+  <span>🪔 Bhajans</span>
+</div>
+
+<div class="page-header">
+  <h1 class="page-title">🪔 सभी भजन</h1>
+  <p class="page-subtitle">All Bhajans — with Hindi meaning, English translation &amp; Roman transliteration</p>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-row">
+      <div class="filter-group filter-search">
+        <label class="filter-label" for="searchInput">खोजें / Search</label>
+        <input type="search" class="filter-input" id="searchInput" placeholder="Hanuman, protection, Tuesday..." aria-label="Search bhajans">
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="deityFilter">देवता / Deity</label>
+        <select class="filter-select" id="deityFilter" aria-label="Filter by deity">
+          <option value="">All Deities</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="timingFilter">समय / Timing</label>
+        <select class="filter-select" id="timingFilter" aria-label="Filter by timing">
+          <option value="">Any Time</option>
+          <option value="morning">🌅 Morning</option>
+          <option value="evening">🌆 Evening</option>
+        </select>
+      </div>
+      <button class="filter-clear" id="clearFilters">✕ Clear Filters</button>
+    </div>
+    <div class="filter-row" style="justify-content:space-between;align-items:center;">
+      <div class="sort-pills">
+        <span class="sort-label">Sort:</span>
+        <button class="sort-pill active" data-sort="priority">Featured</button>
+        <button class="sort-pill" data-sort="title">A→Z</button>
+        <button class="sort-pill" data-sort="duration">Duration</button>
+      </div>
+      <span class="results-count" id="resultsCount">Loading...</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div id="bhajans-grid" class="cards-grid">
+    <div class="loading" style="grid-column:1/-1">
+      <div>🪔</div>
+      <p>Loading bhajans...</p>
+      <p style="font-size:14px;font-family:var(--font-ui);color:var(--text-muted)">भजन लोड हो रहे हैं...</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-om">ॐ</div>
+    <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing.</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bnav-item"><span>🏠</span><span>Home</span></a>
+    <a href="bhajans.html" class="bnav-item active"><span>🪔</span><span>Bhajans</span></a>
+    <a href="bhagavad-gita.html" class="bnav-item"><span>📖</span><span>Gita</span></a>
+    <a href="wisdom.html" class="bnav-item"><span>💬</span><span>Wisdom</span></a>
+    <a href="favorites.html" class="bnav-item"><span>❤️</span><span>Saved</span></a>
+  </div>
+</nav>
+
+<script>
+  const DEITY_COLORS = {
+    Hanuman:'#EA580C', Shiva:'#1E40AF', Krishna:'#7C3AED',
+    Durga:'#DC2626', Ganesha:'#D97706', Ram:'#15803D',
+    Vishnu:'#15803D', Saraswati:'#7C3AED', Lakshmi:'#D97706'
+  };
+  const DEITY_EMOJI = { Hanuman:'🚩', Ganesha:'🐘', Vishnu:'🪷', Shiva:'🔱', Krishna:'🦚', Durga:'🌺', Ram:'🏹' };
+
+  let allBhajans = [];
+  let currentSort = 'priority';
+  let favs = JSON.parse(localStorage.getItem('sgs_favorites') || '[]');
+
+  // Read URL params for pre-filtering
+  const urlParams = new URLSearchParams(window.location.search);
+  const initSearch = urlParams.get('search') || '';
+  const initDeity = urlParams.get('deity') || '';
+
+  fetch('/data/bhajans.json')
+    .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
+    .then(data => {
+      allBhajans = data;
+      populateFilters(data);
+      if (initSearch) document.getElementById('searchInput').value = initSearch;
+      if (initDeity) document.getElementById('deityFilter').value = initDeity;
+      applyFilters();
+    })
+    .catch(err => {
+      document.getElementById('bhajans-grid').innerHTML = `
+        <div class="error-msg" style="grid-column:1/-1">
+          <p style="font-family:var(--font-hindi);font-size:18px;color:var(--maroon);margin-bottom:8px">सामग्री लोड करने में समस्या हुई।</p>
+          <p style="color:var(--text-sec)">Unable to load bhajans. Please try again.</p>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:8px">${err.message}</p>
+        </div>`;
+    });
+
+  function populateFilters(data) {
+    const deities = [...new Set(data.map(b => b.deity))].sort();
+    const sel = document.getElementById('deityFilter');
+    deities.forEach(d => {
+      const opt = document.createElement('option');
+      opt.value = d; opt.textContent = `${DEITY_EMOJI[d] || '🙏'} ${d}`;
+      sel.appendChild(opt);
+    });
+  }
+
+  function applyFilters() {
+    const search = document.getElementById('searchInput').value.toLowerCase().trim();
+    const deity = document.getElementById('deityFilter').value;
+    const timing = document.getElementById('timingFilter').value;
+
+    let results = allBhajans.filter(b => {
+      if (deity && b.deity !== deity) return false;
+      if (timing && !b.timing.toLowerCase().includes(timing)) return false;
+      if (search) {
+        const haystack = [b.title_hindi, b.title_roman, b.title_english, b.deity,
+          ...(b.tags || []), ...(b.topics || [])].join(' ').toLowerCase();
+        if (!haystack.includes(search)) return false;
+      }
+      return true;
+    });
+
+    // Sort
+    if (currentSort === 'priority') results.sort((a,b) => a.priority - b.priority);
+    else if (currentSort === 'title') results.sort((a,b) => a.title_roman.localeCompare(b.title_roman));
+    else if (currentSort === 'duration') results.sort((a,b) => a.duration_minutes - b.duration_minutes);
+
+    document.getElementById('resultsCount').textContent = `${results.length} bhajan${results.length !== 1 ? 's' : ''} found`;
+    renderGrid(results);
+  }
+
+  function renderGrid(bhajans) {
+    const grid = document.getElementById('bhajans-grid');
+    if (!bhajans.length) {
+      grid.innerHTML = `<div class="no-results" style="grid-column:1/-1">
+        <p>कोई भजन नहीं मिला</p>
+        <small>No bhajans found matching your filters. Try different keywords.</small>
+      </div>`;
+      return;
+    }
+
+    grid.innerHTML = bhajans.map(b => {
+      const color = DEITY_COLORS[b.deity] || '#C96A1F';
+      const isFav = favs.includes(b.slug);
+      const firstLine = b.verses?.[0]?.lines?.[0];
+      const topTags = (b.tags || []).slice(0, 3);
+      return `
+        <a href="bhajan.html?slug=${b.slug}" class="card" style="--deity-color:${color}">
+          <div class="card-top">
+            <div class="card-badge" style="background:${color}">${DEITY_EMOJI[b.deity] || '🙏'} ${b.deity}</div>
+            <button class="card-fav ${isFav ? 'faved' : ''}"
+              onclick="event.preventDefault();toggleFav(event,'${b.slug}',this)"
+              aria-label="${isFav ? 'Remove from' : 'Add to'} saved"
+              title="Save bhajan">
+              ${isFav ? '❤️' : '🤍'}
+            </button>
+          </div>
+          <h2 class="card-title-hindi">${b.title_hindi}</h2>
+          <p class="card-title-roman">${b.title_roman}</p>
+          ${firstLine ? `<p class="card-excerpt">${firstLine.hindi}</p>` : ''}
+          <div class="card-tags">
+            ${topTags.map(t => `<span class="tag">${t}</span>`).join('')}
+          </div>
+          <div class="card-meta">
+            <span>⏱ ${b.duration_minutes} min</span>
+            <span>🎵 ${b.language}</span>
+            <span>✍️ ${b.composer}</span>
+          </div>
+        </a>`;
+    }).join('');
+  }
+
+  function toggleFav(e, slug, btn) {
+    e.stopPropagation();
+    favs = JSON.parse(localStorage.getItem('sgs_favorites') || '[]');
+    if (favs.includes(slug)) {
+      favs = favs.filter(f => f !== slug);
+      btn.innerHTML = '🤍';
+    } else {
+      favs.push(slug);
+      btn.innerHTML = '❤️';
+    }
+    localStorage.setItem('sgs_favorites', JSON.stringify(favs));
+  }
+
+  // Event listeners
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+  document.getElementById('deityFilter').addEventListener('change', applyFilters);
+  document.getElementById('timingFilter').addEventListener('change', applyFilters);
+  document.getElementById('clearFilters').addEventListener('click', () => {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('deityFilter').value = '';
+    document.getElementById('timingFilter').value = '';
+    applyFilters();
+  });
+  document.querySelectorAll('.sort-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.sort-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSort = btn.dataset.sort;
+      applyFilters();
+    });
+  });
+</script>
+</body>
+</html>
