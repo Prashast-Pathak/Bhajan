@@ -1,0 +1,593 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-04-13",
+  "chapters": [
+    {
+      "chapter": 2,
+      "title_sanskrit": "साङ्ख्य योग",
+      "title_english": "Sankhya Yoga — The Yoga of Knowledge",
+      "title_hindi": "ज्ञान का योग",
+      "summary_hindi": "गीता के दूसरे अध्याय में भगवान कृष्ण अर्जुन को आत्मा की अमरता का ज्ञान देते हैं। वे बताते हैं कि शरीर नश्वर है परंतु आत्मा अजर-अमर है। इस अध्याय में निष्काम कर्म, बुद्धि योग और स्थितप्रज्ञ की अवधारणा समझाई गई है। यह अध्याय सम्पूर्ण गीता का सार माना जाता है।",
+      "summary_english": "Chapter 2 is considered the essence of the entire Bhagavad Gita. Lord Krishna begins by explaining the immortal nature of the soul (Atman) and the impermanence of the body. He then introduces Sankhya yoga (knowledge), Karma yoga (selfless action), and the concept of Sthitaprajna — the person of steady wisdom. This chapter contains the most famous verse of the Gita (2:47) and is the most referenced chapter for modern life guidance.",
+      "verse_count": 72,
+      "key_themes": ["soul is immortal", "karma without attachment", "equanimity", "duty", "wisdom"],
+      "verses": [
+        {
+          "verse": 11,
+          "slug": "chapter-2-verse-11",
+          "sanskrit": "अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥",
+          "roman": "Ashochyan anva shochas tvam pragya vaadansh cha bhaashe.\nGataasun agataasunsh cha naanu shochanti panditaah.",
+          "word_meanings": [
+            {"word": "अशोच्यान्", "meaning_hindi": "जो शोक के योग्य नहीं", "meaning_english": "those not worthy of grief"},
+            {"word": "अन्वशोचः", "meaning_hindi": "शोक कर रहे हो", "meaning_english": "you are grieving"},
+            {"word": "त्वम्", "meaning_hindi": "तुम", "meaning_english": "you"},
+            {"word": "पण्डिताः", "meaning_hindi": "ज्ञानी लोग", "meaning_english": "the wise"},
+            {"word": "नानुशोचन्ति", "meaning_hindi": "शोक नहीं करते", "meaning_english": "do not grieve"}
+          ],
+          "hindi_translation": "तुम उनके लिए शोक कर रहे हो जो शोक के योग्य नहीं हैं, फिर भी ज्ञान की बातें करते हो। जो वास्तव में ज्ञानी हैं वे न जीवित के लिए शोक करते हैं, न मृत के लिए।",
+          "english_translation": "You grieve for those who should not be grieved for, yet you speak words of wisdom. The wise grieve neither for the living nor for the dead.",
+          "hindi_commentary": "यह श्लोक गीता के उपदेश का आरंभ है। अर्जुन रो रहा था और कह रहा था कि वह युद्ध नहीं करेगा। भगवान कृष्ण ने उसे समझाया कि वह जिनके लिए दुखी है — भीष्म, द्रोण, अन्य — वे वास्तव में शोक के पात्र नहीं हैं। एक सच्चा ज्ञानी व्यक्ति जानता है कि आत्मा न जन्म लेती है, न मरती है। इसलिए किसी के जाने का दुख मिथ्या है।",
+          "english_commentary": "This is where Krishna begins his teaching. Arjuna was paralyzed by grief, refusing to fight. Krishna's response is sharp: you claim to speak wisdom, yet you mourn for those who don't deserve mourning. The true foundation of wisdom is understanding that the soul is eternal — and therefore, grief over physical death is based on ignorance. This sets the stage for the entire philosophical framework of the Gita.",
+          "life_application": "जब हम किसी प्रिय को खोते हैं, या किसी स्थिति पर नियंत्रण खो देते हैं — हम अर्जुन जैसे हो जाते हैं। यह श्लोक हमें याद दिलाता है: जो है वह नश्वर है, जो नश्वर है उस पर शोक करना ज्ञान की कमी है।",
+          "topics": ["grief", "wisdom", "death", "knowledge"],
+          "famous": false
+        },
+        {
+          "verse": 14,
+          "slug": "chapter-2-verse-14",
+          "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+          "roman": "Maatra sparshaas tu Kaunteya sheetosha sukha duhkha daah.\nAagamaapaayino anityaas taan titikshhasva Bhaarata.",
+          "word_meanings": [
+            {"word": "मात्रास्पर्शाः", "meaning_hindi": "इंद्रियों के विषय", "meaning_english": "sensory contacts"},
+            {"word": "शीतोष्ण", "meaning_hindi": "ठंडा-गर्म", "meaning_english": "cold and heat"},
+            {"word": "आगमापायिनः", "meaning_hindi": "आने-जाने वाले", "meaning_english": "transient, coming and going"},
+            {"word": "तितिक्षस्व", "meaning_hindi": "सहन करो", "meaning_english": "endure, bear"}
+          ],
+          "hindi_translation": "हे कुन्तीपुत्र, सर्दी-गर्मी, सुख-दुख देने वाले इंद्रियों के विषय — ये सब आते-जाते रहते हैं, ये अनित्य हैं। हे भारत, इन्हें सहन करना सीखो।",
+          "english_translation": "O son of Kunti, the contacts between the senses and their objects give rise to cold and heat, pleasure and pain. These come and go and are impermanent — learn to endure them.",
+          "hindi_commentary": "भगवान कृष्ण यहाँ जीवन की अनित्यता समझा रहे हैं। सुख और दुख, मान और अपमान, लाभ और हानि — ये सब चलते रहते हैं। जैसे मौसम बदलते हैं, वैसे ही ये परिस्थितियाँ भी बदलती हैं। एक स्थिर मनुष्य इन्हें देखता है पर इनसे विचलित नहीं होता।",
+          "english_commentary": "This verse introduces the practice of equanimity — perhaps the most practical teaching of the Gita. Krishna doesn't say suffering won't come; he says learn to endure it with understanding. This is not suppression of feelings but the higher intelligence that recognizes all experiences as temporary. The word 'titiksha' means patient endurance — not avoidance.",
+          "life_application": "जब जीवन में बुरा समय आए — नौकरी जाए, रिश्ते टूटें, बीमारी आए — तो याद रखें: यह भी बदलेगा। जैसे रात के बाद दिन आता है। सहन करने की शक्ति ही असली शक्ति है।",
+          "topics": ["patience", "suffering", "equanimity", "endurance"],
+          "famous": false
+        },
+        {
+          "verse": 17,
+          "slug": "chapter-2-verse-17",
+          "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति॥",
+          "roman": "Avinaashi tu tad viddhi yena sarvam idam tatam.\nVinaasham avyayasyaasya na kashchit kartum arhati.",
+          "word_meanings": [
+            {"word": "अविनाशि", "meaning_hindi": "अविनाशी, कभी न नष्ट होने वाला", "meaning_english": "indestructible"},
+            {"word": "ततम्", "meaning_hindi": "व्याप्त है", "meaning_english": "pervades"},
+            {"word": "अव्ययस्य", "meaning_hindi": "अव्यय का, जो कभी क्षय न हो", "meaning_english": "of the imperishable"},
+            {"word": "विनाशम्", "meaning_hindi": "विनाश", "meaning_english": "destruction"}
+          ],
+          "hindi_translation": "जो इस सम्पूर्ण जगत में व्याप्त है उसे तुम अविनाशी जानो। इस अव्यय आत्मा का विनाश करने में कोई समर्थ नहीं है।",
+          "english_translation": "Know that to be indestructible by which all this is pervaded. No one can cause the destruction of the imperishable soul.",
+          "hindi_commentary": "इस श्लोक में आत्मा की सर्वव्यापकता और अविनाशिता का वर्णन है। आत्मा न केवल प्रत्येक प्राणी में है, बल्कि वह सम्पूर्ण सृष्टि में व्याप्त है। जो सब में है, उसका नाश कैसे हो सकता है? यह ज्ञान ही मृत्यु के भय को समाप्त करता है।",
+          "english_commentary": "This verse establishes the omnipresence of the soul. The Atman is not just a tiny spark inside the body — it pervades everything. This is the Advaita (non-dual) perspective: the same consciousness that is 'you' is the same consciousness that is 'everything'. The logical conclusion: if the soul is everywhere, it cannot be destroyed by anything.",
+          "life_application": "मृत्यु का भय सबसे बड़ा भय है। परंतु जब हम समझते हैं कि हमारी वास्तविक पहचान शरीर नहीं बल्कि आत्मा है — जो अविनाशी है — तो यह भय धीरे-धीरे कम होने लगता है।",
+          "topics": ["death", "soul", "immortality", "fear"],
+          "famous": false
+        },
+        {
+          "verse": 19,
+          "slug": "chapter-2-verse-19",
+          "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते॥",
+          "roman": "Ya enam vetti hantaaram yash chainam manyate hatam.\nUbhau tau na vijaaneeto naayam hanti na hanyate.",
+          "word_meanings": [
+            {"word": "हन्तारम्", "meaning_hindi": "मारने वाला", "meaning_english": "the slayer"},
+            {"word": "हतम्", "meaning_hindi": "मारा गया", "meaning_english": "slain"},
+            {"word": "उभौ", "meaning_hindi": "दोनों", "meaning_english": "both"},
+            {"word": "न विजानीतः", "meaning_hindi": "नहीं जानते", "meaning_english": "do not know"}
+          ],
+          "hindi_translation": "जो इसे मारने वाला समझता है और जो इसे मरा हुआ मानता है — दोनों ही नहीं जानते। यह आत्मा न मारती है, न मारी जाती है।",
+          "english_translation": "He who thinks that this (soul) is a slayer, and he who thinks that this (soul) has been slain — both of them fail to perceive the truth. This soul neither slays nor is slain.",
+          "hindi_commentary": "यह श्लोक युद्धक्षेत्र में अर्जुन के मन की सबसे बड़ी गलतफहमी को दूर करता है। अर्जुन सोच रहा था — मैं इन्हें मार रहा हूँ। पर कृष्ण कहते हैं: तुम शरीर को मार सकते हो, आत्मा को नहीं। जो आत्मा को मारने की बात सोचता है वह अज्ञानी है।",
+          "english_commentary": "This verse directly addresses Arjuna's paralysis — his inability to fight because he thought he would be 'killing' people. Krishna's answer: nobody kills anyone, because the soul is unkillable. This is not a justification for violence, but a philosophical correction about what 'death' really means. The body changes; the consciousness that animates it does not cease.",
+          "life_application": "जब हम किसी के 'खोने' का दुख सहते हैं — यह समझना कि वे जो थे, वह आत्मा कहीं नहीं गई — इस ज्ञान में एक गहरी शांति है।",
+          "topics": ["death", "soul", "grief", "knowledge"],
+          "famous": true
+        },
+        {
+          "verse": 20,
+          "slug": "chapter-2-verse-20",
+          "sanskrit": "न जायते म्रियते वा कदाचिन्\nनायं भूत्वा भविता वा न भूयः।\nअजो नित्यः शाश्वतोऽयं पुराणो\nन हन्यते हन्यमाने शरीरे॥",
+          "roman": "Na jaayate mriyate vaa kadaachin\nnaayam bhootva bhavitaa vaa na bhooyah.\nAjo nityah shaashvato ayam puraano\nna hanyate hanyamaane shareere.",
+          "word_meanings": [
+            {"word": "न जायते", "meaning_hindi": "जन्म नहीं लेती", "meaning_english": "is not born"},
+            {"word": "न म्रियते", "meaning_hindi": "मरती नहीं", "meaning_english": "does not die"},
+            {"word": "अजः", "meaning_hindi": "अजन्मा", "meaning_english": "unborn"},
+            {"word": "नित्यः", "meaning_hindi": "सदा विद्यमान", "meaning_english": "eternal"},
+            {"word": "शाश्वतः", "meaning_hindi": "चिरस्थायी", "meaning_english": "everlasting"},
+            {"word": "पुराणः", "meaning_hindi": "अनादि", "meaning_english": "ancient, primordial"}
+          ],
+          "hindi_translation": "यह आत्मा कभी न जन्मती है, न मरती है। यह न पहले थी और न भविष्य में होगी — ऐसा नहीं है। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मरती।",
+          "english_translation": "The soul is never born nor dies at any time. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and primordial. The soul is not slain when the body is slain.",
+          "hindi_commentary": "यह गीता के सबसे प्रसिद्ध श्लोकों में से एक है। आत्मा के छह गुण बताए गए हैं: अजन्मा (जन्म नहीं लेती), नित्य (सदा है), शाश्वत (सदा रहेगी), पुरातन (अनादि है), अविनाशी और अपरिवर्तनीय। शरीर तो कपड़े की तरह है — बदलता रहता है। आत्मा वही रहती है।",
+          "english_commentary": "Perhaps the most complete description of the soul in all of spiritual literature. The six qualities of the Atman: unborn (ajas), never dies (mriyate), not recently come into existence (na bhootva), not going to perish (na bhuyah), eternal (nityah), ancient (puraanah). This verse is often recited at funerals — not as consolation but as truth. The soul simply continues.",
+          "life_application": "जब भी मृत्यु का भय आए — चाहे अपनी, चाहे किसी प्रिय की — इस श्लोक को पढ़ें। यह सिर्फ दर्शन नहीं, यह सत्य है। हम शरीर नहीं हैं।",
+          "topics": ["death", "soul", "immortality", "grief", "fear"],
+          "famous": true
+        },
+        {
+          "verse": 22,
+          "slug": "chapter-2-verse-22",
+          "sanskrit": "वासांसि जीर्णानि यथा विहाय\nनवानि गृह्णाति नरोऽपराणि।\nतथा शरीराणि विहाय जीर्णा\nन्यन्यानि संयाति नवानि देही॥",
+          "roman": "Vaasaamsi jeernani yathaa vihaaya\nnavaani grihnaati naro aparaani.\nTathaa shareeraani vihaaya jeernaany\nanyaani samyaati navaani dehee.",
+          "word_meanings": [
+            {"word": "वासांसि", "meaning_hindi": "वस्त्र", "meaning_english": "garments"},
+            {"word": "जीर्णानि", "meaning_hindi": "जीर्ण, पुराने", "meaning_english": "worn out"},
+            {"word": "विहाय", "meaning_hindi": "छोड़कर", "meaning_english": "casting off"},
+            {"word": "देही", "meaning_hindi": "आत्मा, जो शरीर धारण करती है", "meaning_english": "the soul"}
+          ],
+          "hindi_translation": "जैसे मनुष्य पुराने वस्त्र उतारकर नए वस्त्र धारण करता है, उसी प्रकार आत्मा पुराने शरीर को छोड़कर नए शरीर में प्रवेश करती है।",
+          "english_translation": "Just as a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones.",
+          "hindi_commentary": "यह गीता का सबसे प्रसिद्ध और सरल उपमा है। मृत्यु क्या है? बस पुराने कपड़े बदलना। हम शरीर को 'मैं' मान लेते हैं, परंतु वास्तव में हम आत्मा हैं जो शरीर पहनती है। जब शरीर घिस जाता है, आत्मा एक नया शरीर लेती है। यही पुनर्जन्म का सिद्धांत है, सरल भाषा में।",
+          "english_commentary": "The most famous and accessible metaphor for reincarnation in all of spiritual literature. The body is compared to clothing — you are not your clothes, you wear them. When clothes become old and torn, you change them. The soul changes bodies the same way. This verse removes the terror of death by reframing it: not ending, but transition.",
+          "life_application": "जब किसी प्रियजन की मृत्यु होती है, तो इस छवि को मन में रखें: वे नए वस्त्र पहन चुके हैं। यात्रा जारी है।",
+          "topics": ["death", "reincarnation", "soul", "grief"],
+          "famous": true
+        },
+        {
+          "verse": 23,
+          "slug": "chapter-2-verse-23",
+          "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः॥",
+          "roman": "Nainam chhindanti shastraani nainam dahati paavakah.\nNa chainam kledayantyaapo na shoshayati maarutah.",
+          "word_meanings": [
+            {"word": "न छिन्दन्ति", "meaning_hindi": "काट नहीं सकते", "meaning_english": "cannot cut"},
+            {"word": "शस्त्राणि", "meaning_hindi": "शस्त्र, हथियार", "meaning_english": "weapons"},
+            {"word": "न दहति", "meaning_hindi": "जला नहीं सकता", "meaning_english": "cannot burn"},
+            {"word": "पावकः", "meaning_hindi": "अग्नि", "meaning_english": "fire"},
+            {"word": "न क्लेदयन्ति", "meaning_hindi": "भिगो नहीं सकता", "meaning_english": "cannot wet"},
+            {"word": "मारुतः", "meaning_hindi": "वायु", "meaning_english": "wind"}
+          ],
+          "hindi_translation": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल भिगो नहीं सकता और वायु सुखा नहीं सकती।",
+          "english_translation": "The soul can never be cut by any weapon, nor burned by fire, nor moistened by water, nor dried by the wind.",
+          "hindi_commentary": "यह श्लोक चार तत्वों — पृथ्वी, अग्नि, जल, वायु — के माध्यम से आत्मा की अभेद्यता सिद्ध करता है। भौतिक जगत इन्हीं तत्वों से बना है। परंतु आत्मा भौतिक नहीं है, इसलिए भौतिक शक्तियाँ उसे प्रभावित नहीं कर सकतीं। यह श्लोक मृत्यु के भय को जड़ से उखाड़ देता है।",
+          "english_commentary": "This is one of the most poetic and powerful descriptions of the soul's indestructibility. All four classical elements — earth (weapons are made from it), fire, water, air — are unable to touch the Atman. The soul operates in an entirely different dimension from the physical world. It is not a physical thing and therefore cannot be destroyed by physical means.",
+          "life_application": "यह श्लोक न केवल मृत्यु के भय को कम करता है, बल्कि हमें याद दिलाता है कि हमारी वास्तविक पहचान — हमारी चेतना, हमारा बोध — कोई छीन नहीं सकता।",
+          "topics": ["soul", "death", "immortality", "fear", "courage"],
+          "famous": true
+        },
+        {
+          "verse": 27,
+          "slug": "chapter-2-verse-27",
+          "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि॥",
+          "roman": "Jaatasya hi dhruvo mrityur dhruvam janma mritasya cha.\nTasmaad aparihaaryerthe na tvam shochitum arhasi.",
+          "word_meanings": [
+            {"word": "जातस्य", "meaning_hindi": "जन्मे हुए के लिए", "meaning_english": "for the born"},
+            {"word": "ध्रुवः", "meaning_hindi": "निश्चित", "meaning_english": "certain, inevitable"},
+            {"word": "मृत्युः", "meaning_hindi": "मृत्यु", "meaning_english": "death"},
+            {"word": "अपरिहार्ये", "meaning_hindi": "जो टाला न जा सके", "meaning_english": "in the unavoidable"}
+          ],
+          "hindi_translation": "जो जन्मा है उसकी मृत्यु निश्चित है और जो मरा है उसका पुनर्जन्म निश्चित है। इसलिए जो टाला नहीं जा सकता उसके बारे में तुम्हें शोक नहीं करना चाहिए।",
+          "english_translation": "For one who has been born, death is certain; and for one who has died, birth is certain. Therefore, you should not grieve about the inevitable.",
+          "hindi_commentary": "कृष्ण का यह तर्क बहुत व्यावहारिक है: जो बात निश्चित है उसके बारे में चिंता करना व्यर्थ है। मृत्यु निश्चित है। यह नियम सबके लिए समान है। इस सत्य को स्वीकार करना ही ज्ञान है। अस्वीकार करने से न मृत्यु रुकती है, न दुख।",
+          "english_commentary": "This verse presents the logical complement to the soul's immortality argument. Even if you focus only on the body's cycle: birth leads inevitably to death, death leads inevitably to rebirth. This is the fixed law of existence. Grieving about what is certain and unavoidable is simply irrational — it changes nothing and only adds suffering.",
+          "life_application": "हर जीवन में कुछ चीजें हैं जो बदली नहीं जा सकतीं — उम्र बढ़ना, समय बीतना, प्रिय लोगों का जाना। इन्हें स्वीकार करना दुर्बलता नहीं, ज्ञान है।",
+          "topics": ["death", "grief", "acceptance", "wisdom"],
+          "famous": false
+        },
+        {
+          "verse": 38,
+          "slug": "chapter-2-verse-38",
+          "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि॥",
+          "roman": "Sukha duhkhe same kritvaa laabhaalaabhau jayaajayau.\nTato yuddhaaya yujyasva naivam paapam avaapsyasi.",
+          "word_meanings": [
+            {"word": "सुखदुःखे", "meaning_hindi": "सुख और दुख को", "meaning_english": "pleasure and pain"},
+            {"word": "समे कृत्वा", "meaning_hindi": "समान मानकर", "meaning_english": "treating equally"},
+            {"word": "लाभालाभौ", "meaning_hindi": "लाभ और हानि", "meaning_english": "gain and loss"},
+            {"word": "जयाजयौ", "meaning_hindi": "जय और पराजय", "meaning_english": "victory and defeat"}
+          ],
+          "hindi_translation": "सुख-दुख, लाभ-हानि, जीत-हार को समान मानकर युद्ध में लग जाओ। इस प्रकार युद्ध करने से तुम्हें पाप नहीं लगेगा।",
+          "english_translation": "Fight for the sake of duty, treating pleasure and pain, loss and gain, victory and defeat as the same — and you will incur no sin.",
+          "hindi_commentary": "यह श्लोक समत्व (equanimity) की व्यावहारिक परिभाषा देता है। जीवन में सुख-दुख, जीत-हार आते रहते हैं। जो व्यक्ति इन्हें समान दृष्टि से देखता है — जो जीत में उत्साहित नहीं होता और हार में टूटता नहीं — वही स्थिर रहता है। यही कर्मयोग की नींव है।",
+          "english_commentary": "This is the first direct teaching on equanimity (samatvam) in the Gita. The six pairs — pleasure/pain, gain/loss, victory/defeat — represent the full range of outcomes in any endeavor. Krishna's instruction: treat all six with equal indifference. This doesn't mean apathy; it means doing your best while being emotionally detached from outcomes.",
+          "life_application": "व्यापार में नुकसान हो, परीक्षा में असफलता हो, रिश्ते में तकलीफ हो — अगर हम जीत-हार को समान देख सकें तो हम हमेशा शांत रह सकते हैं।",
+          "topics": ["equanimity", "duty", "success", "failure", "karma"],
+          "famous": false
+        },
+        {
+          "verse": 40,
+          "slug": "chapter-2-verse-40",
+          "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्॥",
+          "roman": "Neha abhikrama naasho asti pratyavaayo na vidyate.\nSvalpam apy asya dharmasya traayate mahato bhayaat.",
+          "word_meanings": [
+            {"word": "नेह", "meaning_hindi": "इस मार्ग में", "meaning_english": "in this path"},
+            {"word": "अभिक्रमनाशः", "meaning_hindi": "प्रयास का नाश", "meaning_english": "loss of effort"},
+            {"word": "प्रत्यवायः", "meaning_hindi": "विपरीत फल", "meaning_english": "adverse result"},
+            {"word": "स्वल्पम्", "meaning_hindi": "थोड़ा भी", "meaning_english": "even a little"},
+            {"word": "त्रायते", "meaning_hindi": "रक्षा करता है", "meaning_english": "protects"},
+            {"word": "महतः भयात्", "meaning_hindi": "महान भय से", "meaning_english": "from great fear"}
+          ],
+          "hindi_translation": "इस मार्ग पर किए गए प्रयास का कोई नाश नहीं होता और न कोई विपरीत परिणाम होता है। इस धर्म का थोड़ा-सा अभ्यास भी महान भय से रक्षा करता है।",
+          "english_translation": "In this path, there is no loss of effort, nor is there any adverse result. Even a little practice of this spiritual discipline protects one from great fear.",
+          "hindi_commentary": "यह श्लोक बहुत उत्साहवर्धक है। कृष्ण कहते हैं: आध्यात्मिक मार्ग पर कोई भी प्रयास व्यर्थ नहीं जाता। चाहे तुमने थोड़ा भी किया हो — थोड़ी भी भक्ति, थोड़ा भी ध्यान, थोड़ी भी सेवा — वह सब संचित रहता है। यह निवेश कभी डूबता नहीं।",
+          "english_commentary": "This is one of the most encouraging verses in the Gita. Unlike worldly investments that can fail completely, spiritual practice has no downside risk. Every step on this path is preserved — it never goes to waste. Even a small amount of practice — a few minutes of meditation, a few verses read with understanding — protects from the greatest fear: the fear of meaninglessness.",
+          "life_application": "आध्यात्मिक साधना शुरू करने में देर नहीं होती। रोज़ थोड़ा-थोड़ा करें — पाँच मिनट का ध्यान, एक श्लोक, एक भजन। यह सब जमा होता रहता है।",
+          "topics": ["spiritual practice", "karma", "courage", "patience"],
+          "famous": false
+        },
+        {
+          "verse": 47,
+          "slug": "chapter-2-verse-47",
+          "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+          "roman": "Karmanye vadhikaraste ma phaleshu kadachana.\nMaa karma phalahetur bhoor maa te sango stvakarmanee.",
+          "word_meanings": [
+            {"word": "कर्मणि", "meaning_hindi": "कर्म में", "meaning_english": "in action"},
+            {"word": "एव", "meaning_hindi": "ही, केवल", "meaning_english": "only"},
+            {"word": "अधिकारः", "meaning_hindi": "अधिकार", "meaning_english": "right, authority"},
+            {"word": "ते", "meaning_hindi": "तेरा", "meaning_english": "your"},
+            {"word": "मा फलेषु", "meaning_hindi": "फलों में नहीं", "meaning_english": "not in the fruits"},
+            {"word": "कदाचन", "meaning_hindi": "कभी नहीं", "meaning_english": "never"},
+            {"word": "मा कर्मफलहेतुः", "meaning_hindi": "फल की कामना मत करो", "meaning_english": "do not be motivated by fruits"},
+            {"word": "मा सङ्गः", "meaning_hindi": "आसक्ति मत रखो", "meaning_english": "have no attachment"},
+            {"word": "अकर्मणि", "meaning_hindi": "कर्म न करने में", "meaning_english": "in inaction"}
+          ],
+          "hindi_translation": "तुम्हारा अधिकार केवल कर्म करने पर है, उसके फलों पर कभी नहीं। न फल की कामना से कर्म करो, और न ही अकर्मण्यता में आसक्त हो।",
+          "english_translation": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results, and never be attached to inaction.",
+          "hindi_commentary": "यह गीता का सबसे प्रसिद्ध और सबसे गहरा श्लोक है। इसमें चार बातें कही गई हैं: (1) कर्म करना तुम्हारा अधिकार है। (2) फल पर तुम्हारा अधिकार नहीं। (3) यह मत सोचो कि फल तुम्हारी वजह से मिलता है। (4) कर्म न करने में भी आसक्त मत होओ। यह निष्काम कर्म का सिद्धांत है — बिना फल की चिंता किए काम करो।",
+          "english_commentary": "This is the most quoted verse of the Bhagavad Gita — and arguably the most transformative idea in all of world philosophy. It redefines the relationship between effort and outcome. The problem with human psychology is that we do things FOR outcomes. When we tie our actions to expected results, we become anxious (what if it doesn't work?), corrupt (I'll cut corners if needed), or paralyzed (I won't act if I'm not sure of success). Krishna's solution: completely sever the link between action and outcome. Do your best. Release the rest.",
+          "life_application": "परीक्षा में जाओ — पर रिजल्ट की चिंता छोड़ो। नौकरी के लिए कोशिश करो — पर नियुक्ति की गारंटी मत माँगो। रिश्ते निभाओ — पर बदले में कुछ पाने की उम्मीद मत रखो। यही निष्काम कर्म है।",
+          "topics": ["karma", "anxiety", "work", "detachment", "action", "failure", "success"],
+          "famous": true
+        },
+        {
+          "verse": 48,
+          "slug": "chapter-2-verse-48",
+          "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते॥",
+          "roman": "Yogasthah kuru karmaani sangam tyaktvaa Dhananjaya.\nSiddhya siddhyoh samo bhootvaa samatvam yoga uchyate.",
+          "word_meanings": [
+            {"word": "योगस्थः", "meaning_hindi": "योग में स्थित होकर", "meaning_english": "being steadfast in yoga"},
+            {"word": "सङ्गं त्यक्त्वा", "meaning_hindi": "आसक्ति छोड़कर", "meaning_english": "abandoning attachment"},
+            {"word": "सिद्धि-असिद्ध्योः", "meaning_hindi": "सफलता और विफलता में", "meaning_english": "in success and failure"},
+            {"word": "समत्वम्", "meaning_hindi": "समभाव", "meaning_english": "equanimity"},
+            {"word": "योगः", "meaning_hindi": "योग", "meaning_english": "yoga"}
+          ],
+          "hindi_translation": "हे धनंजय, आसक्ति छोड़कर योग में स्थिर होकर कर्म करो। सफलता और विफलता में समभाव रखो — यही समत्व योग कहलाता है।",
+          "english_translation": "Perform your duty equipoised, O Arjuna, abandoning all attachment to success or failure. Such equanimity is called yoga.",
+          "hindi_commentary": "इस श्लोक में कृष्ण योग की परिभाषा देते हैं — समत्वम् योगः। योग का अर्थ केवल शारीरिक व्यायाम नहीं है। योग का असली अर्थ है मन की वह अवस्था जिसमें सफलता और विफलता, सुख और दुख बराबर लगते हैं। यह स्थिति प्राप्त करना ही जीवन की सबसे बड़ी उपलब्धि है।",
+          "english_commentary": "This verse gives one of the most profound definitions of yoga in all literature: yoga is equanimity (samatvam). The popular definition of yoga as physical postures is a fraction of this. True yoga is the mental state where outcomes don't disturb you — where you act fully engaged but are emotionally unattached to results. This is the state of a surgeon who operates with complete focus but without fear of outcomes dictating their judgment.",
+          "life_application": "जब आप किसी काम में पूरी तरह लग जाते हैं और फिर भी परिणाम की परवाह नहीं करते — तब आप योगी हैं। यह किसी भी काम में संभव है — नौकरी हो, परिवार हो, कला हो।",
+          "topics": ["yoga", "equanimity", "karma", "attachment", "success", "failure"],
+          "famous": false
+        },
+        {
+          "verse": 50,
+          "slug": "chapter-2-verse-50",
+          "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्॥",
+          "roman": "Buddhi yukto jahaateeha ubhe sukrita dushkrite.\nTasmaad yogaaya yujyasva yogah karmasu kaushalam.",
+          "word_meanings": [
+            {"word": "बुद्धियुक्तः", "meaning_hindi": "बुद्धि से युक्त व्यक्ति", "meaning_english": "one endowed with wisdom"},
+            {"word": "जहाति", "meaning_hindi": "छोड़ देता है", "meaning_english": "casts off"},
+            {"word": "सुकृत-दुष्कृते", "meaning_hindi": "पुण्य और पाप दोनों", "meaning_english": "both good and evil deeds"},
+            {"word": "कौशलम्", "meaning_hindi": "कुशलता, कला", "meaning_english": "skill, excellence"}
+          ],
+          "hindi_translation": "बुद्धिमान व्यक्ति पुण्य और पाप दोनों को यहीं छोड़ देता है। इसलिए योग के लिए प्रयास करो — कर्मों में कुशलता ही योग है।",
+          "english_translation": "One who is endowed with wisdom casts off both good and evil deeds even in this world. Therefore strive for yoga — yoga is skill in action.",
+          "hindi_commentary": "यहाँ कृष्ण एक क्रांतिकारी बात कहते हैं: 'योगः कर्मसु कौशलम्' — कर्मों में कुशलता ही योग है। योग केवल ध्यान या मंत्र नहीं — बल्कि अपने काम को इतनी कुशलता और समर्पण से करना कि उसमें कोई आसक्ति न रहे। एक बढ़िया कारीगर, एक कुशल डॉक्टर, एक समर्पित माँ — सब योगी हो सकते हैं।",
+          "english_commentary": "This verse contains one of the most practically useful definitions in the Gita: 'Yogah karmasu kaushalam' — yoga is skill in action. This means excellence in whatever you do, performed without ego, attachment, or anxiety about outcomes. A craftsman who builds furniture with total absorption, not worrying whether the customer will like it — that is yoga in practice.",
+          "life_application": "अपने हर काम को कौशल के साथ करें — चाहे खाना बनाना हो, रिपोर्ट लिखना हो, या बच्चों को पढ़ाना हो। जब काम में पूरी तरह डूब जाते हैं, बिना परिणाम की चिंता के — वही योग है।",
+          "topics": ["yoga", "skill", "karma", "excellence", "work"],
+          "famous": true
+        },
+        {
+          "verse": 55,
+          "slug": "chapter-2-verse-55",
+          "sanskrit": "प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान्।\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते॥",
+          "roman": "Prajahati yadaa kaamaansarvaan paartha manogataan.\nAatmanyevaatmanaa tushtah sthitapragnyas tadochyate.",
+          "word_meanings": [
+            {"word": "प्रजहाति", "meaning_hindi": "पूरी तरह त्याग देता है", "meaning_english": "completely gives up"},
+            {"word": "कामान्", "meaning_hindi": "कामनाओं को", "meaning_english": "desires"},
+            {"word": "मनोगतान्", "meaning_hindi": "मन में उठने वाली", "meaning_english": "arising in the mind"},
+            {"word": "आत्मनि तुष्टः", "meaning_hindi": "आत्मा में संतुष्ट", "meaning_english": "satisfied within oneself"},
+            {"word": "स्थितप्रज्ञः", "meaning_hindi": "स्थिर बुद्धि वाला", "meaning_english": "one of steady wisdom"}
+          ],
+          "hindi_translation": "हे पार्थ, जब व्यक्ति मन में उठने वाली सभी कामनाओं को पूरी तरह त्याग देता है और आत्मा में ही आत्मा से संतुष्ट रहता है — तब वह स्थितप्रज्ञ कहलाता है।",
+          "english_translation": "O Partha, when a man completely casts off all the desires of the mind, and is satisfied in the Self by the Self alone — he is said to be one of steady wisdom.",
+          "hindi_commentary": "यहाँ से गीता में स्थितप्रज्ञ — स्थिर बुद्धि वाले व्यक्ति — का विस्तृत वर्णन शुरू होता है। स्थितप्रज्ञ वह है जो बाहरी परिस्थितियों से नहीं, बल्कि भीतर से संतुष्टि पाता है। जिसकी खुशी किसी चीज़, किसी व्यक्ति, या किसी परिस्थिति पर निर्भर नहीं। यह आदर्श है, पर यही लक्ष्य भी है।",
+          "english_commentary": "This begins the famous Sthitaprajna section — the description of the person of steady wisdom, which spans verses 55-72. The Sthitaprajna is the Gita's ideal human being. The key quality: his satisfaction comes from within, not from external sources. He doesn't need circumstances to change to be content. This is the opposite of how most people live — always needing something to be different.",
+          "life_application": "क्या आपकी खुशी किसी की तारीफ, किसी पद, किसी चीज़ पर निर्भर है? स्थितप्रज्ञ वह है जिसकी खुशी का स्रोत भीतर है। यह लक्ष्य बनाएं।",
+          "topics": ["wisdom", "desires", "equanimity", "inner peace", "contentment"],
+          "famous": false
+        },
+        {
+          "verse": 56,
+          "slug": "chapter-2-verse-56",
+          "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते॥",
+          "roman": "Duhkheshu anudvigna manaah sukheshu vigata sprihah.\nVeeta raaga bhaya krodhah sthitadheer munir uchyate.",
+          "word_meanings": [
+            {"word": "दुखेषु अनुद्विग्न-मनाः", "meaning_hindi": "दुख में विचलित न हो मन जिसका", "meaning_english": "undisturbed in sorrow"},
+            {"word": "सुखेषु विगत-स्पृहः", "meaning_hindi": "सुख में लिप्सा न हो", "meaning_english": "without longing for happiness"},
+            {"word": "वीतरागभयक्रोधः", "meaning_hindi": "आसक्ति, भय, क्रोध से मुक्त", "meaning_english": "free from attachment, fear, and anger"},
+            {"word": "स्थितधीः", "meaning_hindi": "स्थिर बुद्धि वाला", "meaning_english": "steady in wisdom"},
+            {"word": "मुनिः", "meaning_hindi": "मुनि, ज्ञानी", "meaning_english": "a sage"}
+          ],
+          "hindi_translation": "जो दुख में विचलित नहीं होता, सुख की इच्छा नहीं रखता, जो आसक्ति, भय और क्रोध से मुक्त है — वह स्थिर बुद्धि वाला मुनि कहलाता है।",
+          "english_translation": "One whose mind is not disturbed even in the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear, and anger — is called a sage of steady mind.",
+          "hindi_commentary": "यह श्लोक स्थितप्रज्ञ के व्यावहारिक लक्षण बताता है। तीन बातें: (1) दुख में घबराए नहीं — इसका अर्थ यह नहीं कि दुख न हो, बल्कि कि वह भीतर से टूटे नहीं। (2) सुख में उत्साहित न हो — यानी बाहरी सुख पर निर्भर न रहे। (3) आसक्ति, भय, क्रोध से मुक्त हो — ये तीन सबसे बड़े दुर्गुण हैं।",
+          "english_commentary": "This verse gives the three psychological freedoms of the Sthitaprajna: 1) Not disturbed by sorrow — he experiences pain but is not shattered by it; 2) Not excited by happiness — he enjoys good things but doesn't become dependent on them; 3) Free from the trio of attachment, fear, and anger — the root causes of most human suffering. These three qualities are the practical marks of enlightenment.",
+          "life_application": "अगली बार जब कुछ बुरा हो: देखें कि मन विचलित होता है या नहीं। अगली बार जब कुछ अच्छा हो: देखें कि लालसा बढ़ती है या नहीं। यह अवलोकन ही साधना की शुरुआत है।",
+          "topics": ["equanimity", "anger", "fear", "attachment", "wisdom", "inner peace"],
+          "famous": false
+        },
+        {
+          "verse": 58,
+          "slug": "chapter-2-verse-58",
+          "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता॥",
+          "roman": "Yadaa samharate chaayam koormo angaaneeva sarvashah.\nIndriyaanee indriyarthebhyas tasya pragya pratishthitaa.",
+          "word_meanings": [
+            {"word": "कूर्मः", "meaning_hindi": "कछुआ", "meaning_english": "tortoise"},
+            {"word": "अङ्गानि", "meaning_hindi": "अंगों को", "meaning_english": "limbs"},
+            {"word": "इन्द्रियाणि", "meaning_hindi": "इंद्रियों को", "meaning_english": "senses"},
+            {"word": "इन्द्रियार्थेभ्यः", "meaning_hindi": "इंद्रियों के विषयों से", "meaning_english": "from sense objects"},
+            {"word": "प्रज्ञा प्रतिष्ठिता", "meaning_hindi": "बुद्धि स्थिर है", "meaning_english": "wisdom is firmly established"}
+          ],
+          "hindi_translation": "जैसे कछुआ अपने अंगों को अंदर समेट लेता है, वैसे ही जो व्यक्ति इंद्रियों को उनके विषयों से समेट लेता है — उसकी बुद्धि स्थिर मानी जाती है।",
+          "english_translation": "One who is able to withdraw his senses from sense objects, as the tortoise draws its limbs within the shell, is firmly fixed in perfect consciousness.",
+          "hindi_commentary": "यह गीता की सबसे प्रसिद्ध उपमाओं में से एक है। कछुए की उपमा अद्भुत है: जब खतरा हो, कछुआ अपने सभी अंग कवच में समेट लेता है। इसी प्रकार, स्थितप्रज्ञ व्यक्ति अपनी इंद्रियों को बाहरी उत्तेजनाओं से समेट सकता है। यह इंद्रियों को मारना नहीं, बल्कि उन पर नियंत्रण पाना है।",
+          "english_commentary": "The tortoise metaphor is one of the most famous in the Gita. A tortoise withdraws its limbs instantly when threatened — complete withdrawal, complete protection. The yogi does the same with senses: not permanently suppressing them, but having the ability to withdraw attention from sense objects at will. This is pratyahara (withdrawal of senses) — the fifth limb of Patanjali's yoga.",
+          "life_application": "अगली बार जब फोन या किसी व्यसन की तरफ मन खिंचे — कछुए की तरह उस इच्छा को पीछे खींचने का अभ्यास करें। यही इंद्रिय-नियंत्रण का अभ्यास है।",
+          "topics": ["sense control", "discipline", "wisdom", "meditation"],
+          "famous": false
+        },
+        {
+          "verse": 62,
+          "slug": "chapter-2-verse-62",
+          "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥",
+          "roman": "Dhyaayato vishayaan pumsah sangasteshoo pajaayate.\nSangaat sanjaayate kaamah kaamaat krodho abhijaayate.",
+          "word_meanings": [
+            {"word": "ध्यायतः", "meaning_hindi": "सोचते रहने से", "meaning_english": "by contemplating"},
+            {"word": "विषयान्", "meaning_hindi": "इंद्रिय विषयों को", "meaning_english": "sense objects"},
+            {"word": "सङ्गः", "meaning_hindi": "आसक्ति", "meaning_english": "attachment"},
+            {"word": "काम", "meaning_hindi": "कामना, इच्छा", "meaning_english": "desire, lust"},
+            {"word": "क्रोधः", "meaning_hindi": "क्रोध", "meaning_english": "anger"}
+          ],
+          "hindi_translation": "विषयों के बारे में सोचते रहने से उनमें आसक्ति उत्पन्न होती है। आसक्ति से कामना पैदा होती है और कामना से क्रोध जन्म लेता है।",
+          "english_translation": "By contemplating sense objects, a person develops attachment to them. From attachment arises desire, and from desire comes anger.",
+          "hindi_commentary": "यह श्लोक पतन की शृंखला दिखाता है: विचार → आसक्ति → इच्छा → क्रोध। यह मनोविज्ञान की गहरी समझ है। जब हम किसी चीज़ के बारे में बार-बार सोचते हैं — उसकी इच्छा बढ़ती है। जब इच्छा पूरी न हो — क्रोध आता है। आधुनिक सोशल मीडिया इसी सिद्धांत का दुरुपयोग करता है।",
+          "english_commentary": "This verse describes what modern psychology calls the 'craving cycle' — remarkably in precise sequence. Dwelling on an object → attachment forms → desire intensifies → when frustrated, anger erupts. This has profound modern relevance: the algorithms of social media, advertising, and entertainment are engineered to keep you 'ध्यायतः' (contemplating) sense objects continuously. The Gita identified this mechanism 5,000 years ago.",
+          "life_application": "अगर आप किसी बुरी आदत से लड़ रहे हैं — शराब, जंक फूड, या अनावश्यक खर्च — पहला कदम है उस चीज़ के बारे में सोचना बंद करना। विचार ही आसक्ति की जड़ है।",
+          "topics": ["anger", "desire", "attachment", "sense control", "discipline"],
+          "famous": true
+        },
+        {
+          "verse": 63,
+          "slug": "chapter-2-verse-63",
+          "sanskrit": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः।\nस्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति॥",
+          "roman": "Krodhad bhavati sammohah sammohat smriti vibhramah.\nSmriti bhramshaad buddhi naasho buddhi naashaat pranaashyati.",
+          "word_meanings": [
+            {"word": "क्रोधात्", "meaning_hindi": "क्रोध से", "meaning_english": "from anger"},
+            {"word": "सम्मोहः", "meaning_hindi": "मूढ़ता, भ्रम", "meaning_english": "delusion, confusion"},
+            {"word": "स्मृतिविभ्रमः", "meaning_hindi": "स्मृति का भ्रमित होना", "meaning_english": "bewilderment of memory"},
+            {"word": "बुद्धिनाशः", "meaning_hindi": "बुद्धि का नाश", "meaning_english": "destruction of intelligence"},
+            {"word": "प्रणश्यति", "meaning_hindi": "व्यक्ति का पतन हो जाता है", "meaning_english": "the person is ruined"}
+          ],
+          "hindi_translation": "क्रोध से मूढ़ता उत्पन्न होती है, मूढ़ता से स्मृति भ्रमित होती है, स्मृति भ्रम से बुद्धि नष्ट होती है और बुद्धि नाश से व्यक्ति का सर्वनाश हो जाता है।",
+          "english_translation": "From anger comes delusion, from delusion bewilderment of memory, from bewilderment of memory destruction of intelligence, and from destruction of intelligence one falls down.",
+          "hindi_commentary": "यह श्लोक पिछले श्लोक की शृंखला को आगे बढ़ाता है: क्रोध → भ्रम → स्मृति भ्रम → बुद्धि नाश → पतन। जब व्यक्ति क्रोध में होता है, वह सही निर्णय नहीं ले पाता। इतिहास में अनगिनत महान लोगों का पतन क्रोध के एक क्षण में हुआ है।",
+          "english_commentary": "This continuation of the 'fall chain' is clinically precise. Anger → delusion (sammohah — you can't think clearly) → memory failure (you forget your values, your past, your wisdom) → intelligence is destroyed (you make terrible decisions) → complete ruin. This sequence has destroyed careers, marriages, governments, and civilizations. The Gita's prescription: don't let the chain start (verse 62 — stop contemplating sense objects).",
+          "life_application": "जब अगली बार क्रोध आए — रुकें। क्योंकि इसके बाद की शृंखला आपको नुकसान पहुँचाएगी। दस साँस लें। क्रोध में लिया गया निर्णय अक्सर ज़िंदगी बर्बाद करता है।",
+          "topics": ["anger", "wisdom", "self-control", "discipline", "failure"],
+          "famous": true
+        },
+        {
+          "verse": 66,
+          "slug": "chapter-2-verse-66",
+          "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्॥",
+          "roman": "Naasti buddhi ayuktasya na chaayuktasya bhaavanaa.\nNa chaabhaavatah shaantir ashaantasya kutah sukham.",
+          "word_meanings": [
+            {"word": "अयुक्तस्य", "meaning_hindi": "अनियंत्रित मन वाले का", "meaning_english": "of one without self-control"},
+            {"word": "बुद्धि नास्ति", "meaning_hindi": "बुद्धि नहीं होती", "meaning_english": "there is no wisdom"},
+            {"word": "भावना", "meaning_hindi": "ध्यान, एकाग्रता", "meaning_english": "contemplation, meditation"},
+            {"word": "शान्तिः", "meaning_hindi": "शांति", "meaning_english": "peace"},
+            {"word": "सुखम्", "meaning_hindi": "सुख", "meaning_english": "happiness"}
+          ],
+          "hindi_translation": "जो इंद्रियों को वश में नहीं कर सकता उसे बुद्धि नहीं होती, न ही भावना। जो भावना नहीं करता उसे शांति नहीं मिलती और जो शांत नहीं उसे सुख कैसे मिलेगा?",
+          "english_translation": "One who has no self-control has no wisdom, nor concentration. Without concentration there is no peace, and without peace how can there be happiness?",
+          "hindi_commentary": "इस श्लोक में सुख का रास्ता दिखाया गया है, उल्टे क्रम में: अनियंत्रित इंद्रियाँ → न बुद्धि, न ध्यान → अशांति → कोई सुख नहीं। सीधे क्रम में: इंद्रिय नियंत्रण → बुद्धि → ध्यान की क्षमता → शांति → सुख। यानी वास्तविक सुख की जड़ इंद्रिय नियंत्रण है।",
+          "english_commentary": "This verse gives the complete formula for happiness — in reverse. Without self-control (ayukta) → no wisdom → no meditation/contemplation → no peace → no happiness. Reading it forward: self-control → develops wisdom → enables deep focus → leads to peace → true happiness arises. The entire chain makes the point: happiness cannot be found in external pleasures, only through internal discipline.",
+          "life_application": "हम सोचते हैं: 'अगर यह मिल जाए, तो खुश हो जाऊँगा।' पर गीता कहती है: खुशी शांति से आती है, शांति ध्यान से, ध्यान बुद्धि से, और बुद्धि अनुशासन से। बाहर नहीं, भीतर।",
+          "topics": ["happiness", "peace", "self-control", "wisdom", "discipline"],
+          "famous": false
+        },
+        {
+          "verse": 70,
+          "slug": "chapter-2-verse-70",
+          "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं\nसमुद्रमापः प्रविशन्ति यद्वत्।\nतद्वत्कामा यं प्रविशन्ति सर्वे\nस शान्तिमाप्नोति न कामकामी॥",
+          "roman": "Aapoorayamaanam achalapratistham\nsamudramaapah pravishanti yadvat.\nTadvat kaamaa yam pravishanti sarve\nsa shaantim aapnoti na kaama kaamee.",
+          "word_meanings": [
+            {"word": "आपूर्यमाणम्", "meaning_hindi": "जो भरता ही रहता है", "meaning_english": "always being filled"},
+            {"word": "अचलप्रतिष्ठम्", "meaning_hindi": "अचल, स्थिर", "meaning_english": "unmoved, undisturbed"},
+            {"word": "समुद्रम्", "meaning_hindi": "समुद्र", "meaning_english": "ocean"},
+            {"word": "कामकामी", "meaning_hindi": "इच्छाओं का अनुसरण करने वाला", "meaning_english": "one who desires desires"}
+          ],
+          "hindi_translation": "जैसे सभी नदियाँ समुद्र में समाती हैं पर समुद्र नहीं भरता, उसी प्रकार जो व्यक्ति सारी इच्छाओं को अपने में समा लेता है, स्थिर रहता है — वही शांति पाता है। इच्छाओं के पीछे दौड़ने वाला नहीं।",
+          "english_translation": "Just as rivers flow into the ocean, which is ever being filled but is undisturbed — so too the person who remains undisturbed as all desires flow into him attains peace, not one who strives to fulfill desires.",
+          "hindi_commentary": "यह अद्भुत उपमा है। समुद्र में असंख्य नदियाँ मिलती हैं, पर समुद्र विचलित नहीं होता। इसी प्रकार, ज्ञानी व्यक्ति को जीवन की इच्छाएं, सुख-दुख, आती-जाती हैं — पर वह स्थिर रहता है। वह इच्छाओं को रोकता नहीं, बल्कि उनसे विचलित नहीं होता।",
+          "english_commentary": "One of the most beautiful metaphors in the Gita. The ocean is the ideal: rivers constantly flow in, seasons change, yet the ocean remains completely undisturbed in its depths. The wise person is like this — life's pleasures, sorrows, desires, and disappointments all 'flow in' but cannot disturb his fundamental peace. The person who chases desires (kaama kaami) is like a vessel that becomes agitated by every drop.",
+          "life_application": "हम सोचते हैं: जब यह मिलेगा, तो शांत हो जाऊँगा। पर और इच्छाएं आती रहती हैं। समुद्र बनिए — इच्छाओं को आने दीजिए, पर वे आपको हिला न सकें।",
+          "topics": ["desires", "peace", "equanimity", "contentment", "wisdom"],
+          "famous": true
+        },
+        {
+          "verse": 71,
+          "slug": "chapter-2-verse-71",
+          "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\nनिर्ममो निरहङ्कारः स शान्तिमधिगच्छति॥",
+          "roman": "Vihaaya kaamaan yah sarvaan pumaansh charati nihsprihah.\nNirmamo nirahankaara sa shaantim adhigachchhati.",
+          "word_meanings": [
+            {"word": "विहाय", "meaning_hindi": "छोड़कर", "meaning_english": "giving up"},
+            {"word": "निःस्पृहः", "meaning_hindi": "इच्छारहित", "meaning_english": "free from longing"},
+            {"word": "निर्ममः", "meaning_hindi": "'मेरा' की भावना से रहित", "meaning_english": "without sense of mine"},
+            {"word": "निरहङ्कारः", "meaning_hindi": "अहंकार रहित", "meaning_english": "without ego"}
+          ],
+          "hindi_translation": "जो व्यक्ति सभी कामनाओं को त्यागकर बिना आसक्ति के जीता है, जिसमें 'मेरा' और 'मैं' की भावना नहीं है — वह शांति प्राप्त करता है।",
+          "english_translation": "That man attains peace who, abandoning all desires, moves about without longing, without the sense of 'mine,' and without ego.",
+          "hindi_commentary": "स्थितप्रज्ञ के अंतिम लक्षण: (1) सभी कामनाओं का त्याग (2) निःस्पृहता — किसी चीज़ की लालसा नहीं (3) निर्मम — 'यह मेरा है' की भावना नहीं (4) निरहंकार — 'मैं' की भावना नहीं। ये चारों मिलकर शांति का रास्ता बनाते हैं।",
+          "english_commentary": "The path to peace is described in three steps: abandon desires → release the sense of 'mine' → remove ego. The 'mine' problem is particularly subtle. We suffer not just from wanting things but from our identification with them: 'my money,' 'my reputation,' 'my family.' When we stop identifying with possessions and relationships as extensions of 'me,' suffering dramatically decreases.",
+          "life_application": "किसी एक ऐसी चीज़ के बारे में सोचें जो आप कहते हैं 'मेरी है'। अब कल्पना करें कि वह नहीं है। वह दुख जो आता है — वही 'मम' (ममता) है। इसे धीरे-धीरे छोड़ना साधना है।",
+          "topics": ["ego", "desires", "peace", "detachment", "wisdom"],
+          "famous": false
+        },
+        {
+          "verse": 72,
+          "slug": "chapter-2-verse-72",
+          "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\nस्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति॥",
+          "roman": "Eshaa braahmi sthitih paartha nainaam praapya vimuhyati.\nSthitvaa asyaam anta kaale api brahma nirvaanam richhati.",
+          "word_meanings": [
+            {"word": "ब्राह्मी स्थितिः", "meaning_hindi": "ब्रह्म में स्थित होने की अवस्था", "meaning_english": "transcendental, Brahmic state"},
+            {"word": "न विमुह्यति", "meaning_hindi": "मोहित नहीं होता", "meaning_english": "is not deluded"},
+            {"word": "अन्तकाले", "meaning_hindi": "मृत्यु के समय", "meaning_english": "at the time of death"},
+            {"word": "ब्रह्मनिर्वाणम्", "meaning_hindi": "मोक्ष, ब्रह्म में विलय", "meaning_english": "liberation into Brahman"}
+          ],
+          "hindi_translation": "हे पार्थ, यही ब्राह्मी स्थिति है। इसे प्राप्त करके व्यक्ति मोहित नहीं होता। मृत्यु के समय भी इस स्थिति में रहने वाला ब्रह्म निर्वाण (मोक्ष) प्राप्त करता है।",
+          "english_translation": "This is the transcendental state, O Partha. Having attained it, one is never deluded. Established in this state even at the time of death, one attains liberation into Brahman.",
+          "hindi_commentary": "अध्याय 2 का अंतिम श्लोक। ब्राह्मी स्थिति वह अवस्था है जो पूरे अध्याय में वर्णित की गई है — आत्मज्ञान, समत्व, निष्काम कर्म, इंद्रिय नियंत्रण। जो इस स्थिति को पाता है वह भ्रम में नहीं पड़ता। और जो अंत समय में भी इसमें स्थित है — वह मोक्ष पाता है।",
+          "english_commentary": "The final verse of Chapter 2 brings it full circle. The 'Brahmic state' is the culmination of everything taught in this chapter: the wisdom about the soul, the practice of equanimity, selfless action, sense control, and the state of the Sthitaprajna. The promise: once genuinely established in this state, delusion cannot return. And the ultimate promise: liberation, even at death.",
+          "life_application": "यह अध्याय हमें पूरी यात्रा दिखाता है: शोक से ज्ञान तक, ज्ञान से स्थिरता तक, स्थिरता से शांति तक, और शांति से मुक्ति तक। यह एक जीवन की यात्रा है।",
+          "topics": ["liberation", "wisdom", "soul", "final teaching"],
+          "famous": false
+        },
+        {
+          "verse": 3,
+          "slug": "chapter-2-verse-3",
+          "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
+          "roman": "Klaibyam maa sma gamah Paartha naitat tvayy upapadyate.\nKshudram hridaya daurbalyam tyaktvottishtha Parantapa.",
+          "word_meanings": [
+            {"word": "क्लैब्यम्", "meaning_hindi": "कायरता, नपुंसकता", "meaning_english": "unmanliness, cowardice"},
+            {"word": "मा गमः", "meaning_hindi": "मत जाओ", "meaning_english": "do not yield to"},
+            {"word": "क्षुद्रम्", "meaning_hindi": "छोटा, तुच्छ", "meaning_english": "petty, small"},
+            {"word": "हृदयदौर्बल्यम्", "meaning_hindi": "हृदय की कमजोरी", "meaning_english": "weakness of heart"},
+            {"word": "उत्तिष्ठ", "meaning_hindi": "उठो", "meaning_english": "arise, stand up"}
+          ],
+          "hindi_translation": "हे पार्थ, कायरता को मत अपनाओ — यह तुम्हें शोभा नहीं देती। इस तुच्छ हृदय की कमजोरी को छोड़कर उठो, हे परन्तप।",
+          "english_translation": "O Partha, do not yield to unmanliness — it does not become you. Give up this petty weakness of heart and arise, O conqueror of enemies.",
+          "hindi_commentary": "यह कृष्ण का पहला कड़ा जवाब है। अर्जुन की समस्या केवल दार्शनिक नहीं थी — वह कायर हो रहा था। कृष्ण उसे सीधे कहते हैं: यह कमजोरी तुम्हें नहीं चाहिए। उठो। यह भी एक गहरी शिक्षा है: कभी-कभी सबसे अच्छी सलाह यही होती है — बस उठो।",
+          "english_commentary": "This is Krishna's first direct rebuke. Before the philosophical discourse begins, he addresses the real issue: Arjuna's paralysis is not wisdom, it is weakness dressed as wisdom. The word 'klaibyam' is deliberately sharp — it means unmanliness, loss of nerve. Sometimes the most loving thing a guide can say is: stop intellectualizing your fear and stand up.",
+          "life_application": "जब आप किसी कठिन कर्तव्य से भाग रहे हों और उसे तर्क से सही ठहरा रहे हों — यह श्लोक याद करें। कभी-कभी उत्तर सरल है: उठो।",
+          "topics": ["courage", "duty", "fear", "action"],
+          "famous": false
+        },
+        {
+          "verse": 7,
+          "slug": "chapter-2-verse-7",
+          "sanskrit": "कार्पण्यदोषोपहतस्वभावः\nपृच्छामि त्वां धर्मसम्मूढचेताः।\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्॥",
+          "roman": "Kaarpaanya doshopahata svabhaavah\nPrichhami tvaam dharma sammuddha chetaah.\nYac chhreyah syaan nishchitam broohi tan me\nshishyas teham shaadhi maam tvam prapannam.",
+          "word_meanings": [
+            {"word": "कार्पण्यदोष", "meaning_hindi": "कायरता का दोष", "meaning_english": "tainted by cowardice"},
+            {"word": "धर्मसम्मूढचेताः", "meaning_hindi": "धर्म के बारे में भ्रमित मन", "meaning_english": "confused in mind about duty"},
+            {"word": "श्रेयः", "meaning_hindi": "कल्याणकर मार्ग", "meaning_english": "what is beneficial, the good"},
+            {"word": "शिष्यः", "meaning_hindi": "शिष्य", "meaning_english": "disciple"},
+            {"word": "प्रपन्नम्", "meaning_hindi": "शरण में आया हुआ", "meaning_english": "surrendered to you"}
+          ],
+          "hindi_translation": "कायरता के दोष से मेरा स्वभाव नष्ट हो गया है, मेरा मन धर्म के बारे में भ्रमित है। मुझे बताओ जो निश्चित रूप से मेरे लिए श्रेयस्कर हो। मैं आपका शिष्य हूँ। मुझे शिक्षा दें — मैं आपकी शरण में हूँ।",
+          "english_translation": "My nature has been overcome by the taint of cowardice. My mind is confused about what is right. I ask you what is decidedly good for me. I am your disciple — please instruct me. I have surrendered to you.",
+          "hindi_commentary": "यह गीता का वह क्षण है जब गीता वास्तव में शुरू होती है। अर्जुन ने समर्पण कर दिया — 'शिष्यस्तेऽहम्' — मैं आपका शिष्य हूँ। यही समर्पण ज्ञान का द्वार खोलता है। जब तक हम 'मैं जानता हूँ' कहते हैं, गुरु कुछ नहीं दे सकता। जब कहते हैं 'मुझे नहीं पता, सिखाइए' — तब शिक्षा शुरू होती है।",
+          "english_commentary": "This is the pivot of the Gita — the moment Arjuna surrenders and says 'I am your student, teach me.' Until this moment, Arjuna was arguing, justifying, and explaining. The transformation from student to disciple requires this: admitting you don't know, and asking for guidance. This is the model for all real learning and all genuine spiritual growth.",
+          "life_application": "जब जीवन में ऐसा क्षण आए जब आप नहीं जानते क्या करें — किसी गुरु, किसी मित्र, किसी परंपरा के सामने झुकना और कहना 'मुझे नहीं पता, मुझे सिखाइए' — यही समर्पण है। यह कमजोरी नहीं, ताकत है।",
+          "topics": ["surrender", "guru", "wisdom", "duty", "learning"],
+          "famous": false
+        },
+        {
+          "verse": 13,
+          "slug": "chapter-2-verse-13",
+          "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति॥",
+          "roman": "Dehino asmin yathaa dehe koumaaram yauvanam jaraa.\nTathaa dehaantara praaption dheeras tatra na muhyati.",
+          "word_meanings": [
+            {"word": "देहिनः", "meaning_hindi": "आत्मा का", "meaning_english": "of the soul"},
+            {"word": "कौमारम्", "meaning_hindi": "बचपन", "meaning_english": "childhood"},
+            {"word": "यौवनम्", "meaning_hindi": "युवावस्था", "meaning_english": "youth"},
+            {"word": "जरा", "meaning_hindi": "वृद्धावस्था", "meaning_english": "old age"},
+            {"word": "देहान्तरप्राप्ति", "meaning_hindi": "दूसरा शरीर पाना", "meaning_english": "transmigration to another body"},
+            {"word": "धीरः", "meaning_hindi": "धैर्यवान, ज्ञानी", "meaning_english": "the wise, the brave"}
+          ],
+          "hindi_translation": "जैसे आत्मा इस शरीर में बचपन, युवावस्था और वृद्धावस्था से गुज़रती है, वैसे ही मृत्यु पर दूसरा शरीर पाती है। एक समझदार व्यक्ति इससे मोहित नहीं होता।",
+          "english_translation": "Just as the soul passes in this body from childhood to youth to old age, so similarly at the time of death the soul passes to another body. The wise are not deluded by this.",
+          "hindi_commentary": "यह श्लोक पुनर्जन्म को बड़े सरल तर्क से समझाता है। हम सभी जानते हैं कि हमारा शरीर बदलता है — बचपन से जवानी, जवानी से बुढ़ापा — पर 'हम' वही रहते हैं। वह 'हम' — वह चेतना — शरीर बदलने पर भी नहीं बदलती। इसीलिए मृत्यु भी केवल एक और परिवर्तन है।",
+          "english_commentary": "This verse gives the simplest argument for reincarnation through direct experience. You have already undergone 'multiple lifetimes' in this one life: the child you were at 5 is completely different in body from the adult you are now. Yet you consider yourself the same person. What continues through these changes? Consciousness — the Atman. At death, this same continuity simply extends to a new body.",
+          "life_application": "आप वह व्यक्ति नहीं हैं जो 10 साल पहले थे — शरीर बदल गया, विचार बदले, पर 'आप' वही हैं। यही आत्मा है। इसे समझने से मृत्यु का भय कम होता है।",
+          "topics": ["reincarnation", "soul", "death", "wisdom"],
+          "famous": false
+        },
+        {
+          "verse": 45,
+          "slug": "chapter-2-verse-45",
+          "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्॥",
+          "roman": "Traigunya vishayaa vedaa nistraigunya bhavaArjuna.\nNirdvandvo nitya sattvasthao niryogakshema aatmavaan.",
+          "word_meanings": [
+            {"word": "त्रैगुण्य", "meaning_hindi": "तीन गुणों से संबंधित", "meaning_english": "of the three qualities (gunas)"},
+            {"word": "निस्त्रैगुण्यः", "meaning_hindi": "तीन गुणों से परे", "meaning_english": "beyond the three qualities"},
+            {"word": "निर्द्वन्द्वः", "meaning_hindi": "द्वंद्वों से मुक्त", "meaning_english": "free from duality"},
+            {"word": "नित्यसत्त्वस्थः", "meaning_hindi": "हमेशा सत्व में स्थित", "meaning_english": "ever abiding in purity"},
+            {"word": "आत्मवान्", "meaning_hindi": "आत्मज्ञानी", "meaning_english": "self-possessed"}
+          ],
+          "hindi_translation": "हे अर्जुन, वेद तीन गुणों के विषयों से संबंधित हैं। तुम तीन गुणों से परे हो जाओ। द्वंद्वों से मुक्त, नित्य सत्व में स्थित, योग-क्षेम की चिंता से परे, आत्मज्ञानी बनो।",
+          "english_translation": "The Vedas are concerned with the three modes of material nature, O Arjuna. Rise above these three modes. Be free from duality, ever situated in the mode of goodness, free from thoughts of gain and safety, and be established in the Self.",
+          "hindi_commentary": "यह एक बहुत ऊँची शिक्षा है। कृष्ण कहते हैं: वेद तीन गुणों — सत्व, रज, तम — के बारे में बताते हैं। पर तुम्हें इन तीनों से परे जाना है। द्वंद्व — जैसे सुख-दुख, मान-अपमान — से परे। यही निर्गुण ब्रह्म की स्थिति है।",
+          "english_commentary": "A remarkable verse where Krishna goes beyond the Vedas themselves. The Vedas deal with the three gunas — sattva, rajas, and tamas. But the highest state is nistraigunya — beyond all three. This is not a rejection of the Vedas but an invitation to transcend their prescriptions and reach the direct experience of the Self. The four qualities to develop: freedom from duality, steady purity, no anxiety about gain, self-knowledge.",
+          "life_application": "हम हमेशा किसी न किसी द्वंद्व में फँसे रहते हैं — अच्छा/बुरा, मेरा/तेरा, सफलता/विफलता। इन द्वंद्वों से ऊपर उठने का अभ्यास करना ही आध्यात्मिक प्रगति है।",
+          "topics": ["spiritual progress", "gunas", "equanimity", "soul", "liberation"],
+          "famous": false
+        },
+        {
+          "verse": 16,
+          "slug": "chapter-2-verse-16",
+          "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः।\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः॥",
+          "roman": "Naasato vidyate bhaavo naabhaavo vidyate satah.\nUbhayorapi drishtoantastu anayos tattvadarshabhih.",
+          "word_meanings": [
+            {"word": "असतः", "meaning_hindi": "असत्य, नाशवान का", "meaning_english": "of the unreal"},
+            {"word": "भावः न विद्यते", "meaning_hindi": "अस्तित्व नहीं है", "meaning_english": "there is no existence"},
+            {"word": "सतः अभावः", "meaning_hindi": "सत्य का अभाव नहीं", "meaning_english": "there is no non-existence for the real"},
+            {"word": "तत्त्वदर्शिभिः", "meaning_hindi": "तत्व को देखने वालों ने", "meaning_english": "by the seers of truth"}
+          ],
+          "hindi_translation": "असत्य का अस्तित्व नहीं है और सत्य का कभी अभाव नहीं होता। इन दोनों का सच तत्त्वदर्शियों ने देख लिया है।",
+          "english_translation": "The unreal has no existence, and the real never ceases to exist. The truth about both has been seen by the seers of truth.",
+          "hindi_commentary": "यह वेदान्त दर्शन का मूल सूत्र है। जो बदलता है — शरीर, संसार — वह असत्य है क्योंकि उसका अस्तित्व स्थायी नहीं। जो नहीं बदलता — आत्मा, ब्रह्म — वह सत्य है क्योंकि वह कभी नष्ट नहीं होता। यह ज्ञान भ्रम को दूर करता है।",
+          "english_commentary": "This is the philosophical foundation of the entire Gita's metaphysics. Sat (real) = that which always exists, never changes — the Atman, Brahman. Asat (unreal) = that which appears to exist but is impermanent — the body, the world, circumstances. The practical implication: don't grieve over the loss of what was always temporary. Invest in what is eternal.",
+          "life_application": "जो चीजें हम सबसे ज्यादा पकड़ते हैं — पैसा, पद, रिश्ते — ये सब 'असत' हैं — बदलने वाले। जो बदलता नहीं — हमारी चेतना, हमारा बोध — वह 'सत' है। सत्य में निवेश करें।",
+          "topics": ["reality", "soul", "wisdom", "philosophy", "death"],
+          "famous": false
+        },
+        {
+          "verse": 59,
+          "slug": "chapter-2-verse-59",
+          "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते॥",
+          "roman": "Vishayaa vinivartante niraahaarasya dehinah.\nRasavarjam raso apyasya param drishtva nivartate.",
+          "word_meanings": [
+            {"word": "विषयाः विनिवर्तन्ते", "meaning_hindi": "इंद्रिय विषय दूर होते हैं", "meaning_english": "sense objects turn away"},
+            {"word": "निराहारस्य", "meaning_hindi": "जो उनका आहार नहीं करता", "meaning_english": "of one who abstains"},
+            {"word": "रसवर्जम्", "meaning_hindi": "आसक्ति (रस) को छोड़कर नहीं", "meaning_english": "except the taste for them"},
+            {"word": "परम् दृष्ट्वा", "meaning_hindi": "परमात्मा को देखकर", "meaning_english": "on seeing the Supreme"}
+          ],
+          "hindi_translation": "जो व्यक्ति इंद्रिय-भोगों से परहेज करता है उसके लिए विषय दूर तो होते हैं, पर उनका स्वाद (आसक्ति) नहीं जाता। परंतु जो परमात्मा को देख लेता है उसका यह स्वाद भी चला जाता है।",
+          "english_translation": "Though the embodied soul may be restricted from sense enjoyment, the taste for sense objects remains. But ceasing even this taste, the higher taste is found by seeing the Supreme.",
+          "hindi_commentary": "यह श्लोक आध्यात्मिक साधना की एक गहरी समस्या बताता है: केवल विषयों से परहेज़ करना पर्याप्त नहीं। आसक्ति मन में बनी रहती है। समाधान है 'उच्चतर रस' — ईश्वर का दर्शन। जब कोई व्यक्ति ध्यान में ऊँचे अनुभव को जान लेता है, तब स्वतः ही निम्न आकर्षण कम होने लगते हैं।",
+          "english_commentary": "This verse addresses the limitation of willpower-based spiritual practice. Forcing yourself to abstain from sense pleasures works only temporarily — the 'rasa' (taste, craving) remains. The complete solution is not suppression but replacement: experiencing a higher taste (param drishtva). When one tastes meditation, deep prayer, or genuine self-knowledge — the lower pleasures lose their pull naturally.",
+          "life_application": "किसी बुरी आदत को छोड़ना मुश्किल है सिर्फ इच्छाशक्ति से। इसके बजाय, अच्छी आदतें जोड़ें — ध्यान, भजन, सेवा। जब उच्चतर रस मिलता है, निम्न आकर्षण अपने आप कम होता है।",
+          "topics": ["spiritual practice", "desires", "sense control", "meditation", "discipline"],
+          "famous": false
+        },
+        {
+          "verse": 64,
+          "slug": "chapter-2-verse-64",
+          "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति॥",
+          "roman": "Raaga dvesha viyuktaistu vishayaan indriyaish charan.\nAatma vashyair vidheyaatmaa prasaadam adhigachchhati.",
+          "word_meanings": [
+            {"word": "रागद्वेषवियुक्तैः", "meaning_hindi": "राग और द्वेष से रहित", "meaning_english": "free from attachment and aversion"},
+            {"word": "इन्द्रियैः चरन्", "meaning_hindi": "इंद्रियों से विचरते हुए", "meaning_english": "moving among sense objects"},
+            {"word": "आत्मवश्यैः", "meaning_hindi": "अपने वश में", "meaning_english": "under self-control"},
+            {"word": "प्रसादम्", "meaning_hindi": "प्रसन्नता, शांति", "meaning_english": "the grace, clarity, serenity"}
+          ],
+          "hindi_translation": "परंतु जो व्यक्ति राग और द्वेष से मुक्त होकर, अपनी इंद्रियों को वश में रखकर, विषयों में विचरता है — वह प्रसन्नता (प्रसाद) प्राप्त करता है।",
+          "english_translation": "But one who controls the mind, and who moves among sense objects with senses free from attachment and aversion — he attains tranquility (prasada).",
+          "hindi_commentary": "यह पिछले श्लोकों का सकारात्मक पक्ष है। क्रोध, पतन की शृंखला के बाद, कृष्ण यहाँ उत्थान का मार्ग दिखाते हैं। आध्यात्मिकता का अर्थ संसार छोड़ना नहीं — बल्कि संसार में रहते हुए राग और द्वेष से मुक्त रहना। यही प्रसाद है — एक अंदरूनी प्रकाश और शांति।",
+          "english_commentary": "After describing the chain of downfall (62-63), Krishna here shows the path upward. The solution is not renunciation of the world but engagement without attachment or aversion — moving among sense objects freely, without either craving (raga) or repulsion (dvesha). 'Prasada' is a beautiful word: it means clarity, serenity, grace — the natural state when the mind is undisturbed.",
+          "life_application": "आप दुनिया में रहें, काम करें, रिश्ते निभाएँ — पर न किसी चीज़ से अत्यधिक लगाव रखें, न अत्यधिक घृणा। यही मध्यम मार्ग है, यही प्रसाद का द्वार है।",
+          "topics": ["equanimity", "attachment", "aversion", "peace", "wisdom"],
+          "famous": false
+        }
+      ]
+    }
+  ]
+}

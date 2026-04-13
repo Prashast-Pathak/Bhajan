@@ -1,0 +1,838 @@
+[
+  {
+    "id": 1,
+    "slug": "isha-upanishad",
+    "name_english": "Isha Upanishad",
+    "name_hindi": "ईशावास्योपनिषद",
+    "name_sanskrit": "ईशावास्योपनिषद्",
+    "veda": "Shukla Yajurveda",
+    "total_verses": 18,
+    "sections": [
+      { "section": 1, "name": "Complete Text", "verse_range": "1–18" }
+    ],
+    "theme_english": "The Divine pervades all. Renounce attachment; act without craving.",
+    "theme_hindi": "ईश्वर सर्वव्यापी है। त्याग के साथ कर्म करो।",
+    "intro_english": "The Isha Upanishad, one of the shortest yet most profound of all Upanishads, opens the Shukla Yajurveda. In just 18 verses, it reconciles the tension between action and renunciation, the individual and the cosmos. Its opening verse — 'All this is pervaded by the Lord' — sets the tone for a complete philosophy of non-attachment and universal consciousness.",
+    "intro_hindi": "ईशावास्योपनिषद्, शुक्ल यजुर्वेद का अंतिम अध्याय है। मात्र 18 श्लोकों में यह उपनिषद् कर्म और त्याग के बीच के विरोधाभास को सुलझाती है। इसका पहला श्लोक — 'यह सब ईश्वर से व्याप्त है' — पूरे उपनिषद् का सार है।",
+    "related_gita_chapters": [3, 4, 18],
+    "verses": [
+      {
+        "verse_number": 1,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥",
+        "roman": "Ishavaasyam Idam Sarvam Yatkincha Jagatyam Jagat.\nTena Tyaktena Bhunjitha Ma Gridhah Kasya Svid Dhanam.",
+        "hindi": "यह सम्पूर्ण जगत जो कुछ भी है, वह सब ईश्वर से व्याप्त है। उस त्याग की भावना से भोग करो। किसी के धन का लालच मत करो।",
+        "english": "All this — whatever exists in this universe — is pervaded by the Lord. Enjoy with renunciation. Do not covet anyone's wealth.",
+        "word_meanings": [
+          { "word": "ईशावास्यम्", "meaning": "pervaded by the Lord (Isha = Lord, Vaasya = to be inhabited)" },
+          { "word": "इदं सर्वम्", "meaning": "all this (the entire manifest universe)" },
+          { "word": "यत्किञ्च", "meaning": "whatever there is" },
+          { "word": "जगत्यां जगत्", "meaning": "in this world, all that moves" },
+          { "word": "तेन त्यक्तेन", "meaning": "through renunciation of that (with that spirit of giving up)" },
+          { "word": "भुञ्जीथा", "meaning": "enjoy, partake" },
+          { "word": "मा गृधः", "meaning": "do not covet, do not be greedy" },
+          { "word": "कस्यस्विद् धनम्", "meaning": "whose is the wealth? (it belongs to no one)" }
+        ],
+        "commentary": "This opening verse contains the entire philosophy of the Isha Upanishad. The Lord (Isha) pervades and inhabits every atom of creation — nothing exists outside of Him. Since the Divine is present in everything, we may use and enjoy the world, but only with a spirit of detachment and renunciation. The question 'whose is the wealth?' is rhetorical — ultimately nothing belongs to anyone, for all belongs to the Lord.",
+        "cross_links": { "gita_verse": 3, "shloka_slug": null, "wisdom_topic": "renunciation" }
+      },
+      {
+        "verse_number": 2,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः।\nएवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे॥",
+        "roman": "Kurvann Eveha Karmaani Jijivishech Chatam Samaah.\nEvam Tvayi Naanyathetosti Na Karma Lipyate Nare.",
+        "hindi": "इस प्रकार कर्म करते हुए ही सौ वर्ष जीने की इच्छा करो। तुम्हारे लिए इसके अतिरिक्त कोई अन्य मार्ग नहीं है जिससे कर्म मनुष्य में न लिपटे।",
+        "english": "Wishing to live a hundred years, one should perform actions here. Thus, and in no other way, does karma not bind the person.",
+        "word_meanings": [
+          { "word": "कुर्वन्", "meaning": "while doing, while performing" },
+          { "word": "एव", "meaning": "indeed, only" },
+          { "word": "कर्माणि", "meaning": "actions, deeds" },
+          { "word": "जिजीविषेत्", "meaning": "should wish to live" },
+          { "word": "शतं समाः", "meaning": "a hundred years" },
+          { "word": "न कर्म लिप्यते", "meaning": "karma does not stick/bind" },
+          { "word": "नरे", "meaning": "to the person, to a human being" }
+        ],
+        "commentary": "This verse addresses the householder who may wonder: if I must renounce, should I give up action entirely? The Upanishad says no — continue to act, live your full life, but act with the spirit of non-attachment expressed in verse 1. Action performed as an offering to the Divine, without selfish craving, does not create binding karma.",
+        "cross_links": { "gita_verse": 3, "shloka_slug": null, "wisdom_topic": "karma" }
+      },
+      {
+        "verse_number": 3,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "असुर्या नाम ते लोका अन्धेन तमसावृताः।\nतांस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः॥",
+        "roman": "Asuryaa Naama Te Lokaa Andhena Tamasaavrataah.\nTaamste Pretyaabhigachchhanti Ye Ke Chaatmahano Janaah.",
+        "hindi": "वे लोक जो असुर कहलाते हैं, अज्ञान के अंधेरे से ढके हुए हैं। जो आत्मा का हनन करते हैं, वे मरने के बाद उन लोकों को जाते हैं।",
+        "english": "Those worlds called the realm of the demons are covered in blinding darkness. Those who slay the Self go to them after death.",
+        "word_meanings": [
+          { "word": "असुर्याः", "meaning": "belonging to the asuras (demons), sunless worlds" },
+          { "word": "अन्धेन तमसा", "meaning": "with blinding darkness, with profound ignorance" },
+          { "word": "आत्महनः", "meaning": "slayers of the Self (those who deny or ignore the Atman)" }
+        ],
+        "commentary": "Slaying the Self does not mean physical suicide but spiritual self-destruction — living as if the Atman does not exist, identifying entirely with the body-mind, pursuing only material ends. Such a person, after death, falls into realms of profound ignorance and suffering.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 4,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अनेजदेकं मनसो जवीयो नैनद्देवा आप्नुवन्पूर्वमर्षत्।\nतद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति॥",
+        "roman": "Anejad Ekam Manaso Javiyo Nainad Deva Aapnuvan Poorvam Arshat.\nTad Dhaavato Anyaan Atyeti Tishthat Tasmin Napo Maatarishvaa Dadhaati.",
+        "hindi": "वह (आत्मा) एक है, अचल है, मन से भी तीव्र है। देवता भी उसे पा नहीं सके, वह तो पहले से ही आगे है। वह स्थिर रहते हुए भी दौड़ने वालों से आगे निकल जाता है। उसमें ही वायु सब प्राणियों की गति को धारण करता है।",
+        "english": "It moves not, yet is swifter than the mind. The gods could not reach it — it was there before them. Standing still, it outpaces those who run. In it, the wind sustains the activities of all beings.",
+        "word_meanings": [
+          { "word": "अनेजत्", "meaning": "not moving, motionless" },
+          { "word": "एकम्", "meaning": "one, alone, singular" },
+          { "word": "मनसो जवीयः", "meaning": "swifter than the mind" },
+          { "word": "मातरिश्वा", "meaning": "wind or breath (the cosmic life force)" }
+        ],
+        "commentary": "Here begins the description of the Atman/Brahman in paradoxical terms that transcend ordinary logic. It does not move, yet is faster than the fastest. The mind, which seems instant, cannot reach It because the Atman is the very ground of the mind's existence. It is simultaneously the unmoved mover.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 5,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "तदेजति तन्नैजति तद्दूरे तद्वन्तिके।\nतदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः॥",
+        "roman": "Tadejati Tannai Jati Taddoore Tadvantike.\nTadantarasya Sarvasya Tadu Sarvasya Asya Baahyatah.",
+        "hindi": "वह चलता है और वह नहीं चलता। वह दूर है और वह पास भी है। वह इस सब के अंदर है और वह इस सब के बाहर भी है।",
+        "english": "It moves. It moves not. It is far. It is near. It is within all this. It is outside all this.",
+        "word_meanings": [
+          { "word": "तत् एजति", "meaning": "That moves (It is the source of all movement)" },
+          { "word": "तत् न एजति", "meaning": "That moves not (It is itself immovable)" },
+          { "word": "तत् दूरे", "meaning": "That is far (beyond all ordinary reach)" },
+          { "word": "तत् अन्तिके", "meaning": "That is near (closer than our own breath)" },
+          { "word": "तत् अन्तरस्य", "meaning": "That within all this" },
+          { "word": "तत् बाह्यतः", "meaning": "That outside all this" }
+        ],
+        "commentary": "One of the most beautiful and paradoxical verses in Sanskrit literature. Brahman simultaneously transcends and pervades creation. It moves through all things as their inner life, yet as the absolute, it does not move. It seems distant to the ignorant, yet the wise discover it is nearer than the nearest — it is one's own Self.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 6,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति।\nसर्वभूतेषु चात्मानं ततो न विजुगुप्सते॥",
+        "roman": "Yastu Sarvaani Bhootaanyaatmanyevaa Nupashyati.\nSarvabhootesu Chaatmaanam Tato Na Vijugupsate.",
+        "hindi": "जो समस्त प्राणियों को अपनी आत्मा में और अपनी आत्मा को समस्त प्राणियों में देखता है, वह फिर किसी से घृणा नहीं करता।",
+        "english": "He who sees all beings in his own Self and his own Self in all beings — he feels no hatred toward anyone.",
+        "word_meanings": [
+          { "word": "सर्वाणि भूतानि", "meaning": "all beings, all creatures" },
+          { "word": "आत्मनि", "meaning": "in the Self" },
+          { "word": "अनुपश्यति", "meaning": "sees, perceives" },
+          { "word": "न विजुगुप्सते", "meaning": "feels no aversion, feels no hatred" }
+        ],
+        "commentary": "The fruit of recognizing the Divine in all things is freedom from hatred. When you see the same Atman in the beggar and the king, in the animal and the sage, in yourself and your enemy — the psychological basis for hatred dissolves. This is the practical ethics of non-dualism.",
+        "cross_links": { "gita_verse": 6, "shloka_slug": null, "wisdom_topic": "unity" }
+      },
+      {
+        "verse_number": 7,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः।\nतत्र को मोहः कः शोकः एकत्वमनुपश्यतः॥",
+        "roman": "Yasmin Sarvaani Bhootaanyaatmaivaaabhood Vijaanatah.\nTatra Ko Mohah Kah Shokah Ekatvam Anupashyatah.",
+        "hindi": "जब ज्ञानी के लिए सभी प्राणी आत्मा ही हो जाते हैं, तब उस एकत्व को देखने वाले को क्या मोह और क्या शोक?",
+        "english": "When, for the knower, all beings have become the very Self — what delusion, what grief can there be for one who sees unity?",
+        "word_meanings": [
+          { "word": "विजानतः", "meaning": "for the knower, for the one who truly knows" },
+          { "word": "को मोहः", "meaning": "what delusion?" },
+          { "word": "कः शोकः", "meaning": "what grief?" },
+          { "word": "एकत्वम्", "meaning": "oneness, unity, non-duality" }
+        ],
+        "commentary": "This verse echoes the Gita's promise of liberation. Grief and delusion arise from the mistaken belief in separateness — 'I' am here, others are separate from me. When one truly perceives the unity of all existence in the Atman, the psychological grounds for suffering collapse. This is moksha — liberation — experienced here and now.",
+        "cross_links": { "gita_verse": 2, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 8,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "स पर्यगाच्छुक्रमकायमव्रणम्\nअस्नाविरं शुद्धमपापविद्धम्।\nकविर्मनीषी परिभूः स्वयम्भूः\nयाथातथ्यतोऽर्थान् व्यदधाच्छाश्वतीभ्यः समाभ्यः॥",
+        "roman": "Sa Paryagaach Chukram Akaayam Avranam Asnaviram Shuddham Apaapaviddham.\nKavir Manishi Paribhuh Svayambhuh Yaathaatathyato Arthaan Vyadhaachchhaashvateebhyah Samaabhyah.",
+        "hindi": "वह (ब्रह्म) सर्वव्यापी है, शुद्ध है, शरीररहित है, व्रणरहित है, नाड़ीरहित है, पवित्र है, पापरहित है। वह सर्वज्ञ, मनीषी, सर्वोपरि, स्वयंभू है — उसने युगों-युगों के लिए सबको यथायोग्य सब कुछ दिया है।",
+        "english": "That (Brahman) is resplendent, bodiless, without wounds, without sinews, pure, untouched by evil — the all-knowing poet, the great thinker, the all-pervading, the self-existent. He has allotted to eternal years their proper duties.",
+        "word_meanings": [
+          { "word": "शुक्रम्", "meaning": "resplendent, pure, luminous" },
+          { "word": "अकायम्", "meaning": "bodiless, without physical form" },
+          { "word": "अव्रणम्", "meaning": "without wounds or scars" },
+          { "word": "कविः", "meaning": "the omniscient poet, the seer" },
+          { "word": "स्वयम्भूः", "meaning": "self-existent, self-born, uncaused" }
+        ],
+        "commentary": "This is the positive description of Brahman after the paradoxical negations of verses 4–5. Brahman is luminous consciousness — not a physical body that can be hurt or worn out, free from all impurity and karma. It is the cosmic intelligence that sustains the order of the universe across all time.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 9,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अन्धं तमः प्रविशन्ति येऽविद्यामुपासते।\nततो भूय इव ते तमो य उ विद्यायां रताः॥",
+        "roman": "Andham Tamah Pravishanti Ye Avidyaam Upaasate.\nTato Bhuya Iva Te Tamo Ya U Vidyaayaam Rataah.",
+        "hindi": "जो अविद्या की उपासना करते हैं, वे अंधेरे में प्रवेश करते हैं; और जो केवल विद्या में रत हैं, वे उससे भी घोर अंधेरे में जाते हैं।",
+        "english": "Into blind darkness enter those who worship ignorance. Into even greater darkness enter those who are devoted only to knowledge.",
+        "word_meanings": [
+          { "word": "अन्धं तमः", "meaning": "blind darkness, profound ignorance" },
+          { "word": "अविद्याम्", "meaning": "ignorance, nescience, the unreal" },
+          { "word": "विद्यायाम् रताः", "meaning": "devoted to knowledge alone (here, ritual/intellectual knowledge)" }
+        ],
+        "commentary": "This paradoxical verse distinguishes between two kinds of error. Pure materialism (Avidya — ignoring the spiritual dimension) leads into darkness. But the opposite extreme — purely abstract speculation about Brahman without engaging with the world — leads into even greater darkness. The Upanishad advocates integration.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 10,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अन्यदेवाहुर्विद्यया अन्यदाहुरविद्यया।\nइति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे॥",
+        "roman": "Anyadevaa Hurvidyayaa Anyadaahuravid Yayaa.\nIti Shushruma Dheera Naam Ye Nastadvichacha Kshire.",
+        "hindi": "विद्या से एक और फल कहा जाता है, अविद्या से और ही फल कहा जाता है — ऐसा हमने धीर (ज्ञानी) पुरुषों से सुना है जिन्होंने हमें यह समझाया।",
+        "english": "Different, they say, is the fruit from knowledge. Different, they say, is the fruit from ignorance. Thus we have heard from the wise who have explained this to us.",
+        "word_meanings": [
+          { "word": "अन्यत्", "meaning": "different, distinct result" },
+          { "word": "धीराणाम्", "meaning": "of the wise, of the resolute ones" },
+          { "word": "विचचक्षिरे", "meaning": "who explained, who taught, who revealed" }
+        ],
+        "commentary": "The teacher cites the authority of the wise. Both Vidya (higher knowledge of Brahman) and Avidya (knowledge of the phenomenal world and ritual action) have their place and their fruits — but they are different. The mistake is in pursuing only one and ignoring the other.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 11,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "विद्यां चाविद्यां च यस्तद्वेदोभयं सह।\nअविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते॥",
+        "roman": "Vidyaam Chaavid Yaam Cha Yastadvedobhayam Saha.\nAvidyayaa Mrityum Teertvaa Vidyayaa Amritam Ashnute.",
+        "hindi": "जो विद्या और अविद्या दोनों को एक साथ जानता है, वह अविद्या के द्वारा मृत्यु को पार करके, विद्या के द्वारा अमृत को प्राप्त करता है।",
+        "english": "He who knows both knowledge and ignorance together — through ignorance transcending death, through knowledge attaining immortality.",
+        "word_meanings": [
+          { "word": "विद्यां च अविद्यां च", "meaning": "both knowledge and ignorance (together, simultaneously)" },
+          { "word": "मृत्युं तीर्त्वा", "meaning": "having crossed over death, having transcended mortality" },
+          { "word": "अमृतम् अश्नुते", "meaning": "attains immortality, tastes the deathless" }
+        ],
+        "commentary": "The synthesis: one must integrate both dimensions. Through action in the world (Avidya's domain), one overcomes the fear of death and fulfills one's duties. Through knowledge of Brahman (Vidya), one attains liberation and immortality. Neither alone is sufficient — this is the Isha Upanishad's great contribution.",
+        "cross_links": { "gita_verse": 4, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 12,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अन्धं तमः प्रविशन्ति येऽसम्भूतिमुपासते।\nततो भूय इव ते तमो य उ सम्भूत्यां रताः॥",
+        "roman": "Andham Tamah Pravishanti Ye Asambhutim Upaasate.\nTato Bhuya Iva Te Tamo Ya U Sambhootyaam Rataah.",
+        "hindi": "जो असम्भूति (अव्यक्त) की उपासना करते हैं वे अंधेरे में प्रवेश करते हैं; जो केवल सम्भूति (व्यक्त) में रत हैं वे उससे भी अधिक अंधेरे में जाते हैं।",
+        "english": "Into blind darkness enter those who worship the unmanifest. Into even greater darkness enter those devoted only to the manifest.",
+        "word_meanings": [
+          { "word": "असम्भूतिम्", "meaning": "the unmanifest, the uncreated, the undifferentiated" },
+          { "word": "सम्भूत्याम्", "meaning": "in the manifest, in the created, in the differentiated" }
+        ],
+        "commentary": "This verse mirrors verse 9, now applying the same principle to the cosmic level — the unmanifest Brahman versus the manifest world. Exclusive devotion to either alone leads to spiritual error. The complete vision holds both together.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 13,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अन्यदेवाहुः सम्भवादन्यदाहुरसम्भवात्।\nइति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे॥",
+        "roman": "Anyadevaa Huh Sambhavaa Danyadaahurasambhavaat.\nIti Shushruma Dheera Naam Ye Nastadvichacha Kshire.",
+        "hindi": "सम्भूति से अलग है और असम्भूति से अलग है — ऐसा हमने धीर ज्ञानियों से सुना है।",
+        "english": "Different is the result from the manifest, different from the unmanifest — thus the wise have explained this to us.",
+        "word_meanings": [
+          { "word": "सम्भवात्", "meaning": "from the manifest, from creation" },
+          { "word": "असम्भवात्", "meaning": "from the unmanifest, from the uncreated" }
+        ],
+        "commentary": "Again the teacher cites the tradition of the wise, reinforcing that both paths — manifest devotion and unmanifest meditation — have real but distinct results. Neither is useless; neither alone is complete.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 14,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "सम्भूतिं च विनाशं च यस्तद्वेदोभयं सह।\nविनाशेन मृत्युं तीर्त्वा सम्भूत्यामृतमश्नुते॥",
+        "roman": "Sambhootim Cha Vinaasham Cha Yastadvedobhayam Saha.\nVinaashena Mrityum Teertvaa Sambhootyaa Amritam Ashnute.",
+        "hindi": "जो सम्भूति और विनाश दोनों को एक साथ जानता है, वह विनाश के द्वारा मृत्यु को पार कर सम्भूति के द्वारा अमृत को प्राप्त होता है।",
+        "english": "He who knows both the manifest and dissolution together — through dissolution transcending death, through the manifest attaining immortality.",
+        "word_meanings": [
+          { "word": "सम्भूतिम्", "meaning": "the manifest, the created (Hiranyagarbha)" },
+          { "word": "विनाशम्", "meaning": "dissolution, destruction (returning to the unmanifest)" },
+          { "word": "अमृतम् अश्नुते", "meaning": "attains immortality" }
+        ],
+        "commentary": "The second great synthesis of the Isha. Understanding how the manifest arises from and returns to the unmanifest, one transcends the fear of death (dissolution) and attains liberation through integration of both dimensions of reality.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 15,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम्।\nतत्त्वं पूषन्नपावृणु सत्यधर्माय दृष्टये॥",
+        "roman": "Hiranmayena Patrena Satyasya Apihitam Mukham.\nTattvam Puushan Apaavrrinu Satyadharmaaya Drishtaye.",
+        "hindi": "सत्य का मुख सुनहरे पात्र से ढका हुआ है। हे पूषन! उसे हटाओ, ताकि मैं जो सत्यधर्म का अनुसरण करता हूं, उसे सत्य के दर्शन हों।",
+        "english": "The face of Truth is covered by a golden disc. Remove it, O Pushan (Sun), so that I — devoted to Truth — may behold It.",
+        "word_meanings": [
+          { "word": "हिरण्मयेन पात्रेण", "meaning": "by a golden vessel/disc (the brilliant outward world)" },
+          { "word": "सत्यस्य मुखम्", "meaning": "the face of Truth (the luminous Brahman)" },
+          { "word": "पूषन्", "meaning": "O Pushan (the nourishing Sun, the Lord of light)" },
+          { "word": "अपावृणु", "meaning": "remove, unveil, open" },
+          { "word": "सत्यधर्माय", "meaning": "for one devoted to Truth" }
+        ],
+        "commentary": "One of the most poetic verses in the Upanishads. The brilliant phenomenal world is like a golden lid — beautiful and dazzling, but covering the face of Ultimate Truth. The seeker prays to the Sun — symbol of illuminating knowledge — to lift this veil and reveal Brahman directly.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 16,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "पूषन्नेकर्षे यम सूर्य प्राजापत्य व्यूह रश्मीन्समूह।\nतेजो यत्ते रूपं कल्याणतमं तत्ते पश्यामि योऽसावसौ पुरुषः सोऽहमस्मि॥",
+        "roman": "Pooshan Ekarishe Yama Surya Praajapatya Vyuuha Rashmiin Samuuha.\nTejo Yat Te Roopam Kalyaanatamam Tat Te Pashyaami Yo Saava Sau Purushah So Aham Asmi.",
+        "hindi": "हे पूषन! हे एकर्षि! हे यम! हे सूर्य! हे प्रजापति के पुत्र! अपनी किरणों को समेटो, अपने तेज को एकत्र करो। मैं तुम्हारे उस कल्याणतम रूप को देखना चाहता हूं। जो वह पुरुष है — वह मैं हूं।",
+        "english": "O Pushan, O sole traveler, O Yama, O Sun, O child of Prajapati — gather your rays, draw in your splendor. May I see your most auspicious form. That Purusha there — that am I.",
+        "word_meanings": [
+          { "word": "एकर्षे", "meaning": "sole traveler (the Sun traveling alone across the sky)" },
+          { "word": "यम", "meaning": "controller, ordainer (Sun as controller of time)" },
+          { "word": "रश्मीन् समूह", "meaning": "gather the rays, draw in the radiance" },
+          { "word": "कल्याणतमम्", "meaning": "most auspicious, most beautiful, most gracious form" },
+          { "word": "सोऽहमस्मि", "meaning": "That am I (Tat tvam asi — the great identity)" }
+        ],
+        "commentary": "The climax approaches. The seeker prays to the Sun to withdraw his overwhelming brilliance so the subtler light of Brahman within may be perceived. The last line — 'That am I' — is the Mahavakya (great statement) of identity: the individual Self and Brahman are one.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 17,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "वायुरनिलममृतमथेदं भस्मान्तं शरीरम्।\nओं क्रतो स्मर कृतं स्मर क्रतो स्मर कृतं स्मर॥",
+        "roman": "Vaayur Anilam Amritam Athedam Bhasmaantam Shareeram.\nOm Krato Smara Kritam Smara Krato Smara Kritam Smara.",
+        "hindi": "वायु अमर अनिल में (समा जाए), यह शरीर तो भस्म में अंत होगा। हे मन! ओम का स्मरण करो, किए गए (कर्मों) का स्मरण करो। हे मन! याद करो, किए गए का याद करो।",
+        "english": "May this breath merge into the immortal air. Now let this body end in ashes. O mind, remember! Remember the deeds done. O mind, remember! Remember!",
+        "word_meanings": [
+          { "word": "वायुः अनिलम् अमृतम्", "meaning": "the breath (prana) merging into the immortal cosmic breath" },
+          { "word": "भस्मान्तम् शरीरम्", "meaning": "the body ending in ashes (at cremation)" },
+          { "word": "कृतं स्मर", "meaning": "remember what has been done (one's deeds and spiritual practice)" },
+          { "word": "क्रतो", "meaning": "O mind, O will (the intelligent will)" }
+        ],
+        "commentary": "A death prayer and meditation. At the time of death, the breath should merge into the cosmic breath; the body returns to earth. But the mind (Krato) must remember — remember Om, remember the spiritual practices performed, remember one's true nature. This remembrance at death determines liberation.",
+        "cross_links": { "gita_verse": 8, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 18,
+        "section": 1,
+        "section_name": "Complete Text",
+        "sanskrit": "अग्ने नय सुपथा राये अस्मान् विश्वानि देव वयुनानि विद्वान्।\nयुयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नम उक्तिं विधेम॥",
+        "roman": "Agne Naya Supathaa Raaye Asmaan Vishvaani Deva Vayunaani Vidvaan.\nYuyodhyasmaj Juhurannameno Bhuyishthaam Te Nama Uktim Vidhema.",
+        "hindi": "हे अग्नि देव! हमें धन प्राप्ति के लिए सुमार्ग पर ले चलो। हे देव! तुम सब कर्मों को जानते हो। हमसे कुटिल पाप को दूर करो। हम तुम्हें बहुत-सी नमस्कार उक्तियां अर्पित करते हैं।",
+        "english": "O Agni, lead us by the good path to prosperity. O God, you know all the ways. Remove the sin that leads us astray. We offer you our most abundant salutations.",
+        "word_meanings": [
+          { "word": "अग्ने", "meaning": "O Agni (sacred fire, the divine guide)" },
+          { "word": "सुपथा", "meaning": "by the good path, the auspicious way" },
+          { "word": "राये", "meaning": "to prosperity, to the highest good" },
+          { "word": "जुहुराणम् एनः", "meaning": "the sin that leads astray, the crooked evil" },
+          { "word": "नम उक्तिम्", "meaning": "words of salutation, offerings of reverence" }
+        ],
+        "commentary": "The Upanishad closes with a prayer to Agni — the sacred fire who is the guide of the human journey. After all the high philosophy, the seeker returns to humble prayer: lead me on the good path, remove my sins, I bow to you. This movement from metaphysics back to prayer is characteristic of the Upanishadic spirit.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "devotion" }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "kena-upanishad",
+    "name_english": "Kena Upanishad",
+    "name_hindi": "केनोपनिषद",
+    "name_sanskrit": "केनोपनिषद्",
+    "veda": "Samaveda",
+    "total_verses": 34,
+    "sections": [
+      { "section": 1, "name": "Part I — Philosophical Verse", "verse_range": "1–13" },
+      { "section": 2, "name": "Part II — Philosophical Verse", "verse_range": "14–20" },
+      { "section": 3, "name": "Part III — Story of Brahman", "verse_range": "21–28" },
+      { "section": 4, "name": "Part IV — Story of Uma", "verse_range": "29–34" }
+    ],
+    "theme_english": "Who is the true knower behind the eyes, ears, and mind? Brahman, which cannot be objectified.",
+    "theme_hindi": "आंखों, कानों और मन के पीछे असली जानने वाला कौन है? ब्रह्म — जिसे वस्तु नहीं बनाया जा सकता।",
+    "intro_english": "The Kena Upanishad begins with the question 'Kena?' — By whom? Who is the ultimate subject behind all our knowing and perceiving? Through dialectical teaching, it reveals that Brahman is not an object of knowledge but the very subject that enables all knowledge — and through the story of Uma (Wisdom personified), it shows that only the humble can receive this teaching.",
+    "intro_hindi": "केनोपनिषद् 'केन?' — किसके द्वारा? — प्रश्न से आरंभ होती है। हमारी सारी जानने और अनुभव करने की शक्ति के पीछे वास्तविक जानने वाला कौन है? द्वंद्वात्मक शिक्षण के माध्यम से यह बताती है कि ब्रह्म ज्ञान का विषय नहीं बल्कि वह स्वयं जानने की शक्ति है।",
+    "related_gita_chapters": [13, 15],
+    "verses": [
+      {
+        "verse_number": 1,
+        "section": 1,
+        "section_name": "Part I — Philosophical Verse",
+        "sanskrit": "केनेषितं पतति प्रेषितं मनः केन प्राणः प्रथमः प्रैति युक्तः।\nकेनेषितां वाचमिमां वदन्ति चक्षुः श्रोत्रं क उ देवो युनक्ति॥",
+        "roman": "Keneshitam Patati Preshitam Manah Kena Praanah Prathamah Praiti Yuktah.\nKeneshitaam Vaacham Imaam Vadanti Chakshuh Shrotram Ka U Devo Yunakti.",
+        "hindi": "किसके द्वारा प्रेरित होकर मन अपने लक्ष्य की ओर जाता है? किसके द्वारा निर्देशित प्राण पहले चलता है? किसके द्वारा प्रेरित यह वाणी लोग बोलते हैं? कौन देव आंख और कान को प्रेरित करता है?",
+        "english": "By whom directed does the mind go toward its object? By whom commanded does the first breath move? By whom impelled do people speak this speech? What god directs the eye and the ear?",
+        "word_meanings": [
+          { "word": "केन", "meaning": "by whom? (Kena — the name of the Upanishad comes from this word)" },
+          { "word": "ईषितम्", "meaning": "impelled, directed, commanded" },
+          { "word": "प्रेषितम्", "meaning": "sent forth, dispatched" },
+          { "word": "मनः", "meaning": "the mind" },
+          { "word": "प्राणः प्रथमः", "meaning": "the first breath, the primary life force" }
+        ],
+        "commentary": "The opening question of the Kena is perhaps the deepest question in philosophy: what is behind our faculties? The eye sees, but what makes seeing possible? The mind thinks, but what energizes the mind? We typically identify with our faculties — I am my mind, I am my senses. But this verse pushes us to ask: what is the subject that enables the subject?",
+        "cross_links": { "gita_verse": 13, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 2,
+        "section": 1,
+        "section_name": "Part I — Philosophical Verse",
+        "sanskrit": "श्रोत्रस्य श्रोत्रं मनसो मनो यद् वाचो ह वाचं स उ प्राणस्य प्राणः।\nचक्षुषश्चक्षुरतिमुच्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति॥",
+        "roman": "Shrotrasya Shrotram Manaso Mano Yad Vaacho Ha Vaacham Sa U Pranaasya Praanah.\nChakshushash Chakshur Atimuchy Dheeraah Pretyaa Smaal Lokaat Amritaa Bhavanti.",
+        "hindi": "वह (ब्रह्म) श्रोत्र का श्रोत्र है, मन का मन है, वाणी की वाणी है, प्राण का प्राण है और चक्षु का चक्षु है। इसे जानकर धीर लोग इस लोक से मुक्त होकर अमर हो जाते हैं।",
+        "english": "The ear of the ear, the mind of the mind, the speech of speech, the breath of breath, the eye of the eye — knowing That, the wise, departing this world, become immortal.",
+        "word_meanings": [
+          { "word": "श्रोत्रस्य श्रोत्रम्", "meaning": "the ear of the ear (what makes hearing possible)" },
+          { "word": "मनसो मनः", "meaning": "the mind of the mind (what makes thinking possible)" },
+          { "word": "धीराः", "meaning": "the wise, the resolute ones" },
+          { "word": "अमृताः भवन्ति", "meaning": "become immortal" }
+        ],
+        "commentary": "The guru's answer to the opening question. Brahman is not another sense or faculty — it is the very power that animates all faculties. It is the 'hearing of hearing' — not what you hear, but what makes hearing happen. This is the Witness consciousness, the pure Awareness that is prior to all experience.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 3,
+        "section": 1,
+        "section_name": "Part I — Philosophical Verse",
+        "sanskrit": "न तत्र चक्षुर्गच्छति न वाग्गच्छति नो मनः।\nन विद्मो न विजानीमो यथैतदनुशिष्यात्॥",
+        "roman": "Na Tatra Chakshur Gachchhati Na Vaaggachchhati No Manah.\nNa Vidmo Na Vijaaneemo Yathaitat Anushishyaat.",
+        "hindi": "वहां न तो आंख जाती है, न वाणी, न मन। हम नहीं जानते, हम नहीं पहचानते — कि यह (ब्रह्म) कैसे सिखाया जाए।",
+        "english": "Neither the eye goes there, nor speech, nor the mind. We do not know, we do not understand, how one would teach This.",
+        "word_meanings": [
+          { "word": "न तत्र", "meaning": "not there (to That, to Brahman)" },
+          { "word": "चक्षुः गच्छति", "meaning": "the eye goes, the eye reaches" },
+          { "word": "न विद्मः", "meaning": "we do not know" },
+          { "word": "अनुशिष्यात्", "meaning": "one would teach, one would instruct" }
+        ],
+        "commentary": "The profound epistemological admission: Brahman cannot be reached by any faculty. The eye cannot see It, the mind cannot think It, speech cannot express It — because all these are objects within Brahman's awareness. How, then, can it be taught? This is the central puzzle the rest of the Upanishad unfolds.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 4,
+        "section": 1,
+        "section_name": "Part I — Philosophical Verse",
+        "sanskrit": "अन्यदेव तद्विदितादथो अविदितादधि।\nइति शुश्रुम पूर्वेषां ये नस्तद्व्याचचक्षिरे॥",
+        "roman": "Anyadeva Tadviditaad Atho Aviditaadadhi.\nIti Shushruma Poorveshaam Ye Nastadvyaachachaakshire.",
+        "hindi": "वह (ब्रह्म) ज्ञात से भी अलग है और अज्ञात से भी परे है। ऐसा हमने पूर्वजों से सुना है जिन्होंने हमें यह बताया।",
+        "english": "That is other than the known, and moreover, it is above the unknown. Thus we have heard from the ancients who have explained it to us.",
+        "word_meanings": [
+          { "word": "अन्यत् एव", "meaning": "other than, completely different from" },
+          { "word": "विदितात्", "meaning": "from the known (what the senses and mind grasp)" },
+          { "word": "अविदितात् अधि", "meaning": "beyond even the unknown (transcending both categories)" }
+        ],
+        "commentary": "Brahman escapes both categories — the known and the unknown. It is not an unknown fact waiting to be discovered by the mind. Nor is it already known in the ordinary sense. It is the very ground of both knowing and not-knowing, transcending both.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 5,
+        "section": 2,
+        "section_name": "Part II — Philosophical Verse",
+        "sanskrit": "यदि मन्यसे सुवेदेति दभ्रमेवापि नूनं त्वं वेत्थ ब्रह्मणो रूपम्।\nयदस्य त्वं यदस्य देवेष्वथ नु मीमांस्यमेव ते मन्ये विदितम्॥",
+        "roman": "Yadi Manyase Suvedeti Dabhramevaa Pi Noonam Tvam Vettha Brahmano Roopam.\nYadasya Tvam Yadasya Deveshu Atha Nu Meemanksyameva Te Manye Viditam.",
+        "hindi": "यदि तुम सोचते हो कि मैंने ब्रह्म को भली-भांति जान लिया है, तो तुम बहुत कम जानते हो। जो तुमने स्वयं में जाना है और जो देवताओं में जाना है — वह अभी विचारणीय है, मैं मानता हूं।",
+        "english": "If you think 'I have known Brahman well,' then what you know of Brahman's form is only a little. What of It is in you, and what of It is in the gods — this still remains to be inquired into, I think.",
+        "word_meanings": [
+          { "word": "सुवेद इति", "meaning": "thinking 'I know well'" },
+          { "word": "दभ्रम् एव", "meaning": "only a little, very small amount" },
+          { "word": "मीमांस्यम् एव", "meaning": "still to be inquired, still requiring investigation" }
+        ],
+        "commentary": "A direct challenge to spiritual arrogance. The moment you think 'I have known Brahman,' you have made Brahman into an object of your knowing — and thus it is no longer Brahman. The true knower is always slightly uncertain, always inquiring, because they sense that the real Brahman always exceeds what can be grasped.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 6,
+        "section": 2,
+        "section_name": "Part II — Philosophical Verse",
+        "sanskrit": "नाहं मन्ये सुवेदेति नो न वेदेति वेद च।\nयो नस्तद्वेद तद्वेद नो न वेदेति वेद च॥",
+        "roman": "Naaham Manye Suvedeti No Na Vedeti Veda Cha.\nYo Nastadveda Tadveda No Na Vedeti Veda Cha.",
+        "hindi": "मैं नहीं मानता कि मैंने भली-भांति जान लिया है; न मैं यह मानता हूं कि मैं नहीं जानता। हममें से जो उसे जानता है, वह जानता है — 'न वह जाना जाता है' और 'जाना जाता है'।",
+        "english": "I do not think I know It well; yet I do not think I do not know. Among us, he who knows It knows — 'It is not known' and yet 'It is known.'",
+        "word_meanings": [
+          { "word": "न अहम् मन्ये सुवेद इति", "meaning": "I do not think I know well" },
+          { "word": "नो न वेद इति", "meaning": "nor do I think I do not know" },
+          { "word": "वेद च", "meaning": "and yet knows (both statements together)" }
+        ],
+        "commentary": "The exquisite paradox of Brahman-knowledge. The one who truly knows Brahman knows that it cannot be known in the ordinary sense — and simultaneously knows that they have a direct acquaintance with it more intimate than any ordinary knowledge. This is the anubhava (direct experience) that transcends intellectual knowing.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 7,
+        "section": 2,
+        "section_name": "Part II — Philosophical Verse",
+        "sanskrit": "यस्यामतं तस्य मतं मतं यस्य न वेद सः।\nअविज्ञातं विजानतां विज्ञातमविजानताम्॥",
+        "roman": "Yasyaamatam Tasya Matam Matam Yasya Na Veda Sah.\nAvijnaatam Vijaanataanm Vijnaatamavijaanataaam.",
+        "hindi": "जिसे ब्रह्म अज्ञात है, उसने उसे जाना है; जिसे ब्रह्म ज्ञात है, वह नहीं जानता। जानने वालों को वह अज्ञात है; न जानने वालों को वह ज्ञात है।",
+        "english": "He who thinks he does not know It — he knows. He who thinks he knows It — he does not know. The knowers do not know It; the non-knowers know It.",
+        "word_meanings": [
+          { "word": "यस्य अमतम्", "meaning": "for whom it is not thought (not made into an object of thought)" },
+          { "word": "तस्य मतम्", "meaning": "for that one it is truly known (in the deeper sense)" },
+          { "word": "अविज्ञातम् विजानताम्", "meaning": "unknown to those who seem to know" }
+        ],
+        "commentary": "The culmination of the epistemology of Brahman. This paradox is not mere wordplay — it points to a real distinction between intellectual knowledge (which always objectifies) and the direct recognition of the Subject. When you stop trying to make Brahman into an object, It is already self-evident as pure Awareness.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "mandukya-upanishad",
+    "name_english": "Mandukya Upanishad",
+    "name_hindi": "माण्डूक्योपनिषद",
+    "name_sanskrit": "माण्डूक्योपनिषद्",
+    "veda": "Atharvaveda",
+    "total_verses": 12,
+    "sections": [
+      { "section": 1, "name": "The Four States of Consciousness", "verse_range": "1–7" },
+      { "section": 2, "name": "The Nature of OM", "verse_range": "8–12" }
+    ],
+    "theme_english": "OM encompasses all states of consciousness. The fourth state (Turiya) is pure Awareness — the ground of waking, dreaming, and deep sleep.",
+    "theme_hindi": "ओम सभी अवस्थाओं को समाहित करता है। चतुर्थ अवस्था (तुरीय) शुद्ध चेतना है — जाग्रत, स्वप्न और सुषुप्ति की आधार।",
+    "intro_english": "The Mandukya Upanishad is the shortest of all Upanishads — just 12 verses — yet Gaudapada and Shankaracharya considered it sufficient alone for liberation. It systematically analyzes the syllable OM and the four states of consciousness to reveal the non-dual Atman that underlies all experience. Its 7th verse describing Turiya is one of the most important in all of Vedanta.",
+    "intro_hindi": "माण्डूक्योपनिषद् सबसे छोटी उपनिषद् है — मात्र 12 श्लोक — फिर भी गौड़पाद और शंकराचार्य ने इसे अकेले मोक्ष के लिए पर्याप्त माना। यह ओम अक्षर और चेतना की चार अवस्थाओं का विश्लेषण करती है।",
+    "related_gita_chapters": [8, 17],
+    "verses": [
+      {
+        "verse_number": 1,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "ओमित्येतदक्षरमिदं सर्वं तस्योपव्याख्यानं भूतं भवद्भविष्यदिति सर्वमोंकार एव।\nयच्चान्यत् त्रिकालातीतं तदप्योंकार एव॥",
+        "roman": "Om Ityetad Aksharam Idam Sarvam Tasyopa Vyaakhyaanam Bhootam Bhavadbhavishyaditi Sarvamonkaara Eva.\nYachchaanyat Trikaalateeta Tadapyonkaara Eva.",
+        "hindi": "ओम — यह अक्षर ही यह सब कुछ है। इसकी व्याख्या: जो भूत, वर्तमान और भविष्य है — यह सब ओम ही है। और जो इन तीन कालों से परे है — वह भी ओम ही है।",
+        "english": "OM — this syllable is all this. Its further explanation: all that is past, present, and future — all that is verily OM. And whatever transcends the three times — that too is verily OM.",
+        "word_meanings": [
+          { "word": "ओम् इति एतत् अक्षरम्", "meaning": "OM — this imperishable syllable (Akshara = that which does not perish)" },
+          { "word": "इदं सर्वम्", "meaning": "all this (the entire universe of experience)" },
+          { "word": "त्रिकालातीतम्", "meaning": "transcending the three times (past, present, future)" }
+        ],
+        "commentary": "The Mandukya begins with the boldest possible claim: OM is everything. Not a symbol for the Divine — it IS everything, including what is beyond time itself. This is the Mahavakya of the Atharvaveda. The rest of the Upanishad unpacks this claim systematically.",
+        "cross_links": { "gita_verse": 8, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 2,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "सर्वं ह्येतद् ब्रह्मायमात्मा ब्रह्म सोऽयमात्मा चतुष्पात्॥",
+        "roman": "Sarvam Hyetad Brahma Ayam Aatma Brahma Soyam Aatmaa Chatushpaat.",
+        "hindi": "यह सब कुछ निश्चित रूप से ब्रह्म है। यह आत्मा ब्रह्म है। यह आत्मा चार पाद वाला है।",
+        "english": "All this is verily Brahman. This Atman is Brahman. This Atman has four quarters.",
+        "word_meanings": [
+          { "word": "सर्वम् ब्रह्म", "meaning": "all is Brahman (the most absolute non-dual statement)" },
+          { "word": "अयम् आत्मा ब्रह्म", "meaning": "this Atman is Brahman (Mahavakya of the Atharvaveda)" },
+          { "word": "चतुष्पात्", "meaning": "four-footed, having four quarters or aspects" }
+        ],
+        "commentary": "Two great Mahavakyas in one verse. 'Sarvam Brahma' — everything is Brahman. 'Ayam Atma Brahma' — the individual Self is Brahman. The Atman has four aspects corresponding to the four states of consciousness which the following verses analyze.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 3,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "जागरितस्थानो बहिष्प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः स्थूलभुग्वैश्वानरः प्रथमः पादः॥",
+        "roman": "Jaagarita Sthaano Bahishprajnah Saptanga Ekonaa Vimshati Mukhah Sthoola Bhug Vaishvaanaraha Prathamah Paadah.",
+        "hindi": "जाग्रत अवस्था में स्थित, बाह्य प्रज्ञावान, सात अंगों वाला, उन्नीस मुखों वाला, स्थूल पदार्थ का भोक्ता — वैश्वानर पहला पाद है।",
+        "english": "The waking state — externally conscious, seven-limbed, nineteen-mouthed, enjoying gross objects — Vaishvanara is the first quarter.",
+        "word_meanings": [
+          { "word": "जागरित स्थान", "meaning": "the waking state (ordinary consciousness)" },
+          { "word": "बहिष्प्रज्ञः", "meaning": "externally conscious (awareness directed outward)" },
+          { "word": "सप्त अङ्ग", "meaning": "seven limbs (the seven features of the cosmic body)" },
+          { "word": "एकोनविंशति मुख", "meaning": "nineteen mouths (5 organs of perception + 5 of action + 5 pranas + mind + intellect + ego + chitta)" },
+          { "word": "वैश्वानरः", "meaning": "the universal being in the waking state" }
+        ],
+        "commentary": "The first of the four states: Jagrat (waking). In this state, consciousness is directed outward through 19 channels (the 19 inner instruments of perception and action). This is Vaishvanara — the universal cosmic person as experienced in waking life.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 4,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः प्रविविक्तभुक्तैजसो द्वितीयः पादः॥",
+        "roman": "Svapna Sthaano Antahprajnah Saptanga Ekonaavimshati Mukhah Pravi Vikta Bhuk Taijaso Dviteeyah Paadah.",
+        "hindi": "स्वप्न अवस्था में स्थित, अन्तःप्रज्ञावान, सात अंगों वाला, उन्नीस मुखों वाला, सूक्ष्म पदार्थ का भोक्ता — तैजस दूसरा पाद है।",
+        "english": "The dream state — internally conscious, seven-limbed, nineteen-mouthed, enjoying subtle objects — Taijasa is the second quarter.",
+        "word_meanings": [
+          { "word": "स्वप्न स्थान", "meaning": "the dream state (svapna)" },
+          { "word": "अन्तःप्रज्ञः", "meaning": "internally conscious (awareness directed inward)" },
+          { "word": "प्रविविक्त भुक्", "meaning": "enjoying subtle, refined objects (dream experiences)" },
+          { "word": "तैजसः", "meaning": "the luminous one, the dreamer (from tejas = light)" }
+        ],
+        "commentary": "The second state: Svapna (dreaming). In dreams, consciousness turns inward and creates its own objects from memory and imagination. Taijasa — the luminous dreaming self — experiences a world just as vivid as waking but entirely self-generated. This shows that consciousness can create experience from within itself.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 5,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "यत्र सुप्तो न कञ्चन कामं कामयते न कञ्चन स्वप्नं पश्यति तत्सुषुप्तम्।\nसुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो ह्यानन्दभुक् चेतोमुखः प्राज्ञस्तृतीयः पादः॥",
+        "roman": "Yatra Supto Na Kanchan Kaamam Kaamayate Na Kanchan Svapnam Pashyati Tat Sushuptam.\nSushuptasthaana Eekibhootah Prajnaanagana Evaanandamayo Hyanandabhuk Chetomukha Praajnas Triteeyah Paadah.",
+        "hindi": "जहां सोया हुआ व्यक्ति कोई इच्छा नहीं करता और कोई स्वप्न नहीं देखता — वह सुषुप्ति है। सुषुप्त अवस्था में एकीभूत, सघन प्रज्ञा, आनन्दमय, आनन्द का भोक्ता, चेतना का द्वार — प्राज्ञ तीसरा पाद है।",
+        "english": "Where one sleeping desires nothing and sees no dream — that is deep sleep. The deep sleeper — unified, a mass of consciousness, full of bliss, enjoying bliss, with mind as its mouth — Prajna is the third quarter.",
+        "word_meanings": [
+          { "word": "सुषुप्त", "meaning": "deep sleep (dreamless sleep)" },
+          { "word": "एकीभूतः", "meaning": "unified, merged into one (all distinctions dissolved)" },
+          { "word": "प्रज्ञानघनः", "meaning": "a dense mass of pure consciousness" },
+          { "word": "आनन्दमयः", "meaning": "full of bliss (the happiness of deep sleep)" },
+          { "word": "प्राज्ञः", "meaning": "the wise one, the deep sleeper" }
+        ],
+        "commentary": "The third state: Sushupti (deep dreamless sleep). All individuality and duality dissolve — there is only a unified mass of consciousness filled with bliss. Prajna is the name given to the deep-sleep self. This state reveals that beneath all our activity lies a reservoir of deep peace. Yet this state alone is not liberation — the sleeper wakes up again.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 6,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "एष सर्वेश्वर एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम्॥",
+        "roman": "Esha Sarveshvara Esha Sarvajnah Esho Antaryaami Esha Yonih Sarvasya Prabhavaapyayau Hi Bhootaanam.",
+        "hindi": "यह (प्राज्ञ) सर्वेश्वर है, सर्वज्ञ है, अन्तर्यामी है, सब का उद्गम स्थान है — क्योंकि सभी प्राणियों की उत्पत्ति और विनाश इसी से होता है।",
+        "english": "This (Prajna) is the Lord of all, the omniscient, the inner controller, the source of all — for it is the origin and dissolution of all beings.",
+        "word_meanings": [
+          { "word": "सर्वेश्वरः", "meaning": "Lord of all, controller of everything" },
+          { "word": "सर्वज्ञः", "meaning": "omniscient, all-knowing" },
+          { "word": "अन्तर्यामी", "meaning": "the inner controller (Antaryamin)" },
+          { "word": "योनिः सर्वस्य", "meaning": "the source/womb of all" }
+        ],
+        "commentary": "Deep sleep state (Prajna) is described in cosmic terms as the Lord of all — because in the potential of deep sleep, all manifestation rests and from which it arises again. This is also the individual's point of contact with the cosmic Ishvara. Yet even Prajna is not the ultimate — it is the third pada.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 7,
+        "section": 1,
+        "section_name": "The Four States of Consciousness",
+        "sanskrit": "नान्तःप्रज्ञं न बहिष्प्रज्ञं नोभयतःप्रज्ञं न प्रज्ञानघनं न प्रज्ञं नाप्रज्ञम्।\nअदृष्टमव्यवहार्यमग्राह्यमलक्षणमचिन्त्यमव्यपदेश्यमेकात्मप्रत्ययसारं\nप्रपञ्चोपशमं शान्तं शिवमद्वैतं चतुर्थं मन्यन्ते स आत्मा स विज्ञेयः॥",
+        "roman": "Naantahprajnam Na Bahishprajnam Nobhayatahprajnam Na Prajnaanaghanam Na Prajnam Naaprajnam.\nAdrishtam Avyavahaarayam Agraahyam Alakshnam Achintyam Avyapadeshyam Ekaatmapratyayasaaram Prapanchopashamam Shaantam Shivam Advaitam Chaturrtham Manyante Sa Aatmaa Sa Vijneyah.",
+        "hindi": "न अन्तःप्रज्ञ, न बहिष्प्रज्ञ, न दोनों तरफ से प्रज्ञ, न प्रज्ञानघन, न प्रज्ञ, न अप्रज्ञ — अदृष्ट, अव्यवहार्य, अग्राह्य, अलक्षण, अचिन्त्य, अव्यपदेश्य, एकात्मा की प्रतीति का सार, प्रपञ्च का उपशम, शान्त, शिव, अद्वैत — चतुर्थ (तुरीय) माना जाता है। वह आत्मा है। वह जानने योग्य है।",
+        "english": "Not inward-conscious, not outward-conscious, not both-wise conscious, not a mass of consciousness, not conscious, not unconscious — unseen, unrelated, ungraspable, without attributes, unthinkable, unnameable, the essence of the one-Self, the cessation of phenomena, peaceful, auspicious, without a second — This is called the fourth (Turiya). This is the Atman. This is to be known.",
+        "word_meanings": [
+          { "word": "अदृष्टम्", "meaning": "unseen (cannot be perceived as an object)" },
+          { "word": "अग्राह्यम्", "meaning": "ungraspable (cannot be grasped by any faculty)" },
+          { "word": "अचिन्त्यम्", "meaning": "unthinkable (transcends all thought)" },
+          { "word": "शान्तम् शिवम् अद्वैतम्", "meaning": "peaceful, auspicious, without a second (three names of Brahman)" },
+          { "word": "तुरीय", "meaning": "the fourth, literally 'the fourth state'" }
+        ],
+        "commentary": "The most important verse in the Mandukya — perhaps in all of Vedanta. Turiya (the fourth) is described entirely in negations because it transcends all states and all concepts. It is not waking (outward consciousness), not dreaming (inward consciousness), not deep sleep (mass of consciousness) — and yet it is not mere absence of consciousness either. It is the pure, unconditioned Awareness that witnesses all three states without itself becoming any one of them. Peaceful, auspicious, non-dual — this is the Atman to be realized.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "liberation" }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "katha-upanishad",
+    "name_english": "Katha Upanishad",
+    "name_hindi": "कठोपनिषद",
+    "name_sanskrit": "कठोपनिषद्",
+    "veda": "Krishna Yajurveda",
+    "total_verses": 119,
+    "sections": [
+      { "section": 1, "name": "Adhyaya I, Valli I — Nachiketa and Yama", "verse_range": "1–29" },
+      { "section": 2, "name": "Adhyaya I, Valli II — The Chariot Metaphor", "verse_range": "30–58" },
+      { "section": 3, "name": "Adhyaya I, Valli III — The City of Eleven Gates", "verse_range": "59–119" }
+    ],
+    "theme_english": "The story of Nachiketa who descends to Death's realm and demands the secret of immortality from Yama himself.",
+    "theme_hindi": "नचिकेता की कथा जो यम के लोक में जाकर अमरत्व का रहस्य मांगता है।",
+    "intro_english": "The Katha Upanishad is the most dramatic of all Upanishads — a young brahmin boy named Nachiketa is sent to the house of Death by his father, waits three days and nights without food, and earns three boons from Yama. The third boon — the secret of death and what lies beyond — forms the philosophical heart of the text. Yama's teaching includes the famous chariot metaphor and the description of the Purusha smaller than the smallest and greater than the greatest.",
+    "intro_hindi": "कठोपनिषद् सबसे नाटकीय उपनिषद् है। एक ब्राह्मण बालक नचिकेता अपने पिता द्वारा यम को दे दिया जाता है। तीन दिन-रात भूखा प्रतीक्षा करने के बाद, यम उसे तीन वरदान देते हैं। तीसरा वरदान — मृत्यु के बाद क्या होता है — पूरे उपनिषद् का दार्शनिक हृदय है।",
+    "related_gita_chapters": [2, 6, 15],
+    "verses": [
+      {
+        "verse_number": 1,
+        "section": 1,
+        "section_name": "Adhyaya I, Valli I — Nachiketa and Yama",
+        "sanskrit": "उशन् ह वै वाजश्रवसः सर्ववेदसं ददौ। तस्य ह नचिकेता नाम पुत्र आस।",
+        "roman": "Ushan Ha Vai Vaajashravasah Sarvavedas Am Dadau. Tasya Ha Nachiketa Naama Putra Aasa.",
+        "hindi": "वाजश्रवस ने, यश की कामना से, विश्वजित् यज्ञ में अपना सर्वस्व दान किया। उनका एक पुत्र था जिसका नाम नचिकेता था।",
+        "english": "Vajashravasa, desiring heaven, performed the Vishvajit sacrifice and gave away all his possessions. He had a son named Nachiketa.",
+        "word_meanings": [
+          { "word": "उशन्", "meaning": "desiring, wishing (for heaven or merit)" },
+          { "word": "वाजश्रवसः", "meaning": "Vajashravasa (the father of Nachiketa)" },
+          { "word": "सर्ववेदसम्", "meaning": "all wealth, all possessions" },
+          { "word": "नचिकेताः", "meaning": "Nachiketa (meaning: one who does not know, or one who perceives)" }
+        ],
+        "commentary": "The story begins. Vajashravasa performs the Vishvajit sacrifice — a rite in which one gives away all one's possessions to receive heavenly merit. But as a young observer, his son Nachiketa notices something troubling about what is being given away.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "karma" }
+      },
+      {
+        "verse_number": 2,
+        "section": 1,
+        "section_name": "Adhyaya I, Valli I — Nachiketa and Yama",
+        "sanskrit": "तं ह कुमारं सन्तं दक्षिणासु नीयमानासु श्रद्धा‌ऽऽविवेश सोऽमन्यत।",
+        "roman": "Tam Ha Kumaram Santam Dakshinaasu Neeyamaanaasu Shraddhaavivesho Amanyata.",
+        "hindi": "जब दक्षिणाएं दी जा रही थीं, उस बालक नचिकेता में श्रद्धा का प्रवेश हुआ और उसने सोचा:",
+        "english": "As the gifts were being distributed, faith entered the boy Nachiketa and he thought to himself:",
+        "word_meanings": [
+          { "word": "कुमारम्", "meaning": "the boy, the young one" },
+          { "word": "दक्षिणासु नीयमानासु", "meaning": "while the sacrificial gifts were being led away / distributed" },
+          { "word": "श्रद्धा आविवेश", "meaning": "faith/sincere earnestness entered (into him)" }
+        ],
+        "commentary": "Shraddha — sincere earnestness, faith with alertness — enters the boy. This is the Upanishadic ideal of the spiritual student: not merely devotional emotion, but honest, discerning, sincere questioning. Nachiketa doesn't rebel — he simply inquires.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "devotion" }
+      },
+      {
+        "verse_number": 14,
+        "section": 1,
+        "section_name": "Adhyaya I, Valli I — Nachiketa and Yama",
+        "sanskrit": "श्रेयश्च प्रेयश्च मनुष्यमेतस्तौ सम्परीत्य विविनक्ति धीरः।\nश्रेयो हि धीरोऽभि प्रेयसो वृणीते प्रेयो मन्दो योगक्षेमाद् वृणीते॥",
+        "roman": "Shreyash Cha Preyash Cha Manushyam Etastau Sampareetya Vivinakti Dheerah.\nShreyo Hi Dheero Abhi Preyaso Vrinite Preyo Mando Yogakshemad Vrinite.",
+        "hindi": "श्रेय (जो वास्तव में अच्छा है) और प्रेय (जो अभी आनन्ददायक है) — दोनों मनुष्य के पास आते हैं। धीर पुरुष इनकी परीक्षा करके श्रेय को चुनता है। मंद पुरुष कुशल-क्षेम के लिए प्रेय को चुनता है।",
+        "english": "The good (Shreya) and the pleasant (Preya) approach a man. The wise one examines both and distinguishes — he chooses the good over the pleasant. The foolish one, for the sake of welfare, chooses the pleasant.",
+        "word_meanings": [
+          { "word": "श्रेयः", "meaning": "what is ultimately beneficial, the good (spiritual liberation)" },
+          { "word": "प्रेयः", "meaning": "what is immediately pleasant, the agreeable (sensory satisfaction)" },
+          { "word": "धीरः", "meaning": "the wise one, the resolute" },
+          { "word": "मन्दः", "meaning": "the dull-witted, the unwise" },
+          { "word": "योगक्षेमात्", "meaning": "for the sake of acquiring and maintaining worldly security" }
+        ],
+        "commentary": "One of the most famous verses in Indian philosophy. Every human being faces this fundamental choice: between what feels good right now (Preya) and what is truly good in the deepest sense (Shreya). The mature spiritual student chooses Shreya even when it demands sacrifice. Nachiketa himself demonstrates this — he could have accepted Yama's tempting offers of wealth and pleasure but held firm for the highest knowledge.",
+        "cross_links": { "gita_verse": 2, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 20,
+        "section": 1,
+        "section_name": "Adhyaya I, Valli I — Nachiketa and Yama",
+        "sanskrit": "न विचिकित्से नचिकेतस्त्वमस्मान्नैषा प्रज्ञा विकर्षणीया।\nवरं वृणीष्व नचिकेतोन्यदेव मा मोपारोत्सीरमृतस्यैष वर्त्मन्॥",
+        "roman": "Na Vichikitse Nachiketas Tvam Asmaannaishaa Prajna Vikarshaneeya.\nVaram Vrineeshva Nachiketo Anyadeva Maa Mopaarotseer Amritasya Esha Vartman.",
+        "hindi": "हे नचिकेत! इस विषय में मुझसे शंका मत करो; यह बुद्धि खींची नहीं जा सकती। दूसरा वरदान मांगो — मुझे इस मार्ग पर मत छोड़ो; यह अमृत का मार्ग है।",
+        "english": "Do not press me on this matter, Nachiketa. This (secret) cannot be drawn out by me. Choose another boon — do not compel me to leave this (topic); this is the path of immortality.",
+        "word_meanings": [
+          { "word": "न विचिकित्से", "meaning": "do not inquire, do not press" },
+          { "word": "विकर्षणीया", "meaning": "to be drawn out, to be extracted" },
+          { "word": "अमृतस्य वर्त्म", "meaning": "the path of immortality" }
+        ],
+        "commentary": "Yama himself is reluctant! Even the God of Death tries to dissuade Nachiketa from this ultimate question. This tells us something profound: the secret of what lies beyond death is not easily given — it requires the utmost sincerity, qualification, and insistence. The teacher tests the student's genuine desire for liberation.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 29,
+        "section": 2,
+        "section_name": "Adhyaya I, Valli II — The Chariot Metaphor",
+        "sanskrit": "आत्मानं रथिनं विद्धि शरीरं रथमेव तु।\nबुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च॥",
+        "roman": "Aatmaanam Rathinam Viddhi Shareeram Rathameva Tu.\nBuddhim Tu Saaratim Viddhi Manah Pragrahameva Cha.",
+        "hindi": "आत्मा को रथी (रथ का स्वामी) जानो, शरीर को रथ, बुद्धि को सारथी और मन को लगाम।",
+        "english": "Know the Atman as the lord of the chariot, the body as the chariot, the intellect as the charioteer, and the mind as the reins.",
+        "word_meanings": [
+          { "word": "आत्मानम् रथिनम्", "meaning": "the Atman as the lord of the chariot (the true owner)" },
+          { "word": "शरीरम् रथम्", "meaning": "the body as the chariot (the vehicle)" },
+          { "word": "बुद्धिम् सारथिम्", "meaning": "the intellect as the charioteer (the driver)" },
+          { "word": "मनः प्रग्रहम्", "meaning": "the mind as the reins (what controls the horses)" }
+        ],
+        "commentary": "The most famous metaphor in the Upanishads — and perhaps in all of Indian philosophy. The human being is a chariot: the Self (Atman) is the silent passenger who is the real owner; the body is the vehicle; the intellect is the charioteer; the mind is the reins; the senses are the horses; and sense objects are the road. Wisdom is using intellect to control the mind, which then guides the senses toward liberation rather than bondage.",
+        "cross_links": { "gita_verse": 6, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "mundaka-upanishad",
+    "name_english": "Mundaka Upanishad",
+    "name_hindi": "मुण्डकोपनिषद",
+    "name_sanskrit": "मुण्डकोपनिषद्",
+    "veda": "Atharvaveda",
+    "total_verses": 64,
+    "sections": [
+      { "section": 1, "name": "Mundaka I — Higher and Lower Knowledge", "verse_range": "1–22" },
+      { "section": 2, "name": "Mundaka II — The Nature of Brahman", "verse_range": "23–42" },
+      { "section": 3, "name": "Mundaka III — The Path and Liberation", "verse_range": "43–64" }
+    ],
+    "theme_english": "The distinction between higher knowledge (Brahma-Vidya) and lower knowledge (all the sciences), and the path to Brahman through renunciation.",
+    "theme_hindi": "परा विद्या (ब्रह्म-विद्या) और अपरा विद्या (समस्त विज्ञान) में भेद, और त्याग के माध्यम से ब्रह्म का मार्ग।",
+    "intro_english": "The Mundaka Upanishad opens with a student approaching the sage Angiras with the deepest question: 'Knowing what, does one know everything?' The answer divides all knowledge into lower (Apara Vidya — sciences, Vedas, rites) and higher (Para Vidya — Brahma-Vidya). Its famous image of two birds on a tree, and the declaration 'Satyameva Jayate' (Truth alone triumphs, now India's motto), make it one of the most beloved Upanishads.",
+    "intro_hindi": "मुण्डकोपनिषद् एक शिष्य के सबसे गहन प्रश्न से आरंभ होती है: 'क्या जानने से सब कुछ जाना जाता है?' उत्तर सभी ज्ञान को अपरा विद्या (विज्ञान, वेद, कर्मकाण्ड) और परा विद्या (ब्रह्म-विद्या) में विभाजित करता है।",
+    "related_gita_chapters": [4, 13, 18],
+    "verses": [
+      {
+        "verse_number": 1,
+        "section": 1,
+        "section_name": "Mundaka I — Higher and Lower Knowledge",
+        "sanskrit": "ब्रह्मा देवानां प्रथमः सम्बभूव विश्वस्य कर्ता भुवनस्य गोप्ता।\nस ब्रह्मविद्यां सर्वविद्याप्रतिष्ठामथर्वाय ज्येष्ठपुत्राय प्राह॥",
+        "roman": "Brahmaa Devaanaam Prathamah Sambabhuva Vishvasya Kartaa Bhuvanasya Goptaa.\nSa Brahmavidyaam Sarvavidyaapratishthaam Atharvaya Jyeshtha Putraaya Praaha.",
+        "hindi": "ब्रह्मा देवताओं में प्रथम उत्पन्न हुए, जगत के निर्माता और भुवन के रक्षक हैं। उन्होंने सभी विद्याओं की आधारभूत ब्रह्मविद्या अपने ज्येष्ठ पुत्र अथर्वा को सिखाई।",
+        "english": "Brahma arose first among the gods, the creator of the universe, the protector of the world. He taught Brahma-Vidya — the foundation of all knowledge — to his eldest son Atharva.",
+        "word_meanings": [
+          { "word": "ब्रह्मा", "meaning": "Brahma (the creator god, not to be confused with Brahman)" },
+          { "word": "विश्वस्य कर्ता", "meaning": "creator of the universe" },
+          { "word": "ब्रह्मविद्या", "meaning": "the knowledge of Brahman, the highest knowledge" },
+          { "word": "सर्वविद्याप्रतिष्ठाम्", "meaning": "the foundation/basis of all knowledge" }
+        ],
+        "commentary": "The Mundaka begins by establishing the lineage of Brahma-Vidya — the knowledge that is the foundation of all other knowledge. This is not one subject among many but the ground that makes all other knowing possible. It passed from Brahma through a lineage of seers.",
+        "cross_links": { "gita_verse": 4, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 4,
+        "section": 1,
+        "section_name": "Mundaka I — Higher and Lower Knowledge",
+        "sanskrit": "द्वे विद्ये वेदितव्ये इति ह स्म यद् ब्रह्मविदो वदन्ति परा चैवापरा च।",
+        "roman": "Dve Vidye Veditavye Iti Ha Sma Yad Brahmaavido Vadanti Paraa Chaivaaparaa Cha.",
+        "hindi": "ब्रह्मज्ञानी कहते हैं कि दो विद्याएं जाननी चाहिए — परा और अपरा।",
+        "english": "Two kinds of knowledge are to be known — thus say the knowers of Brahman — the higher (Para) and the lower (Apara).",
+        "word_meanings": [
+          { "word": "परा विद्या", "meaning": "higher knowledge (direct knowledge of Brahman)" },
+          { "word": "अपरा विद्या", "meaning": "lower knowledge (all the sciences, arts, and Vedic disciplines)" },
+          { "word": "ब्रह्मविदः", "meaning": "the knowers of Brahman" }
+        ],
+        "commentary": "The key distinction of the Mundaka. All the Vedas, rituals, grammar, poetry, music, astronomy — all of this is Apara (lower) knowledge. This doesn't mean it is useless or wrong, but it cannot by itself lead to liberation. Para Vidya — direct knowledge of Brahman — is of a different order. Knowing That, 'what else is there to know?'",
+        "cross_links": { "gita_verse": 13, "shloka_slug": null, "wisdom_topic": "self-knowledge" }
+      },
+      {
+        "verse_number": 11,
+        "section": 1,
+        "section_name": "Mundaka I — Higher and Lower Knowledge",
+        "sanskrit": "यथा सर्वाणि भूतानि धरा धारयते समम्।\nएवं सर्वाणि भूतानि बह्मण्येव प्रतिष्ठितानि स विज्ञेयः स आत्मा सर्वमेदं तद्ब्रह्म॥",
+        "roman": "Yathaa Sarvaani Bhutani Dharaa Dhaarayate Samam.\nEvam Sarvaani Bhutaani Brahmanyeva Pratishthitaani Sa Vijneya Sa Aatmaa Sarvam Edam Tad Brahma.",
+        "hindi": "जैसे धरती सभी प्राणियों को समान रूप से धारण करती है, वैसे ही सभी प्राणी ब्रह्म में ही प्रतिष्ठित हैं। वही जानने योग्य है, वही आत्मा है — यह सब वही ब्रह्म है।",
+        "english": "As the earth holds all beings equally, so all beings are established in Brahman. He is to be known. He is the Atman. All this is that Brahman.",
+        "word_meanings": [
+          { "word": "धरा धारयते", "meaning": "the earth holds, the earth supports" },
+          { "word": "प्रतिष्ठितानि", "meaning": "established in, grounded in, resting upon" },
+          { "word": "सर्वम् एदम् तद् ब्रह्म", "meaning": "all this is that Brahman (Mahavakya)" }
+        ],
+        "commentary": "The earth metaphor: just as the earth holds all living beings without partiality, Brahman is the ground of all existence. This verse contains another Mahavakya — 'Sarvam edam tad Brahma' — all this is Brahman. The teaching is all-encompassing: not just the seeker or the sage, but literally everything rests in Brahman.",
+        "cross_links": { "gita_verse": null, "shloka_slug": null, "wisdom_topic": "brahman" }
+      },
+      {
+        "verse_number": 19,
+        "section": 2,
+        "section_name": "Mundaka II — The Nature of Brahman",
+        "sanskrit": "द्वा सुपर्णा सयुजा सखाया समानं वृक्षं परिषस्वजाते।\nतयोरन्यः पिप्पलं स्वाद्वत्त्यनश्नन्नन्यो अभिचाकशीति॥",
+        "roman": "Dvaa Suparnaa Sayujaa Sakhaayaa Samaanaam Vriksham Parishasvajaate.\nTayoranyah Pippalam Svaadvatyashnannanyo Abhichaakasheeti.",
+        "hindi": "दो सुंदर पंखों वाले पक्षी, सदा साथ रहने वाले मित्र, एक ही पेड़ से लिपटे हुए हैं। उनमें से एक मीठे फल खाता है; दूसरा बिना खाए देखता रहता है।",
+        "english": "Two beautiful birds, bound together as companions, cling to the same tree. One of them eats the sweet fruit; the other watches without eating.",
+        "word_meanings": [
+          { "word": "द्वा सुपर्णा", "meaning": "two beautiful birds (Suparna = eagle-like, glorious-winged)" },
+          { "word": "सयुजा सखाया", "meaning": "joined together as companions, inseparable friends" },
+          { "word": "समानं वृक्षम्", "meaning": "the same tree (the body or the cosmos)" },
+          { "word": "पिप्पलम् स्वाद्वत्ति", "meaning": "eats the sweet fruit (experiences the results of action)" },
+          { "word": "अनश्नन् अभिचाकशीति", "meaning": "without eating, only watches (the witnessing Atman)" }
+        ],
+        "commentary": "One of the most beloved images in all Sanskrit literature — also appearing in the Rigveda. The two birds on the tree represent the individual soul (Jiva) and the universal Self (Atman/Brahman). The first bird is the ego-self that acts, enjoys, suffers. The second bird — on the same tree, in the same body — is the witnessing Awareness that never participates in action, never suffers, never dies. Liberation is recognizing yourself as the second bird.",
+        "cross_links": { "gita_verse": 15, "shloka_slug": null, "wisdom_topic": "liberation" }
+      },
+      {
+        "verse_number": 38,
+        "section": 3,
+        "section_name": "Mundaka III — The Path and Liberation",
+        "sanskrit": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः।\nयेनाक्रमन्त्यृषयो ह्याप्तकामा यत्र तत् सत्यस्य परमं निधानम्॥",
+        "roman": "Satyameva Jayate Naanritam Satyena Panthaa Vitato Devayanah.\nYenaa Kramantya Rishayo Hyaaptakaama Yatra Tat Satyasya Paramam Nidhanam.",
+        "hindi": "सत्य की ही जय होती है, असत्य की नहीं। सत्य के द्वारा ही देवयान मार्ग विस्तृत होता है जिस पर इच्छापूर्ण ऋषि चलते हैं और जहां सत्य का परम निधान है।",
+        "english": "Truth alone triumphs, not untruth. By truth the divine path is stretched out by which the sages whose desires are satisfied travel to where the supreme treasure of Truth is.",
+        "word_meanings": [
+          { "word": "सत्यम् एव जयते", "meaning": "Truth alone triumphs (India's national motto)" },
+          { "word": "नानृतम्", "meaning": "not untruth" },
+          { "word": "देवयानः", "meaning": "the path of the gods, the divine path" },
+          { "word": "आप्तकामाः", "meaning": "those whose desires are fulfilled, those beyond craving" },
+          { "word": "परमं निधानम्", "meaning": "the supreme treasure, the highest repository" }
+        ],
+        "commentary": "The most famous verse of the Mundaka Upanishad — and since 1950, the national motto of India. Satyameva Jayate: Truth alone triumphs. In its original context, 'Truth' means Brahman itself — the ultimate reality. The path to Brahman is through truth: truthful speech, truthful action, truthful being. The rishis who have fulfilled all desires (meaning: transcended personal desire) travel this path.",
+        "cross_links": { "gita_verse": 18, "shloka_slug": null, "wisdom_topic": "truth" }
+      },
+      {
+        "verse_number": 44,
+        "section": 3,
+        "section_name": "Mundaka III — The Path and Liberation",
+        "sanskrit": "नायमात्मा प्रवचनेन लभ्यो न मेधया न बहुना श्रुतेन।\nयमेवैष वृणुते तेन लभ्यस्तस्यैष आत्मा विवृणुते तनूं स्वाम्॥",
+        "roman": "Naayam Aatmaa Pravacanena Labhyo Na Medhaayaa Na Bahunaa Shrutena.\nYamevai Sha Vrinute Tena Labhyas Tasyaisha Aatmaa Vivrinute Tanuum Svaam.",
+        "hindi": "यह आत्मा प्रवचन से नहीं मिलता, न बुद्धि से, न बहुत सुनने से। जिसे यह (आत्मा) स्वयं वरण करती है, उसी को वह प्राप्त होती है — उसके लिए यह आत्मा अपने स्वरूप को प्रकट करती है।",
+        "english": "This Atman cannot be attained by instruction, nor by intellect, nor by much learning. It is attained by him alone whom it chooses. To such a one, the Atman reveals its own nature.",
+        "word_meanings": [
+          { "word": "प्रवचनेन", "meaning": "by discourse, by instruction, by teaching" },
+          { "word": "मेधया", "meaning": "by intellect, by mental acuity" },
+          { "word": "बहुना श्रुतेन", "meaning": "by much learning, by extensive study" },
+          { "word": "यम् एव एषः वृणुते", "meaning": "whom alone it (the Atman) chooses" },
+          { "word": "विवृणुते तनूं स्वाम्", "meaning": "reveals its own body/nature" }
+        ],
+        "commentary": "A startling and humbling teaching. All the study, all the intellectual brilliance, all the listening to discourses — none of it is sufficient to attain the Atman. The Atman is self-revealing; it chooses whom to reveal itself to. The qualification is grace (anugraha) — the readiness of the heart. This is why the Upanishads say a hundred texts read without inner preparation yield nothing, while a single word from a true teacher changes everything.",
+        "cross_links": { "gita_verse": 18, "shloka_slug": null, "wisdom_topic": "liberation" }
+      }
+    ]
+  }
+]
