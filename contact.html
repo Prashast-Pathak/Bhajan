@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact सनातन ज्ञान सागर — report errors, suggest new bhajans, request content, or ask questions about our free Hindu spiritual library.">
+  <meta name="robots" content="index, follow">
+  <title>Contact Us | सनातन ज्ञान सागर</title>
+  <link rel="canonical" href="https://sanatan-gyan-sagar.pages.dev/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --bg: #F5F0E8; --surface: #EDE6D8; --surface2: #E6DDD0;
+      --saffron: #C96A1F; --maroon: #6E1515; --gold: #A8832A;
+      --text: #2A1A08; --text-sec: #5C3D20; --text-muted: #8C6A45;
+      --border: #D9CDBA; --radius: 12px;
+      --shadow: 0 2px 12px rgba(42,26,8,0.08);
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-ui); font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 16px; }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-om { width: 40px; height: 40px; background: linear-gradient(135deg, var(--saffron), var(--maroon)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-family: var(--font-hindi); }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; color: var(--maroon); font-weight: 600; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); display: none; }
+    @media(min-width:480px){ .logo-sub { display: block; } }
+    nav { display: flex; gap: 4px; align-items: center; }
+    nav a { text-decoration: none; color: var(--text-sec); font-size: 13px; padding: 6px 10px; border-radius: 8px; min-height: 44px; display: flex; align-items: center; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    nav a:hover { background: var(--surface); color: var(--saffron); }
+    .header-fav { background: none; border: none; cursor: pointer; font-size: 20px; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 8px; transition: background 0.2s; color: var(--maroon); }
+    .header-fav:hover { background: var(--surface); }
+
+    .breadcrumb { max-width: 800px; margin: 0 auto; padding: 12px 16px 0; font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--saffron); }
+
+    .page-hero { text-align: center; padding: 40px 16px 32px; }
+    .page-hero .icon { font-size: 48px; margin-bottom: 12px; }
+    .page-hero h1 { font-family: var(--font-hindi); font-size: 28px; color: var(--maroon); margin-bottom: 8px; }
+    .page-hero p { font-size: 15px; color: var(--text-muted); max-width: 500px; margin: 0 auto; }
+
+    main { max-width: 680px; margin: 0 auto; padding: 0 16px 64px; }
+
+    .contact-topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-bottom: 32px; }
+    .topic-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.2s; text-align: left; }
+    .topic-card:hover, .topic-card.selected { border-color: var(--saffron); background: #FDF6EC; }
+    .topic-card.selected { box-shadow: 0 0 0 2px var(--saffron); }
+    .topic-card .t-icon { font-size: 24px; margin-bottom: 6px; }
+    .topic-card .t-title { font-size: 14px; font-weight: 700; color: var(--maroon); margin-bottom: 2px; }
+    .topic-card .t-desc { font-size: 12px; color: var(--text-muted); }
+
+    .contact-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+    .form-group { margin-bottom: 20px; }
+    .form-label { display: block; font-size: 13px; font-weight: 700; color: var(--text-sec); margin-bottom: 6px; letter-spacing: 0.3px; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--border);
+      border-radius: 8px; background: var(--bg); font-size: 15px;
+      font-family: var(--font-ui); color: var(--text); outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s; min-height: 44px;
+    }
+    .form-textarea { min-height: 120px; resize: vertical; line-height: 1.6; }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--saffron);
+      box-shadow: 0 0 0 3px rgba(201,106,31,0.1);
+    }
+    .form-hint { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+    .submit-btn {
+      width: 100%; padding: 14px; background: var(--saffron); color: #fff;
+      border: none; border-radius: 50px; font-size: 16px; font-weight: 700;
+      cursor: pointer; transition: background 0.2s; min-height: 52px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .submit-btn:hover { background: var(--maroon); }
+
+    .success-msg { display: none; background: #f0fdf4; border: 1px solid #86efac; border-radius: var(--radius); padding: 24px; text-align: center; }
+    .success-msg .s-icon { font-size: 40px; margin-bottom: 12px; }
+    .success-msg h3 { font-family: var(--font-hindi); font-size: 20px; color: #15803d; margin-bottom: 8px; }
+    .success-msg p { color: #166534; font-size: 14px; }
+
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 32px 16px; text-align: center; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-om { font-family: var(--font-hindi); font-size: 32px; color: var(--saffron); margin-bottom: 8px; }
+    .footer-tagline { font-family: var(--font-hindi); font-size: 15px; color: var(--text-sec); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+    .footer-links a { color: var(--text-muted); font-size: 13px; text-decoration: none; }
+    .footer-links a:hover { color: var(--saffron); }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+
+    .bottom-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 99; padding: 4px 0 env(safe-area-inset-bottom); }
+    .bottom-nav-inner { display: flex; justify-content: space-around; }
+    .bnav-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--text-muted); padding: 8px 12px; min-width: 60px; min-height: 52px; justify-content: center; gap: 2px; border-radius: 8px; font-size: 10px; transition: color 0.2s; }
+    .bnav-item.active, .bnav-item:hover { color: var(--saffron); }
+    .bnav-item span:first-child { font-size: 20px; }
+    @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } }
+    @media(min-width:601px) { nav { display: flex; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo-om">ॐ</div>
+      <div class="logo-text">
+        <span class="logo-title">सनातन ज्ञान सागर</span>
+        <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="bhajans.html">🪔 Bhajans</a>
+      <a href="bhagavad-gita.html">📖 Gita</a>
+      <a href="wisdom.html">💬 Wisdom</a>
+    </nav>
+    <button class="header-fav" onclick="window.location.href='favorites.html'" aria-label="Saved">❤️</button>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">🏠 Home</a>
+  <span>›</span>
+  <span>Contact</span>
+</div>
+
+<div class="page-hero">
+  <div class="icon">🙏</div>
+  <h1>संपर्क करें — Contact Us</h1>
+  <p>We welcome suggestions, corrections, and feedback. Every message is read personally.</p>
+</div>
+
+<main>
+  <h2 style="font-family:var(--font-hindi);font-size:18px;color:var(--maroon);margin-bottom:12px">आप किस विषय में लिखना चाहते हैं?</h2>
+  <div class="contact-topics" id="topics">
+    <div class="topic-card" data-topic="error" onclick="selectTopic(this)">
+      <div class="t-icon">🔧</div>
+      <div class="t-title">Report an Error</div>
+      <div class="t-desc">Wrong translation, typo, incorrect content</div>
+    </div>
+    <div class="topic-card" data-topic="suggest" onclick="selectTopic(this)">
+      <div class="t-icon">➕</div>
+      <div class="t-title">Suggest Content</div>
+      <div class="t-desc">Request a new bhajan, shloka or prayer</div>
+    </div>
+    <div class="topic-card" data-topic="temple" onclick="selectTopic(this)">
+      <div class="t-icon">🛕</div>
+      <div class="t-title">Temple / Organization</div>
+      <div class="t-desc">White-label or content partnership</div>
+    </div>
+    <div class="topic-card" data-topic="other" onclick="selectTopic(this)">
+      <div class="t-icon">💬</div>
+      <div class="t-title">Other</div>
+      <div class="t-desc">General feedback or questions</div>
+    </div>
+  </div>
+
+  <div class="contact-form" id="contact-form">
+    <div class="form-group">
+      <label class="form-label" for="contact-name">Your Name <span style="color:var(--saffron)">*</span></label>
+      <input type="text" class="form-input" id="contact-name" placeholder="Ramesh Sharma" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="contact-email">Email Address <span style="color:var(--saffron)">*</span></label>
+      <input type="email" class="form-input" id="contact-email" placeholder="you@example.com" required>
+      <p class="form-hint">We will reply within 2–3 business days. Your email will not be shared.</p>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="contact-topic">Topic</label>
+      <select class="form-select" id="contact-topic">
+        <option value="">Select a topic</option>
+        <option value="error">Report an Error</option>
+        <option value="suggest">Suggest New Content</option>
+        <option value="temple">Temple / Organization Partnership</option>
+        <option value="other">Other / General Feedback</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="contact-message">Message <span style="color:var(--saffron)">*</span></label>
+      <textarea class="form-textarea" id="contact-message" placeholder="Write your message here... (Hindi or English, both welcome)" required></textarea>
+    </div>
+    <button type="button" class="submit-btn" id="submit-btn" onclick="submitForm()">
+      🙏 Send Message — संदेश भेजें
+    </button>
+  </div>
+
+  <div class="success-msg" id="success-msg">
+    <div class="s-icon">🙏</div>
+    <h3>धन्यवाद! Thank You!</h3>
+    <p>Your message has been received. We will get back to you within 2–3 business days.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-om">ॐ</div>
+    <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+    <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing.</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bnav-item"><span>🏠</span><span>Home</span></a>
+    <a href="bhajans.html" class="bnav-item"><span>🪔</span><span>Bhajans</span></a>
+    <a href="bhagavad-gita.html" class="bnav-item"><span>📖</span><span>Gita</span></a>
+    <a href="wisdom.html" class="bnav-item"><span>💬</span><span>Wisdom</span></a>
+    <a href="favorites.html" class="bnav-item"><span>❤️</span><span>Saved</span></a>
+  </div>
+</nav>
+
+<script>
+  function selectTopic(el) {
+    document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    document.getElementById('contact-topic').value = el.dataset.topic;
+  }
+
+  function submitForm() {
+    const name = document.getElementById('contact-name').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const msg = document.getElementById('contact-message').value.trim();
+
+    if (!name || !email || !msg) {
+      alert('Please fill in all required fields (Name, Email, and Message).');
+      return;
+    }
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Show success (static site - form handler to be connected via Formspree/Netlify)
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

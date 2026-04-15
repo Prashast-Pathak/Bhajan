@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About सनातन ज्ञान सागर — the most accessible free Hindu spiritual library on the internet with bhajans, Bhagavad Gita, shlokas, prayers, Upanishads and wisdom quotes.">
+  <meta name="keywords" content="about sanatan gyan sagar, hindu spiritual library, bhajan website, free gita online">
+  <meta name="robots" content="index, follow">
+  <title>About Us | सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</title>
+  <link rel="canonical" href="https://sanatan-gyan-sagar.pages.dev/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --bg: #F5F0E8; --surface: #EDE6D8; --surface2: #E6DDD0;
+      --saffron: #C96A1F; --maroon: #6E1515; --gold: #A8832A;
+      --text: #2A1A08; --text-sec: #5C3D20; --text-muted: #8C6A45;
+      --border: #D9CDBA; --radius: 12px;
+      --shadow: 0 2px 12px rgba(42,26,8,0.08);
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-ui); font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    header { position: sticky; top: 0; z-index: 100; background: rgba(245,240,232,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 16px; }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-om { width: 40px; height: 40px; background: linear-gradient(135deg, var(--saffron), var(--maroon)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-family: var(--font-hindi); }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; color: var(--maroon); font-weight: 600; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); display: none; }
+    @media(min-width:480px){ .logo-sub { display: block; } }
+    nav { display: flex; gap: 4px; align-items: center; }
+    nav a { text-decoration: none; color: var(--text-sec); font-size: 13px; padding: 6px 10px; border-radius: 8px; min-height: 44px; display: flex; align-items: center; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    nav a:hover { background: var(--surface); color: var(--saffron); }
+    .header-fav { background: none; border: none; cursor: pointer; font-size: 20px; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 8px; transition: background 0.2s; color: var(--maroon); }
+    .header-fav:hover { background: var(--surface); }
+
+    .breadcrumb { max-width: 800px; margin: 0 auto; padding: 12px 16px 0; font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--saffron); }
+
+    .hero-banner {
+      background: linear-gradient(135deg, var(--maroon) 0%, #8B1A1A 50%, var(--saffron) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 60px 16px;
+    }
+    .hero-banner .om { font-family: var(--font-hindi); font-size: 56px; opacity: 0.9; }
+    .hero-banner h1 { font-family: var(--font-hindi); font-size: 32px; margin: 8px 0 12px; }
+    .hero-banner p { font-size: 16px; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+
+    main { max-width: 800px; margin: 0 auto; padding: 32px 16px 64px; }
+
+    .section { margin-bottom: 40px; }
+    .section-title {
+      font-family: var(--font-hindi);
+      font-size: 22px; color: var(--maroon);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-title::before { content: '✦'; color: var(--gold); font-size: 14px; }
+    p { margin-bottom: 14px; color: var(--text-sec); }
+    .hindi { font-family: var(--font-hindi); font-size: 20px; color: var(--maroon); margin-bottom: 6px; }
+
+    .pillars-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+    .pillar-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; text-align: center; text-decoration: none; color: var(--text); transition: all 0.2s; }
+    .pillar-card:hover { border-color: var(--saffron); box-shadow: var(--shadow); transform: translateY(-2px); }
+    .pillar-card .icon { font-size: 28px; margin-bottom: 8px; }
+    .pillar-card h3 { font-size: 15px; font-weight: 700; color: var(--maroon); margin-bottom: 4px; }
+    .pillar-card p { font-size: 12px; color: var(--text-muted); margin: 0; }
+
+    .principles-list { list-style: none; }
+    .principles-list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .principles-list li:last-child { border-bottom: none; }
+    .principles-list .principle-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+    .principles-list .principle-text strong { display: block; font-size: 15px; color: var(--maroon); margin-bottom: 2px; }
+    .principles-list .principle-text span { font-size: 14px; color: var(--text-muted); }
+
+    .quote-box { background: var(--surface); border-left: 4px solid var(--saffron); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 20px 20px 24px; margin: 24px 0; }
+    .quote-box .quote-hindi { font-family: var(--font-hindi); font-size: 22px; color: var(--maroon); margin-bottom: 8px; }
+    .quote-box .quote-english { font-size: 15px; color: var(--text-sec); font-style: italic; }
+
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 32px 16px; text-align: center; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-om { font-family: var(--font-hindi); font-size: 32px; color: var(--saffron); margin-bottom: 8px; }
+    .footer-tagline { font-family: var(--font-hindi); font-size: 15px; color: var(--text-sec); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+    .footer-links a { color: var(--text-muted); font-size: 13px; text-decoration: none; }
+    .footer-links a:hover { color: var(--saffron); }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+
+    .bottom-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 99; padding: 4px 0 env(safe-area-inset-bottom); }
+    .bottom-nav-inner { display: flex; justify-content: space-around; }
+    .bnav-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--text-muted); padding: 8px 12px; min-width: 60px; min-height: 52px; justify-content: center; gap: 2px; border-radius: 8px; font-size: 10px; transition: color 0.2s; }
+    .bnav-item.active, .bnav-item:hover { color: var(--saffron); }
+    .bnav-item span:first-child { font-size: 20px; }
+    @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } }
+    @media(min-width:601px) { nav { display: flex; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo-om">ॐ</div>
+      <div class="logo-text">
+        <span class="logo-title">सनातन ज्ञान सागर</span>
+        <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="bhajans.html">🪔 Bhajans</a>
+      <a href="bhagavad-gita.html">📖 Gita</a>
+      <a href="wisdom.html">💬 Wisdom</a>
+    </nav>
+    <button class="header-fav" onclick="window.location.href='favorites.html'" aria-label="Saved">❤️</button>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">🏠 Home</a>
+  <span>›</span>
+  <span>About</span>
+</div>
+
+<div class="hero-banner">
+  <div class="om">ॐ</div>
+  <h1>सनातन ज्ञान सागर</h1>
+  <p>The most accessible free Hindu spiritual library — in Sanskrit, Hindi &amp; English</p>
+</div>
+
+<main>
+  <div class="section">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="hindi">हमारा उद्देश्य</p>
+    <p>सनातन ज्ञान सागर is a free, open, and accessible platform dedicated to preserving and sharing the eternal wisdom of Hinduism — for every person, on every device, in every language they are comfortable with.</p>
+    <p>We believe that sacred knowledge belongs to everyone. Whether you are an 80-year-old grandmother on a cheap Android phone or a 28-year-old IT professional on an iPhone — this library is built for you.</p>
+    <div class="quote-box">
+      <p class="quote-hindi">ज्ञान सबका, ज्ञान मुफ्त।</p>
+      <p class="quote-english">Knowledge belongs to all. Knowledge is free.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">The Six Pillars</h2>
+    <p>Our platform is built on six content pillars that cover the full breadth of Hindu spiritual knowledge:</p>
+    <div class="pillars-grid">
+      <a href="bhajans.html" class="pillar-card">
+        <div class="icon">🪔</div>
+        <h3>Bhajans</h3>
+        <p>Devotional songs with lyrics, meaning &amp; story</p>
+      </a>
+      <a href="bhagavad-gita.html" class="pillar-card">
+        <div class="icon">📖</div>
+        <h3>Bhagavad Gita</h3>
+        <p>All 18 chapters, verse by verse</p>
+      </a>
+      <a href="shlokas.html" class="pillar-card">
+        <div class="icon">🕉️</div>
+        <h3>Shlokas</h3>
+        <p>Sanskrit shlokas with Hindi &amp; English meaning</p>
+      </a>
+      <a href="prayers.html" class="pillar-card">
+        <div class="icon">🙏</div>
+        <h3>Prayers</h3>
+        <p>Aarti, Stuti, Stotra &amp; Chalisa collections</p>
+      </a>
+      <a href="upanishads.html" class="pillar-card">
+        <div class="icon">📿</div>
+        <h3>Upanishads</h3>
+        <p>Key teachings from major Upanishads</p>
+      </a>
+      <a href="wisdom.html" class="pillar-card">
+        <div class="icon">💬</div>
+        <h3>Wisdom Quotes</h3>
+        <p>Organized by life topic — anxiety, love, grief</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Our Core Principles</h2>
+    <ul class="principles-list">
+      <li>
+        <span class="principle-icon">♿</span>
+        <div class="principle-text">
+          <strong>Accessibility First</strong>
+          <span>If an 80-year-old grandmother on a cheap Android cannot use it, it has failed. 22px+ default font, large buttons, offline access.</span>
+        </div>
+      </li>
+      <li>
+        <span class="principle-icon">🔍</span>
+        <div class="principle-text">
+          <strong>Search-First Design</strong>
+          <span>Every piece of content is a Google search landing page with unique, descriptive URLs.</span>
+        </div>
+      </li>
+      <li>
+        <span class="principle-icon">📚</span>
+        <div class="principle-text">
+          <strong>Depth Over Breadth</strong>
+          <span>Complete, rich content beats thin pages. Every bhajan has story, meaning, occasion context and verse-by-verse breakdown.</span>
+        </div>
+      </li>
+      <li>
+        <span class="principle-icon">🆓</span>
+        <div class="principle-text">
+          <strong>Free Forever</strong>
+          <span>Zero cost infrastructure. Everything accessible without creating an account. No login walls ever.</span>
+        </div>
+      </li>
+      <li>
+        <span class="principle-icon">🌐</span>
+        <div class="principle-text">
+          <strong>Language for All</strong>
+          <span>Sanskrit original, Hindi translation, English meaning, and Roman transliteration on every item.</span>
+        </div>
+      </li>
+      <li>
+        <span class="principle-icon">🙏</span>
+        <div class="principle-text">
+          <strong>Spiritual Integrity</strong>
+          <span>Every word must be accurate, authentic, and respectful. We do not take liberties with sacred texts.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Who We Serve</h2>
+    <p>Our primary audience is Hindi-speaking Hindus worldwide — in India (Haryana, UP, Rajasthan, MP, Bihar, Delhi NCR) and the Indian diaspora in USA, UK, Canada, UAE, and Australia.</p>
+    <p>We serve grandmothers seeking bhajan lyrics for morning puja, professionals looking for Gita wisdom on anxiety, homemakers wanting festival-organized content, seekers finding spiritual answers to modern problems, and pandits needing printable temple collections.</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Content Integrity</h2>
+    <p>All content is sourced from authentic Hindu scriptures and scholarly traditions. We do not alter, simplify, or reinterpret sacred texts beyond providing explanations in accessible language.</p>
+    <p>If you find any error in our content, please <a href="contact.html" style="color:var(--saffron)">contact us</a>. Maintaining the integrity of our sacred content is our highest priority.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-om">ॐ</div>
+    <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+    <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing. | ज्ञान सबका, ज्ञान मुफ्त।</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bnav-item"><span>🏠</span><span>Home</span></a>
+    <a href="bhajans.html" class="bnav-item"><span>🪔</span><span>Bhajans</span></a>
+    <a href="bhagavad-gita.html" class="bnav-item"><span>📖</span><span>Gita</span></a>
+    <a href="wisdom.html" class="bnav-item"><span>💬</span><span>Wisdom</span></a>
+    <a href="favorites.html" class="bnav-item"><span>❤️</span><span>Saved</span></a>
+  </div>
+</nav>
+</body>
+</html>
