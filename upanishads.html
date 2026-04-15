@@ -715,6 +715,18 @@
       .verse-nav { flex-wrap: wrap; }
     }
   </style>
+  <link rel="manifest" href="/manifest.json">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+
 </head>
 <body>
 
@@ -814,7 +826,7 @@
   // ── LOAD DATA ──
   async function init() {
     try {
-      const res = await fetch('upanishads.json');
+      const res = await fetch('/data/upanishads.json');
       allData = await res.json();
       buildTabs();
       // default: first upanishad

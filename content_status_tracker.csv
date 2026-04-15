@@ -1,0 +1,83 @@
+Category,Item,Sanskrit,Hindi,English,Beej Detected,Status
+Bhajan,Forty Verses in Praise of Hanuman,No,No,No,⚠️ YES,Incomplete
+Bhajan,Victory to Lord Ganesha,No,No,No,⚠️ YES,Incomplete
+Bhajan,"Om, Victory to the Lord of the Universe",No,No,No,⚠️ YES,Incomplete
+Gita,Ch 2 Verse 11,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 14,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 17,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 19,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 20,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 22,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 23,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 27,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 38,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 40,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 47,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 48,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 50,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 55,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 56,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 58,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 62,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 63,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 66,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 70,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 71,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 72,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 3,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 7,Yes,Yes,Yes,⚠️ YES,Complete
+Gita,Ch 2 Verse 13,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 45,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 16,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 59,Yes,Yes,Yes,Safe,Complete
+Gita,Ch 2 Verse 64,Yes,Yes,Yes,Safe,Complete
+Shloka,Gayatri Mantra,Yes,Yes,Yes,Safe,Complete
+Shloka,Mahamrityunjaya Mantra,Yes,Yes,Yes,⚠️ YES,Complete
+Shloka,Shanti Path — Isha Upanishad,Yes,Yes,Yes,Safe,Complete
+Shloka,Isha Upanishad — All is Isha,Yes,Yes,Yes,Safe,Complete
+Shloka,Mandukya Upanishad — On Om,Yes,Yes,Yes,Safe,Complete
+Shloka,Kena Upanishad — Who Moves the Mind?,Yes,Yes,Yes,Safe,Complete
+Shloka,Asato Ma Sadgamaya,Yes,Yes,Yes,Safe,Complete
+Shloka,Vishnu Sahasranama — Opening Dhyana,Yes,Yes,Yes,Safe,Complete
+Shloka,Ya Devi Sarva Bhuteshu — Durga Saptashati,Yes,Yes,Yes,Safe,Complete
+Shloka,Karmanyevadhikaraste — On Action,Yes,Yes,Yes,⚠️ YES,Complete
+Shloka,Na Jayate Mriyate — The Eternal Soul,Yes,Yes,Yes,⚠️ YES,Complete
+Shloka,Ananyashchintayanto — Divine Grace,Yes,Yes,Yes,Safe,Complete
+Shloka,Sarva Dharman Parityajya — Supreme Surrender,Yes,Yes,Yes,Safe,Complete
+Shloka,Yada Yada Hi Dharmasya — Avatara Declaration,Yes,Yes,Yes,Safe,Complete
+Shloka,Sarvesham Svastir Bhavatu — Universal Peace,Yes,Yes,Yes,Safe,Complete
+Shloka,Tvameva Mata — Universal Prayer to God,Yes,Yes,Yes,⚠️ YES,Complete
+Shloka,Vakratunda Mahakaya — Ganesha Invocation,Yes,Yes,Yes,Safe,Complete
+Shloka,Ya Kundendu — Saraswati Vandana,Yes,Yes,Yes,Safe,Complete
+Shloka,Nagendra Haraya — Shiva Panchakshara Stotra,Yes,Yes,Yes,Safe,Complete
+Shloka,Om Purnamadah — Brihadaranyaka Shanti,Yes,Yes,Yes,Safe,Complete
+Prayer,Hanuman Puja Sequence,No,No,No,⚠️ YES,Incomplete
+Prayer,Ganesh Puja Sequence,No,No,No,Safe,Incomplete
+Prayer,Lakshmi Puja Sequence,No,No,No,Safe,Incomplete
+Prayer,Saraswati Puja Sequence,No,No,No,Safe,Incomplete
+Prayer,Shiva Abhishek Sequence,No,No,No,Safe,Incomplete
+Prayer,Durga Puja Sequence,No,No,No,⚠️ YES,Incomplete
+Prayer,Vishnu Puja Sequence,No,No,No,Safe,Incomplete
+Prayer,Krishna Puja / Janmashtami,No,No,No,⚠️ YES,Incomplete
+Prayer,Surya Namaskar with Mantras,No,No,No,⚠️ YES,Incomplete
+Prayer,Sandhya Vandanam (Simplified),No,No,No,Safe,Incomplete
+Prayer,Navagraha Puja,No,No,No,⚠️ YES,Incomplete
+Prayer,Satyanarayan Puja (Short Form),No,No,No,Safe,Incomplete
+Prayer,Diwali Lakshmi-Ganesha Puja,No,No,No,⚠️ YES,Incomplete
+Prayer,Navratri Evening Puja,No,No,No,Safe,Incomplete
+Prayer,Morning Prayer Sequence,No,No,No,⚠️ YES,Incomplete
+Upanishad,Isha Upanishad,No,No,No,⚠️ YES,Incomplete
+Upanishad,Kena Upanishad,No,No,No,⚠️ YES,Incomplete
+Upanishad,Mandukya Upanishad,No,No,No,⚠️ YES,Incomplete
+Upanishad,Katha Upanishad,No,No,No,⚠️ YES,Incomplete
+Upanishad,Mundaka Upanishad,No,No,No,⚠️ YES,Incomplete
+Wisdom,Anxiety & Worry,No,No,No,Safe,Incomplete
+Wisdom,Failure & Defeat,No,No,No,⚠️ YES,Incomplete
+Wisdom,Death & Impermanence,No,No,No,⚠️ YES,Incomplete
+Wisdom,Love & Devotion,No,No,No,⚠️ YES,Incomplete
+Wisdom,Anger & Self-Control,No,No,No,⚠️ YES,Incomplete
+Wisdom,Success & Achievement,No,No,No,⚠️ YES,Incomplete
+Wisdom,Patience & Perseverance,No,No,No,Safe,Incomplete
+Wisdom,Grief & Sorrow,No,No,No,⚠️ YES,Incomplete
+Wisdom,Fear & Courage,No,No,No,⚠️ YES,Incomplete
+Wisdom,Duty & Dharma,No,No,No,⚠️ YES,Incomplete

@@ -92,6 +92,17 @@
     @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } .page-title { font-size: 22px; } }
     @media(min-width:601px) { nav { display: flex; } }
   </style>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+
 </head>
 <body>
 <header>
@@ -198,7 +209,7 @@
       return;
     }
 
-    fetch('bhajans.json')
+    fetch('/data/bhajans.json')
       .then(r => r.json())
       .then(data => {
         const saved = data.filter(b => favs.includes(b.slug));

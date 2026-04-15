@@ -1,0 +1,1472 @@
+[
+  {
+    "id": 1,
+    "slug": "hanuman-chalisa",
+    "title_hindi": "हनुमान चालीसा",
+    "title_roman": "Hanuman Chalisa",
+    "title_english": "Forty Verses in Praise of Hanuman",
+    "deity": "Hanuman",
+    "deity_color": "#EA580C",
+    "language": "Awadhi",
+    "festival": [
+      "Hanuman Jayanti",
+      "Diwali",
+      "Navratri"
+    ],
+    "occasion": "Daily Prayer, Tuesday & Saturday Worship",
+    "timing": "Morning and Evening",
+    "raga": "Bhairav (Morning), Bhairavi (Evening)",
+    "composer": "Goswami Tulsidas",
+    "duration_minutes": 12,
+    "tags": [
+      "hanuman",
+      "chalisa",
+      "tulsidas",
+      "strength",
+      "protection",
+      "devotion",
+      "ram"
+    ],
+    "topics": [
+      "protection",
+      "strength",
+      "courage",
+      "devotion",
+      "removing obstacles",
+      "health",
+      "fear removal"
+    ],
+    "story": "The Hanuman Chalisa was composed by the great saint-poet Goswami Tulsidas in the 16th century during the reign of the Mughal Emperor Akbar. According to popular legend, Tulsidas was imprisoned by Emperor Akbar when he refused to demonstrate his powers. It is said that Tulsidas composed the Hanuman Chalisa and prayed to Lord Hanuman, who then sent an army of monkeys to terrorize the Mughal court, forcing Akbar to release the saint. However, the deeper spiritual reason for composing the Chalisa was Tulsidas's immense love and devotion for Lord Ram, and Hanuman as the greatest devotee of Ram. Tulsidas composed this in simple Awadhi language so that common people, not just Sanskrit scholars, could recite it and receive divine blessings. The word 'Chalisa' means forty, referring to the forty chaupai verses in the hymn. Each verse reveals a different attribute of Lord Hanuman — his physical form, his divine knowledge, his feats of strength, his unparalleled devotion to Lord Ram, and his ability to remove all obstacles and suffering from the lives of his devotees.",
+    "story_hindi": "हनुमान चालीसा की रचना महान संत-कवि गोस्वामी तुलसीदास ने 16वीं शताब्दी में मुगल सम्राट अकबर के शासनकाल में की थी। एक प्रसिद्ध किंवदंती के अनुसार, जब तुलसीदास ने अपनी शक्तियां दिखाने से इनकार किया, तो अकबर ने उन्हें कैद करवा दिया। तुलसीदास ने हनुमान चालीसा की रचना की और हनुमान जी से प्रार्थना की। तब हनुमान जी ने मुगल दरबार में वानरों की सेना भेजी, और अकबर को उन्हें मुक्त करना पड़ा। तुलसीदास ने इसे सरल अवधी भाषा में इसलिए लिखा ताकि आम जनता भी इसे पढ़ सके। 'चालीसा' शब्द का अर्थ है चालीस, जो इस स्तुति की चालीस चौपाइयों को संदर्भित करता है।",
+    "significance": "The Hanuman Chalisa is the most widely recited Hindu prayer in the world, chanted by hundreds of millions of devotees every day. It is scientifically structured — the 40 verses systematically praise Hanuman's form, qualities, feats, and grace. Reciting it is believed to grant courage in times of fear, protection from evil forces, health in times of illness, success in difficult endeavors, and the supreme blessing of Ram's name. The Chalisa is also a condensed biography of Hanuman's life — from his birth to his legendary feats in the Ramayana.",
+    "significance_hindi": "हनुमान चालीसा दुनिया में सबसे अधिक पढ़ी जाने वाली हिंदू प्रार्थना है। इसे प्रतिदिन करोड़ों भक्त पढ़ते हैं। माना जाता है कि इसके पाठ से भय दूर होता है, बुरी शक्तियों से रक्षा होती है, बीमारी में स्वास्थ्य मिलता है, और कठिन कार्यों में सफलता प्राप्त होती है। यह हनुमान जी के जीवन का संक्षिप्त जीवनचरित भी है।",
+    "benefits": [
+      "Removes fear and gives immense courage",
+      "Protects from evil spirits and negative energies",
+      "Grants good health and removes disease",
+      "Brings success in difficult endeavors",
+      "Bestows wisdom and removes ignorance",
+      "Fulfills righteous desires",
+      "Grants liberation from the cycle of birth and death"
+    ],
+    "when_to_sing": {
+      "festival": [
+        "Hanuman Jayanti",
+        "Diwali",
+        "Navratri",
+        "Ram Navami"
+      ],
+      "time": [
+        "Brahma Muhurta (4-6 AM)",
+        "Sunrise",
+        "Sunset",
+        "Tuesday",
+        "Saturday"
+      ],
+      "occasion": [
+        "Before exams",
+        "During illness",
+        "When afraid",
+        "Before a journey",
+        "Morning and evening puja"
+      ]
+    },
+    "featured": true,
+    "priority": 1,
+    "verses": [
+      {
+        "type": "doha",
+        "label_hindi": "दोहा (प्रारम्भिक)",
+        "label_english": "Opening Doha",
+        "lines": [
+          {
+            "hindi": "श्री गुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।",
+            "roman": "Shri Guru Charan Saroj Raj, Nij Manu Mukuru Sudhari.",
+            "hindi_meaning": "गुरु के चरण-कमल की रज से अपने मन के दर्पण को शुद्ध करके,",
+            "english": "Cleansing the mirror of my mind with the dust of the Guru's lotus feet,"
+          },
+          {
+            "hindi": "बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि॥",
+            "roman": "Baranau Raghubar Bimal Jasu, Jo Dayaku Phal Chari.",
+            "hindi_meaning": "मैं श्री रघुवर (राम) का निर्मल यश वर्णन करता [mantra fragment removed for safety], जो चारों फलों (धर्म, अर्थ, काम, मोक्ष) को देने वाला है।",
+            "english": "I narrate the pure glory of Sri Raghuvar (Ram), which bestows the four fruits of life (Dharma, Artha, Kama, Moksha)."
+          },
+          {
+            "hindi": "बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।",
+            "roman": "Buddhihin Tanu Janike, Sumiron Pavan Kumar.",
+            "hindi_meaning": "अपने शरीर को बुद्धिहीन जानकर, मैं पवनकुमार (हनुमान) का स्मरण करता [mantra fragment removed for safety]।",
+            "english": "Knowing myself to be without wisdom, I meditate upon the Son of Wind (Hanuman)."
+          },
+          {
+            "hindi": "बल बुद्धि विद्या देहु मोहि, हरहु कलेस विकार॥",
+            "roman": "Bal Buddhi Vidya Dehu Mohi, Harahu Kales Vikar.",
+            "hindi_meaning": "मुझे शक्ति, बुद्धि और ज्ञान दो, और मेरे दुखों और विकारों को दूर करो।",
+            "english": "Grant me strength, wisdom and knowledge, and remove my sorrows and imperfections."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "जय हनुमान ज्ञान गुण सागर।",
+            "roman": "Jai Hanuman Gyan Gun Sagar.",
+            "hindi_meaning": "हे हनुमान! आप ज्ञान और गुणों के सागर हैं — आपकी जय हो।",
+            "english": "Victory to Hanuman, the ocean of wisdom and virtue."
+          },
+          {
+            "hindi": "जय कपीस तिहुं लोक उजागर॥",
+            "roman": "Jai Kapis Tihun Lok Ujagar.",
+            "hindi_meaning": "हे वानरों के स्वामी! आप तीनों लोकों (स्वर्ग, पृथ्वी, पाताल) में प्रकाशित हैं — आपकी जय हो।",
+            "english": "Victory to the Lord of Monkeys, who illumines all three worlds."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "राम दूत अतुलित बल धामा।",
+            "roman": "Ram Doot Atulit Bal Dhama.",
+            "hindi_meaning": "आप श्री राम के दूत हैं और आप अतुलनीय शक्ति के भंडार हैं।",
+            "english": "O Messenger of Ram, you are the abode of incomparable strength."
+          },
+          {
+            "hindi": "अंजनि-पुत्र पवन-सुत नामा॥",
+            "roman": "Anjani-Putra Pavan-Sut Nama.",
+            "hindi_meaning": "आप माता अंजनी के पुत्र और पवन (वायु) के पुत्र के नाम से विख्यात हैं।",
+            "english": "You are known as the son of Anjani and son of the Wind God."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "महावीर विक्रम बजरंगी।",
+            "roman": "Mahavir Vikram Bajrangi.",
+            "hindi_meaning": "आप महावीर हैं, पराक्रम के प्रतीक हैं, और आपका शरीर वज्र जैसा कठोर है।",
+            "english": "O great hero, excelling in valor, with a body hard as thunder."
+          },
+          {
+            "hindi": "कुमति निवार सुमति के संगी॥",
+            "roman": "Kumati Nivar Sumati Ke Sangi.",
+            "hindi_meaning": "आप कुबुद्धि को दूर करते हैं और सद्बुद्धि के साथी हैं।",
+            "english": "You remove evil thoughts and are a companion of the wise."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ४",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "कंचन बरन बिराज सुबेसा।",
+            "roman": "Kanchan Baran Biraj Subesa.",
+            "hindi_meaning": "आप सुवर्ण (स्वर्ण) के समान वर्ण वाले हैं और सुंदर वेश में सुशोभित हैं।",
+            "english": "You are of golden complexion, adorned in beautiful attire."
+          },
+          {
+            "hindi": "कानन कुंडल कुंचित केसा॥",
+            "roman": "Kanan Kundal Kunchit Kesa.",
+            "hindi_meaning": "आपके कानों में कुंडल हैं और आपके बाल घुंघराले हैं।",
+            "english": "With earrings in your ears and curly hair adorning your head."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ५",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "हाथ बज्र और ध्वजा बिराजे।",
+            "roman": "Hath Bajra Aur Dhvaja Biraje.",
+            "hindi_meaning": "आपके हाथ में वज्र और ध्वजा (पताका) सुशोभित है।",
+            "english": "In your hands gleam the thunderbolt and the flag."
+          },
+          {
+            "hindi": "कांधे मूंज जनेऊ साजे॥",
+            "roman": "Kandhe Munj Janeu Saje.",
+            "hindi_meaning": "आपके कंधे पर मूंज का जनेऊ (यज्ञोपवीत) शोभायमान है।",
+            "english": "On your shoulder shines the sacred thread of munja grass."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ६",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "शंकर सुवन केसरी नंदन।",
+            "roman": "Shankar Suvan Kesari Nandan.",
+            "hindi_meaning": "आप शंकर के अवतार हैं और केसरी के पुत्र हैं।",
+            "english": "You are an incarnation of Shankar and the son of Kesari."
+          },
+          {
+            "hindi": "तेज प्रताप महा जग बंदन॥",
+            "roman": "Tej Pratap Maha Jag Bandan.",
+            "hindi_meaning": "आपका तेज और प्रताप इतना महान है कि सारा जगत आपको वंदन करता है।",
+            "english": "Your splendor and glory are so great that the whole world bows to you."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ७",
+        "label_english": "Verse 7",
+        "lines": [
+          {
+            "hindi": "विद्यावान गुनी अति चातुर।",
+            "roman": "Vidyavan Guni Ati Chatur.",
+            "hindi_meaning": "आप विद्वान हैं, गुणवान हैं, और अत्यंत चतुर हैं।",
+            "english": "You are learned, virtuous, and supremely clever."
+          },
+          {
+            "hindi": "राम काज करिबे को आतुर॥",
+            "roman": "Ram Kaj Karibe Ko Atur.",
+            "hindi_meaning": "आप सदा श्री राम के काम करने के लिए उत्सुक रहते हैं।",
+            "english": "You are always eager to carry out the work of Sri Ram."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ८",
+        "label_english": "Verse 8",
+        "lines": [
+          {
+            "hindi": "प्रभु चरित्र सुनिबे को रसिया।",
+            "roman": "Prabhu Charitra Sunibe Ko Rasiya.",
+            "hindi_meaning": "आप प्रभु राम के चरित्र सुनने में परम रस लेते हैं।",
+            "english": "You delight in hearing the glorious deeds of Lord Ram."
+          },
+          {
+            "hindi": "राम लखन सीता मन बसिया॥",
+            "roman": "Ram Lakhan Sita Man Basiya.",
+            "hindi_meaning": "आपके मन में सदा राम, लखन और सीता बसे रहते हैं।",
+            "english": "Ram, Lakshman and Sita always dwell in your heart."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ९",
+        "label_english": "Verse 9",
+        "lines": [
+          {
+            "hindi": "सूक्ष्म रूप धरि सियहि दिखावा।",
+            "roman": "Sukshma Roop Dhari Siyahi Dikhava.",
+            "hindi_meaning": "आपने सूक्ष्म रूप धारण करके माता सीता को (लंका में) दर्शन दिया।",
+            "english": "Assuming a tiny form, you appeared before Mother Sita in Lanka."
+          },
+          {
+            "hindi": "बिकट रूप धरि लंक जरावा॥",
+            "roman": "Bikat Roop Dhari Lanka Jarava.",
+            "hindi_meaning": "और फिर विकराल रूप धारण करके आपने लंका को जला दिया।",
+            "english": "Then assuming a fearsome form, you set Lanka ablaze."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १०",
+        "label_english": "Verse 10",
+        "lines": [
+          {
+            "hindi": "भीम रूप धरि असुर संहारे।",
+            "roman": "Bhim Roop Dhari Asur Sanhare.",
+            "hindi_meaning": "आपने भीमकाय रूप धारण करके असुरों का संहार किया।",
+            "english": "Assuming a gigantic form, you slaughtered the demons."
+          },
+          {
+            "hindi": "रामचंद्र के काज संवारे॥",
+            "roman": "Ramchandra Ke Kaj Sanvare.",
+            "hindi_meaning": "और इस प्रकार श्री रामचंद्र के सभी कार्य सफल किए।",
+            "english": "And thus accomplished all the tasks of Lord Ramchandra."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ११",
+        "label_english": "Verse 11",
+        "lines": [
+          {
+            "hindi": "लाय संजीवन लखन जियाए।",
+            "roman": "Lay Sanjivan Lakhan Jiyae.",
+            "hindi_meaning": "आपने संजीवनी बूटी लाकर लक्ष्मण को जीवित किया।",
+            "english": "You brought the Sanjeevani herb and revived Lakshmana."
+          },
+          {
+            "hindi": "श्री रघुबीर हरषि उर लाए॥",
+            "roman": "Shri Raghuber Harashi Ur Laye.",
+            "hindi_meaning": "तब श्री रघुवीर (राम) ने प्रसन्न होकर आपको अपने हृदय से लगा लिया।",
+            "english": "Then Sri Raghubeera (Ram) joyfully embraced you to his heart."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १२",
+        "label_english": "Verse 12",
+        "lines": [
+          {
+            "hindi": "रघुपति कीन्ही बहुत बड़ाई।",
+            "roman": "Raghupati Kinhi Bahut Badai.",
+            "hindi_meaning": "श्री रघुपति (राम) ने आपकी बहुत प्रशंसा की।",
+            "english": "Sri Ram praised you greatly."
+          },
+          {
+            "hindi": "तुम मम प्रिय भरतहि सम भाई॥",
+            "roman": "Tum Mam Priy Bharatahi Sam Bhai.",
+            "hindi_meaning": "'तुम मुझे भरत के समान प्रिय भाई हो' — ऐसा कहा श्री राम ने।",
+            "english": "'You are as dear to me as my brother Bharat,' said Sri Ram."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १३",
+        "label_english": "Verse 13",
+        "lines": [
+          {
+            "hindi": "सहस बदन तुम्हरो जस गावे।",
+            "roman": "Sahas Badan Tumharo Jas Gave.",
+            "hindi_meaning": "हजारों मुखों वाले (शेषनाग) भी आपका यश गाते हैं।",
+            "english": "The thousand-headed serpent (Shesha) sings your glory."
+          },
+          {
+            "hindi": "अस कहि श्रीपति कंठ लगावे॥",
+            "roman": "As Kahi Shripati Kanth Lagave.",
+            "hindi_meaning": "यह कहते हुए श्रीपति (राम) ने आपको गले से लगा लिया।",
+            "english": "Saying this, Sri Ram embraced you in His arms."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १४",
+        "label_english": "Verse 14",
+        "lines": [
+          {
+            "hindi": "सनकादिक ब्रह्मादि मुनीसा।",
+            "roman": "Sanakadik Brahmadi Munisa.",
+            "hindi_meaning": "सनकादि (सनक, सनंदन आदि), ब्रह्मा और अन्य महर्षि,",
+            "english": "The sages like Sanaka, Brahma and other divine seers,"
+          },
+          {
+            "hindi": "नारद सारद सहित अहीसा॥",
+            "roman": "Narad Sarad Sahit Ahisa.",
+            "hindi_meaning": "नारद, सरस्वती और शेषनाग सहित —",
+            "english": "Along with Narada, Saraswati, and the Lord of Serpents —"
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १५",
+        "label_english": "Verse 15",
+        "lines": [
+          {
+            "hindi": "जम कुबेर दिगपाल जहां ते।",
+            "roman": "Jam Kuber Digpal Jahan Te.",
+            "hindi_meaning": "यमराज, कुबेर और दिशाओं के रक्षक —",
+            "english": "Yamraj, Kubera, and the guardians of all directions —"
+          },
+          {
+            "hindi": "कवि कोबिद कहि सके कहां ते॥",
+            "roman": "Kavi Kobid Kahi Sake Kahan Te.",
+            "hindi_meaning": "कोई कवि या विद्वान भी आपके गुणों का पूर्ण वर्णन नहीं कर सकता।",
+            "english": "No poet or scholar can fully describe your glory."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १६",
+        "label_english": "Verse 16",
+        "lines": [
+          {
+            "hindi": "तुम उपकार सुग्रीवहि कीन्हा।",
+            "roman": "Tum Upkar Sugrivahi Kinha.",
+            "hindi_meaning": "आपने सुग्रीव पर बड़ा उपकार किया।",
+            "english": "You did great service to Sugriva."
+          },
+          {
+            "hindi": "राम मिलाय राज पद दीन्हा॥",
+            "roman": "Ram Milay Raj Pad Dinha.",
+            "hindi_meaning": "आपने उन्हें श्री राम से मिलाया और राज्य का पद दिलाया।",
+            "english": "You united him with Ram and gave him the kingdom."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १७",
+        "label_english": "Verse 17",
+        "lines": [
+          {
+            "hindi": "तुम्हरो मंत्र विभीषन माना।",
+            "roman": "Tumharo Mantra Vibhishan Mana.",
+            "hindi_meaning": "विभीषण ने आपकी सलाह (मंत्र) को माना।",
+            "english": "Vibhishana accepted your counsel."
+          },
+          {
+            "hindi": "लंकेश्वर भए सब जग जाना॥",
+            "roman": "Lankeshwar Bhaye Sab Jag Jana.",
+            "hindi_meaning": "और वे लंका के राजा बने — यह सारा जग जानता है।",
+            "english": "And he became the ruler of Lanka — the whole world knows this."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १८",
+        "label_english": "Verse 18",
+        "lines": [
+          {
+            "hindi": "जुग सहस्र जोजन पर भानू।",
+            "roman": "Jug Sahastra Jojan Par Bhanu.",
+            "hindi_meaning": "हजारों योजन (लाखों मील) दूर स्थित सूर्य को —",
+            "english": "The Sun, situated thousands of Yojanas away —"
+          },
+          {
+            "hindi": "लील्यो ताहि मधुर फल जानू॥",
+            "roman": "Lilyo Tahi Madhur Phal Janu.",
+            "hindi_meaning": "आपने मीठे फल समझकर निगल लिया (बचपन में)।",
+            "english": "You swallowed it as a child, thinking it a sweet fruit."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई १९",
+        "label_english": "Verse 19",
+        "lines": [
+          {
+            "hindi": "प्रभु मुद्रिका मेलि मुख माहीं।",
+            "roman": "Prabhu Mudrika Meli Mukh Mahin.",
+            "hindi_meaning": "प्रभु की मुद्रिका (अंगूठी) को मुँह में रखकर —",
+            "english": "Holding the Lord's ring in your mouth —"
+          },
+          {
+            "hindi": "जलधि लांघि गए अचरज नाहीं॥",
+            "roman": "Jaladhi Langhi Gaye Acharaj Nahin.",
+            "hindi_meaning": "आप समुद्र पार कर गए — इसमें कोई आश्चर्य नहीं।",
+            "english": "You crossed the ocean — this is no wonder (for a being like you)."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २०",
+        "label_english": "Verse 20",
+        "lines": [
+          {
+            "hindi": "दुर्गम काज जगत के जेते।",
+            "roman": "Durgam Kaj Jagat Ke Jete.",
+            "hindi_meaning": "इस जगत में जितने भी कठिन कार्य हैं —",
+            "english": "All the difficult tasks of this world —"
+          },
+          {
+            "hindi": "सुगम अनुग्रह तुम्हरे तेते॥",
+            "roman": "Sugam Anugraha Tumhare Tete.",
+            "hindi_meaning": "वे सब आपकी कृपा से सरल हो जाते हैं।",
+            "english": "Become easy through your grace."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २१",
+        "label_english": "Verse 21",
+        "lines": [
+          {
+            "hindi": "राम दुआरे तुम रखवारे।",
+            "roman": "Ram Duare Tum Rakhvare.",
+            "hindi_meaning": "आप श्री राम के द्वार के रखवाले हैं।",
+            "english": "You are the guardian at the door of Ram's abode."
+          },
+          {
+            "hindi": "होत न आज्ञा बिनु पैसारे॥",
+            "roman": "Hot Na Agya Binu Paysare.",
+            "hindi_meaning": "आपकी आज्ञा के बिना वहाँ प्रवेश नहीं होता।",
+            "english": "None can enter without your permission."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २२",
+        "label_english": "Verse 22",
+        "lines": [
+          {
+            "hindi": "सब सुख लहे तुम्हारी सरना।",
+            "roman": "Sab Sukh Lahe Tumhari Sarna.",
+            "hindi_meaning": "आपकी शरण में आने वाले सब सुख प्राप्त करते हैं।",
+            "english": "All who take refuge in you receive every happiness."
+          },
+          {
+            "hindi": "तुम रक्षक काहू को डर ना॥",
+            "roman": "Tum Raksak Kahu Ko Dar Na.",
+            "hindi_meaning": "जब आप रक्षक हैं, तो किसी को कोई भय नहीं रहता।",
+            "english": "When you are the protector, none need fear anything."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २३",
+        "label_english": "Verse 23",
+        "lines": [
+          {
+            "hindi": "आपन तेज सम्हारो आपै।",
+            "roman": "Apan Tej Samharo Apai.",
+            "hindi_meaning": "आप स्वयं ही अपने तेज (शक्ति) को संभाल सकते हैं।",
+            "english": "Only you can contain your own power and brilliance."
+          },
+          {
+            "hindi": "तीनों लोक हांक ते कांपे॥",
+            "roman": "Tinon Lok Hank Te Kanpe.",
+            "hindi_meaning": "आपकी एक गर्जना से तीनों लोक कांप उठते हैं।",
+            "english": "All three worlds tremble at your single roar."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २४",
+        "label_english": "Verse 24",
+        "lines": [
+          {
+            "hindi": "भूत पिसाच निकट नहिं आवे।",
+            "roman": "Bhoot Pisach Nikat Nahin Ave.",
+            "hindi_meaning": "भूत और प्रेत (दुष्ट आत्माएँ) पास नहीं आतीं —",
+            "english": "Ghosts, demons and evil spirits dare not come near —"
+          },
+          {
+            "hindi": "महाबीर जब नाम सुनावे॥",
+            "roman": "Mahaveer Jab Nam Sunave.",
+            "hindi_meaning": "जब महावीर हनुमान का नाम सुनाई देता है।",
+            "english": "When the name of Mahaveer Hanuman is uttered."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २५",
+        "label_english": "Verse 25",
+        "lines": [
+          {
+            "hindi": "नासे रोग हरे सब पीरा।",
+            "roman": "Nase Rog Hare Sab Pira.",
+            "hindi_meaning": "सब रोग नष्ट हो जाते हैं और सब पीड़ाएँ दूर हो जाती हैं —",
+            "english": "All diseases are destroyed and all pain is removed —"
+          },
+          {
+            "hindi": "जपत निरंतर हनुमत बीरा॥",
+            "roman": "Japat Nirantar Hanumat Bira.",
+            "hindi_meaning": "जो निरंतर वीर हनुमान का जप करते हैं।",
+            "english": "For those who constantly chant the name of brave Hanuman."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २६",
+        "label_english": "Verse 26",
+        "lines": [
+          {
+            "hindi": "संकट ते हनुमान छुड़ावे।",
+            "roman": "Sankat Te Hanuman Chhurave.",
+            "hindi_meaning": "हनुमान जी सभी संकटों से मुक्त कराते हैं —",
+            "english": "Hanuman frees you from all troubles and difficulties —"
+          },
+          {
+            "hindi": "मन क्रम बचन ध्यान जो लावे॥",
+            "roman": "Man Karm Bachan Dhyan Jo Lave.",
+            "hindi_meaning": "जो मन, कर्म और वचन से उनका ध्यान करते हैं।",
+            "english": "Those who meditate on Him in thought, word and deed."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २७",
+        "label_english": "Verse 27",
+        "lines": [
+          {
+            "hindi": "सब पर राम तपस्वी राजा।",
+            "roman": "Sab Par Ram Tapasvi Raja.",
+            "hindi_meaning": "सबके ऊपर राम — तपस्वियों के राजा —",
+            "english": "Ram, the king of ascetics, rules over all —"
+          },
+          {
+            "hindi": "तिन के काज सकल तुम साजा॥",
+            "roman": "Tin Ke Kaj Sakal Tum Saja.",
+            "hindi_meaning": "उनके सभी कार्य आपने ही सफल किए हैं।",
+            "english": "You have accomplished all of His divine tasks."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २८",
+        "label_english": "Verse 28",
+        "lines": [
+          {
+            "hindi": "और मनोरथ जो कोई लावे।",
+            "roman": "Aur Manorath Jo Koi Lave.",
+            "hindi_meaning": "जो भी कोई अपनी मनोकामना लेकर आता है —",
+            "english": "Whoever comes with a desire in their heart —"
+          },
+          {
+            "hindi": "सोई अमित जीवन फल पावे॥",
+            "roman": "Soi Amit Jivan Phal Pave.",
+            "hindi_meaning": "वह जीवन में असीम फल (आनंद और सफलता) पाता है।",
+            "english": "Receives unlimited fruits and blessings in life."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई २९",
+        "label_english": "Verse 29",
+        "lines": [
+          {
+            "hindi": "चारों जुग परताप तुम्हारा।",
+            "roman": "Charon Jug Partap Tumhara.",
+            "hindi_meaning": "चारों युगों (सतयुग, त्रेता, द्वापर, कलियुग) में आपका प्रताप है।",
+            "english": "Your glory shines across all four cosmic ages."
+          },
+          {
+            "hindi": "है परसिद्ध जगत उजियारा॥",
+            "roman": "Hai Parsiddh Jagat Ujiyara.",
+            "hindi_meaning": "और जगत में आपकी यश-कीर्ति प्रसिद्ध है।",
+            "english": "And your fame illumines the entire world."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३०",
+        "label_english": "Verse 30",
+        "lines": [
+          {
+            "hindi": "साधु संत के तुम रखवारे।",
+            "roman": "Sadhu Sant Ke Tum Rakhvare.",
+            "hindi_meaning": "आप साधु-संतों के रक्षक हैं।",
+            "english": "You are the protector of saints and holy men."
+          },
+          {
+            "hindi": "असुर निकंदन राम दुलारे॥",
+            "roman": "Asur Nikandan Ram Dulare.",
+            "hindi_meaning": "आप असुरों का नाश करने वाले और श्री राम के प्रिय हैं।",
+            "english": "Destroyer of demons and the beloved of Ram."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३१",
+        "label_english": "Verse 31",
+        "lines": [
+          {
+            "hindi": "अष्ट सिद्धि नव निधि के दाता।",
+            "roman": "Asht Siddhi Nav Nidhi Ke Data.",
+            "hindi_meaning": "आप आठ सिद्धियों और नौ निधियों के दाता हैं।",
+            "english": "You are the bestower of the eight supernatural powers and nine divine treasures."
+          },
+          {
+            "hindi": "अस बर दीन जानकी माता॥",
+            "roman": "As Bar Din Janaki Mata.",
+            "hindi_meaning": "यह वरदान माता जानकी (सीता) ने आपको दिया था।",
+            "english": "This boon was granted to you by Mother Janaki (Sita)."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३२",
+        "label_english": "Verse 32",
+        "lines": [
+          {
+            "hindi": "राम रसायन तुम्हरे पासा।",
+            "roman": "Ram Rasayan Tumhare Pasa.",
+            "hindi_meaning": "श्री राम का नाम-रूपी रसायन (अमृत) आपके पास है।",
+            "english": "The elixir of Ram's name is always with you."
+          },
+          {
+            "hindi": "सदा रहो रघुपति के दासा॥",
+            "roman": "Sada Raho Raghupati Ke Dasa.",
+            "hindi_meaning": "आप सदा श्री रघुपति (राम) के दास बने रहते हैं।",
+            "english": "You always remain the eternal servant of Sri Raghupati."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३३",
+        "label_english": "Verse 33",
+        "lines": [
+          {
+            "hindi": "तुम्हरे भजन राम को पावे।",
+            "roman": "Tumhare Bhajan Ram Ko Pave.",
+            "hindi_meaning": "आपके भजन (नाम-जप) से श्री राम की प्राप्ति होती है।",
+            "english": "Through devotion to you, one attains Lord Ram."
+          },
+          {
+            "hindi": "जन्म जन्म के दुख बिसरावे॥",
+            "roman": "Janma Janma Ke Dukh Bisrave.",
+            "hindi_meaning": "और जन्म-जन्म के दुख भुला दिए जाते हैं।",
+            "english": "And the sorrows of countless births are forgotten."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३४",
+        "label_english": "Verse 34",
+        "lines": [
+          {
+            "hindi": "अंत काल रघुबर पुर जाई।",
+            "roman": "Ant Kaal Raghubar Pur Jai.",
+            "hindi_meaning": "अंत समय में वे श्री रघुवर के धाम (परमधाम) में जाते हैं।",
+            "english": "At the end of life, the devotee goes to the abode of Sri Ram."
+          },
+          {
+            "hindi": "जहां जन्म हरिभक्त कहाई॥",
+            "roman": "Jahan Janma Haribhakta Kahai.",
+            "hindi_meaning": "और जहाँ भी जन्म लेते हैं, हरि के भक्त (वैष्णव) कहलाते हैं।",
+            "english": "And wherever born again, they are called devotees of Hari."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३५",
+        "label_english": "Verse 35",
+        "lines": [
+          {
+            "hindi": "और देवता चित्त न धरई।",
+            "roman": "Aur Devata Chitta Na Dharai.",
+            "hindi_meaning": "जो अन्य देवताओं का ध्यान नहीं करता —",
+            "english": "One who does not meditate on any other deity —"
+          },
+          {
+            "hindi": "हनुमत सेई सर्व सुख करई॥",
+            "roman": "Hanumat Sei Sarva Sukh Karai.",
+            "hindi_meaning": "केवल हनुमत (हनुमान) की सेवा से ही सब सुख प्राप्त होते हैं।",
+            "english": "By serving Hanuman alone receives all happiness."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३६",
+        "label_english": "Verse 36",
+        "lines": [
+          {
+            "hindi": "संकट कटे मिटे सब पीरा।",
+            "roman": "Sankat Kate Mite Sab Pira.",
+            "hindi_meaning": "सभी संकट दूर होते हैं और सभी पीड़ाएँ मिट जाती हैं —",
+            "english": "All troubles are cut away and all pain removed —"
+          },
+          {
+            "hindi": "जो सुमिरे हनुमत बलबीरा॥",
+            "roman": "Jo Sumirey Hanumat Balbira.",
+            "hindi_meaning": "जो बलवान और वीर हनुमान का स्मरण करते हैं।",
+            "english": "For those who remember the mighty, courageous Hanuman."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३७",
+        "label_english": "Verse 37",
+        "lines": [
+          {
+            "hindi": "जय जय जय हनुमान गोसाई।",
+            "roman": "Jai Jai Jai Hanuman Gosai.",
+            "hindi_meaning": "जय हो, जय हो, जय हो — हे हनुमान जी!",
+            "english": "Victory, victory, victory — O Hanuman, Lord of senses!"
+          },
+          {
+            "hindi": "कृपा करहु गुरु देव की नाई॥",
+            "roman": "Kripa Karahu Guru Dev Ki Nai.",
+            "hindi_meaning": "गुरु और देव की भाँति मुझ पर कृपा करो।",
+            "english": "Be gracious upon me as a Guru and divine teacher."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३८",
+        "label_english": "Verse 38",
+        "lines": [
+          {
+            "hindi": "जो सत बार पाठ कर कोई।",
+            "roman": "Jo Sat Bar Path Kar Koi.",
+            "hindi_meaning": "जो इसका सौ बार पाठ करे —",
+            "english": "Whoever recites this a hundred times —"
+          },
+          {
+            "hindi": "छूटहि बंदि महा सुख होई॥",
+            "roman": "Chhutehi Bandi Maha Sukh Hoi.",
+            "hindi_meaning": "सभी बंधनों से मुक्त होकर महान सुख प्राप्त होता है।",
+            "english": "Is freed from all bondages and attains supreme joy."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ३९",
+        "label_english": "Verse 39",
+        "lines": [
+          {
+            "hindi": "जो यह पढ़े हनुमान चालीसा।",
+            "roman": "Jo Yah Padhe Hanuman Chalisa.",
+            "hindi_meaning": "जो इस हनुमान चालीसा को पढ़ता है —",
+            "english": "Whoever reads this Hanuman Chalisa —"
+          },
+          {
+            "hindi": "होय सिद्धि साखी गौरीसा॥",
+            "roman": "Hoy Siddhi Sakhi Gauriesa.",
+            "hindi_meaning": "उसे सिद्धि प्राप्त होती है — इसके साक्षी स्वयं गौरीशंकर (शिव) हैं।",
+            "english": "Attains spiritual perfection — Lord Shiva himself is the witness."
+          }
+        ]
+      },
+      {
+        "type": "chaupai",
+        "label_hindi": "चौपाई ४०",
+        "label_english": "Verse 40",
+        "lines": [
+          {
+            "hindi": "तुलसीदास सदा हरि चेरा।",
+            "roman": "Tulsidas Sada Hari Chera.",
+            "hindi_meaning": "तुलसीदास सदा हरि (विष्णु/राम) के सेवक हैं।",
+            "english": "Tulsidas is always the servant of Sri Hari."
+          },
+          {
+            "hindi": "कीजे नाथ हृदय मह डेरा॥",
+            "roman": "Kije Nath Hriday Mah Dera.",
+            "hindi_meaning": "हे प्रभु! मेरे हृदय में अपना निवास कीजिए।",
+            "english": "O Lord, please make your abode in my heart."
+          }
+        ]
+      },
+      {
+        "type": "doha",
+        "label_hindi": "दोहा (समापन)",
+        "label_english": "Closing Doha",
+        "lines": [
+          {
+            "hindi": "पवनतनय संकट हरन, मंगल मूरति रूप।",
+            "roman": "Pavantanay Sankat Haran, Mangal Murti Roop.",
+            "hindi_meaning": "हे वायुपुत्र! संकट हरने वाले और मंगल मूर्ति स्वरूप,",
+            "english": "O Son of Wind, remover of all troubles, embodiment of all auspiciousness,"
+          },
+          {
+            "hindi": "राम लखन सीता सहित, हृदय बसहु सुर भूप॥",
+            "roman": "Ram Lakhan Sita Sahit, Hriday Basahu Sur Bhup.",
+            "hindi_meaning": "राम, लक्ष्मण और सीता सहित मेरे हृदय में निवास करें, हे देवाधिदेव!",
+            "english": "Together with Ram, Lakshman and Sita, dwell in my heart, O King of Gods."
+          }
+        ]
+      }
+    ],
+    "related": [
+      "jai-ganesh-deva",
+      "om-jai-jagdish-hare"
+    ],
+    "seo": {
+      "meta_title": "हनुमान चालीसा - Hanuman Chalisa with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Hanuman Chalisa with Hindi meaning, English translation and Roman transliteration. All 40 chaupais by Tulsidas with story and significance.",
+      "keywords": [
+        "hanuman chalisa",
+        "हनुमान चालीसा",
+        "hanuman chalisa hindi",
+        "hanuman chalisa english meaning",
+        "hanuman chalisa lyrics",
+        "jai hanuman gyan gun sagar"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "slug": "jai-ganesh-deva",
+    "title_hindi": "जय गणेश देवा",
+    "title_roman": "Jai Ganesh Deva",
+    "title_english": "Victory to Lord Ganesha",
+    "deity": "Ganesha",
+    "deity_color": "#D97706",
+    "language": "Hindi",
+    "festival": [
+      "Ganesh Chaturthi",
+      "Diwali",
+      "Navratri"
+    ],
+    "occasion": "Beginning of any auspicious work, Morning Prayer",
+    "timing": "Morning, before beginning any task",
+    "raga": "Bhairav",
+    "composer": "Traditional",
+    "duration_minutes": 5,
+    "tags": [
+      "ganesha",
+      "ganpati",
+      "aarti",
+      "obstacles",
+      "wisdom",
+      "beginnings"
+    ],
+    "topics": [
+      "removing obstacles",
+      "wisdom",
+      "new beginnings",
+      "success",
+      "prosperity"
+    ],
+    "story": "Jai Ganesh Deva is one of the most beloved Ganesha bhajans sung across India. Lord Ganesha, the elephant-headed son of Shiva and Parvati, is the first deity invoked before any auspicious undertaking in Hindu tradition. This bhajan celebrates his divine form — his single tusk, his four arms, his vehicle the mouse, and his love for modaka (sweet dumplings). The second verse describes his golden complexion adorned with sindoor (vermilion) on his forehead. The bhajan then lists the many blessings Ganesha bestows — restoring sight to the blind, health to the diseased, children to the childless, and wealth to the poor. This all-encompassing compassion is why Ganesha is called 'Vighnaharta' — the remover of all obstacles. The bhajan ends with the devotee surrendering at Ganesha's lotus feet, asking him to make their devotional service fruitful.",
+    "story_hindi": "जय गणेश देवा भारत के सबसे प्रिय गणेश भजनों में से एक है। भगवान गणेश — शिव और पार्वती के हाथी के मुख वाले पुत्र — किसी भी शुभ कार्य से पहले पहले पूजे जाते हैं। यह भजन उनके दिव्य स्वरूप का — एकदंत, चार भुजाएँ, मूषक वाहन और मोदक के प्रेम का — उत्सव मनाता है। दूसरी चौपाई में उनके माथे पर सिंदूर से शोभायमान सुनहरे स्वरूप का वर्णन है। भजन में गणेश जी के वरदानों की सूची है — अंधों को आँखें, रोगियों को स्वास्थ्य, निःसंतानों को पुत्र और दरिद्रों को धन। इसी सर्वव्यापी करुणा के कारण उन्हें 'विघ्नहर्ता' — सभी बाधाओं को दूर करने वाला — कहा जाता है।",
+    "significance": "In Hindu tradition, Ganesha is always worshipped first before any prayer, ritual, or new beginning — before building a house, starting a business, beginning studies, or undertaking any journey. Chanting Jai Ganesh Deva is believed to clear all obstacles from the path, bestow divine wisdom, and ensure the success of any endeavor. Ganesha represents the union of the human and the divine — his elephant head symbolizes wisdom and large ears mean he listens to all prayers.",
+    "significance_hindi": "हिंदू परंपरा में गणेश जी को हर प्रार्थना, अनुष्ठान या नई शुरुआत से पहले पूजा जाता है — घर बनाने, व्यापार शुरू करने, पढ़ाई आरंभ करने या किसी यात्रा पर जाने से पहले। जय गणेश देवा का पाठ मार्ग की सभी बाधाओं को दूर करता है, दिव्य ज्ञान प्रदान करता है, और किसी भी कार्य में सफलता सुनिश्चित करता है।",
+    "benefits": [
+      "Removes all obstacles before beginning any work",
+      "Bestows wisdom and intelligence",
+      "Ensures success in studies and exams",
+      "Grants prosperity and abundance",
+      "Removes negativity from home and life",
+      "Fulfills legitimate desires",
+      "Brings harmony in family relationships"
+    ],
+    "when_to_sing": {
+      "festival": [
+        "Ganesh Chaturthi",
+        "Diwali",
+        "Navratri",
+        "Ganesh Puja"
+      ],
+      "time": [
+        "Morning before beginning work",
+        "Before exams or interviews",
+        "Wednesday (Ganesha's day)"
+      ],
+      "occasion": [
+        "Before starting new business",
+        "Beginning of puja",
+        "Before studies",
+        "Marriage ceremonies"
+      ]
+    },
+    "featured": true,
+    "priority": 2,
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "जय गणेश जय गणेश जय गणेश देवा।",
+            "roman": "Jai Ganesh Jai Ganesh Jai Ganesh Deva.",
+            "hindi_meaning": "जय हो, जय हो, जय हो — हे गणेश देव!",
+            "english": "Victory, victory, victory — O Lord Ganesha!"
+          },
+          {
+            "hindi": "माता जाकी पार्वती पिता महादेवा॥",
+            "roman": "Mata Jaki Parvati Pita Mahadeva.",
+            "hindi_meaning": "जिनकी माता पार्वती हैं और पिता महादेव (शिव) हैं।",
+            "english": "Whose mother is Parvati and whose father is Mahadeva (Shiva)."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा १",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "एकदंत दयावंत चार भुजा धारी।",
+            "roman": "Ekdant Dayavant Char Bhuja Dhari.",
+            "hindi_meaning": "एक दाँत वाले, दयालु और चार भुजाओं वाले,",
+            "english": "With one tusk, full of compassion, bearing four arms,"
+          },
+          {
+            "hindi": "माथे सिंदूर सोहे मूसे की सवारी॥",
+            "roman": "Mathe Sindur Sohe Muse Ki Savari.",
+            "hindi_meaning": "माथे पर सिंदूर शोभित है और मूषक (चूहे) पर सवार हैं।",
+            "english": "Forehead adorned with vermilion, riding upon a mouse."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा २",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "पान चढ़े फूल चढ़े और चढ़े मेवा।",
+            "roman": "Pan Chadhe Phool Chadhe Aur Chadhe Meva.",
+            "hindi_meaning": "आपको पान चढ़ाया जाता है, फूल चढ़ाए जाते हैं और मेवा चढ़ाया जाता है।",
+            "english": "Offered betel leaves, flowers and dry fruits in devotion,"
+          },
+          {
+            "hindi": "लड्डुअन का भोग लगे संत करे सेवा॥",
+            "roman": "Ladduon Ka Bhog Lage Sant Kare Seva.",
+            "hindi_meaning": "लड्डुओं का भोग लगाया जाता है और संत जन आपकी सेवा करते हैं।",
+            "english": "Laddoos are offered and the saints serve you with devotion."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ३",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "अंधन को आंख देत कोढ़िन को काया।",
+            "roman": "Andhan Ko Ankh Det Kodhin Ko Kaya.",
+            "hindi_meaning": "आप अंधों को आँखें देते हैं और कोढ़ियों को निरोग काया देते हैं।",
+            "english": "You give sight to the blind and healthy bodies to the diseased."
+          },
+          {
+            "hindi": "बांझन को पुत्र देत निर्धन को माया॥",
+            "roman": "Banjhan Ko Putra Det Nirdhan Ko Maya.",
+            "hindi_meaning": "निःसंतान को पुत्र देते हैं और दरिद्र को धन देते हैं।",
+            "english": "Sons to the childless and wealth to the poor."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ४",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "'सूर' श्याम शरण आए सफल कीजे सेवा।",
+            "roman": "'Sur' Shyam Sharan Aye Safal Kije Seva.",
+            "hindi_meaning": "सूरदास कहते हैं — श्याम की शरण में आए हैं, हमारी सेवा सफल कीजिए।",
+            "english": "Says 'Sur': We have come to Your shelter — make our service fruitful."
+          },
+          {
+            "hindi": "माता जाकी पार्वती पिता महादेवा॥",
+            "roman": "Mata Jaki Parvati Pita Mahadeva.",
+            "hindi_meaning": "जिनकी माता पार्वती हैं और पिता महादेव हैं।",
+            "english": "Whose mother is Parvati and father is Mahadeva."
+          }
+        ]
+      }
+    ],
+    "related": [
+      "hanuman-chalisa",
+      "om-jai-jagdish-hare"
+    ],
+    "seo": {
+      "meta_title": "जय गणेश देवा - Jai Ganesh Deva with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Jai Ganesh Deva bhajan with Hindi meaning, English translation and Roman transliteration. Ganesha aarti with story and significance.",
+      "keywords": [
+        "jai ganesh deva",
+        "जय गणेश देवा",
+        "ganesh bhajan",
+        "ganesh aarti",
+        "ganesh chaturthi bhajan",
+        "गणेश भजन"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "slug": "om-jai-jagdish-hare",
+    "title_hindi": "ॐ जय जगदीश हरे",
+    "title_roman": "Om Jai Jagdish Hare",
+    "title_english": "Om, Victory to the Lord of the Universe",
+    "deity": "Vishnu",
+    "deity_color": "#15803D",
+    "language": "Hindi",
+    "festival": [
+      "Diwali",
+      "Janmashtami",
+      "Ekadashi",
+      "Kartik Purnima"
+    ],
+    "occasion": "Evening Aarti, Satyanarayan Puja, Any Vishnu Puja",
+    "timing": "Evening (Sandhya Aarti)",
+    "raga": "Bhairavi",
+    "composer": "Shardha Ram Phillauri",
+    "duration_minutes": 8,
+    "tags": [
+      "vishnu",
+      "aarti",
+      "jagdish",
+      "satyanarayan",
+      "universal prayer",
+      "bhagwan"
+    ],
+    "topics": [
+      "devotion",
+      "surrender",
+      "universal love",
+      "protection",
+      "liberation",
+      "gratitude"
+    ],
+    "story": "Om Jai Jagdish Hare was composed by Pandit Shardha Ram Phillauri in 1870 and published in his devotional work 'Prem Bhakti Pratap'. It quickly became the most universally chanted aarti across all of India. Unlike many devotional songs dedicated to a specific deity, this aarti addresses the supreme formless God who manifests in all divine forms — making it equally dear to devotees of Vishnu, Shiva, Devi, and all other forms of the Divine. The aarti describes the various attributes of God — He is the sustainer (Palankarta), the Ocean of compassion (Karuna ke Sagar), the Indwelling spirit in all (Antaryami), and the one who removes all sins (Pap Haro Deva). The verse 'Tan Man Dhan Sab Kuch Hai Tera' — 'body, mind, wealth — everything is yours' — is one of the most profound expressions of surrender in all of devotional literature, expressing the complete offering of oneself at God's feet. This aarti is performed at the close of every Hindu puja ceremony, in millions of homes and temples across India every single evening.",
+    "story_hindi": "ॐ जय जगदीश हरे की रचना पंडित श्रद्धाराम फिल्लौरी ने 1870 में की थी और यह उनके भक्ति ग्रंथ 'प्रेम भक्ति प्रताप' में प्रकाशित हुई। यह शीघ्र ही पूरे भारत में सर्वाधिक गाई जाने वाली आरती बन गई। अन्य भक्ति गीतों के विपरीत जो किसी विशेष देवता को संबोधित करते हैं, यह आरती उस सर्वोच्च निराकार ईश्वर को संबोधित है जो सभी दिव्य रूपों में प्रकट होता है। 'तन मन धन सब कुछ है तेरा' — यह समर्पण की सर्वोच्च अभिव्यक्ति है।",
+    "significance": "Om Jai Jagdish Hare is performed as the concluding aarti in virtually every Hindu puja ceremony. It is the prayer that unites all Hindus regardless of which deity they worship, because it addresses the Supreme God behind all forms. The aarti is also notable for the verse where the devotee says 'Everything is yours — what is mine?' — a complete surrender of ego that lies at the heart of bhakti (devotional) spirituality.",
+    "significance_hindi": "ॐ जय जगदीश हरे लगभग हर हिंदू पूजा समारोह में समापन आरती के रूप में गाई जाती है। यह वह प्रार्थना है जो सभी हिंदुओं को एकजुट करती है — चाहे वे किसी भी देवता के उपासक हों — क्योंकि यह सभी रूपों के पीछे के सर्वोच्च ईश्वर को संबोधित करती है।",
+    "benefits": [
+      "Purifies the home and removes all negativity when sung at evening aarti",
+      "Invokes divine blessings upon the entire family",
+      "Cultivates the spirit of complete surrender to God",
+      "Removes the burden of sins accumulated during the day",
+      "Fills the heart with peace and contentment",
+      "Strengthens family bonds through collective prayer",
+      "Connects the devotee to the universal consciousness"
+    ],
+    "when_to_sing": {
+      "festival": [
+        "Diwali",
+        "Janmashtami",
+        "Ekadashi",
+        "Kartik Purnima",
+        "Satyanarayan Katha"
+      ],
+      "time": [
+        "Evening (sunset)",
+        "After completing puja",
+        "Before meals (in some traditions)"
+      ],
+      "occasion": [
+        "Evening family aarti",
+        "Temple worship",
+        "Satyanarayan puja",
+        "Any Hindu ceremony closing prayer"
+      ]
+    },
+    "featured": true,
+    "priority": 3,
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।",
+            "roman": "Om Jai Jagdish Hare, Swami Jai Jagdish Hare.",
+            "hindi_meaning": "ॐ — जय हो जगत के ईश्वर हरि! स्वामी, जय हो जगत के ईश्वर हरि!",
+            "english": "Om, Victory to the Lord of the Universe! O Lord, Victory to the Lord of the Universe!"
+          },
+          {
+            "hindi": "भक्त जनों के संकट, दास जनों के संकट, क्षण में दूर करे॥",
+            "roman": "Bhakta Janon Ke Sankat, Das Janon Ke Sankat, Kshan Mein Door Kare.",
+            "hindi_meaning": "भक्तजनों के और दासजनों के संकट को आप क्षण भर में दूर कर देते हैं।",
+            "english": "The troubles of your devotees and servants — you remove them in an instant."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा १",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "जो ध्यावे फल पावे, दुख बिनसे मन का।",
+            "roman": "Jo Dhyave Phal Pave, Dukh Binse Man Ka.",
+            "hindi_meaning": "जो आपका ध्यान करता है वह फल पाता है, और मन का दुख नष्ट हो जाता है।",
+            "english": "Whoever meditates on you receives the fruit, and the mind's sorrows are destroyed."
+          },
+          {
+            "hindi": "सुख संपत्ति घर आवे, कष्ट मिटे तन का॥",
+            "roman": "Sukh Sampatti Ghar Ave, Kasht Mite Tan Ka.",
+            "hindi_meaning": "सुख और संपत्ति घर में आती है, और शरीर के कष्ट मिट जाते हैं।",
+            "english": "Happiness and prosperity come to your home, and bodily suffering is erased."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा २",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "मात पिता तुम मेरे, शरण गहूं मैं किसकी।",
+            "roman": "Mat Pita Tum Mere, Sharan Gahoon Main Kiski.",
+            "hindi_meaning": "आप मेरे माता-पिता हैं — मैं और किसकी शरण लूँ?",
+            "english": "You are my mother and father — whose shelter should I seek but yours?"
+          },
+          {
+            "hindi": "तुम बिन और न दूजा, आस करूं मैं जिसकी॥",
+            "roman": "Tum Bin Aur Na Duja, As Karoon Main Jiski.",
+            "hindi_meaning": "आपके अलावा कोई और नहीं जिससे मैं आशा करूँ।",
+            "english": "Besides you, there is no other I can hope in."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ३",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "तुम पूरन परमात्मा, तुम अंतरयामी।",
+            "roman": "Tum Puran Paramatma, Tum Antaryami.",
+            "hindi_meaning": "आप पूर्ण परमात्मा हैं, आप अंतरयामी (सबके अंतर की जानने वाले) हैं।",
+            "english": "You are the complete Supreme Soul, you are the Indwelling witness of all."
+          },
+          {
+            "hindi": "पारब्रह्म परमेश्वर, तुम सबके स्वामी॥",
+            "roman": "Parbrahm Parameshwar, Tum Sabke Swami.",
+            "hindi_meaning": "परब्रह्म परमेश्वर — आप सबके स्वामी हैं।",
+            "english": "The Transcendent Brahman, the Supreme Lord — you are the Master of all."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ४",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "तुम करुणा के सागर, तुम पालनकर्ता।",
+            "roman": "Tum Karuna Ke Sagar, Tum Palankarta.",
+            "hindi_meaning": "आप करुणा के सागर हैं, आप पालन करने वाले हैं।",
+            "english": "You are the ocean of compassion, you are the sustainer of all."
+          },
+          {
+            "hindi": "मैं सेवक तुम स्वामी, कृपा करो भर्ता॥",
+            "roman": "Main Sevak Tum Swami, Kripa Karo Bharta.",
+            "hindi_meaning": "मैं सेवक [mantra fragment removed for safety], आप स्वामी हैं — हे भर्ता! कृपा करो।",
+            "english": "I am the servant, you are the Master — O Sustainer, be gracious."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ५",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "तुम हो एक अगोचर, सबके प्राणपति।",
+            "roman": "Tum Ho Ek Agochar, Sabke Pranpati.",
+            "hindi_meaning": "आप एकमात्र अगोचर (इंद्रियातीत) और सबके प्राणों के स्वामी हैं।",
+            "english": "You are the one imperceptible, the Lord of life in all beings."
+          },
+          {
+            "hindi": "किस विधि मिलूं दयामय, तुमको मैं कुमति॥",
+            "roman": "Kis Vidhi Miloon Dayamay, Tumko Main Kumati.",
+            "hindi_meaning": "हे दयामय! मैं मंदबुद्धि जीव — किस विधि से आपसे मिल सकता [mantra fragment removed for safety]?",
+            "english": "O Compassionate One, I am of little wisdom — how can I meet you?"
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ६",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "दीनबंधु दुखहर्ता, तुम रक्षक मेरे।",
+            "roman": "Dinbandhu Dukhharta, Tum Raksak Mere.",
+            "hindi_meaning": "दीनबंधु (दीनों के बंधु) और दुखहर्ता (दुख हरने वाले) — आप मेरे रक्षक हैं।",
+            "english": "Friend of the humble, remover of sorrows — you are my protector."
+          },
+          {
+            "hindi": "अपनी शरण लगा लो, भक्त जनों के प्यारे॥",
+            "roman": "Apni Sharan Laga Lo, Bhaktjanon Ke Pyare.",
+            "hindi_meaning": "मुझे अपनी शरण में लगा लो, हे भक्तों के प्रिय प्रभु!",
+            "english": "Take me into your shelter, O Beloved of your devotees!"
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ७",
+        "label_english": "Verse 7",
+        "lines": [
+          {
+            "hindi": "विषय विकार मिटाओ, पाप हरो देवा।",
+            "roman": "Vishay Vikar Mitao, Pap Haro Deva.",
+            "hindi_meaning": "विषय-विकारों को मिटाओ और पापों को हरो, हे देव!",
+            "english": "Remove all passions and impurities, destroy all sins, O Lord."
+          },
+          {
+            "hindi": "श्रद्धा भक्ति बढ़ाओ, संतन की सेवा॥",
+            "roman": "Shraddha Bhakti Badhao, Santan Ki Seva.",
+            "hindi_meaning": "मेरी श्रद्धा और भक्ति बढ़ाओ, और संतों की सेवा करने की शक्ति दो।",
+            "english": "Increase my faith and devotion, and give me strength to serve the saints."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा ८",
+        "label_english": "Verse 8 — The Great Surrender",
+        "lines": [
+          {
+            "hindi": "तन मन धन और संपत्ति, सब कुछ है तेरा।",
+            "roman": "Tan Man Dhan Aur Sampatti, Sab Kuch Hai Tera.",
+            "hindi_meaning": "तन, मन, धन और संपत्ति — सब कुछ तेरा है।",
+            "english": "Body, mind, wealth and all possessions — everything is yours."
+          },
+          {
+            "hindi": "तेरा तुझको अर्पण, क्या लागे मेरा॥",
+            "roman": "Tera Tujhko Arpan, Kya Lage Mera.",
+            "hindi_meaning": "जो तेरा है वो तुझे अर्पण है — मेरा क्या है?",
+            "english": "Offering what is yours back to you — what is truly mine?"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "hanuman-chalisa",
+      "jai-ganesh-deva"
+    ],
+    "seo": {
+      "meta_title": "ॐ जय जगदीश हरे - Om Jai Jagdish Hare with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Om Jai Jagdish Hare aarti with Hindi meaning, English translation and Roman transliteration. The most universal Hindu aarti with story.",
+      "keywords": [
+        "om jai jagdish hare",
+        "ॐ जय जगदीश हरे",
+        "jai jagdish aarti",
+        "evening aarti",
+        "satyanarayan aarti",
+        "vishnu aarti hindi"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "shiv-tandav-stotram",
+    "title_hindi": "शिव ताण्डव स्तोत्रम्",
+    "title_roman": "Shiv Tandav Stotram",
+    "title_english": "Shiva Tandava Stotram",
+    "deity": "Shiva",
+    "description_hindi": "रावण द्वारा रचित भगवान शिव की स्तुति।",
+    "description_english": "A powerful hymn of praise to Lord Shiva, composed by Ravana.",
+    "verses": [
+      {
+        "type": "stanza",
+        "label_hindi": "प्रथम श्लोक",
+        "label_english": "Stanza 1",
+        "lines": [
+          {
+            "hindi": "जटाटवीगलज्जलप्रवाहपावितस्थले",
+            "roman": "Jataatavi galaj jala pravaaha paavitasthale",
+            "hindi_meaning": "जटा रूपी वन से निकलने वाली जल की धारा से पवित्र स्थल पर...",
+            "english": "From the forest of matted locks, the flowing stream of water sanctifies the place..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "achyutam-keshavam",
+    "title_hindi": "अच्युतम केशवम",
+    "title_roman": "Achyutam Keshavam",
+    "title_english": "Achyutam Keshavam",
+    "deity": "Krishna",
+    "verses": []
+  },
+  {
+    "id": 6,
+    "slug": "ram-siya-ram",
+    "title_hindi": "राम सिया राम",
+    "title_roman": "Ram Siya Ram",
+    "title_english": "Ram Siya Ram",
+    "deity": "Ram",
+    "verses": []
+  },
+  {
+    "id": 7,
+    "slug": "deva-shree-ganesha",
+    "title_hindi": "देवा श्री गणेशा",
+    "title_roman": "Deva Shree Ganesha",
+    "title_english": "Deva Shree Ganesha",
+    "deity": "Ganesha",
+    "verses": []
+  },
+  {
+    "id": 8,
+    "slug": "jai-ambe-gauri",
+    "title_hindi": "जय अम्बे गौरी",
+    "title_roman": "Jai Ambe Gauri",
+    "title_english": "Jai Ambe Gauri",
+    "deity": "Durga",
+    "verses": []
+  },
+  {
+    "id": 9,
+    "slug": "aarti-kunj-bihari-ki",
+    "title_hindi": "आरती कुंज बिहारी की",
+    "title_roman": "Aarti Kunj Bihari Ki",
+    "title_english": "Aarti Kunj Bihari Ki",
+    "deity": "Krishna",
+    "verses": []
+  },
+  {
+    "id": 10,
+    "slug": "om-jai-lakshmi-mata",
+    "title_hindi": "ॐ जय लक्ष्मी माता",
+    "title_roman": "Om Jai Lakshmi Mata",
+    "title_english": "Om Jai Lakshmi Mata",
+    "deity": "Lakshmi",
+    "verses": []
+  },
+  {
+    "id": 11,
+    "slug": "raghupati-raghav-raja-ram",
+    "title_hindi": "रघुपति राघव राजा राम",
+    "title_roman": "Raghupati Raghav Raja Ram",
+    "title_english": "Raghupati Raghav Raja Ram",
+    "deity": "Ram",
+    "verses": []
+  },
+  {
+    "id": 12,
+    "slug": "mere-ghar-ram-aayo",
+    "title_hindi": "मेरे घर राम आयो",
+    "title_roman": "Mere Ghar Ram Aayo",
+    "title_english": "Mere Ghar Ram Aayo",
+    "deity": "Ram",
+    "verses": []
+  },
+  {
+    "id": 13,
+    "slug": "vaishnav-jan",
+    "title_hindi": "वैष्णव जन",
+    "title_roman": "Vaishnav Jan",
+    "title_english": "Vaishnav Jan",
+    "deity": "Vishnu",
+    "verses": []
+  },
+  {
+    "id": 14,
+    "slug": "shri-ramachandra-kripalu",
+    "title_hindi": "श्री रामचंद्र कृपालु",
+    "title_roman": "Shri Ramachandra Kripalu",
+    "title_english": "Shri Ramachandra Kripalu",
+    "deity": "Ram",
+    "verses": []
+  },
+  {
+    "id": 15,
+    "slug": "madhurashtakam",
+    "title_hindi": "मधुराष्टकम्",
+    "title_roman": "Madhurashtakam",
+    "title_english": "Madhurashtakam",
+    "deity": "Krishna",
+    "verses": []
+  }
+]

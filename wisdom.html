@@ -230,6 +230,18 @@
     }
     @media(min-width: 601px) { nav { display: flex; } }
   </style>
+  <link rel="manifest" href="/manifest.json">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -466,7 +478,7 @@
       } catch (e) {
         // Fallback: try relative path for local dev
         try {
-          const res2 = await fetch('wisdom.json');
+          const res2 = await fetch('/data/wisdom.json');
           if (!res2.ok) throw new Error('fallback failed');
           const data2 = await res2.json();
           return data2.topics || [];

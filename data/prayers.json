@@ -1,0 +1,1627 @@
+{
+  "prayers": [
+    {
+      "id": 1,
+      "slug": "hanuman-puja",
+      "title_english": "Hanuman Puja Sequence",
+      "title_hindi": "हनुमान पूजा क्रम",
+      "deity": "Hanuman",
+      "deity_color": "#EA580C",
+      "occasion": "Tuesday, Saturday, Hanuman Jayanti",
+      "duration_minutes": 20,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "hanuman",
+        "puja",
+        "tuesday",
+        "saturday",
+        "protection",
+        "strength"
+      ],
+      "intro_english": "A complete Hanuman puja sequence for Tuesday and Saturday worship. Lord Hanuman grants protection, courage, and removes obstacles. This sequence includes the core mantras, offerings, and the Hanuman Chalisa.",
+      "intro_hindi": "मंगलवार और शनिवार को हनुमान पूजा का यह पूर्ण क्रम है। भगवान हनुमान भक्तों को शक्ति, साहस और बाधाओं से मुक्ति प्रदान करते हैं।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Preparation",
+          "label_hindi": "तैयारी",
+          "description": "Take a bath and wear clean clothes, preferably red or saffron. Light a diya with sesame oil or mustard oil. Place a red flower, sindoor, and a betel leaf on the altar. Keep a picture or idol of Lord Hanuman.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Ganesh Invocation",
+          "label_hindi": "गणेश स्मरण",
+          "mantra_sanskrit": "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+          "mantra_roman": "Vakratunda Mahakaya Suryakoti Samaprabha. Nirvighnam Kuru Me Deva Sarvakaryeshu Sarvada.",
+          "mantra_hindi": "हे वक्रतुण्ड, महाकाय, सूर्य की कोटि किरणों के समान प्रभा वाले, हे देव, मेरे सभी कार्यों में सदा बाधा न आए।",
+          "mantra_english": "O Lord Ganesha, with a curved trunk and a large body, with the radiance of a crore suns — O God, always make my every work free from obstacles.",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Hanuman Invocation",
+          "label_hindi": "हनुमान आह्वान",
+          "mantra_sanskrit": "मनोजवं मारुततुल्यवेगं जितेन्द्रियं बुद्धिमतां वरिष्ठम्। वातात्मजं वानरयूथमुख्यं श्रीरामदूतं शरणं प्रपद्ये॥",
+          "mantra_roman": "Manojavam Marutatulyavegam Jitendriyam Buddhimatam Varishtham. Vatatmajam Vanarayuthamukhyam Shriramadutam Sharanam Prapadye.",
+          "mantra_hindi": "जो मन की गति के समान वेगवान हैं, वायु के समान तीव्र हैं, जितेन्द्रिय और बुद्धिमानों में श्रेष्ठ हैं, वायुपुत्र, वानर सेना के मुखिया, श्री राम के दूत — उनकी शरण में जाता [mantra fragment removed for safety]।",
+          "mantra_english": "I take refuge in Lord Hanuman, who is swift as the mind, fast as the wind, master of the senses, foremost among the wise, son of Vayu, chief of the monkey army, and the messenger of Shri Ram.",
+          "repetitions": 3,
+          "duration_seconds": 60
+        },
+        {
+          "step": 4,
+          "type": "offering",
+          "label": "Offer Sindoor & Flowers",
+          "label_hindi": "सिन्दूर व फूल चढ़ाएं",
+          "description": "Apply sindoor (vermilion) to the idol. Offer red flowers — hibiscus and marigold are auspicious for Hanuman. Say: 'Hanumante namah' while offering each flower.",
+          "duration_seconds": 120
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Hanuman Chalisa",
+          "label_hindi": "हनुमान चालीसा",
+          "mantra_sanskrit": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि। बरनउँ रघुबर बिमल जसु जो दायकु फल चारि॥\nबुद्धिहीन तनु जानिके सुमिरौं पवन-कुमार। बल बुद्धि बिद्या देहु मोहिं हरहु कलेस बिकार॥\nजय हनुमान ज्ञान गुण सागर। जय कपीस तिहुँ लोक उजागर॥\nराम दूत अतुलित बल धामा। अञ्जनि-पुत्र पवनसुत नामा॥",
+          "mantra_roman": "Shri Guru Charan Saroj Raj Nij Manu Mukuru Sudhari. Barnaun Raghubar Bimal Jasu Jo Dayaku Phal Chari.\nBuddhihin Tanu Janike Sumiron Pavan-Kumar. Bal Buddhi Bidya Dehu Mohin Harahu Kales Bikar.\nJai Hanuman Gyan Gun Sagar. Jai Kapis Tihun Lok Ujagar.\nRam Doot Atulit Bal Dhama. Anjani-Putra Pavanasut Nama.",
+          "mantra_hindi": "श्री हनुमान जी का ज्ञान, गुण और शक्ति के सागर की जय हो। हे कपिश्रेष्ठ, तीनों लोकों में प्रकाश फैलाने वाले की जय हो।",
+          "mantra_english": "Victory to Hanuman, the ocean of wisdom and virtue! Victory to the lord of monkeys, who illuminates all three worlds! Messenger of Ram, abode of incomparable strength, son of Anjani and Pavan.",
+          "repetitions": 1,
+          "duration_seconds": 600
+        },
+        {
+          "step": 6,
+          "type": "mantra",
+          "label": "Closing Prayer",
+          "label_hindi": "समापन प्रार्थना",
+          "mantra_sanskrit": "यत्र यत्र रघुनाथकीर्तनं तत्र तत्र कृतमस्तकाञ्जलिम्। भाष्पवारिपरिपूर्णलोचनं मारुतिं नमत राक्षसान्तकम्॥",
+          "mantra_roman": "Yatra Yatra Raghunathakirtanam Tatra Tatra Kritamastakanjalim. Bhashpavariparipurnalocanam Marutim Namata Rakshasantakam.",
+          "mantra_hindi": "जहाँ-जहाँ भी श्री राघवनाथ का कीर्तन होता है, वहाँ-वहाँ हाथ जोड़कर, नेत्रों में आँसू भरे, उपस्थित रहने वाले, राक्षसों का संहार करने वाले मारुति (हनुमान) को नमस्कार है।",
+          "mantra_english": "I bow to Maruti (Hanuman), the destroyer of demons, who is present wherever the glory of Lord Ram is sung — hands folded, eyes filled with tears of devotion.",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 7,
+          "type": "action",
+          "label": "Aarti & Prasad",
+          "label_hindi": "आरती व प्रसाद",
+          "description": "Perform aarti with camphor or a diya, moving it in a clockwise circle. Offer a besan laddoo or banana as prasad. Distribute prasad to family members.",
+          "duration_seconds": 120
+        }
+      ],
+      "materials_needed": [
+        "Diya",
+        "Sesame oil / Mustard oil",
+        "Red flowers (hibiscus, marigold)",
+        "Sindoor (vermilion)",
+        "Betel leaf",
+        "Incense sticks",
+        "Camphor",
+        "Besan laddoo or banana"
+      ],
+      "benefits": [
+        "Protection from evil and negative energies",
+        "Strength and courage in difficult times",
+        "Removal of obstacles",
+        "Blessings for health and longevity"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "duty",
+          "strength"
+        ],
+        "gita_chapters": [
+          3,
+          11
+        ]
+      },
+      "featured": true,
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "slug": "ganesh-puja",
+      "title_english": "Ganesh Puja Sequence",
+      "title_hindi": "गणेश पूजा क्रम",
+      "deity": "Ganesha",
+      "deity_color": "#D97706",
+      "occasion": "Ganesh Chaturthi, Before Any New Beginning",
+      "duration_minutes": 25,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "ganesha",
+        "puja",
+        "chaturthi",
+        "new-beginning",
+        "obstacle-removal",
+        "success"
+      ],
+      "intro_english": "Lord Ganesha is worshipped before every auspicious beginning. This complete puja sequence covers the Shodashopachara (sixteen-step worship) in a simplified form, suitable for home practice on Chaturthi or any day.",
+      "intro_hindi": "भगवान गणेश की पूजा हर शुभ कार्य से पहले की जाती है। यह पूर्ण पूजा क्रम घर पर चतुर्थी या किसी भी दिन करने के लिए उपयुक्त है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Preparation",
+          "label_hindi": "तैयारी",
+          "description": "Clean the altar. Place a clean cloth (preferably yellow or red). Set up the Ganesha idol or picture. Keep ready: modak or laddoo, durva grass, red flowers, roli (vermilion), akshat (unbroken rice), and a diya.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Sankalpa (Resolve)",
+          "label_hindi": "संकल्प",
+          "mantra_sanskrit": "ॐ गणानां त्वा गणपतिं हवामहे कविं कवीनामुपमश्रवस्तमम्। ज्येष्ठराजं ब्रह्मणां ब्रह्मणस्पत आ नः शृण्वन्नूतिभिः सीद सादनम्॥",
+          "mantra_roman": "Om Gananam Tva Ganapatim Havamahe Kavim Kavinamupamashravastamam. Jyeshtharajam Brahmanam Brahmanaspata A Nah Shrinvannutibhih Sida Sadanam.",
+          "mantra_hindi": "हे गणों के स्वामी गणपति, हम आपका आह्वान करते हैं। आप सभी ऋषियों में सबसे अधिक यशस्वी हैं। आप ब्राह्मणों के राजा हैं। हमारी प्रार्थना सुनकर इस सभा में आइए।",
+          "mantra_english": "O Ganapati, lord of all ganas, we invoke you — the wisest among the wise, the most praised. O Lord of the sacred word, eldest and supreme, hear our call and take your seat among us.",
+          "repetitions": 1,
+          "duration_seconds": 45
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Durva & Modak",
+          "label_hindi": "दूर्वा व मोदक अर्पण",
+          "description": "Offer 21 blades of fresh durva grass (in groups of 3) to Lord Ganesha. Say 'Shri Ganeshaya Namah' with each offering. Then place a modak or laddoo as the primary prasad.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Ganapati Atharvashirsha",
+          "label_hindi": "गणपति अथर्वशीर्ष",
+          "mantra_sanskrit": "ॐ नमस्ते गणपतये। त्वमेव प्रत्यक्षं तत्त्वमसि। त्वमेव केवलं कर्ताऽसि। त्वमेव केवलं धर्ताऽसि। त्वमेव केवलं हर्ताऽसि।",
+          "mantra_roman": "Om Namaste Ganapataye. Tvameva Pratyaksham Tattvamasi. Tvameva Kevalam Kartasi. Tvameva Kevalam Dhartasi. Tvameva Kevalam Hartasi.",
+          "mantra_hindi": "ॐ, गणपति को नमस्कार। आप ही प्रत्यक्ष परम तत्व हैं। आप ही एकमात्र कर्ता हैं, धारण करने वाले हैं, और हरण करने वाले हैं।",
+          "mantra_english": "Om, salutations to Ganapati. You alone are the directly perceivable Truth. You alone are the sole Creator, Sustainer, and Destroyer.",
+          "repetitions": 1,
+          "duration_seconds": 300
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Ganesh Ashtottara (108 names)",
+          "label_hindi": "गणेश अष्टोत्तर",
+          "mantra_sanskrit": "ॐ गणेशाय नमः। ॐ विनायकाय नमः। ॐ सर्वसिद्धिप्रदाय नमः। ॐ एकदन्ताय नमः। ॐ विकटाय नमः।",
+          "mantra_roman": "Om Ganeshaya Namah. Om Vinayakaya Namah. Om Sarvasiddhipradaya Namah. Om Ekadantaya Namah. Om Vikataya Namah.",
+          "mantra_hindi": "ॐ गणेश को नमस्कार। ॐ विनायक को नमस्कार। ॐ सभी सिद्धियाँ देने वाले को नमस्कार। ॐ एकदंत को नमस्कार।",
+          "mantra_english": "Om, salutations to Ganesha. Salutations to Vinayaka. Salutations to the giver of all accomplishments. Salutations to the one-tusked.",
+          "repetitions": 1,
+          "duration_seconds": 360
+        },
+        {
+          "step": 6,
+          "type": "action",
+          "label": "Aarti & Prasad Distribution",
+          "label_hindi": "आरती व प्रसाद वितरण",
+          "description": "Perform Ganesh aarti with a ghee lamp. Rotate the lamp in seven clockwise circles while singing the Jai Ganesh aarti. Distribute the modak prasad to all family members.",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Ganesha idol or picture",
+        "Durva grass (21 blades)",
+        "Modak or laddoo",
+        "Red flowers",
+        "Roli & akshat",
+        "Diya with ghee",
+        "Incense sticks",
+        "Yellow cloth"
+      ],
+      "benefits": [
+        "Removal of all obstacles",
+        "Success in new ventures and exams",
+        "Blessings for wisdom and intelligence",
+        "Prosperity and auspiciousness"
+      ],
+      "related_shlokas": [
+        "vakratunda-mahakaya"
+      ],
+      "cross_links": {
+        "wisdom_topics": [
+          "success",
+          "wisdom"
+        ],
+        "gita_chapters": []
+      },
+      "featured": true,
+      "priority": 2
+    },
+    {
+      "id": 3,
+      "slug": "lakshmi-puja",
+      "title_english": "Lakshmi Puja Sequence",
+      "title_hindi": "लक्ष्मी पूजा क्रम",
+      "deity": "Lakshmi",
+      "deity_color": "#D97706",
+      "occasion": "Diwali, Friday, Full Moon",
+      "duration_minutes": 30,
+      "difficulty": "Intermediate",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "lakshmi",
+        "puja",
+        "diwali",
+        "friday",
+        "prosperity",
+        "wealth"
+      ],
+      "intro_english": "Goddess Lakshmi is the deity of wealth, fortune, and prosperity. This puja is traditionally performed on Diwali evening and every Friday. The sequence invites the Goddess into your home and seeks her blessings for abundance.",
+      "intro_hindi": "देवी लक्ष्मी धन, समृद्धि और सौभाग्य की देवी हैं। यह पूजा दीपावली की संध्या और प्रत्येक शुक्रवार को की जाती है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Clean & Decorate",
+          "label_hindi": "साफ़ करें व सजाएं",
+          "description": "Clean the entire puja area and home entrance. Draw a rangoli or swastika at the entrance with rice flour. Place a kalash (pot) filled with water, mango leaves, and a coconut. Light ghee diyas — the more the better.",
+          "duration_seconds": 300
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Invocation — Lakshmi Gayatri",
+          "label_hindi": "लक्ष्मी गायत्री मंत्र",
+          "mantra_sanskrit": "ॐ महालक्ष्म्यै च विद्महे विष्णुपत्न्यै च धीमहि। तन्नो लक्ष्मीः प्रचोदयात्॥",
+          "mantra_roman": "Om Mahalakshmyai Cha Vidmahe Vishnupatnyai Cha Dhimahi. Tanno Lakshmihi Prachodayat.",
+          "mantra_hindi": "हम महालक्ष्मी को जानते हैं, विष्णुप्रिया का ध्यान करते हैं। वह लक्ष्मी हमें प्रेरित करें।",
+          "mantra_english": "We meditate on the great Lakshmi, the consort of Vishnu. May that Lakshmi inspire and enlighten us.",
+          "repetitions": 11,
+          "duration_seconds": 90
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Lotus & Coins",
+          "label_hindi": "कमल व सिक्के अर्पण",
+          "description": "Offer lotus flowers or pink/red flowers. Place a few coins or currency notes at the feet of the deity — symbolising the invitation of Lakshmi into your finances. Offer kheer (rice pudding) or coconut as prasad.",
+          "duration_seconds": 120
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Shri Sukta",
+          "label_hindi": "श्री सूक्त",
+          "mantra_sanskrit": "हिरण्यवर्णां हरिणीं सुवर्णरजतस्रजाम्। चन्द्रां हिरण्मयीं लक्ष्मीं जातवेदो म आवह॥\nतां म आवह जातवेदो लक्ष्मीमनपगामिनीम्। यस्यां हिरण्यं विन्देयं गामश्वं पुरुषानहम्॥",
+          "mantra_roman": "Hiranyavarnam Harinim Suvarna Rajata Srajam. Chandram Hiranmayim Lakshmim Jatavedo Ma Avaha.\nTam Ma Avaha Jatavedo Lakshmim Anapagaminim. Yasyam Hiranyam Vindeyam Gamasham Purushanam.",
+          "mantra_hindi": "हे अग्नि! उस लक्ष्मी को मेरे पास लाओ जो सोने के रंग की, हरिण जैसी, सोने-चाँदी की माला पहने, चन्द्रमा के समान और स्वर्णमयी हैं। हे अग्नि, उस न जाने वाली लक्ष्मी को मेरे पास लाओ।",
+          "mantra_english": "O Agni! Bring to me that Lakshmi — golden in hue, graceful as a deer, adorned with garlands of gold and silver, radiant as the moon, and golden-limbed. O Agni, bring that ever-abiding Lakshmi to me.",
+          "repetitions": 1,
+          "duration_seconds": 600
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Lakshmi Ashtakam",
+          "label_hindi": "लक्ष्मी अष्टकम",
+          "mantra_sanskrit": "नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते। शङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते॥",
+          "mantra_roman": "Namaste Astu Mahamaye Shripeethe Surapujite. Shankhachakragadahasthe Mahalakshmi Namostu Te.",
+          "mantra_hindi": "हे महामाया, श्रीपीठ पर विराजमान, देवताओं द्वारा पूजित, शंख-चक्र-गदा धारिणी महालक्ष्मी को नमस्कार है।",
+          "mantra_english": "Salutations to you, O Mahamaya, seated on the abode of prosperity, worshipped by the gods, holding the conch, discus, and mace — salutations to you, Mahalakshmi.",
+          "repetitions": 1,
+          "duration_seconds": 240
+        },
+        {
+          "step": 6,
+          "type": "action",
+          "label": "Aarti with Diyas",
+          "label_hindi": "दीपों से आरती",
+          "description": "Light all the diyas around the home. Perform Lakshmi aarti. On Diwali, keep all lights on through the night to welcome the Goddess. Offer kheer and distribute to all family members.",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Lakshmi idol or picture",
+        "Lotus or pink flowers",
+        "Kalash with water & mango leaves",
+        "Coins or currency notes",
+        "Kheer (rice pudding)",
+        "Ghee diyas",
+        "Rangoli colors",
+        "Incense sticks",
+        "Camphor"
+      ],
+      "benefits": [
+        "Prosperity and financial abundance",
+        "Good fortune and luck",
+        "Removal of poverty",
+        "Happiness and harmony in family"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "prosperity",
+          "gratitude"
+        ],
+        "gita_chapters": []
+      },
+      "featured": true,
+      "priority": 3
+    },
+    {
+      "id": 4,
+      "slug": "saraswati-puja",
+      "title_english": "Saraswati Puja Sequence",
+      "title_hindi": "सरस्वती पूजा क्रम",
+      "deity": "Saraswati",
+      "deity_color": "#7C3AED",
+      "occasion": "Vasant Panchami, Before Exams, Thursday",
+      "duration_minutes": 20,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "saraswati",
+        "puja",
+        "education",
+        "vasant-panchami",
+        "exams",
+        "knowledge"
+      ],
+      "intro_english": "Goddess Saraswati is the deity of knowledge, learning, arts, and music. This puja is especially important for students before examinations and for artists seeking creative inspiration. Performed on Vasant Panchami and Thursdays.",
+      "intro_hindi": "देवी सरस्वती ज्ञान, विद्या, कला और संगीत की देवी हैं। यह पूजा विशेष रूप से छात्रों के लिए और कलाकारों के लिए महत्वपूर्ण है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Preparation",
+          "label_hindi": "तैयारी",
+          "description": "Place your books, instruments, and tools of your craft at the feet of the Goddess. Wear white or yellow clothes. Set up white flowers — white chrysanthemum or jasmine are ideal. Prepare a white or yellow cloth for the altar.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Saraswati Vandana",
+          "label_hindi": "सरस्वती वंदना",
+          "mantra_sanskrit": "या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता। या वीणावरदण्डमण्डितकरा या श्वेतपद्मासना॥\nया ब्रह्माच्युतशंकरप्रभृतिभिर्देवैः सदा वन्दिता। सा मां पातु सरस्वती भगवती निःशेषजाड्यापहा॥",
+          "mantra_roman": "Ya Kundendutushara Haradhavala Ya Shubhravastravrita. Ya Vinavara Dandamandita Kara Ya Shvetapadmasana.\nYa Brahmaachyutashankaraprabhriti Bhirdevaihi Sada Vandita. Sa Mam Patu Saraswati Bhagavati Nihshesha Jadyapaha.",
+          "mantra_hindi": "जो कुंद के फूल, चन्द्रमा, और हिमालय जैसी धवल हैं, जो श्वेत वस्त्र धारण करती हैं, जिनके हाथ में वीणा है और जो श्वेत कमल पर विराजमान हैं — वे सरस्वती भगवती सदा ब्रह्मा, विष्णु और शिव द्वारा पूजित हैं। वे मेरी रक्षा करें और मेरी सभी जड़ताओं को नष्ट करें।",
+          "mantra_english": "She who is as white as the kunda flower, the moon, and a garland of snow — clothed in white, holding the blessed vina, seated on a white lotus — she who is always worshipped by Brahma, Vishnu, and Shiva — may that Saraswati protect me and remove all my ignorance.",
+          "repetitions": 3,
+          "duration_seconds": 90
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Books & Flowers",
+          "label_hindi": "पुस्तकें व फूल अर्पण",
+          "description": "Place your books and notebooks at the Goddess's feet — they will receive her blessings. Offer white flowers and akshat (unbroken rice mixed with kumkum). If you play a musical instrument, place it nearby.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Saraswati Gayatri",
+          "label_hindi": "सरस्वती गायत्री",
+          "mantra_sanskrit": "ॐ सरस्वत्यै च विद्महे ब्रह्मपुत्र्यै च धीमहि। तन्नो देवी प्रचोदयात्॥",
+          "mantra_roman": "Om Saraswatyai Cha Vidmahe Brahmaputryai Cha Dhimahi. Tanno Devi Prachodayat.",
+          "mantra_hindi": "हम सरस्वती को जानते हैं और ब्रह्मपुत्री का ध्यान करते हैं। वह देवी हमें प्रेरित करें।",
+          "mantra_english": "We meditate on Saraswati, daughter of Brahma. May that Goddess inspire and enlighten us.",
+          "repetitions": 108,
+          "duration_seconds": 600
+        },
+        {
+          "step": 5,
+          "type": "action",
+          "label": "Aarti & Touch Books",
+          "label_hindi": "आरती व पुस्तक स्पर्श",
+          "description": "Perform Saraswati aarti. After the puja, touch all your books and instruments as prasad of the Goddess. On Vasant Panchami, do not read or write before completing the puja — then begin your studies as the first act of the day.",
+          "duration_seconds": 120
+        }
+      ],
+      "materials_needed": [
+        "Saraswati idol or picture",
+        "White flowers (jasmine, chrysanthemum)",
+        "Books, notebooks, pen",
+        "Musical instruments (if applicable)",
+        "Yellow or white cloth",
+        "Akshat (rice + kumkum)",
+        "Diya",
+        "Incense sticks"
+      ],
+      "benefits": [
+        "Excellence in studies and examinations",
+        "Creativity and artistic skill",
+        "Clarity of speech and thought",
+        "Wisdom and discernment"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "wisdom",
+          "success"
+        ],
+        "gita_chapters": [
+          4
+        ]
+      },
+      "featured": false,
+      "priority": 4
+    },
+    {
+      "id": 5,
+      "slug": "shiva-abhishek",
+      "title_english": "Shiva Abhishek Sequence",
+      "title_hindi": "शिव अभिषेक क्रम",
+      "deity": "Shiva",
+      "deity_color": "#1E40AF",
+      "occasion": "Monday, Shivaratri, Shravan Month",
+      "duration_minutes": 35,
+      "difficulty": "Intermediate",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "shiva",
+        "abhishek",
+        "monday",
+        "shivaratri",
+        "shravan",
+        "moksha"
+      ],
+      "intro_english": "Abhishek — the ritual bathing of the Shiva Linga — is one of the most powerful forms of Shiva worship. Each substance used has deep symbolic meaning. This sequence is performed on Mondays, during Shravan month, and on Mahashivaratri.",
+      "intro_hindi": "अभिषेक — शिव लिंग का पवित्र स्नान — शिव पूजा का सबसे शक्तिशाली रूप है। प्रत्येक पदार्थ का गहरा प्रतीकात्मक अर्थ है। यह क्रम सोमवार, सावन माह और महाशिवरात्रि को किया जाता है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Prepare Abhishek Items",
+          "label_hindi": "अभिषेक सामग्री तैयार करें",
+          "description": "Arrange in order: water (Gangajal if available), milk, curd, honey, ghee, sugar, and coconut water. Gather: bel (bilva) leaves, white flowers, dhatura (thorn apple flowers, handle carefully), and vibhuti (sacred ash).",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Panchakshara Mantra",
+          "label_hindi": "पंचाक्षर मंत्र",
+          "mantra_sanskrit": "ॐ नमः शिवाय",
+          "mantra_roman": "Om Namah Shivaya",
+          "mantra_hindi": "ॐ शिव को नमस्कार है।",
+          "mantra_english": "Om, salutations to Shiva. (This five-syllable mantra — Na-Ma-Shi-Va-Ya — represents the five elements: earth, water, fire, air, and ether.)",
+          "repetitions": 108,
+          "duration_seconds": 300
+        },
+        {
+          "step": 3,
+          "type": "action",
+          "label": "Abhishek with Water",
+          "label_hindi": "जल अभिषेक",
+          "description": "Pour Gangajal or clean water over the Shiva Linga while chanting 'Om Namah Shivaya'. Water represents purity and the cooling of worldly desires.",
+          "duration_seconds": 60
+        },
+        {
+          "step": 4,
+          "type": "action",
+          "label": "Abhishek with Panchamrit",
+          "label_hindi": "पंचामृत अभिषेक",
+          "description": "Pour panchamrit (milk, curd, honey, ghee, sugar) in sequence, one by one, chanting the mantra with each. Milk = purity, curd = prosperity, honey = sweetness, ghee = victory, sugar = happiness.",
+          "duration_seconds": 120
+        },
+        {
+          "step": 5,
+          "type": "offering",
+          "label": "Offer Bel Leaves",
+          "label_hindi": "बेल पत्र अर्पण",
+          "description": "Offer bel (bilva) leaves in groups of three — they represent the three eyes of Lord Shiva and the Trimurti. Always offer them upside down (smooth side up). Chant 'Om Namah Shivaya' with each offering.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 6,
+          "type": "mantra",
+          "label": "Maha Mrityunjaya Mantra",
+          "label_hindi": "महामृत्युंजय मंत्र",
+          "mantra_sanskrit": "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्॥",
+          "mantra_roman": "Om Tryambakam Yajamahe Sugandhim Pushtivardhanam. Urvarukamiva Bandhanan Mrityormukshiya Maamritat.",
+          "mantra_hindi": "हम तीन नेत्रों वाले (शिव) की पूजा करते हैं जो सुगन्धित और पोषण को बढ़ाने वाले हैं। जैसे ककड़ी अपनी लता से अलग हो जाती है, उसी प्रकार हमें मृत्यु से मुक्त करो और अमृत की ओर ले चलो।",
+          "mantra_english": "We worship the three-eyed Lord Shiva, who is fragrant and nourishes all beings. May he liberate us from the bondage of death, as a cucumber is released from its vine — and lead us toward immortality.",
+          "repetitions": 11,
+          "duration_seconds": 180
+        },
+        {
+          "step": 7,
+          "type": "action",
+          "label": "Apply Vibhuti & Aarti",
+          "label_hindi": "विभूति लगाएं व आरती करें",
+          "description": "Apply vibhuti (sacred ash) on your forehead in three horizontal lines — the mark of a Shiva devotee. Perform Shiva aarti with camphor. Apply vibhuti to all family members.",
+          "duration_seconds": 120
+        }
+      ],
+      "materials_needed": [
+        "Shiva Linga",
+        "Gangajal or clean water",
+        "Milk, curd, honey, ghee, sugar",
+        "Bel (bilva) leaves",
+        "Vibhuti (sacred ash)",
+        "White flowers",
+        "Camphor",
+        "Dhatura flowers (optional)",
+        "Rudraksha mala (for counting)"
+      ],
+      "benefits": [
+        "Liberation from fear of death",
+        "Good health and longevity",
+        "Removal of sins and karma",
+        "Spiritual awakening and moksha"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "death",
+          "liberation",
+          "peace"
+        ],
+        "gita_chapters": [
+          2,
+          9
+        ]
+      },
+      "featured": true,
+      "priority": 5
+    },
+    {
+      "id": 6,
+      "slug": "durga-puja",
+      "title_english": "Durga Puja Sequence",
+      "title_hindi": "दुर्गा पूजा क्रम",
+      "deity": "Durga",
+      "deity_color": "#DC2626",
+      "occasion": "Navratri, Tuesday, Ashtami",
+      "duration_minutes": 30,
+      "difficulty": "Intermediate",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "durga",
+        "puja",
+        "navratri",
+        "tuesday",
+        "shakti",
+        "protection"
+      ],
+      "intro_english": "Goddess Durga, the supreme Shakti, is worshipped during Navratri and every Tuesday. This puja sequence includes the Durga Saptashati (key shlokas), the Durga Chalisa, and offerings specific to each of the nine forms.",
+      "intro_hindi": "देवी दुर्गा, परम शक्ति, नवरात्रि और प्रत्येक मंगलवार को पूजी जाती हैं। इस पूजा क्रम में दुर्गा सप्तशती, दुर्गा चालीसा और नौ रूपों के लिए विशेष अर्पण शामिल हैं।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Kalash Sthapana",
+          "label_hindi": "कलश स्थापना",
+          "description": "Fill a copper or clay pot with water. Place mango leaves (5 or 7) around the rim. Place a coconut on top. Draw a lotus or swastika on the pot with kumkum. This kalash represents Goddess Durga herself.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Durga Beej Mantra",
+          "label_hindi": "दुर्गा बीज मंत्र",
+          "mantra_sanskrit": "ॐ दुं दुर्गायै नमः",
+          "mantra_roman": "Om Dum Durgayai Namah",
+          "mantra_hindi": "ॐ दुर्गा को नमस्कार है।",
+          "mantra_english": "Om, the seed sound of Durga. Salutations to Goddess Durga.",
+          "repetitions": 108,
+          "duration_seconds": 300
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Red Flowers & Coconut",
+          "label_hindi": "लाल फूल व नारियल चढ़ाएं",
+          "description": "Offer red flowers (hibiscus is most auspicious) and marigolds. Break a coconut as an offering — symbolising the ego being shattered before the Divine Mother. Offer red bangles if available.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Mahishasura Mardini Stotram",
+          "label_hindi": "महिषासुर मर्दिनी स्तोत्रम",
+          "mantra_sanskrit": "अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दनुते। गिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते॥",
+          "mantra_roman": "Ayi Girinandini Nanditamedini Vishvavinodini Nandanute. Girivaravindhyashirodhinivasini Vishnuvilasini Jishnu Nute.",
+          "mantra_hindi": "हे पर्वतपुत्री, जो पृथ्वी को आनंदित करती हैं, जो संसार का मनोरंजन करती हैं, जो नंद की पुत्री हैं, जो विंध्य के शिखर पर निवास करती हैं, जो विष्णु की प्रिय हैं, जिन्हें इंद्र प्रणाम करते हैं।",
+          "mantra_english": "O daughter of the mountain, who delights the earth, who entertains the universe, praised by Nanda — O dweller of the Vindhya peaks, beloved of Vishnu, praised by Indra.",
+          "repetitions": 1,
+          "duration_seconds": 480
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Durga Chalisa",
+          "label_hindi": "दुर्गा चालीसा",
+          "mantra_sanskrit": "नमो नमो दुर्गे सुख करनी। नमो नमो अम्बे दुख हरनी॥\nनिराकार है ज्योति तुम्हारी। तिहुँ लोक फैली उजियारी॥",
+          "mantra_roman": "Namo Namo Durge Sukh Karni. Namo Namo Ambe Dukh Harni.\nNirakar Hai Jyoti Tumhari. Tihun Lok Pheli Ujiyari.",
+          "mantra_hindi": "हे दुर्गे, सुख देने वाली, तुम्हें बार-बार नमस्कार है। हे अम्बे, दुःख हरने वाली, तुम्हें बार-बार प्रणाम है।",
+          "mantra_english": "Salutations again and again to Durga, giver of happiness. Salutations to Amba, the remover of sorrow. Your light is formless, and it illuminates all three worlds.",
+          "repetitions": 1,
+          "duration_seconds": 600
+        },
+        {
+          "step": 6,
+          "type": "action",
+          "label": "Aarti & Prasad",
+          "label_hindi": "आरती व प्रसाद",
+          "description": "Perform Jai Ambe Gauri aarti. Offer halwa-puri-chana as prasad (especially on Ashtami and Navami). If doing Kanya Puja, invite 9 young girls for prasad on the last day of Navratri.",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Durga idol or picture",
+        "Kalash with water",
+        "Mango leaves & coconut",
+        "Red flowers (hibiscus, marigold)",
+        "Red bangles",
+        "Kumkum (red vermilion)",
+        "Halwa-puri-chana (for prasad)",
+        "Camphor & incense"
+      ],
+      "benefits": [
+        "Protection from evil and negative forces",
+        "Courage and inner strength",
+        "Removal of all fears",
+        "Victory over enemies and obstacles"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "strength",
+          "duty"
+        ],
+        "gita_chapters": [
+          11
+        ]
+      },
+      "featured": true,
+      "priority": 6
+    },
+    {
+      "id": 7,
+      "slug": "vishnu-puja",
+      "title_english": "Vishnu Puja Sequence",
+      "title_hindi": "विष्णु पूजा क्रम",
+      "deity": "Vishnu",
+      "deity_color": "#15803D",
+      "occasion": "Ekadashi, Thursday, Vaikuntha Ekadashi",
+      "duration_minutes": 25,
+      "difficulty": "Intermediate",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "vishnu",
+        "puja",
+        "ekadashi",
+        "thursday",
+        "preservation",
+        "dharma"
+      ],
+      "intro_english": "Lord Vishnu, the Preserver of the universe, is worshipped on Ekadashi (the 11th day of each lunar fortnight) and Thursdays. This puja includes the Vishnu Sahasranama, Tulsi offering, and the chanting of the Narayana mantra.",
+      "intro_hindi": "भगवान विष्णु, जगत के पालनकर्ता, एकादशी और गुरुवार को पूजे जाते हैं। इस पूजा में विष्णु सहस्रनाम, तुलसी अर्पण और नारायण मंत्र का जाप शामिल है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Preparation & Fasting",
+          "label_hindi": "तैयारी व उपवास",
+          "description": "On Ekadashi, observe a fast (or at minimum avoid rice and grains). Bathe early and wear yellow clothes — Vishnu's colour. Place a Shaligram stone or Vishnu's idol on yellow cloth. Prepare Tulsi leaves (the most sacred offering for Vishnu).",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Om Namo Narayanaya",
+          "label_hindi": "ॐ नमो नारायणाय",
+          "mantra_sanskrit": "ॐ नमो नारायणाय",
+          "mantra_roman": "Om Namo Narayanaya",
+          "mantra_hindi": "ॐ भगवान नारायण को नमस्कार है।",
+          "mantra_english": "Om, salutations to Narayana (Vishnu). The eight-syllable mantra — considered the crown jewel of all mantras.",
+          "repetitions": 108,
+          "duration_seconds": 360
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Tulsi & Yellow Flowers",
+          "label_hindi": "तुलसी व पीले फूल चढ़ाएं",
+          "description": "Offer Tulsi leaves with a pinch of sandal paste. Tulsi is Vishnu's most beloved offering — never worship Vishnu without it. Also offer yellow marigolds and yellow cloth. Offer panchamrit (milk, curd, honey, ghee, sugar).",
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Vishnu Sahasranama (Selected Verses)",
+          "label_hindi": "विष्णु सहस्रनाम",
+          "mantra_sanskrit": "विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः। भूतकृद्भूतभृद्भावो भूतात्मा भूतभावनः॥\nपूतात्मा परमात्मा च मुक्तानां परमागतिः। अव्ययः पुरुषः साक्षी क्षेत्रज्ञोऽक्षर एव च॥",
+          "mantra_roman": "Vishvam Vishnur Vashatkaaro Bhutabhavyabhavatprabhuh. Bhutakrid Bhutabhrid Bhavo Bhutatma Bhutabhavanah.\nPutatma Paramatma Cha Muktanam Paramagatih. Avyayah Purushah Sakshi Kshetragno Akshara Eva Cha.",
+          "mantra_hindi": "भगवान विष्णु ही यह विश्व हैं, वे षट्कार (वषट् — यज्ञ का एक अंग) हैं, भूत, भविष्य और वर्तमान के स्वामी हैं। वे सभी प्राणियों के कर्ता और पालनकर्ता हैं, परमात्मा हैं, सभी मुक्त आत्माओं की परम गति हैं।",
+          "mantra_english": "Vishnu is the universe itself, the lord of past, present, and future. He is the creator and sustainer of all beings, the Supreme Self, the ultimate refuge of all liberated souls.",
+          "repetitions": 1,
+          "duration_seconds": 600
+        },
+        {
+          "step": 5,
+          "type": "action",
+          "label": "Aarti & Prasad",
+          "label_hindi": "आरती व प्रसाद",
+          "description": "Perform Vishnu aarti. Offer panchamrit as prasad to all. On Ekadashi evening, read or listen to the Vishnu Sahasranama in full if possible. Break the fast next morning at sunrise (Dwadashi).",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Vishnu idol, Shaligram, or picture",
+        "Tulsi leaves",
+        "Yellow flowers (marigold)",
+        "Yellow cloth",
+        "Panchamrit",
+        "Sandal paste",
+        "Incense sticks",
+        "Camphor"
+      ],
+      "benefits": [
+        "Protection and preservation of dharma",
+        "Blessings for family harmony",
+        "Spiritual liberation (moksha)",
+        "Good health and prosperity"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "dharma",
+          "duty"
+        ],
+        "gita_chapters": [
+          9,
+          10,
+          11
+        ]
+      },
+      "featured": false,
+      "priority": 7
+    },
+    {
+      "id": 8,
+      "slug": "krishna-puja",
+      "title_english": "Krishna Puja / Janmashtami",
+      "title_hindi": "कृष्ण पूजा / जन्माष्टमी",
+      "deity": "Krishna",
+      "deity_color": "#7C3AED",
+      "occasion": "Janmashtami, Ekadashi, Wednesday",
+      "duration_minutes": 30,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "krishna",
+        "puja",
+        "janmashtami",
+        "ekadashi",
+        "love",
+        "bhakti"
+      ],
+      "intro_english": "Lord Krishna's puja is filled with joy and devotion. On Janmashtami, devotees fast through the day and celebrate at midnight — the hour of Krishna's birth. This sequence can also be used for daily morning puja.",
+      "intro_hindi": "भगवान कृष्ण की पूजा आनंद और भक्ति से भरी होती है। जन्माष्टमी पर भक्त पूरे दिन उपवास करते हैं और मध्यरात्रि को — कृष्ण के जन्म के समय — उत्सव मनाते हैं।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Decorate the Jhula (Cradle)",
+          "label_hindi": "झूला सजाएं",
+          "description": "For Janmashtami: set up a small cradle for the Bal Krishna idol. Decorate with flowers and a miniature outfit (preferably yellow/blue). Place Tulsi and peacock feathers. For daily puja: place Krishna's idol on a clean yellow cloth.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Krishna Beej Mantra",
+          "label_hindi": "कृष्ण बीज मंत्र",
+          "mantra_sanskrit": "ॐ [mantra fragment removed for safety] कृष्णाय नमः",
+          "mantra_roman": "Om [mantra fragment removed for safety] Krishnaya Namah",
+          "mantra_hindi": "ॐ, भगवान कृष्ण को नमस्कार है।",
+          "mantra_english": "Om, the seed sound of attraction and love. Salutations to Lord Krishna.",
+          "repetitions": 108,
+          "duration_seconds": 360
+        },
+        {
+          "step": 3,
+          "type": "offering",
+          "label": "Offer Makhan-Mishri",
+          "label_hindi": "माखन-मिश्री चढ़ाएं",
+          "description": "Offer fresh butter and mishri (rock sugar) — Krishna's favourite. Also offer tulsi leaves, yellow flowers, and flute-shaped incense if available. Place a small flute at the idol's side.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Hare Krishna Mahamantra",
+          "label_hindi": "हरे कृष्ण महामंत्र",
+          "mantra_sanskrit": "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे। हरे राम हरे राम राम राम हरे हरे॥",
+          "mantra_roman": "Hare Krishna Hare Krishna Krishna Krishna Hare Hare. Hare Rama Hare Rama Rama Rama Hare Hare.",
+          "mantra_hindi": "यह महामंत्र सोलह नामों वाला है। 'हरे' का अर्थ है 'माया का हरण करने वाले'। यह मंत्र मन को शुद्ध करता है और आत्मा को मुक्ति की ओर ले जाता है।",
+          "mantra_english": "This sixteen-name Maha Mantra consists of the names Hare, Krishna, and Rama. 'Hare' means 'the one who steals the mind (into devotion)'. Chanting this mantra purifies the mind and leads the soul toward liberation.",
+          "repetitions": 108,
+          "duration_seconds": 600
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Madhurashtakam",
+          "label_hindi": "मधुराष्टकम",
+          "mantra_sanskrit": "अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम्। हृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम्॥",
+          "mantra_roman": "Adharam Madhuram Vadanam Madhuram Nayanam Madhuram Hasitam Madhuram. Hridayam Madhuram Gamanam Madhuram Madhuradhipateh Akhilam Madhuram.",
+          "mantra_hindi": "मधुरता के स्वामी कृष्ण के — होंठ मधुर, मुख मधुर, नेत्र मधुर, हँसी मधुर, हृदय मधुर, चाल मधुर — सब कुछ मधुर है।",
+          "mantra_english": "Of Krishna, the lord of sweetness — sweet are his lips, sweet his face, sweet his eyes, sweet his smile, sweet his heart, sweet his gait — everything about him is sweet.",
+          "repetitions": 1,
+          "duration_seconds": 120
+        },
+        {
+          "step": 6,
+          "type": "action",
+          "label": "Midnight Aarti (Janmashtami) / Morning Aarti",
+          "label_hindi": "मध्यरात्रि / प्रातः आरती",
+          "description": "On Janmashtami: at midnight (the birth hour), rock the cradle, blow a conch shell if available, and perform a joyful aarti with conch blowing. Distribute makhan-mishri prasad. For daily puja: perform morning aarti after the mantras.",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Krishna idol (Bal Krishna or flute-playing Krishna)",
+        "Fresh butter and mishri (rock sugar)",
+        "Tulsi leaves",
+        "Yellow and blue flowers",
+        "Peacock feathers",
+        "Cradle (for Janmashtami)",
+        "Conch shell (optional)",
+        "Yellow cloth"
+      ],
+      "benefits": [
+        "Unconditional love and joy",
+        "Purification of the mind and heart",
+        "Freedom from ego and attachment",
+        "Spiritual bliss and devotion"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "love",
+          "detachment",
+          "duty"
+        ],
+        "gita_chapters": [
+          2,
+          3,
+          9,
+          12,
+          18
+        ]
+      },
+      "featured": false,
+      "priority": 8
+    },
+    {
+      "id": 9,
+      "slug": "surya-namaskar-mantra",
+      "title_english": "Surya Namaskar with Mantras",
+      "title_hindi": "सूर्य नमस्कार मंत्र सहित",
+      "deity": "Surya",
+      "deity_color": "#D97706",
+      "occasion": "Daily Morning, Chhath Puja, Sunday",
+      "duration_minutes": 15,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "surya",
+        "sun",
+        "morning",
+        "daily",
+        "health",
+        "energy",
+        "yoga"
+      ],
+      "intro_english": "The Sun is the visible form of God — the source of all life, energy, and light. Surya Namaskar is a twelve-posture sequence, each accompanied by a mantra and a name of the Sun. Best performed at sunrise facing east.",
+      "intro_hindi": "सूर्य ईश्वर का प्रत्यक्ष रूप हैं — सभी जीवन, ऊर्जा और प्रकाश के स्रोत। सूर्य नमस्कार बारह आसनों का एक क्रम है, प्रत्येक के साथ एक मंत्र और सूर्य का एक नाम।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Arghya — Offering Water to the Sun",
+          "label_hindi": "सूर्य को अर्घ्य",
+          "description": "Fill a copper vessel with water. Stand facing east before sunrise. Hold the vessel overhead and pour water slowly in an arc toward the rising sun. As you pour, recite: 'Om Suryaya Namah'. The water refracts sunlight into a visible rainbow — the sacred connection between devotee and sun.",
+          "duration_seconds": 120
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Surya Beej Mantra",
+          "label_hindi": "सूर्य बीज मंत्र",
+          "mantra_sanskrit": "ॐ ह्रां [mantra fragment removed for safety] ह्रौं सः सूर्याय नमः",
+          "mantra_roman": "Om Hraam [mantra fragment removed for safety] Hraum Sah Suryaya Namah",
+          "mantra_hindi": "ॐ, बीज मंत्र सहित सूर्य देव को नमस्कार है।",
+          "mantra_english": "Om, with the seed syllables of Surya — salutations to the Sun God.",
+          "repetitions": 12,
+          "duration_seconds": 60
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "12 Surya Namaskar Mantras",
+          "label_hindi": "बारह सूर्य नमस्कार मंत्र",
+          "mantra_sanskrit": "ॐ मित्राय नमः। ॐ रवये नमः। ॐ सूर्याय नमः। ॐ भानवे नमः। ॐ खगाय नमः। ॐ पूष्णे नमः। ॐ हिरण्यगर्भाय नमः। ॐ मरीचये नमः। ॐ आदित्याय नमः। ॐ सवित्रे नमः। ॐ अर्काय नमः। ॐ भास्कराय नमः।",
+          "mantra_roman": "Om Mitraya Namah. Om Ravaye Namah. Om Suryaya Namah. Om Bhanave Namah. Om Khagaya Namah. Om Pushne Namah. Om Hiranyagarbhaya Namah. Om Marichaye Namah. Om Adityaya Namah. Om Savitre Namah. Om Arkaya Namah. Om Bhaskaraya Namah.",
+          "mantra_hindi": "ॐ मित्र (सबके मित्र) को नमस्कार। ॐ रवि (प्रकाश) को नमस्कार। ॐ सूर्य (सर्वव्यापी) को नमस्कार। ॐ भानु (प्रकाशमान) को नमस्कार। ॐ खग (आकाशगामी) को नमस्कार। ॐ पूषन (पोषणकर्ता) को नमस्कार। ॐ हिरण्यगर्भ (सुनहरे गर्भ वाले) को नमस्कार। ॐ मरीचि (किरण) को नमस्कार। ॐ आदित्य (अदिति के पुत्र) को नमस्कार। ॐ सवित्र (उत्पादक) को नमस्कार। ॐ अर्क (ऊर्जा) को नमस्कार। ॐ भास्कर (प्रकाशकर्ता) को नमस्कार।",
+          "mantra_english": "Om, salutations to Mitra (friend of all). To Ravi (the brilliant). To Surya (the all-pervading). To Bhanu (the luminous). To Khaga (the sky-traveler). To Pushan (the nourisher). To Hiranyagarbha (the golden-wombed). To Marichi (the ray of light). To Aditya (son of Aditi). To Savitr (the life-giver). To Arka (the energy). To Bhaskara (the illuminator).",
+          "repetitions": 1,
+          "duration_seconds": 180
+        },
+        {
+          "step": 4,
+          "type": "action",
+          "label": "Surya Dhyan (Sun Meditation)",
+          "label_hindi": "सूर्य ध्यान",
+          "description": "Stand or sit facing the rising sun. Close your eyes and visualise the golden orb of the sun in your heart. Feel warmth spreading through your entire body. Hold this visualisation for 5 minutes in silence.",
+          "duration_seconds": 300
+        }
+      ],
+      "materials_needed": [
+        "Copper vessel for water",
+        "Clean open space facing east",
+        "Yoga mat (optional)"
+      ],
+      "benefits": [
+        "Vitality and physical energy",
+        "Clarity of vision and intellect",
+        "Skin health and immunity boost",
+        "Positive beginning of the day"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "health",
+          "daily-practice"
+        ],
+        "gita_chapters": []
+      },
+      "featured": false,
+      "priority": 9
+    },
+    {
+      "id": 10,
+      "slug": "sandhya-vandanam",
+      "title_english": "Sandhya Vandanam (Simplified)",
+      "title_hindi": "संध्या वंदनम (सरल क्रम)",
+      "deity": "Brahman (Formless Divine)",
+      "deity_color": "#A8832A",
+      "occasion": "Dawn (Pratah), Noon (Madhyahna), Dusk (Sayam) — Daily",
+      "duration_minutes": 10,
+      "difficulty": "Intermediate",
+      "language": [
+        "Sanskrit"
+      ],
+      "tags": [
+        "sandhya",
+        "vedic",
+        "daily",
+        "gayatri",
+        "brahman",
+        "ritual"
+      ],
+      "intro_english": "Sandhya Vandanam is the most ancient Vedic ritual — a daily salutation to the Divine at the three junctions (sandhyas) of the day: dawn, noon, and dusk. This simplified version is accessible to all and builds a powerful daily spiritual rhythm.",
+      "intro_hindi": "संध्या वंदनम सबसे प्राचीन वैदिक कर्मकांड है — दिन के तीन संधि कालों (संध्याओं) पर ईश्वर को नित्य प्रणाम: प्रातःकाल, मध्याह्न और सायंकाल।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Achamana (Purification)",
+          "label_hindi": "आचमन",
+          "description": "Take a small sip of water from the right palm three times, saying each time: 'Om Keshavaya namah', 'Om Narayanaya namah', 'Om Madhavaya namah'. This purifies the body and mind for worship.",
+          "duration_seconds": 30
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Pranayama with Gayatri",
+          "label_hindi": "प्राणायाम व गायत्री",
+          "mantra_sanskrit": "ॐ भूः। ॐ भुवः। ॐ स्वः। ॐ महः। ॐ जनः। ॐ तपः। ॐ सत्यम्॥ ॐ तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि। धियो यो नः प्रचोदयात्॥",
+          "mantra_roman": "Om Bhuh. Om Bhuvah. Om Svah. Om Mahah. Om Janah. Om Tapah. Om Satyam. Om Tatsaviturvarenyam Bhargo Devasya Dhimahi. Dhiyo Yo Nah Prachodayat.",
+          "mantra_hindi": "ॐ — पृथ्वी लोक, अंतरिक्ष, स्वर्ग, महर लोक, जन लोक, तप लोक, सत्य लोक। उस सूर्य देव की दिव्य प्रकाश का हम ध्यान करते हैं — जो हमारी बुद्धि को प्रेरित करें।",
+          "mantra_english": "Om — the seven worlds (earth through truth). We meditate on the divine radiance of that Sun-God (Savitri). May he inspire and illuminate our intellect.",
+          "repetitions": 10,
+          "duration_seconds": 300
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Marjana (Sprinkling Water)",
+          "label_hindi": "मार्जन",
+          "mantra_sanskrit": "ॐ आपो हि ष्ठा मयोभुवः। ता न ऊर्जे दधातन। महे रणाय चक्षसे। यो वः शिवतमो रसः। तस्य भाजयतेह नः। उशतीरिव मातरः।",
+          "mantra_roman": "Om Apo Hi Shtha Mayobhuvah. Ta Na Urje Dadhatana. Mahe Ranaya Chaksase. Yo Vah Shivatamorasa. Tasya Bhajayateha Nah. Ushatiriva Mataraha.",
+          "mantra_hindi": "हे जल! आप सुख के स्रोत हैं। आप हमें शक्ति दें। हमें उस दिव्य दर्शन के लिए तैयार करें। जो आपका सबसे पवित्र रस है — उसका हमें आशीर्वाद दें, जैसे प्रेमयुक्त माता अपने बच्चों को देती है।",
+          "mantra_english": "O Waters! You are the source of happiness. Grant us strength. Prepare us for the divine vision. Share with us your most auspicious essence — as loving mothers do with their children.",
+          "repetitions": 3,
+          "duration_seconds": 90
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Gayatri Japa",
+          "label_hindi": "गायत्री जाप",
+          "mantra_sanskrit": "ॐ तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि। धियो यो नः प्रचोदयात्॥",
+          "mantra_roman": "Om Tatsaviturvarenyam Bhargo Devasya Dhimahi. Dhiyo Yo Nah Prachodayat.",
+          "mantra_hindi": "उस सूर्य की दिव्य ज्योति का हम ध्यान करते हैं — वह हमारी बुद्धि को प्रेरित करे।",
+          "mantra_english": "We meditate on the divine radiance of the Sun. May it inspire our intellect.",
+          "repetitions": 10,
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Clean water in a vessel",
+        "Clean mat or seat facing east (morning/noon) or west (evening)"
+      ],
+      "benefits": [
+        "Daily spiritual discipline and rhythm",
+        "Mental clarity and intelligence",
+        "Purification of body and mind",
+        "Connection to the Vedic tradition"
+      ],
+      "related_shlokas": [
+        "gayatri-mantra"
+      ],
+      "cross_links": {
+        "wisdom_topics": [
+          "discipline",
+          "daily-practice"
+        ],
+        "gita_chapters": []
+      },
+      "featured": false,
+      "priority": 10
+    },
+    {
+      "id": 11,
+      "slug": "navgraha-puja",
+      "title_english": "Navagraha Puja",
+      "title_hindi": "नवग्रह पूजा",
+      "deity": "All 9 Planets",
+      "deity_color": "#A8832A",
+      "occasion": "Saturday, Special Occasions, When Graha Dosha is Present",
+      "duration_minutes": 40,
+      "difficulty": "Full",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "navagraha",
+        "planets",
+        "jyotish",
+        "saturday",
+        "graha-dosha",
+        "astrology"
+      ],
+      "intro_english": "The nine celestial bodies (Navagrahas) govern different aspects of our destiny and karmic path. This puja propitiates all nine — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu — and is prescribed when a planet causes difficulty in one's horoscope.",
+      "intro_hindi": "नवग्रह हमारी नियति और कर्म के विभिन्न पहलुओं को नियंत्रित करते हैं। यह पूजा नौ ग्रहों — सूर्य, चन्द्र, मंगल, बुध, बृहस्पति, शुक्र, शनि, राहु और केतु — को प्रसन्न करती है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Set Up Navagraha Mandala",
+          "label_hindi": "नवग्रह मंडल स्थापना",
+          "description": "Draw a 3x3 grid. Place grains representing each planet: wheat (Sun), rice (Moon), red lentils (Mars), green moong (Mercury), yellow chana (Jupiter), white rice (Venus), black sesame (Saturn), black urad (Rahu), horse gram (Ketu).",
+          "duration_seconds": 240
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Navagraha Stotram",
+          "label_hindi": "नवग्रह स्तोत्रम",
+          "mantra_sanskrit": "जपाकुसुम संकाशं काश्यपेयं महाद्युतिम्। तमोऽरिं सर्वपापघ्नं प्रणतोऽस्मि दिवाकरम्॥\nदधिशङ्खतुषाराभं क्षीरोदार्णवसम्भवम्। नमामि शशिनं सोमं शम्भोर्मुकुटभूषणम्॥",
+          "mantra_roman": "Japaakusum Sankasham Kashyapeyam Mahadyutim. Tamorim Sarvapapaghanam Pranato Asmi Divaakaram.\nDadhishankhatusharābham Kshirodaarnavasambhavam. Namaami Shashinam Somam Shambhormukutabhushanam.",
+          "mantra_hindi": "मैं सूर्यदेव को प्रणाम करता [mantra fragment removed for safety] जो जवाकुसुम (गुड़हल) के समान, काश्यप के पुत्र, महातेजस्वी और अंधकार के नाशक हैं। मैं उस चन्द्रमा को प्रणाम करता [mantra fragment removed for safety] जो दही-शंख-हिम के समान, क्षीर सागर से उत्पन्न और शिव के मुकुट की शोभा हैं।",
+          "mantra_english": "I bow to Surya (Sun), radiant as the hibiscus, son of Kashyapa, destroyer of darkness. I bow to Soma (Moon), white as curd and conch, born from the ocean of milk, the ornament of Shiva's crown.",
+          "repetitions": 1,
+          "duration_seconds": 480
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Individual Graha Mantras (9)",
+          "label_hindi": "नौ ग्रह मंत्र",
+          "mantra_sanskrit": "ॐ सूर्याय नमः। ॐ चन्द्राय नमः। ॐ मंगलाय नमः। ॐ बुधाय नमः। ॐ बृहस्पतये नमः। ॐ शुक्राय नमः। ॐ शनये नमः। ॐ राहवे नमः। ॐ केतवे नमः।",
+          "mantra_roman": "Om Suryaya Namah. Om Chandraya Namah. Om Mangalaya Namah. Om Budhaya Namah. Om Brihaspataye Namah. Om Shukraya Namah. Om Shanaye Namah. Om Rahave Namah. Om Ketave Namah.",
+          "mantra_hindi": "ॐ सूर्य को नमस्कार। ॐ चन्द्र को नमस्कार। ॐ मंगल को नमस्कार। ॐ बुध को नमस्कार। ॐ बृहस्पति को नमस्कार। ॐ शुक्र को नमस्कार। ॐ शनि को नमस्कार। ॐ राहु को नमस्कार। ॐ केतु को नमस्कार।",
+          "mantra_english": "Salutations to Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu.",
+          "repetitions": 9,
+          "duration_seconds": 540
+        },
+        {
+          "step": 4,
+          "type": "action",
+          "label": "Offer Grains & Perform Aarti",
+          "label_hindi": "अन्न चढ़ाएं व आरती करें",
+          "description": "Offer the corresponding grains to each planet's position in the mandala. Perform a single aarti for all nine planets together. Donate the grains to the poor or scatter them for birds — both acts propitiate the planets.",
+          "duration_seconds": 300
+        }
+      ],
+      "materials_needed": [
+        "Nine types of grains (wheat, rice, red lentils, moong, chana, white rice, black sesame, urad, horse gram)",
+        "Incense sticks (one per planet)",
+        "Camphor",
+        "Flowers in nine colors",
+        "Copper plate for mandala"
+      ],
+      "benefits": [
+        "Reduction of malefic planetary effects",
+        "Removal of Graha Dosha from horoscope",
+        "Balanced planetary energies in life",
+        "Health, wealth and harmony"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "karma",
+          "destiny"
+        ],
+        "gita_chapters": []
+      },
+      "featured": false,
+      "priority": 11
+    },
+    {
+      "id": 12,
+      "slug": "satyanarayan-puja",
+      "title_english": "Satyanarayan Puja (Short Form)",
+      "title_hindi": "सत्यनारायण पूजा (संक्षिप्त)",
+      "deity": "Vishnu",
+      "deity_color": "#15803D",
+      "occasion": "Full Moon, Festivals, Auspicious Occasions",
+      "duration_minutes": 45,
+      "difficulty": "Full",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "satyanarayan",
+        "vishnu",
+        "purnima",
+        "full-moon",
+        "thanksgiving",
+        "blessings"
+      ],
+      "intro_english": "Satyanarayan Puja is a thanksgiving ritual for Lord Vishnu — performed to fulfill vows, celebrate blessings received, or on full moon days. This short form covers the essential elements. Traditionally includes the reading of five katha (stories) from the Skanda Purana.",
+      "intro_hindi": "सत्यनारायण पूजा भगवान विष्णु के प्रति कृतज्ञता का कर्मकांड है — मन्नत पूरी होने पर, मिले आशीर्वाद के लिए, या पूर्णिमा को किया जाता है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Set Up the Altar",
+          "label_hindi": "वेदी स्थापना",
+          "description": "Spread a clean yellow cloth. Place Lord Vishnu or Satyanarayan's picture/idol. Prepare panchamrit, panchapooja items, and the prasad: sheera (semolina halwa with banana and milk, no water used in cooking).",
+          "duration_seconds": 300
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Kalash Puja",
+          "label_hindi": "कलश पूजा",
+          "mantra_sanskrit": "कलशस्य मुखे विष्णुः कण्ठे रुद्रः समाश्रितः। मूले तत्र स्थितो ब्रह्मा मध्ये मातृगणाः स्मृताः॥",
+          "mantra_roman": "Kalashasya Mukhe Vishnuh Kanthe Rudrah Samashritah. Mule Tatra Sthito Brahma Madhye Matruganah Smritah.",
+          "mantra_hindi": "कलश के मुख में विष्णु, कंठ में रुद्र, मूल में ब्रह्मा और मध्य में समस्त मातृकाएं विराजमान हैं।",
+          "mantra_english": "In the mouth of the kalash resides Vishnu, in the neck — Rudra, at the base — Brahma, and in the middle — all the divine mothers.",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Satyanarayan Katha",
+          "label_hindi": "सत्यनारायण कथा",
+          "mantra_sanskrit": "ॐ नमो भगवते वासुदेवाय। सत्यं वद। धर्मं चर। स्वाध्यायान्मा प्रमदः।",
+          "mantra_roman": "Om Namo Bhagavate Vasudevaya. Satyam Vada. Dharmam Chara. Svadhyayanma Pramadah.",
+          "mantra_hindi": "ॐ भगवान वासुदेव को नमस्कार। सत्य बोलो। धर्म का आचरण करो। स्वाध्याय में प्रमाद मत करो।",
+          "mantra_english": "Om, salutations to Lord Vasudeva. Speak truth. Walk in dharma. Never neglect the study of the scriptures.",
+          "repetitions": 1,
+          "duration_seconds": 1200
+        },
+        {
+          "step": 4,
+          "type": "offering",
+          "label": "Offer Sheera Prasad",
+          "label_hindi": "शीरा प्रसाद अर्पण",
+          "description": "Offer the freshly prepared sheera (sooji halwa cooked with milk, ghee, banana, raisins — never water). This is the signature prasad of Satyanarayan Puja. Do NOT eat the prasad before offering it to God and all family members.",
+          "duration_seconds": 60
+        },
+        {
+          "step": 5,
+          "type": "action",
+          "label": "Aarti & Prasad Distribution",
+          "label_hindi": "आरती व प्रसाद वितरण",
+          "description": "Perform Vishnu aarti. Distribute sheera prasad to all present — it is considered improper to decline the prasad of Satyanarayan. The legend emphasises that disrespecting the prasad brings misfortune.",
+          "duration_seconds": 180
+        }
+      ],
+      "materials_needed": [
+        "Yellow cloth",
+        "Vishnu/Satyanarayan picture or idol",
+        "Sheera ingredients (sooji, ghee, milk, banana, raisins, sugar)",
+        "Panchamrit",
+        "Tulsi leaves",
+        "Yellow flowers",
+        "Incense & camphor"
+      ],
+      "benefits": [
+        "Fulfillment of desires and vows",
+        "Blessings for family harmony",
+        "Removal of obstacles and misfortune",
+        "Abundance and prosperity"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "gratitude",
+          "dharma"
+        ],
+        "gita_chapters": [
+          9
+        ]
+      },
+      "featured": false,
+      "priority": 12
+    },
+    {
+      "id": 13,
+      "slug": "diwali-puja",
+      "title_english": "Diwali Lakshmi-Ganesha Puja",
+      "title_hindi": "दीपावली लक्ष्मी-गणेश पूजा",
+      "deity": "Lakshmi + Ganesha",
+      "deity_color": "#D97706",
+      "occasion": "Diwali (Kartik Amavasya)",
+      "duration_minutes": 45,
+      "difficulty": "Full",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "diwali",
+        "lakshmi",
+        "ganesha",
+        "deepawali",
+        "kartik",
+        "prosperity",
+        "light"
+      ],
+      "intro_english": "Diwali Puja is performed on the new moon night of Kartik (Amavasya) — the darkest night of the year, when Goddess Lakshmi is said to roam the earth and bless homes that are clean, bright, and welcoming. This is the most important puja of the Hindu calendar year.",
+      "intro_hindi": "दीपावली पूजा कार्तिक अमावस्या को की जाती है — वर्ष की सबसे अंधेरी रात, जब देवी लक्ष्मी पृथ्वी पर भ्रमण करती हैं और उन घरों को आशीर्वाद देती हैं जो स्वच्छ, प्रकाशमय और स्वागतयोग्य हों।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Clean & Illuminate the Home",
+          "label_hindi": "घर साफ़ करें व दीप जलाएं",
+          "description": "Deep-clean the entire home before Diwali. On Diwali evening: draw a rangoli at the main entrance, light diyas in every room, corridor, rooftop, and balcony. The light invites Goddess Lakshmi. Leave no dark corner.",
+          "duration_seconds": 0
+        },
+        {
+          "step": 2,
+          "type": "action",
+          "label": "Set Up the Puja Altar",
+          "label_hindi": "पूजा वेदी स्थापित करें",
+          "description": "Place idols of Ganesha (always on the left) and Lakshmi (on the right) on a clean red cloth. Place coins, account books (bahi-khata), gold and silver jewellery nearby — they will all receive Lakshmi's blessings.",
+          "duration_seconds": 180
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Ganesha Puja First",
+          "label_hindi": "प्रथम गणेश पूजा",
+          "mantra_sanskrit": "ॐ गं गणपतये नमः। सर्वविघ्नं विनाशय। शिवपुत्राय नमः।",
+          "mantra_roman": "Om Gam Ganapataye Namah. Sarvavighnam Vinashaya. Shivaputraya Namah.",
+          "mantra_hindi": "ॐ गणपति को नमस्कार। सभी बाधाओं को नष्ट करें। शिव के पुत्र को नमस्कार।",
+          "mantra_english": "Salutations to Ganesha. Destroy all obstacles. Salutations to the son of Shiva.",
+          "repetitions": 21,
+          "duration_seconds": 120
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Lakshmi Puja — Shri Sukta",
+          "label_hindi": "लक्ष्मी पूजा — श्री सूक्त",
+          "mantra_sanskrit": "हिरण्यवर्णां हरिणीं सुवर्णरजतस्रजाम्। चन्द्रां हिरण्मयीं लक्ष्मीं जातवेदो म आवह॥",
+          "mantra_roman": "Hiranyavarnam Harinim Suvarna Rajata Srajam. Chandram Hiranmayim Lakshmim Jatavedo Ma Avaha.",
+          "mantra_hindi": "हे अग्नि! सुनहरे रंग, हरिण जैसी सुंदर, सोने-चाँदी की माला धारण करने वाली, चन्द्र जैसी कांतिमयी लक्ष्मी को मेरे पास बुलाओ।",
+          "mantra_english": "O Agni! Call to me that Lakshmi — golden-hued, graceful, adorned with gold and silver, radiant as the moon.",
+          "repetitions": 16,
+          "duration_seconds": 300
+        },
+        {
+          "step": 5,
+          "type": "offering",
+          "label": "Offer Coins, Sweets & Lotus",
+          "label_hindi": "सिक्के, मिठाई व कमल चढ़ाएं",
+          "description": "Place new coins at Lakshmi's feet. Offer lotus flowers (or roses). Place your account books and gold jewellery nearby. Offer kheer or kaju katli as prasad.",
+          "duration_seconds": 90
+        },
+        {
+          "step": 6,
+          "type": "action",
+          "label": "Lakshmi Aarti & Keep Lights On",
+          "label_hindi": "लक्ष्मी आरती व रात भर दीप जलाएं",
+          "description": "Perform the Lakshmi aarti. Keep all lights (diyas, lamps, lights) on through the night — darkness must not enter the home on Diwali night. Distribute sweets to neighbours. Light firecrackers (where safe and legal).",
+          "duration_seconds": 300
+        }
+      ],
+      "materials_needed": [
+        "Lakshmi & Ganesha idols",
+        "Diyas (many — the more the better)",
+        "Rangoli colours",
+        "Coins and currency notes",
+        "Account books (bahi-khata)",
+        "Lotus flowers",
+        "Kheer or kaju katli",
+        "Camphor",
+        "Incense",
+        "New clothes"
+      ],
+      "benefits": [
+        "Abundance of wealth and prosperity throughout the year",
+        "Removal of debt and financial worry",
+        "Blessings for business and trade",
+        "Joy, light, and harmony in the home"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "prosperity",
+          "gratitude"
+        ],
+        "gita_chapters": []
+      },
+      "featured": true,
+      "priority": 13
+    },
+    {
+      "id": 14,
+      "slug": "navratri-devi-puja",
+      "title_english": "Navratri Evening Puja",
+      "title_hindi": "नवरात्रि संध्या पूजा",
+      "deity": "Durga",
+      "deity_color": "#DC2626",
+      "occasion": "Navratri (9 nights — Chaitra & Shardiya)",
+      "duration_minutes": 25,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "navratri",
+        "durga",
+        "devi",
+        "evening",
+        "nine-nights",
+        "shakti",
+        "nine-forms"
+      ],
+      "intro_english": "Navratri ('Nine Nights') celebrates the nine forms of the Divine Mother — one form per day. Each form has her own colour, offering, and mantra. This evening puja sequence is performed on each of the nine nights, with the specific deity for each day noted.",
+      "intro_hindi": "नवरात्रि ('नौ रातें') दिव्य माता के नौ रूपों का उत्सव है — प्रत्येक दिन एक रूप। प्रत्येक रूप का अपना रंग, अर्पण और मंत्र है।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Light the Akhand Jyot",
+          "label_hindi": "अखंड ज्योत जलाएं",
+          "description": "Light an unbroken flame (Akhand Jyot) — a ghee lamp that burns continuously for all nine nights without going out. This is the central symbol of Navratri. Place it safely where it will not be disturbed.",
+          "duration_seconds": 120
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Nine Forms Invocation",
+          "label_hindi": "नौ रूपों का आह्वान",
+          "mantra_sanskrit": "प्रथमं शैलपुत्री च द्वितीयं ब्रह्मचारिणी। तृतीयं चन्द्रघण्टेति कूष्माण्डेति चतुर्थकम्॥\nपञ्चमं स्कन्दमातेति षष्ठं कात्यायनीति च। सप्तमं कालरात्रीति महागौरीति चाष्टमम्॥\nनवमं सिद्धिदात्री च नवदुर्गाः प्रकीर्तिताः।",
+          "mantra_roman": "Prathamam Shailputri Cha Dvitiyam Brahmacharini. Tritiyam Chandraghanteti Kushmandeti Chaturtham.\nPanchamam Skandamateti Shashtham Katyayanicha. Saptamam Kalaratriti Mahagaurithi Cha Ashtamam.\nNavamam Siddhidatri Cha Navadurga Prakirtitah.",
+          "mantra_hindi": "पहली शैलपुत्री, दूसरी ब्रह्मचारिणी, तीसरी चंद्रघंटा, चौथी कूष्मांडा, पाँचवीं स्कंदमाता, छठीं कात्यायनी, सातवीं कालरात्रि, आठवीं महागौरी, नौवीं सिद्धिदात्री — ये नव दुर्गा हैं।",
+          "mantra_english": "The nine forms of Durga are: Shailputri (daughter of the mountain), Brahmacharini (the ascetic), Chandraghanta (moon-bell), Kushmanda (cosmic egg), Skandamata (mother of Skanda), Katyayani (born of sage Katyayan), Kalaratri (dark night), Mahagauri (the great white one), Siddhidatri (granter of powers).",
+          "repetitions": 1,
+          "duration_seconds": 60
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Ya Devi Sarvabhuteshu",
+          "label_hindi": "या देवी सर्वभूतेषु",
+          "mantra_sanskrit": "या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता। नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥\nया देवी सर्वभूतेषु मातृरूपेण संस्थिता। नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+          "mantra_roman": "Ya Devi Sarvabhuteshu Shaktirūpena Sansthita. Namastasyai Namastasyai Namastasyai Namo Namah.\nYa Devi Sarvabhuteshu Matrirupena Sansthita. Namastasyai Namastasyai Namastasyai Namo Namah.",
+          "mantra_hindi": "जो देवी सभी प्राणियों में शक्ति के रूप में स्थित हैं — उन्हें नमस्कार, नमस्कार, नमस्कार। जो देवी सभी प्राणियों में माता के रूप में स्थित हैं — उन्हें नमस्कार, नमस्कार, नमस्कार।",
+          "mantra_english": "That Goddess who abides in all beings as Shakti (energy) — salutations to her, salutations, salutations. That Goddess who abides in all beings as the Divine Mother — salutations to her, salutations, salutations.",
+          "repetitions": 9,
+          "duration_seconds": 300
+        },
+        {
+          "step": 4,
+          "type": "offering",
+          "label": "Day-Specific Offerings",
+          "label_hindi": "दिन के अनुसार अर्पण",
+          "description": "Day 1 (Shailputri): White flowers, ghee. Day 2 (Brahmacharini): Sugar, panchamrit. Day 3 (Chandraghanta): Milk, white sweets. Day 4 (Kushmanda): Malpua. Day 5 (Skandamata): Banana. Day 6 (Katyayani): Honey. Day 7 (Kalaratri): Jaggery. Day 8 (Mahagauri): Coconut. Day 9 (Siddhidatri): Sesame.",
+          "duration_seconds": 60
+        },
+        {
+          "step": 5,
+          "type": "action",
+          "label": "Devi Aarti & Dandiya/Garba",
+          "label_hindi": "देवी आरती व डांडिया/गरबा",
+          "description": "Perform Jai Ambe Gauri aarti. After puja, many communities gather for Garba or Dandiya Raas — devotional dance celebrating the victory of Devi over the demon. On Navami (9th day): perform Kanya Puja — invite 9 young girls, wash their feet, offer them food and gifts.",
+          "duration_seconds": 300
+        }
+      ],
+      "materials_needed": [
+        "Durga idol or image",
+        "Ghee lamp for Akhand Jyot (burning 9 nights)",
+        "Colour-coded offerings per day",
+        "Marigold and red flowers",
+        "Kumkum and sindoor",
+        "Camphor and incense"
+      ],
+      "benefits": [
+        "Activation of feminine divine energy within",
+        "Courage, strength and victory",
+        "Purification of the home and family",
+        "Blessings for health and fulfillment of desires"
+      ],
+      "related_shlokas": [],
+      "cross_links": {
+        "wisdom_topics": [
+          "strength",
+          "power"
+        ],
+        "gita_chapters": [
+          11
+        ]
+      },
+      "featured": false,
+      "priority": 14
+    },
+    {
+      "id": 15,
+      "slug": "morning-prayer-sequence",
+      "title_english": "Morning Prayer Sequence",
+      "title_hindi": "प्रातःकाल प्रार्थना क्रम",
+      "deity": "Universal / Brahman",
+      "deity_color": "#A8832A",
+      "occasion": "Daily Morning",
+      "duration_minutes": 10,
+      "difficulty": "Beginner",
+      "language": [
+        "Sanskrit",
+        "Hindi"
+      ],
+      "tags": [
+        "morning",
+        "daily",
+        "universal",
+        "brahman",
+        "routine",
+        "beginner",
+        "all-deities"
+      ],
+      "intro_english": "A simple, powerful ten-minute morning prayer sequence that begins the day with gratitude and divine connection. This is the ideal starting point for those new to puja — no altar or special items required. Just your presence and your intention.",
+      "intro_hindi": "एक सरल, शक्तिशाली दस मिनट का प्रातःकाल प्रार्थना क्रम जो दिन की शुरुआत कृतज्ञता और दिव्य संबंध के साथ करता है। यह उनके लिए आदर्श है जो पूजा में नए हैं।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "mantra",
+          "label": "Karagre Vasate Lakshmi",
+          "label_hindi": "करग्रे वसते लक्ष्मी",
+          "mantra_sanskrit": "कराग्रे वसते लक्ष्मीः करमध्ये सरस्वती। करमूले स्थितो ब्रह्मा प्रभाते करदर्शनम्॥",
+          "mantra_roman": "Karagre Vasate Lakshmih Karamadhye Saraswati. Karamule Sthito Brahma Prabhate Karadarshanam.",
+          "mantra_hindi": "हाथ की उंगलियों के अग्र भाग में लक्ष्मी, मध्य भाग में सरस्वती और मूल में ब्रह्मा निवास करते हैं। प्रभात में अपनी हथेलियों के दर्शन करें।",
+          "mantra_english": "In the tips of the fingers dwells Lakshmi, in the middle — Saraswati, and at the base — Brahma. In the morning, behold your own hands (as a reminder of the divine gifts you hold).",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 2,
+          "type": "mantra",
+          "label": "Bhoomi Vandana (Earth Prayer)",
+          "label_hindi": "भूमि वंदना",
+          "mantra_sanskrit": "समुद्रवसने देवि पर्वतस्तनमण्डले। विष्णुपत्नि नमस्तुभ्यं पादस्पर्शं क्षमस्व मे॥",
+          "mantra_roman": "Samudravasnae Devi Parvatastanamandale. Vishnupatni Namastubhyam Padassparsham Kshamasva Me.",
+          "mantra_hindi": "हे देवी, जो समुद्र को वस्त्र के रूप में धारण करती हैं, पर्वत जिनके स्तन हैं, विष्णुप्रिया — आपको नमस्कार। मेरे पाँव के स्पर्श के लिए क्षमा करें।",
+          "mantra_english": "O Goddess, who wears the ocean as a garment, whose breasts are the mountains, consort of Vishnu — salutations to you. Forgive me for touching you with my feet (as I step upon the earth).",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 3,
+          "type": "mantra",
+          "label": "Brahma Murari",
+          "label_hindi": "ब्रह्म मुरारी",
+          "mantra_sanskrit": "ब्रह्मा मुरारिस्त्रिपुरान्तकारी भानुः शशी भूमिसुतो बुधश्च। गुरुश्च शुक्रः शनिरार्हु केतवः सर्वे ग्रहाः शान्तिकरा भवन्तु॥",
+          "mantra_roman": "Brahma Murarih Tripurantakari Bhanuh Shashi Bhumisuto Budhashcha. Gurushcha Shukrah Shanir Arhu Ketavah Sarve Grahah Shantikarah Bhavantu.",
+          "mantra_hindi": "ब्रह्मा, विष्णु, शिव (त्रिपुरान्तकारी), सूर्य, चन्द्र, मंगल, बुध, बृहस्पति, शुक्र, शनि, राहु और केतु — ये सभी ग्रह मेरे लिए शांतिकर हों।",
+          "mantra_english": "May Brahma, Vishnu, Shiva, Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu — may all these planetary forces be bearers of peace for me.",
+          "repetitions": 1,
+          "duration_seconds": 30
+        },
+        {
+          "step": 4,
+          "type": "mantra",
+          "label": "Gayatri Mantra",
+          "label_hindi": "गायत्री मंत्र",
+          "mantra_sanskrit": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि। धियो यो नः प्रचोदयात्॥",
+          "mantra_roman": "Om Bhurbhuvah Svah Tatsaviturvarenyam Bhargo Devasya Dhimahi. Dhiyo Yo Nah Prachodayat.",
+          "mantra_hindi": "ॐ — पृथ्वी, अंतरिक्ष और स्वर्ग। उस सूर्य की दिव्य ज्योति का ध्यान करते हैं — जो हमारी बुद्धि को प्रेरित करे।",
+          "mantra_english": "Om — earth, sky, and heaven. We meditate on the divine radiance of the Sun. May it inspire and illuminate our intellect.",
+          "repetitions": 3,
+          "duration_seconds": 60
+        },
+        {
+          "step": 5,
+          "type": "mantra",
+          "label": "Sarve Bhavantu Sukhinah",
+          "label_hindi": "सर्वे भवन्तु सुखिनः",
+          "mantra_sanskrit": "सर्वे भवन्तु सुखिनः। सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु। मा कश्चिद्दुःखभाग्भवेत्।। ॐ शान्तिः शान्तिः शान्तिः।",
+          "mantra_roman": "Sarve Bhavantu Sukhinah. Sarve Santu Niramayah. Sarve Bhadrani Pashyantu. Ma Kashchit Duhkha Bhag Bhavet. Om Shantih Shantih Shantih.",
+          "mantra_hindi": "सभी सुखी हों। सभी रोगमुक्त हों। सभी कल्याणकारी दृश्य देखें। कोई भी दुःख का भागी न हो। ॐ शान्ति शान्ति शान्ति।",
+          "mantra_english": "May all beings be happy. May all beings be free from illness. May all beings see auspiciousness. May no being suffer. Om peace, peace, peace.",
+          "repetitions": 1,
+          "duration_seconds": 30
+        }
+      ],
+      "materials_needed": [
+        "Nothing required — optional: a diya or incense stick"
+      ],
+      "benefits": [
+        "A peaceful, focused beginning to the day",
+        "Gratitude and positive intention",
+        "Universal compassion and goodwill",
+        "Spiritual connection without elaborate setup"
+      ],
+      "related_shlokas": [
+        "gayatri-mantra",
+        "sarve-bhavantu-sukhinah"
+      ],
+      "cross_links": {
+        "wisdom_topics": [
+          "peace",
+          "daily-practice",
+          "gratitude"
+        ],
+        "gita_chapters": [
+          6,
+          12
+        ]
+      },
+      "featured": true,
+      "priority": 15
+    }
+  ]
+}

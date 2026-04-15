@@ -236,6 +236,18 @@
     @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } }
     @media(min-width:601px) { nav { display: flex; } }
   </style>
+  <link rel="manifest" href="/manifest.json">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+
 </head>
 <body>
 
@@ -381,7 +393,7 @@ let timers = {};              // stepIndex → { interval, remaining, running }
 // ─────────────────────────────────────────────
 async function loadPrayers() {
   try {
-    const res = await fetch('prayers.json');
+    const res = await fetch('/data/prayers.json');
     const data = await res.json();
     allPrayers = data.prayers;
   } catch(e) {

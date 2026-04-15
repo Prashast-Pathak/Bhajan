@@ -1,0 +1,1150 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-04-13",
+    "total_topics": 10,
+    "total_quotes": 50
+  },
+  "topics": [
+    {
+      "id": "w001",
+      "slug": "anxiety",
+      "title_english": "Anxiety & Worry",
+      "title_hindi": "चिंता और व्याकुलता",
+      "intro_english": "The ancient wisdom of the Bhagavad Gita and Upanishads offers profound guidance on overcoming anxiety. Lord Krishna teaches that most anxiety arises from attachment to outcomes we cannot control. The scriptures reveal that the true Self — the Atman — is beyond all suffering, and resting in this knowledge is the greatest remedy for worry.",
+      "intro_hindi": "भगवद्गीता और उपनिषदों की प्राचीन ज्ञान चिंता पर काबू पाने के लिए गहन मार्गदर्शन प्रदान करती है। भगवान कृष्ण सिखाते हैं कि अधिकांश चिंता उन परिणामों से आसक्ति के कारण उत्पन्न होती है जिन्हें हम नियंत्रित नहीं कर सकते। शास्त्र बताते हैं कि वास्तविक आत्मा सभी कष्टों से परे है।",
+      "seo_title": "Anxiety Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Overcome anxiety with timeless wisdom from the Bhagavad Gita and Hindu scriptures. Sanskrit shlokas with Hindi and English meaning on worry, peace, and inner calm.",
+      "related_topics": [
+        "fear",
+        "grief",
+        "patience"
+      ],
+      "quotes": [
+        {
+          "id": "w001-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.47",
+          "gita_chapter": 2,
+          "gita_verse": 47,
+          "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+          "roman": "Karmaṇyevādhikāraste mā phaleṣu kadācana. Mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi.",
+          "hindi": "तुम्हारा कर्म करने में ही अधिकार है, फलों में कभी नहीं। कर्म के फल की आशा मत रखो, और अकर्म में भी आसक्त मत हो।",
+          "english": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to inaction.",
+          "application_english": "When anxiety grips you before a presentation, exam, or important decision, focus entirely on your preparation and effort — not the outcome. Anxiety dissolves when you release attachment to results and commit fully to your role in the present moment.",
+          "application_hindi": "जब किसी परीक्षा या महत्वपूर्ण कार्य से पहले चिंता हो, तो केवल अपने प्रयास पर ध्यान दें — फल पर नहीं। जब आप परिणाम की आसक्ति छोड़ देते हैं, तो चिंता स्वयं विलीन हो जाती है।",
+          "tags": [
+            "karma",
+            "detachment",
+            "action",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w001-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.20",
+          "gita_chapter": 2,
+          "gita_verse": 20,
+          "sanskrit": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः। अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥",
+          "roman": "Na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavitā vā na bhūyaḥ. Ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre.",
+          "hindi": "यह आत्मा न कभी जन्म लेती है न मरती है। यह न तो कभी थी, न है, न होगी। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारी जाती।",
+          "english": "The soul is never born nor dies at any time. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and primeval. It is not slain when the body is slain.",
+          "application_english": "When anxiety about loss, change, or uncertainty overwhelms you, remember that your deepest self — the Atman — is untouchable by any worldly circumstance. This knowledge provides the most unshakeable foundation for inner peace.",
+          "application_hindi": "जब परिवर्तन या हानि की चिंता सताए, तो याद करें कि आपका वास्तविक स्वरूप — आत्मा — किसी भी सांसारिक परिस्थिति से प्रभावित नहीं होती। यह ज्ञान मन की सबसे दृढ़ शांति का आधार है।",
+          "tags": [
+            "atman",
+            "soul",
+            "eternity",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w001-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.14",
+          "gita_chapter": 2,
+          "gita_verse": 14,
+          "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+          "roman": "Mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ. Āgamāpāyino'nityāstāṃstitikṣasva bhārata.",
+          "hindi": "हे कुन्तीपुत्र, सुख-दुख देने वाले इन्द्रिय विषयों का स्पर्श, जैसे शीत-उष्ण, ये आते-जाते रहते हैं और अनित्य हैं। हे भारत, उन्हें सहन करो।",
+          "english": "O son of Kunti, the contact between the senses and the sense objects gives rise to happiness and distress, as winter and summer seasons come and go. They are temporary, O descendant of Bharata. One must learn to tolerate them without being disturbed.",
+          "application_english": "Anxiety treats temporary feelings as permanent truths. This verse reminds us that all emotional storms — like seasons — pass. Train yourself to observe anxious thoughts the way you observe clouds: present, but not permanent.",
+          "application_hindi": "चिंता अस्थायी भावनाओं को स्थायी सत्य मान लेती है। यह श्लोक याद दिलाता है कि सभी भावनात्मक तूफान — ऋतुओं की तरह — बीत जाते हैं। चिंताजनक विचारों को बादलों की तरह देखना सीखें।",
+          "tags": [
+            "impermanence",
+            "tolerance",
+            "equanimity",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w001-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.45",
+          "gita_chapter": 2,
+          "gita_verse": 45,
+          "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन। निर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्॥",
+          "roman": "Traiguṇyaviṣayā vedā nistraiguṇyo bhavārjuna. Nirdvandvo nityasattvastho niryogakṣema ātmavān.",
+          "hindi": "हे अर्जुन, वेद तीनों गुणों के विषयों का वर्णन करते हैं। तुम इन तीनों गुणों से ऊपर उठो, द्वन्द्वों से मुक्त हो, नित्य सत्त्वस्थ रहो, योगक्षेम की चिंता छोड़ो और आत्मा में स्थित रहो।",
+          "english": "The Vedas deal with the three qualities of material nature. Rise above these three qualities, O Arjuna. Be free from all dualities, be free from concerns for gain and safety, be situated in the pure Self.",
+          "application_english": "Anxiety often comes from chasing security and fearing loss. Krishna advises transcending the endless game of gain and protection by anchoring in the unchanging Self. Daily meditation that connects you to your inner witness is the practical path.",
+          "application_hindi": "चिंता अक्सर सुरक्षा पाने और हानि के भय से आती है। कृष्ण आत्मा में स्थित होकर इस निरंतर खेल से ऊपर उठने की सलाह देते हैं। दैनिक ध्यान इसका व्यावहारिक मार्ग है।",
+          "tags": [
+            "gunas",
+            "duality",
+            "equanimity",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w001-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.70",
+          "gita_chapter": 2,
+          "gita_verse": 70,
+          "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत्। तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी॥",
+          "roman": "Āpūryamāṇamacalapratiṣṭhaṃ samudramāpaḥ praviśanti yadvat. Tadvatkāmā yaṃ praviśanti sarve sa śāntimāpnoti na kāmakāmī.",
+          "hindi": "जैसे अनेक नदियों का जल सागर में समाता है, परंतु सागर अपनी सीमाओं में स्थिर रहता है — वैसे ही जिस पुरुष में सब कामनाएं समा जाती हैं, वह शांति पाता है, न कि कामनाओं का पीछा करने वाला।",
+          "english": "Just as the ocean, though constantly being filled by rivers, remains undisturbed in its equilibrium — similarly, the person into whom all desires flow without disturbing his inner peace attains tranquility. Not the one who is always chasing desires.",
+          "application_english": "Be like the ocean: vast, stable, unperturbed by what flows in. Anxiety multiplies when we chase every anxious thought. The person who can remain centered while thoughts flow through, without reacting to each one, finds lasting peace.",
+          "application_hindi": "सागर की तरह बनें: विशाल, स्थिर, अंदर आने वाली चीजों से अविचलित। चिंता तब बढ़ती है जब हम हर चिंताजनक विचार का पीछा करते हैं। जो व्यक्ति विचारों के प्रवाह में भी केंद्रित रह सकता है, वह स्थायी शांति पाता है।",
+          "tags": [
+            "peace",
+            "desire",
+            "equanimity",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w002",
+      "slug": "failure",
+      "title_english": "Failure & Defeat",
+      "title_hindi": "असफलता और पराजय",
+      "intro_english": "Hindu philosophy views failure not as a verdict on your worth, but as a teacher on the path. The Gita's doctrine of Nishkama Karma — action without attachment to results — liberates us from the crushing weight of failure. Every great soul, from Arjuna to Rama, faced defeat, and the scriptures transform these moments into stepping stones to wisdom.",
+      "intro_hindi": "हिंदू दर्शन असफलता को आपकी योग्यता का निर्णय नहीं, बल्कि मार्ग पर एक गुरु के रूप में देखता है। गीता का निष्काम कर्म का सिद्धांत हमें असफलता के कुचलने वाले बोझ से मुक्त करता है। अर्जुन से राम तक हर महान आत्मा ने पराजय का सामना किया।",
+      "seo_title": "Failure Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Find strength after failure with Bhagavad Gita wisdom. Sanskrit shlokas on defeat, resilience, and rising again — with Hindi and English meaning and life application.",
+      "related_topics": [
+        "success",
+        "duty",
+        "patience"
+      ],
+      "quotes": [
+        {
+          "id": "w002-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.3",
+          "gita_chapter": 2,
+          "gita_verse": 3,
+          "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते। क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
+          "roman": "Klaibyaṃ mā sma gamaḥ pārtha naitat tvayy upapadyate. Kṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha parantapa.",
+          "hindi": "हे पार्थ, नपुंसकता को मत प्राप्त हो — यह तुम्हें शोभा नहीं देती। हे शत्रु-तापन, हृदय की इस क्षुद्र दुर्बलता को त्यागकर उठ खड़े हो।",
+          "english": "Do not yield to unmanliness, O Arjuna. It does not become you. Shake off this faint-heartedness and arise, O scorcher of enemies.",
+          "application_english": "When failure has knocked you down and paralysis sets in, hear Krishna's command: arise. The Gita was spoken to a person who had given up. The divine answer was not comfort but a call to rise. The world needs your continued effort, not your surrender.",
+          "application_hindi": "जब असफलता ने आपको नीचे गिरा दिया हो, तो कृष्ण की आज्ञा सुनें: उठो। गीता एक ऐसे व्यक्ति को कही गई थी जिसने हार मान ली थी। दैवीय उत्तर सहानुभूति नहीं, बल्कि उठने का आह्वान था।",
+          "tags": [
+            "courage",
+            "rising",
+            "action",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w002-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.38",
+          "gita_chapter": 2,
+          "gita_verse": 38,
+          "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ। ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि॥",
+          "roman": "Sukhaduḥkhe same kṛtvā lābhālābhau jayājayau. Tato yuddhāya yujyasva naivaṃ pāpam avāpsyasi.",
+          "hindi": "सुख-दुख, लाभ-हानि और जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ — इस तरह तुम्हें पाप नहीं लगेगा।",
+          "english": "Treating alike pleasure and pain, gain and loss, victory and defeat — engage in the battle for the sake of battle. Thus you shall not incur sin.",
+          "application_english": "Equanimity toward success and failure is the warrior's path. This does not mean indifference — it means freedom from being destroyed by failure or corrupted by success. Give your best effort and hold both outcomes with open hands.",
+          "application_hindi": "सफलता और असफलता के प्रति समता योद्धा का मार्ग है। इसका अर्थ उदासीनता नहीं — बल्कि असफलता से नष्ट न होना और सफलता से भ्रष्ट न होना। अपना सर्वश्रेष्ठ प्रयास करें और दोनों परिणामों को खुले हाथों से थामें।",
+          "tags": [
+            "equanimity",
+            "victory",
+            "defeat",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w002-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.19",
+          "gita_chapter": 2,
+          "gita_verse": 19,
+          "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्। उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥",
+          "roman": "Ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam. Ubhau tau na vijānīto nāyaṃ hanti na hanyate.",
+          "hindi": "जो इस आत्मा को मारने वाला समझता है और जो इसे मरा हुआ मानता है — दोनों ही नहीं जानते। यह न मारती है, न मारी जाती है।",
+          "english": "Both those who think the soul kills and those who think it is killed are mistaken. The soul neither kills nor is killed.",
+          "application_english": "Your deepest self cannot be destroyed by failure. Careers fail, relationships end, businesses collapse — but the awareness within you remains untouched. When failure seems total and devastating, this verse reveals what truly cannot be defeated: your Atman.",
+          "application_hindi": "आपका वास्तविक स्वरूप असफलता से नष्ट नहीं हो सकता। करियर विफल होते हैं, रिश्ते टूटते हैं, व्यापार बंद होते हैं — लेकिन आपके भीतर की चेतना अप्रभावित रहती है। जब असफलता पूर्ण लगे, तो याद करें कि आत्मा को हराया नहीं जा सकता।",
+          "tags": [
+            "soul",
+            "atman",
+            "resilience",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w002-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.48",
+          "gita_chapter": 2,
+          "gita_verse": 48,
+          "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय। सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते॥",
+          "roman": "Yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya. Siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate.",
+          "hindi": "हे धनंजय, आसक्ति को छोड़कर योग में स्थित होकर कर्म करो। सिद्धि और असिद्धि में समान रहो — यह समत्व ही योग कहलाता है।",
+          "english": "Be steadfast in yoga, O Arjuna. Perform your duty without attachment, remaining equal in success and failure. Such equanimity is called yoga.",
+          "application_english": "Yoga is not just a physical practice — it is the art of acting without being enslaved by outcomes. When you practice this, failure loses its sting and success loses its intoxication. You become free to act at your highest capacity, unhindered.",
+          "application_hindi": "योग केवल शारीरिक अभ्यास नहीं — यह परिणामों की दासता के बिना कार्य करने की कला है। जब आप इसका अभ्यास करते हैं, तो असफलता की पीड़ा और सफलता का नशा दोनों कम हो जाते हैं।",
+          "tags": [
+            "yoga",
+            "action",
+            "equanimity",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w002-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.72",
+          "gita_chapter": 2,
+          "gita_verse": 72,
+          "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति। स्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति॥",
+          "roman": "Eṣā brāhmī sthitiḥ pārtha naināṃ prāpya vimuhyati. Sthitvāsyāmantakāle'pi brahmanirvāṇamṛcchati.",
+          "hindi": "हे पार्थ, यह ब्राह्मी स्थिति है — इसे प्राप्त करके मनुष्य मोहित नहीं होता। अंतकाल में भी इसमें स्थित रहकर वह ब्रह्मनिर्वाण प्राप्त करता है।",
+          "english": "This is the state of enlightenment in Brahman, O Arjuna. Having attained it, one is not deluded. Being situated in this state even at the time of death, one can enter the kingdom of God.",
+          "application_english": "The ultimate freedom is not freedom from failure but freedom from being defined by failure. The enlightened state Krishna describes is one where neither failure nor death can shake your inner stability. Build toward this by practicing non-attachment daily.",
+          "application_hindi": "परम स्वतंत्रता असफलता से मुक्ति नहीं, बल्कि असफलता से परिभाषित न होने की स्वतंत्रता है। कृष्ण जिस प्रबुद्ध अवस्था का वर्णन करते हैं, वहाँ असफलता और मृत्यु भी आपकी आंतरिक स्थिरता को नहीं हिला सकती।",
+          "tags": [
+            "liberation",
+            "brahman",
+            "stability",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w003",
+      "slug": "death",
+      "title_english": "Death & Impermanence",
+      "title_hindi": "मृत्यु और नश्वरता",
+      "intro_english": "No philosophical tradition has engaged with death as deeply, honestly, and fearlessly as the Sanatana Dharma. The Bhagavad Gita was born on a battlefield, in the face of mass death. Krishna's answer to Arjuna's grief was not denial but a revelation of the immortal nature of the soul — transforming death from an ending into a transition.",
+      "intro_hindi": "किसी भी दार्शनिक परंपरा ने मृत्यु को सनातन धर्म जितनी गहराई, ईमानदारी और निर्भयता से नहीं देखा है। भगवद्गीता एक युद्धभूमि पर, मृत्यु के सामने जन्मी थी। कृष्ण का उत्तर इनकार नहीं बल्कि आत्मा की अमरता का रहस्योद्घाटन था।",
+      "seo_title": "Death & Impermanence Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Find peace about death and impermanence with Bhagavad Gita wisdom. Sanskrit shlokas on the soul's immortality, grief, and the eternal self.",
+      "related_topics": [
+        "grief",
+        "fear",
+        "anxiety"
+      ],
+      "quotes": [
+        {
+          "id": "w003-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.22",
+          "gita_chapter": 2,
+          "gita_verse": 22,
+          "sanskrit": "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥",
+          "roman": "Vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi. Tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī.",
+          "hindi": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र धारण करता है, उसी प्रकार आत्मा पुराने शरीरों को छोड़कर नए शरीरों को प्राप्त होती है।",
+          "english": "Just as a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.",
+          "application_english": "We grieve the death of a loved one as if their essence has vanished. This verse offers a radically different vision: the soul continues, dressed in a new body. While grief for the person we knew is natural and valid, this teaching invites us to hold their essential self as ongoing.",
+          "application_hindi": "हम किसी प्रियजन की मृत्यु पर ऐसे शोक मनाते हैं जैसे उनका सार विलुप्त हो गया हो। यह श्लोक एक अलग दृष्टिकोण देता है: आत्मा नए वस्त्र धारण करके जारी रहती है।",
+          "tags": [
+            "rebirth",
+            "soul",
+            "body",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w003-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.27",
+          "gita_chapter": 2,
+          "gita_verse": 27,
+          "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च। तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि॥",
+          "roman": "Jātasya hi dhruvo mṛtyur dhruvaṃ janma mṛtasya ca. Tasmādaparihārye'rthe na tvaṃ śocitum arhasi.",
+          "hindi": "जो जन्मा है उसकी मृत्यु निश्चित है और जो मरा है उसका जन्म निश्चित है। इसलिए अपरिहार्य विषय में तुम्हें शोक करना उचित नहीं।",
+          "english": "For one who is born, death is certain, and for one who is dead, birth is certain. Therefore, you should not lament over the inevitable.",
+          "application_english": "Death is the most certain fact of life, yet we live as if it won't happen. Acknowledging death's inevitability is not morbid — it is the beginning of wisdom. Knowing that everyone you love will die — and that you will too — clarifies what truly matters.",
+          "application_hindi": "मृत्यु जीवन का सबसे निश्चित तथ्य है, फिर भी हम ऐसे जीते हैं जैसे यह नहीं होगी। मृत्यु की अनिवार्यता को स्वीकार करना विकृत नहीं — यह ज्ञान का आरंभ है।",
+          "tags": [
+            "birth",
+            "death",
+            "inevitability",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w003-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.17",
+          "gita_chapter": 2,
+          "gita_verse": 17,
+          "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्। विनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति॥",
+          "roman": "Avināśi tu tadviddhi yena sarvam idaṃ tatam. Vināśam avyayasyāsya na kaścit kartum arhati.",
+          "hindi": "उसे अविनाशी जानो जिससे यह सब जगत व्याप्त है। इस अव्यय का विनाश करने में कोई भी समर्थ नहीं है।",
+          "english": "Know that which pervades the entire body is indestructible. No one is able to destroy the imperishable soul.",
+          "application_english": "If consciousness is indestructible, then death is only the destruction of the temporary container. This is not wishful thinking — it is a philosophical position that science has not disproved. Hold your loved ones' essence as the indestructible awareness that animated them.",
+          "application_hindi": "यदि चेतना अविनाशी है, तो मृत्यु केवल अस्थायी पात्र का विनाश है। अपने प्रियजनों के सार को उस अविनाशी चेतना के रूप में देखें जो उनमें प्रकाशित थी।",
+          "tags": [
+            "indestructible",
+            "soul",
+            "consciousness",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w003-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.13",
+          "gita_chapter": 2,
+          "gita_verse": 13,
+          "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा। तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति॥",
+          "roman": "Dehino'smin yathā dehe kaumāraṃ yauvanaṃ jarā. Tathā dehāntaraprāptir dhīras tatra na muhyati.",
+          "hindi": "जैसे इस शरीर में आत्मा का बाल्यावस्था, युवावस्था और वृद्धावस्था होती है, वैसे ही मृत्यु के बाद दूसरे शरीर की प्राप्ति होती है। धीर पुरुष इससे मोहित नहीं होता।",
+          "english": "Just as childhood, youth, and old age come to the embodied soul in this body, so too the soul passes into another body at death. The wise person is not deluded by this.",
+          "application_english": "We transition from childhood to adulthood and call it growth, not death. Krishna teaches that the body's final transition is of the same nature — a change of form, not annihilation of the self. Age with this awareness; hold loss with this perspective.",
+          "application_hindi": "हम बाल्यकाल से युवावस्था में जाते हैं और इसे विकास कहते हैं, मृत्यु नहीं। कृष्ण सिखाते हैं कि शरीर का अंतिम परिवर्तन भी इसी प्रकृति का है — स्वयं का विनाश नहीं, बल्कि रूप का परिवर्तन।",
+          "tags": [
+            "transition",
+            "rebirth",
+            "wisdom",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w003-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.30",
+          "gita_chapter": 2,
+          "gita_verse": 30,
+          "sanskrit": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत। तस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि॥",
+          "roman": "Dehī nityam avadhyo'yaṃ dehe sarvasya bhārata. Tasmāt sarvāṇi bhūtāni na tvaṃ śocitum arhasi.",
+          "hindi": "हे भारत, सभी प्राणियों के शरीर में यह आत्मा नित्य अवध्य है। इसलिए तुम्हें किसी प्राणी के लिए शोक करना उचित नहीं।",
+          "english": "The soul dwelling in the body of every living being is eternal and indestructible, O Arjuna. Therefore, you need not grieve for any creature.",
+          "application_english": "This is Krishna's most comforting teaching on death: every being — every human, every creature — carries within it an eternal, undestroyable essence. No death is truly final. This truth invites compassion for all life and courage in the face of mortality.",
+          "application_hindi": "यह मृत्यु पर कृष्ण की सबसे सांत्वना देने वाली शिक्षा है: प्रत्येक प्राणी के भीतर एक शाश्वत, अविनाशी सार है। कोई भी मृत्यु वास्तव में अंतिम नहीं है।",
+          "tags": [
+            "eternal",
+            "soul",
+            "compassion",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w004",
+      "slug": "love",
+      "title_english": "Love & Devotion",
+      "title_hindi": "प्रेम और भक्ति",
+      "intro_english": "The highest teaching on love in Sanatana Dharma is Bhakti — devotion as the most direct path to the Divine. The Gita's final chapters reveal that love, when purified of possessiveness and expectation, becomes a path to liberation. Divine love — as exemplified by Radha-Krishna, Hanuman's devotion to Rama, and the Gopis' surrender — is the highest form of human experience.",
+      "intro_hindi": "सनातन धर्म में प्रेम की उच्चतम शिक्षा भक्ति है — परमात्मा का सबसे सीधा मार्ग। गीता के अंतिम अध्याय बताते हैं कि प्रेम, जब अधिकार और अपेक्षा से मुक्त हो जाता है, तो मोक्ष का मार्ग बन जाता है।",
+      "seo_title": "Love & Devotion Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Discover the Hindu philosophy of love and devotion with Bhagavad Gita wisdom. Sanskrit shlokas on bhakti, divine love, and the path of the heart.",
+      "related_topics": [
+        "duty",
+        "grief",
+        "success"
+      ],
+      "quotes": [
+        {
+          "id": "w004-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.7",
+          "gita_chapter": 2,
+          "gita_verse": 7,
+          "sanskrit": "कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः। यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्॥",
+          "roman": "Kārpaṇyadoṣopahatasvabhāvaḥ pṛcchāmi tvāṃ dharmasammūḍhacetāḥ. Yaccheyaḥ syānniścitaṃ brūhi tanme śiṣyaste'haṃ śādhi māṃ tvāṃ prapannam.",
+          "hindi": "मेरा स्वभाव कायरता के दोष से आहत हो गया है, और मेरा मन धर्म के विषय में मोहित हो रहा है। मैं आपसे पूछता [mantra fragment removed for safety] — जो निश्चित श्रेय हो वह मुझे बताइए। मैं आपका शिष्य [mantra fragment removed for safety], आप मुझे शरण में लेकर शिक्षा दीजिए।",
+          "english": "I am confused about my duty and have lost all composure because of miserly weakness. In this condition I am asking you to tell me for certain what is best for me. Now I am your disciple, and a soul surrendered unto you. Please instruct me.",
+          "application_english": "Arjuna's surrender to Krishna is the first act of love in the Gita. True love — whether for God, a teacher, or a beloved — requires this complete honesty and openness. The moment we stop pretending and say 'I am lost, please guide me,' love becomes transformative.",
+          "application_hindi": "कृष्ण के प्रति अर्जुन का समर्पण गीता में प्रेम का पहला कार्य है। सच्चा प्रेम — चाहे ईश्वर, गुरु या प्रिय के प्रति — इसी पूर्ण ईमानदारी और खुलेपन की माँग करता है।",
+          "tags": [
+            "surrender",
+            "devotion",
+            "bhakti",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w004-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.55",
+          "gita_chapter": 2,
+          "gita_verse": 55,
+          "sanskrit": "प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान्। आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते॥",
+          "roman": "Prajahāti yadā kāmān sarvān pārtha manogatān. Ātmanyevātmanā tuṣṭaḥ sthitaprajñas tadocyate.",
+          "hindi": "हे पार्थ, जब मनुष्य मन की सभी कामनाओं को त्याग देता है और आत्मा से ही आत्मा में संतुष्ट रहता है, तब वह स्थितप्रज्ञ कहलाता है।",
+          "english": "O Arjuna, when a man gives up all varieties of desire for sense gratification, which arise from mental concoction, and when his mind finds satisfaction in the self alone, then he is said to be in pure transcendental consciousness.",
+          "application_english": "The highest love does not need. The person who is content within themselves — who loves from fullness rather than emptiness — is the one who can love truly and freely. Build this inner satisfaction first, then your love for others becomes a gift rather than a demand.",
+          "application_hindi": "उच्चतम प्रेम को आवश्यकता नहीं होती। जो व्यक्ति स्वयं में संतुष्ट है — जो रिक्तता से नहीं, परिपूर्णता से प्रेम करता है — वही सच्चा और स्वतंत्र रूप से प्रेम कर सकता है।",
+          "tags": [
+            "self-contentment",
+            "love",
+            "consciousness",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w004-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.64",
+          "gita_chapter": 2,
+          "gita_verse": 64,
+          "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्। आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति॥",
+          "roman": "Rāgadveṣaviyuktais tu viṣayān indriyaiścaran. Ātmavaśyair vidheyātmā prasādam adhigacchati.",
+          "hindi": "राग-द्वेष से रहित, अपने वश में किये हुए इन्द्रियों के द्वारा विषयों का सेवन करने वाला, आत्म-संयमी व्यक्ति प्रसाद — मन की शांति — को प्राप्त होता है।",
+          "english": "But a person free from all attachment and aversion, and able to control the senses through regulated principles, can obtain the complete mercy of the Lord.",
+          "application_english": "Love without attachment — without clinging and without pushing away — is the love the Gita prescribes. Attachment suffocates love; aversion poisons it. Practice loving your family and friends by wishing for their flourishing, not their conformity to your expectations.",
+          "application_hindi": "आसक्ति के बिना प्रेम — बिना चिपकाव और बिना दूर धकेलने के — यही गीता का प्रेम है। आसक्ति प्रेम को दम घोंटती है; विराग उसे विषाक्त करती है। अपने परिवार से प्रेम करें — उनकी प्रगति की कामना करके, उनसे अपेक्षाओं का अनुपालन नहीं।",
+          "tags": [
+            "non-attachment",
+            "love",
+            "senses",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w004-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.59",
+          "gita_chapter": 2,
+          "gita_verse": 59,
+          "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः। रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते॥",
+          "roman": "Viṣayā vinivartante nirāhārasya dehinaḥ. Rasavarjaṃ raso'pyasya paraṃ dṛṣṭvā nivartate.",
+          "hindi": "शरीर को उपवास से रखने वाले के लिए विषय रस को छोड़कर हट जाते हैं, परंतु परमात्मा का साक्षात्कार होने पर यह रस भी निवृत्त हो जाता है।",
+          "english": "The embodied soul may be restricted from sense enjoyment, though the taste for sense objects remains. But, ceasing such engagements by experiencing a higher taste, he is fixed in consciousness.",
+          "application_english": "Human love becomes addictive and possessive when it fills a deeper spiritual hunger. When you experience divine love — through devotion, meditation, or moments of pure grace — the desperate clinging in human love naturally softens. Fill the deepest hunger first.",
+          "application_hindi": "मानवीय प्रेम तब आसक्त और अधिकारी हो जाता है जब वह एक गहरी आध्यात्मिक भूख को भरता है। जब आप दिव्य प्रेम का अनुभव करते हैं — भक्ति, ध्यान, या अनुग्रह के क्षणों के माध्यम से — मानवीय प्रेम में व्याकुल आसक्ति स्वाभाविक रूप से शिथिल हो जाती है।",
+          "tags": [
+            "higher-taste",
+            "devotion",
+            "love",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w004-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.65",
+          "gita_chapter": 2,
+          "gita_verse": 65,
+          "sanskrit": "प्रसादे सर्वदुःखानां हानिरस्योपजायते। प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते॥",
+          "roman": "Prasāde sarvaduḥkhānāṃ hānir asyopajāyate. Prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate.",
+          "hindi": "प्रसन्नता प्राप्त होने पर इस पुरुष के समस्त दुखों का नाश हो जाता है। प्रसन्नचित्त वाले की बुद्धि शीघ्र ही स्थिर हो जाती है।",
+          "english": "For one who is so situated, divine grace enables him to overcome all distress. With a peaceful and contented mind, his intelligence becomes steady.",
+          "application_english": "Love and grace are the same energy. When you open yourself fully — to a beloved, to the Divine, to life itself — a profound peace descends that resolves what logic cannot. The greatest problems of the heart are not solved by analysis but by love's expansion.",
+          "application_hindi": "प्रेम और अनुग्रह एक ही ऊर्जा है। जब आप पूरी तरह खुलते हैं — किसी प्रिय के प्रति, ईश्वर के प्रति, जीवन के प्रति — एक गहन शांति उतरती है जो तर्क से परे समाधान करती है।",
+          "tags": [
+            "grace",
+            "peace",
+            "love",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w005",
+      "slug": "anger",
+      "title_english": "Anger & Self-Control",
+      "title_hindi": "क्रोध और आत्म-संयम",
+      "intro_english": "The Bhagavad Gita identifies anger as one of the three gateways to self-destruction, alongside desire and greed. Yet it does not condemn righteous anger — Arjuna's battle was an act of dharmic fury. The scriptures teach us to understand anger's source, redirect its energy, and cultivate the equanimity that ultimately transcends it.",
+      "intro_hindi": "भगवद्गीता क्रोध को आत्म-विनाश के तीन द्वारों में से एक बताती है, कामना और लोभ के साथ। फिर भी यह धर्मयुक्त क्रोध की निंदा नहीं करती। शास्त्र हमें क्रोध के स्रोत को समझना, उसकी ऊर्जा को पुनर्निर्देशित करना और अंततः उसे पार करना सिखाते हैं।",
+      "seo_title": "Anger Management Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Control anger with ancient wisdom from the Bhagavad Gita. Sanskrit shlokas on self-control, equanimity, and the path from anger to peace.",
+      "related_topics": [
+        "patience",
+        "success",
+        "failure"
+      ],
+      "quotes": [
+        {
+          "id": "w005-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.62",
+          "gita_chapter": 2,
+          "gita_verse": 62,
+          "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥",
+          "roman": "Dhyāyato viṣayān puṃsaḥ saṅgas teṣūpajāyate. Saṅgāt sañjāyate kāmaḥ kāmāt krodho'bhijāyate.",
+          "hindi": "विषयों का चिंतन करते रहने से उनमें आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है। कामना से क्रोध उत्पन्न होता है।",
+          "english": "While contemplating the objects of the senses, a person develops attachment for them. From such attachment, desire develops, and from desire anger arises.",
+          "application_english": "Krishna traces anger's full chain of causation: it begins not with an external trigger but with internal dwelling on what we want. Next time you feel anger rising, trace it back — what desire is being frustrated? Addressing the desire is more effective than fighting the anger.",
+          "application_hindi": "कृष्ण क्रोध की पूरी कार्य-कारण श्रृंखला का पता लगाते हैं: यह बाहरी कारण से नहीं, बल्कि जो हम चाहते हैं उस पर आंतरिक ध्यान से शुरू होता है। अगली बार जब क्रोध उठे, तो पीछे जाएं — कौन सी कामना नाकाम हो रही है?",
+          "tags": [
+            "anger",
+            "desire",
+            "attachment",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w005-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.63",
+          "gita_chapter": 2,
+          "gita_verse": 63,
+          "sanskrit": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः। स्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति॥",
+          "roman": "Krodhādbhavati sammohaḥ sammohāt smṛtivibhramaḥ. Smṛtibhraṃśādbuddhi nāśo buddhi nāśāt praṇaśyati.",
+          "hindi": "क्रोध से मोह उत्पन्न होता है, मोह से स्मृति भ्रमित होती है, स्मृति भ्रम से बुद्धि का नाश होता है, और बुद्धि के नाश से मनुष्य का पतन हो जाता है।",
+          "english": "From anger, complete delusion arises, and from delusion wandering of memory. When memory is bewildered, intelligence is lost, and when intelligence is lost one falls down again into the material pool.",
+          "application_english": "This is one of the most psychologically precise verses in all scripture. Anger clouds judgment, breaks memory of values, destroys wise decision-making, and leads to actions we regret. The pathway from anger to self-destruction takes only moments. This is why the pause before reacting is sacred.",
+          "application_hindi": "यह सभी शास्त्रों में सबसे मनोवैज्ञानिक रूप से सटीक श्लोकों में से एक है। क्रोध निर्णय को धुंधला करता है, मूल्यों की स्मृति तोड़ता है, बुद्धि नष्ट करता है। यही कारण है कि प्रतिक्रिया से पहले का ठहराव पवित्र है।",
+          "tags": [
+            "anger",
+            "judgment",
+            "intelligence",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w005-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.56",
+          "gita_chapter": 2,
+          "gita_verse": 56,
+          "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः। वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते॥",
+          "roman": "Duḥkheṣvanudvignamanāḥ sukheṣu vigataspr̥haḥ. Vītarāgabhayakrodhaḥ sthitadhīr munir ucyate.",
+          "hindi": "दुखों में जिसका मन उद्विग्न नहीं होता, सुखों में जो स्पृहा नहीं रखता, तथा जिसका राग, भय और क्रोध नष्ट हो गया है — ऐसा मुनि स्थितप्रज्ञ कहलाता है।",
+          "english": "One who is not disturbed in mind even amid the threefold miseries or elated when there is happiness, and who is free from attachment, fear, and anger, is called a sage of steady mind.",
+          "application_english": "The standard is not the absence of difficult experiences but the absence of being controlled by them. A person free from anger does not lack passion — they have directed their energy more powerfully. They respond rather than react, lead rather than lash out.",
+          "application_hindi": "मानक कठिन अनुभवों का अभाव नहीं है, बल्कि उनके द्वारा नियंत्रित न होना है। क्रोध से मुक्त व्यक्ति में जोश की कमी नहीं — उन्होंने अपनी ऊर्जा को अधिक शक्तिशाली ढंग से निर्देशित किया है।",
+          "tags": [
+            "equanimity",
+            "anger-free",
+            "wisdom",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w005-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.60",
+          "gita_chapter": 2,
+          "gita_verse": 60,
+          "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः। इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः॥",
+          "roman": "Yatato hyapi kaunteya puruṣasya vipaścitaḥ. Indriyāṇi pramāthīni haranti prasabhaṃ manaḥ.",
+          "hindi": "हे कुन्तीपुत्र, प्रयत्न करने वाले विद्वान पुरुष के भी, प्रमाथी इन्द्रियाँ मन को बलपूर्वक हर लेती हैं।",
+          "english": "The senses are so strong and impetuous, O Arjuna, that they forcibly carry away the mind even of a man of discrimination who is endeavoring to control them.",
+          "application_english": "Anger management requires humility: even the wisest person can be ambushed by sudden rage. The Gita honestly acknowledges this difficulty. This is not an excuse but a call for ongoing vigilance, structured practices like pranayama, and building environments that reduce triggers.",
+          "application_hindi": "क्रोध प्रबंधन के लिए विनम्रता चाहिए: बुद्धिमान व्यक्ति भी अचानक क्रोध से आश्चर्यचकित हो सकता है। गीता ईमानदारी से इस कठिनाई को स्वीकार करती है। यह बहाना नहीं, बल्कि निरंतर सतर्कता का आह्वान है।",
+          "tags": [
+            "senses",
+            "self-control",
+            "vigilance",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w005-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.61",
+          "gita_chapter": 2,
+          "gita_verse": 61,
+          "sanskrit": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः। वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता॥",
+          "roman": "Tāni sarvāṇi saṃyamya yukta āsīta matparaḥ. Vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā.",
+          "hindi": "उन सभी इन्द्रियों को वश में करके, मुझमें लीन होकर, अनुशासित होकर बैठे। जिस पुरुष की इन्द्रियाँ वश में हैं, उसकी बुद्धि स्थिर हो जाती है।",
+          "english": "One who restrains his senses, keeping them under full control, and fixes his consciousness upon Me, is known as a man of steady intelligence.",
+          "application_english": "The antidote to anger is not suppression but redirection — fixing consciousness on something greater than the trigger. Whether through mantra, breath, prayer, or simply invoking a moment of the sacred, shifting attention from the anger-trigger to the Divine breaks the chain described in verse 2.62-63.",
+          "application_hindi": "क्रोध का उपाय दमन नहीं, बल्कि पुनर्निर्देशन है — चेतना को कारण से बड़ी किसी चीज पर लगाना। मंत्र, श्वास, प्रार्थना के माध्यम से ध्यान को क्रोध-कारण से हटाकर दिव्य की ओर लगाना श्लोक 2.62-63 की श्रृंखला को तोड़ता है।",
+          "tags": [
+            "sense-control",
+            "meditation",
+            "intelligence",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w006",
+      "slug": "success",
+      "title_english": "Success & Achievement",
+      "title_hindi": "सफलता और उपलब्धि",
+      "intro_english": "Hindu scripture does not reject worldly success — it redefines it. True success (siddhi) is not merely external achievement but the internal transformation that accompanies right action. The Gita's genius is in showing that the path to lasting success runs through dharma, non-attachment, and excellence of character — not through the ruthless pursuit of results.",
+      "intro_hindi": "हिंदू शास्त्र सांसारिक सफलता को अस्वीकार नहीं करता — वह इसे पुनर्परिभाषित करता है। सच्ची सफलता (सिद्धि) केवल बाहरी उपलब्धि नहीं, बल्कि सही कर्म के साथ आने वाला आंतरिक परिवर्तन है।",
+      "seo_title": "Success Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Achieve lasting success with Bhagavad Gita wisdom. Sanskrit shlokas on dharma, excellence, right action, and the true meaning of achievement.",
+      "related_topics": [
+        "duty",
+        "failure",
+        "anger"
+      ],
+      "quotes": [
+        {
+          "id": "w006-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.47",
+          "gita_chapter": 2,
+          "gita_verse": 47,
+          "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+          "roman": "Karmaṇyevādhikāraste mā phaleṣu kadācana. Mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi.",
+          "hindi": "तुम्हारा कर्म करने में ही अधिकार है, फलों में कभी नहीं। कर्म के फल की आशा मत रखो, और अकर्म में भी आसक्त मत हो।",
+          "english": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to inaction.",
+          "application_english": "This is perhaps the most counter-intuitive success principle ever articulated: focus on the quality of your effort, not the outcome. Ironically, the greatest achievers in history have been those who were obsessed with excellence in process rather than chasing results. The results followed naturally.",
+          "application_hindi": "यह शायद अब तक कही गई सबसे प्रतिस्वज्ञात सफलता का सिद्धांत है: परिणाम नहीं, प्रयास की गुणवत्ता पर ध्यान दें। इतिहास के महानतम उपलब्धि प्राप्तकर्ता वे रहे हैं जो प्रक्रिया की उत्कृष्टता पर नहीं, परिणाम के पीछे नहीं भागे।",
+          "tags": [
+            "karma",
+            "effort",
+            "excellence",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w006-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.50",
+          "gita_chapter": 2,
+          "gita_verse": 50,
+          "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते। तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्॥",
+          "roman": "Buddhiyukto jahātīha ubhe sukṛtaduṣkṛte. Tasmādyogāya yujyasva yogaḥ karmasu kauśalam.",
+          "hindi": "बुद्धियोग से युक्त मनुष्य यहाँ ही पुण्य और पाप दोनों को त्याग देता है। इसलिए योग में लग जाओ — योग ही कर्मों में कुशलता है।",
+          "english": "A man engaged in devotional service rids himself of both good and bad reactions even in this life. Therefore strive for yoga, O Arjuna, which is the art of all work.",
+          "application_english": "Yoga — defined here as skill in action — is the foundation of genuine success. The successful person is not someone who was lucky but someone who developed expertise, discipline, and craft in their chosen field. Excellence of craft is a spiritual practice.",
+          "application_hindi": "योग — यहाँ कर्म में कुशलता के रूप में परिभाषित — वास्तविक सफलता की नींव है। सफल व्यक्ति वह नहीं जो भाग्यशाली था, बल्कि वह जिसने अपने क्षेत्र में विशेषज्ञता, अनुशासन और कौशल विकसित किया।",
+          "tags": [
+            "skill",
+            "yoga",
+            "excellence",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w006-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.41",
+          "gita_chapter": 2,
+          "gita_verse": 41,
+          "sanskrit": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन। बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्॥",
+          "roman": "Vyavasāyātmikā buddhir ekeha kurunandana. Bahuśākhā hyanantāśca buddayo'vyavasāyinām.",
+          "hindi": "हे कुरुनन्दन, इस मार्ग पर निश्चयात्मक बुद्धि एक ही होती है, परंतु अनिश्चयशील व्यक्तियों की बुद्धि अनेक शाखाओं में बंट जाती है और अनंत होती है।",
+          "english": "Those who are on this path are resolute in purpose, and their aim is one. O beloved child of the Kurus, the intelligence of those who are irresolute is many-branched.",
+          "application_english": "Success requires a singular, unwavering focus — what the Gita calls vyavasayatmika buddhi. The person who pursues ten things achieves none. The one who commits with their entire being to one path of dharma cuts through all obstacles with the precision of a laser.",
+          "application_hindi": "सफलता के लिए एकाग्र, अटल ध्यान चाहिए — जिसे गीता व्यवसायात्मिका बुद्धि कहती है। जो दस चीजें करता है, वह कुछ भी नहीं पाता। जो धर्म के एक मार्ग पर अपने पूरे अस्तित्व के साथ समर्पित होता है, वह लेजर की सटीकता से सभी बाधाओं को पार करता है।",
+          "tags": [
+            "focus",
+            "resolution",
+            "success",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w006-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.49",
+          "gita_chapter": 2,
+          "gita_verse": 49,
+          "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय। बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः॥",
+          "roman": "Dūreṇa hyavaraṃ karma buddhiyogāddhanaṃjaya. Buddhau śaraṇam anviccha kṛpaṇāḥ phalahetavaḥ.",
+          "hindi": "हे धनंजय, बुद्धियोग की तुलना में सकाम कर्म बहुत हीन है। अतः बुद्धियोग में शरण लो। फल की इच्छा से कार्य करने वाले दीन (कृपण) हैं।",
+          "english": "O Dhananjaya, keep all abominable activities far distant by devotional service, and in that consciousness surrender unto the Lord. Those who want to enjoy the fruits of their work are misers.",
+          "application_english": "Success driven by greed and ego is called 'miserly' by Krishna — because such people mistake accumulation for achievement. True success expands others; it is generative, not extractive. Build from a spirit of service and the universe conspires to support you.",
+          "application_hindi": "लालच और अहंकार से प्रेरित सफलता को कृष्ण 'कृपण' कहते हैं — क्योंकि ऐसे लोग संचय को उपलब्धि समझते हैं। सच्ची सफलता दूसरों का विस्तार करती है। सेवा की भावना से निर्माण करें और ब्रह्मांड आपको सहारा देता है।",
+          "tags": [
+            "service",
+            "success",
+            "generosity",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w006-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.33",
+          "gita_chapter": 2,
+          "gita_verse": 33,
+          "sanskrit": "अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि। ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि॥",
+          "roman": "Atha cet tvam imaṃ dharmyaṃ saṃgrāmaṃ na kariṣyasi. Tataḥ svadharmaṃ kīrtiṃ ca hitvā pāpam avāpsyasi.",
+          "hindi": "यदि तुम इस धर्म-युद्ध को नहीं करोगे, तो अपने धर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+          "english": "If, however, you do not perform your religious duty of fighting, then you will certainly incur sins for neglecting your duties and thus lose your reputation as a fighter.",
+          "application_english": "True success is inseparable from doing what your nature and dharma demand. The successful person is not the one who achieves the most by others' standards, but the one who fully becomes what they were meant to be. Neglecting your calling is its own form of failure.",
+          "application_hindi": "सच्ची सफलता अपनी प्रकृति और धर्म की माँग को पूरा करने से अविभाज्य है। सफल व्यक्ति वह नहीं जो दूसरों के मानकों से सबसे अधिक हासिल करता है, बल्कि वह जो पूरी तरह वह बन जाता है जो उसे बनना था।",
+          "tags": [
+            "dharma",
+            "duty",
+            "calling",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w007",
+      "slug": "patience",
+      "title_english": "Patience & Perseverance",
+      "title_hindi": "धैर्य और दृढ़ता",
+      "intro_english": "Patience in Hindu philosophy is not passive waiting — it is titiksha (forbearance), the active quality of continuing to act rightly in the face of obstacles. The Gita's teaching on the steady-minded sage (sthitaprajna) is essentially a portrait of supreme patience: someone who remains undisturbed in difficulty and unelated in success.",
+      "intro_hindi": "हिंदू दर्शन में धैर्य निष्क्रिय प्रतीक्षा नहीं है — यह तितिक्षा है, बाधाओं के बावजूद सही ढंग से कार्य करते रहने की सक्रिय गुणवत्ता। गीता का स्थितप्रज्ञ व्यक्ति का चित्रण अनिवार्य रूप से परम धैर्य का चित्रण है।",
+      "seo_title": "Patience & Perseverance Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Develop patience with ancient wisdom from the Bhagavad Gita. Sanskrit shlokas on forbearance, endurance, and the steady mind — with Hindi and English meaning.",
+      "related_topics": [
+        "anxiety",
+        "anger",
+        "success"
+      ],
+      "quotes": [
+        {
+          "id": "w007-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.14",
+          "gita_chapter": 2,
+          "gita_verse": 14,
+          "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+          "roman": "Mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ. Āgamāpāyino'nityāstāṃstitikṣasva bhārata.",
+          "hindi": "हे कुन्तीपुत्र, सुख-दुख देने वाले इन्द्रिय विषयों का स्पर्श, जैसे शीत-उष्ण, ये आते-जाते रहते हैं और अनित्य हैं। हे भारत, उन्हें सहन करो।",
+          "english": "O son of Kunti, the contact between the senses and the sense objects gives rise to happiness and distress, as winter and summer seasons come and go. They are temporary, O descendant of Bharata. One must learn to tolerate them without being disturbed.",
+          "application_english": "The command 'titikshava' — tolerate, forbear — is one of the Gita's most practical instructions. Patience is a trainable skill, not an inborn gift. Begin with small irritations: traffic, delays, criticism. Each small act of forbearance builds the muscle for when life sends its greatest storms.",
+          "application_hindi": "'तितिक्षस्व' — सहन करो — गीता के सबसे व्यावहारिक निर्देशों में से एक है। धैर्य एक प्रशिक्षण योग्य कौशल है, जन्मजात उपहार नहीं। छोटी-छोटी जलन से शुरू करें: यातायात, देरी, आलोचना।",
+          "tags": [
+            "forbearance",
+            "patience",
+            "impermanence",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w007-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.56",
+          "gita_chapter": 2,
+          "gita_verse": 56,
+          "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः। वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते॥",
+          "roman": "Duḥkheṣvanudvignamanāḥ sukheṣu vigatasprhaḥ. Vītarāgabhayakrodhaḥ sthitadhīr munir ucyate.",
+          "hindi": "दुखों में जिसका मन उद्विग्न नहीं होता, सुखों में जो स्पृहा नहीं रखता, तथा जिसका राग, भय और क्रोध नष्ट हो गया है — ऐसा मुनि स्थितप्रज्ञ कहलाता है।",
+          "english": "One who is not disturbed in mind even amid the threefold miseries or elated when there is happiness, and who is free from attachment, fear, and anger, is called a sage of steady mind.",
+          "application_english": "Patience does not mean not feeling pain — it means not adding the story 'this is unbearable and wrong' to the pain. The steady sage feels difficulty; they simply do not amplify it through resistance. This is the core of emotional regulation: feel what is real, release what is added.",
+          "application_hindi": "धैर्य का अर्थ दर्द न महसूस करना नहीं — बल्कि दर्द में 'यह असहनीय और गलत है' की कहानी न जोड़ना है। स्थिर ऋषि कठिनाई महसूस करता है; वह केवल प्रतिरोध से इसे बढ़ाता नहीं।",
+          "tags": [
+            "equanimity",
+            "patience",
+            "steady-mind",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w007-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.58",
+          "gita_chapter": 2,
+          "gita_verse": 58,
+          "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः। इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता॥",
+          "roman": "Yadā saṃharate cāyaṃ kūrmo'ṅgānīva sarvaśaḥ. Indriyāṇīndriyārthebhyas tasya prajñā pratiṣṭhitā.",
+          "hindi": "जब यह मनुष्य कछुए की तरह सब तरफ से इन्द्रियों को इन्द्रिय विषयों से समेट लेता है, तब उसकी बुद्धि स्थिर होती है।",
+          "english": "One who is able to withdraw his senses from sense objects, as the tortoise draws its limbs within its shell, is firmly fixed in perfect consciousness.",
+          "application_english": "The tortoise metaphor is the perfect image of patient endurance. The tortoise doesn't fight the environment — it withdraws at the right moment, waits for safety, and then re-engages. Patience is knowing when to withdraw into your shell and when to extend your full capacity.",
+          "application_hindi": "कछुए का रूपक धैर्यपूर्ण सहनशीलता का एकदम सही चित्र है। कछुआ वातावरण से नहीं लड़ता — वह सही समय पर वापस खींचता है, सुरक्षा की प्रतीक्षा करता है, फिर पुनः सक्रिय होता है।",
+          "tags": [
+            "withdrawal",
+            "patience",
+            "senses",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w007-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.25",
+          "gita_chapter": 2,
+          "gita_verse": 25,
+          "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते। तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि॥",
+          "roman": "Avyakto'yam acintyo'yam avikāryo'yam ucyate. Tasmādevaṃ viditvainaṃ nānuśocitum arhasi.",
+          "hindi": "यह आत्मा अव्यक्त है, अचिन्त्य है और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक करना उचित नहीं।",
+          "english": "It is said that the soul is invisible, inconceivable, immutable, and unchangeable. Knowing this, you should not grieve for the body.",
+          "application_english": "True patience flows from knowing your essential nature is unchanged by circumstances. If the Atman is immutable — if your deepest self cannot be diminished by failure, delayed by circumstance, or worn down by time — then patience is simply allowing the unchanging self to outlast temporary storms.",
+          "application_hindi": "सच्चा धैर्य यह जानने से आता है कि आपका मूल स्वभाव परिस्थितियों से अपरिवर्तित है। यदि आत्मा अविकारी है — यदि आपका गहरतम स्वरूप असफलता से कम नहीं हो सकता — तो धैर्य बस अपरिवर्तनीय स्वयं को अस्थायी तूफानों से आगे जाने देना है।",
+          "tags": [
+            "soul",
+            "immutability",
+            "patience",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w007-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.67",
+          "gita_chapter": 2,
+          "gita_verse": 67,
+          "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते। तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि॥",
+          "roman": "Indriyāṇāṃ hi caratāṃ yanmano'nuvidhīyate. Tadasya harati prajñāṃ vāyurnāvam ivāmbhasi.",
+          "hindi": "जल पर तैरती नाव को जैसे वायु हर ले जाती है, वैसे ही विषयों में विचरती इन्द्रियों में से जिसका मन किसी एक के भी पीछे हो जाता है, वह इन्द्रिय उसकी बुद्धि को हर लेती है।",
+          "english": "Just as a strong wind sweeps away a boat on the water, even one of the roaming senses on which the mind focuses can carry away a man's intelligence.",
+          "application_english": "Impatience is the mind being swept away by the wind of a single frustrated desire. The patient person anchors their intelligence like a boat with a deep mooring — they can feel the wind without being carried away. Practice anchoring through breath, mantra, and clarity of values before storms arrive.",
+          "application_hindi": "अधीरता मन का एकल निराश कामना की हवा से बह जाना है। धैर्यवान व्यक्ति अपनी बुद्धि को गहरे लंगर से बाँधी नाव की तरह स्थिर रखता है — वह हवा महसूस कर सकता है बिना बह जाए।",
+          "tags": [
+            "senses",
+            "patience",
+            "intelligence",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w008",
+      "slug": "grief",
+      "title_english": "Grief & Sorrow",
+      "title_hindi": "शोक और दुख",
+      "intro_english": "The Bhagavad Gita begins with grief — Arjuna's collapse on the battlefield is described in heartbreaking detail. This is significant: the greatest spiritual text of Hinduism begins not with philosophy but with raw human pain. The entire Gita is an answer to grief, and its wisdom on sorrow is both profound and practical.",
+      "intro_hindi": "भगवद्गीता शोक से शुरू होती है — अर्जुन का युद्धभूमि पर पतन मर्मस्पर्शी विस्तार से वर्णित है। यह महत्वपूर्ण है: हिंदुत्व का महानतम आध्यात्मिक ग्रंथ दर्शन से नहीं बल्कि कच्चे मानवीय दर्द से शुरू होता है।",
+      "seo_title": "Grief & Sorrow Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Heal grief and sorrow with Bhagavad Gita wisdom. Sanskrit shlokas on loss, lamentation, and finding peace after sorrow — with Hindi and English meaning.",
+      "related_topics": [
+        "death",
+        "fear",
+        "love"
+      ],
+      "quotes": [
+        {
+          "id": "w008-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.11",
+          "gita_chapter": 2,
+          "gita_verse": 11,
+          "sanskrit": "अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे। गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥",
+          "roman": "Aśocyān anvaśocas tvaṃ prajñāvādāṃś ca bhāṣase. Gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ.",
+          "hindi": "तुम उनके लिए शोक कर रहे हो जो शोक के पात्र नहीं हैं, और फिर भी बुद्धिमानी की बातें कर रहे हो। जो पंडित हैं, वे न तो जीवित के लिए और न मृत के लिए शोक करते हैं।",
+          "english": "While speaking learned words, you are mourning for what is not worthy of grief. Those who are wise lament neither for the living nor for the dead.",
+          "application_english": "Krishna does not dismiss Arjuna's grief — he transforms it. The teaching is not 'don't feel' but 'understand what you are feeling about.' Much of our grief is for the temporary loss of what was always temporary. Grief for the eternal — for love, for truth, for goodness — is understandable. Grief for what was always changing is wisdom's starting point.",
+          "application_hindi": "कृष्ण अर्जुन के शोक को खारिज नहीं करते — वे उसे रूपांतरित करते हैं। शिक्षा 'महसूस मत करो' नहीं है, बल्कि 'समझो कि तुम किसके बारे में महसूस कर रहे हो।' हमारा अधिकांश शोक उस चीज के अस्थायी नुकसान के लिए है जो हमेशा अस्थायी थी।",
+          "tags": [
+            "grief",
+            "wisdom",
+            "lamentation",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w008-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.1",
+          "gita_chapter": 2,
+          "gita_verse": 1,
+          "sanskrit": "सञ्जय उवाच। तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम्। विषीदन्तमिदं वाक्यमुवाच मधुसूदनः॥",
+          "roman": "Sañjaya uvāca. Taṃ tathā kṛpayāviṣṭam aśrupūrṇākulekṣaṇam. Viṣīdantam idaṃ vākyam uvāca madhusūdanaḥ.",
+          "hindi": "सञ्जय बोले — इस प्रकार करुणा से आविष्ट, आँसुओं से भरी व्याकुल आँखों वाले और विषाद ग्रस्त अर्जुन को मधुसूदन ने यह वचन कहे।",
+          "english": "Sanjaya said: Seeing Arjuna full of compassion, with eyes filled with tears, overwhelmed with grief, Madhusudana, Krishna, spoke the following words.",
+          "application_english": "This verse shows that even the most spiritually significant conversation in history began with someone weeping. Your grief is not a sign of weakness or spiritual failure — it is the very entry point through which wisdom can enter. Do not rush past your tears; let them open you.",
+          "application_hindi": "यह श्लोक दिखाता है कि इतिहास की सबसे आध्यात्मिक रूप से महत्वपूर्ण बातचीत भी किसी के रोने से शुरू हुई थी। आपका शोक कमजोरी का संकेत नहीं — यह वह प्रवेश बिंदु है जिससे ज्ञान प्रवेश कर सकता है।",
+          "tags": [
+            "grief",
+            "compassion",
+            "tears",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w008-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.27",
+          "gita_chapter": 2,
+          "gita_verse": 27,
+          "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च। तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि॥",
+          "roman": "Jātasya hi dhruvo mṛtyur dhruvaṃ janma mṛtasya ca. Tasmādaparihārye'rthe na tvaṃ śocitum arhasi.",
+          "hindi": "जो जन्मा है उसकी मृत्यु निश्चित है और जो मरा है उसका जन्म निश्चित है। इसलिए अपरिहार्य विषय में तुम्हें शोक करना उचित नहीं।",
+          "english": "For one who is born, death is certain, and for one who is dead, birth is certain. Therefore, you should not lament over the inevitable.",
+          "application_english": "Grief is the price of love, and love is worth every bit of that price. But prolonged grief that refuses to accept impermanence becomes suffering of a different kind. The Gita's teaching is not to stop grieving but to grieve fully and then release — to honour what was, and continue living with equal fullness.",
+          "application_hindi": "शोक प्रेम की कीमत है, और प्रेम उस कीमत के हर हिस्से के लायक है। लेकिन लंबे समय तक चलने वाला शोक जो अनित्यता को स्वीकार नहीं करता, एक अलग प्रकार का कष्ट बन जाता है।",
+          "tags": [
+            "grief",
+            "acceptance",
+            "impermanence",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w008-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.66",
+          "gita_chapter": 2,
+          "gita_verse": 66,
+          "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना। न चाभावयतः शान्तिरशान्तस्य कुतः सुखम्॥",
+          "roman": "Nāsti buddhir ayuktasya na cāyuktasya bhāvanā. Na cābhāvayataḥ śāntir aśāntasya kutaḥ sukham.",
+          "hindi": "जो व्यक्ति अनियंत्रित मन वाला है, उसमें बुद्धि नहीं होती। ऐसे व्यक्ति में चिंतन-शक्ति नहीं होती। जो चिंतन नहीं करता उसे शांति नहीं मिलती। बिना शांति के सुख कहाँ?",
+          "english": "One who is not connected with the Supreme can have neither transcendental intelligence nor a steady mind, without which there is no possibility of peace. And how can there be any happiness without peace?",
+          "application_english": "Deep grief disrupts the mind's functioning — this is neurologically documented and spiritually understood. The path out is not forced positivity but reconnection: to the Divine, to community, to nature, to the present moment. Peace is not the absence of grief but the presence of something larger than grief.",
+          "application_hindi": "गहरा शोक मन के कार्य को बाधित करता है — यह न्यूरोलॉजिकल रूप से प्रमाणित और आध्यात्मिक रूप से समझा जाता है। बाहर का मार्ग जबरदस्ती सकारात्मकता नहीं, बल्कि पुनः जुड़ाव है: ईश्वर से, समुदाय से, प्रकृति से।",
+          "tags": [
+            "peace",
+            "grief",
+            "mind",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w008-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.57",
+          "gita_chapter": 2,
+          "gita_verse": 57,
+          "sanskrit": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्। नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता॥",
+          "roman": "Yaḥ sarvatrānabhisnehas tattat prāpya śubhāśubham. Nābhinandati na dveṣṭi tasya prajñā pratiṣṭhitā.",
+          "hindi": "जो सर्वत्र आसक्ति-रहित है, जो शुभ पाकर प्रसन्न नहीं होता और अशुभ पाकर घृणा नहीं करता — उसकी बुद्धि स्थिर होती है।",
+          "english": "In this world, one who is not disturbed by the misfortune of the bad and not elated by good fortune, and is steadfast, is already situated in perfect knowledge.",
+          "application_english": "Grief becomes prolonged when we resist the reality of what happened. This verse points toward a radical acceptance — not indifference, but a deep 'yes' to reality as it is. Grief walks with us; but when we stop fighting the fact of loss, we free enormous energy to continue living and loving.",
+          "application_hindi": "शोक तब लंबा हो जाता है जब हम जो हुआ उसकी वास्तविकता का विरोध करते हैं। यह श्लोक एक आमूल स्वीकृति की ओर इशारा करता है — उदासीनता नहीं, बल्कि वास्तविकता को जैसी है उसके लिए गहरी 'हाँ'।",
+          "tags": [
+            "acceptance",
+            "equanimity",
+            "grief",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w009",
+      "slug": "fear",
+      "title_english": "Fear & Courage",
+      "title_hindi": "भय और साहस",
+      "intro_english": "The Bhagavad Gita opens with Arjuna paralyzed by fear — his limbs trembling, his bow slipping, his mind overwhelmed. The entire scripture is therefore a manual for transforming fear into courage. The path is not the suppression of fear but its transcendence through self-knowledge, dharma, and surrender to the Divine.",
+      "intro_hindi": "भगवद्गीता अर्जुन के भय से पंगु होने के साथ शुरू होती है — उसके अंग काँप रहे हैं, धनुष छूट रहा है, मन अभिभूत है। इसलिए पूरा शास्त्र भय को साहस में बदलने की मार्गदर्शिका है।",
+      "seo_title": "Fear & Courage Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Overcome fear and build courage with Bhagavad Gita wisdom. Sanskrit shlokas on fearlessness, bravery, and transcending fear through self-knowledge.",
+      "related_topics": [
+        "anxiety",
+        "death",
+        "duty"
+      ],
+      "quotes": [
+        {
+          "id": "w009-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.2",
+          "gita_chapter": 2,
+          "gita_verse": 2,
+          "sanskrit": "श्रीभगवानुवाच। कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्। अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन॥",
+          "roman": "Śrī bhagavān uvāca. Kutas tvā kaśmalam idaṃ viṣame samupasthitam. Anāryajuṣṭam asvargyam akīrtikaram arjuna.",
+          "hindi": "श्रीभगवान बोले — हे अर्जुन, इस कठिन समय में यह मोह तुम्हें कहाँ से आ गया? यह आर्यों को शोभा नहीं देता, स्वर्ग का मार्ग नहीं है, और कीर्ति नहीं दिलाता।",
+          "english": "The Supreme Personality of Godhead said: My dear Arjuna, how have these impurities come upon you? They are not at all befitting a man who knows the value of life. Do not yield to degrading impotence. It does not become you.",
+          "application_english": "Krishna's first response to Arjuna's fear is a direct challenge to his identity. He is not scolding — he is reminding. Fear contracts us into a smaller version of ourselves. The antidote begins by calling on our larger identity: Who are you beyond this fear? What does your highest self demand here?",
+          "application_hindi": "कृष्ण का अर्जुन के भय के प्रति पहला जवाब उसकी पहचान को एक सीधी चुनौती है। वे डाँट नहीं रहे — याद दिला रहे हैं। भय हमें अपने छोटे रूप में सिकोड़ देता है। प्रतिकार हमारी बड़ी पहचान को बुलाकर शुरू होता है: इस भय से परे आप कौन हैं?",
+          "tags": [
+            "fear",
+            "identity",
+            "courage",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w009-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.35",
+          "gita_chapter": 2,
+          "gita_verse": 35,
+          "sanskrit": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः। येषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्॥",
+          "roman": "Bhayādrṇādupurataṃ maṃsyante tvāṃ mahārathāḥ. Yeṣāṃ ca tvaṃ bahumato bhūtvā yāsyasi lāghavam.",
+          "hindi": "महारथी लोग सोचेंगे कि तुम भय से युद्ध से पीछे हट गए। जो तुम्हें सम्मान देते थे, उनकी नज़र में तुम छोटे हो जाओगे।",
+          "english": "The great generals who have highly esteemed your name and fame will think that you have left the battlefield out of fear only, and thus they will consider you insignificant.",
+          "application_english": "Krishna points to a fear greater than death: the fear of being seen as a coward by those whose respect you value. Sometimes the only antidote to one fear is a larger, better fear — the fear of failing your deepest values. Use this: what would you regret more, facing your fear or abandoning your purpose?",
+          "application_hindi": "कृष्ण मृत्यु से बड़े भय की ओर इशारा करते हैं: उनके द्वारा कायर देखे जाने का भय जिनका सम्मान आप चाहते हैं। कभी-कभी एक भय का एकमात्र उपाय एक बड़ा, बेहतर भय है — अपने गहरे मूल्यों में विफल होने का भय।",
+          "tags": [
+            "fear",
+            "courage",
+            "reputation",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w009-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.40",
+          "gita_chapter": 2,
+          "gita_verse": 40,
+          "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते। स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्॥",
+          "roman": "Nehābhikramanāśo'sti pratyavāyo na vidyate. Svalpam apyasya dharmasya trāyate mahato bhayāt.",
+          "hindi": "इस मार्ग में न आरंभ का नाश होता है और न विपरीत फल मिलता है। इस धर्म का थोड़ा सा भी अभ्यास महान भय से रक्षा करता है।",
+          "english": "In this endeavor there is no loss or diminution, and a little advancement on this path can protect one from the most dangerous type of fear.",
+          "application_english": "Every small step on the path of dharma — every moment of honesty, every act of courage, every choice toward your highest values — is spiritually cumulative. Nothing is wasted. Even a little genuine courage practiced today builds the foundation that protects you when great fear arrives.",
+          "application_hindi": "धर्म के मार्ग पर हर छोटा कदम — ईमानदारी का हर क्षण, साहस का हर कार्य, अपने उच्चतम मूल्यों की ओर हर चुनाव — आध्यात्मिक रूप से संचित होता है। कुछ भी बर्बाद नहीं होता।",
+          "tags": [
+            "dharma",
+            "courage",
+            "fear",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w009-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.19",
+          "gita_chapter": 2,
+          "gita_verse": 19,
+          "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्। उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥",
+          "roman": "Ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam. Ubhau tau na vijānīto nāyaṃ hanti na hanyate.",
+          "hindi": "जो इस आत्मा को मारने वाला समझता है और जो इसे मरा हुआ मानता है — दोनों ही नहीं जानते। यह न मारती है, न मारी जाती है।",
+          "english": "Both those who think the soul kills and those who think it is killed are mistaken. The soul neither kills nor is killed.",
+          "application_english": "The deepest root of fear is the fear of death — annihilation of the self. If this verse is true, if the soul is truly indestructible, then the ultimate fear is based on a mistaken premise. Self-knowledge dissolves fear from its root. This is why every wisdom tradition teaches: know thyself.",
+          "application_hindi": "भय की सबसे गहरी जड़ मृत्यु का भय है — स्वयं का विनाश। यदि यह श्लोक सत्य है, यदि आत्मा वास्तव में अविनाशी है, तो परम भय एक गलत आधार पर आधारित है। आत्म-ज्ञान भय को उसकी जड़ से मिटाता है।",
+          "tags": [
+            "fear",
+            "soul",
+            "self-knowledge",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w009-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.71",
+          "gita_chapter": 2,
+          "gita_verse": 71,
+          "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः। निर्ममो निरहङ्कारः स शान्तिमधिगच्छति॥",
+          "roman": "Vihāya kāmān yaḥ sarvān pumāṃś carati niḥspṛhaḥ. Nirmamo nirahaṅkāraḥ sa śāntim adhigacchati.",
+          "hindi": "जो पुरुष सभी कामनाओं को छोड़कर, स्पृहा-रहित, ममत्व-रहित और अहंकार-रहित होकर विचरण करता है — वह शांति प्राप्त करता है।",
+          "english": "A person who has given up all desires for sense gratification, who lives free from desires, who has given up all sense of proprietorship and is devoid of false ego — he alone can attain real peace.",
+          "application_english": "Fear is ultimately the ego's terror of its own dissolution. When you release attachment to outcomes, possessions, and the ego's need to be protected — fear loses its fuel. The fearless person is not the one who has eliminated all risk but the one who has released all clinging.",
+          "application_hindi": "भय अंततः अहंकार का अपने विघटन का आतंक है। जब आप परिणामों, संपत्तियों और अहंकार की सुरक्षित रहने की जरूरत से आसक्ति छोड़ देते हैं — भय अपना ईंधन खो देता है।",
+          "tags": [
+            "fearlessness",
+            "ego",
+            "peace",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w010",
+      "slug": "duty",
+      "title_english": "Duty & Dharma",
+      "title_hindi": "कर्तव्य और धर्म",
+      "intro_english": "Dharma is the central organizing principle of Sanatana Dharma — it is the cosmic order, individual duty, righteous action, and the very fabric of a meaningful life woven together. The Bhagavad Gita is above all a treatise on duty: when should you act, how, and why. Krishna's answer to every version of this question remains the most nuanced and powerful teaching on duty in world literature.",
+      "intro_hindi": "धर्म सनातन धर्म का केंद्रीय आयोजन सिद्धांत है — यह ब्रह्मांडीय व्यवस्था, व्यक्तिगत कर्तव्य, धार्मिक कार्य और एक सार्थक जीवन का बुना हुआ ताना-बाना है। भगवद्गीता सबसे बढ़कर कर्तव्य पर एक ग्रंथ है।",
+      "seo_title": "Duty & Dharma Quotes from Bhagavad Gita — Sanatan Gyan Sagar",
+      "seo_description": "Understand your duty and dharma with Bhagavad Gita wisdom. Sanskrit shlokas on righteous action, svadharma, and living a life of purpose and responsibility.",
+      "related_topics": [
+        "success",
+        "fear",
+        "anger"
+      ],
+      "quotes": [
+        {
+          "id": "w010-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.31",
+          "gita_chapter": 2,
+          "gita_verse": 31,
+          "sanskrit": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि। धर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते॥",
+          "roman": "Svadharmam api cāvekṣya na vikampitum arhasi. Dharmyāddhi yuddhāc chreyo'nyat kṣatriyasya na vidyate.",
+          "hindi": "अपने स्वधर्म को देखकर भी तुम्हें काँपना नहीं चाहिए। क्षत्रिय के लिए धर्म-युद्ध से बढ़कर कल्याणकारी और कुछ नहीं है।",
+          "english": "Considering your specific duty as a kshatriya, you should know that there is no better engagement for you than fighting on religious principles; and so there is no need for hesitation.",
+          "application_english": "Svadharma — your own specific duty — is different from sarva-dharma (universal duty). What is right for a soldier may not be right for a teacher; what is right for a parent may not be right for a renunciant. The key question is not 'what is duty in general' but 'what is MY duty in THIS situation?'",
+          "application_hindi": "स्वधर्म — आपका अपना विशिष्ट कर्तव्य — सर्वधर्म (सार्वभौमिक कर्तव्य) से अलग है। जो एक सैनिक के लिए सही है वह एक शिक्षक के लिए सही नहीं हो सकता। मुख्य प्रश्न है 'सामान्यतः कर्तव्य क्या है' नहीं, बल्कि 'इस परिस्थिति में मेरा कर्तव्य क्या है?'",
+          "tags": [
+            "svadharma",
+            "duty",
+            "righteousness",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w010-q002",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.33",
+          "gita_chapter": 2,
+          "gita_verse": 33,
+          "sanskrit": "अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि। ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि॥",
+          "roman": "Atha cet tvam imaṃ dharmyaṃ saṃgrāmaṃ na kariṣyasi. Tataḥ svadharmaṃ kīrtiṃ ca hitvā pāpam avāpsyasi.",
+          "hindi": "यदि तुम इस धर्म-युद्ध को नहीं करोगे, तो अपने धर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+          "english": "If, however, you do not perform your religious duty of fighting, then you will certainly incur sins for neglecting your duties and thus lose your reputation as a fighter.",
+          "application_english": "Omission has consequences. Not doing what your dharma demands is not a neutral act — it creates its own negative karma. The courage required is often not the courage to do something dramatic but the courage to do what is simply, clearly required of you — today, in this situation.",
+          "application_hindi": "चूक के परिणाम होते हैं। जो आपका धर्म माँगता है वह न करना तटस्थ कार्य नहीं — यह अपना नकारात्मक कर्म बनाता है। अपेक्षित साहस अक्सर कुछ नाटकीय करने का साहस नहीं, बल्कि आज, इस परिस्थिति में आपसे जो स्पष्ट रूप से अपेक्षित है वह करने का साहस है।",
+          "tags": [
+            "duty",
+            "sin",
+            "action",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w010-q003",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.47",
+          "gita_chapter": 2,
+          "gita_verse": 47,
+          "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+          "roman": "Karmaṇyevādhikāraste mā phaleṣu kadācana. Mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi.",
+          "hindi": "तुम्हारा कर्म करने में ही अधिकार है, फलों में कभी नहीं। कर्म के फल की आशा मत रखो, और अकर्म में भी आसक्त मत हो।",
+          "english": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to inaction.",
+          "application_english": "This is the essential teaching on duty: your domain is the action, not the outcome. A doctor's duty is to apply the best medical knowledge available — not to guarantee the patient's recovery. A parent's duty is to provide love, guidance, and resources — not to control the child's destiny. Do your part completely; release the rest.",
+          "application_hindi": "यह कर्तव्य पर आवश्यक शिक्षा है: आपका क्षेत्र कार्य है, परिणाम नहीं। एक डॉक्टर का कर्तव्य उपलब्ध सर्वोत्तम चिकित्सा ज्ञान लागू करना है — रोगी के ठीक होने की गारंटी नहीं। अपना हिस्सा पूरी तरह करें; बाकी छोड़ दें।",
+          "tags": [
+            "duty",
+            "karma",
+            "action",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w010-q004",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.38",
+          "gita_chapter": 2,
+          "gita_verse": 38,
+          "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ। ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि॥",
+          "roman": "Sukhaduḥkhe same kṛtvā lābhālābhau jayājayau. Tato yuddhāya yujyasva naivaṃ pāpam avāpsyasi.",
+          "hindi": "सुख-दुख, लाभ-हानि और जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ — इस तरह तुम्हें पाप नहीं लगेगा।",
+          "english": "Treating alike pleasure and pain, gain and loss, victory and defeat — engage in the battle for the sake of battle. Thus you shall not incur sin.",
+          "application_english": "Duty divorced from outcome obsession is the purest form of action. When you do what is right because it is right — not because of how it will make you look, or what it will bring you — the action carries a different quality. It becomes sacred rather than strategic.",
+          "application_hindi": "परिणाम की जुनूनी सोच से अलग कर्तव्य कार्य का सबसे शुद्ध रूप है। जब आप वह करते हैं जो सही है क्योंकि वह सही है — इसलिए नहीं कि यह आपको कैसा दिखाएगा — तो कार्य एक अलग गुणवत्ता रखता है।",
+          "tags": [
+            "duty",
+            "equanimity",
+            "righteousness",
+            "gita-chapter-2"
+          ]
+        },
+        {
+          "id": "w010-q005",
+          "source": "Bhagavad Gita",
+          "source_ref": "Bhagavad Gita 2.72",
+          "gita_chapter": 2,
+          "gita_verse": 72,
+          "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति। स्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति॥",
+          "roman": "Eṣā brāhmī sthitiḥ pārtha naināṃ prāpya vimuhyati. Sthitvāsyāmantakāle'pi brahmanirvāṇamṛcchati.",
+          "hindi": "हे पार्थ, यह ब्राह्मी स्थिति है — इसे प्राप्त करके मनुष्य मोहित नहीं होता। अंतकाल में भी इसमें स्थित रहकर वह ब्रह्मनिर्वाण प्राप्त करता है।",
+          "english": "This is the state of enlightenment in Brahman, O Arjuna. Having attained it, one is not deluded. Being situated in this state even at the time of death, one can enter the kingdom of God.",
+          "application_english": "The final destination of a life of dharma is liberation itself. This is Krishna's ultimate promise: live your duty with equanimity, without clinging to results, surrendered to the Divine — and the very act of living rightly becomes a path to the highest freedom. Duty, performed with love, is the path.",
+          "application_hindi": "धर्म का जीवन जीने का अंतिम गंतव्य मोक्ष है। यह कृष्ण का परम वचन है: समता के साथ अपना कर्तव्य जिएं, परिणामों से आसक्ति के बिना, ईश्वर के प्रति समर्पित — और सही ढंग से जीने का कार्य स्वयं उच्चतम स्वतंत्रता का मार्ग बन जाता है।",
+          "tags": [
+            "liberation",
+            "duty",
+            "dharma",
+            "gita-chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w011",
+      "slug": "morning-prayer",
+      "title_hindi": "प्रातःकाल के विचार",
+      "title_english": "Morning Wisdom",
+      "icon": "☀️",
+      "intro_hindi": "दिन की शुरुआत के लिए दिव्य विचार।",
+      "intro_english": "Divine thoughts for starting your day.",
+      "quotes": []
+    },
+    {
+      "id": "w012",
+      "slug": "forgiveness",
+      "title_hindi": "क्षमा",
+      "title_english": "Forgiveness",
+      "icon": "🕊️",
+      "intro_hindi": "क्षमा और शांति का महत्व।",
+      "intro_english": "The power of and importance of forgiveness.",
+      "quotes": []
+    }
+  ]
+}
