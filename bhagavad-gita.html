@@ -366,16 +366,16 @@
 
     <!-- Desktop nav -->
     <nav class="hidden md:flex gap-5 text-sm font-semibold" style="color:var(--text-sec);">
-      <a href="/bhajans.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">🪔 Bhajans</a>
-      <a href="/bhagavad-gita.html" style="color:var(--krishna);text-decoration:none;font-weight:700;">📖 Gita</a>
-      <a href="/wisdom.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">💬 Wisdom</a>
-      <a href="/favorites.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">❤️ Saved</a>
+      <a href="bhajans.json" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">🪔 Bhajans</a>
+      <a href="bhagavad-gita.html" style="color:var(--krishna);text-decoration:none;font-weight:700;">📖 Gita</a>
+      <a href="wisdom.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">💬 Wisdom</a>
+      <a href="favorites.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">❤️ Saved</a>
     </nav>
 
     <!-- Icons -->
     <div class="flex gap-2">
       <button id="search-toggle" class="toggle-btn" onclick="toggleSearch()" aria-label="Search" title="Search">🔍</button>
-      <a href="/favorites.html" class="toggle-btn md:hidden">❤️</a>
+      <a href="favorites.html" class="toggle-btn md:hidden">❤️</a>
     </div>
   </div>
 
@@ -533,7 +533,7 @@ function renderVersePage(ch, v) {
 <!-- Breadcrumb -->
 <nav class="breadcrumb text-sm mb-5 no-print" style="color:var(--text-muted);">
   <a href="/">Home</a> &rsaquo;
-  <a href="/bhagavad-gita.html">भगवद गीता</a> &rsaquo;
+  <a href="bhagavad-gita.html">भगवद गीता</a> &rsaquo;
   <a href="/bhagavad-gita.html?chapter=${ch.chapter}">Chapter ${ch.chapter}</a> &rsaquo;
   <span>Verse ${v.verse}</span>
 </nav>
@@ -697,7 +697,7 @@ function renderChapterPage(ch) {
   const html = `
 <nav class="breadcrumb text-sm mb-5">
   <a href="/">Home</a> &rsaquo;
-  <a href="/bhagavad-gita.html">भगवद गीता</a> &rsaquo;
+  <a href="bhagavad-gita.html">भगवद गीता</a> &rsaquo;
   <span>Chapter ${ch.chapter}</span>
 </nav>
 
@@ -838,7 +838,7 @@ function renderBrowsePage() {
 <!-- Wisdom link -->
 <div class="card" style="text-align:center;background:rgba(124,58,237,0.05);border-color:var(--krishna);">
   <p style="color:var(--text-sec);margin-bottom:12px;font-size:15px;">Find Gita verses by life topic — anxiety, failure, love, courage</p>
-  <a href="/wisdom.html" class="toggle-btn" 
+  <a href="wisdom.html" class="toggle-btn" 
      style="text-decoration:none;display:inline-flex;padding:0 24px;background:var(--krishna);color:white;border-color:var(--krishna);">
     💬 Explore Wisdom by Topic →
   </a>
@@ -1040,7 +1040,7 @@ function show404() {
       <div style="font-size:40px;margin-bottom:16px;">🔍</div>
       <h2 class="devanagari" style="color:var(--maroon);font-size:22px;margin-bottom:8px;">श्लोक नहीं मिला</h2>
       <p style="color:var(--text-muted);margin-bottom:16px;">This verse was not found. Browse all chapters below.</p>
-      <a href="/bhagavad-gita.html" class="toggle-btn" style="text-decoration:none;background:var(--krishna);color:white;border-color:var(--krishna);">
+      <a href="bhagavad-gita.html" class="toggle-btn" style="text-decoration:none;background:var(--krishna);color:white;border-color:var(--krishna);">
         Browse All Chapters
       </a>
     </div>`;
