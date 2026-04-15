@@ -18,7 +18,7 @@
     "topics": ["protection", "strength", "courage", "devotion", "removing obstacles", "health", "fear removal"],
     "story": "The Hanuman Chalisa was composed by the great saint-poet Goswami Tulsidas in the 16th century during the reign of the Mughal Emperor Akbar. According to popular legend, Tulsidas was imprisoned by Emperor Akbar when he refused to demonstrate his powers. It is said that Tulsidas composed the Hanuman Chalisa and prayed to Lord Hanuman, who then sent an army of monkeys to terrorize the Mughal court, forcing Akbar to release the saint. However, the deeper spiritual reason for composing the Chalisa was Tulsidas's immense love and devotion for Lord Ram, and Hanuman as the greatest devotee of Ram. Tulsidas composed this in simple Awadhi language so that common people, not just Sanskrit scholars, could recite it and receive divine blessings. The word 'Chalisa' means forty, referring to the forty chaupai verses in the hymn. Each verse reveals a different attribute of Lord Hanuman — his physical form, his divine knowledge, his feats of strength, his unparalleled devotion to Lord Ram, and his ability to remove all obstacles and suffering from the lives of his devotees.",
     "story_hindi": "हनुमान चालीसा की रचना महान संत-कवि गोस्वामी तुलसीदास ने 16वीं शताब्दी में मुगल सम्राट अकबर के शासनकाल में की थी। एक प्रसिद्ध किंवदंती के अनुसार, जब तुलसीदास ने अपनी शक्तियां दिखाने से इनकार किया, तो अकबर ने उन्हें कैद करवा दिया। तुलसीदास ने हनुमान चालीसा की रचना की और हनुमान जी से प्रार्थना की। तब हनुमान जी ने मुगल दरबार में वानरों की सेना भेजी, और अकबर को उन्हें मुक्त करना पड़ा। तुलसीदास ने इसे सरल अवधी भाषा में इसलिए लिखा ताकि आम जनता भी इसे पढ़ सके। 'चालीसा' शब्द का अर्थ है चालीस, जो इस स्तुति की चालीस चौपाइयों को संदर्भित करता है।",
-    "significance": "The Hanuman Chalisa is the most widely recited Hindu prayer in the world, chanted by hundreds of millions of devotees every day. It is scientifically structured — the 40 verses systematically praise Hanuman's form, qualities, feats, and grace. Reciting it is believed to grant courage in times of fear, protection from evil forces, health in times of illness, success in difficult endeavors, and the supreme blessing of Ram's name. The Chalisa is also a condensed biography of Hanuman's life — from his birth to his legendary feats in the Ramayana.",
+    "significance": "The Hanuman Chalisa is the most widely recited Hindu prayer in the world, chanted by hundreds of millions of devotees every day. It is scientifically structured — the 40 verses systematically praise Hanuman's form, qualities, feats, and grace. Devotees traditionally recite it for courage in times of fear, protection from evil forces, wellness in times of illness, success in difficult endeavors, and the blessing of Ram's name. The Chalisa is also a condensed biography of Hanuman's life — from his birth to his legendary feats in the Ramayana.",
     "significance_hindi": "हनुमान चालीसा दुनिया में सबसे अधिक पढ़ी जाने वाली हिंदू प्रार्थना है। इसे प्रतिदिन करोड़ों भक्त पढ़ते हैं। माना जाता है कि इसके पाठ से भय दूर होता है, बुरी शक्तियों से रक्षा होती है, बीमारी में स्वास्थ्य मिलता है, और कठिन कार्यों में सफलता प्राप्त होती है। यह हनुमान जी के जीवन का संक्षिप्त जीवनचरित भी है।",
     "benefits": [
       "Removes fear and gives immense courage",
@@ -1211,6 +1211,103 @@
       "meta_title": "ॐ जय जगदीश हरे - Om Jai Jagdish Hare with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
       "meta_description": "Read complete Om Jai Jagdish Hare aarti with Hindi meaning, English translation and Roman transliteration. The most universal Hindu aarti with story.",
       "keywords": ["om jai jagdish hare", "ॐ जय जगदीश हरे", "jai jagdish aarti", "evening aarti", "satyanarayan aarti", "vishnu aarti hindi"]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "shiv-tandav-stotram",
+    "title_hindi": "शिव तांडव स्तोत्रम",
+    "title_roman": "Shiv Tandav Stotram",
+    "title_english": "The Cosmic Dance of Lord Shiva",
+    "deity": "Shiva",
+    "deity_color": "#6E1515",
+    "language": "Sanskrit",
+    "festival": ["Shivratri", "Mahashivratri"],
+    "occasion": "Morning & Evening Prayer",
+    "timing": "All Times",
+    "raga": "Kafi",
+    "composer": "Ravana",
+    "duration_minutes": 8,
+    "tags": ["shiva", "tandav", "stotra", "dance", "destruction", "creation"],
+    "topics": ["destruction", "creation", "cosmic dance", "devotion", "liberation"],
+    "story": "The Shiv Tandav Stotram is attributed to the demon-king Ravana, who is known for his immense devotion to Lord Shiva. According to legend, Ravana composed this stotra after obtaining the Atma Linga from Lord Shiva through severe penance. The stotra describes the cosmic dance of Lord Shiva — the Tandav — which represents the eternal cycle of creation, preservation, and dissolution. It is believed that Ravana, despite being an adversary of Rama, was one of the greatest devotees of Shiva.",
+    "story_hindi": "शिव तांडव स्तोत्रम राक्षस राजा रवण द्वारा रचित है, जो भगवान शिव के महान भक्त थे। किंवदंती के अनुसार, रवण ने कठोर तपस्या के बाद शिव जी से आत्म लिंग प्राप्त किया। यह स्तोत्र शिव जी के आकाशीय नृत्य — तांडव — का वर्णन करता है।",
+    "significance": "The Shiv Tandav Stotram is recited during Mahashivratri and all Shiva puja ceremonies. It celebrates the cosmic dance of destruction and creation. The stotra is known for its powerful imagery and rhythmic verses.",
+    "significance_hindi": "शिव तांडव स्तोत्रम महाशिवरात्रि और शिव पूजा के दौरान पढ़ा जाता है। यह विनाश और सृजन के आकाशीय नृत्य का जश्न मनाता है।",
+    "benefits": [
+      "Traditionally recited for inner strength",
+      "Removes negativity and obstacles",
+      "Grants divine blessings of Lord Shiva",
+      "Brings peace and tranquility"
+    ],
+    "verses": [
+      {
+        "type": "shloka",
+        "label_hindi": "श्लोक १",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "जटाट्टामशिभूषणं गंगाधरं शङ्करं विरूपाक्षं नटEST",
+            "roman": "Jataṭṭamaśibhūṣaṇaṃ Ganggādharam Śhaṅkaraṃ Virupākṣhaṃ NatEST",
+            "hindi_meaning": "जटाओं से युक्त, भूषणों से सुशोभित, गंगाधारी शंकर को नमस्कार है।",
+            "english": "Salutations to Shankara, bearing matted locks, adorned with gems, holder of the Ganga."
+          }
+        ]
+      }
+    ],
+    "related": ["jai-ganesh-deva", "hanuman-chalisa"],
+    "seo": {
+      "meta_title": "शिव तांडव स्तोत्रम - Shiv Tandav Stotram with Hindi & English | Sanatan Gyan Sagar",
+      "meta_description": "Read Shiv Tandav Stotram attributed to Ravana with Hindi meaning, English translation.",
+      "keywords": ["shiv tandav stotram", "शिव तांडव", "shiva stotra", "ravana"]
+    }
+  },
+  {
+    "id": 5,
+    "slug": "devashree-ganesha",
+    "title_hindi": "देवा श्री गणेश",
+    "title_roman": "Deva Shree Ganesha",
+    "title_english": "Divine Lord Ganesha",
+    "deity": "Ganesha",
+    "deity_color": "#EA580C",
+    "language": "Hindi",
+    "festival": ["Ganesh Chaturthi"],
+    "occasion": "Any New Beginning",
+    "timing": "Morning",
+    "raga": "Yaman Kalyan",
+    "composer": "Traditional",
+    "duration_minutes": 5,
+    "tags": ["ganesha", "new beginning", "obstacle removal", "wisdom"],
+    "topics": ["new beginnings", "obstacle removal", "wisdom", "success"],
+    "story": "Deva Shree Ganesha is one of the most popular modern bhajans dedicated to Lord Ganesha, the remover of obstacles (Vighnaharta). It is sung during Ganesh Chaturthi and before any new undertaking.",
+    "story_hindi": "देवा श्री गणेश गणेश जी के सबसे लोकप्रिय भजनों में से एक है।",
+    "significance": "This bhajan is sung before starting any new work, business, or project. It invokes Ganesha's blessings for success.",
+    "significance_hindi": "यह भजन किसी भी नए कार्य, व्यवसाय या परियोजना शुरू करने से पहले गाया जाता है।",
+    "benefits": [
+      "Removes obstacles before new beginnings",
+      "Brings wisdom and understanding",
+      "Grants success in endeavors"
+    ],
+    "verses": [
+      {
+        "type": "verse",
+        "label_hindi": "पहला पाँव",
+        "label_english": "First Verse",
+        "lines": [
+          {
+            "hindi": "देवा श्री गणेशा, जय जय श्री गणेशा।",
+            "roman": "Deva Shree Ganesha, Jai Jai Shree Ganesha.",
+            "hindi_meaning": "देवता श्री गणेश को जय हो, जय जय श्री गणेशा।",
+            "english": "Divine Lord Ganesha, victory to Lord Ganesha."
+          }
+        ]
+      }
+    ],
+    "related": ["jai-ganesh-deva"],
+    "seo": {
+      "meta_title": "देवा श्री गणेश - Deva Shree Ganesha Bhajan | Sanatan Gyan Sagar",
+      "meta_description": "Deva Shree Ganesha popular bhajan with lyrics and meaning.",
+      "keywords": ["deva shree ganesha", "ganesha bhajan", "ganesh chaturthi"]
     }
   }
 ]
