@@ -1,0 +1,46 @@
+{
+  "id": "bh_jai_ganesh_deva",
+  "slug": "jai-ganesh-deva",
+  "type": "aarti",
+  "deity": "Ganesha",
+  "deity_color": "#D97706",
+  "language": "hi",
+  "title_hindi": "जय गणेश देवा",
+  "title_roman": "Jai Ganesh Deva",
+  "title_english": "Jai Ganesh Deva (Aarti)",
+  "festival": ["Ganesh Chaturthi"],
+  "occasion": ["Beginnings", "Obstacles"],
+  "timing": ["Morning", "Evening"],
+  "composer": "Traditional",
+  "duration_minutes": 5,
+  "tags": ["aarti", "ganesha", "beginnings"],
+  "topics": ["Auspicious start", "Devotion"],
+  "story": "Jai Ganesh Deva is a widely sung aarti for Lord Ganesha, traditionally recited at the start of worship and before new beginnings.",
+  "story_hindi": "‘जय गणेश देवा’ भगवान गणेश की प्रसिद्ध आरती है, जिसे पूजा के आरंभ में और शुभ कार्यों से पहले गाया जाता है।",
+  "significance": "Aarti recitation is a devotional closing act, focusing the mind in gratitude and prayer.",
+  "significance_hindi": "आरती भक्ति का समापन भाव है — कृतज्ञता और प्रार्थना में मन को एकाग्र करने की परंपरा।",
+  "seo": {
+    "meta_title": "Jai Ganesh Deva Aarti — Lyrics with Meaning | Sanatan Gyan Sagar",
+    "meta_description": "Read Jai Ganesh Deva Aarti in Hindi with roman transliteration and meaning. Free and shareable.",
+    "keywords": ["jai ganesh deva", "ganesh aarti", "lyrics", "meaning"]
+  },
+  "rights": { "license": "traditional", "source": "traditional/public domain", "notes": "" },
+  "safety": { "disallow_beej": true },
+  "crosslinks": { "astrology_intents": ["general_blessings"] },
+  "verses": [
+    {
+      "type": "aarti",
+      "label_hindi": "आरती",
+      "label_english": "Aarti",
+      "lines": [
+        {
+          "hindi": "जय गणेश जय गणेश, जय गणेश देवा।",
+          "roman": "Jai Ganesh Jai Ganesh, Jai Ganesh Deva.",
+          "hindi_meaning": "हे गणेश जी, आपकी जय हो।",
+          "english": "Victory to Lord Ganesha."
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,46 @@
+{
+  "id": "bh_om_jai_jagdish_hare",
+  "slug": "om-jai-jagdish-hare",
+  "type": "aarti",
+  "deity": "Vishnu",
+  "deity_color": "#15803D",
+  "language": "hi",
+  "title_hindi": "ॐ जय जगदीश हरे",
+  "title_roman": "Om Jai Jagdish Hare",
+  "title_english": "Om Jai Jagdish Hare (Aarti)",
+  "festival": ["Ekadashi", "Diwali"],
+  "occasion": ["Daily worship", "Gratitude"],
+  "timing": ["Evening"],
+  "composer": "Traditional",
+  "duration_minutes": 6,
+  "tags": ["aarti", "vishnu", "narayan"],
+  "topics": ["Bhakti", "Gratitude"],
+  "story": "Om Jai Jagdish Hare is a widely sung aarti addressed to Bhagwan Vishnu (Narayana). It is commonly recited at the end of puja.",
+  "story_hindi": "‘ॐ जय जगदीश हरे’ भगवान विष्णु/नारायण की प्रसिद्ध आरती है, जो पूजा के अंत में गाई जाती है।",
+  "significance": "A devotional reading that centers gratitude and surrender. Not a promise of results.",
+  "significance_hindi": "यह आरती कृतज्ञता और समर्पण का भाव जगाती है — इसे निश्चित परिणाम का वादा न समझें।",
+  "seo": {
+    "meta_title": "Om Jai Jagdish Hare Aarti — Lyrics with Meaning | Sanatan Gyan Sagar",
+    "meta_description": "Read Om Jai Jagdish Hare Aarti in Hindi with roman transliteration and meaning. Free and shareable.",
+    "keywords": ["om jai jagdish hare", "vishnu aarti", "lyrics", "meaning"]
+  },
+  "rights": { "license": "traditional", "source": "traditional/public domain", "notes": "" },
+  "safety": { "disallow_beej": true },
+  "crosslinks": { "astrology_intents": ["general_blessings", "anxiety_support"] },
+  "verses": [
+    {
+      "type": "aarti",
+      "label_hindi": "आरती",
+      "label_english": "Aarti",
+      "lines": [
+        {
+          "hindi": "ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।",
+          "roman": "Om Jai Jagdish Hare, Swami Jai Jagdish Hare.",
+          "hindi_meaning": "हे जगत के पालनहार, आपकी जय हो।",
+          "english": "Victory to the Lord of the universe."
+        }
+      ]
+    }
+  ]
+}
+

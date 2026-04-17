@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "intents": [
+    {
+      "key": "weak_mars",
+      "title": "Weak Mars (Mangal) support",
+      "description": "Traditionally used for courage, discipline, and strength. Not a guarantee; spiritual support only."
+    },
+    {
+      "key": "mangal_dosha",
+      "title": "Mangal Dosha support",
+      "description": "Traditionally used for steadiness and harmony; always interpret with full chart context."
+    },
+    {
+      "key": "anxiety_support",
+      "title": "Calm & steadiness support",
+      "description": "Devotional recitations used for mental steadiness and prayerful reflection."
+    },
+    {
+      "key": "protection_prayer",
+      "title": "Protection prayer",
+      "description": "Traditionally recited for protection and courage."
+    },
+    {
+      "key": "general_blessings",
+      "title": "General blessings",
+      "description": "General devotional reading for positivity and gratitude."
+    }
+  ]
+}
+

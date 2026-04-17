@@ -1,0 +1,48 @@
+{
+  "id": "bh_<unique_id>",
+  "slug": "example-slug",
+  "type": "bhajan",
+  "deity": "Hanuman",
+  "deity_color": "#EA580C",
+  "language": "hi",
+  "title_hindi": "उदाहरण शीर्षक",
+  "title_roman": "Example Title (Roman)",
+  "title_english": "Example Title (English)",
+  "festival": [],
+  "occasion": [],
+  "timing": [],
+  "composer": "Traditional",
+  "duration_minutes": 6,
+  "tags": ["devotion"],
+  "topics": ["Bhakti"],
+  "story": "Short context in English (optional).",
+  "story_hindi": "संक्षिप्त संदर्भ हिंदी में (optional).",
+  "significance": "Soft claims only: devotional/educational support (optional).",
+  "significance_hindi": "कोई गारंटी नहीं — केवल भक्ति/शिक्षा (optional).",
+  "benefits": [],
+  "when_to_sing": { "time": [], "occasion": [] },
+  "seo": {
+    "meta_title": "Example — Lyrics with Meaning | Sanatan Gyan Sagar",
+    "meta_description": "One-line description (20–200 chars).",
+    "keywords": ["keyword1", "keyword2"]
+  },
+  "rights": { "license": "traditional", "source": "traditional/public domain", "notes": "" },
+  "safety": { "disallow_beej": true },
+  "crosslinks": { "astrology_intents": ["general_blessings"] },
+  "verses": [
+    {
+      "type": "verse",
+      "label_hindi": "पद",
+      "label_english": "Verse",
+      "lines": [
+        {
+          "hindi": "यहाँ शुद्ध देवनागरी पंक्ति लिखें।",
+          "roman": "Yahaan shuddh roman transliteration likhen.",
+          "hindi_meaning": "हिंदी अर्थ (optional).",
+          "english": "English meaning (optional)."
+        }
+      ]
+    }
+  ]
+}
+

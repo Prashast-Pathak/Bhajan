@@ -1,0 +1,46 @@
+{
+  "id": "bh_shiv_tandav_stotram",
+  "slug": "shiv-tandav-stotram",
+  "type": "stotra",
+  "deity": "Shiva",
+  "deity_color": "#1E40AF",
+  "language": "sa",
+  "title_hindi": "शिव ताण्डव स्तोत्रम्",
+  "title_roman": "Shiva Tandava Stotram",
+  "title_english": "Shiva Tandava Stotram",
+  "festival": ["Mahashivratri"],
+  "occasion": ["Devotion", "Focus"],
+  "timing": ["Morning", "Night"],
+  "composer": "Traditional",
+  "duration_minutes": 8,
+  "tags": ["stotra", "shiva", "sanskrit"],
+  "topics": ["Bhakti", "Energy", "Focus"],
+  "story": "Shiva Tandava Stotram is a classical hymn praising Lord Shiva’s cosmic dance. It is often recited for devotion and inner steadiness.",
+  "story_hindi": "शिव ताण्डव स्तोत्रम् भगवान शिव के ताण्डव का स्तवन है। इसे भक्ति और अंतःस्थिरता के लिए पढ़ा जाता है।",
+  "significance": "Classical stotra recitation is a devotional practice. Use as spiritual support, not as a guarantee.",
+  "significance_hindi": "स्तोत्र-पाठ भक्ति-साधना है — इसे आध्यात्मिक सहारा समझें, निश्चित परिणाम का वादा नहीं।",
+  "seo": {
+    "meta_title": "Shiv Tandav Stotram — Sanskrit Text with Meaning | Sanatan Gyan Sagar",
+    "meta_description": "Read Shiv Tandav Stotram in Sanskrit with roman transliteration and meaning. Free, fast, and shareable.",
+    "keywords": ["shiv tandav stotram", "sanskrit", "lyrics", "meaning"]
+  },
+  "rights": { "license": "traditional", "source": "traditional/public domain", "notes": "" },
+  "safety": { "disallow_beej": true },
+  "crosslinks": { "astrology_intents": ["anxiety_support", "general_blessings"] },
+  "verses": [
+    {
+      "type": "stotra",
+      "label_hindi": "स्तोत्र",
+      "label_english": "Stotram",
+      "lines": [
+        {
+          "hindi": "जटाटवीगलज्जलप्रवाहपावितस्थले…",
+          "roman": "Jatāṭavīgalajjala-pravāha-pāvita-sthale…",
+          "hindi_meaning": "यह श्लोक भगवान शिव की महिमा का काव्यात्मक वर्णन करता है।",
+          "english": "A poetic praise describing Lord Shiva’s majesty."
+        }
+      ]
+    }
+  ]
+}
+

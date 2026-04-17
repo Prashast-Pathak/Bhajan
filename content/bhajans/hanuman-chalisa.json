@@ -1,0 +1,65 @@
+{
+  "id": "bh_hanuman_chalisa",
+  "slug": "hanuman-chalisa",
+  "type": "chalisa",
+  "deity": "Hanuman",
+  "deity_color": "#EA580C",
+  "language": "hi",
+  "title_hindi": "हनुमान चालीसा",
+  "title_roman": "Hanuman Chalisa",
+  "title_english": "Hanuman Chalisa",
+  "festival": ["Hanuman Jayanti", "Tuesdays", "Saturdays"],
+  "occasion": ["Courage", "Protection", "Discipline"],
+  "timing": ["Morning", "Evening"],
+  "composer": "Traditional",
+  "duration_minutes": 12,
+  "tags": ["chalisa", "hanuman", "devotion", "courage"],
+  "topics": ["Strength", "Fearlessness", "Bhakti"],
+  "story": "Hanuman Chalisa is a widely recited devotional hymn praising Lord Hanuman, traditionally attributed to Goswami Tulsidas. It is often read for courage, steadiness, and devotion.",
+  "story_hindi": "हनुमान चालीसा भगवान हनुमान की स्तुति का एक प्रसिद्ध स्तोत्र है। इसे परंपरागत रूप से तुलसीदास जी से जोड़ा जाता है और साहस, स्थिरता व भक्ति के लिए पढ़ा जाता है।",
+  "significance": "Traditionally recited for mental strength, devotion, and protection. Use as spiritual support, not as a guaranteed remedy.",
+  "significance_hindi": "परंपरागत रूप से इसे मानसिक शक्ति, भक्ति और संरक्षण के लिए पढ़ा जाता है। इसे आध्यात्मिक सहारा समझें, निश्चित परिणाम का वादा नहीं।",
+  "benefits": [
+    "Builds discipline through daily recitation",
+    "Traditionally associated with courage and steadiness",
+    "A devotional practice for focus and inner strength"
+  ],
+  "when_to_sing": {
+    "time": ["Morning", "Evening"],
+    "occasion": ["Tuesdays", "Saturdays", "Before important work"]
+  },
+  "seo": {
+    "meta_title": "Hanuman Chalisa (Hindi) — Lyrics with Meaning | Sanatan Gyan Sagar",
+    "meta_description": "Read Hanuman Chalisa in Hindi with roman transliteration and meaning. Free, fast, and shareable devotional reading.",
+    "keywords": ["hanuman chalisa", "lyrics", "meaning", "hindi", "roman", "tulsidas"]
+  },
+  "rights": {
+    "license": "traditional",
+    "source": "traditional/public domain",
+    "notes": "Classical devotional text; meaning/commentary may be simplified for accessibility."
+  },
+  "safety": { "disallow_beej": true },
+  "crosslinks": { "astrology_intents": ["weak_mars", "protection_prayer", "anxiety_support"] },
+  "verses": [
+    {
+      "type": "intro",
+      "label_hindi": "दोहा",
+      "label_english": "Doha",
+      "lines": [
+        {
+          "hindi": "श्री गुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।",
+          "roman": "Shri Guru Charan Saroj Raj, Nij Manu Mukuru Sudhari.",
+          "hindi_meaning": "गुरु के चरण-कमल की रज से अपने मन के दर्पण को शुद्ध करके,",
+          "english": "Cleansing the mirror of my mind with the dust of the Guru's lotus feet,"
+        },
+        {
+          "hindi": "बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि॥",
+          "roman": "Baranau Raghubar Bimal Jasu, Jo Dayaku Phal Chari.",
+          "hindi_meaning": "मैं श्री रघुवर (राम) का निर्मल यश वर्णन करता हूँ, जो चारों फलों (धर्म, अर्थ, काम, मोक्ष) को देने वाला है।",
+          "english": "I narrate the pure glory of Sri Raghuvar (Ram), which bestows the four fruits of life (Dharma, Artha, Kama, Moksha)."
+        }
+      ]
+    }
+  ]
+}
+
