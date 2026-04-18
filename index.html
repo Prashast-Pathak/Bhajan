@@ -44,6 +44,16 @@
       --font-ui: 'Lato', sans-serif;
       --font-size-hindi: 22px;
     }
+    /* Dark Mode */
+    body.dark-mode {
+      --bg: #1a1a1a;
+      --surface: #2d2d2d;
+      --surface2: #3d3d3d;
+      --text: #e8e8e8;
+      --text-sec: #b8b8b8;
+      --text-muted: #888888;
+      --border: #444444;
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -413,6 +423,22 @@
       });
     }
   </script>
+  <script>
+    let fontSize = parseInt(localStorage.getItem('sgs_fontsize') || '22');
+    document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
+    localStorage.setItem('sgs_fontsize', fontSize);
+    document.getElementById('fontToggle').addEventListener('click', () => {
+      fontSize += 2;
+      if (fontSize > 36) fontSize = 18;
+      document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
+      localStorage.setItem('sgs_fontsize', fontSize);
+    });
+    if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+    });
+  </script>
 
 </head>
 <body>
@@ -433,6 +459,8 @@
       <a href="bhagavad-gita.html">📖 Gita</a>
       <a href="wisdom.html">💬 Wisdom</a>
     </nav>
+    <button class="header-fav" id="fontToggle" aria-label="Increase font size" title="Font size">अ</button>
+    <button class="header-fav" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
     <button class="header-fav" onclick="window.location.href='favorites.html'" title="Saved Bhajans" aria-label="Saved">❤️</button>
   </div>
 </header>

@@ -1,11 +1,7 @@
 User-agent: *
 Allow: /
 
-# Disallow non-content pages from being crawled aggressively
-Disallow: /favorites.html
+# Standard crawl controls
+Disallow: /templates/
 
-# Sitemap location
 Sitemap: https://sanatan-gyan-sagar.pages.dev/sitemap.xml
-
-# Crawl-delay for polite crawling
-Crawl-delay: 1

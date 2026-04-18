@@ -1,0 +1,217 @@
+// =====================
+// BHAJAN TEMPLATE
+// =====================
+// Copy this structure and fill in your data
+// Save as: /data/bhajans.json
+
+{
+  "id": 1,
+  "slug": "hanuman-chalisa",
+  "title_hindi": "हनुमान चालीसा",
+  "title_roman": "Hanuman Chalisa",
+  "title_english": "Forty Verses in Praise of Hanuman",
+  "deity": "Hanuman",
+  "deity_color": "#EA580C",
+  "language": "Awadhi",
+  "festival": ["Hanuman Jayanti", "Diwali", "Navratri"],
+  "occasion": "Daily Prayer, Tuesday & Saturday Worship",
+  "timing": "Morning and Evening",
+  "raga": "Bhairav (Morning), Bhairavi (Evening)",
+  "composer": "Goswami Tulsidas",
+  "duration_minutes": 12,
+  "tags": ["hanuman", "chalisa", "tulsidas", "strength", "protection", "devotion", "ram"],
+  "topics": ["protection", "strength", "courage", "devotion", "removing obstacles"],
+  "story": "The story behind this bhajan...",
+  "story_hindi": "इस भजन की कहानी...",
+  "significance": "Why is this important?",
+  "significance_hindi": "यह क्यों महत्वपूर्ण है?",
+  "benefits": [
+    "Benefit 1",
+    "Benefit 2"
+  ],
+  "when_to_sing": {
+    "festival": ["Festival name"],
+    "time": ["Morning", "Evening"],
+    "occasion": ["Before exams", "During illness"]
+  },
+  "featured": true,
+  "priority": 1,
+  "verses": [
+    {
+      "type": "doha",
+      "label_hindi": "दोहा",
+      "label_english": "Doha",
+      "lines": [
+        {
+          "hindi": "Verse line in Hindi",
+          "roman": "Verse line in Roman",
+          "hindi_meaning": "Hindi meaning",
+          "english": "English translation"
+        }
+      ]
+    },
+    {
+      "type": "chaupai",
+      "label_hindi": "चौपाई १",
+      "label_english": "Verse 1",
+      "lines": [
+        {
+          "hindi": "Verse line in Hindi",
+          "roman": "Verse line in Roman", 
+          "hindi_meaning": "Hindi meaning",
+          "english": "English translation"
+        }
+      ]
+    }
+  ],
+  "related": ["other-bhajan-slug"],
+  "seo": {
+    "meta_title": "SEO Title",
+    "meta_description": "SEO Description",
+    "keywords": ["keyword1", "keyword2"]
+  }
+}
+
+
+// =====================
+// SHLOKA TEMPLATE
+// =====================
+// Copy this structure and fill in your data
+// Save as: /data/shlokas.json
+
+{
+  "id": 1,
+  "slug": "gayatri-mantra",
+  "title_hindi": "गायत्री मंत्र",
+  "title_english": "Gayatri Mantra",
+  "source": "Rigveda",
+  "source_ref": "Rigveda 3.62.10",
+  "source_color": "#7C3AED",
+  "deity": "Brahma",
+  "occasion": "Daily Prayer, Sunrise",
+  "sanskrit": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेणियं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्।",
+  "roman": "Om Bhur Bhuvah Svah Tat Savitur Varenyam Bhargo Devasya Dhimahi Dhiyo Yo Nah Prachodayat.",
+  "hindi": "हम परमेश्वर की उस उत्तम प्रकृति का चिंतन करें जो इस सारे संसार को उत्पन्न करती है, जो सबके प्राणों में वास करती है।",
+  "english": "We contemplate on the most excellent radiance of that divine Sun (Savitar) who illuminates all realms, who purifies our intellect.",
+  "commentary_english": "Spiritual commentary here...",
+  "commentary_hindi": "आध्यात्मिक टीका यहाँ...",
+  "word_by_word": [
+    { "word": "ॐ", "meaning": "Om - the primal sound" },
+    { "word": "भूः", "meaning": "Bhuh - the physical world" },
+    { "word": "भुवः", "meaning": "Bhuvah - the subtle world" },
+    { "word": "स्वः", "meaning": "Svah - the celestial world" }
+  ],
+  "tags": ["gayatri", "veda", "mantra", "sun"],
+  "related_shlokas": ["other-shloka-slug"],
+  "priority": 1
+}
+
+
+// =====================
+// WISDOM TOPIC TEMPLATE
+// =====================
+// Copy this structure and fill in your data
+// Save as: /data/wisdom.json
+
+{
+  "id": "w001",
+  "slug": "anxiety",
+  "title_english": "Anxiety & Worry",
+  "title_hindi": "चिंता और व्याकुलता",
+  "intro_english": "Introduction to this topic...",
+  "intro_hindi": "इस विषय का परिचय...",
+  "seo_title": "SEO Title",
+  "seo_description": "SEO Description",
+  "related_topics": ["fear", "grief", "patience"],
+  "quotes": [
+    {
+      "id": "w001-q001",
+      "source": "Bhagavad Gita",
+      "source_ref": "Bhagavad Gita 2.47",
+      "gita_chapter": 2,
+      "gita_verse": 47,
+      "sanskrit": "Sanskrit verse",
+      "roman": "Roman transliteration",
+      "hindi": "Hindi translation",
+      "english": "English translation",
+      "application_english": "How to apply this wisdom...",
+      "application_hindi": "इस ज्ञान को कैसे लागू करें...",
+      "tags": ["karma", "detachment", "action"]
+    }
+  ]
+}
+
+
+// =====================
+// GITA VERSE TEMPLATE
+// =====================
+// Copy this structure and fill in your data
+// Save as: /data/gita.json
+
+{
+  "chapter": 2,
+  "verses": [
+    {
+      "verse": 47,
+      "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+      "roman": "Karmanyevadhikāraste mā phaleṣu kadācana. Mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi.",
+      "hindi_translation": "तुम्हारा कर्म करने में ही अधिकार है, फलों में कभी नहीं। कर्म के फल की आशा मत रखो, और अकर्म में भी आसक्त मत हो।",
+      "english_translation": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to inaction.",
+      "hindi_commentary": "टीका हिंदी में...",
+      "english_commentary": "This is the most quoted verse of the Bhagavad Gita..."
+    }
+  ]
+}
+
+
+// =====================
+// PRAYER TEMPLATE
+// =====================
+// Copy this structure and fill in your data
+// Save as: /data/prayers.json
+
+{
+  "id": 1,
+  "slug": "ganesh-puja",
+  "title_english": "Ganesh Puja Sequence",
+  "title_hindi": "गणेश पूजा क्रम",
+  "deity": "Ganesha",
+  "deity_color": "#EA580C",
+  "occasion": "Ganesh Chaturthi, Any New Beginning",
+  "duration_minutes": 20,
+  "difficulty": "Easy",
+  "language": ["Sanskrit", "Hindi"],
+  "tags": ["ganesh", "puja", "new beginning", "obstacle removal"],
+  "intro_english": "Ganesha, the remover of obstacles, is worshipped before any new venture. This puja sequence includes all essential mantras and offerings.",
+  "intro_hindi": "विघ्नहर्ता गणेश को किसी भी नई शुरुआत से पहले पूजा जाता है।",
+  "steps": [
+    {
+      "step": 1,
+      "type": "action",
+      "label": "Sankalpa",
+      "label_hindi": "संकल्प",
+      "description": "Take a sankalpa (resolution) to perform the puja with devotion.",
+      "duration_seconds": 60
+    },
+    {
+      "step": 2,
+      "type": "mantra",
+      "label": "Ganesh Gayatri Mantra",
+      "label_hindi": "गणेश गायत्री मंत्र",
+      "mantra_sanskrit": "ॐ गणेशाय नमः",
+      "mantra_roman": "Om Ganeshaya Namah",
+      "mantra_hindi": "ॐ, गणेश को नमस्कार है।",
+      "mantra_english": "Om, salutations to Lord Ganesha.",
+      "repetitions": 21,
+      "duration_seconds": 120
+    },
+    {
+      "step": 3,
+      "type": "offering",
+      "label": "Offer Modak",
+      "label_hindi": "मोदक अर्पण",
+      "description": "Offer 21 modaks (sweet balls) as Ganesha's favorite food.",
+      "duration_seconds": 60
+    }
+  ]
+}

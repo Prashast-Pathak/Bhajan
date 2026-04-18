@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated_at": "2026-04-18"
+  },
+  "topics": [
+    {
+      "id": "w001",
+      "slug": "anxiety",
+      "title_english": "Anxiety and Worry",
+      "title_hindi": "चिंता और व्याकुलता",
+      "intro_english": "Topic intro in English.",
+      "intro_hindi": "विषय परिचय हिंदी में।",
+      "seo_title": "Gita wisdom for anxiety",
+      "seo_description": "Calming verses for anxiety and overthinking.",
+      "related_topics": ["fear", "patience"],
+      "quotes": [
+        {
+          "id": "w001-q001",
+          "source": "Bhagavad Gita",
+          "source_ref": "2.47",
+          "gita_chapter": 2,
+          "gita_verse": 47,
+          "sanskrit": "श्लोक",
+          "roman": "Transliteration",
+          "hindi": "हिंदी अर्थ",
+          "english": "English meaning",
+          "application_english": "How to use this teaching practically.",
+          "application_hindi": "इस शिक्षा को व्यवहार में कैसे उतारें।",
+          "tags": ["karma", "mindfulness"]
+        }
+      ]
+    }
+  ]
+}

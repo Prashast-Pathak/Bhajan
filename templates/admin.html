@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सनातन ज्ञान सागर — Admin Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F5F0E8; --surface: #EDE6D8;
+      --saffron: #C96A1F; --maroon: #6E1515;
+      --text: #2A1A08; --border: #D9CDBA;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lato', sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+    h1 { font-family: 'Tiro Devanagari Hindi', serif; color: var(--maroon); margin-bottom: 20px; }
+    .panel { max-width: 1200px; margin: 0 auto; }
+    .section { background: var(--surface); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+    .section h2 { color: var(--saffron); margin-bottom: 15px; font-size: 18px; }
+    
+    /* Tabs */
+    .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .tab { padding: 10px 20px; border: none; background: var(--surface); border-radius: 8px; cursor: pointer; font-size: 14px; }
+    .tab.active { background: var(--saffron); color: white; }
+    
+    /* Form */
+    .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 15px; }
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+    .form-group label { font-size: 12px; font-weight: 700; color: var(--saffron); text-transform: uppercase; }
+    .form-group input, .form-group textarea, .form-group select { 
+      padding: 10px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; 
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    
+    /* Buttons */
+    .btn { padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 700; }
+    .btn-primary { background: var(--saffron); color: white; }
+    .btn-secondary { background: var(--border); color: var(--text); }
+    .btn-danger { background: #DC2626; color: white; }
+    
+    /* Data Table */
+    .data-list { display: flex; flex-direction: column; gap: 10px; }
+    .data-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: var(--bg); border-radius: 8px; }
+    .data-item-info { flex: 1; }
+    .data-item-title { font-weight: 700; color: var(--maroon); }
+    .data-item-meta { font-size: 12px; color: var(--text); opacity: 0.7; }
+    .data-item-actions { display: flex; gap: 10px; }
+    
+    /* Modal */
+    .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; }
+    .modal.open { display: flex; align-items: center; justify-content: center; }
+    .modal-content { background: var(--bg); border-radius: 12px; padding: 30px; max-width: 800px; width: 90%; max-height: 90vh; overflow-y: auto; }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; }
+    
+    /* JSON Output */
+    .json-output { background: #1a1a1a; color: #e8e8e8; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 12px; max-height: 300px; overflow: auto; white-space: pre; }
+    
+    /* Preview */
+    .preview-box { background: var(--bg); padding: 20px; border-radius: 8px; margin-top: 20px; }
+    .preview-hindi { font-family: 'Tiro Devanagari Hindi', serif; font-size: 22px; color: var(--maroon); }
+    .preview-roman { font-style: italic; color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>🕉️ Admin Panel — सनातन ज्ञान सागर</h1>
+    
+    <!-- Content Type Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('bhajans')">🪔 Bhajans</button>
+      <button class="tab" onclick="showTab('shlokas')">🕉️ Shlokas</button>
+      <button class="tab" onclick="showTab('prayers')">🙏 Prayers</button>
+      <button class="tab" onclick="showTab('wisdom')">💬 Wisdom</button>
+      <button class="tab" onclick="showTab('gita')">📖 Gita</button>
+      <button class="tab" onclick="showTab('upanishads')">📜 Upanishads</button>
+    </div>
+
+    <!-- BHAJANS SECTION -->
+    <div id="tab-bhajans" class="section">
+      <h2>🪔 Add New Bhajan</h2>
+      <form id="bhajan-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Slug (URL ID)</label>
+            <input type="text" name="slug" placeholder="e.g., hanuman-chalisa" required>
+          </div>
+          <div class="form-group">
+            <label>Title (Hindi)</label>
+            <input type="text" name="title_hindi" placeholder="e.g., हनुमान चालीसा" required>
+          </div>
+          <div class="form-group">
+            <label>Title (Roman)</label>
+            <input type="text" name="title_roman" placeholder="e.g., Hanuman Chalisa">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Deity</label>
+            <select name="deity">
+              <option value="Hanuman">Hanuman</option>
+              <option value="Ganesha">Ganesha</option>
+              <option value="Shiva">Shiva</option>
+              <option value="Krishna">Krishna</option>
+              <option value="Vishnu">Vishnu</option>
+              <option value="Durga">Durga</option>
+              <option value="Ram">Ram</option>
+              <option value="Lakshmi">Lakshmi</option>
+              <option value="Saraswati">Saraswati</option>
+              <option value="Surya">Surya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Language</label>
+            <select name="language">
+              <option value="Hindi">Hindi</option>
+              <option value="Sanskrit">Sanskrit</option>
+              <option value="Awadhi">Awadhi</option>
+              <option value="Braj">Braj</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Duration (minutes)</label>
+            <input type="number" name="duration_minutes" placeholder="e.g., 12">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Story (English)</label>
+          <textarea name="story" placeholder="Background story of the bhajan..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Story (Hindi)</label>
+          <textarea name="story_hindi" placeholder="भजन की कहानी..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Significance</label>
+          <textarea name="significance" placeholder="Why is this bhajan important?"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Benefits (one per line)</label>
+          <textarea name="benefits" placeholder="Removes fear&#10;Grants courage&#10;Brings peace"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Bhajan</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('bhajans')">📥 Export JSON</button>
+      </form>
+      
+      <h3 style="margin-top:30px;color:var(--maroon)">Existing Bhajans</h3>
+      <div id="bhajan-list" class="data-list"></div>
+    </div>
+
+    <!-- SHLOKAS SECTION -->
+    <div id="tab-shlokas" class="section" style="display:none">
+      <h2>🕉️ Add New Shloka</h2>
+      <form id="shloka-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Slug</label>
+            <input type="text" name="slug" placeholder="e.g., gayatri-mantra" required>
+          </div>
+          <div class="form-group">
+            <label>Title (Hindi)</label>
+            <input type="text" name="title_hindi" placeholder="गायत्री मंत्र" required>
+          </div>
+          <div class="form-group">
+            <label>Title (English)</label>
+            <input type="text" name="title_english" placeholder="Gayatri Mantra">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Source</label>
+            <select name="source">
+              <option value="Rigveda">Rigveda</option>
+              <option value="Yajurveda">Yajurveda</option>
+              <option value="Samaveda">Samaveda</option>
+              <option value="Atharvaveda">Atharvaveda</option>
+              <option value="Bhagavad Gita">Bhagavad Gita</option>
+              <option value="Upanishad">Upanishad</option>
+              <option value="Ramcharitmanas">Ramcharitmanas</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Deity</label>
+            <select name="deity">
+              <option value="">None</option>
+              <option value="Ganesha">Ganesha</option>
+              <option value="Shiva">Shiva</option>
+              <option value="Vishnu">Vishnu</option>
+              <option value="Durga">Durga</option>
+              <option value="Saraswati">Saraswati</option>
+              <option value="Surya">Surya</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sanskrit</label>
+          <textarea name="sanskrit" placeholder="ॐ भूर्भुवः स्वः..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Roman Transliteration</label>
+          <textarea name="roman" placeholder="Om Bhur Bhuvah Swaha..."></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Meaning (Hindi)</label>
+            <textarea name="hindi" placeholder="हिंदी अर्थ..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Meaning (English)</label>
+            <textarea name="english" placeholder="English meaning..."></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Commentary (English)</label>
+          <textarea name="commentary_english" placeholder="Spiritual commentary..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Commentary (Hindi)</label>
+          <textarea name="commentary_hindi" placeholder="टीका..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Shloka</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('shlokas')">📥 Export JSON</button>
+      </form>
+      
+      <h3 style="margin-top:30px;color:var(--maroon)">Existing Shlokas</h3>
+      <div id="shloka-list" class="data-list"></div>
+    </div>
+
+    <!-- PRAYERS SECTION -->
+    <div id="tab-prayers" class="section" style="display:none">
+      <h2>🙏 Add New Prayer/Puja</h2>
+      <form id="prayer-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Slug</label>
+            <input type="text" name="slug" placeholder="e.g., ganesh-puja" required>
+          </div>
+          <div class="form-group">
+            <label>Title (Hindi)</label>
+            <input type="text" name="title_hindi" placeholder="गणेश पूजा" required>
+          </div>
+          <div class="form-group">
+            <label>Deity</label>
+            <select name="deity">
+              <option value="Ganesha">Ganesha</option>
+              <option value="Shiva">Shiva</option>
+              <option value="Vishnu">Vishnu</option>
+              <option value="Durga">Durga</option>
+              <option value="Lakshmi">Lakshmi</option>
+              <option value="Saraswati">Saraswati</option>
+              <option value="Surya">Surya</option>
+              <option value="Krishna">Krishna</option>
+              <option value="Hanuman">Hanuman</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Duration (minutes)</label>
+            <input type="number" name="duration_minutes" placeholder="30">
+          </div>
+          <div class="form-group">
+            <label>Difficulty</label>
+            <select name="difficulty">
+              <option value="Easy">Easy</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Introduction (English)</label>
+          <textarea name="intro_english" placeholder="Describe this puja..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Introduction (Hindi)</label>
+          <textarea name="intro_hindi" placeholder="इस पूजा का वर्णन..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Prayer</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('prayers')">📥 Export JSON</button>
+      </form>
+    </div>
+
+    <!-- WISDOM SECTION -->
+    <div id="tab-wisdom" class="section" style="display:none">
+      <h2>💬 Add Wisdom Topic</h2>
+      <form id="wisdom-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Topic ID</label>
+            <input type="text" name="id" placeholder="e.g., w013" required>
+          </div>
+          <div class="form-group">
+            <label>Slug</label>
+            <input type="text" name="slug" placeholder="e.g., gratitude" required>
+          </div>
+          <div class="form-group">
+            <label>Title (English)</label>
+            <input type="text" name="title_english" placeholder="Gratitude" required>
+          </div>
+          <div class="form-group">
+            <label>Title (Hindi)</label>
+            <input type="text" name="title_hindi" placeholder="कृतज्ञता">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Introduction (English)</label>
+          <textarea name="intro_english" placeholder="Introduction to this wisdom topic..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Introduction (Hindi)</label>
+          <textarea name="intro_hindi" placeholder="इस विषय का परिचय..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Topic</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('wisdom')">📥 Export JSON</button>
+      </form>
+      
+      <h3 style="margin-top:30px;color:var(--maroon)">Existing Topics</h3>
+      <div id="wisdom-list" class="data-list"></div>
+    </div>
+
+    <!-- GITA SECTION -->
+    <div id="tab-gita" class="section" style="display:none">
+      <h2>📖 Add Gita Verse</h2>
+      <form id="gita-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Chapter</label>
+            <input type="number" name="chapter" min="1" max="18" placeholder="1" required>
+          </div>
+          <div class="form-group">
+            <label>Verse Number</label>
+            <input type="number" name="verse" min="1" placeholder="47" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sanskrit</label>
+          <textarea name="sanskrit" placeholder="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Roman</label>
+          <textarea name="roman" placeholder="Karmanyevadhikarete ma phalesu kadachana..."></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Translation (Hindi)</label>
+            <textarea name="hindi_translation" placeholder="तुम्हारा कर्म करने में ही अधिकार है..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Translation (English)</label>
+            <textarea name="english_translation" placeholder="You have a right to perform your prescribed duties..."></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Commentary (English)</label>
+          <textarea name="english_commentary" placeholder="Explanation of this verse..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Verse</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('gita')">📥 Export JSON</button>
+      </form>
+    </div>
+
+    <!-- UPANISHADS SECTION -->
+    <div id="tab-upanishads" class="section" style="display:none">
+      <h2>📜 Add Upanishad</h2>
+      <form id="upanishad-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Slug</label>
+            <input type="text" name="slug" placeholder="e.g., isa-upanishad" required>
+          </div>
+          <div class="form-group">
+            <label>Name (English)</label>
+            <input type="text" name="name_english" placeholder="Isha Upanishad" required>
+          </div>
+          <div class="form-group">
+            <label>Name (Hindi)</label>
+            <input type="text" name="name_hindi" placeholder="ईश उपनिषद">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Introduction</label>
+          <textarea name="intro_english" placeholder="About this Upanishad..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ Add Upanishad</button>
+        <button type="button" class="btn btn-secondary" onclick="exportJSON('upanishads')">📥 Export JSON</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- JSON EXPORT MODAL -->
+  <div id="export-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📥 Export JSON</h2>
+        <button class="modal-close" onclick="closeModal()">×</button>
+      </div>
+      <p>Copy this JSON and save to <code>/data/[type].json</code></p>
+      <div id="json-output" class="json-output"></div>
+      <button class="btn btn-primary" onclick="copyJSON()">📋 Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <script>
+    // In-memory data storage
+    let dataStore = {
+      bhajans: [],
+      shlokas: [],
+      prayers: [],
+      wisdom: { topics: [] },
+      gita: { chapters: [] },
+      upanishads: []
+    };
+
+    // Tab switching
+    function showTab(tabName) {
+      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+      document.getElementById('tab-' + tabName).style.display = 'block';
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Form handlers
+    document.getElementById('bhajan-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const bhajan = {
+        id: dataStore.bhajans.length + 1,
+        slug: form.slug.value,
+        title_hindi: form.title_hindi.value,
+        title_roman: form.title_roman.value,
+        deity: form.deity.value,
+        language: form.language.value,
+        duration_minutes: parseInt(form.duration_minutes.value) || 0,
+        story: form.story.value,
+        story_hindi: form.story_hindi.value,
+        significance: form.significance.value,
+        benefits: form.benefits.value.split('\n').filter(b => b.trim()),
+        verses: [],
+        featured: false,
+        priority: dataStore.bhajans.length + 1
+      };
+      dataStore.bhajans.push(bhajan);
+      form.reset();
+      renderBhajanList();
+      alert('Bhajan added! Click Export JSON to get the data.');
+    });
+
+    document.getElementById('shloka-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const shloka = {
+        id: dataStore.shlokas.length + 1,
+        slug: form.slug.value,
+        title_hindi: form.title_hindi.value,
+        title_english: form.title_english.value,
+        source: form.source.value,
+        deity: form.deity.value,
+        sanskrit: form.sanskrit.value,
+        roman: form.roman.value,
+        hindi: form.hindi.value,
+        english: form.english.value,
+        commentary_english: form.commentary_english.value,
+        commentary_hindi: form.commentary_hindi.value,
+        word_by_word: [],
+        tags: [],
+        priority: dataStore.shlokas.length + 1
+      };
+      dataStore.shlokas.push(shloka);
+      form.reset();
+      alert('Shloka added! Click Export JSON to get the data.');
+    });
+
+    document.getElementById('wisdom-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const topic = {
+        id: form.id.value,
+        slug: form.slug.value,
+        title_english: form.title_english.value,
+        title_hindi: form.title_hindi.value,
+        intro_english: form.intro_english.value,
+        intro_hindi: form.intro_hindi.value,
+        quotes: []
+      };
+      dataStore.wisdom.topics.push(topic);
+      form.reset();
+      renderWisdomList();
+      alert('Topic added! Click Export JSON to get the data.');
+    });
+
+    document.getElementById('gita-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const chapter = parseInt(form.chapter.value);
+      const verseNum = parseInt(form.verse.value);
+      
+      let chapterData = dataStore.gita.chapters.find(c => c.chapter === chapter);
+      if (!chapterData) {
+        chapterData = { chapter: chapter, verses: [] };
+        dataStore.gita.chapters.push(chapterData);
+      }
+      
+      const verse = {
+        verse: verseNum,
+        sanskrit: form.sanskrit.value,
+        roman: form.roman.value,
+        hindi_translation: form.hindi_translation.value,
+        english_translation: form.english_translation.value,
+        english_commentary: form.english_commentary.value
+      };
+      chapterData.verses.push(verse);
+      chapterData.verses.sort((a,b) => a.verse - b.verse);
+      form.reset();
+      alert('Verse added! Click Export JSON to get the data.');
+    });
+
+    function renderBhajanList() {
+      const list = document.getElementById('bhajan-list');
+      list.innerHTML = dataStore.bhajans.map(b => `
+        <div class="data-item">
+          <div class="data-item-info">
+            <div class="data-item-title">${b.title_hindi}</div>
+            <div class="data-item-meta">${b.deity} • ${b.language}</div>
+          </div>
+          <div class="data-item-actions">
+            <button class="btn btn-danger" onclick="deleteBhajan('${b.slug}')">🗑️</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function deleteBhajan(slug) {
+      dataStore.bhajans = dataStore.bhajans.filter(b => b.slug !== slug);
+      renderBhajanList();
+    }
+
+    function renderWisdomList() {
+      const list = document.getElementById('wisdom-list');
+      list.innerHTML = dataStore.wisdom.topics.map(t => `
+        <div class="data-item">
+          <div class="data-item-info">
+            <div class="data-item-title">${t.title_english}</div>
+            <div class="data-item-meta">${t.quotes.length} quotes</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function exportJSON(type) {
+      let json;
+      switch(type) {
+        case 'bhajans': json = JSON.stringify(dataStore.bhajans, null, 2); break;
+        case 'shlokas': json = JSON.stringify(dataStore.shlokas, null, 2); break;
+        case 'prayers': json = JSON.stringify(dataStore.prayers, null, 2); break;
+        case 'wisdom': json = JSON.stringify(dataStore.wisdom, null, 2); break;
+        case 'gita': json = JSON.stringify(dataStore.gita, null, 2); break;
+        case 'upanishads': json = JSON.stringify(dataStore.upanishads, null, 2); break;
+      }
+      document.getElementById('json-output').textContent = json;
+      document.getElementById('export-modal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('export-modal').classList.remove('open');
+    }
+
+    function copyJSON() {
+      const text = document.getElementById('json-output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      });
+    }
+
+    // Load existing data from JSON files
+    async function loadExistingData() {
+      try {
+        const [bhajans, shlokas, wisdom, gita] = await Promise.all([
+          fetch('/data/bhajans.json').then(r => r.json()).catch(() => []),
+          fetch('/data/shlokas.json').then(r => r.json()).catch(() => []),
+          fetch('/data/wisdom.json').then(r => r.json()).catch(() => ({ topics: [] })),
+          fetch('/data/gita.json').then(r => r.json()).catch(() => ({ chapters: [] }))
+        ]);
+        dataStore.bhajans = bhajans;
+        dataStore.shlokas = shlokas;
+        dataStore.wisdom = wisdom;
+        dataStore.gita = gita;
+        renderBhajanList();
+        renderWisdomList();
+      } catch(e) {
+        console.log('Could not load existing data:', e);
+      }
+    }
+
+    loadExistingData();
+  </script>
+</body>
+</html>

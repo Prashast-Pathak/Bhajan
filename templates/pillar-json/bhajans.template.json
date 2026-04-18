@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "slug": "hanuman-chalisa",
+    "title_hindi": "हनुमान चालीसा",
+    "title_roman": "Hanuman Chalisa",
+    "title_english": "Forty Verses in Praise of Hanuman",
+    "deity": "Hanuman",
+    "deity_color": "#EA580C",
+    "language": "Awadhi",
+    "festival": ["Hanuman Jayanti"],
+    "occasion": "Daily prayer",
+    "timing": "Morning and evening",
+    "raga": "Bhairav",
+    "composer": "Goswami Tulsidas",
+    "duration_minutes": 12,
+    "tags": ["hanuman", "chalisa", "devotion"],
+    "topics": ["courage", "devotion"],
+    "story": "Historical and devotional background in English.",
+    "story_hindi": "भजन की पृष्ठभूमि हिंदी में।",
+    "significance": "Why this bhajan is recited.",
+    "significance_hindi": "इस भजन का महत्व।",
+    "benefits": ["Traditionally recited for inner strength."],
+    "when_to_sing": {
+      "festival": ["Hanuman Jayanti"],
+      "time": ["Morning"],
+      "occasion": ["Before important work"]
+    },
+    "featured": true,
+    "priority": 1,
+    "verses": [
+      {
+        "type": "doha",
+        "label_hindi": "दोहा",
+        "label_english": "Doha",
+        "lines": [
+          {
+            "hindi": "श्रीगुरु चरन सरोज रज...",
+            "roman": "Shri Guru Charan Saroj Raj...",
+            "hindi_meaning": "अर्थ हिंदी में",
+            "english": "Meaning in English"
+          }
+        ]
+      }
+    ],
+    "related": ["jai-ganesh-deva"],
+    "seo": {
+      "meta_title": "Hanuman Chalisa Lyrics with Meaning",
+      "meta_description": "Read Hanuman Chalisa in Hindi, Roman and English with meaning.",
+      "keywords": ["hanuman chalisa", "lyrics", "meaning"]
+    }
+  }
+]

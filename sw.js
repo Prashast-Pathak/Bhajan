@@ -16,12 +16,13 @@ const STATIC_ASSETS = [
   '/about.html',
   '/privacy-policy.html',
   '/contact.html',
-  '/bhajans.json',
-  '/gita.json',
-  '/shlokas.json',
-  '/prayers.json',
-  '/upanishads.json',
-  '/wisdom.json',
+  '/data/bhajans.json',
+  '/data/gita.json',
+  '/data/shlokas.json',
+  '/data/prayers.json',
+  '/data/upanishads.json',
+  '/data/wisdom.json',
+  '/manifest.json',
   'https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap'
 ];
 

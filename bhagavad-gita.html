@@ -39,6 +39,7 @@
       --border: #D9CDBA;
       --krishna: #7C3AED;
     }
+    body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
 
     * { box-sizing: border-box; }
 
@@ -345,6 +346,20 @@
       });
     }
   </script>
+  <script>
+    let fontSizeIdx = 2; // normal
+    const fontSizes = ['fs-small', 'fs-normal', 'fs-large', 'fs-xlarge'];
+    document.getElementById('font-toggle').addEventListener('click', () => {
+      document.body.classList.remove(...fontSizes);
+      fontSizeIdx = (fontSizeIdx + 1) % fontSizes.length;
+      document.body.classList.add(fontSizes[fontSizeIdx]);
+    });
+    if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
+    document.getElementById('dark-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+    });
+  </script>
 
 </head>
 
@@ -374,6 +389,8 @@
 
     <!-- Icons -->
     <div class="flex gap-2">
+      <button id="font-toggle" class="toggle-btn" aria-label="Increase font size" title="Font size">अ</button>
+      <button id="dark-toggle" class="toggle-btn" aria-label="Dark mode" title="Dark mode">🌙</button>
       <button id="search-toggle" class="toggle-btn" onclick="toggleSearch()" aria-label="Search" title="Search">🔍</button>
       <a href="favorites.html" class="toggle-btn md:hidden">❤️</a>
     </div>

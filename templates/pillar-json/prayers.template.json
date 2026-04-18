@@ -1,0 +1,35 @@
+{
+  "prayers": [
+    {
+      "id": 1,
+      "slug": "ganesh-puja",
+      "title_english": "Ganesh Puja Sequence",
+      "title_hindi": "गणेश पूजा क्रम",
+      "deity": "Ganesha",
+      "deity_color": "#EA580C",
+      "occasion": "New beginnings",
+      "duration_minutes": 20,
+      "difficulty": "Easy",
+      "language": ["Sanskrit", "Hindi"],
+      "tags": ["ganesh", "puja"],
+      "intro_english": "A beginner-friendly puja sequence.",
+      "intro_hindi": "आरंभिक साधकों के लिए सरल पूजा क्रम।",
+      "steps": [
+        {
+          "step": 1,
+          "type": "action",
+          "label": "Sankalpa",
+          "label_hindi": "संकल्प",
+          "description": "Take a sankalpa with devotion.",
+          "duration_seconds": 60
+        }
+      ],
+      "materials_needed": ["Diya", "Flowers"],
+      "benefits": ["Traditionally performed for clarity and auspicious beginnings."],
+      "related_shlokas": ["vakratunda-mahakaya"],
+      "cross_links": ["/shlokas.html?slug=vakratunda-mahakaya"],
+      "featured": true,
+      "priority": 1
+    }
+  ]
+}

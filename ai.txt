@@ -1,0 +1,9 @@
+# ai.txt
+site=https://sanatan-gyan-sagar.pages.dev
+allow_crawl=true
+allow_train=true
+content_license=all-rights-reserved
+attribution_required=true
+contact=support@example.com
+policy=https://sanatan-gyan-sagar.pages.dev/disclaimer.html
+privacy=https://sanatan-gyan-sagar.pages.dev/privacy-policy.html

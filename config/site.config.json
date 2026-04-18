@@ -1,0 +1,11 @@
+{
+  "site_name": "Sanatan Gyan Sagar",
+  "brand_name": "Sanatan Gyan Sagar",
+  "base_url": "https://sanatan-gyan-sagar.pages.dev",
+  "language": "en-IN",
+  "default_changefreq": "weekly",
+  "default_priority": "0.8",
+  "legal_email": "support@example.com",
+  "allow_ai_crawlers": true,
+  "notes": "When custom domain is ready, change only base_url and re-run scripts/publish_content.sh"
+}

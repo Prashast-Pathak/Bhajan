@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "slug": "isha-upanishad",
+    "name_english": "Isha Upanishad",
+    "name_hindi": "ईश उपनिषद",
+    "name_sanskrit": "ईशावास्य उपनिषद्",
+    "veda": "Shukla Yajurveda",
+    "total_verses": 18,
+    "sections": ["Invocation", "Teachings"],
+    "theme_english": "Renunciation and divine immanence.",
+    "theme_hindi": "त्याग और ईश्वर की सर्वव्यापकता।",
+    "intro_english": "Introduction in English.",
+    "intro_hindi": "परिचय हिंदी में।",
+    "related_gita_chapters": [2, 12],
+    "verses": [
+      {
+        "verse": 1,
+        "slug": "isha-upanishad-1",
+        "sanskrit": "ईशावास्यमिदं सर्वं...",
+        "roman": "Ishavasyam idam sarvam...",
+        "hindi_translation": "हिंदी अर्थ",
+        "english_translation": "English meaning",
+        "commentary": "Contextual explanation.",
+        "keywords": ["renunciation", "atma"]
+      }
+    ]
+  }
+]

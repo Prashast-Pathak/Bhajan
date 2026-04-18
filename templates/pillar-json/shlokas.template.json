@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "slug": "gayatri-mantra",
+    "title_english": "Gayatri Mantra",
+    "title_hindi": "गायत्री मंत्र",
+    "deity": "Savita",
+    "occasion": "Daily sunrise prayer",
+    "shloka_number": "Rigveda 3.62.10",
+    "source": "Rigveda",
+    "source_ref": "Rigveda 3.62.10",
+    "source_color": "#7C3AED",
+    "sanskrit": "ॐ भूर्भुवः स्वः...",
+    "roman": "Om bhur bhuvah svah...",
+    "hindi": "हिंदी अर्थ",
+    "english": "English meaning",
+    "word_by_word": [
+      {"word": "भूः", "meaning": "Earthly realm"}
+    ],
+    "commentary_english": "Context and interpretation.",
+    "commentary_hindi": "प्रासंगिक व्याख्या।",
+    "audio_hint": "Calm and medium pace",
+    "tags": ["gayatri", "veda"],
+    "related_shlokas": ["mahamrityunjaya-mantra"],
+    "priority": 1
+  }
+]

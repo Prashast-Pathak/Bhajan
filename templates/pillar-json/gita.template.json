@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-04-18",
+  "chapters": [
+    {
+      "chapter": 2,
+      "title_sanskrit": "सांख्ययोग",
+      "title_english": "The Yoga of Knowledge",
+      "title_hindi": "सांख्य योग",
+      "summary_hindi": "अध्याय का संक्षेप हिंदी में।",
+      "summary_english": "Chapter summary in English.",
+      "verse_count": 72,
+      "key_themes": ["duty", "equanimity"],
+      "verses": [
+        {
+          "verse": 47,
+          "slug": "gita-2-47",
+          "sanskrit": "कर्मण्येवाधिकारस्ते...",
+          "roman": "Karmany evadhikaraste...",
+          "word_meanings": [{"word": "कर्म", "meaning": "Action"}],
+          "hindi_translation": "हिंदी अनुवाद",
+          "english_translation": "English translation",
+          "hindi_commentary": "हिंदी टीका",
+          "english_commentary": "English commentary",
+          "life_application": "How to apply in daily life.",
+          "topics": ["focus", "detachment"],
+          "famous": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# llms.txt
+Site: Sanatan Gyan Sagar
+Base URL: https://sanatan-gyan-sagar.pages.dev
+Primary language: Hindi, Sanskrit, English
+Purpose: Spiritual and educational reference content only.
+
+Key sections:
+- https://sanatan-gyan-sagar.pages.dev/bhajans.html
+- https://sanatan-gyan-sagar.pages.dev/bhagavad-gita.html
+- https://sanatan-gyan-sagar.pages.dev/shlokas.html
+- https://sanatan-gyan-sagar.pages.dev/prayers.html
+- https://sanatan-gyan-sagar.pages.dev/upanishads.html
+- https://sanatan-gyan-sagar.pages.dev/wisdom.html
+
+Policy notes:
+- No medical, legal, or financial guarantees.
+- Content is devotional and educational.
+- Refer to https://sanatan-gyan-sagar.pages.dev/disclaimer.html and https://sanatan-gyan-sagar.pages.dev/privacy-policy.html
