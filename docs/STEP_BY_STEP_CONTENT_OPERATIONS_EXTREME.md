@@ -10,6 +10,7 @@ When you add content through backend API:
 4. Programmatic SEO pages regenerate automatically.
 5. `sitemap.xml`, `robots.txt`, `llms.txt`, `ai.txt` regenerate automatically.
 6. Matching Google Sheet webhook receives the content payload automatically.
+7. Ingest audit log is appended automatically to `docs/INGEST_AUDIT_LOG.ndjson`.
 
 No manual sitemap editing needed.
 
@@ -104,7 +105,21 @@ curl -s -X POST http://127.0.0.1:8090/api/content/ingest \
 
 Expected response:
 - `status: ok`
-- `message: JSON updated; publish + sheet sync queued in background`
+- `message: JSON updated; publish + SEO + sheet sync queued in background`
+
+### Step B2: Insert content in bulk (recommended for speed)
+```bash
+curl -s -X POST http://127.0.0.1:8090/api/content/batch-ingest \
+  -H "Content-Type: application/json" \
+  -d '{
+    "pillar":"bhajans",
+    "replace_by_slug":true,
+    "items":[
+      { "slug":"sample-bhajan-1", "title_hindi":"नमूना भजन 1" },
+      { "slug":"sample-bhajan-2", "title_hindi":"नमूना भजन 2" }
+    ]
+  }'
+```
 
 ### Step C: Verify auto outputs
 Run:
@@ -126,6 +141,12 @@ Expected logs:
 - `robots.txt`
 - `llms.txt`
 - `ai.txt`
+- `docs/INGEST_AUDIT_LOG.ndjson`
+
+### Step E: Verify automatic sheet + publish status
+```bash
+curl -s "http://127.0.0.1:8090/api/content/audit-log?limit=20"
+```
 
 ## 4. Deploy updates
 ```bash
@@ -155,4 +176,3 @@ This updates all crawl files to the new domain.
 - Check backend logs.
 - Re-run `bash scripts/publish_content.sh`.
 - Validate API health: `curl -s http://127.0.0.1:8090/api/health`.
-

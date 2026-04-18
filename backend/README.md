@@ -4,6 +4,7 @@ This backend gives you one API to insert content into any pillar. When content i
 1. JSON is updated in `/data`
 2. Publish pipeline runs (`scripts/publish_content.sh`)
 3. Google Sheets webhook is called automatically (if configured)
+4. Audit log entry is appended to `docs/INGEST_AUDIT_LOG.ndjson`
 
 ## Run
 
@@ -28,8 +29,24 @@ Request body:
 }
 ```
 
+### `POST /api/content/batch-ingest`
+Request body:
+```json
+{
+  "pillar": "bhajans",
+  "items": [
+    {"slug": "slug-1", "title_hindi": "..."},
+    {"slug": "slug-2", "title_hindi": "..."}
+  ],
+  "replace_by_slug": true
+}
+```
+
 ### `GET /api/content/counts`
 Returns counts from all six pillars.
+
+### `GET /api/content/audit-log?limit=50`
+Returns latest automation records (publish + sheet sync status).
 
 ## Google Sheets Auto Sync (6 Sheets)
 Set these env vars before running backend:
