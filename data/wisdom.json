@@ -1129,22 +1129,28 @@
     {
       "id": "w011",
       "slug": "morning-prayer",
-      "title_hindi": "प्रातःकाल के विचार",
       "title_english": "Morning Wisdom",
-      "icon": "☀️",
-      "intro_hindi": "दिन की शुरुआत के लिए दिव्य विचार।",
+      "title_hindi": "प्रातःकाल के विचार",
       "intro_english": "Divine thoughts for starting your day.",
-      "quotes": []
+      "intro_hindi": "दिन की शुरुआत के लिए दिव्य विचार।",
+      "seo_title": "",
+      "seo_description": "",
+      "related_topics": [],
+      "quotes": [],
+      "icon": "☀️"
     },
     {
       "id": "w012",
       "slug": "forgiveness",
-      "title_hindi": "क्षमा",
       "title_english": "Forgiveness",
-      "icon": "🕊️",
-      "intro_hindi": "क्षमा और शांति का महत्व।",
+      "title_hindi": "क्षमा",
       "intro_english": "The power of and importance of forgiveness.",
-      "quotes": []
+      "intro_hindi": "क्षमा और शांति का महत्व।",
+      "seo_title": "",
+      "seo_description": "",
+      "related_topics": [],
+      "quotes": [],
+      "icon": "🕊️"
     }
   ]
 }

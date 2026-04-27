@@ -39,7 +39,19 @@
       --border: #D9CDBA;
       --krishna: #7C3AED;
     }
-    body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
+        body.dark-mode {
+      --bg: #1a1a1a;
+      --surface: #2d2d2d;
+      --surface2: #3d3d3d;
+      --surface-2: #3d3d3d;
+      --text: #e8e8e8;
+      --text-sec: #b8b8b8;
+      --text-muted: #888888;
+      --border: #444444;
+      --maroon: #ff8e8e;
+      --saffron: #f5a666;
+      --gold: #dfb962;
+    }
 
     * { box-sizing: border-box; }
 
@@ -347,20 +359,127 @@
     }
   </script>
   <script>
-    let fontSizeIdx = 2; // normal
-    const fontSizes = ['fs-small', 'fs-normal', 'fs-large', 'fs-xlarge'];
-    document.getElementById('font-toggle').addEventListener('click', () => {
-      document.body.classList.remove(...fontSizes);
-      fontSizeIdx = (fontSizeIdx + 1) % fontSizes.length;
-      document.body.classList.add(fontSizes[fontSizeIdx]);
-    });
-    if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
-    document.getElementById('dark-toggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+    document.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
+      
+      const darkToggleBtn = document.getElementById('darkToggle');
+      if (darkToggleBtn) {
+        darkToggleBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+          localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+        });
+      }
     });
   </script>
 
+<style id="premium-header-styles">
+  /* ── HEADER ── */
+  .main-header {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(245,240,232,0.92) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    padding: 0 20px;
+  }
+  body.dark-mode .main-header {
+    background: rgba(22,22,22,0.92) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .main-header .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    height: 64px;
+  }
+
+  /* Logo */
+  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+  .logo-om {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--saffron), var(--maroon));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-hindi); font-size: 20px; color: #fff;
+    flex-shrink: 0;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-title { font-family: var(--font-hindi); font-size: 17px; font-weight: 700; color: var(--maroon); line-height: 1.2; }
+  .logo-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.3px; }
+
+  /* Desktop Nav — center column */
+  .desktop-nav {
+    display: flex; gap: 2px; align-items: center; justify-content: center;
+  }
+  .desktop-nav a {
+    text-decoration: none; color: var(--text-sec); font-size: 13px; font-weight: 600;
+    padding: 7px 11px; border-radius: 8px; transition: all 0.18s;
+    white-space: nowrap;
+  }
+  .desktop-nav a:hover { background: var(--surface); color: var(--saffron); }
+  .desktop-nav a.active { background: var(--surface2); color: var(--saffron); }
+
+  /* Icons — right column */
+  .header-icons { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+  .header-icon-btn {
+    background: transparent; border: 1px solid transparent; cursor: pointer;
+    font-size: 17px; width: 38px; height: 38px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--maroon); transition: all 0.18s; flex-shrink: 0;
+  }
+  .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
+
+  /* Hamburger */
+  .hamburger-btn {
+    background: transparent; border: none; color: var(--text);
+    cursor: pointer; display: none; align-items: center; justify-content: center;
+    padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
+  }
+  .hamburger-btn:hover { background: var(--surface2); }
+
+  /* Mobile Menu */
+  .mobile-menu-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    z-index: 1999; opacity: 0; pointer-events: none; transition: 0.3s ease;
+  }
+  .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
+  .mobile-menu-drawer {
+    position: fixed; top: 0; left: -300px; bottom: 0; width: 280px;
+    background: var(--bg); z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex; flex-direction: column;
+  }
+  .mobile-menu-drawer.active { left: 0; }
+  .mobile-menu-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 24px; border-bottom: 1px solid var(--border);
+  }
+  .close-menu-btn { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; }
+  .mobile-menu-links { padding: 20px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+  .mobile-menu-links a {
+    text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600;
+    padding: 11px 14px; border-radius: 8px; transition: 0.18s;
+  }
+  .mobile-menu-links a:hover { background: var(--surface); color: var(--saffron); }
+  .menu-divider { height: 1px; background: var(--border); margin: 8px 0; }
+
+  /* Chanting mode — hide all meaning blocks */
+  body.chanting-mode .meaning-section,
+  body.chanting-mode .line-meaning-hindi,
+  body.chanting-mode .line-meaning-en,
+  body.chanting-mode .line-meaning-label { display: none !important; }
+
+  @media (max-width: 960px) {
+    .desktop-nav { display: none !important; }
+    .hamburger-btn { display: flex !important; }
+    .logo-text { display: none; }
+    .main-header .header-inner { grid-template-columns: auto auto; }
+    .chanting-btn { display: none !important; }
+  }
+</style>
 </head>
 
 <body class="fs-normal pb-24">
@@ -368,46 +487,76 @@
 <!-- ═══════════════════════════════════════════
      HEADER
 ══════════════════════════════════════════════ -->
-<header class="sticky top-0 z-50 border-b" style="background:var(--bg);border-color:var(--border);">
-  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-    <!-- Logo -->
-    <a href="/" class="flex items-center gap-2 no-underline">
-      <span class="text-2xl">🕉️</span>
-      <div>
-        <div class="font-bold text-lg leading-tight" style="color:var(--maroon);">सनातन ज्ञान सागर</div>
-        <div class="text-xs" style="color:var(--text-muted);">Sanatan Gyan Sagar</div>
-      </div>
-    </a>
+<header class="main-header">
+  <div class="header-inner">
+    <!-- Left: Logo + Hamburger -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <a href="index.html" class="logo-link">
+        <div class="logo-om">ॐ</div>
+        <div class="logo-text">
+          <span class="logo-title" style="color:var(--krishna);">भगवद गीता</span>
+          <span class="logo-sub">Sanatan Gyan Sagar</span>
+        </div>
+      </a>
+    </div>
 
-    <!-- Desktop nav -->
-    <nav class="hidden md:flex gap-5 text-sm font-semibold" style="color:var(--text-sec);">
-      <a href="bhajans.json" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">🪔 Bhajans</a>
-      <a href="bhagavad-gita.html" style="color:var(--krishna);text-decoration:none;font-weight:700;">📖 Gita</a>
-      <a href="wisdom.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">💬 Wisdom</a>
-      <a href="favorites.html" style="color:var(--text-sec);text-decoration:none;" onmouseover="this.style.color='var(--saffron)'" onmouseout="this.style.color='var(--text-sec)'">❤️ Saved</a>
+    <!-- Center: Desktop Nav -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="bhajans.html">Bhajans</a>
+      <a href="bhagavad-gita.html" class="active">Gita</a>
+      <a href="shlokas.html">Shlokas</a>
+      <a href="prayers.html">Prayers</a>
+      <a href="upanishads.html">Upanishads</a>
+      <a href="wisdom.html">Wisdom</a>
     </nav>
 
-    <!-- Icons -->
-    <div class="flex gap-2">
-      <button id="font-toggle" class="toggle-btn" aria-label="Increase font size" title="Font size">अ</button>
-      <button id="dark-toggle" class="toggle-btn" aria-label="Dark mode" title="Dark mode">🌙</button>
-      <button id="search-toggle" class="toggle-btn" onclick="toggleSearch()" aria-label="Search" title="Search">🔍</button>
-      <a href="favorites.html" class="toggle-btn md:hidden">❤️</a>
+    <!-- Right: Icons -->
+    <div class="header-icons">
+      <button class="header-icon-btn" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
+      <button class="header-icon-btn" onclick="window.location.href='favorites.html'" aria-label="Saved" title="Saved">❤️</button>
     </div>
   </div>
-
-  <!-- Search bar -->
-  <div id="search-bar" class="hidden px-4 py-2 border-t" style="border-color:var(--border);">
-    <input id="search-input" type="search"
-      placeholder="श्लोक, विषय खोजें... Search verses, topics..."
-      class="w-full text-base p-3 rounded-lg border-2 outline-none"
-      style="border-color:var(--border);background:white;color:var(--text);"
-      oninput="handleSearch(this.value)"
-      onfocus="this.style.borderColor='var(--krishna)'"
-      onblur="this.style.borderColor='var(--border)'">
-    <div id="search-results" class="hidden bg-white shadow-xl rounded-lg mt-1 overflow-hidden" style="border:1px solid var(--border);max-height:320px;overflow-y:auto;"></div>
-  </div>
 </header>
+
+<!-- Search bar -->
+<div id="search-bar" class="px-4 py-3 max-w-5xl mx-auto border-b" style="border-color:var(--border);">
+  <input id="search-input" type="search"
+    placeholder="श्लोक, विषय खोजें... Search verses, topics..."
+    class="w-full text-base p-3 rounded-lg border-2 outline-none"
+    style="border-color:var(--border);background:var(--surface);color:var(--text);"
+    oninput="handleSearch(this.value)"
+    onfocus="this.style.borderColor='var(--krishna)'"
+    onblur="this.style.borderColor='var(--border)'">
+  <div id="search-results" class="hidden bg-white shadow-xl rounded-lg mt-1 overflow-hidden" style="border:1px solid var(--border);max-height:320px;overflow-y:auto;background:var(--surface);"></div>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenuOverlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobileMenu" class="mobile-menu-drawer">
+  <div class="mobile-menu-header">
+    <div style="font-family:var(--font-hindi); font-weight:700; color:var(--krishna); font-size:18px;">
+      भगवद गीता
+    </div>
+    <button class="close-menu-btn" onclick="toggleMobileMenu()">×</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="index.html">🏠 Home</a>
+    <div class="menu-divider"></div>
+    <a href="bhajans.html">🪔 Bhajans</a>
+    <a href="bhagavad-gita.html" style="color:var(--krishna);">📖 Bhagavad Gita</a>
+    <a href="shlokas.html">🕉️ Shlokas</a>
+    <a href="prayers.html">🙏 Prayers</a>
+    <a href="upanishads.html">📜 Upanishads</a>
+    <a href="wisdom.html">💬 Wisdom</a>
+    <div class="menu-divider"></div>
+    <a href="favorites.html">❤️ Saved Favorites</a>
+  </div>
+</div>
+
 
 
 <!-- ═══════════════════════════════════════════
@@ -487,9 +636,9 @@ async function init() {
 
 function routePage() {
   const params = new URLSearchParams(window.location.search);
-  const chapter = params.get('chapter');
-  const verse = params.get('verse');
-  const chapterOnly = params.get('chapter') && !params.get('verse');
+  const chapter = window.__PRERENDERED_CHAPTER__ || params.get('chapter');
+  const verse = window.__PRERENDERED_VERSE__ || params.get('verse');
+  const chapterOnly = chapter && !verse;
 
   if (chapter && verse) {
     const ch = gitaData.chapters.find(c => c.chapter == chapter);
@@ -1064,5 +1213,19 @@ function show404() {
 }
 </script>
 
+
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  if(menu.classList.contains('active')) {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+  } else {
+    menu.classList.add('active');
+    overlay.classList.add('active');
+  }
+}
+</script>
 </body>
 </html>

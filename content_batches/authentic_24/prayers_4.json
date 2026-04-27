@@ -1,0 +1,59 @@
+{
+  "pillar": "prayers",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "id": 3001,
+      "slug": "sandhya-vandanam",
+      "title_english": "Sandhya Vandanam",
+      "title_hindi": "संध्या वंदनम्",
+      "deity": "Surya / Gayatri",
+      "source_name": "Sandhya Vandanam paddhati",
+      "source_ref": "Traditional daily nitya-karma sequence",
+      "source_edition": "Sampradaya-specific manual",
+      "is_excerpt": true,
+      "excerpt_range": "beginner short sequence",
+      "verification_notes": "Keep sequence tradition-specific; no mixed paddhati."
+    },
+    {
+      "id": 3002,
+      "slug": "shiva-abhishek",
+      "title_english": "Shiva Abhishek Sequence",
+      "title_hindi": "शिव अभिषेक",
+      "deity": "Shiva",
+      "source_name": "Shiva Puja paddhati",
+      "source_ref": "Traditional abhisheka krama",
+      "source_edition": "Temple/manual tradition",
+      "is_excerpt": true,
+      "excerpt_range": "core steps only",
+      "verification_notes": "Avoid unsafe or non-householder ritual instructions."
+    },
+    {
+      "id": 3003,
+      "slug": "lakshmi-puja",
+      "title_english": "Lakshmi Puja Sequence",
+      "title_hindi": "लक्ष्मी पूजन",
+      "deity": "Lakshmi",
+      "source_name": "Lakshmi Puja paddhati",
+      "source_ref": "Traditional household puja sequence",
+      "source_edition": "Trusted puja manual",
+      "is_excerpt": true,
+      "excerpt_range": "festival-home sequence",
+      "verification_notes": "Beginner-safe steps only."
+    },
+    {
+      "id": 3004,
+      "slug": "ganesh-puja",
+      "title_english": "Ganesh Puja Sequence",
+      "title_hindi": "गणेश पूजन",
+      "deity": "Ganesha",
+      "source_name": "Ganesh Puja paddhati",
+      "source_ref": "Traditional invocation and offerings",
+      "source_edition": "Trusted puja manual",
+      "is_excerpt": true,
+      "excerpt_range": "short sequence",
+      "verification_notes": "Validate mantras and order against source."
+    }
+  ]
+}

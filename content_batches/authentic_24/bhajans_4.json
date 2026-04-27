@@ -1,0 +1,67 @@
+{
+  "pillar": "bhajans",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "id": 1001,
+      "slug": "bhaja-govindam",
+      "title_hindi": "भज गोविन्दम्",
+      "title_roman": "Bhaja Govindam",
+      "title_english": "Bhaja Govindam Hymn",
+      "deity": "Vishnu",
+      "composer": "Adi Shankaracharya",
+      "source_name": "Bhaja Govindam",
+      "source_ref": "Moha Mudgara verses",
+      "source_edition": "Traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full",
+      "verification_notes": "Use a published edition; keep exact text unchanged."
+    },
+    {
+      "id": 1002,
+      "slug": "aditya-hridayam",
+      "title_hindi": "आदित्य हृदय स्तोत्र",
+      "title_roman": "Aditya Hridayam",
+      "title_english": "Aditya Hridaya Stotram",
+      "deity": "Surya",
+      "composer": "Valmiki Ramayana tradition",
+      "source_name": "Valmiki Ramayana",
+      "source_ref": "Yuddha Kanda, Aditya Hridayam section",
+      "source_edition": "Critical/standard edition",
+      "is_excerpt": false,
+      "excerpt_range": "full stotram",
+      "verification_notes": "Verify sarga/verse numbering from chosen edition."
+    },
+    {
+      "id": 1003,
+      "slug": "ram-raksha-stotra",
+      "title_hindi": "राम रक्षा स्तोत्र",
+      "title_roman": "Rama Raksha Stotram",
+      "title_english": "Rama Protection Hymn",
+      "deity": "Rama",
+      "composer": "Budha Kaushika Rishi (traditional attribution)",
+      "source_name": "Rama Raksha Stotram",
+      "source_ref": "Traditional stotra text",
+      "source_edition": "Trusted published stotra collection",
+      "is_excerpt": false,
+      "excerpt_range": "full",
+      "verification_notes": "Keep transliteration aligned to original Sanskrit."
+    },
+    {
+      "id": 1004,
+      "slug": "ganapati-atharvashirsha",
+      "title_hindi": "गणपति अथर्वशीर्ष",
+      "title_roman": "Ganapati Atharvashirsha",
+      "title_english": "Ganapati Atharvashirsha Upanishad",
+      "deity": "Ganesha",
+      "composer": "Atharvashirsha tradition",
+      "source_name": "Ganapati Atharvashirsha",
+      "source_ref": "Atharva Vedic minor upanishadic text",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full",
+      "verification_notes": "Use standard Devanagari text from trusted edition."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // सनातन ज्ञान सागर — Service Worker
 // Enables offline access to cached pages and content
 
-const CACHE_NAME = 'sgs-cache-v1';
+const CACHE_NAME = 'sgs-cache-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -28,11 +28,12 @@ const STATIC_ASSETS = [
 
 // Install: cache all static assets
 self.addEventListener('install', event => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       console.log('[SW] Caching static assets');
       return cache.addAll(STATIC_ASSETS);
-    }).then(() => self.skipWaiting())
+    }).catch(err => console.error('[SW] Cache install error:', err))
   );
 });
 
@@ -41,9 +42,11 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => {
-          console.log('[SW] Deleting old cache:', k);
-          return caches.delete(k);
+        keys.map(k => {
+          if (k !== CACHE_NAME) {
+            console.log('[SW] Deleting old cache:', k);
+            return caches.delete(k);
+          }
         })
       )
     ).then(() => self.clients.claim())

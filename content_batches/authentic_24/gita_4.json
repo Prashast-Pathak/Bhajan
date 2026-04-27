@@ -1,0 +1,51 @@
+{
+  "pillar": "gita",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "chapter": 2,
+      "verse": 14,
+      "slug": "gita-2-14",
+      "source_name": "Bhagavad Gita",
+      "source_ref": "2.14",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse context",
+      "verification_notes": "Use exact Sanskrit and faithful translations."
+    },
+    {
+      "chapter": 2,
+      "verse": 48,
+      "slug": "gita-2-48",
+      "source_name": "Bhagavad Gita",
+      "source_ref": "2.48",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse context",
+      "verification_notes": "Ensure transliteration uses consistent IAST/plain scheme."
+    },
+    {
+      "chapter": 6,
+      "verse": 5,
+      "slug": "gita-6-5",
+      "source_name": "Bhagavad Gita",
+      "source_ref": "6.5",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse context",
+      "verification_notes": "No invented commentary claims."
+    },
+    {
+      "chapter": 12,
+      "verse": 15,
+      "slug": "gita-12-15",
+      "source_name": "Bhagavad Gita",
+      "source_ref": "12.15",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse context",
+      "verification_notes": "Keep practical life application grounded and non-absolute."
+    }
+  ]
+}

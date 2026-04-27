@@ -1,0 +1,55 @@
+{
+  "pillar": "wisdom",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "id": "w1001",
+      "slug": "anxiety",
+      "title_english": "Anxiety and Worry",
+      "title_hindi": "चिंता और व्याकुलता",
+      "source_name": "Scripture-backed wisdom compilation",
+      "source_ref": "Bhagavad Gita + Upanishad references",
+      "source_edition": "Trusted Sanskrit source + standard translations",
+      "is_excerpt": true,
+      "excerpt_range": "selected authentic verses only",
+      "verification_notes": "Every quote must map to exact source_ref and source_line_index."
+    },
+    {
+      "id": "w1002",
+      "slug": "anger",
+      "title_english": "Anger Management",
+      "title_hindi": "क्रोध प्रबंधन",
+      "source_name": "Scripture-backed wisdom compilation",
+      "source_ref": "Bhagavad Gita references",
+      "source_edition": "Trusted Sanskrit source + standard translations",
+      "is_excerpt": true,
+      "excerpt_range": "selected authentic verses only",
+      "verification_notes": "No fabricated quote lines; cite chapter/verse for each quote."
+    },
+    {
+      "id": "w1003",
+      "slug": "failure",
+      "title_english": "Coping with Failure",
+      "title_hindi": "असफलता से उबरना",
+      "source_name": "Scripture-backed wisdom compilation",
+      "source_ref": "Bhagavad Gita references",
+      "source_edition": "Trusted Sanskrit source + standard translations",
+      "is_excerpt": true,
+      "excerpt_range": "selected authentic verses only",
+      "verification_notes": "Applications must be practical and non-deterministic."
+    },
+    {
+      "id": "w1004",
+      "slug": "grief",
+      "title_english": "Grief and Loss",
+      "title_hindi": "शोक और विरह",
+      "source_name": "Scripture-backed wisdom compilation",
+      "source_ref": "Bhagavad Gita + Upanishad references",
+      "source_edition": "Trusted Sanskrit source + standard translations",
+      "is_excerpt": true,
+      "excerpt_range": "selected authentic verses only",
+      "verification_notes": "Use compassionate tone, no absolutist claims."
+    }
+  ]
+}

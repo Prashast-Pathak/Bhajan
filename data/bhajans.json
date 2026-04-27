@@ -6,18 +6,12 @@
     "title_roman": "Hanuman Chalisa",
     "title_english": "Forty Verses in Praise of Hanuman",
     "deity": "Hanuman",
-    "deity_color": "#EA580C",
-    "language": "Awadhi",
-    "festival": [
-      "Hanuman Jayanti",
-      "Diwali",
-      "Navratri"
-    ],
-    "occasion": "Daily Prayer, Tuesday & Saturday Worship",
-    "timing": "Morning and Evening",
+    "duration_minutes": 12,
     "raga": "Bhairav (Morning), Bhairavi (Evening)",
     "composer": "Goswami Tulsidas",
-    "duration_minutes": 12,
+    "language": "Awadhi",
+    "timing": "Morning and Evening",
+    "occasion": "Daily Prayer, Tuesday & Saturday Worship",
     "tags": [
       "hanuman",
       "chalisa",
@@ -36,18 +30,12 @@
       "health",
       "fear removal"
     ],
-    "story": "The Hanuman Chalisa was composed by the great saint-poet Goswami Tulsidas in the 16th century during the reign of the Mughal Emperor Akbar. According to popular legend, Tulsidas was imprisoned by Emperor Akbar when he refused to demonstrate his powers. It is said that Tulsidas composed the Hanuman Chalisa and prayed to Lord Hanuman, who then sent an army of monkeys to terrorize the Mughal court, forcing Akbar to release the saint. However, the deeper spiritual reason for composing the Chalisa was Tulsidas's immense love and devotion for Lord Ram, and Hanuman as the greatest devotee of Ram. Tulsidas composed this in simple Awadhi language so that common people, not just Sanskrit scholars, could recite it and receive divine blessings. The word 'Chalisa' means forty, referring to the forty chaupai verses in the hymn. Each verse reveals a different attribute of Lord Hanuman — his physical form, his divine knowledge, his feats of strength, his unparalleled devotion to Lord Ram, and his ability to remove all obstacles and suffering from the lives of his devotees.",
-    "story_hindi": "हनुमान चालीसा की रचना महान संत-कवि गोस्वामी तुलसीदास ने 16वीं शताब्दी में मुगल सम्राट अकबर के शासनकाल में की थी। एक प्रसिद्ध किंवदंती के अनुसार, जब तुलसीदास ने अपनी शक्तियां दिखाने से इनकार किया, तो अकबर ने उन्हें कैद करवा दिया। तुलसीदास ने हनुमान चालीसा की रचना की और हनुमान जी से प्रार्थना की। तब हनुमान जी ने मुगल दरबार में वानरों की सेना भेजी, और अकबर को उन्हें मुक्त करना पड़ा। तुलसीदास ने इसे सरल अवधी भाषा में इसलिए लिखा ताकि आम जनता भी इसे पढ़ सके। 'चालीसा' शब्द का अर्थ है चालीस, जो इस स्तुति की चालीस चौपाइयों को संदर्भित करता है।",
-    "significance": "The Hanuman Chalisa is the most widely recited Hindu prayer in the world, chanted by hundreds of millions of devotees every day. It is scientifically structured — the 40 verses systematically praise Hanuman's form, qualities, feats, and grace. Reciting it is believed to grant courage in times of fear, protection from evil forces, health in times of illness, success in difficult endeavors, and the supreme blessing of Ram's name. The Chalisa is also a condensed biography of Hanuman's life — from his birth to his legendary feats in the Ramayana.",
-    "significance_hindi": "हनुमान चालीसा दुनिया में सबसे अधिक पढ़ी जाने वाली हिंदू प्रार्थना है। इसे प्रतिदिन करोड़ों भक्त पढ़ते हैं। माना जाता है कि इसके पाठ से भय दूर होता है, बुरी शक्तियों से रक्षा होती है, बीमारी में स्वास्थ्य मिलता है, और कठिन कार्यों में सफलता प्राप्त होती है। यह हनुमान जी के जीवन का संक्षिप्त जीवनचरित भी है।",
-    "benefits": [
-      "Removes fear and gives immense courage",
-      "Protects from evil spirits and negative energies",
-      "Grants good health and removes disease",
-      "Brings success in difficult endeavors",
-      "Bestows wisdom and removes ignorance",
-      "Fulfills righteous desires",
-      "Grants liberation from the cycle of birth and death"
+    "priority": 1,
+    "featured": true,
+    "festival": [
+      "Hanuman Jayanti",
+      "Diwali",
+      "Navratri"
     ],
     "when_to_sing": {
       "festival": [
@@ -71,8 +59,31 @@
         "Morning and evening puja"
       ]
     },
-    "featured": true,
-    "priority": 1,
+    "story": "The Hanuman Chalisa was composed by the great saint-poet Goswami Tulsidas in the 16th century during the reign of the Mughal Emperor Akbar. According to popular legend, Tulsidas was imprisoned by Emperor Akbar when he refused to demonstrate his powers. It is said that Tulsidas composed the Hanuman Chalisa and prayed to Lord Hanuman, who then sent an army of monkeys to terrorize the Mughal court, forcing Akbar to release the saint. However, the deeper spiritual reason for composing the Chalisa was Tulsidas's immense love and devotion for Lord Ram, and Hanuman as the greatest devotee of Ram. Tulsidas composed this in simple Awadhi language so that common people, not just Sanskrit scholars, could recite it and receive divine blessings. The word 'Chalisa' means forty, referring to the forty chaupai verses in the hymn. Each verse reveals a different attribute of Lord Hanuman — his physical form, his divine knowledge, his feats of strength, his unparalleled devotion to Lord Ram, and his ability to remove all obstacles and suffering from the lives of his devotees.",
+    "story_hindi": "हनुमान चालीसा की रचना महान संत-कवि गोस्वामी तुलसीदास ने 16वीं शताब्दी में मुगल सम्राट अकबर के शासनकाल में की थी। एक प्रसिद्ध किंवदंती के अनुसार, जब तुलसीदास ने अपनी शक्तियां दिखाने से इनकार किया, तो अकबर ने उन्हें कैद करवा दिया। तुलसीदास ने हनुमान चालीसा की रचना की और हनुमान जी से प्रार्थना की। तब हनुमान जी ने मुगल दरबार में वानरों की सेना भेजी, और अकबर को उन्हें मुक्त करना पड़ा। तुलसीदास ने इसे सरल अवधी भाषा में इसलिए लिखा ताकि आम जनता भी इसे पढ़ सके। 'चालीसा' शब्द का अर्थ है चालीस, जो इस स्तुति की चालीस चौपाइयों को संदर्भित करता है।",
+    "significance": "The Hanuman Chalisa is the most widely recited Hindu prayer in the world, chanted by hundreds of millions of devotees every day. It is scientifically structured — the 40 verses systematically praise Hanuman's form, qualities, feats, and grace. Reciting it is believed to grant courage in times of fear, protection from evil forces, health in times of illness, success in difficult endeavors, and the supreme blessing of Ram's name. The Chalisa is also a condensed biography of Hanuman's life — from his birth to his legendary feats in the Ramayana.",
+    "significance_hindi": "हनुमान चालीसा दुनिया में सबसे अधिक पढ़ी जाने वाली हिंदू प्रार्थना है। इसे प्रतिदिन करोड़ों भक्त पढ़ते हैं। माना जाता है कि इसके पाठ से भय दूर होता है, बुरी शक्तियों से रक्षा होती है, बीमारी में स्वास्थ्य मिलता है, और कठिन कार्यों में सफलता प्राप्त होती है। यह हनुमान जी के जीवन का संक्षिप्त जीवनचरित भी है।",
+    "benefits": [
+      "Removes fear and gives immense courage",
+      "Protects from evil spirits and negative energies",
+      "Grants good health and removes disease",
+      "Brings success in difficult endeavors",
+      "Bestows wisdom and removes ignorance",
+      "Fulfills righteous desires",
+      "Grants liberation from the cycle of birth and death"
+    ],
+    "seo": {
+      "meta_title": "हनुमान चालीसा - Hanuman Chalisa with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Hanuman Chalisa with Hindi meaning, English translation and Roman transliteration. All 40 chaupais by Tulsidas with story and significance.",
+      "keywords": [
+        "hanuman chalisa",
+        "हनुमान चालीसा",
+        "hanuman chalisa hindi",
+        "hanuman chalisa english meaning",
+        "hanuman chalisa lyrics",
+        "jai hanuman gyan gun sagar"
+      ]
+    },
     "verses": [
       {
         "type": "doha",
@@ -889,18 +900,7 @@
       "jai-ganesh-deva",
       "om-jai-jagdish-hare"
     ],
-    "seo": {
-      "meta_title": "हनुमान चालीसा - Hanuman Chalisa with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
-      "meta_description": "Read complete Hanuman Chalisa with Hindi meaning, English translation and Roman transliteration. All 40 chaupais by Tulsidas with story and significance.",
-      "keywords": [
-        "hanuman chalisa",
-        "हनुमान चालीसा",
-        "hanuman chalisa hindi",
-        "hanuman chalisa english meaning",
-        "hanuman chalisa lyrics",
-        "jai hanuman gyan gun sagar"
-      ]
-    }
+    "deity_color": "#EA580C"
   },
   {
     "id": 2,
@@ -909,18 +909,12 @@
     "title_roman": "Jai Ganesh Deva",
     "title_english": "Victory to Lord Ganesha",
     "deity": "Ganesha",
-    "deity_color": "#D97706",
-    "language": "Hindi",
-    "festival": [
-      "Ganesh Chaturthi",
-      "Diwali",
-      "Navratri"
-    ],
-    "occasion": "Beginning of any auspicious work, Morning Prayer",
-    "timing": "Morning, before beginning any task",
+    "duration_minutes": 5,
     "raga": "Bhairav",
     "composer": "Traditional",
-    "duration_minutes": 5,
+    "language": "Hindi",
+    "timing": "Morning, before beginning any task",
+    "occasion": "Beginning of any auspicious work, Morning Prayer",
     "tags": [
       "ganesha",
       "ganpati",
@@ -936,18 +930,12 @@
       "success",
       "prosperity"
     ],
-    "story": "Jai Ganesh Deva is one of the most beloved Ganesha bhajans sung across India. Lord Ganesha, the elephant-headed son of Shiva and Parvati, is the first deity invoked before any auspicious undertaking in Hindu tradition. This bhajan celebrates his divine form — his single tusk, his four arms, his vehicle the mouse, and his love for modaka (sweet dumplings). The second verse describes his golden complexion adorned with sindoor (vermilion) on his forehead. The bhajan then lists the many blessings Ganesha bestows — restoring sight to the blind, health to the diseased, children to the childless, and wealth to the poor. This all-encompassing compassion is why Ganesha is called 'Vighnaharta' — the remover of all obstacles. The bhajan ends with the devotee surrendering at Ganesha's lotus feet, asking him to make their devotional service fruitful.",
-    "story_hindi": "जय गणेश देवा भारत के सबसे प्रिय गणेश भजनों में से एक है। भगवान गणेश — शिव और पार्वती के हाथी के मुख वाले पुत्र — किसी भी शुभ कार्य से पहले पहले पूजे जाते हैं। यह भजन उनके दिव्य स्वरूप का — एकदंत, चार भुजाएँ, मूषक वाहन और मोदक के प्रेम का — उत्सव मनाता है। दूसरी चौपाई में उनके माथे पर सिंदूर से शोभायमान सुनहरे स्वरूप का वर्णन है। भजन में गणेश जी के वरदानों की सूची है — अंधों को आँखें, रोगियों को स्वास्थ्य, निःसंतानों को पुत्र और दरिद्रों को धन। इसी सर्वव्यापी करुणा के कारण उन्हें 'विघ्नहर्ता' — सभी बाधाओं को दूर करने वाला — कहा जाता है।",
-    "significance": "In Hindu tradition, Ganesha is always worshipped first before any prayer, ritual, or new beginning — before building a house, starting a business, beginning studies, or undertaking any journey. Chanting Jai Ganesh Deva is believed to clear all obstacles from the path, bestow divine wisdom, and ensure the success of any endeavor. Ganesha represents the union of the human and the divine — his elephant head symbolizes wisdom and large ears mean he listens to all prayers.",
-    "significance_hindi": "हिंदू परंपरा में गणेश जी को हर प्रार्थना, अनुष्ठान या नई शुरुआत से पहले पूजा जाता है — घर बनाने, व्यापार शुरू करने, पढ़ाई आरंभ करने या किसी यात्रा पर जाने से पहले। जय गणेश देवा का पाठ मार्ग की सभी बाधाओं को दूर करता है, दिव्य ज्ञान प्रदान करता है, और किसी भी कार्य में सफलता सुनिश्चित करता है।",
-    "benefits": [
-      "Removes all obstacles before beginning any work",
-      "Bestows wisdom and intelligence",
-      "Ensures success in studies and exams",
-      "Grants prosperity and abundance",
-      "Removes negativity from home and life",
-      "Fulfills legitimate desires",
-      "Brings harmony in family relationships"
+    "priority": 2,
+    "featured": true,
+    "festival": [
+      "Ganesh Chaturthi",
+      "Diwali",
+      "Navratri"
     ],
     "when_to_sing": {
       "festival": [
@@ -968,8 +956,31 @@
         "Marriage ceremonies"
       ]
     },
-    "featured": true,
-    "priority": 2,
+    "story": "Jai Ganesh Deva is one of the most beloved Ganesha bhajans sung across India. Lord Ganesha, the elephant-headed son of Shiva and Parvati, is the first deity invoked before any auspicious undertaking in Hindu tradition. This bhajan celebrates his divine form — his single tusk, his four arms, his vehicle the mouse, and his love for modaka (sweet dumplings). The second verse describes his golden complexion adorned with sindoor (vermilion) on his forehead. The bhajan then lists the many blessings Ganesha bestows — restoring sight to the blind, health to the diseased, children to the childless, and wealth to the poor. This all-encompassing compassion is why Ganesha is called 'Vighnaharta' — the remover of all obstacles. The bhajan ends with the devotee surrendering at Ganesha's lotus feet, asking him to make their devotional service fruitful.",
+    "story_hindi": "जय गणेश देवा भारत के सबसे प्रिय गणेश भजनों में से एक है। भगवान गणेश — शिव और पार्वती के हाथी के मुख वाले पुत्र — किसी भी शुभ कार्य से पहले पहले पूजे जाते हैं। यह भजन उनके दिव्य स्वरूप का — एकदंत, चार भुजाएँ, मूषक वाहन और मोदक के प्रेम का — उत्सव मनाता है। दूसरी चौपाई में उनके माथे पर सिंदूर से शोभायमान सुनहरे स्वरूप का वर्णन है। भजन में गणेश जी के वरदानों की सूची है — अंधों को आँखें, रोगियों को स्वास्थ्य, निःसंतानों को पुत्र और दरिद्रों को धन। इसी सर्वव्यापी करुणा के कारण उन्हें 'विघ्नहर्ता' — सभी बाधाओं को दूर करने वाला — कहा जाता है।",
+    "significance": "In Hindu tradition, Ganesha is always worshipped first before any prayer, ritual, or new beginning — before building a house, starting a business, beginning studies, or undertaking any journey. Chanting Jai Ganesh Deva is believed to clear all obstacles from the path, bestow divine wisdom, and ensure the success of any endeavor. Ganesha represents the union of the human and the divine — his elephant head symbolizes wisdom and large ears mean he listens to all prayers.",
+    "significance_hindi": "हिंदू परंपरा में गणेश जी को हर प्रार्थना, अनुष्ठान या नई शुरुआत से पहले पूजा जाता है — घर बनाने, व्यापार शुरू करने, पढ़ाई आरंभ करने या किसी यात्रा पर जाने से पहले। जय गणेश देवा का पाठ मार्ग की सभी बाधाओं को दूर करता है, दिव्य ज्ञान प्रदान करता है, और किसी भी कार्य में सफलता सुनिश्चित करता है।",
+    "benefits": [
+      "Removes all obstacles before beginning any work",
+      "Bestows wisdom and intelligence",
+      "Ensures success in studies and exams",
+      "Grants prosperity and abundance",
+      "Removes negativity from home and life",
+      "Fulfills legitimate desires",
+      "Brings harmony in family relationships"
+    ],
+    "seo": {
+      "meta_title": "जय गणेश देवा - Jai Ganesh Deva with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Jai Ganesh Deva bhajan with Hindi meaning, English translation and Roman transliteration. Ganesha aarti with story and significance.",
+      "keywords": [
+        "jai ganesh deva",
+        "जय गणेश देवा",
+        "ganesh bhajan",
+        "ganesh aarti",
+        "ganesh chaturthi bhajan",
+        "गणेश भजन"
+      ]
+    },
     "verses": [
       {
         "type": "mukhda",
@@ -1071,18 +1082,7 @@
       "hanuman-chalisa",
       "om-jai-jagdish-hare"
     ],
-    "seo": {
-      "meta_title": "जय गणेश देवा - Jai Ganesh Deva with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
-      "meta_description": "Read complete Jai Ganesh Deva bhajan with Hindi meaning, English translation and Roman transliteration. Ganesha aarti with story and significance.",
-      "keywords": [
-        "jai ganesh deva",
-        "जय गणेश देवा",
-        "ganesh bhajan",
-        "ganesh aarti",
-        "ganesh chaturthi bhajan",
-        "गणेश भजन"
-      ]
-    }
+    "deity_color": "#D97706"
   },
   {
     "id": 3,
@@ -1091,19 +1091,12 @@
     "title_roman": "Om Jai Jagdish Hare",
     "title_english": "Om, Victory to the Lord of the Universe",
     "deity": "Vishnu",
-    "deity_color": "#15803D",
-    "language": "Hindi",
-    "festival": [
-      "Diwali",
-      "Janmashtami",
-      "Ekadashi",
-      "Kartik Purnima"
-    ],
-    "occasion": "Evening Aarti, Satyanarayan Puja, Any Vishnu Puja",
-    "timing": "Evening (Sandhya Aarti)",
+    "duration_minutes": 8,
     "raga": "Bhairavi",
     "composer": "Shardha Ram Phillauri",
-    "duration_minutes": 8,
+    "language": "Hindi",
+    "timing": "Evening (Sandhya Aarti)",
+    "occasion": "Evening Aarti, Satyanarayan Puja, Any Vishnu Puja",
     "tags": [
       "vishnu",
       "aarti",
@@ -1120,18 +1113,13 @@
       "liberation",
       "gratitude"
     ],
-    "story": "Om Jai Jagdish Hare was composed by Pandit Shardha Ram Phillauri in 1870 and published in his devotional work 'Prem Bhakti Pratap'. It quickly became the most universally chanted aarti across all of India. Unlike many devotional songs dedicated to a specific deity, this aarti addresses the supreme formless God who manifests in all divine forms — making it equally dear to devotees of Vishnu, Shiva, Devi, and all other forms of the Divine. The aarti describes the various attributes of God — He is the sustainer (Palankarta), the Ocean of compassion (Karuna ke Sagar), the Indwelling spirit in all (Antaryami), and the one who removes all sins (Pap Haro Deva). The verse 'Tan Man Dhan Sab Kuch Hai Tera' — 'body, mind, wealth — everything is yours' — is one of the most profound expressions of surrender in all of devotional literature, expressing the complete offering of oneself at God's feet. This aarti is performed at the close of every Hindu puja ceremony, in millions of homes and temples across India every single evening.",
-    "story_hindi": "ॐ जय जगदीश हरे की रचना पंडित श्रद्धाराम फिल्लौरी ने 1870 में की थी और यह उनके भक्ति ग्रंथ 'प्रेम भक्ति प्रताप' में प्रकाशित हुई। यह शीघ्र ही पूरे भारत में सर्वाधिक गाई जाने वाली आरती बन गई। अन्य भक्ति गीतों के विपरीत जो किसी विशेष देवता को संबोधित करते हैं, यह आरती उस सर्वोच्च निराकार ईश्वर को संबोधित है जो सभी दिव्य रूपों में प्रकट होता है। 'तन मन धन सब कुछ है तेरा' — यह समर्पण की सर्वोच्च अभिव्यक्ति है।",
-    "significance": "Om Jai Jagdish Hare is performed as the concluding aarti in virtually every Hindu puja ceremony. It is the prayer that unites all Hindus regardless of which deity they worship, because it addresses the Supreme God behind all forms. The aarti is also notable for the verse where the devotee says 'Everything is yours — what is mine?' — a complete surrender of ego that lies at the heart of bhakti (devotional) spirituality.",
-    "significance_hindi": "ॐ जय जगदीश हरे लगभग हर हिंदू पूजा समारोह में समापन आरती के रूप में गाई जाती है। यह वह प्रार्थना है जो सभी हिंदुओं को एकजुट करती है — चाहे वे किसी भी देवता के उपासक हों — क्योंकि यह सभी रूपों के पीछे के सर्वोच्च ईश्वर को संबोधित करती है।",
-    "benefits": [
-      "Purifies the home and removes all negativity when sung at evening aarti",
-      "Invokes divine blessings upon the entire family",
-      "Cultivates the spirit of complete surrender to God",
-      "Removes the burden of sins accumulated during the day",
-      "Fills the heart with peace and contentment",
-      "Strengthens family bonds through collective prayer",
-      "Connects the devotee to the universal consciousness"
+    "priority": 3,
+    "featured": true,
+    "festival": [
+      "Diwali",
+      "Janmashtami",
+      "Ekadashi",
+      "Kartik Purnima"
     ],
     "when_to_sing": {
       "festival": [
@@ -1153,8 +1141,31 @@
         "Any Hindu ceremony closing prayer"
       ]
     },
-    "featured": true,
-    "priority": 3,
+    "story": "Om Jai Jagdish Hare was composed by Pandit Shardha Ram Phillauri in 1870 and published in his devotional work 'Prem Bhakti Pratap'. It quickly became the most universally chanted aarti across all of India. Unlike many devotional songs dedicated to a specific deity, this aarti addresses the supreme formless God who manifests in all divine forms — making it equally dear to devotees of Vishnu, Shiva, Devi, and all other forms of the Divine. The aarti describes the various attributes of God — He is the sustainer (Palankarta), the Ocean of compassion (Karuna ke Sagar), the Indwelling spirit in all (Antaryami), and the one who removes all sins (Pap Haro Deva). The verse 'Tan Man Dhan Sab Kuch Hai Tera' — 'body, mind, wealth — everything is yours' — is one of the most profound expressions of surrender in all of devotional literature, expressing the complete offering of oneself at God's feet. This aarti is performed at the close of every Hindu puja ceremony, in millions of homes and temples across India every single evening.",
+    "story_hindi": "ॐ जय जगदीश हरे की रचना पंडित श्रद्धाराम फिल्लौरी ने 1870 में की थी और यह उनके भक्ति ग्रंथ 'प्रेम भक्ति प्रताप' में प्रकाशित हुई। यह शीघ्र ही पूरे भारत में सर्वाधिक गाई जाने वाली आरती बन गई। अन्य भक्ति गीतों के विपरीत जो किसी विशेष देवता को संबोधित करते हैं, यह आरती उस सर्वोच्च निराकार ईश्वर को संबोधित है जो सभी दिव्य रूपों में प्रकट होता है। 'तन मन धन सब कुछ है तेरा' — यह समर्पण की सर्वोच्च अभिव्यक्ति है।",
+    "significance": "Om Jai Jagdish Hare is performed as the concluding aarti in virtually every Hindu puja ceremony. It is the prayer that unites all Hindus regardless of which deity they worship, because it addresses the Supreme God behind all forms. The aarti is also notable for the verse where the devotee says 'Everything is yours — what is mine?' — a complete surrender of ego that lies at the heart of bhakti (devotional) spirituality.",
+    "significance_hindi": "ॐ जय जगदीश हरे लगभग हर हिंदू पूजा समारोह में समापन आरती के रूप में गाई जाती है। यह वह प्रार्थना है जो सभी हिंदुओं को एकजुट करती है — चाहे वे किसी भी देवता के उपासक हों — क्योंकि यह सभी रूपों के पीछे के सर्वोच्च ईश्वर को संबोधित करती है।",
+    "benefits": [
+      "Purifies the home and removes all negativity when sung at evening aarti",
+      "Invokes divine blessings upon the entire family",
+      "Cultivates the spirit of complete surrender to God",
+      "Removes the burden of sins accumulated during the day",
+      "Fills the heart with peace and contentment",
+      "Strengthens family bonds through collective prayer",
+      "Connects the devotee to the universal consciousness"
+    ],
+    "seo": {
+      "meta_title": "ॐ जय जगदीश हरे - Om Jai Jagdish Hare with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
+      "meta_description": "Read complete Om Jai Jagdish Hare aarti with Hindi meaning, English translation and Roman transliteration. The most universal Hindu aarti with story.",
+      "keywords": [
+        "om jai jagdish hare",
+        "ॐ जय जगदीश हरे",
+        "jai jagdish aarti",
+        "evening aarti",
+        "satyanarayan aarti",
+        "vishnu aarti hindi"
+      ]
+    },
     "verses": [
       {
         "type": "mukhda",
@@ -1332,18 +1343,7 @@
       "hanuman-chalisa",
       "jai-ganesh-deva"
     ],
-    "seo": {
-      "meta_title": "ॐ जय जगदीश हरे - Om Jai Jagdish Hare with Hindi Meaning & English Translation | Sanatan Gyan Sagar",
-      "meta_description": "Read complete Om Jai Jagdish Hare aarti with Hindi meaning, English translation and Roman transliteration. The most universal Hindu aarti with story.",
-      "keywords": [
-        "om jai jagdish hare",
-        "ॐ जय जगदीश हरे",
-        "jai jagdish aarti",
-        "evening aarti",
-        "satyanarayan aarti",
-        "vishnu aarti hindi"
-      ]
-    }
+    "deity_color": "#15803D"
   },
   {
     "id": 4,
@@ -1352,23 +1352,502 @@
     "title_roman": "Shiv Tandav Stotram",
     "title_english": "Shiva Tandava Stotram",
     "deity": "Shiva",
-    "description_hindi": "रावण द्वारा रचित भगवान शिव की स्तुति।",
-    "description_english": "A powerful hymn of praise to Lord Shiva, composed by Ravana.",
+    "duration_minutes": 10,
+    "raga": "",
+    "composer": "Ravana",
+    "language": "Sanskrit",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
     "verses": [
       {
         "type": "stanza",
-        "label_hindi": "प्रथम श्लोक",
+        "label_hindi": "श्लोक 1",
         "label_english": "Stanza 1",
         "lines": [
           {
             "hindi": "जटाटवीगलज्जलप्रवाहपावितस्थले",
-            "roman": "Jataatavi galaj jala pravaaha paavitasthale",
-            "hindi_meaning": "जटा रूपी वन से निकलने वाली जल की धारा से पवित्र स्थल पर...",
-            "english": "From the forest of matted locks, the flowing stream of water sanctifies the place..."
+            "roman": "Jataataviigalajjala pravaahapaavitasthale",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम्।",
+            "roman": "Galeavalambya lambitaam bhujangatungamaalikaam |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "डमड्डमड्डमड्डमन्निनादवड्डमर्वयं",
+            "roman": "Damad damad damaddama ninadavadamarvayam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "चकार चण्डताण्डवं तनोतु नः शिवः शिवम्",
+            "roman": "Chakaara chandataandavam tanotu nah shivah shivam ||",
+            "hindi_meaning": "",
+            "english": "From the forest of his matted lock, water flows and wets his neck, On which hangs the greatest of snake-like a garland, And his drum perpetually sounds damat, damat, damat, damat, Lord Shiva performed the passionate dance of Tandava; may he bless us all."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 2",
+        "label_english": "Stanza 2",
+        "lines": [
+          {
+            "hindi": "जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी",
+            "roman": "Jataakataahasambhramabhramannilimpanirjhari",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "विलोलवीचिवल्लरीविराजमानमूर्धनि।",
+            "roman": "Vilolaviichivallariiviraajamaanamaurdhani |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "धगद्धगद्धगज्ज्वलल्ललाटपट्टपावके",
+            "roman": "Dhagaddhagaddhagajjvalallalaatapattapaavake",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम",
+            "roman": "Kishorachandrashekhare ratih pratikshanam mama ||",
+            "hindi_meaning": "",
+            "english": "The celestial river Ganga, whose waves flutter, Agitatedly moves through his matted locks. A fire burns brightly on the surface of his forehead, And a crescent moon shines on his head; may I constantly find joy in him."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 3",
+        "label_english": "Stanza 3",
+        "lines": [
+          {
+            "hindi": "धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर",
+            "roman": "Dharaadharendranandiniivilaasabandhubandhura",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "स्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे।",
+            "roman": "Sphuraddigantasantatipramodamaanamaanase |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "कृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि",
+            "roman": "Kripaakataakshadhoraniiniruddhadurdharaapadi",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि",
+            "roman": "Kvachiddigambare mano vinodametu vastuni ||",
+            "hindi_meaning": "",
+            "english": "His mind rejoices in the sportive play of the daughter of the mountain king (Parvati), Whose presence causes the entire universe to rejoice. With his compassionate glance, he controls the unstoppable hardships; May my mind find bliss in the omnipresent Lord Shiva."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 4",
+        "label_english": "Stanza 4",
+        "lines": [
+          {
+            "hindi": "जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा",
+            "roman": "Jataabhujangapingalasphuratphanaamaniprabhaa",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे।",
+            "roman": "Kadambakunkumadravapraliptadigvadhuumukhe |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "मदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे",
+            "roman": "Madaandhasindhurasphurattvaguttariiyamedure",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि",
+            "roman": "Mano vinodamadbhutam bibhartu bhuutabhartari ||",
+            "hindi_meaning": "",
+            "english": "The reddish glow from the gems on the hoods of the snakes in his matted locks, Paints the faces of the maidens of the directions like saffron. His upper garment is made of the skin of a wild elephant; May my mind find wonderful joy in the Lord of all creatures."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 5",
+        "label_english": "Stanza 5",
+        "lines": [
+          {
+            "hindi": "सहस्रलोचनप्रभृत्यशेषलेखशेखर",
+            "roman": "Sahasralochanaprabhrityasheshalekhashekhara",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "प्रसूनधूलिधोरणी विधूसराङ्घ्रिपीठभूः।",
+            "roman": "Prasuunadhuulidhoranii vidhuusaraanghripiithabhuuh |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "भुजङ्गराजमालया निबद्धजाटजूटक",
+            "roman": "Bhujangaraajamaalayaa nibaddhajaatajuutaka",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "श्रियै चिराय जायतां चकोरबन्धुशेखरः",
+            "roman": "Shriyai chiraaya jaayataam chakorabandhushekharah ||",
+            "hindi_meaning": "",
+            "english": "The dust from the flowers on the heads of Indra and other gods, Falls on his footstool, making it greyish. His matted locks are bound by the king of snakes as a garland; May the Lord, whose crest jewel is the moon, grant eternal prosperity."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 6",
+        "label_english": "Stanza 6",
+        "lines": [
+          {
+            "hindi": "ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा",
+            "roman": "Lalaatachatvarajvaladdhananjayashphulingabhaa",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "निपीतपञ्चसायकं नमन्निलिम्पनायकम्।",
+            "roman": "Nipiitapanchasaayakam namannilimpanaayakam |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "सुधामयूखलेखया विराजमानशेखरं",
+            "roman": "Sudhaamayuukhalekhayaa viraajamaanashekharam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "महाकपालिसम्पदे शिरोजटालमस्तु नः",
+            "roman": "Mahaakapaalisampade shirojataalamastu nah ||",
+            "hindi_meaning": "",
+            "english": "The sparks from the fire blazing on his broad forehead, Consumed the god of love, Kamadeva. He is bowed to by the king of gods, Indra, And his forehead shines with the cool rays of the crescent moon; may he grant us the wealth of the Siddhas."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 7",
+        "label_english": "Stanza 7",
+        "lines": [
+          {
+            "hindi": "करालभालपट्टिकाधगद्धगद्धगज्ज्वल",
+            "roman": "Karaalabha alapattikaadhagaddhagaddhagajjvala",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "द्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके।",
+            "roman": "Ddhananjayaahutiikritaprachandapanchasaayake |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "धराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक",
+            "roman": "Dharaadharendranandiniikuchaagrachitrapatraka",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "प्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम",
+            "roman": "Prakalpanaikashilpini trilocane ratirmama ||",
+            "hindi_meaning": "",
+            "english": "On the fierce surface of his forehead burns a blazing fire, Which consumed the mighty god of love, Kamadeva. He is the only artist capable of painting decorative marks on the breasts of the daughter of the mountain king; May my mind find joy in the three-eyed Lord."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 8",
+        "label_english": "Stanza 8",
+        "lines": [
+          {
+            "hindi": "नवीनमेघमण्डली निरुद्धदुर्धरस्फुरत्",
+            "roman": "Naviinameghamandalii niruddhadurdharasphurat",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "कुहूनिशीथिनीतमः प्रबन्धबद्धकन्धरः।",
+            "roman": "Kuhuunishiithiniitamah prabandhabaddhakandharah |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "निलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः",
+            "roman": "Nilimpanirjhariidharastanotu krittisindhurah",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "कलानिधानबन्धुरः श्रियं जगन्धुरन्धरः",
+            "roman": "Kalaanidhaanabandhurah shriyam jagandhurandharah ||",
+            "hindi_meaning": "",
+            "english": "His neck is as dark as a thick cluster of new clouds, Or the darkest night of the new moon. He holds the celestial river Ganga and wears the skin of an elephant; May the Lord, who bears the burden of the universe and is adorned with the moon, bestow prosperity."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 9",
+        "label_english": "Stanza 9",
+        "lines": [
+          {
+            "hindi": "प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा",
+            "roman": "Praphullaniilapankajaprapanchakaalimaprabhaa",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "वलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम्।",
+            "roman": "Valambikanthakandaliiruchiprabaddhakandharam |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "स्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं",
+            "roman": "Smaracchidam puracchidam bhavacchidam makhacchidam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे",
+            "roman": "Gajacchidaandhakacchidam tamantakacchidam bhaje ||",
+            "hindi_meaning": "",
+            "english": "The dark blue radiance of fully bloomed blue lotuses, Is reflected on his beautiful neck. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 10",
+        "label_english": "Stanza 10",
+        "lines": [
+          {
+            "hindi": "अखर्वसर्वमङ्गलाकलाकदम्बमञ्जरी",
+            "roman": "Akharvasarvamangalaakalaakadambamanjarii",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "रसप्रवाहमाधुरी विजृम्भणामधुव्रतम्।",
+            "roman": "Rasapravaahamaadhurii vijrimbhanaamadhuuvratam |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "स्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं",
+            "roman": "Smarantakam purantakam bhavantakam makhantakam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "गजान्तकान्धकान्तकं तमन्तकान्तकं भजे",
+            "roman": "Gajantakaandhakaantakam tamantakaantakam bhaje ||",
+            "hindi_meaning": "",
+            "english": "He is like a bee hovering over the sweet nectar, Flowing from the beautiful flowers of auspiciousness. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 11",
+        "label_english": "Stanza 11",
+        "lines": [
+          {
+            "hindi": "जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस",
+            "roman": "Jayatvadabhravibhramabhramadbhujangamashvasa",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "द्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट्।",
+            "roman": "Dvinirgamatkramasphuratkaraalabhaalahavyavaat |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "धिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल",
+            "roman": "Dhimid dhimid dhimidhvananmridangatungamangala",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "ध्वनिक्रमप्रवर्तित प्रचण्डताण्डवः शिवः",
+            "roman": "Dhvanikramapravartita prachandataandavah shivah ||",
+            "hindi_meaning": "",
+            "english": "Victory to Lord Shiva, whose fierce fire on his forehead blazes, Fanned by the breath of the wildly roaming snakes. He performs the fierce Tandava dance, To the auspicious sounds of 'dhimid, dhimid' from the Damaru drum."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 12",
+        "label_english": "Stanza 12",
+        "lines": [
+          {
+            "hindi": "दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्",
+            "roman": "Drishadvichitratalpayorbhujangamauktikasrajor",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः।",
+            "roman": "Garishtharatnaloshthayoh suhridvipakshapakshayoh |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "तृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः",
+            "roman": "Trinaaravindachakshushoh prajaamahiimahendrayoh",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "समप्रवृत्तिकः कदा सदाशिवं भजाम्यहम्",
+            "roman": "Samapravrittikah kadaa sadaashivam bhajaamyaham ||",
+            "hindi_meaning": "",
+            "english": "When will I worship Lord SadaShiva with an equal mind, Towards a hard stone and a soft bed, a snake and a pearl garland, A precious gem and a lump of earth, a friend and an enemy, A blade of grass and a lotus-eyed woman, an ordinary person and an emperor?"
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 13",
+        "label_english": "Stanza 13",
+        "lines": [
+          {
+            "hindi": "कदा निलिम्पनिर्झरीनिकुञ्जकोटरे वसन्",
+            "roman": "Kadaa nilimpanirjhariinikunjakotare vasan",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "विमुक्तदुर्मतिः सदा शिरः स्थमञ्जलिं वहन्।",
+            "roman": "Vimuktadurmatih sadaa shirah sthamanjalim vahan |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "विमुक्तलोललोचनो ललामभाललग्नकः",
+            "roman": "Vimuktalolalochano lalaamabhaalalagnakah",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम्",
+            "roman": "Shiveti mantramuccharan kadaa sukhii bhavaamyaham ||",
+            "hindi_meaning": "",
+            "english": "When will I live in a cave near the celestial river Ganga, Free from evil thoughts, with my hands folded on my head, With steady eyes, focused on the Lord with the moon on his forehead, Chanting the mantra \"Shiva,\" when will I attain true happiness?"
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 14",
+        "label_english": "Stanza 14",
+        "lines": [
+          {
+            "hindi": "इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं",
+            "roman": "Imam hi nityamevamuktamuttamottamam stavam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "पठन्स्मरन्ब्रुवन्नरो विशुद्धिमेति सन्ततम्।",
+            "roman": "Pathansmaranbruvannaro vishuddhimetisantatam |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "हरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं",
+            "roman": "Hare gurau subhaktimaashu yaati naanyathaa gatim",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम्",
+            "roman": "Vimohanam hi dehinaam sushankarasya chintanam ||",
+            "hindi_meaning": "",
+            "english": "Whoever reads, remembers, or recites this supreme stotram every day, Will be continuously purified and quickly attain devotion to Lord Shiva, the ultimate guru. There is no other way or refuge, For the contemplation of Lord Shiva destroys the delusions of mortals."
+          }
+        ]
+      },
+      {
+        "type": "stanza",
+        "label_hindi": "श्लोक 15",
+        "label_english": "Stanza 15",
+        "lines": [
+          {
+            "hindi": "पूजावसानसमये दशवक्त्रगीतं",
+            "roman": "Puujaavasaanasamaye dashavaktragiitam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "यः शम्भुपूजनपरं पठति प्रदोषे।",
+            "roman": "Yah shambhupuujanaparam pathati pradoshe |",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "तस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां",
+            "roman": "Tasya sthiraam rathagajendraturangayuktaam",
+            "hindi_meaning": "",
+            "english": ""
+          },
+          {
+            "hindi": "लक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः",
+            "roman": "Lakshmiim sadaiva sumukhiim pradadaati shambhuh ||",
+            "hindi_meaning": "",
+            "english": "Whoever recites this stotram composed by Ravana, At the end of their worship of Lord Shiva during the Pradosha time, Lord Shiva blesses them with stable wealth, Complete with chariots, elephants, and horses, and the auspicious presence of Goddess Lakshmi."
           }
         ]
       }
-    ]
+    ],
+    "related": [],
+    "deity_color": "",
+    "description_hindi": "रावण द्वारा रचित भगवान शिव की स्तुति।",
+    "description_english": "A powerful hymn of praise to Lord Shiva, composed by Ravana."
   },
   {
     "id": 5,
@@ -1377,7 +1856,34 @@
     "title_roman": "Achyutam Keshavam",
     "title_english": "Achyutam Keshavam",
     "deity": "Krishna",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 6,
@@ -1386,7 +1892,34 @@
     "title_roman": "Ram Siya Ram",
     "title_english": "Ram Siya Ram",
     "deity": "Ram",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 7,
@@ -1395,7 +1928,34 @@
     "title_roman": "Deva Shree Ganesha",
     "title_english": "Deva Shree Ganesha",
     "deity": "Ganesha",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 8,
@@ -1404,7 +1964,34 @@
     "title_roman": "Jai Ambe Gauri",
     "title_english": "Jai Ambe Gauri",
     "deity": "Durga",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 9,
@@ -1413,7 +2000,34 @@
     "title_roman": "Aarti Kunj Bihari Ki",
     "title_english": "Aarti Kunj Bihari Ki",
     "deity": "Krishna",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 10,
@@ -1422,7 +2036,34 @@
     "title_roman": "Om Jai Lakshmi Mata",
     "title_english": "Om Jai Lakshmi Mata",
     "deity": "Lakshmi",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 11,
@@ -1431,7 +2072,34 @@
     "title_roman": "Raghupati Raghav Raja Ram",
     "title_english": "Raghupati Raghav Raja Ram",
     "deity": "Ram",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 12,
@@ -1440,7 +2108,34 @@
     "title_roman": "Mere Ghar Ram Aayo",
     "title_english": "Mere Ghar Ram Aayo",
     "deity": "Ram",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 13,
@@ -1449,7 +2144,34 @@
     "title_roman": "Vaishnav Jan",
     "title_english": "Vaishnav Jan",
     "deity": "Vishnu",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 14,
@@ -1458,7 +2180,34 @@
     "title_roman": "Shri Ramachandra Kripalu",
     "title_english": "Shri Ramachandra Kripalu",
     "deity": "Ram",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   },
   {
     "id": 15,
@@ -1467,6 +2216,33 @@
     "title_roman": "Madhurashtakam",
     "title_english": "Madhurashtakam",
     "deity": "Krishna",
-    "verses": []
+    "duration_minutes": 0,
+    "raga": "",
+    "composer": "Traditional",
+    "language": "Hindi",
+    "timing": "",
+    "occasion": "",
+    "tags": [],
+    "topics": [],
+    "priority": 999,
+    "featured": false,
+    "festival": [],
+    "when_to_sing": {
+      "time": [],
+      "occasion": []
+    },
+    "story": "",
+    "story_hindi": "",
+    "significance": "",
+    "significance_hindi": "",
+    "benefits": [],
+    "seo": {
+      "meta_title": "",
+      "meta_description": "",
+      "keywords": []
+    },
+    "verses": [],
+    "related": [],
+    "deity_color": ""
   }
 ]

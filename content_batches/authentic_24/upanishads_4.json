@@ -1,0 +1,59 @@
+{
+  "pillar": "upanishads",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "id": 5001,
+      "slug": "isha-upanishad-1",
+      "name_english": "Isha Upanishad Mantra 1",
+      "name_hindi": "ईशोपनिषद् मंत्र 1",
+      "name_sanskrit": "ईशावास्यमिदं सर्वम्",
+      "source_name": "Isha Upanishad",
+      "source_ref": "Mantra 1",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full mantra context",
+      "verification_notes": "Keep mantra and numbering accurate to edition."
+    },
+    {
+      "id": 5002,
+      "slug": "kena-upanishad-1-1",
+      "name_english": "Kena Upanishad 1.1",
+      "name_hindi": "केनोपनिषद् 1.1",
+      "name_sanskrit": "केनेषितं पतति प्रेषितं मनः",
+      "source_name": "Kena Upanishad",
+      "source_ref": "1.1",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full mantra context",
+      "verification_notes": "Avoid interpretive overreach in commentary."
+    },
+    {
+      "id": 5003,
+      "slug": "katha-upanishad-1-2-18",
+      "name_english": "Katha Upanishad 1.2.18",
+      "name_hindi": "कठोपनिषद् 1.2.18",
+      "name_sanskrit": "न जायते म्रियते वा कदाचित्",
+      "source_name": "Katha Upanishad",
+      "source_ref": "1.2.18",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full mantra context",
+      "verification_notes": "Maintain textual integrity across Sanskrit and transliteration."
+    },
+    {
+      "id": 5004,
+      "slug": "mandukya-upanishad-7",
+      "name_english": "Mandukya Upanishad Mantra 7",
+      "name_hindi": "माण्डूक्य उपनिषद् मंत्र 7",
+      "name_sanskrit": "नान्तःप्रज्ञं न बहिःप्रज्ञम्",
+      "source_name": "Mandukya Upanishad",
+      "source_ref": "Mantra 7",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full mantra context",
+      "verification_notes": "Preserve technical Vedanta terms accurately."
+    }
+  ]
+}

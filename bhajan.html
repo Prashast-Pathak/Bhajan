@@ -23,7 +23,19 @@
       --font-ui: 'Lato', sans-serif;
       --hindi-size: 22px;
     }
-    body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
+        body.dark-mode {
+      --bg: #1a1a1a;
+      --surface: #2d2d2d;
+      --surface2: #3d3d3d;
+      --surface-2: #3d3d3d;
+      --text: #e8e8e8;
+      --text-sec: #b8b8b8;
+      --text-muted: #888888;
+      --border: #444444;
+      --maroon: #ff8e8e;
+      --saffron: #f5a666;
+      --gold: #dfb962;
+    }
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -103,6 +115,14 @@
     .line-meaning-en { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
     .line-meaning-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px; letter-spacing: 0.5px; }
 
+    /* ACCORDION MEANINGS */
+    .meaning-accordion { margin-top: 16px; background: var(--surface2); border-radius: 8px; border: 1px solid var(--border); overflow: hidden; transition: all 0.2s; }
+    .meaning-summary { padding: 10px 14px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); user-select: none; }
+    .meaning-summary::-webkit-details-marker { display: none; }
+    .meaning-summary:hover { background: rgba(0,0,0,0.03); color: var(--saffron); }
+    .dark-mode .meaning-summary:hover { background: rgba(255,255,255,0.03); }
+    .meaning-content { padding: 16px; border-top: 1px solid var(--border); background: var(--bg); }
+
     /* INFO SECTIONS */
     .info-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin-bottom: 16px; }
     .info-title { font-family: var(--font-hindi); font-size: 20px; color: var(--maroon); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
@@ -173,30 +193,242 @@
     }
   </script>
 
+<style id="premium-header-styles">
+  /* ── HEADER ── */
+  .main-header {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(245,240,232,0.92) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    padding: 0 20px;
+  }
+  body.dark-mode .main-header {
+    background: rgba(22,22,22,0.92) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .main-header .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    height: 64px;
+  }
+
+  /* Logo */
+  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+  .logo-om {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--saffron), var(--maroon));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-hindi); font-size: 20px; color: #fff;
+    flex-shrink: 0;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-title { font-family: var(--font-hindi); font-size: 17px; font-weight: 700; color: var(--maroon); line-height: 1.2; }
+  .logo-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.3px; }
+
+  /* Desktop Nav — center column */
+  .desktop-nav {
+    display: flex; gap: 2px; align-items: center; justify-content: center;
+  }
+  .desktop-nav a {
+    text-decoration: none; color: var(--text-sec); font-size: 13px; font-weight: 600;
+    padding: 7px 11px; border-radius: 8px; transition: all 0.18s;
+    white-space: nowrap;
+  }
+  .desktop-nav a:hover { background: var(--surface); color: var(--saffron); }
+  .desktop-nav a.active { background: var(--surface2); color: var(--saffron); }
+
+  /* Icons — right column */
+  .header-icons { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+  .header-icon-btn {
+    background: transparent; border: 1px solid transparent; cursor: pointer;
+    font-size: 17px; width: 38px; height: 38px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--maroon); transition: all 0.18s; flex-shrink: 0;
+  }
+  .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
+
+  /* Hamburger */
+  .hamburger-btn {
+    background: transparent; border: none; color: var(--text);
+    cursor: pointer; display: none; align-items: center; justify-content: center;
+    padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
+  }
+  .hamburger-btn:hover { background: var(--surface2); }
+
+  /* Mobile Menu */
+  .mobile-menu-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    z-index: 1999; opacity: 0; pointer-events: none; transition: 0.3s ease;
+  }
+  .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
+  .mobile-menu-drawer {
+    position: fixed; top: 0; left: -300px; bottom: 0; width: 280px;
+    background: var(--bg); z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex; flex-direction: column;
+  }
+  .mobile-menu-drawer.active { left: 0; }
+  .mobile-menu-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 24px; border-bottom: 1px solid var(--border);
+  }
+  .close-menu-btn { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; }
+  .mobile-menu-links { padding: 20px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+  .mobile-menu-links a {
+    text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600;
+    padding: 11px 14px; border-radius: 8px; transition: 0.18s;
+  }
+  .mobile-menu-links a:hover { background: var(--surface); color: var(--saffron); }
+  .menu-divider { height: 1px; background: var(--border); margin: 8px 0; }
+
+  /* Chanting mode — hide all meaning blocks */
+  body.chanting-mode .meaning-section,
+  body.chanting-mode .line-meaning-hindi,
+  body.chanting-mode .line-meaning-en,
+  body.chanting-mode .line-meaning-label { display: none !important; }
+
+  @media (max-width: 960px) {
+    .desktop-nav { display: none !important; }
+    .hamburger-btn { display: flex !important; }
+    .logo-text { display: none; }
+    .main-header .header-inner { grid-template-columns: auto auto; }
+    .chanting-btn { display: none !important; }
+  }
+</style>
 </head>
 <body>
 
-<header>
+<header class="main-header">
   <div class="header-inner">
-    <a href="index.html" class="logo-link">
-      <div class="logo-om">ॐ</div>
-      <div class="logo-text">
-        <span class="logo-title">सनातन ज्ञान सागर</span>
-        <span class="logo-sub">The Ocean of Eternal Wisdom</span>
-      </div>
-    </a>
-    <nav>
-      <a href="index.html">🏠 Home</a>
-      <a href="bhajans.html" class="active">🪔 Bhajans</a>
-      <a href="bhagavad-gita.html">📖 Gita</a>
-      <a href="wisdom.html">💬 Wisdom</a>
+    <!-- Left: Logo + Hamburger -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <a href="index.html" class="logo-link">
+        <div class="logo-om">ॐ</div>
+        <div class="logo-text">
+          <span class="logo-title">सनातन ज्ञान सागर</span>
+          <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Center: Desktop Nav -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="bhajans.html">Bhajans</a>
+      <a href="bhagavad-gita.html">Gita</a>
+      <a href="shlokas.html">Shlokas</a>
+      <a href="prayers.html">Prayers</a>
+      <a href="upanishads.html">Upanishads</a>
+      <a href="wisdom.html">Wisdom</a>
     </nav>
-    <button class="header-fav" id="fontToggle" aria-label="Increase font size" title="Font size">अ</button>
-    <button class="header-fav" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
-    <button class="header-fav" id="headerFavBtn" aria-label="Save bhajan">🤍</button>
+
+    <!-- Right: Icons -->
+    <div class="header-icons">
+      <button class="header-icon-btn" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
+      <button class="header-icon-btn" id="headerFavBtn" onclick="window.location.href='favorites.html'" title="Saved" aria-label="Saved">❤️</button>
+    </div>
   </div>
 </header>
 
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenuOverlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobileMenu" class="mobile-menu-drawer">
+  <div class="mobile-menu-header">
+    <div class="logo-om" style="width:36px;height:36px;font-size:18px;">ॐ</div>
+    <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="bhajans.html">🪔 Bhajans</a>
+    <a href="bhagavad-gita.html">📖 Bhagavad Gita</a>
+    <a href="shlokas.html">🕉️ Sacred Shlokas</a>
+    <a href="prayers.html">🙏 Prayers &amp; Puja</a>
+    <a href="upanishads.html">📚 Upanishads</a>
+    <a href="wisdom.html">💬 Life Wisdom</a>
+    <div class="menu-divider"></div>
+    <a href="favorites.html">❤️ Saved Favorites</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="contact.html">📞 Contact</a>
+  </div>
+</div>
+
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  if(menu.classList.contains('active')) {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+  } else {
+    menu.classList.add('active');
+    overlay.classList.add('active');
+  }
+}
+</script>
+
+<script>
+// ── UI TOGGLES (consolidated) ──
+(function() {
+  // Apply initial states immediately to prevent flash
+  const isDark = localStorage.getItem('sgs_dark') === 'true';
+  if (isDark) document.body.classList.add('dark-mode');
+
+  const isChanting = localStorage.getItem('sgs_chanting_mode') === 'true';
+  if (isChanting) document.body.classList.add('chanting-mode');
+
+  let fontSize = parseInt(localStorage.getItem('sgs_fontsize') || '22');
+  document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
+  document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Dark Mode Toggle
+    const darkBtn = document.getElementById('darkToggle');
+    if (darkBtn) {
+      darkBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+      });
+    }
+
+    // Font Size Toggle (optional)
+    const fontBtn = document.getElementById('fontToggle');
+    if (fontBtn) {
+      fontBtn.addEventListener('click', () => {
+        fontSize += 2;
+        if (fontSize > 36) fontSize = 18;
+        document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
+        document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
+        localStorage.setItem('sgs_fontsize', fontSize);
+      });
+    }
+
+    // Chanting Toggle (optional)
+    const chantBtn = document.getElementById('chantingToggle');
+    if (chantBtn) {
+      function updateChantBtn() {
+        const on = document.body.classList.contains('chanting-mode');
+        chantBtn.innerHTML = on ? '📖 Study' : '🎵 Chant';
+        chantBtn.title = on ? 'Switch to Study Mode' : 'Switch to Chanting Mode';
+      }
+      updateChantBtn();
+      chantBtn.addEventListener('click', () => {
+        document.body.classList.toggle('chanting-mode');
+        localStorage.setItem('sgs_chanting_mode', document.body.classList.contains('chanting-mode'));
+        updateChantBtn();
+      });
+    }
+  });
+})();
+</script>
 <div class="breadcrumb" aria-label="Breadcrumb" id="breadcrumb">
   <a href="index.html">🏠 Home</a>
   <span>›</span>
@@ -250,7 +482,7 @@
   let favs = JSON.parse(localStorage.getItem('sgs_favorites') || '[]');
 
   // Font size toggle
-  document.getElementById('fontToggle').addEventListener('click', () => {
+  if(document.getElementById('fontToggle')) document.getElementById('fontToggle').addEventListener('click', () => {
     fontSize += 2;
     if (fontSize > 36) fontSize = 18;
     applyFontSize(fontSize);
@@ -258,12 +490,12 @@
   });
   // Dark mode toggle
   if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
-  document.getElementById('darkToggle').addEventListener('click', () => {
+  if(document.getElementById('darkToggle')) document.getElementById('darkToggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
   });
 
-  const slug = new URLSearchParams(window.location.search).get('slug');
+  const slug = window.__PRERENDERED_SLUG__ || new URLSearchParams(window.location.search).get('slug');
 
   if (!slug) {
     showError('No bhajan specified. Please go back to the bhajans list.', 'कोई भजन नहीं चुना गया।');
@@ -292,11 +524,17 @@
     const isFav = favs.includes(b.slug);
 
     // Update page metadata
-    document.getElementById('page-title').textContent = `${b.title_hindi} — ${b.title_roman} | सनातन ज्ञान सागर`;
-    document.getElementById('meta-desc').content = b.seo.meta_description;
-    document.getElementById('meta-keywords').content = (b.seo.keywords || []).join(', ');
-    document.getElementById('canonical-url').href = `https://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=${b.slug}`;
-    document.getElementById('breadcrumb-title').textContent = b.title_hindi;
+    document.title = `${b.title_hindi} — ${b.title_roman} | सनातन ज्ञान सागर`;
+    const metaDesc = document.getElementById('meta-desc');
+    if (metaDesc) metaDesc.content = b.seo ? b.seo.meta_description : (b.description_english || '');
+    
+    const metaKw = document.getElementById('meta-keywords');
+    if (metaKw) metaKw.content = (b.seo && b.seo.keywords ? b.seo.keywords : []).join(', ');
+    
+    const canonical = document.getElementById('canonical-url');
+    if (canonical) canonical.href = `https://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=${b.slug}`;
+    const bcTitle = document.getElementById('breadcrumb-title');
+    if (bcTitle) bcTitle.textContent = b.title_hindi;
 
     // JSON-LD structured data
     const ld = document.createElement('script');
@@ -304,26 +542,29 @@
     ld.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": b.seo.meta_title,
-      "description": b.seo.meta_description,
-      "author": { "@type": "Person", "name": b.composer },
-      "inLanguage": b.language,
-      "keywords": (b.seo.keywords || []).join(', '),
+      "headline": b.seo ? b.seo.meta_title : b.title_hindi,
+      "description": b.seo ? b.seo.meta_description : (b.description_english || ''),
+      "author": { "@type": "Person", "name": b.composer || 'Traditional' },
+      "inLanguage": b.language || 'Hindi/Sanskrit',
+      "keywords": (b.seo && b.seo.keywords ? b.seo.keywords : []).join(', '),
       "isPartOf": { "@type": "WebSite", "url": "https://sanatan-gyan-sagar.pages.dev/" }
     });
     document.head.appendChild(ld);
 
     // Update favicon button
-    document.getElementById('headerFavBtn').innerHTML = isFav ? '❤️' : '🤍';
-    document.getElementById('headerFavBtn').addEventListener('click', () => {
-      favs = JSON.parse(localStorage.getItem('sgs_favorites') || '[]');
-      if (favs.includes(b.slug)) { favs = favs.filter(f => f !== b.slug); document.getElementById('headerFavBtn').innerHTML = '🤍'; }
-      else { favs.push(b.slug); document.getElementById('headerFavBtn').innerHTML = '❤️'; }
-      localStorage.setItem('sgs_favorites', JSON.stringify(favs));
-    });
+    const hdrBtn = document.getElementById('headerFavBtn');
+    if (hdrBtn) {
+      hdrBtn.innerHTML = isFav ? '❤️' : '🤍';
+      hdrBtn.addEventListener('click', () => {
+        favs = JSON.parse(localStorage.getItem('sgs_favorites') || '[]');
+        if (favs.includes(b.slug)) { favs = favs.filter(f => f !== b.slug); hdrBtn.innerHTML = '🤍'; }
+        else { favs.push(b.slug); hdrBtn.innerHTML = '❤️'; }
+        localStorage.setItem('sgs_favorites', JSON.stringify(favs));
+      });
+    }
 
     // Related bhajans
-    const related = allData.filter(x => b.related.includes(x.slug));
+    const related = allData.filter(x => b.related && b.related.includes(x.slug));
 
     // WhatsApp share
     const shareText = encodeURIComponent(`${b.title_hindi} (${b.title_roman})\n\nपढ़ें पूर्ण भजन अर्थ सहित:\nhttps://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=${b.slug}\n\n🙏 सनातन ज्ञान सागर`);
@@ -336,24 +577,46 @@
 
     // Render verses
     const versesHTML = (b.verses || []).map((verse, vi) => {
-      const linesHTML = verse.lines.map((line, li) => `
-        <div class="line-block" id="line-${vi}-${li}">
-          <div class="line-hindi">${line.hindi}</div>
-          <div class="line-roman">${line.roman}</div>
-          <div style="margin-top:8px">
-            <div class="line-meaning-label">अर्थ (Hindi Meaning)</div>
-            <div class="line-meaning-hindi">${line.hindi_meaning}</div>
-            <div class="line-meaning-label" style="margin-top:6px">English</div>
-            <div class="line-meaning-en">${line.english}</div>
-          </div>
-        </div>`).join('');
+      const allHindi = verse.lines.map(l => l.hindi).join('<br>');
+      const allRoman = verse.lines.map(l => l.roman).join('<br>');
+
+      const lyricsHTML = `
+        <div class="verse-lyrics-group" style="margin-bottom:16px;">
+          <div class="line-hindi" style="font-weight:700; color:var(--text); line-height:1.8; margin-bottom:12px;">${allHindi}</div>
+          <div class="line-roman" style="opacity:0.9; line-height:1.8;">${allRoman}</div>
+        </div>`;
+
+      const hasMeaning = verse.lines.some(l => l.hindi_meaning || l.english);
+      let meaningsBlock = '';
+      if (hasMeaning) {
+        const allHindiMeaning = verse.lines.map(l => l.hindi_meaning).filter(Boolean).join(' ');
+        const allEnglishMeaning = verse.lines.map(l => l.english).filter(Boolean).join(' ');
+        
+        let meaningsHTML = '';
+        if (allHindiMeaning) meaningsHTML += `<div class="line-meaning-hindi" style="margin-bottom:12px; line-height:1.6;">${allHindiMeaning}</div>`;
+        if (allEnglishMeaning) meaningsHTML += `<div class="line-meaning-en" style="line-height:1.6;">${allEnglishMeaning}</div>`;
+
+        meaningsBlock = `
+          <details class="meaning-accordion">
+            <summary class="meaning-summary">
+               <span style="color:var(--saffron); font-size:14px;">💡</span> <span class="summary-text">View Meaning</span>
+            </summary>
+            <div class="meaning-content">
+              ${meaningsHTML}
+            </div>
+          </details>`;
+      }
+
       return `
         <div class="verse-block">
           <div class="verse-header">
             <span class="verse-label">${verse.label_hindi}</span>
             <span class="verse-label-en">${verse.label_english}</span>
           </div>
-          <div class="verse-body">${linesHTML}</div>
+          <div class="verse-body">
+            ${lyricsHTML}
+            ${meaningsBlock}
+          </div>
         </div>`;
     }).join('');
 
@@ -367,6 +630,10 @@
         </div>
       </a>`).join('') : '<p style="color:var(--text-muted);font-size:13px">More bhajans coming soon...</p>';
 
+    const FEMALE_DEITIES = ['Durga', 'Saraswati', 'Lakshmi', 'Kali', 'Parvati', 'Radha', 'Sita', 'Ganga', 'Santoshi', 'Gauri', 'Navdurga', 'Chandi'];
+    const deityPrefix = FEMALE_DEITIES.includes(b.deity) ? 'Goddess ' : 'Lord ';
+    const deityDisplayTitle = deityPrefix + b.deity;
+
     document.getElementById('content-wrapper').innerHTML = `
       <!-- LEFT / MAIN COLUMN -->
       <div>
@@ -377,12 +644,12 @@
           <p class="bhajan-roman-title">${b.title_roman}</p>
           <p class="bhajan-english-title">${b.title_english}</p>
           <div class="bhajan-meta-grid">
-            <div class="meta-item"><span class="meta-label">✍️ Composer</span><span class="meta-value">${b.composer}</span></div>
-            <div class="meta-item"><span class="meta-label">🌐 Language</span><span class="meta-value">${b.language}</span></div>
-            <div class="meta-item"><span class="meta-label">⏱ Duration</span><span class="meta-value">${b.duration_minutes} minutes</span></div>
-            <div class="meta-item"><span class="meta-label">🎵 Raga</span><span class="meta-value">${b.raga || '—'}</span></div>
-            <div class="meta-item"><span class="meta-label">⏰ Best Time</span><span class="meta-value">${b.timing}</span></div>
-            <div class="meta-item"><span class="meta-label">📅 Occasion</span><span class="meta-value">${b.occasion}</span></div>
+            ${b.composer ? `<div class="meta-item"><span class="meta-label">✍️ Composer</span><span class="meta-value">${b.composer}</span></div>` : ''}
+            ${b.language ? `<div class="meta-item"><span class="meta-label">🌐 Language</span><span class="meta-value">${b.language}</span></div>` : ''}
+            ${b.duration_minutes ? `<div class="meta-item"><span class="meta-label">⏱ Duration</span><span class="meta-value">${b.duration_minutes} minutes</span></div>` : ''}
+            ${b.raga ? `<div class="meta-item"><span class="meta-label">🎵 Raga</span><span class="meta-value">${b.raga}</span></div>` : ''}
+            ${b.timing ? `<div class="meta-item"><span class="meta-label">⏰ Best Time</span><span class="meta-value">${b.timing}</span></div>` : ''}
+            ${b.occasion ? `<div class="meta-item"><span class="meta-label">📅 Occasion</span><span class="meta-value">${b.occasion}</span></div>` : ''}
           </div>
           <div class="action-row">
             <a href="${waUrl}" target="_blank" rel="noopener" class="action-btn whatsapp">
@@ -418,28 +685,32 @@
         </div>
 
         <!-- STORY -->
+        ${(b.story || b.story_hindi) ? `
         <div class="info-section" style="margin-top:8px">
           <h2 class="info-title">कथा — Story &amp; Background</h2>
-          <p class="info-body">${b.story}</p>
-          <p class="info-body-hindi">${b.story_hindi}</p>
-        </div>
+          ${b.story ? `<p class="info-body">${b.story}</p>` : ''}
+          ${b.story_hindi ? `<p class="info-body-hindi">${b.story_hindi}</p>` : ''}
+        </div>` : ''}
 
         <!-- SIGNIFICANCE -->
+        ${(b.significance || b.significance_hindi) ? `
         <div class="info-section">
           <h2 class="info-title">महत्व — Significance</h2>
-          <p class="info-body">${b.significance}</p>
-          <p class="info-body-hindi">${b.significance_hindi}</p>
-        </div>
+          ${b.significance ? `<p class="info-body">${b.significance}</p>` : ''}
+          ${b.significance_hindi ? `<p class="info-body-hindi">${b.significance_hindi}</p>` : ''}
+        </div>` : ''}
 
         <!-- BENEFITS -->
+        ${b.benefits && b.benefits.length ? `
         <div class="info-section">
           <h2 class="info-title">लाभ — Benefits of Recitation</h2>
           <ul class="benefits-list">
-            ${(b.benefits || []).map(ben => `<li>${ben}</li>`).join('')}
+            ${b.benefits.map(ben => `<li>${ben}</li>`).join('')}
           </ul>
-        </div>
+        </div>` : ''}
 
         <!-- WHEN TO SING -->
+        ${(festivalTags || timeTags || occasionTags) ? `
         <div class="info-section">
           <h2 class="info-title">कब गाएं — When to Sing</h2>
           <div class="when-grid">
@@ -447,7 +718,7 @@
             ${timeTags ? `<div class="when-item"><h4>⏰ Best Time</h4><div class="when-tags">${timeTags}</div></div>` : ''}
             ${occasionTags ? `<div class="when-item"><h4>🙏 Occasions</h4><div class="when-tags">${occasionTags}</div></div>` : ''}
           </div>
-        </div>
+        </div>` : ''}
 
         <!-- WHATSAPP SHARE (bottom) -->
         <div style="text-align:center;padding:24px 0">
@@ -469,7 +740,7 @@
 
         <!-- Deity info -->
         <div class="sidebar-card">
-          <h3 class="sidebar-title">${DEITY_EMOJI[b.deity] || '🙏'} About ${b.deity}</h3>
+          <h3 class="sidebar-title">${DEITY_EMOJI[b.deity] || '🙏'} About ${deityDisplayTitle}</h3>
           <div style="text-align:center;padding:12px 0">
             <div style="font-size:48px;margin-bottom:8px">${DEITY_EMOJI[b.deity] || '🙏'}</div>
             <div style="font-family:var(--font-hindi);font-size:18px;color:var(--maroon)">${b.deity}</div>
@@ -506,10 +777,12 @@
       const hdrBtn = document.getElementById('headerFavBtn');
       if (favs.includes(b.slug)) {
         favs = favs.filter(f => f !== b.slug);
-        btn.innerHTML = '🤍 Save'; hdrBtn.innerHTML = '🤍';
+        btn.innerHTML = '🤍 Save'; 
+        if (hdrBtn) hdrBtn.innerHTML = '🤍';
       } else {
         favs.push(b.slug);
-        btn.innerHTML = '❤️ Saved'; hdrBtn.innerHTML = '❤️';
+        btn.innerHTML = '❤️ Saved'; 
+        if (hdrBtn) hdrBtn.innerHTML = '❤️';
       }
       localStorage.setItem('sgs_favorites', JSON.stringify(favs));
     });

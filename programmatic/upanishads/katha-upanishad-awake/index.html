@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Key verses and summary from the Katha Upanishad.">
+  <title>Katha Upanishad  | Sanatan Gyan Sagar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #F5F0E8;
+      --surface: #EDE6D8;
+      --surface2: #E6DDD0;
+      --saffron: #C96A1F;
+      --maroon: #6E1515;
+      --gold: #A8832A;
+      --text: #2A1A08;
+      --text-sec: #5C3D20;
+      --text-muted: #8C6A45;
+      --border: #D9CDBA;
+      --radius: 12px;
+      --shadow: 0 2px 12px rgba(42,26,8,0.08);
+      --shadow-hover: 0 8px 24px rgba(42,26,8,0.15);
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+      --hindi-size: 22px;
+    }
+    body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245,240,232,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 16px;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      gap: 12px;
+    }
+    .logo-link { text-decoration: none; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-om {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--saffron), var(--maroon));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 20px;
+      font-family: var(--font-hindi);
+    }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; color: var(--maroon); font-weight: 600; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); display: none; }
+    @media(min-width: 480px) { .logo-sub { display: block; } }
+    nav.header-nav {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    nav.header-nav a {
+      text-decoration: none;
+      color: var(--text-sec);
+      font-size: 13px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      min-height: 44px;
+      display: flex; align-items: center;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    nav.header-nav a:hover { background: var(--surface); color: var(--saffron); }
+    nav.header-nav a.active { color: var(--saffron); font-weight: 700; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 16px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--saffron); }
+
+    /* ── PAGE TITLE ── */
+    .page-hero {
+      background: linear-gradient(135deg, var(--maroon) 0%, #8B1A1A 100%);
+      padding: 32px 24px 28px;
+      color: #fff;
+      text-align: center;
+    }
+    .page-hero .devanagari {
+      font-family: var(--font-hindi);
+      font-size: 32px;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .page-hero h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .page-hero p {
+      font-size: 15px;
+      opacity: 0.85;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 0;
+      max-width: 1280px;
+      margin: 0 auto;
+      min-height: calc(100vh - 200px);
+    }
+
+    /* ── LEFT SIDEBAR ── */
+    .sidebar {
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 20px 0;
+      position: sticky;
+      top: 60px;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+    }
+    .sidebar-heading {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      padding: 0 16px 10px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 8px;
+    }
+    .upanishad-tab {
+      display: block;
+      padding: 14px 16px;
+      cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: all 0.18s;
+      text-decoration: none;
+    }
+    .upanishad-tab:hover {
+      background: var(--surface2);
+      border-left-color: var(--gold);
+    }
+    .upanishad-tab.active {
+      background: var(--bg);
+      border-left-color: var(--saffron);
+    }
+    .upanishad-tab .tab-sanskrit {
+      font-family: var(--font-hindi);
+      font-size: 15px;
+      color: var(--saffron);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .upanishad-tab .tab-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .upanishad-tab .tab-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    /* Section filter in sidebar */
+    .section-filters {
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+    .section-filters h4 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .section-filter-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 7px 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-sec);
+      transition: background 0.15s;
+      margin-bottom: 2px;
+    }
+    .section-filter-btn:hover { background: var(--surface2); }
+    .section-filter-btn.active {
+      background: var(--saffron);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .main-content {
+      padding: 24px 32px;
+      overflow-y: auto;
+    }
+
+    /* ── UPANISHAD HEADER ── */
+    .upanishad-header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .upanishad-header .names-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .upanishad-header .name-devanagari {
+      font-family: var(--font-hindi);
+      font-size: 28px;
+      color: var(--maroon);
+    }
+    .upanishad-header .name-english {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .upanishad-header .meta-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .meta-pill {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--text-sec);
+    }
+    .meta-pill.highlight {
+      background: var(--saffron);
+      color: #fff;
+      border-color: var(--saffron);
+    }
+    .upanishad-header .theme-box {
+      background: var(--bg);
+      border-left: 3px solid var(--gold);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 12px;
+    }
+    .theme-box .theme-en {
+      font-size: 14px;
+      color: var(--text-sec);
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .theme-box .theme-hi {
+      font-family: var(--font-hindi);
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* ── TOGGLE BAR ── */
+    .toggle-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .toggle-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .toggle-group {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .toggle-btn {
+      padding: 6px 14px;
+      font-size: 13px;
+      font-family: var(--font-ui);
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.15s;
+    }
+    .toggle-btn.active {
+      background: var(--saffron);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* ── VERSE NAVIGATION ── */
+    .verse-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+    }
+    .verse-nav-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--text-sec);
+      font-family: var(--font-ui);
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .verse-nav-btn:hover:not(:disabled) {
+      background: var(--saffron);
+      color: #fff;
+      border-color: var(--saffron);
+    }
+    .verse-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .verse-counter {
+      flex: 1;
+      text-align: center;
+    }
+    .verse-counter .vc-main {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .verse-counter .vc-section {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .progress-bar-wrap {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      flex: 1;
+      margin: 0 4px;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--saffron);
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+
+    /* Jump to verse */
+    .jump-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .jump-input {
+      width: 64px;
+      padding: 5px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .jump-btn {
+      padding: 5px 10px;
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: var(--font-ui);
+    }
+
+    /* ── VERSE CARD ── */
+    .verse-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
+    }
+    .verse-card-header {
+      background: var(--surface);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .verse-number-badge {
+      background: var(--maroon);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .verse-section-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Sanskrit block */
+    .verse-sanskrit {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .verse-sanskrit.hidden { display: none; }
+    .sanskrit-text {
+      font-family: var(--font-hindi);
+      font-size: var(--hindi-size);
+      color: var(--maroon);
+      line-height: 1.8;
+      text-align: center;
+    }
+    .verse-roman {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .verse-roman.hidden { display: none; }
+    .roman-text {
+      font-size: 15px;
+      color: var(--text-sec);
+      font-style: italic;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Meaning block */
+    .verse-meaning {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .meaning-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .meaning-hindi {
+      font-family: var(--font-hindi);
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    .meaning-english {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-sec);
+    }
+    .meaning-hindi.hidden,
+    .meaning-english.hidden { display: none; }
+
+    /* Word meanings */
+    .word-meanings {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .word-meanings h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .word-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px;
+    }
+    .word-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+    }
+    .word-item .word-sanskrit {
+      font-family: var(--font-hindi);
+      font-size: 15px;
+      color: var(--saffron);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .word-item .word-meaning {
+      font-size: 12px;
+      color: var(--text-sec);
+    }
+
+    /* Commentary */
+    .verse-commentary {
+      padding: 20px 24px;
+    }
+    .verse-commentary h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .verse-commentary p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-sec);
+    }
+
+    /* Cross links */
+    .cross-links {
+      padding: 12px 24px;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .cross-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: var(--saffron);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .cross-link-btn:hover {
+      background: var(--saffron);
+      color: #fff;
+      border-color: var(--saffron);
+    }
+
+    /* ── INTRO SECTION ── */
+    .intro-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+    .intro-section h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .intro-text-en {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-sec);
+      margin-bottom: 10px;
+    }
+    .intro-text-en.hidden { display: none; }
+    .intro-text-hi {
+      font-family: var(--font-hindi);
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    .intro-text-hi.hidden { display: none; }
+
+    /* ── RELATED GITA ── */
+    .related-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .related-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .related-chip {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--text-sec);
+      text-decoration: none;
+    }
+    .related-chip:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* ── FOOTER ── */
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 32px 16px; text-align: center; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-om { font-family: var(--font-hindi); font-size: 32px; color: var(--saffron); margin-bottom: 8px; }
+    .footer-tagline { font-family: var(--font-hindi); font-size: 15px; color: var(--text-sec); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+    .footer-links a { color: var(--text-muted); font-size: 13px; text-decoration: none; }
+    .footer-links a:hover { color: var(--saffron); }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+
+    /* ── BOTTOM NAV (mobile) ── */
+    .bottom-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); z-index: 99; padding: 4px 0 env(safe-area-inset-bottom); }
+    .bottom-nav-inner { display: flex; justify-content: space-around; }
+    .bnav-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--text-muted); padding: 8px 12px; min-width: 60px; min-height: 52px; justify-content: center; gap: 2px; border-radius: 8px; font-size: 10px; transition: color 0.2s; }
+    .bnav-item.active, .bnav-item:hover { color: var(--saffron); }
+    .bnav-item span:first-child { font-size: 20px; }
+
+    /* ── LOADING ── */
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+    .loading .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--saffron);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 12px 0;
+      }
+      .sidebar-upanishads {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 12px;
+        gap: 8px;
+      }
+      .upanishad-tab {
+        flex-shrink: 0;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .upanishad-tab.active {
+        border-left-color: transparent;
+        border-bottom-color: var(--saffron);
+        background: var(--surface2);
+      }
+      .main-content { padding: 16px; }
+      .bottom-nav { display: block; }
+      body { padding-bottom: 60px; }
+      nav.header-nav { display: none; }
+      .verse-nav { flex-wrap: wrap; }
+    }
+  </style>
+  <link rel="manifest" href="/manifest.json">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+  <script>
+    let fontSize = parseInt(localStorage.getItem('sgs_fontsize') || '22');
+    function applyFontSize(px) {
+      document.documentElement.style.setProperty('--hindi-size', px + 'px');
+      localStorage.setItem('sgs_fontsize', px);
+    }
+    applyFontSize(fontSize);
+    document.getElementById('fontToggle').addEventListener('click', () => {
+      fontSize += 2;
+      if (fontSize > 36) fontSize = 18;
+      applyFontSize(fontSize);
+    });
+    if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+    });
+  </script>
+
+
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Katha Upanishad  | Sanatan Gyan Sagar",
+    "description": "Key verses and summary from the Katha Upanishad.",
+    "url": "https://sanatan-gyan-sagar.pages.dev/upanishads/katha-upanishad-awake/",
+    "inLanguage": [
+        "hi",
+        "en",
+        "sa"
+    ]
+}</script>
+    <script>
+        window.__PRERENDERED_SLUG__ = "katha-upanishad-awake";
+        window.addEventListener('load', function() {  });
+    </script>
+    
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="/index.html" class="logo-link">
+      <div class="logo-om">ॐ</div>
+      <div class="logo-text">
+        <span class="logo-title">सनातन ज्ञान सागर</span>
+        <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="/index.html">🏠 Home</a>
+      <a href="/bhajans.html">🪔 Bhajans</a>
+      <a href="/bhagavad-gita.html">📖 Gita</a>
+      <a href="/upanishads.html" class="active">📜 Upanishads</a>
+      <a href="/wisdom.html">💬 Wisdom</a>
+    </nav>
+    <button class="header-fav" id="fontToggle" aria-label="Increase font size" title="Font size">अ</button>
+    <button class="header-fav" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb" aria-label="Breadcrumb" id="breadcrumb">
+  <a href="/index.html">🏠 Home</a>
+  <span>›</span>
+  <span id="bc-upanishad">Upanishads</span>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="devanagari">उपनिषद्</div>
+  <h1>The Upanishads</h1>
+  <p>The philosophical crown of the Vedas — the direct inquiry into the nature of Brahman, Atman, and the ultimate reality.</p>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-heading">Choose Upanishad</div>
+    <div class="sidebar-upanishads" id="upanishad-tabs">
+      <!-- rendered by JS -->
+    </div>
+    <div class="section-filters" id="section-filters" style="display:none;">
+      <h4>Jump to Section</h4>
+      <div id="section-filter-btns"></div>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="main-content" id="main-content">
+    <div class="loading">
+      <div class="spinner"></div>
+      Loading Upanishads…
+    </div>
+  </main>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-om">ॐ</div>
+    <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing.</p>
+  </div>
+</footer>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <div class="bottom-nav-inner">
+    <a href="/index.html" class="bnav-item"><span>🏠</span><span>Home</span></a>
+    <a href="/bhajans.html" class="bnav-item"><span>🪔</span><span>Bhajans</span></a>
+    <a href="/bhagavad-gita.html" class="bnav-item"><span>📖</span><span>Gita</span></a>
+    <a href="/upanishads.html" class="bnav-item active"><span>📜</span><span>Upanishads</span></a>
+    <a href="/wisdom.html" class="bnav-item"><span>💬</span><span>Wisdom</span></a>
+  </div>
+</nav>
+
+<script>
+  // ── STATE ──
+  let allData = [];
+  let currentUpanishad = null;
+  let currentVerseIndex = 0;
+  let activeSection = null; // null = all
+  let showRoman = false;
+  let showHindi = true; // meaning language toggle: true=hindi, false=english
+
+  // ── LOAD DATA ──
+  async function init() {
+    try {
+      const res = await fetch('/data/upanishads.json');
+      allData = await res.json();
+      buildTabs();
+      // default: first upanishad
+      selectUpanishad(0);
+    } catch(e) {
+      document.getElementById('main-content').innerHTML =
+        '<p style="padding:40px;color:var(--text-muted);">Could not load upanishads.json. Please ensure the file is in the same folder.</p>';
+    }
+  }
+
+  // ── SIDEBAR TABS ──
+  function buildTabs() {
+    const container = document.getElementById('upanishad-tabs');
+    container.innerHTML = allData.map((u, i) => `
+      <div class="upanishad-tab${i===0?' active':''}" onclick="selectUpanishad(${i})">
+        <span class="tab-sanskrit">${u.name_sanskrit}</span>
+        <span class="tab-name">${u.name_english}</span>
+        <span class="tab-meta">${u.veda} · ${u.total_verses} verses</span>
+      </div>
+    `).join('');
+  }
+
+  function selectUpanishad(index) {
+    // update tab highlight
+    document.querySelectorAll('.upanishad-tab').forEach((el, i) => {
+      el.classList.toggle('active', i === index);
+    });
+    currentUpanishad = allData[index];
+    currentVerseIndex = 0;
+    activeSection = null;
+    // breadcrumb
+    document.getElementById('bc-upanishad').textContent = currentUpanishad.name_english;
+    // section filters
+    buildSectionFilters();
+    // render
+    renderContent();
+  }
+
+  // ── SECTION FILTERS ──
+  function buildSectionFilters() {
+    const container = document.getElementById('section-filter-btns');
+    const wrap = document.getElementById('section-filters');
+    if (!currentUpanishad || currentUpanishad.sections.length <= 1) {
+      wrap.style.display = 'none';
+      return;
+    }
+    wrap.style.display = 'block';
+    container.innerHTML =
+      `<button class="section-filter-btn active" onclick="filterSection(null, this)">All Sections</button>` +
+      currentUpanishad.sections.map(s =>
+        `<button class="section-filter-btn" onclick="filterSection(${s.section}, this)">${s.name}</button>`
+      ).join('');
+  }
+
+  function filterSection(sectionNum, btn) {
+    activeSection = sectionNum;
+    currentVerseIndex = 0;
+    document.querySelectorAll('.section-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderContent();
+  }
+
+  // ── FILTERED VERSES ──
+  function getFilteredVerses() {
+    if (!currentUpanishad) return [];
+    if (activeSection === null) return currentUpanishad.verses;
+    return currentUpanishad.verses.filter(v => v.section === activeSection);
+  }
+
+  // ── RENDER MAIN ──
+  function renderContent() {
+    const u = currentUpanishad;
+    const verses = getFilteredVerses();
+    const verse = verses[currentVerseIndex];
+    const total = verses.length;
+
+    if (!verse) {
+      document.getElementById('main-content').innerHTML =
+        '<p style="padding:40px;color:var(--text-muted);">No verses found for this selection.</p>';
+      return;
+    }
+
+    const progress = Math.round(((currentVerseIndex + 1) / total) * 100);
+
+    document.getElementById('main-content').innerHTML = `
+      <!-- Upanishad Header -->
+      <div class="upanishad-header">
+        <div class="names-row">
+          <span class="name-devanagari">${u.name_sanskrit}</span>
+          <span class="name-english">${u.name_english}</span>
+        </div>
+        <div class="meta-pills">
+          <span class="meta-pill highlight">${u.veda}</span>
+          <span class="meta-pill">${u.total_verses} verses</span>
+          ${u.sections.length > 1 ? `<span class="meta-pill">${u.sections.length} sections</span>` : ''}
+        </div>
+        <div class="theme-box">
+          <div class="theme-en">${u.theme_english}</div>
+          <div class="theme-hi">${u.theme_hindi}</div>
+        </div>
+        ${u.related_gita_chapters && u.related_gita_chapters.length ? `
+        <div class="related-row">
+          <span class="related-label">Related Gita Chapters:</span>
+          ${u.related_gita_chapters.map(ch =>
+            `<a href="bhagavad-gita.html?chapter=${ch}" class="related-chip">📖 Chapter ${ch}</a>`
+          ).join('')}
+        </div>` : ''}
+      </div>
+
+      <!-- Intro -->
+      <div class="intro-section">
+        <h3>Introduction</h3>
+        <div class="intro-text-en${showHindi ? ' hidden' : ''}">${u.intro_english}</div>
+        <div class="intro-text-hi${!showHindi ? ' hidden' : ''}">${u.intro_hindi}</div>
+      </div>
+
+      <!-- Toggle Bar -->
+      <div class="toggle-bar">
+        <span class="toggle-label">Script:</span>
+        <div class="toggle-group">
+          <button class="toggle-btn${!showRoman ? ' active' : ''}" onclick="setScript('devanagari')">देवनागरी</button>
+          <button class="toggle-btn${showRoman ? ' active' : ''}" onclick="setScript('roman')">Roman</button>
+        </div>
+        <span class="toggle-label" style="margin-left:8px;">Meaning:</span>
+        <div class="toggle-group">
+          <button class="toggle-btn${showHindi ? ' active' : ''}" onclick="setLang('hindi')">हिन्दी</button>
+          <button class="toggle-btn${!showHindi ? ' active' : ''}" onclick="setLang('english')">English</button>
+        </div>
+      </div>
+
+      <!-- Verse Navigation -->
+      <div class="verse-nav">
+        <button class="verse-nav-btn" onclick="prevVerse()" ${currentVerseIndex === 0 ? 'disabled' : ''}>
+          ← Prev
+        </button>
+        <div class="verse-counter">
+          <div class="vc-main">Verse ${verse.verse_number} &nbsp;·&nbsp; ${currentVerseIndex + 1} of ${total}</div>
+          <div class="vc-section">${verse.section_name}</div>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" style="width:${progress}%"></div>
+        </div>
+        <div class="jump-row">
+          <input type="number" class="jump-input" id="jump-input" min="1" max="${total}" placeholder="#" 
+            onkeydown="if(event.key==='Enter') jumpToVerse()" />
+          <button class="jump-btn" onclick="jumpToVerse()">Go</button>
+        </div>
+        <button class="verse-nav-btn" onclick="nextVerse()" ${currentVerseIndex >= total - 1 ? 'disabled' : ''}>
+          Next →
+        </button>
+      </div>
+
+      <!-- Verse Card -->
+      <div class="verse-card">
+        <div class="verse-card-header">
+          <span class="verse-number-badge">Verse ${verse.verse_number}</span>
+          <span class="verse-section-label">${verse.section_name}</span>
+        </div>
+
+        <!-- Sanskrit / Roman -->
+        <div class="verse-sanskrit${showRoman ? ' hidden' : ''}">
+          <div class="sanskrit-text">${verse.sanskrit.replace(/\n/g, '<br>')}</div>
+        </div>
+        <div class="verse-roman${!showRoman ? ' hidden' : ''}">
+          <div class="roman-text">${verse.roman.replace(/\n/g, '<br>')}</div>
+        </div>
+
+        <!-- Meaning -->
+        <div class="verse-meaning">
+          <div class="meaning-label">${showHindi ? 'Hindi Meaning' : 'English Meaning'}</div>
+          <div class="meaning-hindi${!showHindi ? ' hidden' : ''}">${verse.hindi}</div>
+          <div class="meaning-english${showHindi ? ' hidden' : ''}">${verse.english}</div>
+        </div>
+
+        <!-- Word Meanings -->
+        ${verse.word_meanings && verse.word_meanings.length ? `
+        <div class="word-meanings">
+          <h4>Word by Word</h4>
+          <div class="word-grid">
+            ${verse.word_meanings.map(w => `
+              <div class="word-item">
+                <span class="word-sanskrit">${w.word}</span>
+                <span class="word-meaning">${w.meaning}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>` : ''}
+
+        <!-- Commentary -->
+        ${verse.commentary ? `
+        <div class="verse-commentary">
+          <h4>Commentary</h4>
+          <p>${verse.commentary}</p>
+        </div>` : ''}
+
+        <!-- Cross Links -->
+        ${buildCrossLinks(verse)}
+      </div>
+    `;
+  }
+
+  function buildCrossLinks(verse) {
+    if (!verse.cross_links) return '';
+    const links = [];
+    if (verse.cross_links.gita_verse) {
+      links.push(`<a href="bhagavad-gita.html?chapter=${verse.cross_links.gita_verse}" class="cross-link-btn">📖 See Gita Ch. ${verse.cross_links.gita_verse}</a>`);
+    }
+    if (verse.cross_links.shloka_slug) {
+      links.push(`<a href="shlokas.html?slug=${verse.cross_links.shloka_slug}" class="cross-link-btn">🕉️ See Shloka</a>`);
+    }
+    if (verse.cross_links.wisdom_topic) {
+      links.push(`<a href="wisdom.html?topic=${verse.cross_links.wisdom_topic}" class="cross-link-btn">💡 ${verse.cross_links.wisdom_topic.charAt(0).toUpperCase() + verse.cross_links.wisdom_topic.slice(1)}</a>`);
+    }
+    if (!links.length) return '';
+    return `<div class="cross-links">${links.join('')}</div>`;
+  }
+
+  // ── NAVIGATION ──
+  function prevVerse() {
+    if (currentVerseIndex > 0) {
+      currentVerseIndex--;
+      renderContent();
+      scrollToContent();
+    }
+  }
+
+  function nextVerse() {
+    const total = getFilteredVerses().length;
+    if (currentVerseIndex < total - 1) {
+      currentVerseIndex++;
+      renderContent();
+      scrollToContent();
+    }
+  }
+
+  function jumpToVerse() {
+    const input = document.getElementById('jump-input');
+    const num = parseInt(input.value, 10);
+    const verses = getFilteredVerses();
+    // find by verse_number
+    const idx = verses.findIndex(v => v.verse_number === num);
+    if (idx >= 0) {
+      currentVerseIndex = idx;
+      renderContent();
+      scrollToContent();
+    } else if (num >= 1 && num <= verses.length) {
+      currentVerseIndex = num - 1;
+      renderContent();
+      scrollToContent();
+    }
+  }
+
+  function scrollToContent() {
+    document.querySelector('.verse-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── TOGGLES ──
+  function setScript(mode) {
+    showRoman = (mode === 'roman');
+    renderContent();
+  }
+
+  function setLang(lang) {
+    showHindi = (lang === 'hindi');
+    renderContent();
+  }
+
+  // ── KEYBOARD NAV ──
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') nextVerse();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') prevVerse();
+  });
+
+  // ── START ──
+  init();
+</script>
+</body>
+</html>

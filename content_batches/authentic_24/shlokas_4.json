@@ -1,0 +1,59 @@
+{
+  "pillar": "shlokas",
+  "count": 4,
+  "authentic_only": true,
+  "items": [
+    {
+      "id": 2001,
+      "slug": "gita-2-14",
+      "title_hindi": "भगवद्गीता 2.14",
+      "title_english": "Bhagavad Gita 2.14",
+      "source": "Bhagavad Gita",
+      "source_ref": "2.14",
+      "source_name": "Bhagavad Gita",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse",
+      "verification_notes": "Match Sanskrit exactly to the selected edition."
+    },
+    {
+      "id": 2002,
+      "slug": "gita-6-5",
+      "title_hindi": "भगवद्गीता 6.5",
+      "title_english": "Bhagavad Gita 6.5",
+      "source": "Bhagavad Gita",
+      "source_ref": "6.5",
+      "source_name": "Bhagavad Gita",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse",
+      "verification_notes": "Include complete verse and accurate transliteration."
+    },
+    {
+      "id": 2003,
+      "slug": "gita-12-15",
+      "title_hindi": "भगवद्गीता 12.15",
+      "title_english": "Bhagavad Gita 12.15",
+      "source": "Bhagavad Gita",
+      "source_ref": "12.15",
+      "source_name": "Bhagavad Gita",
+      "source_edition": "Gita Press / critical edition",
+      "is_excerpt": false,
+      "excerpt_range": "full verse",
+      "verification_notes": "Do not paraphrase as original verse."
+    },
+    {
+      "id": 2004,
+      "slug": "asato-ma-sadgamaya",
+      "title_hindi": "असतो मा सद्गमय",
+      "title_english": "Asato Ma Sadgamaya",
+      "source": "Brihadaranyaka Upanishad",
+      "source_ref": "1.3.28",
+      "source_name": "Brihadaranyaka Upanishad",
+      "source_edition": "Critical/traditional Sanskrit edition",
+      "is_excerpt": false,
+      "excerpt_range": "full mantra",
+      "verification_notes": "Keep mantra wording exactly as source."
+    }
+  ]
+}
