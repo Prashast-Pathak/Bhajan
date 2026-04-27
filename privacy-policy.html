@@ -264,12 +264,12 @@ function toggleMobileMenu() {
 </script>
 
 <script>
-// ── GLOBAL UI TOGGLES ──
+// ── UI TOGGLES (consolidated) ──
 (function() {
   // Apply initial states immediately to prevent flash
   const isDark = localStorage.getItem('sgs_dark') === 'true';
   if (isDark) document.body.classList.add('dark-mode');
-  
+
   const isChanting = localStorage.getItem('sgs_chanting_mode') === 'true';
   if (isChanting) document.body.classList.add('chanting-mode');
 
@@ -286,53 +286,20 @@ function toggleMobileMenu() {
         localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
       });
     }
-  });
-})();
-</script>
 
-<script>
-// ── GLOBAL UI TOGGLES ──
-(function() {
-  // Apply initial states immediately to prevent flash
-  const isDark = localStorage.getItem('sgs_dark') === 'true';
-  if (isDark) document.body.classList.add('dark-mode');
-  
-  const isChanting = localStorage.getItem('sgs_chanting_mode') === 'true';
-  if (isChanting) document.body.classList.add('chanting-mode');
-
-  let fontSize = parseInt(localStorage.getItem('sgs_fontsize') || '22');
-  document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
-  document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
-
-  document.addEventListener('DOMContentLoaded', () => {
-    // Dark Mode Toggle
-    const darkBtn = document.getElementById('darkToggle');
-    if (darkBtn) {
-      darkBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
+    // Font Size Toggle (optional)
+    const fontBtn = document.getElementById('fontToggle');
+    if (fontBtn) {
+      fontBtn.addEventListener('click', () => {
+        fontSize += 2;
+        if (fontSize > 36) fontSize = 18;
+        document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
+        document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
+        localStorage.setItem('sgs_fontsize', fontSize);
       });
     }
-  });
-})();
-</script>
 
-<script>
-// ── GLOBAL UI TOGGLES ──
-(function() {
-  // Apply initial states immediately to prevent flash
-  const isDark = localStorage.getItem('sgs_dark') === 'true';
-  if (isDark) document.body.classList.add('dark-mode');
-  
-  const isChanting = localStorage.getItem('sgs_chanting_mode') === 'true';
-  if (isChanting) document.body.classList.add('chanting-mode');
-
-  let fontSize = parseInt(localStorage.getItem('sgs_fontsize') || '22');
-  document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
-  document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
-
-  document.addEventListener('DOMContentLoaded', () => {
-    // Chanting Toggle
+    // Chanting Toggle (optional)
     const chantBtn = document.getElementById('chantingToggle');
     if (chantBtn) {
       function updateChantBtn() {
@@ -347,52 +314,6 @@ function toggleMobileMenu() {
         updateChantBtn();
       });
     }
-
-    // Font Size Toggle
-    const fontBtn = document.getElementById('fontToggle');
-    if (fontBtn) {
-      fontBtn.addEventListener('click', () => {
-        fontSize += 2;
-        if (fontSize > 36) fontSize = 18;
-        document.documentElement.style.setProperty('--font-size-hindi', fontSize + 'px');
-        document.documentElement.style.setProperty('--hindi-size', fontSize + 'px');
-        localStorage.setItem('sgs_fontsize', fontSize);
-      });
-    }
-
-    // Dark Mode Toggle
-    const darkBtn = document.getElementById('darkToggle');
-    if (darkBtn) {
-      darkBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
-      });
-    }
-  });
-})();
-</script>
-
-<script>
-// ── CHANTING MODE ──
-(function() {
-  const CHANT_KEY = 'sgs_chanting_mode';
-  const isChanting = localStorage.getItem(CHANT_KEY) === 'true';
-  if (isChanting) document.body.classList.add('chanting-mode');
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('chantingToggle');
-    if (!btn) return;
-    function updateBtn() {
-      const on = document.body.classList.contains('chanting-mode');
-      btn.innerHTML = on ? '📖 Study' : '🎵 Chant';
-      btn.title = on ? 'Switch to Study Mode' : 'Switch to Chanting Mode';
-    }
-    updateBtn();
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('chanting-mode');
-      localStorage.setItem(CHANT_KEY, document.body.classList.contains('chanting-mode'));
-      updateBtn();
-    });
   });
 })();
 </script>
