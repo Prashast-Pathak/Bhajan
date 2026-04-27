@@ -1,7 +1,7 @@
 // सनातन ज्ञान सागर — Service Worker
 // Enables offline access to cached pages and content
 
-const CACHE_NAME = 'sgs-cache-v3';
+const CACHE_NAME = 'sgs-cache-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
