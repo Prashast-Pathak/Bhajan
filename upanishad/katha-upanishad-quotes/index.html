@@ -1216,25 +1216,29 @@ function toggleMobileMenu() {
       </div>
 
       <!-- Verse Navigation -->
-      <div class="verse-nav">
-        <button class="verse-nav-btn" onclick="prevVerse()" ${currentVerseIndex === 0 ? 'disabled' : ''}>
-          ← Prev
-        </button>
-        <div class="verse-counter">
-          <div class="vc-main">Verse ${verse.verse_number} &nbsp;·&nbsp; ${currentVerseIndex + 1} of ${total}</div>
-          <div class="vc-section">${verse.section_name}</div>
+      <div class="verse-nav" style="flex-direction: column; gap: 16px; align-items: stretch;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+          <button class="verse-nav-btn" onclick="prevVerse()" ${currentVerseIndex === 0 ? 'disabled' : ''}>
+            ← Prev
+          </button>
+          <div class="verse-counter" style="margin: 0 4px;">
+            <div class="vc-main">Verse ${verse.verse_number} &nbsp;·&nbsp; ${currentVerseIndex + 1} of ${total}</div>
+            <div class="vc-section">${verse.section_name}</div>
+          </div>
+          <button class="verse-nav-btn" onclick="nextVerse()" ${currentVerseIndex >= total - 1 ? 'disabled' : ''}>
+            Next →
+          </button>
         </div>
-        <div class="progress-bar-wrap">
-          <div class="progress-bar-fill" style="width:${progress}%"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+          <div class="progress-bar-wrap" style="margin: 0; flex: 1;">
+            <div class="progress-bar-fill" style="width:${progress}%"></div>
+          </div>
+          <div class="jump-row">
+            <input type="number" class="jump-input" id="jump-input" min="1" max="${total}" placeholder="#" 
+              onkeydown="if(event.key==='Enter') jumpToVerse()" />
+            <button class="jump-btn" onclick="jumpToVerse()">Go</button>
+          </div>
         </div>
-        <div class="jump-row">
-          <input type="number" class="jump-input" id="jump-input" min="1" max="${total}" placeholder="#" 
-            onkeydown="if(event.key==='Enter') jumpToVerse()" />
-          <button class="jump-btn" onclick="jumpToVerse()">Go</button>
-        </div>
-        <button class="verse-nav-btn" onclick="nextVerse()" ${currentVerseIndex >= total - 1 ? 'disabled' : ''}>
-          Next →
-        </button>
       </div>
 
       <!-- Verse Card -->
