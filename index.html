@@ -817,7 +817,7 @@ function toggleMobileMenu() {
       const color = DEITY_COLORS[b.deity] || '#C96A1F';
       const firstLine = b.verses?.[0]?.lines?.[0];
       html += `
-        <a href="/bhajan/${b.slug}/" class="card" style="--deity-color:${color}">
+        <a href="bhajan.html?slug=${b.slug}" class="card" style="--deity-color:${color}">
           <div class="card-badge" style="background:${color}">${b.deity}</div>
           <span class="featured-badge" style="position:absolute;top:12px;right:12px">TODAY'S FEATURED</span>
           <h3 class="card-title-hindi">${b.title_hindi}</h3>
