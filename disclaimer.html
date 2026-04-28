@@ -64,13 +64,14 @@
   }
   .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
 
-  /* Hamburger */
-  .hamburger-btn {
+  /* Hamburger & Back Button */
+  .hamburger-btn, .back-btn {
     background: transparent; border: none; color: var(--text);
-    cursor: pointer; display: none; align-items: center; justify-content: center;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
     padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
   }
-  .hamburger-btn:hover { background: var(--surface2); }
+  .hamburger-btn { display: none; }
+  .hamburger-btn:hover, .back-btn:hover { background: var(--surface2); }
 
   /* Mobile Menu */
   .mobile-menu-overlay {
