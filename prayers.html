@@ -145,9 +145,9 @@
     @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
     /* Modal Header */
-    .modal-header { padding: 24px 24px 16px; border-bottom: 1px solid var(--border); position: relative; }
-    .modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 20px; cursor: pointer; color: var(--text-muted); width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
-    .modal-close:hover { background: var(--surface); color: var(--saffron); }
+    .modal-header { display: flex; align-items: flex-start; justify-content: flex-start; gap: 12px; padding: 24px 24px 16px; border-bottom: 1px solid var(--border); position: relative; }
+    .modal-close { background: transparent; border: none; flex-shrink: 0; cursor: pointer; color: var(--text); display: flex; align-items: center; justify-content: center; transition: background 0.2s; padding: 8px; border-radius: 8px; margin-left: -8px; margin-top: 0px; }
+    .modal-close:hover { background: var(--surface2); color: var(--saffron); }
     .modal-deity-line { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
     .modal-title-hindi { font-family: var(--font-hindi); font-size: 28px; color: var(--maroon); line-height: 1.3; margin-bottom: 4px; }
     .modal-title-en { font-size: 16px; color: var(--text-sec); margin-bottom: 12px; }
@@ -762,21 +762,25 @@ function renderModal() {
 
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-header">
-      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
-      <div class="modal-deity-line">
-        <span class="deity-badge" style="background:${p.deity_color}">${p.deity}</span>
-        <span class="difficulty-badge ${diffClass(p.difficulty)}">${p.difficulty}</span>
-        ${p.featured ? '<span style="font-size:12px;color:var(--gold);font-weight:700;">★ Featured</span>' : ''}
+      <button class="modal-close" onclick="closeModal()" aria-label="Go Back">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </button>
+      <div>
+        <div class="modal-deity-line">
+          <span class="deity-badge" style="background:${p.deity_color}">${p.deity}</span>
+          <span class="difficulty-badge ${diffClass(p.difficulty)}">${p.difficulty}</span>
+          ${p.featured ? '<span style="font-size:12px;color:var(--gold);font-weight:700;">★ Featured</span>' : ''}
+        </div>
+        <h2 class="modal-title-hindi" id="modal-title-hindi">${p.title_hindi}</h2>
+        <div class="modal-title-en">${p.title_english}</div>
+        <div class="modal-meta-row">
+          <span class="modal-meta-pill">📅 ${p.occasion}</span>
+          <span class="modal-meta-pill">⏱ ${fmtDuration(p.duration_minutes)}</span>
+          <span class="modal-meta-pill">📖 ${p.steps.length} steps</span>
+          <span class="modal-meta-pill">🔤 ${p.language.join(' · ')}</span>
+        </div>
+        <p class="modal-intro">${p.intro_english}</p>
       </div>
-      <h2 class="modal-title-hindi" id="modal-title-hindi">${p.title_hindi}</h2>
-      <div class="modal-title-en">${p.title_english}</div>
-      <div class="modal-meta-row">
-        <span class="modal-meta-pill">📅 ${p.occasion}</span>
-        <span class="modal-meta-pill">⏱ ${fmtDuration(p.duration_minutes)}</span>
-        <span class="modal-meta-pill">📖 ${p.steps.length} steps</span>
-        <span class="modal-meta-pill">🔤 ${p.language.join(' · ')}</span>
-      </div>
-      <p class="modal-intro">${p.intro_english}</p>
     </div>
 
     <div class="modal-toolbar">
