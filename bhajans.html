@@ -493,7 +493,7 @@ function toggleMobileMenu() {
   const initSearch = urlParams.get('search') || '';
   const initDeity = urlParams.get('deity') || '';
 
-  fetch('/data/bhajans.json')
+  fetch('data/bhajans.json')
     .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
     .then(data => {
       // Only show bhajans that have actual content (verses)

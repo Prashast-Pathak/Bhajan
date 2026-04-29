@@ -441,7 +441,7 @@ function toggleMobileMenu() {
       return;
     }
 
-    fetch('/data/bhajans.json')
+    fetch('data/bhajans.json')
       .then(r => r.json())
       .then(data => {
         const saved = data.filter(b => favs.includes(b.slug));

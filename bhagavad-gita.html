@@ -684,7 +684,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 async function init() {
   try {
-    const res = await fetch('/data/gita.json');
+    const res = await fetch('data/gita.json');
     if (!res.ok) throw new Error('Network error');
     gitaData = await res.json();
     buildSearchIndex();

@@ -745,14 +745,14 @@ function toggleMobileMenu() {
     /* ─── FETCH DATA ─── */
     async function fetchWisdom() {
       try {
-        const res = await fetch('/data/wisdom.json');
+        const res = await fetch('data/wisdom.json');
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         return data.topics || [];
       } catch (e) {
         // Fallback: try relative path for local dev
         try {
-          const res2 = await fetch('/data/wisdom.json');
+          const res2 = await fetch('data/wisdom.json');
           if (!res2.ok) throw new Error('fallback failed');
           const data2 = await res2.json();
           return data2.topics || [];

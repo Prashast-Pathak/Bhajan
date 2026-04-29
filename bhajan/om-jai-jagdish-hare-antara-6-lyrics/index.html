@@ -544,7 +544,7 @@ function toggleMobileMenu() {
   if (!slug) {
     showError('No bhajan specified. Please go back to the bhajans list.', 'कोई भजन नहीं चुना गया।');
   } else {
-    fetch('/data/bhajans.json')
+    fetch('data/bhajans.json')
       .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
       .then(data => {
         const bhajan = data.find(b => b.slug === slug);

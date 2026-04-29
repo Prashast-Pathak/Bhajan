@@ -774,11 +774,11 @@ function toggleMobileMenu() {
 
   // Fetch all necessary data
   Promise.all([
-    fetch('/data/bhajans.json').then(r => r.json()),
-    fetch('/data/upanishads.json').then(r => r.json()),
-    fetch('/data/prayers.json').then(r => r.json()),
-    fetch('/data/gita.json').then(r => r.json()),
-    fetch('/data/shlokas.json').then(r => r.json())
+    fetch('data/bhajans.json').then(r => r.json()),
+    fetch('data/upanishads.json').then(r => r.json()),
+    fetch('data/prayers.json').then(r => r.json()),
+    fetch('data/gita.json').then(r => r.json()),
+    fetch('data/shlokas.json').then(r => r.json())
   ])
   .then(([bhajansData, upaData, prayersData, gitaData, shlokasData]) => renderHomepage(bhajansData, upaData, prayersData.prayers || prayersData, gitaData, shlokasData.shlokas || shlokasData))
   .catch(err => {

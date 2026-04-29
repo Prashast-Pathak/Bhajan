@@ -1074,7 +1074,7 @@ function toggleMobileMenu() {
   // ── LOAD DATA ──
   async function init() {
     try {
-      const res = await fetch('/data/upanishads.json');
+      const res = await fetch('data/upanishads.json');
       allData = await res.json();
       buildTabs();
       let initialId = window.__PRERENDERED_UPANISHAD__ || new URLSearchParams(window.location.search).get('id');

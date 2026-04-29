@@ -656,7 +656,7 @@ let timers = {};              // stepIndex → { interval, remaining, running }
 // ─────────────────────────────────────────────
 async function loadPrayers() {
   try {
-    const res = await fetch('/data/prayers.json');
+    const res = await fetch('data/prayers.json');
     const data = await res.json();
     allPrayers = data.prayers;
   } catch(e) {
