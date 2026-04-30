@@ -502,13 +502,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -702,7 +703,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 async function init() {
   try {
-    const res = await fetch('data/gita.json');
+    const res = await fetch('/data/gita.json');
     if (!res.ok) throw new Error('Network error');
     gitaData = await res.json();
     buildSearchIndex();
@@ -771,7 +772,7 @@ function renderVersePage(ch, v) {
 
   // Topics
   const topicChips = (v.topics || []).map(t =>
-    `<a href="/wisdom.html?topic=${t}" class="topic-chip">${t}</a>`).join(' ');
+    `<a href="/wisdom/${t}/" class="topic-chip">${t}</a>`).join(' ');
 
   const html = `
 <!-- Breadcrumb -->
@@ -883,7 +884,7 @@ ${topicChips ? `
   <div class="section-heading">📖 More from Chapter ${ch.chapter}</div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     ${sortedVerses.filter(x => x.verse !== v.verse).slice(0,4).map(ov => `
-      <a href="/bhagavad-gita.html?chapter=${ch.chapter}&verse=${ov.verse}"
+      <a href="/gita/${ch.chapter}/${ov.verse}/"
          class="card card-hover" style="text-decoration:none;display:block;">
         <div class="flex items-center gap-2 mb-2">
           <span class="chapter-badge">Verse ${ov.verse}</span>
@@ -924,7 +925,7 @@ function renderChapterPage(ch) {
   const sortedVerses = [...ch.verses].sort((a,b) => a.verse - b.verse);
 
   const verseCards = sortedVerses.map(v => `
-    <a href="/bhagavad-gita.html?chapter=${ch.chapter}&verse=${v.verse}"
+    <a href="/gita/${ch.chapter}/${v.verse}/"
        class="card card-hover ${v.famous ? 'famous-verse' : ''}" style="text-decoration:none;display:block;">
       <div class="flex items-center justify-between mb-2">
         <span class="chapter-badge">Verse ${v.verse}</span>
@@ -1019,7 +1020,7 @@ function renderBrowsePage() {
   );
 
   const famousCards = famousVerses.slice(0,6).map(v => `
-    <a href="/bhagavad-gita.html?chapter=${v.chapter}&verse=${v.verse}"
+    <a href="/gita/${v.chapter}/${v.verse}/"
        class="card card-hover famous-verse" style="text-decoration:none;display:block;">
       <div class="flex gap-2 items-center mb-2">
         <span class="gita-badge">Ch ${v.chapter}, V ${v.verse}</span>

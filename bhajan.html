@@ -312,13 +312,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -517,7 +518,7 @@ function toggleMobileMenu() {
   if (!slug) {
     showError('No bhajan specified. Please go back to the bhajans list.', 'कोई भजन नहीं चुना गया।');
   } else {
-    fetch('data/bhajans.json')
+    fetch('/data/bhajans.json')
       .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
       .then(data => {
         const bhajan = data.find(b => b.slug === slug);
@@ -593,15 +594,24 @@ function toggleMobileMenu() {
     const occasionTags = (b.when_to_sing?.occasion || []).map(o => `<span class="when-tag">🙏 ${o}</span>`).join('');
 
     // Render verses
-    const versesHTML = (b.verses || []).map((verse, vi) => {
-      const allHindi = verse.lines.map(l => l.hindi).join('<br>');
-      const allRoman = verse.lines.map(l => l.roman).join('<br>');
-
-      const lyricsHTML = `
-        <div class="verse-lyrics-group" style="margin-bottom:16px;">
-          <div class="line-hindi" style="font-weight:700; color:var(--text); line-height:1.8; margin-bottom:12px;">${allHindi}</div>
-          <div class="line-roman" style="opacity:0.9; line-height:1.8;">${allRoman}</div>
-        </div>`;
+    let versesHTML = '';
+    if (!b.verses || b.verses.length === 0) {
+      versesHTML = `
+        <div class="verse-block" style="text-align:center; padding:40px 20px;">
+          <h3 style="color:var(--text); font-family:var(--font-hindi); margin-bottom:12px;">पूर्ण भजन शीघ्र उपलब्ध होगा</h3>
+          <p style="color:var(--text-sec); font-size:14px;">The complete lyrics and translations for this bhajan are currently being verified and will be added soon.</p>
+        </div>
+      `;
+    } else {
+      versesHTML = b.verses.map((verse, vi) => {
+        const allHindi = verse.lines.map(l => l.hindi).join('<br>');
+        const allRoman = verse.lines.map(l => l.roman).join('<br>');
+  
+        const lyricsHTML = `
+          <div class="verse-lyrics-group" style="margin-bottom:16px;">
+            <div class="line-hindi" style="font-weight:700; color:var(--text); line-height:1.8; margin-bottom:12px;">${allHindi}</div>
+            <div class="line-roman" style="opacity:0.9; line-height:1.8;">${allRoman}</div>
+          </div>`;
 
       const hasMeaning = verse.lines.some(l => l.hindi_meaning || l.english);
       let meaningsBlock = '';
@@ -635,7 +645,20 @@ function toggleMobileMenu() {
             ${meaningsBlock}
           </div>
         </div>`;
-    }).join('');
+      }).join('');
+    }
+
+    // Reference section
+    let referenceHTML = '';
+    if (b.reference) {
+      referenceHTML = `
+        <div class="reference-section" style="margin-top:40px; padding-top:20px; border-top:1px solid var(--border); text-align:center;">
+          <p style="color:var(--text-muted); font-size:13px; font-style:italic;">
+            <strong>Reference:</strong> ${b.reference}
+          </p>
+        </div>
+      `;
+    }
 
     // Related sidebar
     const relatedHTML = related.length ? related.map(r => `
@@ -645,7 +668,7 @@ function toggleMobileMenu() {
           <div class="related-name">${r.title_hindi}</div>
           <div class="related-sub">${r.title_roman} · ${r.deity}</div>
         </div>
-      </a>`).join('') : '<p style="color:var(--text-muted);font-size:13px">More bhajans coming soon...</p>';
+      </a>`).join('') : '<p style="color:var(--text-muted);font-size:13px">🙏 Explore all our bhajans from the home page to discover more devotional songs.</p>';
 
     const FEMALE_DEITIES = ['Durga', 'Saraswati', 'Lakshmi', 'Kali', 'Parvati', 'Radha', 'Sita', 'Ganga', 'Santoshi', 'Gauri', 'Navdurga', 'Chandi'];
     const deityPrefix = FEMALE_DEITIES.includes(b.deity) ? 'Goddess ' : 'Lord ';
@@ -697,8 +720,9 @@ function toggleMobileMenu() {
         </div>
 
         <!-- VERSES -->
-        <div id="verses-container" style="margin-top:20px">
+        <div class="content-body" style="padding-bottom:60px;">
           ${versesHTML}
+          ${referenceHTML}
         </div>
 
         <!-- STORY -->

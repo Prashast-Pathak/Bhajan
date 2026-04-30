@@ -52,7 +52,7 @@
           "label_hindi": "हनुमान आह्वान",
           "mantra_sanskrit": "मनोजवं मारुततुल्यवेगं जितेन्द्रियं बुद्धिमतां वरिष्ठम्। वातात्मजं वानरयूथमुख्यं श्रीरामदूतं शरणं प्रपद्ये॥",
           "mantra_roman": "Manojavam Marutatulyavegam Jitendriyam Buddhimatam Varishtham. Vatatmajam Vanarayuthamukhyam Shriramadutam Sharanam Prapadye.",
-          "mantra_hindi": "जो मन की गति के समान वेगवान हैं, वायु के समान तीव्र हैं, जितेन्द्रिय और बुद्धिमानों में श्रेष्ठ हैं, वायुपुत्र, वानर सेना के मुखिया, श्री राम के दूत — उनकी शरण में जाता [mantra fragment removed for safety]।",
+          "mantra_hindi": "जो मन की गति के समान वेगवान हैं, वायु के समान तीव्र हैं, जितेन्द्रिय और बुद्धिमानों में श्रेष्ठ हैं, वायुपुत्र, वानर सेना के मुखिया, श्री राम के दूत — उनकी शरण में जाता हूँ।",
           "mantra_english": "I take refuge in Lord Hanuman, who is swift as the mind, fast as the wind, master of the senses, foremost among the wise, son of Vayu, chief of the monkey army, and the messenger of Shri Ram.",
           "repetitions": 3,
           "duration_seconds": 60
@@ -126,7 +126,22 @@
         ]
       },
       "featured": true,
-      "priority": 1
+      "priority": 1,
+      "seo": {
+        "meta_title": "Hanuman Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Hanuman Puja Sequence. A complete Hanuman puja sequence for Tuesday and Saturday worship. Lord Hanuman grants protection, courage, and removes obstacles. This sequence inclu...",
+        "keywords": [
+          "Hanuman Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 2,
@@ -241,7 +256,22 @@
         "gita_chapters": []
       },
       "featured": true,
-      "priority": 2
+      "priority": 2,
+      "seo": {
+        "meta_title": "Ganesh Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Ganesh Puja Sequence. Lord Ganesha is worshipped before every auspicious beginning. This complete puja sequence covers the Shodashopachara (sixteen-step worship) in a simpl...",
+        "keywords": [
+          "Ganesh Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 3,
@@ -355,7 +385,22 @@
         "gita_chapters": []
       },
       "featured": true,
-      "priority": 3
+      "priority": 3,
+      "seo": {
+        "meta_title": "Lakshmi Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Lakshmi Puja Sequence. Goddess Lakshmi is the deity of wealth, fortune, and prosperity. This puja is traditionally performed on Diwali evening and every Friday. The sequence...",
+        "keywords": [
+          "Lakshmi Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 4,
@@ -458,7 +503,22 @@
         ]
       },
       "featured": false,
-      "priority": 4
+      "priority": 4,
+      "seo": {
+        "meta_title": "Saraswati Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Saraswati Puja Sequence. Goddess Saraswati is the deity of knowledge, learning, arts, and music. This puja is especially important for students before examinations and for art...",
+        "keywords": [
+          "Saraswati Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 5,
@@ -580,7 +640,22 @@
         ]
       },
       "featured": true,
-      "priority": 5
+      "priority": 5,
+      "seo": {
+        "meta_title": "Shiva Abhishek Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Shiva Abhishek Sequence. Abhishek — the ritual bathing of the Shiva Linga — is one of the most powerful forms of Shiva worship. Each substance used has deep symbolic meaning. ...",
+        "keywords": [
+          "Shiva Abhishek Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 6,
@@ -695,7 +770,22 @@
         ]
       },
       "featured": true,
-      "priority": 6
+      "priority": 6,
+      "seo": {
+        "meta_title": "Durga Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Durga Puja Sequence. Goddess Durga, the supreme Shakti, is worshipped during Navratri and every Tuesday. This puja sequence includes the Durga Saptashati (key shlokas), th...",
+        "keywords": [
+          "Durga Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 7,
@@ -800,7 +890,22 @@
         ]
       },
       "featured": false,
-      "priority": 7
+      "priority": 7,
+      "seo": {
+        "meta_title": "Vishnu Puja Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Vishnu Puja Sequence. Lord Vishnu, the Preserver of the universe, is worshipped on Ekadashi (the 11th day of each lunar fortnight) and Thursdays. This puja includes the Vis...",
+        "keywords": [
+          "Vishnu Puja Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 8,
@@ -840,8 +945,8 @@
           "type": "mantra",
           "label": "Krishna Beej Mantra",
           "label_hindi": "कृष्ण बीज मंत्र",
-          "mantra_sanskrit": "ॐ [mantra fragment removed for safety] कृष्णाय नमः",
-          "mantra_roman": "Om [mantra fragment removed for safety] Krishnaya Namah",
+          "mantra_sanskrit": "ॐ क्लीं कृष्णाय नमः",
+          "mantra_roman": "Om Kleem Krishnaya Namah",
           "mantra_hindi": "ॐ, भगवान कृष्ण को नमस्कार है।",
           "mantra_english": "Om, the seed sound of attraction and love. Salutations to Lord Krishna.",
           "repetitions": 108,
@@ -920,7 +1025,22 @@
         ]
       },
       "featured": false,
-      "priority": 8
+      "priority": 8,
+      "seo": {
+        "meta_title": "Krishna Puja / Janmashtami | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Krishna Puja / Janmashtami. Lord Krishna's puja is filled with joy and devotion. On Janmashtami, devotees fast through the day and celebrate at midnight — the hour of Krishna's b...",
+        "keywords": [
+          "Krishna Puja / Janmashtami",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 9,
@@ -961,8 +1081,8 @@
           "type": "mantra",
           "label": "Surya Beej Mantra",
           "label_hindi": "सूर्य बीज मंत्र",
-          "mantra_sanskrit": "ॐ ह्रां [mantra fragment removed for safety] ह्रौं सः सूर्याय नमः",
-          "mantra_roman": "Om Hraam [mantra fragment removed for safety] Hraum Sah Suryaya Namah",
+          "mantra_sanskrit": "ॐ ह्रां ह्रीं ह्रौं सः सूर्याय नमः",
+          "mantra_roman": "Om Hraam Hreem Hraum Sah Suryaya Namah",
           "mantra_hindi": "ॐ, बीज मंत्र सहित सूर्य देव को नमस्कार है।",
           "mantra_english": "Om, with the seed syllables of Surya — salutations to the Sun God.",
           "repetitions": 12,
@@ -1009,7 +1129,22 @@
         "gita_chapters": []
       },
       "featured": false,
-      "priority": 9
+      "priority": 9,
+      "seo": {
+        "meta_title": "Surya Namaskar with Mantras | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Surya Namaskar with Mantras. The Sun is the visible form of God — the source of all life, energy, and light. Surya Namaskar is a twelve-posture sequence, each accompanied by a man...",
+        "keywords": [
+          "Surya Namaskar with Mantras",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 10,
@@ -1101,7 +1236,22 @@
         "gita_chapters": []
       },
       "featured": false,
-      "priority": 10
+      "priority": 10,
+      "seo": {
+        "meta_title": "Sandhya Vandanam (Simplified) | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Sandhya Vandanam (Simplified). Sandhya Vandanam is the most ancient Vedic ritual — a daily salutation to the Divine at the three junctions (sandhyas) of the day: dawn, noon, and dus...",
+        "keywords": [
+          "Sandhya Vandanam (Simplified)",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 11,
@@ -1143,7 +1293,7 @@
           "label_hindi": "नवग्रह स्तोत्रम",
           "mantra_sanskrit": "जपाकुसुम संकाशं काश्यपेयं महाद्युतिम्। तमोऽरिं सर्वपापघ्नं प्रणतोऽस्मि दिवाकरम्॥\nदधिशङ्खतुषाराभं क्षीरोदार्णवसम्भवम्। नमामि शशिनं सोमं शम्भोर्मुकुटभूषणम्॥",
           "mantra_roman": "Japaakusum Sankasham Kashyapeyam Mahadyutim. Tamorim Sarvapapaghanam Pranato Asmi Divaakaram.\nDadhishankhatusharābham Kshirodaarnavasambhavam. Namaami Shashinam Somam Shambhormukutabhushanam.",
-          "mantra_hindi": "मैं सूर्यदेव को प्रणाम करता [mantra fragment removed for safety] जो जवाकुसुम (गुड़हल) के समान, काश्यप के पुत्र, महातेजस्वी और अंधकार के नाशक हैं। मैं उस चन्द्रमा को प्रणाम करता [mantra fragment removed for safety] जो दही-शंख-हिम के समान, क्षीर सागर से उत्पन्न और शिव के मुकुट की शोभा हैं।",
+          "mantra_hindi": "मैं सूर्यदेव को प्रणाम करता हूँ जो जवाकुसुम (गुड़हल) के समान, काश्यप के पुत्र, महातेजस्वी और अंधकार के नाशक हैं। मैं उस चन्द्रमा को प्रणाम करता हूँ जो दही-शंख-हिम के समान, क्षीर सागर से उत्पन्न और शिव के मुकुट की शोभा हैं।",
           "mantra_english": "I bow to Surya (Sun), radiant as the hibiscus, son of Kashyapa, destroyer of darkness. I bow to Soma (Moon), white as curd and conch, born from the ocean of milk, the ornament of Shiva's crown.",
           "repetitions": 1,
           "duration_seconds": 480
@@ -1191,7 +1341,22 @@
         "gita_chapters": []
       },
       "featured": false,
-      "priority": 11
+      "priority": 11,
+      "seo": {
+        "meta_title": "Navagraha Puja | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Navagraha Puja. The nine celestial bodies (Navagrahas) govern different aspects of our destiny and karmic path. This puja propitiates all nine — Sun, Moon, Mars, Merc...",
+        "keywords": [
+          "Navagraha Puja",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 12,
@@ -1293,7 +1458,22 @@
         ]
       },
       "featured": false,
-      "priority": 12
+      "priority": 12,
+      "seo": {
+        "meta_title": "Satyanarayan Puja (Short Form) | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Satyanarayan Puja (Short Form). Satyanarayan Puja is a thanksgiving ritual for Lord Vishnu — performed to fulfill vows, celebrate blessings received, or on full moon days. This short...",
+        "keywords": [
+          "Satyanarayan Puja (Short Form)",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 13,
@@ -1405,7 +1585,22 @@
         "gita_chapters": []
       },
       "featured": true,
-      "priority": 13
+      "priority": 13,
+      "seo": {
+        "meta_title": "Diwali Lakshmi-Ganesha Puja | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Diwali Lakshmi-Ganesha Puja. Diwali Puja is performed on the new moon night of Kartik (Amavasya) — the darkest night of the year, when Goddess Lakshmi is said to roam the earth an...",
+        "keywords": [
+          "Diwali Lakshmi-Ganesha Puja",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 14,
@@ -1507,7 +1702,22 @@
         ]
       },
       "featured": false,
-      "priority": 14
+      "priority": 14,
+      "seo": {
+        "meta_title": "Navratri Evening Puja | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Navratri Evening Puja. Navratri ('Nine Nights') celebrates the nine forms of the Divine Mother — one form per day. Each form has her own colour, offering, and mantra. This e...",
+        "keywords": [
+          "Navratri Evening Puja",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     },
     {
       "id": 15,
@@ -1621,7 +1831,22 @@
         ]
       },
       "featured": true,
-      "priority": 15
+      "priority": 15,
+      "seo": {
+        "meta_title": "Morning Prayer Sequence | Prayer | Sanatan Gyan Sagar",
+        "meta_description": "Read and understand Morning Prayer Sequence. A simple, powerful ten-minute morning prayer sequence that begins the day with gratitude and divine connection. This is the ideal starting point for t...",
+        "keywords": [
+          "Morning Prayer Sequence",
+          "prayer",
+          "Hinduism",
+          "Sanatan Dharma",
+          "Meaning",
+          "Translation",
+          "Puja",
+          "Aarti",
+          "Ritual"
+        ]
+      }
     }
   ]
 }

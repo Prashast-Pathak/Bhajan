@@ -371,13 +371,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -671,7 +672,7 @@ function toggleMobileMenu() {
   const btnHinComm = document.getElementById('btnHinComm');
 
   // ── FETCH DATA ────────────────────────────────────────────────
-  fetch('data/shlokas.json')
+  fetch('/data/shlokas.json')
     .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
     .then(data => {
       allShlokas = data;

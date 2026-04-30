@@ -556,13 +556,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -774,13 +775,16 @@ function toggleMobileMenu() {
 
   // Fetch all necessary data
   Promise.all([
-    fetch('data/bhajans.json').then(r => r.json()),
-    fetch('data/upanishads.json').then(r => r.json()),
-    fetch('data/prayers.json').then(r => r.json()),
-    fetch('data/gita.json').then(r => r.json()),
-    fetch('data/shlokas.json').then(r => r.json())
+    fetch('/data/bhajans.json').then(r => r.json()),
+    fetch('/data/upanishads.json').then(r => r.json()),
+    fetch('/data/prayers.json').then(r => r.json()),
+    fetch('/data/gita.json').then(r => r.json()),
+    fetch('/data/shlokas.json').then(r => r.json()),
+    fetch('/data/wisdom.json').then(r => r.json())
   ])
-  .then(([bhajansData, upaData, prayersData, gitaData, shlokasData]) => renderHomepage(bhajansData, upaData, prayersData.prayers || prayersData, gitaData, shlokasData.shlokas || shlokasData))
+  .then(([bhajansData, upaData, prayersData, gitaData, shlokasData, wisdomData]) => 
+    renderHomepage(bhajansData, upaData, prayersData.prayers || prayersData, gitaData, shlokasData.shlokas || shlokasData, wisdomData.topics || wisdomData)
+  )
   .catch(err => {
     document.getElementById('app-content').innerHTML = `
       <div class="error-msg">
@@ -790,9 +794,9 @@ function toggleMobileMenu() {
       </div>`;
   });
 
-  function renderHomepage(data, upanishads, prayers, gita, shlokas) {
+  function renderHomepage(data, upanishads, prayers, gita, shlokas, wisdom) {
     // Only show bhajans that have actual content (verses)
-    data = data.filter(b => b.verses && b.verses.length > 0);
+    // data = data.filter(b => b.verses && b.verses.length > 0);
     
     const featured = data.filter(b => b.featured).sort((a,b) => a.priority - b.priority);
     const recent = [...data].slice(0, 6);
@@ -817,7 +821,7 @@ function toggleMobileMenu() {
       const color = DEITY_COLORS[b.deity] || '#C96A1F';
       const firstLine = b.verses?.[0]?.lines?.[0];
       html += `
-        <a href="bhajan.html?slug=${b.slug}" class="card" style="--deity-color:${color}">
+        <a href="/bhajan/${b.slug}/" class="card" style="--deity-color:${color}">
           <div class="card-badge" style="background:${color}">${b.deity}</div>
           <span class="featured-badge" style="position:absolute;top:12px;right:12px">TODAY'S FEATURED</span>
           <h3 class="card-title-hindi">${b.title_hindi}</h3>
@@ -939,7 +943,7 @@ function toggleMobileMenu() {
         <div class="cards-grid">`;
       topUpa.forEach(u => {
         html += `
-          <a href="upanishads.html?slug=${u.slug}" class="card" style="--deity-color:var(--gold)">
+          <a href="/upanishad/${u.slug}/" class="card" style="--deity-color:var(--gold)">
             <div class="card-badge" style="background:var(--gold)">Upanishad</div>
             <h3 class="card-title-hindi">${u.name_sanskrit || u.name_hindi}</h3>
             <p class="card-title-roman">${u.name_english}</p>
@@ -965,13 +969,38 @@ function toggleMobileMenu() {
       topPrayers.forEach(p => {
         const color = DEITY_COLORS[p.deity] || '#1E40AF';
         html += `
-          <a href="prayers.html?slug=${p.slug}" class="card" style="--deity-color:${color}">
+          <a href="/prayer/${p.slug}/" class="card" style="--deity-color:${color}">
             <div class="card-badge" style="background:${color}">${p.deity || 'Daily'}</div>
             <h3 class="card-title-hindi">${p.title_hindi}</h3>
             <p class="card-title-roman">${p.title_english}</p>
-            <p class="card-excerpt">${p.purpose_english || p.purpose_hindi}</p>
+            <p class="card-excerpt">${(p.intro_english || p.intro_hindi || '').substring(0,100)}${(p.intro_english || p.intro_hindi || '').length > 100 ? '...' : ''}</p>
             <div class="card-meta">
-              <span>⏰ ${p.when_to_chant}</span>
+              <span>📅 ${p.occasion || p.tags?.[0] || 'Daily Prayer'}</span>
+              <span>⏱ ${p.duration_minutes ? p.duration_minutes + ' min' : ''}</span>
+            </div>
+          </a>`;
+      });
+      html += `</div>`;
+    }
+
+    // Wisdom (4 exemplary)
+    if (wisdom && wisdom.length > 0) {
+      const topWisdom = wisdom.slice(0, 4);
+      html += `
+        <div class="section-header" style="margin-top:40px">
+          <h2 class="section-title">जीवन का ज्ञान — Life Wisdom</h2>
+          <a href="wisdom.html" class="see-all">सभी देखें →</a>
+        </div>
+        <div class="cards-grid">`;
+      topWisdom.forEach(w => {
+        html += `
+          <a href="/wisdom/${w.slug}/" class="card" style="--deity-color:#4F46E5">
+            <div class="card-badge" style="background:#4F46E5">Wisdom</div>
+            <h3 class="card-title-hindi">${w.title_hindi}</h3>
+            <p class="card-title-roman">${w.title_english}</p>
+            <p class="card-excerpt">${w.intro_english}</p>
+            <div class="card-meta">
+              <span>💬 ${w.quotes ? w.quotes.length : 0} Verses</span>
             </div>
           </a>`;
       });

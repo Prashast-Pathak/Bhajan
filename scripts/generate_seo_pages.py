@@ -48,8 +48,18 @@ def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_j
     html_out = html_out.replace('href="prayers.html"', 'href="/prayers.html"')
     html_out = html_out.replace('href="upanishads.html"', 'href="/upanishads.html"')
     html_out = html_out.replace('href="favorites.html"', 'href="/favorites.html"')
+    html_out = html_out.replace('href="about.html"', 'href="/about.html"')
+    html_out = html_out.replace('href="contact.html"', 'href="/contact.html"')
+    html_out = html_out.replace('href="privacy-policy.html"', 'href="/privacy-policy.html"')
+    html_out = html_out.replace('href="bhajan.html?slug=', 'href="/bhajan.html?slug=')
+    html_out = html_out.replace("href='bhajan.html?slug=", "href='/bhajan.html?slug=")
+    html_out = html_out.replace('href="bhajans.html?', 'href="/bhajans.html?')
     html_out = html_out.replace('src="manifest.json"', 'src="/manifest.json"')
     html_out = html_out.replace('href="manifest.json"', 'href="/manifest.json"')
+    # CRITICAL: Fix data fetch paths — generated pages are 2 levels deep so
+    # relative fetch('data/...') would look in the wrong folder. Force absolute.
+    html_out = html_out.replace("fetch('data/", "fetch('/data/")
+    html_out = html_out.replace('fetch("data/', 'fetch("/data/')
 
     # Inject the Schema, Prerendered Slug, and Auto-Scroll Script into <head>
     scroll_script = ""
@@ -85,7 +95,7 @@ def safe(v):
     return html.escape(str(v or ""))
 
 def generate():
-    for d in ["bhajan", "shloka", "prayer", "upanishad", "wisdom-topic", "gita"]:
+    for d in ["bhajan", "shloka", "prayer", "upanishad", "wisdom", "gita"]:
         p = OUT / d
         if p.exists():
             import shutil
@@ -207,7 +217,7 @@ def generate():
         slug = item["slug"]
         base_t = item.get("title_english", slug)
         for i in w_intents:
-            route = f"wisdom-topic/{slug}{i}"
+            route = f"wisdom/{slug}{i}"
             seo_t = f"{base_t} {i.replace('-',' ').title()} | Spiritual Wisdom"
             seo_d = f"Hindu spiritual quotes and wisdom about {base_t}."
             canonical = f"{BASE_URL}/wisdom.html?topic={slug}"

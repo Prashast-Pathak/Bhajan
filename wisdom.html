@@ -378,13 +378,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -727,14 +728,14 @@ function toggleMobileMenu() {
     /* ─── FETCH DATA ─── */
     async function fetchWisdom() {
       try {
-        const res = await fetch('data/wisdom.json');
+        const res = await fetch('/data/wisdom.json');
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         return data.topics || [];
       } catch (e) {
         // Fallback: try relative path for local dev
         try {
-          const res2 = await fetch('data/wisdom.json');
+          const res2 = await fetch('/data/wisdom.json');
           if (!res2.ok) throw new Error('fallback failed');
           const data2 = await res2.json();
           return data2.topics || [];
@@ -817,7 +818,7 @@ function toggleMobileMenu() {
         const primaryText = scriptMode === 'roman' ? q.roman : q.sanskrit;
         const primaryClass = scriptMode === 'roman' ? 'quote-roman' : 'quote-sanskrit';
         const gitaLink = q.gita_chapter && q.gita_verse
-          ? `<a href="bhagavad-gita.html#ch${q.gita_chapter}v${q.gita_verse}" class="gita-link" target="_blank" rel="noopener">📖 Gita ${q.gita_chapter}.${q.gita_verse}</a>`
+          ? `<a href="/gita/${q.gita_chapter}/${q.gita_verse}/" class="gita-link" target="_blank" rel="noopener">📖 Gita ${q.gita_chapter}.${q.gita_verse}</a>`
           : '';
         const tagsHtml = (q.tags || []).map(t => `<span class="quote-tag">${escHtml(t)}</span>`).join('');
         div.innerHTML = `

@@ -634,7 +634,22 @@
           "wisdom_topic": "devotion"
         }
       }
-    ]
+    ],
+    "seo": {
+      "meta_title": "Isha Upanishad | Upanishad | Sanatan Gyan Sagar",
+      "meta_description": "Read and understand Isha Upanishad. The Divine pervades all. Renounce attachment; act without craving.",
+      "keywords": [
+        "Isha Upanishad",
+        "upanishad",
+        "Hinduism",
+        "Sanatan Dharma",
+        "Meaning",
+        "Translation",
+        "Vedas",
+        "Philosophy",
+        "Vedanta"
+      ]
+    }
   },
   {
     "id": 2,
@@ -894,7 +909,22 @@
           "wisdom_topic": "brahman"
         }
       }
-    ]
+    ],
+    "seo": {
+      "meta_title": "Kena Upanishad | Upanishad | Sanatan Gyan Sagar",
+      "meta_description": "Read and understand Kena Upanishad. Who is the true knower behind the eyes, ears, and mind? Brahman, which cannot be objectified.",
+      "keywords": [
+        "Kena Upanishad",
+        "upanishad",
+        "Hinduism",
+        "Sanatan Dharma",
+        "Meaning",
+        "Translation",
+        "Vedas",
+        "Philosophy",
+        "Vedanta"
+      ]
+    }
   },
   {
     "id": 3,
@@ -1160,7 +1190,22 @@
           "wisdom_topic": "liberation"
         }
       }
-    ]
+    ],
+    "seo": {
+      "meta_title": "Mandukya Upanishad | Upanishad | Sanatan Gyan Sagar",
+      "meta_description": "Read and understand Mandukya Upanishad. OM encompasses all states of consciousness. The fourth state (Turiya) is pure Awareness — the ground of waking, dreaming, and deep sleep.",
+      "keywords": [
+        "Mandukya Upanishad",
+        "upanishad",
+        "Hinduism",
+        "Sanatan Dharma",
+        "Meaning",
+        "Translation",
+        "Vedas",
+        "Philosophy",
+        "Vedanta"
+      ]
+    }
   },
   {
     "id": 4,
@@ -1358,7 +1403,22 @@
           "wisdom_topic": "self-knowledge"
         }
       }
-    ]
+    ],
+    "seo": {
+      "meta_title": "Katha Upanishad | Upanishad | Sanatan Gyan Sagar",
+      "meta_description": "Read and understand Katha Upanishad. The story of Nachiketa who descends to Death's realm and demands the secret of immortality from Yama himself.",
+      "keywords": [
+        "Katha Upanishad",
+        "upanishad",
+        "Hinduism",
+        "Sanatan Dharma",
+        "Meaning",
+        "Translation",
+        "Vedas",
+        "Philosophy",
+        "Vedanta"
+      ]
+    }
   },
   {
     "id": 5,
@@ -1597,6 +1657,21 @@
           "wisdom_topic": "liberation"
         }
       }
-    ]
+    ],
+    "seo": {
+      "meta_title": "Mundaka Upanishad | Upanishad | Sanatan Gyan Sagar",
+      "meta_description": "Read and understand Mundaka Upanishad. The distinction between higher knowledge (Brahma-Vidya) and lower knowledge (all the sciences), and the path to Brahman through renunciation.",
+      "keywords": [
+        "Mundaka Upanishad",
+        "upanishad",
+        "Hinduism",
+        "Sanatan Dharma",
+        "Meaning",
+        "Translation",
+        "Vedas",
+        "Philosophy",
+        "Vedanta"
+      ]
+    }
   }
 ]

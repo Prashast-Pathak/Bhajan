@@ -99,13 +99,13 @@
           {
             "hindi": "बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि॥",
             "roman": "Baranau Raghubar Bimal Jasu, Jo Dayaku Phal Chari.",
-            "hindi_meaning": "मैं श्री रघुवर (राम) का निर्मल यश वर्णन करता [mantra fragment removed for safety], जो चारों फलों (धर्म, अर्थ, काम, मोक्ष) को देने वाला है।",
+            "hindi_meaning": "मैं श्री रघुवर (राम) का निर्मल यश वर्णन करता हूँ, जो चारों फलों (धर्म, अर्थ, काम, मोक्ष) को देने वाला है।",
             "english": "I narrate the pure glory of Sri Raghuvar (Ram), which bestows the four fruits of life (Dharma, Artha, Kama, Moksha)."
           },
           {
             "hindi": "बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।",
             "roman": "Buddhihin Tanu Janike, Sumiron Pavan Kumar.",
-            "hindi_meaning": "अपने शरीर को बुद्धिहीन जानकर, मैं पवनकुमार (हनुमान) का स्मरण करता [mantra fragment removed for safety]।",
+            "hindi_meaning": "अपने शरीर को बुद्धिहीन जानकर, मैं पवनकुमार (हनुमान) का स्मरण करता हूँ।",
             "english": "Knowing myself to be without wisdom, I meditate upon the Son of Wind (Hanuman)."
           },
           {
@@ -1003,7 +1003,7 @@
       },
       {
         "type": "antara",
-        "label_hindi": "अंतरा १",
+        "label_hindi": "अंतरा 1",
         "label_english": "Verse 1",
         "lines": [
           {
@@ -1022,7 +1022,7 @@
       },
       {
         "type": "antara",
-        "label_hindi": "अंतरा २",
+        "label_hindi": "अंतरा 2",
         "label_english": "Verse 2",
         "lines": [
           {
@@ -1041,7 +1041,7 @@
       },
       {
         "type": "antara",
-        "label_hindi": "अंतरा ३",
+        "label_hindi": "अंतरा 3",
         "label_english": "Verse 3",
         "lines": [
           {
@@ -1060,8 +1060,27 @@
       },
       {
         "type": "antara",
-        "label_hindi": "अंतरा ४",
+        "label_hindi": "अंतरा 4",
         "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "दीनन की लाज राखो शम्भु सुत वारी।",
+            "roman": "Deenan ki laaj rakho, Shambhu sut vari,",
+            "hindi_meaning": "हे शिव पुत्र (शम्भू सुत), दीनों और असहायों की लाज रखिए,",
+            "english": "Protect the honor of the poor and helpless, O Son of Shiva,"
+          },
+          {
+            "hindi": "कामना को पूर्ण करो जग बलिहारी॥",
+            "roman": "Kaamna ko purna karo jag balihari.",
+            "hindi_meaning": "संसार की सभी इच्छाओं को पूर्ण करें, सारा जग आप पर बलिहारी है।",
+            "english": "Fulfill the desires of everyone, the whole world is devoted to You."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 5",
+        "label_english": "Verse 5",
         "lines": [
           {
             "hindi": "'सूर' श्याम शरण आए सफल कीजे सेवा।",
@@ -1257,7 +1276,7 @@
           {
             "hindi": "मैं सेवक तुम स्वामी, कृपा करो भर्ता॥",
             "roman": "Main Sevak Tum Swami, Kripa Karo Bharta.",
-            "hindi_meaning": "मैं सेवक [mantra fragment removed for safety], आप स्वामी हैं — हे भर्ता! कृपा करो।",
+            "hindi_meaning": "मैं सेवक हूँ, आप स्वामी हैं — हे भर्ता! कृपा करो।",
             "english": "I am the servant, you are the Master — O Sustainer, be gracious."
           }
         ]
@@ -1276,7 +1295,7 @@
           {
             "hindi": "किस विधि मिलूं दयामय, तुमको मैं कुमति॥",
             "roman": "Kis Vidhi Miloon Dayamay, Tumko Main Kumati.",
-            "hindi_meaning": "हे दयामय! मैं मंदबुद्धि जीव — किस विधि से आपसे मिल सकता [mantra fragment removed for safety]?",
+            "hindi_meaning": "हे दयामय! मैं मंदबुद्धि जीव — किस विधि से आपसे मिल सकता हूँ?",
             "english": "O Compassionate One, I am of little wisdom — how can I meet you?"
           }
         ]
@@ -1353,12 +1372,19 @@
     "title_english": "Shiva Tandava Stotram",
     "deity": "Shiva",
     "duration_minutes": 10,
-    "raga": "",
+    "raga": "Bhairav",
     "composer": "Ravana",
     "language": "Sanskrit",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning, Pradosha (evening before Ekadashi)",
+    "occasion": "Mahashivratri, Monday Worship, Daily Shiva Prayer",
+    "tags": [
+      "shiva",
+      "tandav",
+      "ravana",
+      "stotram",
+      "mahashivratri",
+      "sanskrit"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -1367,15 +1393,27 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "The Shiv Tandav Stotram was composed by Ravana, the great devotee of Lord Shiva. Legend says Ravana composed this magnificent stotram when he tried to lift Mount Kailash to take it to Lanka. Shiva pressed down with his toe, trapping Ravana beneath the mountain. To appease Shiva, Ravana sang this stotram with tremendous devotion for a thousand years. Pleased by his devotion, Shiva freed him and granted him the Chandrahas sword.",
+    "story_hindi": "शिव तांडव स्तोत्रम् की रचना भगवान शिव के महान भक्त रावण ने की थी। किंवदंती है कि रावण ने कैलाश पर्वत को उठाकर लंका ले जाने की कोशिश की। शिव ने अपने पैर के अंगूठे से दबाकर रावण को पर्वत के नीचे दबा दिया। शिव को प्रसन्न करने के लिए रावण ने हजारों वर्षों तक अत्यंत भक्ति के साथ यह स्तोत्र गाया। उसकी भक्ति से प्रसन्न होकर शिव ने उसे मुक्त किया और चंद्रहास तलवार प्रदान की।",
+    "significance": "The Shiv Tandav Stotram is considered one of the most powerful Shiva stotrams in existence. Its rhythmic metre mimics the beat of Shiva's Damaru drum and is believed to please Lord Shiva immensely. Reciting it during Mahashivratri is considered especially auspicious.",
+    "significance_hindi": "शिव तांडव स्तोत्रम् को भगवान शिव के सबसे शक्तिशाली स्तोत्रों में से एक माना जाता है। इसकी लयबद्ध लय शिव के डमरू की ध्वनि का अनुकरण करती है और माना जाता है कि यह भगवान शिव को अत्यंत प्रसन्न करती है।",
+    "benefits": [
+      "Bestows immense strength and courage to the devotee",
+      "Removes all sins and obstacles from life",
+      "Pleases Lord Shiva and invites his divine blessings",
+      "Grants victory over enemies and all adversities",
+      "Reciting on Mahashivratri grants moksha (liberation)"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Shiv Tandav Stotram with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Shiv Tandav Stotram by Ravana with Hindi meaning and English translation. A powerful Shiva stotra.",
+      "keywords": [
+        "Shiv Tandav Stotram",
+        "Shiva stotram",
+        "Ravana stotram",
+        "Mahashivratri prayer",
+        "Sanskrit stotram"
+      ]
     },
     "verses": [
       {
@@ -1386,25 +1424,25 @@
           {
             "hindi": "जटाटवीगलज्जलप्रवाहपावितस्थले",
             "roman": "Jataataviigalajjala pravaahapaavitasthale",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "With the waves of the river Ganga cascading and trickling on his matted hair,",
+            "english": "With the waves of the river Ganga cascading and trickling on his matted hair,"
           },
           {
             "hindi": "गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम्।",
             "roman": "Galeavalambya lambitaam bhujangatungamaalikaam |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "With the crescent moon adorning his head like a crown,",
+            "english": "With the crescent moon adorning his head like a crown,"
           },
           {
             "hindi": "डमड्डमड्डमड्डमन्निनादवड्डमर्वयं",
             "roman": "Damad damad damaddama ninadavadamarvayam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "With his neck beautified by the poison of the snake (turned into a garland),",
+            "english": "With his neck beautified by the poison of the snake (turned into a garland),"
           },
           {
             "hindi": "चकार चण्डताण्डवं तनोतु नः शिवः शिवम्",
             "roman": "Chakaara chandataandavam tanotu nah shivah shivam ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "From the forest of his matted lock, water flows and wets his neck, On which hangs the greatest of snake-like a garland, And his drum perpetually sounds damat, damat, damat, damat, Lord Shiva performed the passionate dance of Tandava; may he bless us all.",
             "english": "From the forest of his matted lock, water flows and wets his neck, On which hangs the greatest of snake-like a garland, And his drum perpetually sounds damat, damat, damat, damat, Lord Shiva performed the passionate dance of Tandava; may he bless us all."
           }
         ]
@@ -1417,25 +1455,25 @@
           {
             "hindi": "जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी",
             "roman": "Jataakataahasambhramabhramannilimpanirjhari",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The reddish glow from the gems on the hoods of the snakes in his matted locks,",
+            "english": "The reddish glow from the gems on the hoods of the snakes in his matted locks,"
           },
           {
             "hindi": "विलोलवीचिवल्लरीविराजमानमूर्धनि।",
             "roman": "Vilolaviichivallariiviraajamaanamaurdhani |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Paints the faces of the maidens of the directions like saffron.",
+            "english": "Paints the faces of the maidens of the directions like saffron."
           },
           {
             "hindi": "धगद्धगद्धगज्ज्वलल्ललाटपट्टपावके",
             "roman": "Dhagaddhagaddhagajjvalallalaatapattapaavake",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "His upper garment is made of the skin of a wild elephant; May my mind find wonderful joy in the Lord of all creatures.",
+            "english": "His upper garment is made of the skin of a wild elephant; May my mind find wonderful joy in the Lord of all creatures."
           },
           {
             "hindi": "किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम",
             "roman": "Kishorachandrashekhare ratih pratikshanam mama ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "The celestial river Ganga, whose waves flutter, Agitatedly moves through his matted locks. A fire burns brightly on the surface of his forehead, And a crescent moon shines on his head; may I constantly find joy in him.",
             "english": "The celestial river Ganga, whose waves flutter, Agitatedly moves through his matted locks. A fire burns brightly on the surface of his forehead, And a crescent moon shines on his head; may I constantly find joy in him."
           }
         ]
@@ -1448,25 +1486,25 @@
           {
             "hindi": "धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर",
             "roman": "Dharaadharendranandiniivilaasabandhubandhura",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The dust from the flowers on the heads of Indra and other gods,",
+            "english": "The dust from the flowers on the heads of Indra and other gods,"
           },
           {
             "hindi": "स्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे।",
             "roman": "Sphuraddigantasantatipramodamaanamaanase |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Falls on his footstool, making it greyish.",
+            "english": "Falls on his footstool, making it greyish."
           },
           {
             "hindi": "कृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि",
             "roman": "Kripaakataakshadhoraniiniruddhadurdharaapadi",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "His matted locks are bound by the king of snakes as a garland; May the Lord, whose crest jewel is the moon, grant eternal prosperity.",
+            "english": "His matted locks are bound by the king of snakes as a garland; May the Lord, whose crest jewel is the moon, grant eternal prosperity."
           },
           {
             "hindi": "क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि",
             "roman": "Kvachiddigambare mano vinodametu vastuni ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "His mind rejoices in the sportive play of the daughter of the mountain king (Parvati), Whose presence causes the entire universe to rejoice. With his compassionate glance, he controls the unstoppable hardships; May my mind find bliss in the omnipresent Lord Shiva.",
             "english": "His mind rejoices in the sportive play of the daughter of the mountain king (Parvati), Whose presence causes the entire universe to rejoice. With his compassionate glance, he controls the unstoppable hardships; May my mind find bliss in the omnipresent Lord Shiva."
           }
         ]
@@ -1479,25 +1517,25 @@
           {
             "hindi": "जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा",
             "roman": "Jataabhujangapingalasphuratphanaamaniprabhaa",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The sparks from the fire blazing on his broad forehead,",
+            "english": "The sparks from the fire blazing on his broad forehead,"
           },
           {
             "hindi": "कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे।",
             "roman": "Kadambakunkumadravapraliptadigvadhuumukhe |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Consumed the god of love, Kamadeva.",
+            "english": "Consumed the god of love, Kamadeva."
           },
           {
             "hindi": "मदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे",
             "roman": "Madaandhasindhurasphurattvaguttariiyamedure",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "He is the only artist capable of painting decorative marks on the breasts of the daughter of the mountain king; May my mind find joy in the three-eyed Lord.",
+            "english": "He is the only artist capable of painting decorative marks on the breasts of the daughter of the mountain king; May my mind find joy in the three-eyed Lord."
           },
           {
             "hindi": "मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि",
             "roman": "Mano vinodamadbhutam bibhartu bhuutabhartari ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "The reddish glow from the gems on the hoods of the snakes in his matted locks, Paints the faces of the maidens of the directions like saffron. His upper garment is made of the skin of a wild elephant; May my mind find wonderful joy in the Lord of all creatures.",
             "english": "The reddish glow from the gems on the hoods of the snakes in his matted locks, Paints the faces of the maidens of the directions like saffron. His upper garment is made of the skin of a wild elephant; May my mind find wonderful joy in the Lord of all creatures."
           }
         ]
@@ -1510,25 +1548,25 @@
           {
             "hindi": "सहस्रलोचनप्रभृत्यशेषलेखशेखर",
             "roman": "Sahasralochanaprabhrityasheshalekhashekhara",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "His neck is as dark as a thick cluster of new clouds, or the darkest night of the new moon.",
+            "english": "His neck is as dark as a thick cluster of new clouds, or the darkest night of the new moon."
           },
           {
             "hindi": "प्रसूनधूलिधोरणी विधूसराङ्घ्रिपीठभूः।",
             "roman": "Prasuunadhuulidhoranii vidhuusaraanghripiithabhuuh |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "He holds the celestial river Ganga and wears the skin of an elephant.",
+            "english": "He holds the celestial river Ganga and wears the skin of an elephant."
           },
           {
             "hindi": "भुजङ्गराजमालया निबद्धजाटजूटक",
             "roman": "Bhujangaraajamaalayaa nibaddhajaatajuutaka",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "May the Lord, who bears the burden of the universe and is adorned with the moon, bestow prosperity.",
+            "english": "May the Lord, who bears the burden of the universe and is adorned with the moon, bestow prosperity."
           },
           {
             "hindi": "श्रियै चिराय जायतां चकोरबन्धुशेखरः",
             "roman": "Shriyai chiraaya jaayataam chakorabandhushekharah ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "The dust from the flowers on the heads of Indra and other gods, Falls on his footstool, making it greyish. His matted locks are bound by the king of snakes as a garland; May the Lord, whose crest jewel is the moon, grant eternal prosperity.",
             "english": "The dust from the flowers on the heads of Indra and other gods, Falls on his footstool, making it greyish. His matted locks are bound by the king of snakes as a garland; May the Lord, whose crest jewel is the moon, grant eternal prosperity."
           }
         ]
@@ -1541,25 +1579,25 @@
           {
             "hindi": "ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा",
             "roman": "Lalaatachatvarajvaladdhananjayashphulingabhaa",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The dark blue radiance of fully bloomed blue lotuses is reflected on his beautiful neck.",
+            "english": "The dark blue radiance of fully bloomed blue lotuses is reflected on his beautiful neck."
           },
           {
             "hindi": "निपीतपञ्चसायकं नमन्निलिम्पनायकम्।",
             "roman": "Nipiitapanchasaayakam namannilimpanaayakam |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice.",
+            "english": "I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice."
           },
           {
             "hindi": "सुधामयूखलेखया विराजमानशेखरं",
             "roman": "Sudhaamayuukhalekhayaa viraajamaanashekharam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death.",
+            "english": "The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
           },
           {
             "hindi": "महाकपालिसम्पदे शिरोजटालमस्तु नः",
             "roman": "Mahaakapaalisampade shirojataalamastu nah ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "The sparks from the fire blazing on his broad forehead, Consumed the god of love, Kamadeva. He is bowed to by the king of gods, Indra, And his forehead shines with the cool rays of the crescent moon; may he grant us the wealth of the Siddhas.",
             "english": "The sparks from the fire blazing on his broad forehead, Consumed the god of love, Kamadeva. He is bowed to by the king of gods, Indra, And his forehead shines with the cool rays of the crescent moon; may he grant us the wealth of the Siddhas."
           }
         ]
@@ -1572,25 +1610,25 @@
           {
             "hindi": "करालभालपट्टिकाधगद्धगद्धगज्ज्वल",
             "roman": "Karaalabha alapattikaadhagaddhagaddhagajjvala",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "He is like a bee hovering over the sweet nectar flowing from the beautiful flowers of auspiciousness.",
+            "english": "He is like a bee hovering over the sweet nectar flowing from the beautiful flowers of auspiciousness."
           },
           {
             "hindi": "द्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके।",
             "roman": "Ddhananjayaahutiikritaprachandapanchasaayake |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice.",
+            "english": "I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice."
           },
           {
             "hindi": "धराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक",
             "roman": "Dharaadharendranandiniikuchaagrachitrapatraka",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death.",
+            "english": "The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
           },
           {
             "hindi": "प्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम",
             "roman": "Prakalpanaikashilpini trilocane ratirmama ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "On the fierce surface of his forehead burns a blazing fire, Which consumed the mighty god of love, Kamadeva. He is the only artist capable of painting decorative marks on the breasts of the daughter of the mountain king; May my mind find joy in the three-eyed Lord.",
             "english": "On the fierce surface of his forehead burns a blazing fire, Which consumed the mighty god of love, Kamadeva. He is the only artist capable of painting decorative marks on the breasts of the daughter of the mountain king; May my mind find joy in the three-eyed Lord."
           }
         ]
@@ -1603,25 +1641,25 @@
           {
             "hindi": "नवीनमेघमण्डली निरुद्धदुर्धरस्फुरत्",
             "roman": "Naviinameghamandalii niruddhadurdharasphurat",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Victory to Lord Shiva, whose fierce fire on his forehead blazes, fanned by the breath of the wildly roaming snakes.",
+            "english": "Victory to Lord Shiva, whose fierce fire on his forehead blazes, fanned by the breath of the wildly roaming snakes."
           },
           {
             "hindi": "कुहूनिशीथिनीतमः प्रबन्धबद्धकन्धरः।",
             "roman": "Kuhuunishiithiniitamah prabandhabaddhakandharah |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "He performs the fierce Tandava dance, to the auspicious sounds of 'dhimid, dhimid' from the Damaru drum.",
+            "english": "He performs the fierce Tandava dance, to the auspicious sounds of 'dhimid, dhimid' from the Damaru drum."
           },
           {
             "hindi": "निलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः",
             "roman": "Nilimpanirjhariidharastanotu krittisindhurah",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Victory to the supreme Lord Shiva who is the cause of auspiciousness for the entire universe.",
+            "english": "Victory to the supreme Lord Shiva who is the cause of auspiciousness for the entire universe."
           },
           {
             "hindi": "कलानिधानबन्धुरः श्रियं जगन्धुरन्धरः",
             "roman": "Kalaanidhaanabandhurah shriyam jagandhurandharah ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "His neck is as dark as a thick cluster of new clouds, Or the darkest night of the new moon. He holds the celestial river Ganga and wears the skin of an elephant; May the Lord, who bears the burden of the universe and is adorned with the moon, bestow prosperity.",
             "english": "His neck is as dark as a thick cluster of new clouds, Or the darkest night of the new moon. He holds the celestial river Ganga and wears the skin of an elephant; May the Lord, who bears the burden of the universe and is adorned with the moon, bestow prosperity."
           }
         ]
@@ -1634,25 +1672,25 @@
           {
             "hindi": "प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा",
             "roman": "Praphullaniilapankajaprapanchakaalimaprabhaa",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "When will I worship Lord SadaShiva with an equal mind, towards a hard stone and a soft bed, a snake and a pearl garland?",
+            "english": "When will I worship Lord SadaShiva with an equal mind, towards a hard stone and a soft bed, a snake and a pearl garland?"
           },
           {
             "hindi": "वलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम्।",
             "roman": "Valambikanthakandaliiruchiprabaddhakandharam |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "A precious gem and a lump of earth, a friend and an enemy, a blade of grass and a lotus-eyed woman, an ordinary person and an emperor?",
+            "english": "A precious gem and a lump of earth, a friend and an enemy, a blade of grass and a lotus-eyed woman, an ordinary person and an emperor?"
           },
           {
             "hindi": "स्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं",
             "roman": "Smaracchidam puracchidam bhavacchidam makhacchidam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "When will I attain this equanimity and worship the eternal Lord SadaShiva?",
+            "english": "When will I attain this equanimity and worship the eternal Lord SadaShiva?"
           },
           {
             "hindi": "गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे",
             "roman": "Gajacchidaandhakacchidam tamantakacchidam bhaje ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "The dark blue radiance of fully bloomed blue lotuses, Is reflected on his beautiful neck. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death.",
             "english": "The dark blue radiance of fully bloomed blue lotuses, Is reflected on his beautiful neck. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
           }
         ]
@@ -1665,25 +1703,25 @@
           {
             "hindi": "अखर्वसर्वमङ्गलाकलाकदम्बमञ्जरी",
             "roman": "Akharvasarvamangalaakalaakadambamanjarii",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "When will I live in a cave near the celestial river Ganga, free from evil thoughts,",
+            "english": "When will I live in a cave near the celestial river Ganga, free from evil thoughts,"
           },
           {
             "hindi": "रसप्रवाहमाधुरी विजृम्भणामधुव्रतम्।",
             "roman": "Rasapravaahamaadhurii vijrimbhanaamadhuuvratam |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "With my hands folded on my head, with steady eyes focused on the Lord with the moon on his forehead,",
+            "english": "With my hands folded on my head, with steady eyes focused on the Lord with the moon on his forehead,"
           },
           {
             "hindi": "स्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं",
             "roman": "Smarantakam purantakam bhavantakam makhantakam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Chanting the mantra 'Shiva', when will I attain true happiness?",
+            "english": "Chanting the mantra 'Shiva', when will I attain true happiness?"
           },
           {
             "hindi": "गजान्तकान्धकान्तकं तमन्तकान्तकं भजे",
             "roman": "Gajantakaandhakaantakam tamantakaantakam bhaje ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "He is like a bee hovering over the sweet nectar, Flowing from the beautiful flowers of auspiciousness. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death.",
             "english": "He is like a bee hovering over the sweet nectar, Flowing from the beautiful flowers of auspiciousness. I worship the destroyer of Kamadeva, the destroyer of the Tripuras, the destroyer of worldly ties, the destroyer of Daksha's sacrifice, The destroyer of the demon Gajasura, the destroyer of Andhakasura, and the destroyer of Yama, the god of death."
           }
         ]
@@ -1696,25 +1734,25 @@
           {
             "hindi": "जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस",
             "roman": "Jayatvadabhravibhramabhramadbhujangamashvasa",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Whoever reads, remembers, or recites this supreme stotram every day,",
+            "english": "Whoever reads, remembers, or recites this supreme stotram every day,"
           },
           {
             "hindi": "द्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट्।",
             "roman": "Dvinirgamatkramasphuratkaraalabhaalahavyavaat |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Will be continuously purified and quickly attain true devotion to Lord Shiva, the ultimate guru.",
+            "english": "Will be continuously purified and quickly attain true devotion to Lord Shiva, the ultimate guru."
           },
           {
             "hindi": "धिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल",
             "roman": "Dhimid dhimid dhimidhvananmridangatungamangala",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "There is no other way or refuge — the contemplation of Lord Shiva destroys all delusions of mortals.",
+            "english": "There is no other way or refuge — the contemplation of Lord Shiva destroys all delusions of mortals."
           },
           {
             "hindi": "ध्वनिक्रमप्रवर्तित प्रचण्डताण्डवः शिवः",
             "roman": "Dhvanikramapravartita prachandataandavah shivah ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "Victory to Lord Shiva, whose fierce fire on his forehead blazes, Fanned by the breath of the wildly roaming snakes. He performs the fierce Tandava dance, To the auspicious sounds of 'dhimid, dhimid' from the Damaru drum.",
             "english": "Victory to Lord Shiva, whose fierce fire on his forehead blazes, Fanned by the breath of the wildly roaming snakes. He performs the fierce Tandava dance, To the auspicious sounds of 'dhimid, dhimid' from the Damaru drum."
           }
         ]
@@ -1727,25 +1765,25 @@
           {
             "hindi": "दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्",
             "roman": "Drishadvichitratalpayorbhujangamauktikasrajor",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Whoever recites this stotram composed by Ravana at the end of their worship of Lord Shiva during Pradosha time,",
+            "english": "Whoever recites this stotram composed by Ravana at the end of their worship of Lord Shiva during Pradosha time,"
           },
           {
             "hindi": "गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः।",
             "roman": "Garishtharatnaloshthayoh suhridvipakshapakshayoh |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Lord Shiva blesses them with stable, abundant wealth complete with chariots, elephants, and horses,",
+            "english": "Lord Shiva blesses them with stable, abundant wealth complete with chariots, elephants, and horses,"
           },
           {
             "hindi": "तृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः",
             "roman": "Trinaaravindachakshushoh prajaamahiimahendrayoh",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Along with the auspicious and ever-smiling presence of Goddess Lakshmi herself.",
+            "english": "Along with the auspicious and ever-smiling presence of Goddess Lakshmi herself."
           },
           {
             "hindi": "समप्रवृत्तिकः कदा सदाशिवं भजाम्यहम्",
             "roman": "Samapravrittikah kadaa sadaashivam bhajaamyaham ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "When will I worship Lord SadaShiva with an equal mind, Towards a hard stone and a soft bed, a snake and a pearl garland, A precious gem and a lump of earth, a friend and an enemy, A blade of grass and a lotus-eyed woman, an ordinary person and an emperor?",
             "english": "When will I worship Lord SadaShiva with an equal mind, Towards a hard stone and a soft bed, a snake and a pearl garland, A precious gem and a lump of earth, a friend and an enemy, A blade of grass and a lotus-eyed woman, an ordinary person and an emperor?"
           }
         ]
@@ -1758,25 +1796,25 @@
           {
             "hindi": "कदा निलिम्पनिर्झरीनिकुञ्जकोटरे वसन्",
             "roman": "Kadaa nilimpanirjhariinikunjakotare vasan",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "O Lord Shiva! I bow to you with body, mind, and speech. You are the master of all beings, the protector of the universe.",
+            "english": "O Lord Shiva! I bow to you with body, mind, and speech. You are the master of all beings, the protector of the universe."
           },
           {
             "hindi": "विमुक्तदुर्मतिः सदा शिरः स्थमञ्जलिं वहन्।",
             "roman": "Vimuktadurmatih sadaa shirah sthamanjalim vahan |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "You are beyond birth and death, the eternal reality, the witness of all creation.",
+            "english": "You are beyond birth and death, the eternal reality, the witness of all creation."
           },
           {
             "hindi": "विमुक्तलोललोचनो ललामभाललग्नकः",
             "roman": "Vimuktalolalochano lalaamabhaalalagnakah",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "By your grace may we attain liberation, crossing the ocean of worldly existence.",
+            "english": "By your grace may we attain liberation, crossing the ocean of worldly existence."
           },
           {
             "hindi": "शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम्",
             "roman": "Shiveti mantramuccharan kadaa sukhii bhavaamyaham ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "When will I live in a cave near the celestial river Ganga, Free from evil thoughts, with my hands folded on my head, With steady eyes, focused on the Lord with the moon on his forehead, Chanting the mantra \"Shiva,\" when will I attain true happiness?",
             "english": "When will I live in a cave near the celestial river Ganga, Free from evil thoughts, with my hands folded on my head, With steady eyes, focused on the Lord with the moon on his forehead, Chanting the mantra \"Shiva,\" when will I attain true happiness?"
           }
         ]
@@ -1789,25 +1827,25 @@
           {
             "hindi": "इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं",
             "roman": "Imam hi nityamevamuktamuttamottamam stavam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The Tandava dance of Lord Shiva destroys all sins and grants liberation to the devotee.",
+            "english": "The Tandava dance of Lord Shiva destroys all sins and grants liberation to the devotee."
           },
           {
             "hindi": "पठन्स्मरन्ब्रुवन्नरो विशुद्धिमेति सन्ततम्।",
             "roman": "Pathansmaranbruvannaro vishuddhimetisantatam |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "The rhythmic beats of the Damaru fill the cosmos with divine energy and primordial sound.",
+            "english": "The rhythmic beats of the Damaru fill the cosmos with divine energy and primordial sound."
           },
           {
             "hindi": "हरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं",
             "roman": "Hare gurau subhaktimaashu yaati naanyathaa gatim",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "O Lord Shiva! May your Tandava always resound in our hearts and free us from all bondage.",
+            "english": "O Lord Shiva! May your Tandava always resound in our hearts and free us from all bondage."
           },
           {
             "hindi": "विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम्",
             "roman": "Vimohanam hi dehinaam sushankarasya chintanam ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "Whoever reads, remembers, or recites this supreme stotram every day, Will be continuously purified and quickly attain devotion to Lord Shiva, the ultimate guru. There is no other way or refuge, For the contemplation of Lord Shiva destroys the delusions of mortals.",
             "english": "Whoever reads, remembers, or recites this supreme stotram every day, Will be continuously purified and quickly attain devotion to Lord Shiva, the ultimate guru. There is no other way or refuge, For the contemplation of Lord Shiva destroys the delusions of mortals."
           }
         ]
@@ -1820,25 +1858,25 @@
           {
             "hindi": "पूजावसानसमये दशवक्त्रगीतं",
             "roman": "Puujaavasaanasamaye dashavaktragiitam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "This hymn of the Shiva Tandava Stotram was composed by the great devotee Ravana with utmost devotion.",
+            "english": "This hymn of the Shiva Tandava Stotram was composed by the great devotee Ravana with utmost devotion."
           },
           {
             "hindi": "यः शम्भुपूजनपरं पठति प्रदोषे।",
             "roman": "Yah shambhupuujanaparam pathati pradoshe |",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "Whoever recites this with faith and dedication shall be blessed with strength, prosperity, and divine grace.",
+            "english": "Whoever recites this with faith and dedication shall be blessed with strength, prosperity, and divine grace."
           },
           {
             "hindi": "तस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां",
             "roman": "Tasya sthiraam rathagajendraturangayuktaam",
-            "hindi_meaning": "",
-            "english": ""
+            "hindi_meaning": "May Lord Shiva, the destroyer of evil and the bestower of liberation, bless all who sing his glory.",
+            "english": "May Lord Shiva, the destroyer of evil and the bestower of liberation, bless all who sing his glory."
           },
           {
             "hindi": "लक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः",
             "roman": "Lakshmiim sadaiva sumukhiim pradadaati shambhuh ||",
-            "hindi_meaning": "",
+            "hindi_meaning": "Whoever recites this stotram composed by Ravana, At the end of their worship of Lord Shiva during the Pradosha time, Lord Shiva blesses them with stable wealth, Complete with chariots, elephants, and horses, and the auspicious presence of Goddess Lakshmi.",
             "english": "Whoever recites this stotram composed by Ravana, At the end of their worship of Lord Shiva during the Pradosha time, Lord Shiva blesses them with stable wealth, Complete with chariots, elephants, and horses, and the auspicious presence of Goddess Lakshmi."
           }
         ]
@@ -1857,12 +1895,18 @@
     "title_english": "Achyutam Keshavam",
     "deity": "Krishna",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairav",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning",
+    "occasion": "Daily Prayer, Vishnu Puja",
+    "tags": [
+      "vishnu",
+      "krishna",
+      "stuti",
+      "devotion",
+      "bhajan"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -1871,19 +1915,126 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Achyutam Keshavam is a devotional bhajan praising Lord Vishnu and Krishna by their divine names. It became widely popular through the Bollywood film Dum Laga Ke Haisha.",
+    "story_hindi": "अच्युतम केशवम एक भक्तिपूर्ण भजन है जो भगवान विष्णु और कृष्ण की उनके दिव्य नामों से स्तुति करता है। यह बॉलीवुड फिल्म दम लगा के हईशा के माध्यम से व्यापक रूप से लोकप्रिय हुआ।",
+    "significance": "This bhajan meditates on the imperishable (Achyuta) nature of the Lord who never falls from his divine state, bringing devotees to a state of surrender.",
+    "significance_hindi": "यह भजन प्रभु की अच्युत (अविनाशी) प्रकृति का ध्यान करता है, जो भक्तों को समर्पण की स्थिति में लाता है।",
+    "benefits": [
+      "Removes all fears through remembrance of the Lord",
+      "Brings peace of mind",
+      "Deepens devotion to Lord Vishnu and Krishna",
+      "Bestows divine grace"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Achyutam Keshavam Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Achyutam Keshavam bhajan with Hindi meaning and English translation.",
+      "keywords": [
+        "Achyutam Keshavam",
+        "Vishnu bhajan",
+        "Krishna stuti",
+        "Hindi devotional bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "अच्युतं केशवं कृष्ण दामोदरं,",
+            "roman": "Achyutam Keshavam Krishna Damodaram,",
+            "hindi_meaning": "हे अच्युत (जो कभी नष्ट नहीं होते), हे केशव (जिनके सुंदर बाल हैं), हे कृष्ण, हे दामोदर,",
+            "english": "O Infallible One, O Keshav, O Krishna, O Damodara,"
+          },
+          {
+            "hindi": "राम नारायणं जानकी वल्लभम्॥",
+            "roman": "Rama Narayanam Janaki Vallabham.",
+            "hindi_meaning": "हे राम, हे नारायण, हे जानकी (सीता) के प्रिय।",
+            "english": "O Rama, O Narayana, O Beloved of Janaki (Sita)."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "कौन कहते है भगवान आते नहीं,",
+            "roman": "Kaun Kehte Hai Bhagwan Aate Nahi,",
+            "hindi_meaning": "कौन कहता है कि भगवान नहीं आते?",
+            "english": "Who says that God does not come?"
+          },
+          {
+            "hindi": "तुम मीरा के जैसे बुलाते नहीं॥",
+            "roman": "Tum Meera Ke Jaise Bulate Nahi.",
+            "hindi_meaning": "तुम उन्हें मीरा की तरह पुकारते नहीं हो।",
+            "english": "You just do not call Him with the devotion of Meera."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "कौन कहते है भगवान खाते नहीं,",
+            "roman": "Kaun Kehte Hai Bhagwan Khate Nahi,",
+            "hindi_meaning": "कौन कहता है कि भगवान कुछ खाते नहीं?",
+            "english": "Who says that God does not eat?"
+          },
+          {
+            "hindi": "बेर शबरी के जैसे खिलाते नहीं॥",
+            "roman": "Ber Shabari Ke Jaise Khilate Nahi.",
+            "hindi_meaning": "तुम उन्हें शबरी की तरह प्रेम से बेर खिलाते नहीं हो।",
+            "english": "You just do not feed Him berries with the love of Shabari."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "कौन कहते है भगवान सोते नहीं,",
+            "roman": "Kaun Kehte Hai Bhagwan Sote Nahi,",
+            "hindi_meaning": "कौन कहता है कि भगवान सोते नहीं?",
+            "english": "Who says that God does not sleep?"
+          },
+          {
+            "hindi": "माँ यशोदा के जैसे सुलाते नहीं॥",
+            "roman": "Maa Yashoda Ke Jaise Sulate Nahi.",
+            "hindi_meaning": "तुम उन्हें माता यशोदा की तरह लोरी गाकर सुलाते नहीं हो।",
+            "english": "You just do not put Him to sleep with the affection of Mother Yashoda."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "कौन कहते है भगवान नाचते नहीं,",
+            "roman": "Kaun Kehte Hai Bhagwan Nachte Nahi,",
+            "hindi_meaning": "कौन कहता है कि भगवान नाचते नहीं?",
+            "english": "Who says that God does not dance?"
+          },
+          {
+            "hindi": "गोपियों की तरह तुम नचाते नहीं॥",
+            "roman": "Gopiyo Ki Tarah Tum Nachate Nahi.",
+            "hindi_meaning": "तुम उन्हें गोपियों की तरह प्रेम के वशीभूत होकर नचाते नहीं हो।",
+            "english": "You just do not make Him dance with the pure love of the Gopis."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Krishna Bhajan popularized by Sri Adi Shankaracharya's Achyutashtakam."
   },
   {
     "id": 6,
@@ -1891,14 +2042,19 @@
     "title_hindi": "राम सिया राम",
     "title_roman": "Ram Siya Ram",
     "title_english": "Ram Siya Ram",
-    "deity": "Ram",
+    "deity": "Lord Ram",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairavi",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning and Evening",
+    "occasion": "Daily Prayer, Ram Navami",
+    "tags": [
+      "ram",
+      "sita",
+      "bhajan",
+      "devotion"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -1907,19 +2063,191 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Ram Siya Ram is a devotional bhajan that meditates on the divine couple Lord Ram and Mother Sita. It is sung as a form of naam japa (name repetition) and is associated with the bhakti tradition of India.",
+    "story_hindi": "राम सिया राम एक भक्तिपूर्ण भजन है जो भगवान राम और माता सीता के दिव्य जोड़े का ध्यान करता है। यह नाम जप के रूप में गाया जाता है।",
+    "significance": "Chanting Ram Siya Ram is considered equivalent to reciting the Ramayan. The repetition of divine names purifies the mind and brings peace.",
+    "significance_hindi": "राम सिया राम का जाप रामायण के पाठ के समतुल्य माना जाता है। दिव्य नामों का जप मन को शुद्ध करता है और शांति लाता है।",
+    "benefits": [
+      "Purifies the mind and removes negative thoughts",
+      "Brings peace and inner calm",
+      "Bestows blessings of Lord Ram and Mother Sita",
+      "Helps in overcoming difficulties in life"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Ram Siya Ram Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Ram Siya Ram bhajan with Hindi meaning and English translation.",
+      "keywords": [
+        "Ram Siya Ram",
+        "Ram bhajan",
+        "Ram naam jap",
+        "Hindi bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "antara",
+        "label_hindi": "चौपाई 1",
+        "label_english": "Choupai 1",
+        "lines": [
+          {
+            "hindi": "मंगल भवन अमंगल हारी।",
+            "roman": "Mangal Bhavan Amangal Haari.",
+            "hindi_meaning": "जो मंगलों के धाम हैं और अमंगलों (विपत्तियों) को हरने वाले हैं।",
+            "english": "The abode of all auspiciousness and the destroyer of all that is inauspicious."
+          },
+          {
+            "hindi": "द्रवहु सुदसरथ अचर बिहारी॥",
+            "roman": "Dravahu Sudasarath Achar Bihari.",
+            "hindi_meaning": "वे राजा दशरथ के आंगन में खेलने वाले श्री राम मुझ पर कृपा करें।",
+            "english": "May that Lord Rama, who played in Dasharatha's courtyard, shower His grace upon me."
+          }
+        ]
+      },
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "राम सिया राम सिया राम जय जय राम।",
+            "roman": "Ram Siya Ram Siya Ram Jai Jai Ram.",
+            "hindi_meaning": "श्री राम और माता सीता की जय हो।",
+            "english": "Victory to Lord Rama and Mother Sita."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "चौपाई 2",
+        "label_english": "Choupai 2",
+        "lines": [
+          {
+            "hindi": "होइहै वही जो राम रचि राखा।",
+            "roman": "Hoi Hai Wahi Jo Ram Rachi Rakha.",
+            "hindi_meaning": "वही होगा जो श्री राम ने रच कर रखा है (जो भगवान की इच्छा है)।",
+            "english": "Only that will happen which Lord Rama has ordained."
+          },
+          {
+            "hindi": "को करे तरफ़ बढ़ाए साखा॥",
+            "roman": "Ko Kare Taraf Badhaye Sakha.",
+            "hindi_meaning": "कौन व्यर्थ में तर्क करके बात को बढ़ाए?",
+            "english": "Who can argue or change His divine will?"
+          }
+        ]
+      },
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "राम सिया राम सिया राम जय जय राम।",
+            "roman": "Ram Siya Ram Siya Ram Jai Jai Ram.",
+            "hindi_meaning": "श्री राम और माता सीता की जय हो।",
+            "english": "Victory to Lord Rama and Mother Sita."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "चौपाई 3",
+        "label_english": "Choupai 3",
+        "lines": [
+          {
+            "hindi": "धीरज धरम मित्र अरु नारी।",
+            "roman": "Dhiraj Dharam Mitra Aru Nari.",
+            "hindi_meaning": "धैर्य, धर्म, मित्र और पत्नी —",
+            "english": "Patience, righteousness, a friend, and a wife —"
+          },
+          {
+            "hindi": "आपद काल परिखिअहिं चारी॥",
+            "roman": "Aapad Kaal Parikhiahin Chari.",
+            "hindi_meaning": "इन चारों की परीक्षा विपत्ति के समय ही होती है।",
+            "english": "These four are tested only during times of adversity."
+          }
+        ]
+      },
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "राम सिया राम सिया राम जय जय राम।",
+            "roman": "Ram Siya Ram Siya Ram Jai Jai Ram.",
+            "hindi_meaning": "श्री राम और माता सीता की जय हो।",
+            "english": "Victory to Lord Rama and Mother Sita."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "चौपाई 4",
+        "label_english": "Choupai 4",
+        "lines": [
+          {
+            "hindi": "जेहि के जेहि पर सत्य सनेहू।",
+            "roman": "Jehi Ke Jehi Par Satya Sanehu.",
+            "hindi_meaning": "जिसका जिस पर सच्चा स्नेह (प्रेम) होता है,",
+            "english": "Whoever has true affection and love for another,"
+          },
+          {
+            "hindi": "सो तेहि मिलय न कछु संदेहू॥",
+            "roman": "So Tehi Milay Na Kachhu Sandehu.",
+            "hindi_meaning": "वह उसे अवश्य मिलता है, इसमें कोई संदेह नहीं है।",
+            "english": "They will surely attain them, there is no doubt about it."
+          }
+        ]
+      },
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "राम सिया राम सिया राम जय जय राम।",
+            "roman": "Ram Siya Ram Siya Ram Jai Jai Ram.",
+            "hindi_meaning": "श्री राम और माता सीता की जय हो।",
+            "english": "Victory to Lord Rama and Mother Sita."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "चौपाई 5",
+        "label_english": "Choupai 5",
+        "lines": [
+          {
+            "hindi": "जाकी रही भावना जैसी।",
+            "roman": "Jaaki Rahi Bhavana Jaisi.",
+            "hindi_meaning": "जिसके मन में जैसी भावना होती है,",
+            "english": "According to one's pure feelings and devotion,"
+          },
+          {
+            "hindi": "प्रभु मूरत देखी तिन तैसी॥",
+            "roman": "Prabhu Moorat Dekhi Tin Taisi.",
+            "hindi_meaning": "उसे भगवान का रूप वैसा ही दिखाई देता है।",
+            "english": "They behold the form of the Lord in exactly that way."
+          }
+        ]
+      },
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "राम सिया राम सिया राम जय जय राम।",
+            "roman": "Ram Siya Ram Siya Ram Jai Jai Ram.",
+            "hindi_meaning": "श्री राम और माता सीता की जय हो।",
+            "english": "Victory to Lord Rama and Mother Sita."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Ram Dhun based on Ramcharitmanas verses."
   },
   {
     "id": 7,
@@ -1929,12 +2257,17 @@
     "title_english": "Deva Shree Ganesha",
     "deity": "Ganesha",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Yaman",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning",
+    "occasion": "Ganesh Chaturthi, New Beginnings",
+    "tags": [
+      "ganesha",
+      "bhajan",
+      "devotion",
+      "obstacle remover"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -1943,19 +2276,120 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Deva Shree Ganesha is a popular devotional song praising Lord Ganesha, the remover of obstacles and the god of new beginnings. It became widely popular through the Bollywood film Agneepath.",
+    "story_hindi": "देवा श्री गणेशा एक लोकप्रिय भक्ति गीत है जो विघ्नहर्ता भगवान गणेश की स्तुति करता है। यह बॉलीवुड फिल्म अग्निपथ के माध्यम से अत्यंत लोकप्रिय हुआ।",
+    "significance": "Singing Deva Shree Ganesha invokes the blessings of Lord Ganesha before any new venture, ensuring success and removal of obstacles.",
+    "significance_hindi": "देवा श्री गणेशा गाने से किसी भी नए कार्य से पहले भगवान गणेश का आशीर्वाद मिलता है, जो सफलता और विघ्नों के निवारण को सुनिश्चित करता है।",
+    "benefits": [
+      "Removes obstacles from life and work",
+      "Brings success in new ventures",
+      "Grants wisdom and intelligence",
+      "Protects from negative energies"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Deva Shree Ganesha Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Deva Shree Ganesha bhajan with Hindi meaning and English translation.",
+      "keywords": [
+        "Deva Shree Ganesha",
+        "Ganesha bhajan",
+        "Ganesh stotra",
+        "Hindi bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "देवा श्री गणेशा, देवा श्री गणेशा।",
+            "roman": "Deva Shree Ganesha, Deva Shree Ganesha.",
+            "hindi_meaning": "हे देवों के देव, श्री गणेश!",
+            "english": "O Lord Shree Ganesha!"
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "ज्वाला सी जलती है आँखों में जिसके भी दिल में तेरा नाम है।",
+            "roman": "Jwala si jalti hai aankhon mein jiske bhi dil mein tera naam hai.",
+            "hindi_meaning": "जिसके दिल में आपका नाम होता है, उसकी आँखों में एक दिव्य ज्वाला चमकती है।",
+            "english": "A divine flame burns in the eyes of the one who holds Your name in their heart."
+          },
+          {
+            "hindi": "परवाह ही क्या उसका आरंभ कैसा है और कैसा परिणाम है।",
+            "roman": "Parwah hi kya uska aarambh kaisa hai aur kaisa parinaam hai.",
+            "hindi_meaning": "उसे इस बात की कोई चिंता नहीं होती कि शुरुआत कैसी है और अंत क्या होगा।",
+            "english": "They care not about how things begin or what the outcome will be."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "धरती अंबर सितारे, उसकी नज़रे उतारें।",
+            "roman": "Dharti ambar sitare, uski nazare utaare.",
+            "hindi_meaning": "धरती, आकाश और सितारे भी उसकी नज़र उतारते हैं (उसकी रक्षा करते हैं)।",
+            "english": "The earth, the sky, and the stars protect and adore them."
+          },
+          {
+            "hindi": "डर भी उससे डरा रे, जिसकी रखवाली रे, करता साया तेरा।",
+            "roman": "Darr bhi usse dara re, jiski rakhwali re, karta saaya tera.",
+            "hindi_meaning": "डर भी उससे डरता है, जिसकी रक्षा आपकी छत्रछाया करती है।",
+            "english": "Even fear is afraid of the one who is protected by Your shadow."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "तेरी भक्ति तो वरदान है, जो कमाए वो धनवान है।",
+            "roman": "Teri bhakti to vardaan hai, jo kamaaye wo dhanwaan hai.",
+            "hindi_meaning": "आपकी भक्ति एक वरदान है, जो इसे कमा लेता है वह सच्चा धनवान है।",
+            "english": "Your devotion is a boon; whoever earns it is truly wealthy."
+          },
+          {
+            "hindi": "बिन किनारे की कश्ती है वो, देवा तुझसे जो अंजान है।",
+            "roman": "Bin kinaare ki kashti hai wo, Deva tujhse jo anjaan hai.",
+            "hindi_meaning": "जो इंसान आपसे अनजान है, उसका जीवन उस नाव की तरह है जिसका कोई किनारा नहीं।",
+            "english": "One who is unaware of You, O Lord, is like a boat without a shore."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "वीर को क्या डराए, मौत भी क्या मिटाए।",
+            "roman": "Veer ko kya daraaye, maut bhi kya mitaaye.",
+            "hindi_meaning": "सच्चे वीर को कौन डरा सकता है? मौत भी उसे कैसे मिटा सकती है?",
+            "english": "What can frighten a true warrior? Even death cannot erase them."
+          },
+          {
+            "hindi": "जो तेरे काम आए, उसकी तो शान है।",
+            "roman": "Jo tere kaam aaye, uski to shaan hai.",
+            "hindi_meaning": "जो आपके काम आता है (आपकी भक्ति करता है), उसकी तो अलग ही शान होती है।",
+            "english": "The one who serves You has a unique and supreme glory."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Popular Marathi/Hindi devotional chant for Lord Ganesha."
   },
   {
     "id": 8,
@@ -1965,12 +2399,18 @@
     "title_english": "Jai Ambe Gauri",
     "deity": "Durga",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Kafi (Morning Raga)",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Evening, Navratri",
+    "occasion": "Navratri, Durga Puja",
+    "tags": [
+      "durga",
+      "aarti",
+      "navratri",
+      "shakti",
+      "devi"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -1979,19 +2419,278 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Jai Ambe Gauri is the traditional aarti of Goddess Durga sung during Navratri and other auspicious occasions. It praises the many forms of the Divine Mother.",
+    "story_hindi": "जय अम्बे गौरी देवी दुर्गा की पारंपरिक आरती है जो नवरात्रि और अन्य शुभ अवसरों पर गाई जाती है। यह दिव्य माँ के विभिन्न रूपों की स्तुति करती है।",
+    "significance": "Jai Ambe Gauri is considered the quintessential aarti of Goddess Durga. Singing it during Navratri bestows the blessings of the Divine Mother.",
+    "significance_hindi": "जय अम्बे गौरी देवी दुर्गा की सर्वश्रेष्ठ आरती मानी जाती है। नवरात्रि में इसे गाने से दिव्य माँ का आशीर्वाद प्राप्त होता है।",
+    "benefits": [
+      "Removes all fears and bestows courage",
+      "Fulfils desires of the devotee",
+      "Grants protection from evil",
+      "Brings prosperity and auspiciousness"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Jai Ambe Gauri Aarti with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Jai Ambe Gauri aarti with Hindi meaning and English translation for Navratri.",
+      "keywords": [
+        "Jai Ambe Gauri",
+        "Durga aarti",
+        "Navratri bhajan",
+        "Devi aarti"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "जय अम्बे गौरी, मैया जय श्यामा गौरी।",
+            "roman": "Jai Ambe Gauri, Maiya Jai Shyama Gauri.",
+            "hindi_meaning": "हे माता अम्बे (गौरी), आपकी जय हो! हे श्यामा गौरी, आपकी जय हो!",
+            "english": "Victory to Mother Ambe (Gauri), Victory to Mother Shyama Gauri!"
+          },
+          {
+            "hindi": "तुम को निशि दिन ध्यावत, हरि ब्रह्मा शिवजी॥",
+            "roman": "Tum Ko Nishi Din Dhyavat, Hari Brahma Shivji.",
+            "hindi_meaning": "भगवान विष्णु, ब्रह्मा और शिव रात-दिन आपका ही ध्यान करते हैं।",
+            "english": "Lord Vishnu, Brahma, and Shiva meditate upon You day and night."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "मांग सिंदूर बिराजत, टीको मृग मद को।",
+            "roman": "Maang Sindoor Birajat, Teeko Mrig Mad Ko.",
+            "hindi_meaning": "आपकी माँग में सिंदूर सुशोभित है, और माथे पर कस्तूरी का तिलक है।",
+            "english": "Vermilion adorns Your hair parting, and a musk tilak shines on Your forehead."
+          },
+          {
+            "hindi": "उज्ज्वल से दो नैना, चंद्रबदन नीको॥",
+            "roman": "Ujjwal Se Do Naina, Chandrabadan Neeko.",
+            "hindi_meaning": "आपके दोनों नेत्र उज्ज्वल हैं, और आपका मुख चंद्रमा के समान सुंदर है।",
+            "english": "Your two eyes are bright, and Your face is as beautiful as the moon."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "कनक समान कलेवर, रक्ताम्बर राजै।",
+            "roman": "Kanak Saman Kalevar, Raktambar Rajai.",
+            "hindi_meaning": "आपका शरीर सोने के समान दमकता है, और आप लाल वस्त्रों में सुशोभित हैं।",
+            "english": "Your body shines like gold, and You look majestic in red garments."
+          },
+          {
+            "hindi": "रक्त पुष्प गल माला, कंठन पर साजै॥",
+            "roman": "Rakt Pushp Gal Mala, Kanthan Par Sajai.",
+            "hindi_meaning": "आपके गले में लाल फूलों की माला अत्यंत सुंदर लग रही है।",
+            "english": "A garland of red flowers beautifully adorns Your neck."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "केहरि वाहन राजत, खड्ग खप्पर धारी।",
+            "roman": "Kehari Vahan Rajat, Khadga Khappar Dhari.",
+            "hindi_meaning": "सिंह आपकी सवारी है, और आप हाथों में तलवार तथा खप्पर धारण करती हैं।",
+            "english": "You ride a majestic lion, holding a sword and a skull-bowl."
+          },
+          {
+            "hindi": "सुर नर मुनि जन सेवत, तिनके दुख हारी॥",
+            "roman": "Sur Nar Muni Jan Sevat, Tinke Dukh Haari.",
+            "hindi_meaning": "देवता, मनुष्य और मुनि आपकी सेवा करते हैं, और आप उनके सभी दुखों को हरने वाली हैं।",
+            "english": "Gods, mortals, and sages serve You, and You destroy their sorrows."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "कानन कुण्डल शोभित, नासाग्रे मोती।",
+            "roman": "Kanan Kundal Shobhit, Nasagre Moti.",
+            "hindi_meaning": "आपके कानों में कुंडल सुशोभित हैं, और नासिका (नाक) में मोती चमक रहा है।",
+            "english": "Earrings adorn Your ears, and a pearl shines on the tip of Your nose."
+          },
+          {
+            "hindi": "कोटिक चन्द्र दिवाकर, सम राजत ज्योती॥",
+            "roman": "Kotik Chandra Divakar, Sam Rajat Jyoti.",
+            "hindi_meaning": "आपकी ज्योति करोड़ों सूर्य और चंद्रमाओं के समान उज्ज्वल है।",
+            "english": "Your divine light shines as brightly as millions of suns and moons."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "शुम्भ निशुम्भ बिदारे, महिषासुर घाती।",
+            "roman": "Shumbh Nishumbh Bidare, Mahishasur Ghati.",
+            "hindi_meaning": "आपने शुम्भ और निशुम्भ राक्षसों का वध किया, और महिषासुर का संहार किया।",
+            "english": "You destroyed the demons Shumbha and Nishumbha, and You are the slayer of Mahishasura."
+          },
+          {
+            "hindi": "धूम्र विलोचन नैना, निशदिन मदमाती॥",
+            "roman": "Dhumr Vilochan Naina, Nishdin Madmati.",
+            "hindi_meaning": "आपने धूम्रविलोचन नामक राक्षस का नाश किया। आपकी आंखें हर समय दिव्य आनंद से भरी रहती हैं।",
+            "english": "You defeated the demon Dhumralochan. Your eyes are always filled with divine bliss."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 6",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "चण्ड मुण्ड संहारे, शोणित बीज हरे।",
+            "roman": "Chand Mund Sanhare, Shonit Beej Hare.",
+            "hindi_meaning": "आपने चण्ड और मुण्ड नामक राक्षसों का संहार किया, और रक्तबीज का वध किया।",
+            "english": "You destroyed the demons Chanda and Munda, and defeated Raktabeeja."
+          },
+          {
+            "hindi": "मधु कैटभ दोउ मारे, सुर भयहीन करे॥",
+            "roman": "Madhu Kaitabh Dou Mare, Sur Bhayheen Kare.",
+            "hindi_meaning": "आपने मधु और कैटभ को भी मारा, जिससे देवताओं को भयमुक्त कर दिया।",
+            "english": "You killed both Madhu and Kaitabha, making the gods completely fearless."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 7",
+        "label_english": "Verse 7",
+        "lines": [
+          {
+            "hindi": "ब्रह्माणी रुद्राणी, तुम कमला रानी।",
+            "roman": "Brahmani Rudrani, Tum Kamala Rani.",
+            "hindi_meaning": "आप ही ब्रह्माणी, रुद्राणी और कमला (लक्ष्मी) रानी हैं।",
+            "english": "You are Brahmani, Rudrani, and Queen Kamala (Lakshmi)."
+          },
+          {
+            "hindi": "आगम निगम बखानी, तुम शिव पटरानी॥",
+            "roman": "Aagam Nigam Bakhani, Tum Shiv Patrani.",
+            "hindi_meaning": "आगम और निगम (वेद-शास्त्र) आपका गुणगान करते हैं। आप भगवान शिव की पटरानी हैं।",
+            "english": "The sacred scriptures and Vedas sing Your glory. You are the supreme consort of Lord Shiva."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 8",
+        "label_english": "Verse 8",
+        "lines": [
+          {
+            "hindi": "चौंसठ योगिनी गावत, नृत्य करत भैरों।",
+            "roman": "Chaunsath Yogini Gavat, Nritya Karat Bhairon.",
+            "hindi_meaning": "चौंसठ योगिनियाँ आपका गुणगान करती हैं, और भैरव आपके सामने नृत्य करते हैं।",
+            "english": "The sixty-four Yoginis sing Your praises, while Lord Bhairava dances before You."
+          },
+          {
+            "hindi": "बाजत ताल मृदंगा, अरु बाजत डमरू॥",
+            "roman": "Bajat Taal Mridanga, Aru Bajat Damaru.",
+            "hindi_meaning": "ताल, मृदंग और भगवान शिव का डमरू आपके सम्मान में बजता है।",
+            "english": "Cymbals, Mridang, and the Damaru sound in Your honor."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 9",
+        "label_english": "Verse 9",
+        "lines": [
+          {
+            "hindi": "तुम ही जग की माता, तुम ही हो भरता।",
+            "roman": "Tum hi jag ki mata, Tum hi ho bharta.",
+            "hindi_meaning": "आप ही इस पूरे संसार की माता हैं और आप ही सबका भरण-पोषण करने वाली हैं।",
+            "english": "You alone are the mother of the universe, and You alone are the sustainer."
+          },
+          {
+            "hindi": "भक्तन की दुःख हरता, सुख-सम्पत्ति करता॥",
+            "roman": "Bhaktan ki dukh harta, Sukh sampatti karta.",
+            "hindi_meaning": "आप भक्तों के दुखों को हरने वाली और सुख-सम्पत्ति प्रदान करने वाली हैं।",
+            "english": "You remove the sorrows of Your devotees and bestow happiness and wealth."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 10",
+        "label_english": "Verse 10",
+        "lines": [
+          {
+            "hindi": "भुजा चार अति शोभित, वरमुद्रा धारी।",
+            "roman": "Bhuja char ati shobhit, Varmudra dhari.",
+            "hindi_meaning": "आपकी चार भुजाएँ अत्यंत सुशोभित हैं और आप वरदान देने की मुद्रा (वरमुद्रा) धारण किए हुए हैं।",
+            "english": "Your four arms look extremely beautiful, adorned in the boon-giving posture (Varmudra)."
+          },
+          {
+            "hindi": "मनवांछित फल पावत, सेवत नर-नारी॥",
+            "roman": "Manvanchhit phal pavat, Sevat nar-nari.",
+            "hindi_meaning": "जो भी नर-नारी आपकी सेवा करते हैं, वे मनचाहा फल प्राप्त करते हैं।",
+            "english": "Men and women who serve You obtain the fruits of their desired wishes."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 11",
+        "label_english": "Verse 11",
+        "lines": [
+          {
+            "hindi": "कंचन थाल विराजत, अगर कपूर बाती।",
+            "roman": "Kanchan thaal birajat, Agar kapoor baati.",
+            "hindi_meaning": "सोने की थाली में अगरबत्ती और कपूर की बाती सजी हुई है।",
+            "english": "In a golden plate, incense and camphor wicks are elegantly arranged."
+          },
+          {
+            "hindi": "श्रीमालकेतु में राजत, कोटि रतन ज्योति॥",
+            "roman": "Shrimalketu mein rajat, Koti ratan jyoti.",
+            "hindi_meaning": "आपके भाल पर करोड़ों रत्नों के समान प्रकाशमान ज्योति सुशोभित है।",
+            "english": "On Your forehead shines a light radiant like millions of jewels."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 12",
+        "label_english": "Verse 12",
+        "lines": [
+          {
+            "hindi": "अम्बे जी की आरती जो कोई नर गावे।",
+            "roman": "Ambe Ji Ki Aarti Jo Koi Nar Gaave.",
+            "hindi_meaning": "जो कोई भी मनुष्य माता अम्बे की यह आरती गाता है,",
+            "english": "Whoever sings this Aarti of Mother Ambe,"
+          },
+          {
+            "hindi": "कहत शिवानन्द स्वामी, सुख सम्पत्ति पावे॥",
+            "roman": "Kahat Shivanand Swami, Sukh Sampatti Pave.",
+            "hindi_meaning": "शिवानंद स्वामी कहते हैं, वह व्यक्ति अपार सुख और संपत्ति प्राप्त करता है।",
+            "english": "Swami Shivananda says, that person attains immense happiness and prosperity."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Aarti dedicated to Goddess Durga (Ambe Maa)."
   },
   {
     "id": 9,
@@ -2001,12 +2700,18 @@
     "title_english": "Aarti Kunj Bihari Ki",
     "deity": "Krishna",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Yaman Kalyan",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Evening (Sandhya Aarti)",
+    "occasion": "Janmashtami, Daily Puja",
+    "tags": [
+      "krishna",
+      "aarti",
+      "vrindavan",
+      "bhakti",
+      "janmashtami"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2015,19 +2720,231 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Aarti Kunj Bihari Ki is the traditional evening aarti of Lord Krishna sung at the Banke Bihari temple in Vrindavan. It describes the divine beauty of Krishna in the groves of Vrindavan.",
+    "story_hindi": "आरती कुंज बिहारी की वृंदावन के बांके बिहारी मंदिर में गाई जाने वाली भगवान कृष्ण की पारंपरिक संध्या आरती है। यह वृंदावन की कुंजों में कृष्ण की दिव्य सुंदरता का वर्णन करती है।",
+    "significance": "This aarti is the primary evening prayer at the famous Banke Bihari temple, Vrindavan. Singing it connects the devotee to the divine energy of Vrindavan.",
+    "significance_hindi": "यह आरती वृंदावन के प्रसिद्ध बांके बिहारी मंदिर की प्रमुख संध्या प्रार्थना है। इसे गाने से भक्त वृंदावन की दिव्य ऊर्जा से जुड़ता है।",
+    "benefits": [
+      "Fills the heart with love for Lord Krishna",
+      "Brings peace and divine bliss",
+      "Connects devotee to the sacred energy of Vrindavan",
+      "Removes worldly anxieties"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Aarti Kunj Bihari Ki with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Aarti Kunj Bihari Ki with Hindi meaning and English translation for Krishna devotees.",
+      "keywords": [
+        "Aarti Kunj Bihari",
+        "Krishna aarti",
+        "Vrindavan aarti",
+        "Janmashtami bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "आरती कुंजबिहारी की, श्री गिरिधर कृष्णमुरारी की।",
+            "roman": "Aarti Kunj Bihari ki, Shri Giridhar Krishnamuari ki",
+            "hindi_meaning": "कुंज में विहार करने वाले श्री कृष्ण की आरती, जो पर्वत धारण करने वाले और मुरारी नाम से प्रसिद्ध हैं।",
+            "english": "Aarti of the Lord who roams the groves, Sri Krishna who lifted the mountain and is known as Murari."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "गले में बैजंती माला, बजावै मुरली मधुर बाला।",
+            "roman": "Gale mein baijanti mala, bajave murli madhur bala",
+            "hindi_meaning": "उनके गले में वैजयंती की माला है, और वे बालक-स्वरूप में मधुर बांसुरी बजा रहे हैं।",
+            "english": "Adorned with a Vaijayanti garland, the divine child plays the sweet flute."
+          },
+          {
+            "hindi": "श्रवण में कुण्डल झलकाला, नंद के आनंद नंदलाला।",
+            "roman": "Shravan mein kundal jhalkala, nand ke anand nandlala",
+            "hindi_meaning": "उनके कानों में कुंडल चमक रहे हैं — वे नंद बाबा के आनंद-पुत्र श्री नंदलाल हैं।",
+            "english": "Earrings glitter in His ears — He is Nandlala, the bliss of Nanda."
+          },
+          {
+            "hindi": "गगन सम अंग कांति काली, राधिका चमक रही आली।",
+            "roman": "Gagan sam ang kanti kali, Radhika chamak rahi aali",
+            "hindi_meaning": "उनके अंगों की कांति आकाश के समान श्यामल है, और उनके पास राधिका जी अपनी सखियों के साथ चमक रही हैं।",
+            "english": "His body glows dark as the sky, and Radhika shines brightly beside Him with her companions."
+          },
+          {
+            "hindi": "लतन में ठाढ़े बनमाली, भ्रमर सी अलक, कस्तूरी तिलक।",
+            "roman": "Latan mein thaadhe banmaali, bhramar si alak, kasturi tilak",
+            "hindi_meaning": "वे वन की लताओं में खड़े हैं, उनकी अलकें भौंरे के समान काली हैं और माथे पर कस्तूरी का तिलक शोभित है।",
+            "english": "Standing among the vines of the forest, His curls are dark as bees, with a musk tilak on His forehead."
+          },
+          {
+            "hindi": "चंद्र सी झलक, ललित छवि श्यामा प्यारी की॥",
+            "roman": "Chandra si jhalak, lalit chhavi shyama pyari ki",
+            "hindi_meaning": "उनकी छवि चंद्रमा-सी झलकती है — यह सुंदर छवि प्रियतमा श्यामा (राधा) जी की भी है।",
+            "english": "A moonlike radiance shines — this beautiful form belongs to His beloved Shyama (Radha)."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "कनकमय मोर मुकुट बिलसै, देवता दरसन को तरसैं।",
+            "roman": "Kanakamay mor mukut bilase, devata darasan ko tarasein",
+            "hindi_meaning": "उनके सिर पर सोने से जड़ा मोर-पंख का मुकुट शोभित है, देवता उनके दर्शन के लिए तरसते हैं।",
+            "english": "A golden peacock-feather crown adorns His head; the gods long for His divine vision."
+          },
+          {
+            "hindi": "गगन सों सुमन रासि बरसै, बजे मुरचंग, मधुर मिरदंग।",
+            "roman": "Gagan son suman raasi barase, baje murachang, madhur mridang",
+            "hindi_meaning": "आकाश से फूलों की वर्षा होती है, मुरचंग और मृदंग मधुर ध्वनि में बज रहे हैं।",
+            "english": "Flowers shower from the heavens, the morchang and mridang resound with sweet melody."
+          },
+          {
+            "hindi": "ग्वालिन संग अतुल रति गोप कुमारी की॥",
+            "roman": "Gwalin sang atul rati gop kumari ki",
+            "hindi_meaning": "गोप-कुमारियाँ (गोपियाँ) साथ में अतुलनीय आनंद से उनकी आरती करती हैं।",
+            "english": "The Gopi maidens rejoice alongside Him in incomparable devotion and love."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "जहां ते प्रकट भई गंगा, कलुष कलि हारिणि श्री गंगा।",
+            "roman": "Jahan te prakat bhai Ganga, kalush kali haarini shri Ganga",
+            "hindi_meaning": "जहाँ से पवित्र गंगा प्रकट हुईं, कलियुग के पापों का नाश करने वाली गंगा माता।",
+            "english": "From where the holy Ganga emerged — the Ganga who destroys all sins of the age of Kali."
+          },
+          {
+            "hindi": "स्मरन ते होत मोह भंगा, बसी शिव सीस, जटा के बीच।",
+            "roman": "Smaran te hot moh bhanga, basi shiv sees, jata ke beech",
+            "hindi_meaning": "उनके स्मरण मात्र से मोह-माया का नाश होता है, वे शिव जी की जटाओं के बीच निवास करती हैं।",
+            "english": "Remembering Her destroys all worldly illusion; She dwells within the matted locks of Lord Shiva."
+          },
+          {
+            "hindi": "हरै अघ कीच, चरन छवि श्री बनवारी की॥",
+            "roman": "Harai agh keech, charan chhavi shri Banwari ki",
+            "hindi_meaning": "वे सभी पापरूपी कीचड़ को हर लेती हैं — यह सौभाग्य है श्री बनवारी (कृष्ण) के चरणों की छवि से।",
+            "english": "She washes away the mire of all sins — by the glory of Sri Banwari's (Krishna's) lotus feet."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "चमकती उज्ज्वल तट रेनु, बज रही वृंदावन बेनु।",
+            "roman": "Chamkati ujjwal tat renu, baj rahi Vrindavan benu",
+            "hindi_meaning": "यमुना के तट की रेत उज्ज्वल चमक रही है, और वृंदावन में बांसुरी बज रही है।",
+            "english": "The sand on the riverbank shines brilliantly, and the flute melody fills Vrindavan."
+          },
+          {
+            "hindi": "चहुं दिसि गोपि ग्वाल धेनु, हंसत मृदु मंद चांदनी चंद।",
+            "roman": "Chahun disi gopi gwaal dhenu, hansat mridu mand chandni chand",
+            "hindi_meaning": "चारों दिशाओं में गोपियाँ, ग्वाले और गाएं हैं, चाँद मंद-मंद मुस्कुराते हुए चाँदनी बिखेर रहा है।",
+            "english": "Gopis, cowherds, and cows fill all four directions, as the moon smiles softly in the moonlit night."
+          },
+          {
+            "hindi": "करत आनंद, प्रमोद कंद श्री गिरिधारी की॥",
+            "roman": "Karat aanand, pramod kand shri Giridharis ki",
+            "hindi_meaning": "वे आनंद और प्रमोद के केंद्र हैं — श्री गिरिधारी (कृष्ण) जो पर्वत धारण करने वाले हैं।",
+            "english": "Creating joy and delight — Sri Giridhari, the lifter of the mountain, is the source of all bliss."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "यमुना तट धेनु चराई, गोप ग्वाल संग लेकर आई।",
+            "roman": "Yamuna tat dhenu charai, gop gwaal sang lekar aai",
+            "hindi_meaning": "यमुना के तट पर गायों को चराते हुए, गोप-ग्वालों के साथ वे वापस आए।",
+            "english": "Grazing the cows on the banks of Yamuna, He returned with the cowherd friends."
+          },
+          {
+            "hindi": "माखन मिश्री खाय रिझाई, नंद के लाल, बृजबाल।",
+            "roman": "Makhan mishri khaay rijhaai, nand ke laal, brijbaal",
+            "hindi_meaning": "माखन और मिश्री खाकर सबको रिझाने वाले, नंद के लाल और ब्रज के बालक।",
+            "english": "Delighting all with butter and sugar, the beloved son of Nanda, the darling of Braj."
+          },
+          {
+            "hindi": "लाड़ लड़ाई मैया यशोदा प्यारी की॥",
+            "roman": "Laad ladhai maiya Yashoda pyaari ki",
+            "hindi_meaning": "माँ यशोदा उन पर प्यार लुटाती हैं — यह है प्रिय यशोदा माँ का दुलार।",
+            "english": "Mother Yashoda lovingly indulges Him — the cherished pampering of beloved Mother Yashoda."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 6",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "भक्तन के काज सवारे, दुष्ट असुरन को संहारे।",
+            "roman": "Bhaktan ke kaaj savare, dusht asuran ko sanhare",
+            "hindi_meaning": "वे अपने भक्तों के कार्य सँवारते हैं और दुष्ट असुरों का संहार करते हैं।",
+            "english": "He fulfils the wishes of His devotees and destroys the wicked demons."
+          },
+          {
+            "hindi": "वृंदावन के बंशीधारे, प्रेम सागर, मन रंजन।",
+            "roman": "Vrindavan ke banshidhaare, prem saagar, man ranjan",
+            "hindi_meaning": "वृंदावन में बांसुरी धारण करने वाले प्रेम के सागर, मन को आनंदित करने वाले।",
+            "english": "The flute-bearer of Vrindavan, ocean of love, the one who delights all minds."
+          },
+          {
+            "hindi": "लीला रंजन सुंदर, छवि मनोहारी की॥",
+            "roman": "Leela ranjan sundar, chhavi manohaari ki",
+            "hindi_meaning": "उनकी लीलाएँ मन को प्रसन्न करती हैं और उनकी छवि मन को मोह लेती है।",
+            "english": "His divine pastimes delight the heart, and His form is utterly captivating."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 7",
+        "label_english": "Verse 7 (Phalashruti)",
+        "lines": [
+          {
+            "hindi": "आरती कुंजबिहारी की जो कोई नर गावे।",
+            "roman": "Aarti Kunj Bihari ki jo koi nar gaave",
+            "hindi_meaning": "जो भी व्यक्ति कुंजबिहारी की यह आरती गाता है।",
+            "english": "Whoever sings this aarti of Kunj Bihari with devotion."
+          },
+          {
+            "hindi": "कृष्ण कृपा ते भव-सागर सहजहि उतर जाए।",
+            "roman": "Krishna kripa te bhava-saagar sahajahi utar jaaye",
+            "hindi_meaning": "कृष्ण की कृपा से वह संसार-सागर से आसानी से पार हो जाता है।",
+            "english": "By Krishna's grace, he easily crosses the ocean of worldly existence."
+          },
+          {
+            "hindi": "श्री गिरिधर कृष्णमुरारी की, आरती कुंजबिहारी की।",
+            "roman": "Shri Giridhar Krishnamuari ki, aarti Kunj Bihari ki",
+            "hindi_meaning": "श्री गिरिधर कृष्णमुरारी की — कुंजबिहारी की आरती।",
+            "english": "Of Sri Giridhar Krishnamurari — the Aarti of Kunj Bihari."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Aarti dedicated to Lord Krishna."
   },
   {
     "id": 10,
@@ -2037,12 +2954,18 @@
     "title_english": "Om Jai Lakshmi Mata",
     "deity": "Lakshmi",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairavi",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Evening (Diya lighting)",
+    "occasion": "Diwali, Friday Puja",
+    "tags": [
+      "lakshmi",
+      "aarti",
+      "diwali",
+      "prosperity",
+      "wealth"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2051,19 +2974,183 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Om Jai Lakshmi Mata is the traditional aarti of Goddess Lakshmi sung during Diwali and every Friday. It praises the goddess of wealth, fortune, and prosperity.",
+    "story_hindi": "ॐ जय लक्ष्मी माता देवी लक्ष्मी की पारंपरिक आरती है जो दिवाली और हर शुक्रवार को गाई जाती है। यह धन, सौभाग्य और समृद्धि की देवी की स्तुति करती है।",
+    "significance": "Om Jai Lakshmi Mata is the most widely sung Lakshmi aarti in Hindu households. It is believed to invite the goddess of wealth into the home.",
+    "significance_hindi": "ॐ जय लक्ष्मी माता हिंदू घरों में सर्वाधिक गाई जाने वाली लक्ष्मी आरती है। माना जाता है कि यह धन की देवी को घर में आमंत्रित करती है।",
+    "benefits": [
+      "Attracts wealth and prosperity",
+      "Removes financial difficulties",
+      "Brings domestic harmony and happiness",
+      "Invites blessings of Goddess Lakshmi"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Om Jai Lakshmi Mata Aarti with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Om Jai Lakshmi Mata aarti with Hindi meaning and English translation.",
+      "keywords": [
+        "Om Jai Lakshmi Mata",
+        "Lakshmi aarti",
+        "Diwali aarti",
+        "Friday puja"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "ॐ जय लक्ष्मी माता, मैया जय लक्ष्मी माता।",
+            "roman": "Om Jai Lakshmi Mata, Maiya Jai Lakshmi Mata.",
+            "hindi_meaning": "हे माता लक्ष्मी, आपकी जय हो!",
+            "english": "Om, Victory to Mother Lakshmi, Victory to You!"
+          },
+          {
+            "hindi": "तुमको निशिदिन सेवत, हरि विष्णु विधाता॥",
+            "roman": "Tumko Nishidin Sevat, Hari Vishnu Vidhata.",
+            "hindi_meaning": "भगवान विष्णु और विधाता (ब्रह्मा) रात-दिन आपकी सेवा (ध्यान) करते हैं।",
+            "english": "Lord Vishnu and Brahma meditate upon You day and night."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "उमा रमा ब्रह्माणी, तुम ही जग माता।",
+            "roman": "Uma Rama Brahmani, Tum Hi Jag Mata.",
+            "hindi_meaning": "आप ही उमा (पार्वती), रमा (लक्ष्मी), और ब्रह्माणी (सरस्वती) हैं। आप ही पूरे जगत की माता हैं।",
+            "english": "You are Uma, Rama, and Brahmani. You alone are the Mother of the Universe."
+          },
+          {
+            "hindi": "सूर्य चन्द्रमा ध्यावत, नारद ऋषि गाता॥",
+            "roman": "Surya Chandrama Dhyavat, Narad Rishi Gata.",
+            "hindi_meaning": "सूर्य और चंद्रमा आपका ध्यान करते हैं, और नारद मुनि आपका गुणगान करते हैं।",
+            "english": "The Sun and Moon meditate on You, and Sage Narada sings Your praises."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "दुर्गा रूप निरंजनी, सुख सम्पत्ति दाता।",
+            "roman": "Durga Roop Niranjani, Sukh Sampatti Data.",
+            "hindi_meaning": "आप ही दुर्गा का निरंजन रूप हैं, और आप ही सुख तथा संपत्ति प्रदान करने वाली हैं।",
+            "english": "You are the pure form of Goddess Durga, the giver of happiness and wealth."
+          },
+          {
+            "hindi": "जो कोई तुमको ध्यावत, ऋद्धि-सिद्धि धन पाता॥",
+            "roman": "Jo Koi Tumko Dhyavat, Riddhi-Siddhi Dhan Pata.",
+            "hindi_meaning": "जो कोई भी आपका ध्यान करता है, वह ऋद्धि (समृद्धि), सिद्धि (सफलता) और धन प्राप्त करता है।",
+            "english": "Whoever meditates on You attains prosperity, success, and wealth."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "तुम पाताल निवासिनि, तुम ही शुभदाता।",
+            "roman": "Tum Patal Nivasini, Tum Hi Shubhdata.",
+            "hindi_meaning": "आप ही पाताल में निवास करने वाली हैं और आप ही शुभ फल देने वाली हैं।",
+            "english": "You reside in the netherworld, and You alone are the bestower of auspiciousness."
+          },
+          {
+            "hindi": "कर्म प्रभाव प्रकाशिनि, भवनिधि की त्राता॥",
+            "roman": "Karma Prabhav Prakashini, Bhavnidhi Ki Trata.",
+            "hindi_meaning": "आप कर्मों के प्रभाव को प्रकाशित करने वाली हैं और भवसागर (संसार) से तारने वाली हैं।",
+            "english": "You illuminate the effects of our actions and save us from the ocean of worldly existence."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "जिस घर में तुम रहतीं, सब सद्गुण आता।",
+            "roman": "Jis Ghar Mein Tum Rahti, Sab Sadgun Aata.",
+            "hindi_meaning": "जिस घर में आपका वास होता है, वहाँ सभी सद्गुण स्वतः आ जाते हैं।",
+            "english": "In the house where You reside, all good virtues naturally enter."
+          },
+          {
+            "hindi": "सब सम्भव हो जाता, मन नहीं घबराता॥",
+            "roman": "Sab Sambhav Ho Jata, Man Nahi Ghabrata.",
+            "hindi_meaning": "सब कुछ संभव हो जाता है और मन कभी भयभीत या चिंतित नहीं होता।",
+            "english": "Everything becomes possible, and the mind never worries."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "तुम बिन यज्ञ न होते, वस्त्र न कोई पाता।",
+            "roman": "Tum Bin Yagya Na Hote, Vastra Na Koi Pata.",
+            "hindi_meaning": "आपके बिना कोई यज्ञ (शुभ कार्य) संपन्न नहीं हो सकता, और किसी को वस्त्र आदि प्राप्त नहीं होते।",
+            "english": "Without You, no auspicious rituals can be completed, and none can acquire clothing or comforts."
+          },
+          {
+            "hindi": "खान-पान का वैभव, सब तुमसे आता॥",
+            "roman": "Khan-Pan Ka Vaibhav, Sab Tumse Aata.",
+            "hindi_meaning": "खान-पान और जीवन का सारा वैभव आप ही की कृपा से आता है।",
+            "english": "The luxury of food, drink, and a good life all come from Your grace."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 6",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "शुभ-गुण मंदिर सुन्दर, क्षीरोदधि-जाता।",
+            "roman": "Shubh-Gun Mandir Sundar, Kshirodadhi-Jata.",
+            "hindi_meaning": "आप शुभ गुणों का सुंदर मंदिर हैं, और क्षीर सागर (दूध के समुद्र) से प्रकट हुई हैं।",
+            "english": "You are the beautiful temple of auspicious virtues, born from the Ocean of Milk."
+          },
+          {
+            "hindi": "रत्न चतुर्दश तुम बिन, कोई नहीं पाता॥",
+            "roman": "Ratna Chaturdash Tum Bin, Koi Nahi Pata.",
+            "hindi_meaning": "समुद्र मंथन के चौदह रत्न आपके बिना कोई प्राप्त नहीं कर सकता था।",
+            "english": "Without You, no one could have attained the fourteen jewels from the ocean churning."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 7",
+        "label_english": "Verse 7",
+        "lines": [
+          {
+            "hindi": "महालक्ष्मीजी की आरती, जो कोई नर गाता।",
+            "roman": "Mahalakshmiji Ki Aarti, Jo Koi Nar Gata.",
+            "hindi_meaning": "महालक्ष्मी जी की इस आरती को जो कोई भी मनुष्य गाता है,",
+            "english": "Whoever sings this Aarti of Goddess Mahalakshmi,"
+          },
+          {
+            "hindi": "उर आनन्द समाता, पाप उतर जाता॥",
+            "roman": "Ur Anand Samata, Paap Utar Jata.",
+            "hindi_meaning": "उसके हृदय में अपार आनंद भर जाता है और उसके सारे पाप नष्ट हो जाते हैं।",
+            "english": "Their heart is filled with immense joy, and all their sins are washed away."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Aarti for Goddess Lakshmi, sung on Diwali and Fridays."
   },
   {
     "id": 11,
@@ -2071,14 +3158,20 @@
     "title_hindi": "रघुपति राघव राजा राम",
     "title_roman": "Raghupati Raghav Raja Ram",
     "title_english": "Raghupati Raghav Raja Ram",
-    "deity": "Ram",
+    "deity": "Lord Ram",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Desh (Morning Raga)",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning",
+    "occasion": "Ram Navami, Daily Prayer",
+    "tags": [
+      "ram",
+      "bhajan",
+      "gandhi",
+      "prayer",
+      "unity"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2087,19 +3180,96 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Raghupati Raghav Raja Ram is an ancient bhajan popularised by Mahatma Gandhi as a prayer of unity. Gandhi added the verse \"Ishwar Allah tero naam\" to symbolize Hindu-Muslim harmony.",
+    "story_hindi": "रघुपति राघव राजा राम एक प्राचीन भजन है जिसे महात्मा गांधी ने एकता की प्रार्थना के रूप में लोकप्रिय बनाया। गांधी जी ने \"ईश्वर अल्लाह तेरो नाम\" पंक्ति जोड़ी।",
+    "significance": "This bhajan carries the profound message of the unity of all religions. It was Mahatma Gandhi's favourite prayer and was sung at all his prayer meetings.",
+    "significance_hindi": "यह भजन सभी धर्मों की एकता का गहरा संदेश देता है। यह महात्मा गांधी की प्रिय प्रार्थना थी और उनकी सभी प्रार्थना सभाओं में गाई जाती थी।",
+    "benefits": [
+      "Promotes inner peace and harmony",
+      "Cultivates love and unity",
+      "Deepens devotion to Lord Ram",
+      "Removes ego and promotes humility"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Raghupati Raghav Raja Ram with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Raghupati Raghav Raja Ram bhajan with Hindi meaning and English translation.",
+      "keywords": [
+        "Raghupati Raghav",
+        "Ram bhajan",
+        "Gandhi bhajan",
+        "Ishwar Allah tero naam"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "mukhda",
+        "label_hindi": "मुखड़ा",
+        "label_english": "Refrain",
+        "lines": [
+          {
+            "hindi": "रघुपति राघव राजाराम, पतित पावन सीताराम।",
+            "roman": "Raghupati Raghav Raja Ram, Patit Pavan Sita Ram.",
+            "hindi_meaning": "रघुवंश के राजा श्री राम की जय हो, जो माता सीता के साथ मिलकर पापियों को भी पवित्र कर देते हैं।",
+            "english": "Glory to King Rama of the Raghu dynasty, the uplifter of the fallen, along with Mother Sita."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "सुन्दर विग्रह मेघश्याम, गंगा तुलसी शालग्राम।",
+            "roman": "Sundar Vigrah Meghshyam, Ganga Tulsi Shalagram.",
+            "hindi_meaning": "जिनका स्वरूप बादलों के समान सुंदर श्याम वर्ण है, जिन्हें गंगा, तुलसी और शालिग्राम प्रिय हैं।",
+            "english": "Whose beautiful form is dark like a raincloud, to whom the Ganges, Tulsi, and Shalagram are dear."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "भद्रगिरीश्वर सीताराम, भगत-जनप्रिय सीताराम।",
+            "roman": "Bhadragirishwar Sita Ram, Bhagat-Janpriya Sita Ram.",
+            "hindi_meaning": "भद्रगिरि के ईश्वर श्री सीताराम, जो अपने भक्तों को अत्यंत प्रिय हैं।",
+            "english": "Sita and Ram, the Lords of Bhadragiri, who are deeply loved by their devotees."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "जानकीरमण सीताराम, जयजय राघव सीताराम।",
+            "roman": "Janakiraman Sita Ram, Jai Jai Raghav Sita Ram.",
+            "hindi_meaning": "जानकी (सीता) को आनंदित करने वाले सीताराम, श्री राघव और सीताराम की बारंबार जय हो।",
+            "english": "Sita and Ram, the delighters of Janaki. All glories to Raghav, Sita, and Ram."
+          }
+        ]
+      },
+      {
+        "type": "antara",
+        "label_hindi": "अंतरा 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "ईश्वर अल्लाह तेरो नाम, सबको सन्मति दे भगवान।",
+            "roman": "Ishwar Allah Tero Naam, Sabko Sanmati De Bhagwan.",
+            "hindi_meaning": "ईश्वर और अल्लाह दोनों आपके ही नाम हैं। हे भगवान, सब को सद्बुद्धि प्रदान करें।",
+            "english": "Ishwar and Allah are both Your names. O Lord, grant pure wisdom to everyone."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Traditional Ram Dhun popularized by Mahatma Gandhi."
   },
   {
     "id": 12,
@@ -2107,14 +3277,19 @@
     "title_hindi": "मेरे घर राम आयो",
     "title_roman": "Mere Ghar Ram Aayo",
     "title_english": "Mere Ghar Ram Aayo",
-    "deity": "Ram",
+    "deity": "Lord Ram",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairavi",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning and Evening",
+    "occasion": "Ram Navami, Daily Bhajan",
+    "tags": [
+      "ram",
+      "bhajan",
+      "devotion",
+      "bhakti"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2123,19 +3298,163 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Mere Ghar Ram Aayo is a devotional bhajan expressing the joy of a devotee when Lord Ram visits their home. It became widely popular through devotional music traditions.",
+    "story_hindi": "मेरे घर राम आयो एक भक्तिपूर्ण भजन है जो भगवान राम के घर आने पर एक भक्त की खुशी को व्यक्त करता है। यह भक्ति संगीत परंपराओं के माध्यम से व्यापक रूप से लोकप्रिय हुआ।",
+    "significance": "This bhajan captures the essence of bhakti — the feeling that the Lord himself has arrived in the devotee's heart and home through sincere prayer.",
+    "significance_hindi": "यह भजन भक्ति के सार को व्यक्त करता है — यह भावना कि प्रभु स्वयं सच्ची प्रार्थना के माध्यम से भक्त के हृदय और घर में आए हैं।",
+    "benefits": [
+      "Fills the heart with devotion to Lord Ram",
+      "Creates a feeling of divine presence at home",
+      "Brings peace and joy",
+      "Strengthens faith"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Mere Ghar Ram Aayo Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Mere Ghar Ram Aayo bhajan with Hindi meaning and English translation.",
+      "keywords": [
+        "Mere Ghar Ram Aayo",
+        "Ram bhajan",
+        "Hindi devotional song",
+        "Ram Navami bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "lines": [
+          {
+            "hindi": "मेरी चौखट पे चल के आज चारो धाम आये हैं।",
+            "roman": "Meri chaukhat pe chal ke aaj, Charo dham aaye hain,",
+            "english": "Today, all four holy pilgrimage sites have walked to my doorstep,",
+            "hindi_meaning": "आज मेरे द्वार पर स्वयं चारों धाम चलकर आए हैं,"
+          },
+          {
+            "hindi": "बजाओ ढोल स्वागत में, मेरे घर राम आये हैं।",
+            "roman": "Bajao dhol swagat mein, Mere ghar Ram aaye hain.",
+            "english": "Beat the drums in welcome, for Lord Ram has come to my home.",
+            "hindi_meaning": "ढोल-नगाड़ों से स्वागत करो, क्योंकि मेरे घर राम आए हैं।"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "hindi": "कथा शबरी की जैसे जुड़ गयी, मेरी कहानी से।",
+            "roman": "Katha Shabri ki jaise jud gayi, Meri kahani se,",
+            "english": "My story has become connected with the tale of Shabari,",
+            "hindi_meaning": "मेरी कहानी शबरी की कथा से जुड़ गई है,"
+          },
+          {
+            "hindi": "ना रोको आज धोने दो, चरण आँखों के पानी से।",
+            "roman": "Na roko aaj dhone do, Charan aankhon ke paani se,",
+            "english": "Do not stop me today, let me wash His feet with my tears.",
+            "hindi_meaning": "मुझे मत रोको, आज प्रभु के चरण अपने आंसुओं से धोने दो।"
+          },
+          {
+            "hindi": "बहुत खुश हैं मेरे आँसू, के प्रभु के काम आये हैं।",
+            "roman": "Bahut khush hain mere aansu, Ke Prabhu ke kaam aaye hain,",
+            "english": "My tears are so happy that they are of use to the Lord,",
+            "hindi_meaning": "मेरे आंसू बहुत खुश हैं कि वे भगवान के काम आ रहे हैं,"
+          },
+          {
+            "hindi": "बजाओ ढोल स्वागत में, मेरे घर राम आये हैं।",
+            "roman": "Bajao dhol swagat mein, Mere ghar Ram aaye hain.",
+            "english": "Beat the drums in welcome, for Lord Ram has come to my home.",
+            "hindi_meaning": "ढोल-नगाड़ों से स्वागत करो, क्योंकि मेरे घर राम आए हैं।"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "hindi": "तुमको पा के क्या पाया है, सृष्टि के कण-कण से पूछो।",
+            "roman": "Tumko paa ke kya paaya hai, Srishti ke kan-kan se puchho,",
+            "english": "Ask every particle of creation what I have gained by finding You,",
+            "hindi_meaning": "तुम्हें पाकर मैंने क्या पाया है, यह सृष्टि के कण-कण से पूछो,"
+          },
+          {
+            "hindi": "तुमको खोने का दुःख क्या है, कौशल्या के मन से पूछो।",
+            "roman": "Tumko khone ka dukh kya hai, Kaushalya ke mann se puchho.",
+            "english": "Ask the heart of Mother Kaushalya what the pain of losing You feels like.",
+            "hindi_meaning": "तुम्हें खोने का दुख क्या होता है, माता कौशल्या के हृदय से पूछो।"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "hindi": "द्वार मेरे ये अभागे, आज इनके भाग जागे।",
+            "roman": "Dwaar mere ye abhage, Aaj inke bhaag jaage,",
+            "english": "These unfortunate doors of mine have awakened to good fortune today,",
+            "hindi_meaning": "मेरे इन अभागे द्वारों के आज भाग्य जाग उठे हैं,"
+          },
+          {
+            "hindi": "बड़ी लंबी इंतज़ारी हुई, रघुवर तुम्हारी तब आई है सवारी।",
+            "roman": "Badi lambi intezaari hui, Raghuvar tumhari tab aayi hai sawaari,",
+            "english": "After a very long wait, O Raghuvar, Your chariot has finally arrived.",
+            "hindi_meaning": "बहुत लंबे इंतजार के बाद हे रघुवर, तुम्हारी सवारी आई है।"
+          },
+          {
+            "hindi": "संदेशे आज खुशियों के, हमारे नाम आये हैं।",
+            "roman": "Sandeshe aaj khushiyon ke, Humare naam aaye hain,",
+            "english": "Messages of true joy have come in our name today,",
+            "hindi_meaning": "आज खुशियों के संदेश हमारे नाम आए हैं,"
+          },
+          {
+            "hindi": "बजाओ ढोल स्वागत में, मेरे घर राम आये हैं।",
+            "roman": "Bajao dhol swagat mein, Mere ghar Ram aaye hain.",
+            "english": "Beat the drums in welcome, for Lord Ram has come to my home.",
+            "hindi_meaning": "ढोल-नगाड़ों से स्वागत करो, क्योंकि मेरे घर राम आए हैं।"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "hindi": "दर्शन पा के हे अवतारी, धन्य हुए हैं नैन पुजारी।",
+            "roman": "Darshan paa ke he avtari, Dhanya hue hain nain pujari,",
+            "english": "Having Your vision, O Divine Avatar, these worshipping eyes are blessed.",
+            "hindi_meaning": "हे अवतारी, आपके दर्शन पाकर मेरे पुजारी नयन धन्य हो गए हैं।"
+          },
+          {
+            "hindi": "जीवन नैया तुमने तारी, मंगल भवन अमंगल हारी।",
+            "roman": "Jeewan naiya tumne taari, Mangal bhavan amangal haari,",
+            "english": "You have rowed my boat of life across, O abode of auspiciousness and destroyer of inauspiciousness.",
+            "hindi_meaning": "आपने मेरे जीवन की नैया पार लगा दी, हे मंगल के धाम और अमंगल हरने वाले।"
+          }
+        ]
+      },
+      {
+        "lines": [
+          {
+            "hindi": "निर्धन का तुम धन हो राघव, तुम ही रामायण हो राघव।",
+            "roman": "Nirdhan ka tum dhan ho Raghav, Tum hi Ramayan ho Raghav,",
+            "english": "You are the wealth of the poor, O Raghav, You Yourself are the Ramayan.",
+            "hindi_meaning": "हे राघव, आप निर्धन का धन हैं, आप ही रामायण हैं।"
+          },
+          {
+            "hindi": "सब दुःख हरना अवध बिहारी, मंगल भवन अमंगल हारी।",
+            "roman": "Sab dukh harna Avadh Bihari, Mangal bhavan amangal haari,",
+            "english": "Remove all my sorrows, O Lord of Avadh, abode of auspiciousness and destroyer of inauspiciousness.",
+            "hindi_meaning": "हे अवध बिहारी, मेरे सभी दुखों को हर लें, मंगल भवन अमंगल हारी।"
+          },
+          {
+            "hindi": "चरण की धूल ले लूँ मैं, मेरे भगवान आये हैं।",
+            "roman": "Charan ki dhool le loon main, Mere bhagwan aaye hain,",
+            "english": "Let me take the dust of Your feet, for my God has arrived.",
+            "hindi_meaning": "मैं आपके चरणों की धूल मस्तक पर लगा लूं, क्योंकि मेरे भगवान आए हैं।"
+          },
+          {
+            "hindi": "बजाओ ढोल स्वागत में, मेरे घर राम आये हैं।",
+            "roman": "Bajao dhol swagat mein, Mere ghar Ram aaye hain.",
+            "english": "Beat the drums in welcome, for Lord Ram has come to my home.",
+            "hindi_meaning": "ढोल-नगाड़ों से स्वागत करो, क्योंकि मेरे घर राम आए हैं।"
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Popular modern devotional song celebrating the arrival of Lord Rama."
   },
   {
     "id": 13,
@@ -2145,12 +3464,19 @@
     "title_english": "Vaishnav Jan",
     "deity": "Vishnu",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairavi",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning",
+    "occasion": "Daily Prayer, Gandhi Jayanti",
+    "tags": [
+      "vishnu",
+      "bhajan",
+      "narsi mehta",
+      "humility",
+      "compassion",
+      "gandhi"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2159,19 +3485,126 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Vaishnav Jan To was composed by the 15th-century poet-saint Narsi Mehta of Gujarat. It describes the qualities of a true Vaishnav (devotee of Vishnu) — compassion, humility, and selfless service. Mahatma Gandhi adopted it as his favourite bhajan.",
+    "story_hindi": "वैष्णव जन तो की रचना 15वीं शताब्दी के गुजराती कवि-संत नरसी मेहता ने की थी। यह एक सच्चे वैष्णव के गुणों — करुणा, विनम्रता और निःस्वार्थ सेवा — का वर्णन करता है। महात्मा गांधी ने इसे अपना प्रिय भजन बनाया।",
+    "significance": "Vaishnav Jan To is one of the most celebrated bhajans in Indian devotional music. It teaches universal values of compassion and selflessness.",
+    "significance_hindi": "वैष्णव जन तो भारतीय भक्ति संगीत के सबसे प्रसिद्ध भजनों में से एक है। यह करुणा और निःस्वार्थता के सार्वभौमिक मूल्यों की शिक्षा देता है।",
+    "benefits": [
+      "Cultivates compassion for all beings",
+      "Promotes humility and removal of ego",
+      "Inspires selfless service",
+      "Deepens devotion to God"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Vaishnav Jan To Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Vaishnav Jan To by Narsi Mehta with Hindi meaning and English translation.",
+      "keywords": [
+        "Vaishnav Jan To",
+        "Narsi Mehta bhajan",
+        "Gandhi bhajan",
+        "Hindi devotional"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "verse",
+        "label_hindi": "पद 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "वैष्णव जन तो तेने कहिये जे पीर परायी जाणे रे।",
+            "roman": "Vaishnav jan to tene kahiye je peer paraayi jaane re",
+            "hindi_meaning": "सच्चा वैष्णव (भगवान का भक्त) वही है जो दूसरों की पीड़ा को जानता और समझता है।",
+            "english": "Call him a true Vaishnava (devotee of Lord Vishnu) who feels the pain of others."
+          },
+          {
+            "hindi": "पर दुःखे उपकार करे तोये मन अभिमान न आणे रे॥",
+            "roman": "Par dukhe upakaar kare toye man abhimaan na aane re",
+            "hindi_meaning": "वह दूसरों के दुखों को दूर करता है, फिर भी अपने मन में कोई अभिमान नहीं लाता।",
+            "english": "He helps those who are in misery, yet never lets pride enter his mind."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "सकल लोकमां सहुने वंदे, निंदा न करे केनी रे।",
+            "roman": "Sakal lokama sahune vande, ninda na kare keni re",
+            "hindi_meaning": "वह पूरे विश्व में सबका सम्मान करता है और किसी की भी निंदा नहीं करता।",
+            "english": "He respects everyone in the entire world, and does not speak ill of anyone."
+          },
+          {
+            "hindi": "वाच काछ मन निश्चल राखे, धन धन जननी तेनी रे॥",
+            "roman": "Vaach kaachh man nishchal raakhe, dhan dhan janani teni re",
+            "hindi_meaning": "वह अपनी वाणी, कर्म और मन को पवित्र रखता है। ऐसी आत्मा को जन्म देने वाली माता धन्य है।",
+            "english": "He keeps his words, actions, and mind pure. Blessed is the mother who gave birth to such a soul."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "समदृष्टि ने तृष्णा त्यागी, परस्त्री जेने मात रे।",
+            "roman": "Samadrishti ne trishna tyaagi, parastree jene maat re",
+            "hindi_meaning": "वह सभी को समान दृष्टि से देखता है, उसने लालच त्याग दिया है, और पराई स्त्री उसके लिए माता के समान है।",
+            "english": "He views everyone equally, has renounced all desires, and regards another man's wife as his mother."
+          },
+          {
+            "hindi": "जिह्वा थकी असत्य न बोले, परधन नव झाले हाथ रे॥",
+            "roman": "Jihva thaki asatya na bole, paradhan nav jhaale haath re",
+            "hindi_meaning": "उसकी जीभ कभी झूठ नहीं बोलती, और वह दूसरे के धन को हाथ भी नहीं लगाता।",
+            "english": "His tongue never speaks a lie, and he never touches another's wealth."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "मोह माया व्यापे नहि जेने, दृढ़ वैराग्य जेना मनमां रे।",
+            "roman": "Moh maaya vyaape nahi jene, dridh vairaagya jena manama re",
+            "hindi_meaning": "मोह और माया उसे जकड़ नहीं पाते, और उसके मन में संसार के प्रति दृढ़ वैराग्य होता है।",
+            "english": "Worldly attachments and illusions do not entangle him; his mind is firmly rooted in detachment."
+          },
+          {
+            "hindi": "रामनाम शुं ताळी लागी, सकल तीरथ तेना तनमां रे॥",
+            "roman": "Ramnaam shun taali laagi, sakal teerath tena tanama re",
+            "hindi_meaning": "वह सदैव राम-नाम की धुन में मग्न रहता है, और उसके शरीर में ही सभी तीर्थों का वास है।",
+            "english": "He is constantly immersed in the name of Lord Ram; all the holy pilgrimage sites reside within his own body."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "वणलोभी ने कपटरहित छे, काम क्रोध निवार्या रे।",
+            "roman": "Vanlobhi ne kapatrahit chhe, kaam krodh nivaarya re",
+            "hindi_meaning": "वह लोभ और कपट से पूरी तरह मुक्त है, और उसने काम तथा क्रोध पर विजय प्राप्त कर ली है।",
+            "english": "He is free from greed and deceit, and has completely conquered lust and anger."
+          },
+          {
+            "hindi": "भणे नरसैयो तेनुं दर्शन करतां, कुळ एकोतेर तार्या रे॥",
+            "roman": "Bhane Narsaiyo tenu darshan karata, kul ekoter taarya re",
+            "hindi_meaning": "कवि नरसी मेहता कहते हैं कि ऐसे व्यक्ति के दर्शन मात्र से व्यक्ति की इकहत्तर पीढ़ियों का उद्धार हो जाता है।",
+            "english": "Poet Narsi Mehta says, merely catching sight of such a person saves one's seventy-one generations."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "A 15th-century Gujarati bhajan composed by poet Narsinh Mehta."
   },
   {
     "id": 14,
@@ -2179,14 +3612,20 @@
     "title_hindi": "श्री रामचंद्र कृपालु",
     "title_roman": "Shri Ramachandra Kripalu",
     "title_english": "Shri Ramachandra Kripalu",
-    "deity": "Ram",
+    "deity": "Lord Ram",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Yaman",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning and Evening",
+    "occasion": "Ram Navami, Daily Bhajan",
+    "tags": [
+      "ram",
+      "tulsidas",
+      "bhajan",
+      "stuti",
+      "devotion"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2195,19 +3634,126 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Shri Ramachandra Kripalu Bhaju Man was composed by the saint-poet Goswami Tulsidas. It is a beautiful stuti (praise) describing the divine beauty of Lord Ram and urging the mind to sing his glories.",
+    "story_hindi": "श्री रामचंद्र कृपालु भजु मन की रचना संत-कवि गोस्वामी तुलसीदास ने की थी। यह भगवान राम की दिव्य सुंदरता का वर्णन करने वाली एक सुंदर स्तुति है।",
+    "significance": "Composed by the same saint who wrote the Ramcharitmanas, this bhajan holds immense spiritual importance. It encapsulates the essence of Ram bhakti in a few stanzas.",
+    "significance_hindi": "रामचरितमानस के रचयिता तुलसीदास द्वारा रचित यह भजन अत्यंत आध्यात्मिक महत्व रखता है। यह कुछ ही पदों में राम भक्ति के सार को समेटता है।",
+    "benefits": [
+      "Deepens devotion to Lord Ram",
+      "Purifies the mind through divine description",
+      "Brings spiritual upliftment",
+      "Removes ego and worldly attachments"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Shri Ramachandra Kripalu Bhajan with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Shri Ramachandra Kripalu by Tulsidas with Hindi meaning and English translation.",
+      "keywords": [
+        "Shri Ramachandra Kripalu",
+        "Tulsidas bhajan",
+        "Ram stuti",
+        "Hindi bhajan"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "verse",
+        "label_hindi": "पद 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "श्रीरामचन्द्र कृपालु भजु मन हरण भवभय दारुणम् ।",
+            "roman": "Shri Ramachandra kripalu bhaju man haran bhavbhay daarunam",
+            "hindi_meaning": "हे मन! कृपालु श्री रामचन्द्र जी का भजन कर, जो संसार के सभी जन्म-मरण रूपी दारुण भयों को हरने वाले हैं।",
+            "english": "O mind! Sing praises of the merciful Lord Ramachandra, who removes the dreadful fears of worldly existence."
+          },
+          {
+            "hindi": "नव कंज लोचन कंज मुख कर कंज पद कंजारुणम् ॥",
+            "roman": "Nav kanj lochan kanj mukh kar kanj pad kanjarunam",
+            "hindi_meaning": "उनके नेत्र, मुख और हाथ नवीन कमल के समान हैं और उनके चरण लाल कमल के समान हैं।",
+            "english": "His eyes, face, and hands are like blooming lotuses, and His feet are like red lotuses."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "कंदर्प अगणित अमित छबि नवनील नीरद सुन्दरम् ।",
+            "roman": "Kandarpa aganit amit chhabi navaneel neerada sundaram",
+            "hindi_meaning": "उनकी अपार छवि अनगिनत कामदेवों से भी बढ़कर है, और उनका शरीर नए नीले बादलों के समान सुंदर है।",
+            "english": "His boundless beauty surpasses countless cupids, and His body is as beautiful as a fresh blue raincloud."
+          },
+          {
+            "hindi": "पट पीत मानहु तडित रुचि शुची नौमि जनक सुतावरम् ॥",
+            "roman": "Pat peet maanahu tadit ruchi shuchi naumi janak sutaavaram",
+            "hindi_meaning": "उनके पीले वस्त्रों में बिजली जैसी चमक है, ऐसे परम पवित्र माता सीता के पति श्री राम को मैं नमस्कार करता हूँ।",
+            "english": "His yellow robes shine with the brilliance of lightning; I bow to the pure Lord, the consort of Janaka's daughter."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "भजु दीनबन्धु दिनेश दानव दैत्यवंश निकन्दनम् ।",
+            "roman": "Bhaju deenabandhu dinesh daanav daityavansh nikandanam",
+            "hindi_meaning": "हे मन! दीनों के बंधु, सूर्य के समान तेजस्वी, और दानव-दैत्यों के वंश का नाश करने वाले प्रभु का भजन कर।",
+            "english": "O mind! Worship the friend of the poor, radiant as the sun, the destroyer of the demon race."
+          },
+          {
+            "hindi": "रघुनन्द आनन्दकन्द कोशल चन्द दशरथ नन्दनम् ॥",
+            "roman": "Raghunand aanandakand koshal chand dasharath nandanam",
+            "hindi_meaning": "जो रघुकुल के आनंद के मूल हैं, कोसलपुर के चंद्रमा हैं और राजा दशरथ के पुत्र हैं।",
+            "english": "The joy of the Raghu dynasty, the root of bliss, the moon of Kosala, and the beloved son of Dasharatha."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "शिर मुकुट कुंडल तिलक चारु उदार अङ्ग विभूषणम् ।",
+            "roman": "Shir mukut kundal tilak chaaru udaar ang vibhooshanam",
+            "hindi_meaning": "जिनके सिर पर मुकुट, कानों में कुंडल, माथे पर सुंदर तिलक और प्रत्येक अंग पर सुंदर आभूषण हैं।",
+            "english": "Who wears a crown on His head, earrings, a beautiful tilak, and splendid ornaments on every limb."
+          },
+          {
+            "hindi": "आजानुभुज शर चाप धर संग्राम जित खरदूषणम् ॥",
+            "roman": "Aajaanubhuj shar chaap dhar sangraam jit kharadooshanam",
+            "hindi_meaning": "जिनकी भुजाएँ घुटनों तक लंबी हैं, जो धनुष-बाण धारण करते हैं और जिन्होंने संग्राम में खर और दूषण को जीता था।",
+            "english": "Whose arms reach His knees, holding a bow and arrow, the victor over demons Khar and Dushan in battle."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "पद 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "इति वदति तुलसीदास शंकर शेष मुनि मन रंजनम् ।",
+            "roman": "Iti vadati Tulsidas shankar shesh muni man ranjanam",
+            "hindi_meaning": "तुलसीदास कहते हैं कि जो भगवान शिव, शेषनाग और मुनियों के मन को आनंदित करने वाले हैं, उनका भजन कर।",
+            "english": "Tulsidas says, sing of Him who brings delight to the minds of Lord Shiva, Sheshanaga, and the sages."
+          },
+          {
+            "hindi": "मम हृदय कंज निवास कुरु कामादि खल दल गंजनम् ॥",
+            "roman": "Mam hriday kanj nivaas kuru kaamadi khal dal ganjanam",
+            "hindi_meaning": "और जो काम, क्रोध आदि दुष्टों के दल का नाश करने वाले हैं, वे प्रभु मेरे हृदय रूपी कमल में निवास करें।",
+            "english": "May He, the destroyer of the host of wicked enemies like lust, dwell forever in the lotus of my heart."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Composed by Goswami Tulsidas in Vinay Patrika."
   },
   {
     "id": 15,
@@ -2217,12 +3763,18 @@
     "title_english": "Madhurashtakam",
     "deity": "Krishna",
     "duration_minutes": 0,
-    "raga": "",
+    "raga": "Bhairav",
     "composer": "Traditional",
     "language": "Hindi",
-    "timing": "",
-    "occasion": "",
-    "tags": [],
+    "timing": "Morning",
+    "occasion": "Janmashtami, Daily Bhajan",
+    "tags": [
+      "krishna",
+      "madhurashtakam",
+      "vallabhacharya",
+      "sweetness",
+      "bhakti"
+    ],
     "topics": [],
     "priority": 999,
     "featured": false,
@@ -2231,18 +3783,182 @@
       "time": [],
       "occasion": []
     },
-    "story": "",
-    "story_hindi": "",
-    "significance": "",
-    "significance_hindi": "",
-    "benefits": [],
+    "story": "Madhurashtakam was composed by the great Vaishnava saint Vallabhacharya. Each of its 8 verses uses the word \"Madhuram\" (sweet) to describe every aspect of Lord Krishna, from his face and eyes to his dance and friendship.",
+    "story_hindi": "मधुराष्टकम् की रचना महान वैष्णव संत वल्लभाचार्य ने की थी। इसके 8 पदों में से प्रत्येक में भगवान कृष्ण के हर पहलू — उनके मुख, नेत्र, नृत्य और मित्रता तक — को \"मधुरम्\" (मधुर) शब्द से वर्णित किया गया है।",
+    "significance": "Madhurashtakam is a jewel of Sanskrit devotional poetry. The repetition of \"Madhuram\" creates a meditative state that fills the devotee with love for Krishna.",
+    "significance_hindi": "मधुराष्टकम् संस्कृत भक्ति काव्य का एक रत्न है। \"मधुरम्\" की पुनरावृत्ति एक ध्यानमग्न अवस्था उत्पन्न करती है जो भक्त को कृष्ण के प्रेम से भर देती है।",
+    "benefits": [
+      "Fills the heart with love and sweetness for Lord Krishna",
+      "Creates a meditative, peaceful state",
+      "Purifies speech and mind",
+      "Brings joy and divine bliss"
+    ],
     "seo": {
-      "meta_title": "",
-      "meta_description": "",
-      "keywords": []
+      "meta_title": "Madhurashtakam by Vallabhacharya with Hindi & English Meaning",
+      "meta_description": "Full lyrics of Madhurashtakam with Hindi meaning and English translation by Vallabhacharya.",
+      "keywords": [
+        "Madhurashtakam",
+        "Vallabhacharya",
+        "Krishna bhajan",
+        "Sanskrit stotram"
+      ]
     },
-    "verses": [],
+    "verses": [
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 1",
+        "label_english": "Verse 1",
+        "lines": [
+          {
+            "hindi": "अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।",
+            "roman": "Adharam madhuram vadanam madhuram nayanam madhuram hasitam madhuram",
+            "hindi_meaning": "उनके होंठ मधुर हैं, मुख मधुर है, आँखें मधुर हैं, उनकी मुस्कान मधुर है।",
+            "english": "His lips are sweet, His face is sweet, His eyes are sweet, His smile is sweet."
+          },
+          {
+            "hindi": "हृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥१॥",
+            "roman": "Hridayam madhuram gamanam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका हृदय मधुर है, उनकी चाल मधुर है; मधुरता के ईश्वर (श्री कृष्ण) का सब कुछ मधुर है।",
+            "english": "His heart is sweet, His walk is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 2",
+        "label_english": "Verse 2",
+        "lines": [
+          {
+            "hindi": "वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम् ।",
+            "roman": "Vachanam madhuram charitam madhuram vasanam madhuram valitam madhuram",
+            "hindi_meaning": "उनके वचन मधुर हैं, उनका चरित्र मधुर है, उनके वस्त्र मधुर हैं, उनकी मुद्रा मधुर है।",
+            "english": "His words are sweet, His character is sweet, His garments are sweet, His posture is sweet."
+          },
+          {
+            "hindi": "चलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥२॥",
+            "roman": "Chalitam madhuram bhramitam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका चलना मधुर है, उनका भ्रमण करना मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His movements are sweet, His wandering is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 3",
+        "label_english": "Verse 3",
+        "lines": [
+          {
+            "hindi": "वेणुर्मधुरो रेणुर्मधुरः पाणिर्मधुरः पादौ मधुरौ ।",
+            "roman": "Venur madhuro renur madhurah panir madhurah padau madhurau",
+            "hindi_meaning": "उनकी बांसुरी मधुर है, उनके चरणों की धूल मधुर है, उनके हाथ मधुर हैं, उनके चरण मधुर हैं।",
+            "english": "His flute is sweet, the dust of His feet is sweet, His hands are sweet, His feet are sweet."
+          },
+          {
+            "hindi": "नृत्यं मधुरं सख्यं मधुरं मधुराधिपतेरखिलं मधुरम् ॥३॥",
+            "roman": "Nrityam madhuram sakhyam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका नृत्य मधुर है, उनकी मित्रता मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His dance is sweet, His friendship is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 4",
+        "label_english": "Verse 4",
+        "lines": [
+          {
+            "hindi": "गीतं मधुरं पीतं मधुरं भुक्तं मधुरं सुप्तं मधुरम् ।",
+            "roman": "Geetam madhuram peetam madhuram bhuktam madhuram suptam madhuram",
+            "hindi_meaning": "उनके गीत मधुर हैं, उनका पीना मधुर है, उनका भोजन करना मधुर है, उनका शयन मधुर है।",
+            "english": "His song is sweet, His drinking is sweet, His eating is sweet, His sleeping is sweet."
+          },
+          {
+            "hindi": "रूपं मधुरं तिलकं मधुरं मधुराधिपतेरखिलं मधुरम् ॥४॥",
+            "roman": "Roopam madhuram tilakam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका रूप मधुर है, उनका तिलक मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His form is sweet, His tilak is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 5",
+        "label_english": "Verse 5",
+        "lines": [
+          {
+            "hindi": "करणं मधुरं तरणं मधुरं हरणं मधुरं रमणं मधुरम् ।",
+            "roman": "Karanam madhuram taranam madhuram haranam madhuram ramanam madhuram",
+            "hindi_meaning": "उनके कार्य मधुर हैं, उनका उद्धार करना मधुर है, उनका चोरी करना (माखन) मधुर है, उनका प्रेम मधुर है।",
+            "english": "His deeds are sweet, His saving is sweet, His stealing is sweet, His love-play is sweet."
+          },
+          {
+            "hindi": "वमितं मधुरं शमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥५॥",
+            "roman": "Vamitam madhuram shamitam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनके शब्द मधुर हैं, उनका शांत रहना मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His utterances are sweet, His peace is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 6",
+        "label_english": "Verse 6",
+        "lines": [
+          {
+            "hindi": "गुञ्जा मधुरा माला मधुरा यमुना मधुरा वीची मधुरा ।",
+            "roman": "Gunja madhura mala madhura yamuna madhura veechi madhura",
+            "hindi_meaning": "उनकी गुंजा की माला मधुर है, यमुना नदी मधुर है, उसकी लहरें मधुर हैं।",
+            "english": "His berry necklace is sweet, His garland is sweet, the Yamuna river is sweet, its waves are sweet."
+          },
+          {
+            "hindi": "सलिलं मधुरं कमलं मधुरं मधुराधिपतेरखिलं मधुरम् ॥६॥",
+            "roman": "Salilam madhuram kamalam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उसका जल मधुर है, उसके कमल मधुर हैं; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "Its water is sweet, its lotuses are sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 7",
+        "label_english": "Verse 7",
+        "lines": [
+          {
+            "hindi": "गोपी मधुरा लीला मधुरा युक्तं मधुरं मुक्तं मधुरम् ।",
+            "roman": "Gopi madhura leela madhura yuktam madhuram muktam madhuram",
+            "hindi_meaning": "गोपियाँ मधुर हैं, उनकी लीलाएँ मधुर हैं, उनका मिलन मधुर है, उनका बिछड़ना मधुर है।",
+            "english": "His Gopis are sweet, His pastimes are sweet, union with Him is sweet, liberation from Him is sweet."
+          },
+          {
+            "hindi": "दृष्टं मधुरं शिष्टं मधुरं मधुराधिपतेरखिलं मधुरम् ॥७॥",
+            "roman": "Drishtam madhuram shishtam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका देखना मधुर है, उनका शिष्टाचार मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His glance is sweet, His etiquette is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      },
+      {
+        "type": "verse",
+        "label_hindi": "श्लोक 8",
+        "label_english": "Verse 8",
+        "lines": [
+          {
+            "hindi": "गोपा मधुरा गावो मधुरा यष्टिर्मधुरा सृष्टिर्मधुरा ।",
+            "roman": "Gopa madhura gavo madhura yashtir madhura srishtir madhura",
+            "hindi_meaning": "गोप मधुर हैं, गाएं मधुर हैं, उनकी छड़ी मधुर है, उनकी सृष्टि मधुर है।",
+            "english": "His cowherd friends are sweet, His cows are sweet, His staff is sweet, His creation is sweet."
+          },
+          {
+            "hindi": "दलितं मधुरं फलितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥८॥",
+            "roman": "Dalitam madhuram phalitam madhuram madhuradhipaterakhilam madhuram",
+            "hindi_meaning": "उनका विनाश करना मधुर है, उनका फल देना मधुर है; मधुरता के ईश्वर का सब कुछ मधुर है।",
+            "english": "His trampling is sweet, His fruitfulness is sweet; everything about the Lord of Sweetness is sweet."
+          }
+        ]
+      }
+    ],
     "related": [],
-    "deity_color": ""
+    "deity_color": "",
+    "reference": "Composed by Sri Vallabhacharya, describing the sweetness of Lord Krishna."
   }
 ]

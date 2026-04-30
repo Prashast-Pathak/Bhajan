@@ -389,13 +389,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -450,8 +451,8 @@
     <a href="/wisdom.html">💬 Life Wisdom</a>
     <div class="menu-divider"></div>
     <a href="/favorites.html">❤️ Saved Favorites</a>
-    <a href="about.html">ℹ️ About Us</a>
-    <a href="contact.html">📞 Contact</a>
+    <a href="/about.html">ℹ️ About Us</a>
+    <a href="/contact.html">📞 Contact</a>
   </div>
 </div>
 
@@ -629,9 +630,9 @@ function toggleMobileMenu() {
     <div class="footer-om">ॐ</div>
     <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
     <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about.html">About</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/contact.html">Contact</a>
       <a href="sitemap.xml">Sitemap</a>
     </div>
     <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing. | ज्ञान सबका, ज्ञान मुफ्त।</p>
@@ -689,7 +690,7 @@ function toggleMobileMenu() {
   const btnHinComm = document.getElementById('btnHinComm');
 
   // ── FETCH DATA ────────────────────────────────────────────────
-  fetch('data/shlokas.json')
+  fetch('/data/shlokas.json')
     .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
     .then(data => {
       allShlokas = data;

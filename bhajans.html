@@ -263,13 +263,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -493,11 +494,11 @@ function toggleMobileMenu() {
   const initSearch = urlParams.get('search') || '';
   const initDeity = urlParams.get('deity') || '';
 
-  fetch('data/bhajans.json')
+  fetch('/data/bhajans.json')
     .then(r => { if (!r.ok) throw new Error('Network error'); return r.json(); })
     .then(data => {
       // Only show bhajans that have actual content (verses)
-      data = data.filter(b => b.verses && b.verses.length > 0);
+      // data = data.filter(b => b.verses && b.verses.length > 0);
       allBhajans = data;
       populateFilters(data);
       if (initSearch) document.getElementById('searchInput').value = initSearch;
@@ -575,7 +576,7 @@ function toggleMobileMenu() {
       const firstLine = b.verses?.[0]?.lines?.[0];
       const topTags = (b.tags || []).slice(0, 3);
       return `
-        <a href="bhajan.html?slug=${b.slug}" class="card" style="--deity-color:${color}">
+        <a href="/bhajan/${b.slug}/" class="card" style="--deity-color:${color}">
           <div class="card-top">
             <div class="card-badge" style="background:${color}">${DEITY_EMOJI[b.deity] || '🙏'} ${b.deity}</div>
             <button class="card-fav ${isFav ? 'faved' : ''}"

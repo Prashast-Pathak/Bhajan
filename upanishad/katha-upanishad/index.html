@@ -881,13 +881,14 @@
       <script>
         function handleMainHeaderBack() {
           const p = window.location.pathname;
-          const topLevel = ['/index.html', '/', '/bhajans.html', '/shlokas.html', '/wisdom.html', '/prayers.html', '/upanishads.html', '/bhagavad-gita.html', '/favorites.html'];
-          if (topLevel.some(t => p.endsWith(t))) {
-            window.location.href = 'index.html';
+          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
+          
+          if (isTopLevel) {
+            window.location.href = '/';
           } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
             window.history.back();
           } else {
-            window.location.href = 'index.html';
+            window.location.href = '/';
           }
         }
       </script>
@@ -942,8 +943,8 @@
     <a href="/wisdom.html">💬 Life Wisdom</a>
     <div class="menu-divider"></div>
     <a href="/favorites.html">❤️ Saved Favorites</a>
-    <a href="about.html">ℹ️ About Us</a>
-    <a href="contact.html">📞 Contact</a>
+    <a href="/about.html">ℹ️ About Us</a>
+    <a href="/contact.html">📞 Contact</a>
   </div>
 </div>
 
@@ -1061,9 +1062,9 @@ function toggleMobileMenu() {
     <div class="footer-om">ॐ</div>
     <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
     <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about.html">About</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/contact.html">Contact</a>
     </div>
     <p class="footer-copy">🕉️ Content is free to use for personal devotion &amp; sharing.</p>
   </div>
@@ -1092,7 +1093,7 @@ function toggleMobileMenu() {
   // ── LOAD DATA ──
   async function init() {
     try {
-      const res = await fetch('data/upanishads.json');
+      const res = await fetch('/data/upanishads.json');
       allData = await res.json();
       buildTabs();
       let initialId = window.__PRERENDERED_UPANISHAD__ || new URLSearchParams(window.location.search).get('id');
@@ -1310,10 +1311,10 @@ function toggleMobileMenu() {
       links.push(`<a href="bhagavad-gita.html?chapter=${verse.cross_links.gita_verse}" class="cross-link-btn">📖 See Gita Ch. ${verse.cross_links.gita_verse}</a>`);
     }
     if (verse.cross_links.shloka_slug) {
-      links.push(`<a href="shlokas.html?slug=${verse.cross_links.shloka_slug}" class="cross-link-btn">🕉️ See Shloka</a>`);
+      links.push(`<a href="/shloka/${verse.cross_links.shloka_slug}/" class="cross-link-btn">🕉️ See Shloka</a>`);
     }
     if (verse.cross_links.wisdom_topic) {
-      links.push(`<a href="wisdom.html?topic=${verse.cross_links.wisdom_topic}" class="cross-link-btn">💡 ${verse.cross_links.wisdom_topic.charAt(0).toUpperCase() + verse.cross_links.wisdom_topic.slice(1)}</a>`);
+      links.push(`<a href="/wisdom/${verse.cross_links.wisdom_topic}/" class="cross-link-btn">💡 ${verse.cross_links.wisdom_topic.charAt(0).toUpperCase() + verse.cross_links.wisdom_topic.slice(1)}</a>`);
     }
     if (!links.length) return '';
     return `<div class="cross-links">${links.join('')}</div>`;
