@@ -43,7 +43,8 @@
           "mantra_hindi": "हे वक्रतुण्ड, महाकाय, सूर्य की कोटि किरणों के समान प्रभा वाले, हे देव, मेरे सभी कार्यों में सदा बाधा न आए।",
           "mantra_english": "O Lord Ganesha, with a curved trunk and a large body, with the radiance of a crore suns — O God, always make my every work free from obstacles.",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform ganesh invocation. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -55,7 +56,8 @@
           "mantra_hindi": "जो मन की गति के समान वेगवान हैं, वायु के समान तीव्र हैं, जितेन्द्रिय और बुद्धिमानों में श्रेष्ठ हैं, वायुपुत्र, वानर सेना के मुखिया, श्री राम के दूत — उनकी शरण में जाता हूँ।",
           "mantra_english": "I take refuge in Lord Hanuman, who is swift as the mind, fast as the wind, master of the senses, foremost among the wise, son of Vayu, chief of the monkey army, and the messenger of Shri Ram.",
           "repetitions": 3,
-          "duration_seconds": 60
+          "duration_seconds": 60,
+          "description": "Follow the traditional method to perform hanuman invocation. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -75,7 +77,8 @@
           "mantra_hindi": "श्री हनुमान जी का ज्ञान, गुण और शक्ति के सागर की जय हो। हे कपिश्रेष्ठ, तीनों लोकों में प्रकाश फैलाने वाले की जय हो।",
           "mantra_english": "Victory to Hanuman, the ocean of wisdom and virtue! Victory to the lord of monkeys, who illuminates all three worlds! Messenger of Ram, abode of incomparable strength, son of Anjani and Pavan.",
           "repetitions": 1,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform hanuman chalisa. Focus your mind on the divine presence."
         },
         {
           "step": 6,
@@ -87,7 +90,8 @@
           "mantra_hindi": "जहाँ-जहाँ भी श्री राघवनाथ का कीर्तन होता है, वहाँ-वहाँ हाथ जोड़कर, नेत्रों में आँसू भरे, उपस्थित रहने वाले, राक्षसों का संहार करने वाले मारुति (हनुमान) को नमस्कार है।",
           "mantra_english": "I bow to Maruti (Hanuman), the destroyer of demons, who is present wherever the glory of Lord Ram is sung — hands folded, eyes filled with tears of devotion.",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform closing prayer. Focus your mind on the divine presence."
         },
         {
           "step": 7,
@@ -141,7 +145,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Hanuman Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "हनुमान पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 2,
@@ -186,7 +193,8 @@
           "mantra_hindi": "हे गणों के स्वामी गणपति, हम आपका आह्वान करते हैं। आप सभी ऋषियों में सबसे अधिक यशस्वी हैं। आप ब्राह्मणों के राजा हैं। हमारी प्रार्थना सुनकर इस सभा में आइए।",
           "mantra_english": "O Ganapati, lord of all ganas, we invoke you — the wisest among the wise, the most praised. O Lord of the sacred word, eldest and supreme, hear our call and take your seat among us.",
           "repetitions": 1,
-          "duration_seconds": 45
+          "duration_seconds": 45,
+          "description": "Follow the traditional method to perform sankalpa (resolve). Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -206,7 +214,8 @@
           "mantra_hindi": "ॐ, गणपति को नमस्कार। आप ही प्रत्यक्ष परम तत्व हैं। आप ही एकमात्र कर्ता हैं, धारण करने वाले हैं, और हरण करने वाले हैं।",
           "mantra_english": "Om, salutations to Ganapati. You alone are the directly perceivable Truth. You alone are the sole Creator, Sustainer, and Destroyer.",
           "repetitions": 1,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform ganapati atharvashirsha. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -218,7 +227,8 @@
           "mantra_hindi": "ॐ गणेश को नमस्कार। ॐ विनायक को नमस्कार। ॐ सभी सिद्धियाँ देने वाले को नमस्कार। ॐ एकदंत को नमस्कार।",
           "mantra_english": "Om, salutations to Ganesha. Salutations to Vinayaka. Salutations to the giver of all accomplishments. Salutations to the one-tusked.",
           "repetitions": 1,
-          "duration_seconds": 360
+          "duration_seconds": 360,
+          "description": "Follow the traditional method to perform ganesh ashtottara (108 names). Focus your mind on the divine presence."
         },
         {
           "step": 6,
@@ -271,7 +281,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Ganesh Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "गणेश पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 3,
@@ -316,7 +329,8 @@
           "mantra_hindi": "हम महालक्ष्मी को जानते हैं, विष्णुप्रिया का ध्यान करते हैं। वह लक्ष्मी हमें प्रेरित करें।",
           "mantra_english": "We meditate on the great Lakshmi, the consort of Vishnu. May that Lakshmi inspire and enlighten us.",
           "repetitions": 11,
-          "duration_seconds": 90
+          "duration_seconds": 90,
+          "description": "Follow the traditional method to perform invocation — lakshmi gayatri. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -336,7 +350,8 @@
           "mantra_hindi": "हे अग्नि! उस लक्ष्मी को मेरे पास लाओ जो सोने के रंग की, हरिण जैसी, सोने-चाँदी की माला पहने, चन्द्रमा के समान और स्वर्णमयी हैं। हे अग्नि, उस न जाने वाली लक्ष्मी को मेरे पास लाओ।",
           "mantra_english": "O Agni! Bring to me that Lakshmi — golden in hue, graceful as a deer, adorned with garlands of gold and silver, radiant as the moon, and golden-limbed. O Agni, bring that ever-abiding Lakshmi to me.",
           "repetitions": 1,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform shri sukta. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -348,7 +363,8 @@
           "mantra_hindi": "हे महामाया, श्रीपीठ पर विराजमान, देवताओं द्वारा पूजित, शंख-चक्र-गदा धारिणी महालक्ष्मी को नमस्कार है।",
           "mantra_english": "Salutations to you, O Mahamaya, seated on the abode of prosperity, worshipped by the gods, holding the conch, discus, and mace — salutations to you, Mahalakshmi.",
           "repetitions": 1,
-          "duration_seconds": 240
+          "duration_seconds": 240,
+          "description": "Follow the traditional method to perform lakshmi ashtakam. Focus your mind on the divine presence."
         },
         {
           "step": 6,
@@ -400,7 +416,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Lakshmi Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "लक्ष्मी पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 4,
@@ -445,7 +464,8 @@
           "mantra_hindi": "जो कुंद के फूल, चन्द्रमा, और हिमालय जैसी धवल हैं, जो श्वेत वस्त्र धारण करती हैं, जिनके हाथ में वीणा है और जो श्वेत कमल पर विराजमान हैं — वे सरस्वती भगवती सदा ब्रह्मा, विष्णु और शिव द्वारा पूजित हैं। वे मेरी रक्षा करें और मेरी सभी जड़ताओं को नष्ट करें।",
           "mantra_english": "She who is as white as the kunda flower, the moon, and a garland of snow — clothed in white, holding the blessed vina, seated on a white lotus — she who is always worshipped by Brahma, Vishnu, and Shiva — may that Saraswati protect me and remove all my ignorance.",
           "repetitions": 3,
-          "duration_seconds": 90
+          "duration_seconds": 90,
+          "description": "Follow the traditional method to perform saraswati vandana. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -465,7 +485,8 @@
           "mantra_hindi": "हम सरस्वती को जानते हैं और ब्रह्मपुत्री का ध्यान करते हैं। वह देवी हमें प्रेरित करें।",
           "mantra_english": "We meditate on Saraswati, daughter of Brahma. May that Goddess inspire and enlighten us.",
           "repetitions": 108,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform saraswati gayatri. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -518,7 +539,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Saraswati Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "सरस्वती पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 5,
@@ -563,7 +587,8 @@
           "mantra_hindi": "ॐ शिव को नमस्कार है।",
           "mantra_english": "Om, salutations to Shiva. (This five-syllable mantra — Na-Ma-Shi-Va-Ya — represents the five elements: earth, water, fire, air, and ether.)",
           "repetitions": 108,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform panchakshara mantra. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -599,7 +624,8 @@
           "mantra_hindi": "हम तीन नेत्रों वाले (शिव) की पूजा करते हैं जो सुगन्धित और पोषण को बढ़ाने वाले हैं। जैसे ककड़ी अपनी लता से अलग हो जाती है, उसी प्रकार हमें मृत्यु से मुक्त करो और अमृत की ओर ले चलो।",
           "mantra_english": "We worship the three-eyed Lord Shiva, who is fragrant and nourishes all beings. May he liberate us from the bondage of death, as a cucumber is released from its vine — and lead us toward immortality.",
           "repetitions": 11,
-          "duration_seconds": 180
+          "duration_seconds": 180,
+          "description": "Follow the traditional method to perform maha mrityunjaya mantra. Focus your mind on the divine presence."
         },
         {
           "step": 7,
@@ -655,7 +681,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Shiva Abhishek Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "शिव अभिषेक क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 6,
@@ -700,7 +729,8 @@
           "mantra_hindi": "ॐ दुर्गा को नमस्कार है।",
           "mantra_english": "Om, the seed sound of Durga. Salutations to Goddess Durga.",
           "repetitions": 108,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform durga beej mantra. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -720,7 +750,8 @@
           "mantra_hindi": "हे पर्वतपुत्री, जो पृथ्वी को आनंदित करती हैं, जो संसार का मनोरंजन करती हैं, जो नंद की पुत्री हैं, जो विंध्य के शिखर पर निवास करती हैं, जो विष्णु की प्रिय हैं, जिन्हें इंद्र प्रणाम करते हैं।",
           "mantra_english": "O daughter of the mountain, who delights the earth, who entertains the universe, praised by Nanda — O dweller of the Vindhya peaks, beloved of Vishnu, praised by Indra.",
           "repetitions": 1,
-          "duration_seconds": 480
+          "duration_seconds": 480,
+          "description": "Follow the traditional method to perform mahishasura mardini stotram. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -732,7 +763,8 @@
           "mantra_hindi": "हे दुर्गे, सुख देने वाली, तुम्हें बार-बार नमस्कार है। हे अम्बे, दुःख हरने वाली, तुम्हें बार-बार प्रणाम है।",
           "mantra_english": "Salutations again and again to Durga, giver of happiness. Salutations to Amba, the remover of sorrow. Your light is formless, and it illuminates all three worlds.",
           "repetitions": 1,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform durga chalisa. Focus your mind on the divine presence."
         },
         {
           "step": 6,
@@ -785,7 +817,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Durga Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "दुर्गा पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 7,
@@ -830,7 +865,8 @@
           "mantra_hindi": "ॐ भगवान नारायण को नमस्कार है।",
           "mantra_english": "Om, salutations to Narayana (Vishnu). The eight-syllable mantra — considered the crown jewel of all mantras.",
           "repetitions": 108,
-          "duration_seconds": 360
+          "duration_seconds": 360,
+          "description": "Follow the traditional method to perform om namo narayanaya. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -850,7 +886,8 @@
           "mantra_hindi": "भगवान विष्णु ही यह विश्व हैं, वे षट्कार (वषट् — यज्ञ का एक अंग) हैं, भूत, भविष्य और वर्तमान के स्वामी हैं। वे सभी प्राणियों के कर्ता और पालनकर्ता हैं, परमात्मा हैं, सभी मुक्त आत्माओं की परम गति हैं।",
           "mantra_english": "Vishnu is the universe itself, the lord of past, present, and future. He is the creator and sustainer of all beings, the Supreme Self, the ultimate refuge of all liberated souls.",
           "repetitions": 1,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform vishnu sahasranama (selected verses). Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -905,7 +942,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Vishnu Puja Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "विष्णु पूजा क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 8,
@@ -950,7 +990,8 @@
           "mantra_hindi": "ॐ, भगवान कृष्ण को नमस्कार है।",
           "mantra_english": "Om, the seed sound of attraction and love. Salutations to Lord Krishna.",
           "repetitions": 108,
-          "duration_seconds": 360
+          "duration_seconds": 360,
+          "description": "Follow the traditional method to perform krishna beej mantra. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -970,7 +1011,8 @@
           "mantra_hindi": "यह महामंत्र सोलह नामों वाला है। 'हरे' का अर्थ है 'माया का हरण करने वाले'। यह मंत्र मन को शुद्ध करता है और आत्मा को मुक्ति की ओर ले जाता है।",
           "mantra_english": "This sixteen-name Maha Mantra consists of the names Hare, Krishna, and Rama. 'Hare' means 'the one who steals the mind (into devotion)'. Chanting this mantra purifies the mind and leads the soul toward liberation.",
           "repetitions": 108,
-          "duration_seconds": 600
+          "duration_seconds": 600,
+          "description": "Follow the traditional method to perform hare krishna mahamantra. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -982,7 +1024,8 @@
           "mantra_hindi": "मधुरता के स्वामी कृष्ण के — होंठ मधुर, मुख मधुर, नेत्र मधुर, हँसी मधुर, हृदय मधुर, चाल मधुर — सब कुछ मधुर है।",
           "mantra_english": "Of Krishna, the lord of sweetness — sweet are his lips, sweet his face, sweet his eyes, sweet his smile, sweet his heart, sweet his gait — everything about him is sweet.",
           "repetitions": 1,
-          "duration_seconds": 120
+          "duration_seconds": 120,
+          "description": "Follow the traditional method to perform madhurashtakam. Focus your mind on the divine presence."
         },
         {
           "step": 6,
@@ -1040,7 +1083,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Krishna Puja / Janmashtami by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "कृष्ण पूजा / जन्माष्टमी का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 9,
@@ -1086,7 +1132,8 @@
           "mantra_hindi": "ॐ, बीज मंत्र सहित सूर्य देव को नमस्कार है।",
           "mantra_english": "Om, with the seed syllables of Surya — salutations to the Sun God.",
           "repetitions": 12,
-          "duration_seconds": 60
+          "duration_seconds": 60,
+          "description": "Follow the traditional method to perform surya beej mantra. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1098,7 +1145,8 @@
           "mantra_hindi": "ॐ मित्र (सबके मित्र) को नमस्कार। ॐ रवि (प्रकाश) को नमस्कार। ॐ सूर्य (सर्वव्यापी) को नमस्कार। ॐ भानु (प्रकाशमान) को नमस्कार। ॐ खग (आकाशगामी) को नमस्कार। ॐ पूषन (पोषणकर्ता) को नमस्कार। ॐ हिरण्यगर्भ (सुनहरे गर्भ वाले) को नमस्कार। ॐ मरीचि (किरण) को नमस्कार। ॐ आदित्य (अदिति के पुत्र) को नमस्कार। ॐ सवित्र (उत्पादक) को नमस्कार। ॐ अर्क (ऊर्जा) को नमस्कार। ॐ भास्कर (प्रकाशकर्ता) को नमस्कार।",
           "mantra_english": "Om, salutations to Mitra (friend of all). To Ravi (the brilliant). To Surya (the all-pervading). To Bhanu (the luminous). To Khaga (the sky-traveler). To Pushan (the nourisher). To Hiranyagarbha (the golden-wombed). To Marichi (the ray of light). To Aditya (son of Aditi). To Savitr (the life-giver). To Arka (the energy). To Bhaskara (the illuminator).",
           "repetitions": 1,
-          "duration_seconds": 180
+          "duration_seconds": 180,
+          "description": "Follow the traditional method to perform 12 surya namaskar mantras. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1144,7 +1192,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Surya Namaskar with Mantras by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "सूर्य नमस्कार मंत्र सहित का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 10,
@@ -1188,7 +1239,8 @@
           "mantra_hindi": "ॐ — पृथ्वी लोक, अंतरिक्ष, स्वर्ग, महर लोक, जन लोक, तप लोक, सत्य लोक। उस सूर्य देव की दिव्य प्रकाश का हम ध्यान करते हैं — जो हमारी बुद्धि को प्रेरित करें।",
           "mantra_english": "Om — the seven worlds (earth through truth). We meditate on the divine radiance of that Sun-God (Savitri). May he inspire and illuminate our intellect.",
           "repetitions": 10,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform pranayama with gayatri. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1200,7 +1252,8 @@
           "mantra_hindi": "हे जल! आप सुख के स्रोत हैं। आप हमें शक्ति दें। हमें उस दिव्य दर्शन के लिए तैयार करें। जो आपका सबसे पवित्र रस है — उसका हमें आशीर्वाद दें, जैसे प्रेमयुक्त माता अपने बच्चों को देती है।",
           "mantra_english": "O Waters! You are the source of happiness. Grant us strength. Prepare us for the divine vision. Share with us your most auspicious essence — as loving mothers do with their children.",
           "repetitions": 3,
-          "duration_seconds": 90
+          "duration_seconds": 90,
+          "description": "Follow the traditional method to perform marjana (sprinkling water). Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1212,7 +1265,8 @@
           "mantra_hindi": "उस सूर्य की दिव्य ज्योति का हम ध्यान करते हैं — वह हमारी बुद्धि को प्रेरित करे।",
           "mantra_english": "We meditate on the divine radiance of the Sun. May it inspire our intellect.",
           "repetitions": 10,
-          "duration_seconds": 180
+          "duration_seconds": 180,
+          "description": "Follow the traditional method to perform gayatri japa. Focus your mind on the divine presence."
         }
       ],
       "materials_needed": [
@@ -1251,7 +1305,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Sandhya Vandanam (Simplified) by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "संध्या वंदनम (सरल क्रम) का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 11,
@@ -1296,7 +1353,8 @@
           "mantra_hindi": "मैं सूर्यदेव को प्रणाम करता हूँ जो जवाकुसुम (गुड़हल) के समान, काश्यप के पुत्र, महातेजस्वी और अंधकार के नाशक हैं। मैं उस चन्द्रमा को प्रणाम करता हूँ जो दही-शंख-हिम के समान, क्षीर सागर से उत्पन्न और शिव के मुकुट की शोभा हैं।",
           "mantra_english": "I bow to Surya (Sun), radiant as the hibiscus, son of Kashyapa, destroyer of darkness. I bow to Soma (Moon), white as curd and conch, born from the ocean of milk, the ornament of Shiva's crown.",
           "repetitions": 1,
-          "duration_seconds": 480
+          "duration_seconds": 480,
+          "description": "Follow the traditional method to perform navagraha stotram. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1308,7 +1366,8 @@
           "mantra_hindi": "ॐ सूर्य को नमस्कार। ॐ चन्द्र को नमस्कार। ॐ मंगल को नमस्कार। ॐ बुध को नमस्कार। ॐ बृहस्पति को नमस्कार। ॐ शुक्र को नमस्कार। ॐ शनि को नमस्कार। ॐ राहु को नमस्कार। ॐ केतु को नमस्कार।",
           "mantra_english": "Salutations to Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu.",
           "repetitions": 9,
-          "duration_seconds": 540
+          "duration_seconds": 540,
+          "description": "Follow the traditional method to perform individual graha mantras (9). Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1356,7 +1415,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Navagraha Puja by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "नवग्रह पूजा का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 12,
@@ -1401,7 +1463,8 @@
           "mantra_hindi": "कलश के मुख में विष्णु, कंठ में रुद्र, मूल में ब्रह्मा और मध्य में समस्त मातृकाएं विराजमान हैं।",
           "mantra_english": "In the mouth of the kalash resides Vishnu, in the neck — Rudra, at the base — Brahma, and in the middle — all the divine mothers.",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform kalash puja. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1413,7 +1476,8 @@
           "mantra_hindi": "ॐ भगवान वासुदेव को नमस्कार। सत्य बोलो। धर्म का आचरण करो। स्वाध्याय में प्रमाद मत करो।",
           "mantra_english": "Om, salutations to Lord Vasudeva. Speak truth. Walk in dharma. Never neglect the study of the scriptures.",
           "repetitions": 1,
-          "duration_seconds": 1200
+          "duration_seconds": 1200,
+          "description": "Follow the traditional method to perform satyanarayan katha. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1473,7 +1537,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Satyanarayan Puja (Short Form) by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "सत्यनारायण पूजा (संक्षिप्त) का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 13,
@@ -1507,7 +1574,7 @@
           "label": "Clean & Illuminate the Home",
           "label_hindi": "घर साफ़ करें व दीप जलाएं",
           "description": "Deep-clean the entire home before Diwali. On Diwali evening: draw a rangoli at the main entrance, light diyas in every room, corridor, rooftop, and balcony. The light invites Goddess Lakshmi. Leave no dark corner.",
-          "duration_seconds": 0
+          "duration_seconds": 300
         },
         {
           "step": 2,
@@ -1527,7 +1594,8 @@
           "mantra_hindi": "ॐ गणपति को नमस्कार। सभी बाधाओं को नष्ट करें। शिव के पुत्र को नमस्कार।",
           "mantra_english": "Salutations to Ganesha. Destroy all obstacles. Salutations to the son of Shiva.",
           "repetitions": 21,
-          "duration_seconds": 120
+          "duration_seconds": 120,
+          "description": "Follow the traditional method to perform ganesha puja first. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1539,7 +1607,8 @@
           "mantra_hindi": "हे अग्नि! सुनहरे रंग, हरिण जैसी सुंदर, सोने-चाँदी की माला धारण करने वाली, चन्द्र जैसी कांतिमयी लक्ष्मी को मेरे पास बुलाओ।",
           "mantra_english": "O Agni! Call to me that Lakshmi — golden-hued, graceful, adorned with gold and silver, radiant as the moon.",
           "repetitions": 16,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform lakshmi puja — shri sukta. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -1600,7 +1669,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Diwali Lakshmi-Ganesha Puja by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "दीपावली लक्ष्मी-गणेश पूजा का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 14,
@@ -1646,7 +1718,8 @@
           "mantra_hindi": "पहली शैलपुत्री, दूसरी ब्रह्मचारिणी, तीसरी चंद्रघंटा, चौथी कूष्मांडा, पाँचवीं स्कंदमाता, छठीं कात्यायनी, सातवीं कालरात्रि, आठवीं महागौरी, नौवीं सिद्धिदात्री — ये नव दुर्गा हैं।",
           "mantra_english": "The nine forms of Durga are: Shailputri (daughter of the mountain), Brahmacharini (the ascetic), Chandraghanta (moon-bell), Kushmanda (cosmic egg), Skandamata (mother of Skanda), Katyayani (born of sage Katyayan), Kalaratri (dark night), Mahagauri (the great white one), Siddhidatri (granter of powers).",
           "repetitions": 1,
-          "duration_seconds": 60
+          "duration_seconds": 60,
+          "description": "Follow the traditional method to perform nine forms invocation. Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1658,7 +1731,8 @@
           "mantra_hindi": "जो देवी सभी प्राणियों में शक्ति के रूप में स्थित हैं — उन्हें नमस्कार, नमस्कार, नमस्कार। जो देवी सभी प्राणियों में माता के रूप में स्थित हैं — उन्हें नमस्कार, नमस्कार, नमस्कार।",
           "mantra_english": "That Goddess who abides in all beings as Shakti (energy) — salutations to her, salutations, salutations. That Goddess who abides in all beings as the Divine Mother — salutations to her, salutations, salutations.",
           "repetitions": 9,
-          "duration_seconds": 300
+          "duration_seconds": 300,
+          "description": "Follow the traditional method to perform ya devi sarvabhuteshu. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1717,7 +1791,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Navratri Evening Puja by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "नवरात्रि संध्या पूजा का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     },
     {
       "id": 15,
@@ -1755,7 +1832,8 @@
           "mantra_hindi": "हाथ की उंगलियों के अग्र भाग में लक्ष्मी, मध्य भाग में सरस्वती और मूल में ब्रह्मा निवास करते हैं। प्रभात में अपनी हथेलियों के दर्शन करें।",
           "mantra_english": "In the tips of the fingers dwells Lakshmi, in the middle — Saraswati, and at the base — Brahma. In the morning, behold your own hands (as a reminder of the divine gifts you hold).",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform karagre vasate lakshmi. Focus your mind on the divine presence."
         },
         {
           "step": 2,
@@ -1767,7 +1845,8 @@
           "mantra_hindi": "हे देवी, जो समुद्र को वस्त्र के रूप में धारण करती हैं, पर्वत जिनके स्तन हैं, विष्णुप्रिया — आपको नमस्कार। मेरे पाँव के स्पर्श के लिए क्षमा करें।",
           "mantra_english": "O Goddess, who wears the ocean as a garment, whose breasts are the mountains, consort of Vishnu — salutations to you. Forgive me for touching you with my feet (as I step upon the earth).",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform bhoomi vandana (earth prayer). Focus your mind on the divine presence."
         },
         {
           "step": 3,
@@ -1779,7 +1858,8 @@
           "mantra_hindi": "ब्रह्मा, विष्णु, शिव (त्रिपुरान्तकारी), सूर्य, चन्द्र, मंगल, बुध, बृहस्पति, शुक्र, शनि, राहु और केतु — ये सभी ग्रह मेरे लिए शांतिकर हों।",
           "mantra_english": "May Brahma, Vishnu, Shiva, Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu — may all these planetary forces be bearers of peace for me.",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform brahma murari. Focus your mind on the divine presence."
         },
         {
           "step": 4,
@@ -1791,7 +1871,8 @@
           "mantra_hindi": "ॐ — पृथ्वी, अंतरिक्ष और स्वर्ग। उस सूर्य की दिव्य ज्योति का ध्यान करते हैं — जो हमारी बुद्धि को प्रेरित करे।",
           "mantra_english": "Om — earth, sky, and heaven. We meditate on the divine radiance of the Sun. May it inspire and illuminate our intellect.",
           "repetitions": 3,
-          "duration_seconds": 60
+          "duration_seconds": 60,
+          "description": "Follow the traditional method to perform gayatri mantra. Focus your mind on the divine presence."
         },
         {
           "step": 5,
@@ -1803,7 +1884,8 @@
           "mantra_hindi": "सभी सुखी हों। सभी रोगमुक्त हों। सभी कल्याणकारी दृश्य देखें। कोई भी दुःख का भागी न हो। ॐ शान्ति शान्ति शान्ति।",
           "mantra_english": "May all beings be happy. May all beings be free from illness. May all beings see auspiciousness. May no being suffer. Om peace, peace, peace.",
           "repetitions": 1,
-          "duration_seconds": 30
+          "duration_seconds": 30,
+          "description": "Follow the traditional method to perform sarve bhavantu sukhinah. Focus your mind on the divine presence."
         }
       ],
       "materials_needed": [
@@ -1846,7 +1928,10 @@
           "Aarti",
           "Ritual"
         ]
-      }
+      },
+      "conclusion_english": "Conclude the Morning Prayer Sequence by offering your prayers and taking the deity's blessings.",
+      "conclusion_hindi": "प्रातःकाल प्रार्थना क्रम का समापन देवता को प्रणाम करके और उनका आशीर्वाद लेकर करें।",
+      "audio_hint": "Chant slowly with devotion."
     }
   ]
 }

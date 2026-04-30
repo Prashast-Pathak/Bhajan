@@ -346,20 +346,6 @@
       });
     }
   </script>
-  <script>
-    let fontSizeIdx = 2; // normal
-    const fontSizes = ['fs-small', 'fs-normal', 'fs-large', 'fs-xlarge'];
-    document.getElementById('font-toggle').addEventListener('click', () => {
-      document.body.classList.remove(...fontSizes);
-      fontSizeIdx = (fontSizeIdx + 1) % fontSizes.length;
-      document.body.classList.add(fontSizes[fontSizeIdx]);
-    });
-    if (localStorage.getItem('sgs_dark') === 'true') document.body.classList.add('dark-mode');
-    document.getElementById('dark-toggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
-    });
-  </script>
 
 <style id="premium-header-styles">
   /* ── HEADER ── */
@@ -691,15 +677,17 @@ async function init() {
     buildSearchIndex();
     routePage();
   } catch(e) {
+    console.error('Init Error:', e);
     showError();
+    document.getElementById('loading-state').innerHTML += `<pre style="color:red; text-align:left; font-size:10px;">${e.stack}</pre>`;
   }
 }
 
 function routePage() {
   const params = new URLSearchParams(window.location.search);
-  const chapter = params.get('chapter');
-  const verse = params.get('verse');
-  const chapterOnly = params.get('chapter') && !params.get('verse');
+  const chapter = params.get('chapter') || window.__PRERENDERED_CHAPTER__;
+  const verse = params.get('verse') || window.__PRERENDERED_VERSE__;
+  const chapterOnly = chapter && !verse;
 
   if (chapter && verse) {
     const ch = gitaData.chapters.find(c => c.chapter == chapter);
@@ -1081,11 +1069,15 @@ function renderBrowsePage() {
 // ═══════════════════════════════════════════
 function updateSEO(title, desc, keywords) {
   document.title = title + ' | Sanatan Gyan Sagar';
-  document.getElementById('meta-desc').content = desc;
-  document.getElementById('og-title').content = title;
-  document.getElementById('og-desc').content = desc;
-  const canonical = window.location.href;
-  document.getElementById('canonical').href = canonical;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = desc;
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.content = title + ' | Sanatan Gyan Sagar';
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.content = desc;
+  
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = window.location.href;
 
   // JSON-LD
   const ld = {
