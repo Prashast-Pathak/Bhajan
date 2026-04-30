@@ -124,7 +124,8 @@ def generate():
             route = f"bhajan/{slug}{i['suffix']}"
             seo_t = f"{base_t} {i['title_append']} | {item.get('title_hindi', '')}"
             seo_d = f"Read the {i['title_append']} of {base_t}."
-            canonical = f"{BASE_URL}/bhajan.html?slug={slug}"
+            base_route = f"bhajan/{slug}"
+            canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
             out_html = inject_seo(b_template, slug, seo_t, seo_d, canonical, schema)
             write_page(route, out_html)
@@ -146,7 +147,8 @@ def generate():
                 route = f"bhajan/{slug}{i['suffix']}"
                 seo_t = f"{base_t} {v_label} {i['t']} | Sanatan Gyan Sagar"
                 seo_d = f"Complete meaning and translation for {v_label} of {base_t}."
-                canonical = f"{BASE_URL}/bhajan.html?slug={slug}"
+                base_route = f"bhajan/{slug}"
+                canonical = f"{BASE_URL}/{base_route}/"
                 schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
                 # Auto-scroll to line-v_idx-0 (The ID format in bhajan.html is line-{vi}-{li})
                 out_html = inject_seo(b_template, slug, seo_t, seo_d, canonical, schema, scroll_hash=f"line-{v_idx-1}-0")
@@ -166,7 +168,8 @@ def generate():
             route = f"shloka/{slug}{i}"
             seo_t = f"{base_t} {i.replace('-',' ').title()} | Sanatan Gyan Sagar"
             seo_d = f"Read the {i.replace('-',' ')} of {base_t}."
-            canonical = f"{BASE_URL}/shlokas.html?slug={slug}"
+            base_route = f"shloka/{slug}"
+            canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
             out_html = inject_seo(s_template, slug, seo_t, seo_d, canonical, schema)
             write_page(route, out_html)
@@ -184,7 +187,8 @@ def generate():
             route = f"prayer/{slug}{i}"
             seo_t = f"{base_t} {i.replace('-',' ').title()} | Sanatan Gyan Sagar"
             seo_d = f"Step by step guide for {base_t}."
-            canonical = f"{BASE_URL}/prayers.html?slug={slug}"
+            base_route = f"prayer/{slug}"
+            canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
             out_html = inject_seo(p_template, slug, seo_t, seo_d, canonical, schema)
             write_page(route, out_html)
@@ -202,7 +206,8 @@ def generate():
             route = f"upanishad/{slug}{i}"
             seo_t = f"{base_t} {i.replace('-',' ').title()} | Sanatan Gyan Sagar"
             seo_d = f"Key verses and summary from the {base_t}."
-            canonical = f"{BASE_URL}/upanishads.html?slug={slug}"
+            base_route = f"upanishad/{slug}"
+            canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
             out_html = inject_seo(u_template, slug, seo_t, seo_d, canonical, schema)
             write_page(route, out_html)
@@ -220,7 +225,8 @@ def generate():
             route = f"wisdom/{slug}{i}"
             seo_t = f"{base_t} {i.replace('-',' ').title()} | Spiritual Wisdom"
             seo_d = f"Hindu spiritual quotes and wisdom about {base_t}."
-            canonical = f"{BASE_URL}/wisdom.html?topic={slug}"
+            base_route = f"wisdom/{slug}"
+            canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
             out_html = inject_seo(w_template, slug, seo_t, seo_d, canonical, schema)
             write_page(route, out_html)
@@ -244,7 +250,8 @@ def generate():
                 route = f"gita/{c_num}/{v_num}{i}"
                 seo_t = f"Bhagavad Gita Chapter {c_num} Verse {v_num} {i.replace('-',' ').title()}"
                 seo_d = f"Read Bhagavad Gita Chapter {c_num} Verse {v_num} meaning and translation."
-                canonical = f"{BASE_URL}/bhagavad-gita.html?chapter={c_num}&verse={v_num}"
+                base_route = f"gita/{c_num}/{v_num}"
+                canonical = f"{BASE_URL}/{base_route}/"
                 schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
                 
                 # Special Gita JS injection to bypass URL params
