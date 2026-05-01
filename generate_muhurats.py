@@ -1,0 +1,470 @@
+#!/usr/bin/env python3
+"""
+generate_muhurats.py
+Generates 5 Muhurat occasion pages for bhajan.ournakshatra.com
+"""
+
+import os
+
+MUHURATS_DATA = [
+    {"id": "vivah", "name": "Vivah (Wedding)", "hindi": "विवाह संस्कार", "deities": "Lord Vishnu and Goddess Lakshmi", "description": "Marriage is the most sacred Grihya Samskara. The Vedic wedding ceremony connects two souls across seven lifetimes through the Saptapadi ritual.", "mantras": ["Mangalashtakam", "Saptapadi Mantras (Seven Vows)", "Lakshmi Narayan Ashtakam", "Vivah Homa Mantras"], "cta_text": "Find your auspicious Wedding Muhurat", "cta_link": "https://ournakshatra.com/muhurat", "color": "#DC2626"},
+    {"id": "griha-pravesh", "name": "Griha Pravesh (New Home)", "hindi": "गृह प्रवेश", "deities": "Lord Ganesha and Vastu Purush", "description": "The Griha Pravesh ceremony purifies a new home with Vedic rituals, invoking the blessings of Vastu Purush and removing negative energies.", "mantras": ["Ganesha Vandana", "Vastu Shanti Puja Mantras", "Punyaha Vachanam", "Navagraha Shanti Mantra"], "cta_text": "Find your auspicious Griha Pravesh Muhurat", "cta_link": "https://ournakshatra.com/muhurat", "color": "#C96A1F"},
+    {"id": "naamkaran", "name": "Naamkaran (Naming)", "hindi": "नामकरण संस्कार", "deities": "Lord Ganesha and Saraswati", "description": "The naming ceremony is performed on the 11th or 12th day after birth. The name is chosen based on the baby's Janma Nakshatra syllable.", "mantras": ["Ganesha Mantra for new beginnings", "Saraswati Vandana for wisdom", "Naamkaran Mantra", "Ayushman Bhava blessings"], "cta_text": "Find your baby's Janma Nakshatra for Naamkaran", "cta_link": "https://ournakshatra.com/nakshatra", "color": "#16A34A"},
+    {"id": "upanayana", "name": "Upanayana (Sacred Thread)", "hindi": "उपनयन संस्कार", "deities": "Lord Ganesha, Surya Dev, and Guru (Teacher)", "description": "The Upanayana or Yagnopavita ceremony marks a boy's spiritual initiation and introduces him to the Gayatri Mantra—the most powerful Vedic prayer.", "mantras": ["Gayatri Mantra (primary initiation mantra)", "Aditya Hrudayam for Sun worship", "Guru Vandana Shloka", "Brahmacharya Vow Mantras"], "cta_text": "Find your auspicious Upanayana Muhurat", "cta_link": "https://ournakshatra.com/muhurat", "color": "#A8832A"},
+    {"id": "vyapar", "name": "Vyapar Aarambh (Business)", "hindi": "व्यापार आरंभ", "deities": "Lord Ganesha and Goddess Lakshmi", "description": "Starting a new business on an auspicious Muhurat aligns cosmic energies in your favor. Ganesha removes obstacles and Lakshmi blesses with prosperity.", "mantras": ["Vakratunda Mahakaya (Ganesha mantra)", "Sri Suktam (Lakshmi mantra)", "Vyapar Aarambh Mantra", "Mahalakshmi Ashtakam"], "cta_text": "Find your auspicious Business Launch Muhurat", "cta_link": "https://ournakshatra.com/muhurat", "color": "#D97706"}
+]
+
+OCCASION_ICONS = {
+    "vivah":        ("💍", "🌸"),
+    "griha-pravesh":("🏡", "🪔"),
+    "naamkaran":    ("👶", "✨"),
+    "upanayana":    ("🧵", "☀️"),
+    "vyapar":       ("📿", "💰"),
+}
+
+RITUAL_STEPS = {
+    "vivah": [
+        ("Ganesh Puja", "Begin the ceremony by invoking Lord Ganesha to remove all obstacles from the sacred union."),
+        ("Kanyadaan", "The father of the bride offers his daughter to the groom — considered the highest act of giving in Hindu tradition."),
+        ("Vivah Homa", "Sacred fire (Agni) is invoked as the divine witness. Mantras are offered into the flames."),
+        ("Saptapadi", "The couple takes seven steps together around the sacred fire, each step representing a sacred vow for this and all future lives."),
+        ("Sindoor & Mangalsutra", "The groom applies sindoor and ties the Mangalsutra, completing the Vivah Samskara."),
+    ],
+    "griha-pravesh": [
+        ("Ganesh Puja at Entrance", "Worship Lord Ganesha at the main door before entering the new home for the first time."),
+        ("Vastu Shanti Puja", "Perform Vastu Shanti to harmonise the five elements within the home and appease Vastu Purush."),
+        ("Navagraha Homa", "Propitiate all nine planets through a homa to ensure positive cosmic energy in the dwelling."),
+        ("Gau Pravesh", "If possible, a cow enters the home first as an auspicious symbol of wealth and abundance."),
+        ("Boiling Milk", "Boil milk until it overflows — a symbol of prosperity overflowing in the new home."),
+    ],
+    "naamkaran": [
+        ("Purification", "The mother and child undergo a purification bath. The home is cleansed with Ganga jal and incense."),
+        ("Invocation of Deities", "Lord Ganesha and Goddess Saraswati are invoked for blessings of wisdom and an obstacle-free life."),
+        ("Nakshatra Calculation", "The Janma Nakshatra of the child is determined from the birth time to identify the auspicious name syllable."),
+        ("Name Whispered", "The father whispers the chosen name into the child's right ear three times, followed by the mantra."),
+        ("Community Blessing", "Elders and family members bless the child with Ayushman Bhava — 'May you live long.'"),
+    ],
+    "upanayana": [
+        ("Preparation & Fasting", "The boy and father fast the day before. The boy symbolically takes leave of his childhood life."),
+        ("Mundan (Head Shaving)", "The boy's head is partially or fully shaved as a symbol of ego dissolution and spiritual rebirth."),
+        ("Yagnopavita Dharana", "The sacred thread (Janeu) is placed over the left shoulder. It represents the three debts to God, Rishis, and ancestors."),
+        ("Gayatri Mantra Initiation", "The Guru whispers the Gayatri Mantra into the boy's ear for the first time — a moment of spiritual birth."),
+        ("Bhiksha (Symbolic Begging)", "The newly initiated Brahmachari ritually begs from his mother first, symbolising humility and dependence on grace."),
+    ],
+    "vyapar": [
+        ("Ganesh Sthapana", "Install a Ganesha idol or image at the business premises. Offer red flowers, modak, and light a ghee lamp."),
+        ("Lakshmi Puja", "Invoke Goddess Lakshmi with Sri Suktam for uninterrupted prosperity and abundance of wealth."),
+        ("Account Book Puja (Bahi Khata)", "Place the new ledger or account book before the deities and offer prayers for honest and successful transactions."),
+        ("Homa or Havan", "Perform a small Homa with the Vyapar Aarambh Mantra to purify the business space with sacred fire."),
+        ("First Transaction", "Conduct a symbolic first transaction with an elder or respected person as the very first customer to set an auspicious precedent."),
+    ],
+}
+
+def hex_to_rgba(hex_color, alpha=0.12):
+    h = hex_color.lstrip('#')
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
+
+def generate_html(m):
+    color    = m["color"]
+    soft     = hex_to_rgba(color, 0.10)
+    mid      = hex_to_rgba(color, 0.22)
+    icon_a, icon_b = OCCASION_ICONS.get(m["id"], ("✦", "🪔"))
+    steps    = RITUAL_STEPS.get(m["id"], [])
+
+    # Build mantra list items
+    mantra_items = ""
+    for i, mantra in enumerate(m["mantras"], 1):
+        mantra_items += f"""
+        <div class="mantra-row">
+          <div class="mantra-num" style="background:{color};color:#fff;">{i}</div>
+          <div class="mantra-text">{mantra}</div>
+        </div>"""
+
+    # Build ritual steps
+    step_items = ""
+    for i, (title, detail) in enumerate(steps, 1):
+        step_items += f"""
+        <div class="ritual-step">
+          <div class="step-marker">
+            <div class="step-circle" style="background:{color};color:#fff;">{i}</div>
+            {'<div class="step-line"></div>' if i < len(steps) else ''}
+          </div>
+          <div class="step-content">
+            <div class="step-title">{title}</div>
+            <div class="step-detail">{detail}</div>
+          </div>
+        </div>"""
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{m['name']} Muhurat — Vedic Ceremony Guide | bhajan.ournakshatra.com</title>
+  <meta name="description" content="Complete guide to {m['name']}: deities, mantras, rituals, and how to find your auspicious Muhurat at ournakshatra.com." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {{
+      --bg: #F5F0E8;
+      --surface: #EDE6D8;
+      --surface2: #E6DDD0;
+      --saffron: #C96A1F;
+      --maroon: #6E1515;
+      --gold: #A8832A;
+      --text: #2A1A08;
+      --text-sec: #5C3D20;
+      --text-muted: #8C6A45;
+      --border: #D9CDBA;
+      --radius: 12px;
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+      --accent: {color};
+      --accent-soft: {soft};
+      --accent-mid: {mid};
+    }}
+
+    *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+    html {{ scroll-behavior: smooth; }}
+    body {{
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+    }}
+
+    /* ── HEADER ── */
+    header {{
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245,240,232,0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 28px; height: 62px;
+      display: flex; align-items: center; justify-content: space-between;
+    }}
+    .logo {{
+      font-weight: 900; font-size: 1rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--maroon); text-decoration: none;
+    }}
+    .logo em {{ font-style: normal; color: var(--accent); }}
+    nav a {{
+      font-size: 0.8rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text-sec);
+      text-decoration: none; padding: 6px 16px;
+      border-radius: 20px; border: 1px solid var(--border);
+      transition: all .2s;
+    }}
+    nav a:hover {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+
+    /* ── HERO ── */
+    .hero {{
+      position: relative; overflow: hidden;
+      padding: 68px 24px 56px; text-align: center;
+      border-bottom: 4px solid var(--accent);
+      background:
+        radial-gradient(ellipse 80% 65% at 50% 0%, var(--accent-soft) 0%, transparent 70%),
+        var(--bg);
+    }}
+    .hero::before {{
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 10% 88%, var(--accent-mid) 0%, transparent 38%),
+        radial-gradient(circle at 90% 12%, var(--accent-mid) 0%, transparent 32%);
+      pointer-events: none;
+    }}
+    .hero-icons {{
+      font-size: 2.8rem; line-height: 1; margin-bottom: 16px;
+      position: relative; letter-spacing: .2em;
+      filter: drop-shadow(0 2px 10px var(--accent-mid));
+    }}
+    .hero-tag {{
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.67rem; font-weight: 700; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--accent);
+      border: 1px solid var(--accent); border-radius: 20px;
+      padding: 4px 14px; margin-bottom: 18px; position: relative;
+    }}
+    .hero-hindi {{
+      font-family: var(--font-hindi);
+      font-size: clamp(2.5rem, 8vw, 5.2rem);
+      color: var(--accent); line-height: 1.1;
+      position: relative; margin-bottom: 8px;
+    }}
+    .hero-name {{
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      font-weight: 300; letter-spacing: .34em;
+      text-transform: uppercase; color: var(--text-sec);
+      position: relative; margin-bottom: 12px;
+    }}
+    .hero-deity-row {{
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      position: relative;
+    }}
+    .deity-chip {{
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8rem; font-weight: 700; color: var(--accent);
+      background: var(--accent-soft); border: 1px solid var(--accent);
+      border-radius: 20px; padding: 5px 14px;
+    }}
+
+    /* ── LAYOUT ── */
+    .content-wrapper {{
+      max-width: 760px; margin: 0 auto;
+      padding: 44px 24px 80px;
+      display: flex; flex-direction: column; gap: 32px;
+    }}
+
+    /* ── CARDS ── */
+    .card {{
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      animation: fadeUp .45s ease both;
+    }}
+    @keyframes fadeUp {{
+      from {{ opacity: 0; transform: translateY(14px); }}
+      to   {{ opacity: 1; transform: translateY(0); }}
+    }}
+    .card-header {{
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 22px 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }}
+    .card-icon {{
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+      background: var(--accent-soft); border: 2px solid var(--accent);
+    }}
+    .card-title {{
+      font-size: 0.67rem; font-weight: 900;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--accent);
+    }}
+    .card-body {{ padding: 20px 22px; }}
+
+    /* ── DESCRIPTION ── */
+    .desc-text {{
+      font-size: 1rem; color: var(--text-sec); line-height: 1.85;
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
+    }}
+
+    /* ── MANTRAS ── */
+    .mantra-row {{
+      display: flex; align-items: center; gap: 16px;
+      padding: 14px 0; border-bottom: 1px solid var(--border);
+    }}
+    .mantra-row:last-child {{ border-bottom: none; padding-bottom: 0; }}
+    .mantra-num {{
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.78rem; font-weight: 900; flex-shrink: 0;
+    }}
+    .mantra-text {{
+      font-size: 0.97rem; font-weight: 700; color: var(--text);
+    }}
+
+    /* ── RITUAL STEPS (Timeline) ── */
+    .ritual-step {{
+      display: flex; gap: 0; margin-bottom: 0;
+    }}
+    .step-marker {{
+      display: flex; flex-direction: column; align-items: center;
+      width: 52px; flex-shrink: 0;
+    }}
+    .step-circle {{
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 900; flex-shrink: 0;
+      margin-top: 2px;
+    }}
+    .step-line {{
+      width: 2px; flex: 1; min-height: 24px;
+      background: var(--border); margin: 4px 0;
+    }}
+    .step-content {{
+      flex: 1; padding: 2px 0 28px 4px;
+    }}
+    .step-content:last-of-type {{ padding-bottom: 0; }}
+    .step-title {{
+      font-size: 0.95rem; font-weight: 900;
+      color: var(--text); margin-bottom: 4px;
+    }}
+    .step-detail {{
+      font-size: 0.88rem; color: var(--text-sec); line-height: 1.7;
+    }}
+
+    /* ── CTA BANNER — Highly Visible ── */
+    .cta-wrap {{
+      position: relative;
+    }}
+    .cta-outer {{
+      border-radius: calc(var(--radius) + 3px);
+      padding: 3px;
+      background: linear-gradient(135deg, {color}, var(--maroon), {color});
+      animation: glow-border 3s ease-in-out infinite;
+    }}
+    @keyframes glow-border {{
+      0%, 100% {{ opacity: 1; }}
+      50%       {{ opacity: 0.75; }}
+    }}
+    .cta-banner {{
+      background: linear-gradient(135deg, var(--maroon) 0%, {color} 100%);
+      border-radius: var(--radius);
+      padding: 44px 36px; text-align: center;
+      position: relative; overflow: hidden;
+    }}
+    .cta-banner::before {{
+      content: '{icon_a}';
+      position: absolute; font-size: 9rem;
+      opacity: 0.06; top: -22px; left: -10px; line-height: 1;
+      pointer-events: none;
+    }}
+    .cta-banner::after {{
+      content: '{icon_b}';
+      position: absolute; font-size: 7rem;
+      opacity: 0.07; bottom: -10px; right: 10px; line-height: 1;
+      pointer-events: none;
+    }}
+    .cta-eyebrow {{
+      font-size: 0.65rem; font-weight: 700; letter-spacing: .26em;
+      text-transform: uppercase; color: rgba(255,255,255,.55);
+      margin-bottom: 14px;
+    }}
+    .cta-headline {{
+      font-size: clamp(1.25rem, 4vw, 2rem);
+      font-weight: 900; color: #fff; line-height: 1.2;
+      margin-bottom: 8px;
+    }}
+    .cta-sub {{
+      font-size: 0.88rem; color: rgba(255,255,255,.65);
+      margin-bottom: 28px;
+    }}
+    .cta-btn {{
+      display: inline-block; background: #fff; color: var(--maroon);
+      font-weight: 900; font-size: 0.9rem; letter-spacing: .1em;
+      text-transform: uppercase; text-decoration: none;
+      padding: 16px 38px; border-radius: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.25);
+      transition: transform .2s, box-shadow .2s;
+      position: relative;
+    }}
+    .cta-btn:hover {{ transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,.35); }}
+    .cta-url {{
+      margin-top: 16px; font-size: 0.75rem;
+      color: rgba(255,255,255,.45); letter-spacing: .06em;
+    }}
+
+    /* ── FOOTER ── */
+    footer {{
+      text-align: center; padding: 26px 24px;
+      font-size: 0.76rem; color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }}
+    footer a {{ color: var(--saffron); text-decoration: none; font-weight: 600; }}
+
+    @media (max-width: 480px) {{
+      .hero {{ padding: 50px 16px 40px; }}
+      .card-body, .card-header {{ padding-left: 14px; padding-right: 14px; }}
+      .cta-banner {{ padding: 30px 18px; }}
+      .step-marker {{ width: 42px; }}
+    }}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bhajan.ournakshatra.com" class="logo">NAKSHATRA <em>✦</em> BHAJAN</a>
+  <nav><a href="https://ournakshatra.com/muhurat" target="_blank">Find Muhurat</a></nav>
+</header>
+
+<div class="hero">
+  <div class="hero-icons">{icon_a} {icon_b}</div>
+  <div class="hero-tag">✦ Vedic Samskara · Muhurat Guide</div>
+  <div class="hero-hindi">{m['hindi']}</div>
+  <div class="hero-name">{m['name']}</div>
+  <div class="hero-deity-row">
+    <div class="deity-chip">🙏 {m['deities']}</div>
+  </div>
+</div>
+
+<main class="content-wrapper">
+
+  <!-- Description -->
+  <div class="card" style="animation-delay:.05s">
+    <div class="card-header">
+      <div class="card-icon">📖</div>
+      <div class="card-title">About this Samskara</div>
+    </div>
+    <div class="card-body">
+      <p class="desc-text">{m['description']}</p>
+    </div>
+  </div>
+
+  <!-- Mantras -->
+  <div class="card" style="animation-delay:.10s">
+    <div class="card-header">
+      <div class="card-icon">🎵</div>
+      <div class="card-title">Mantras &amp; Rituals for this Ceremony</div>
+    </div>
+    <div class="card-body">
+      {mantra_items}
+    </div>
+  </div>
+
+  <!-- Ritual Steps -->
+  <div class="card" style="animation-delay:.15s">
+    <div class="card-header">
+      <div class="card-icon">🪴</div>
+      <div class="card-title">Full Ceremony — Step by Step</div>
+    </div>
+    <div class="card-body">
+      {step_items}
+    </div>
+  </div>
+
+  <!-- CTA Banner — Highly Visible -->
+  <div class="cta-outer" style="animation-delay:.20s">
+    <div class="cta-banner">
+      <div class="cta-eyebrow">✦ Auspicious Timing Matters ✦</div>
+      <div class="cta-headline">{m['cta_text']}</div>
+      <div class="cta-sub">Get precise Muhurat timings based on your city, date, and birth chart</div>
+      <a class="cta-btn" href="{m['cta_link']}" target="_blank" rel="noopener">
+        Calculate Muhurat Now →
+      </a>
+      <div class="cta-url">ournakshatra.com/muhurat</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Vedic Muhurat &amp; Samskara Guide</p>
+</footer>
+
+</body>
+</html>
+"""
+
+def main():
+    created = 0
+    for m in MUHURATS_DATA:
+        dir_path = os.path.join("muhurat", m["id"])
+        os.makedirs(dir_path, exist_ok=True)
+        file_path = os.path.join(dir_path, "index.html")
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(generate_html(m))
+        created += 1
+        print(f"  ✓  {file_path}")
+    print(f"\n✅  Done — {created}/5 Muhurat pages generated in muhurat/")
+
+if __name__ == "__main__":
+    main()

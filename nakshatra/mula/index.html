@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google AdSense Auto Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8437539747039479"
+     crossorigin="anonymous"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-03ZRSSBHGJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-03ZRSSBHGJ');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mula Nakshatra — Bhajan & Devotion | bhajan.ournakshatra.com</title>
+  <meta name="description" content="Explore the devotion, bhajans, mantras, and divine nature of Mula Nakshatra. Ruled by Nirrti / Kali (Goddess of Destruction)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #F5F0E8;
+      --surface: #EDE6D8;
+      --surface2: #E6DDD0;
+      --saffron: #C96A1F;
+      --maroon: #6E1515;
+      --gold: #A8832A;
+      --text: #2A1A08;
+      --text-sec: #5C3D20;
+      --text-muted: #8C6A45;
+      --border: #D9CDBA;
+      --radius: 12px;
+      --font-hindi: 'Tiro Devanagari Hindi', serif;
+      --font-ui: 'Lato', sans-serif;
+      --accent: #111827;
+      --accent-soft: rgba(17,24,39,0.12);
+      --accent-mid: rgba(17,24,39,0.3);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245,240,232,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-ui);
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--maroon);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    nav a {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-sec);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    nav a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ── HERO BANNER ── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 72px 24px 56px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+      background:
+        radial-gradient(ellipse 70% 60% at 50% 0%, var(--accent-soft) 0%, transparent 70%),
+        var(--bg);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 80%, var(--accent-mid) 0%, transparent 40%),
+        radial-gradient(circle at 80% 20%, var(--accent-mid) 0%, transparent 35%);
+      pointer-events: none;
+    }
+    .hero-number {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .hero-sanskrit {
+      font-family: var(--font-hindi);
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      color: var(--accent);
+      line-height: 1.1;
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .hero-name {
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-sec);
+      position: relative;
+      margin-bottom: 18px;
+    }
+    .hero-deity {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 400;
+      position: relative;
+    }
+    .hero-deity strong { color: var(--accent); font-weight: 700; }
+
+    /* ── CONTENT WRAPPER ── */
+    .content-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* ── SECTION CARD ── */
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      animation: fadeUp 0.5s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      background: var(--accent-soft);
+      border: 2px solid var(--accent);
+    }
+    .card-title {
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .card-body { padding: 22px 24px; }
+
+    /* ── DEITY SECTION ── */
+    .deity-text {
+      font-size: 1rem;
+      color: var(--text-sec);
+      line-height: 1.8;
+    }
+
+    /* ── BHAJAN CARDS ── */
+    .bhajan-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      animation: fadeUp 0.5s ease both;
+    }
+    .bhajan-card:last-child { border-bottom: none; padding-bottom: 0; }
+    .bhajan-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .bhajan-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .bhajan-mantra {
+      font-family: var(--font-hindi);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── TRAITS ── */
+    .traits-text {
+      font-size: 1rem;
+      color: var(--text-sec);
+      line-height: 1.85;
+      padding-left: 16px;
+      border-left: 3px solid var(--accent);
+    }
+
+    /* ── FAMOUS ── */
+    .famous-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .famous-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-sec);
+    }
+    .famous-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── CROSS-LINK BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--maroon) 0%, #111827 100%);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: none;
+    }
+    .cta-banner::before {
+      content: '✦';
+      position: absolute;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.04);
+      top: -20px;
+      right: -10px;
+      line-height: 1;
+    }
+    .cta-banner::after {
+      content: '✦';
+      position: absolute;
+      font-size: 5rem;
+      color: rgba(255,255,255,0.06);
+      bottom: -10px;
+      left: 10px;
+      line-height: 1;
+    }
+    .cta-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 10px;
+    }
+    .cta-headline {
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 22px;
+    }
+    .cta-headline em {
+      font-style: normal;
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+    }
+    .cta-btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--maroon);
+      font-weight: 900;
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 30px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+    @media (max-width: 480px) {
+      .hero { padding: 52px 16px 40px; }
+      .card-body, .card-header { padding-left: 16px; padding-right: 16px; }
+      .cta-banner { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bhajan.ournakshatra.com" class="logo">NAKSHATRA <span>✦</span> BHAJAN</a>
+  <nav>
+    <a href="https://ournakshatra.com/nakshatra" target="_blank">Find Yours</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-number">Janma Nakshatra</div>
+  <div class="hero-sanskrit">मूल</div>
+  <div class="hero-name">Mula Nakshatra</div>
+  <div class="hero-deity">Ruling Deity: <strong>Nirrti / Kali (Goddess of Destruction)</strong></div>
+</div>
+
+<main class="content-wrapper">
+
+  <!-- Deity -->
+  <div class="card" style="animation-delay:0.05s">
+    <div class="card-header">
+      <div class="card-icon">🪔</div>
+      <div class="card-title">Ruling Deity &amp; Cosmic Role</div>
+    </div>
+    <div class="card-body">
+      <p class="deity-text">
+        The presiding deity of <strong>Mula</strong> Nakshatra is <strong style="color:var(--accent)">Nirrti / Kali (Goddess of Destruction)</strong>.
+        This divine force shapes the soul of every being born under this star, imparting their celestial qualities, cosmic duties,
+        and spiritual gifts. By devotion to this deity through bhajan and mantra, native souls harmonise with their
+        highest dharmic potential and unlock the blessings encoded in their birth star.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bhajans -->
+  <div class="card" style="animation-delay:0.1s">
+    <div class="card-header">
+      <div class="card-icon">🎵</div>
+      <div class="card-title">Recommended Bhajans &amp; Mantras</div>
+    </div>
+    <div class="card-body">
+      
+        <div class="bhajan-card" style="animation-delay:0.1s">
+          <div class="bhajan-num" style="background:#111827;color:#fff;">1</div>
+          <div class="bhajan-body">
+            <div class="bhajan-title">Kali Stotram</div>
+            <div class="bhajan-mantra">क्रीं क्रीं क्रीं</div>
+          </div>
+        </div>
+        <div class="bhajan-card" style="animation-delay:0.2s">
+          <div class="bhajan-num" style="background:#111827;color:#fff;">2</div>
+          <div class="bhajan-body">
+            <div class="bhajan-title">Nirriti Sukta</div>
+            <div class="bhajan-mantra">निऋत्यै नमः</div>
+          </div>
+        </div>
+        <div class="bhajan-card" style="animation-delay:0.30000000000000004s">
+          <div class="bhajan-num" style="background:#111827;color:#fff;">3</div>
+          <div class="bhajan-body">
+            <div class="bhajan-title">Mula Mantra Stuti</div>
+            <div class="bhajan-mantra">ॐ मूलाय निरृत्यै नमः</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Traits -->
+  <div class="card" style="animation-delay:0.15s">
+    <div class="card-header">
+      <div class="card-icon">🌟</div>
+      <div class="card-title">Personality &amp; Nature</div>
+    </div>
+    <div class="card-body">
+      <p class="traits-text">Direct, researchers, and root-diggers. They break things down to the absolute core to find the truth.</p>
+    </div>
+  </div>
+
+  <!-- Famous -->
+  <div class="card" style="animation-delay:0.2s">
+    <div class="card-header">
+      <div class="card-icon">👑</div>
+      <div class="card-title">Famous Personalities</div>
+    </div>
+    <div class="card-body">
+      <ul class="famous-list">
+        <li class="famous-item"><span class="famous-dot" style="background:#111827"></span>Dalai Lama</li><li class="famous-item"><span class="famous-dot" style="background:#111827"></span>Arnold Schwarzenegger</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <div class="cta-eyebrow">✦ Discover Your Star ✦</div>
+    <div class="cta-headline">
+      Find your <em>Janma Nakshatra</em> in seconds →
+    </div>
+    <a class="cta-btn" href="https://ournakshatra.com/nakshatra" target="_blank" rel="noopener">
+      Calculate at ournakshatra.com
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Sacred Devotion for Every Nakshatra</p>
+</footer>
+
+</body>
+</html>
