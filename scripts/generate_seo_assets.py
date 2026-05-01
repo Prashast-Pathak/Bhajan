@@ -100,7 +100,7 @@ def write_sitemap(base: str):
         "/terms.html",
         "/disclaimer.html",
     ]
-    urls = [to_url(base, p) for p in static_paths] + dynamic_urls(base) + programmatic_urls(base)
+    urls = [to_url(base, p) for p in static_paths] + dynamic_urls(base)
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

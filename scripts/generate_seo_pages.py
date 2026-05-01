@@ -35,8 +35,11 @@ def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_j
     # Replace meta description
     html_out = re.sub(r'<meta.*?name="description".*?>', f'<meta name="description" content="{seo_desc}">', html_out, flags=re.IGNORECASE)
     
-    # Replace canonical link
-    html_out = re.sub(r'<link.*?rel="canonical".*?>', f'<link rel="canonical" href="{canonical_url}">', html_out, flags=re.IGNORECASE)
+    # Replace or Inject canonical link
+    if re.search(r'<link.*?rel="canonical".*?>', html_out, flags=re.IGNORECASE):
+        html_out = re.sub(r'<link.*?rel="canonical".*?>', f'<link rel="canonical" href="{canonical_url}">', html_out, flags=re.IGNORECASE)
+    else:
+        html_out = html_out.replace('</head>', f'  <link rel="canonical" href="{canonical_url}">\n</head>')
     
     # Fix asset paths since the generated files are deeper in the directory structure
     # Change href="bhajans.html" to href="/bhajans.html" etc.
