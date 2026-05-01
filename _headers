@@ -1,0 +1,13 @@
+# Block search engines from indexing AI text files
+/llms.txt
+  X-Robots-Tag: noindex
+/ai.txt
+  X-Robots-Tag: noindex
+
+# Block search engines from crawling raw JSON data
+/data/*
+  X-Robots-Tag: noindex
+
+# Block search engines from crawling Python scripts
+/scripts/*
+  X-Robots-Tag: noindex

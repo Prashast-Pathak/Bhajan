@@ -1,0 +1,6 @@
+# Secure internal paths from public access
+/scripts/*   /404.html   404
+/*.py        /404.html   404
+
+# Route raw parameterized template visits to home (or rely on canonicals)
+# Note: Full 301 logic for ?slug= to /path/ is better handled via JS in this static setup.
