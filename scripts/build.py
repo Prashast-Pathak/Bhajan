@@ -672,7 +672,7 @@ def _write_security_headers() -> None:
 
 def _copy_static_source(cfg: Mapping[str, Any]) -> None:
     origin = str(cfg["origin"]).rstrip("/")
-    old = "https://sanatan-gyan-sagar.pages.dev"
+    old = "https://bhajan.ournakshatra.com"
 
     def _should_copy(p: Path) -> bool:
         rel = p.relative_to(REPO)

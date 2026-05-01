@@ -7,7 +7,7 @@
   <meta id="meta-keywords" name="keywords" content="bhajan, hindi bhajan, devotional song, meaning">
   <meta name="robots" content="index, follow">
   <title>Sita Ram Charit Ati Pawan Audio Info | सीता राम चरित अति पावन</title>
-  <link rel="canonical" href="https://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=sita-ram-charit-ati-pawan">
+  <link rel="canonical" href="https://bhajan.ournakshatra.com/bhajan.html?slug=sita-ram-charit-ati-pawan">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -179,7 +179,7 @@
     "@type": "CreativeWork",
     "name": "Sita Ram Charit Ati Pawan Audio Info | \u0938\u0940\u0924\u093e \u0930\u093e\u092e \u091a\u0930\u093f\u0924 \u0905\u0924\u093f \u092a\u093e\u0935\u0928",
     "description": "Read the Audio Info of Sita Ram Charit Ati Pawan.",
-    "url": "https://sanatan-gyan-sagar.pages.dev/bhajans/sita-ram-charit-ati-pawan-audio-song/",
+    "url": "https://bhajan.ournakshatra.com/bhajans/sita-ram-charit-ati-pawan-audio-song/",
     "inLanguage": [
         "hi",
         "en",
@@ -313,7 +313,7 @@
     document.getElementById('page-title').textContent = `${b.title_hindi} — ${b.title_roman} | सनातन ज्ञान सागर`;
     document.getElementById('meta-desc').content = b.seo.meta_description;
     document.getElementById('meta-keywords').content = (b.seo.keywords || []).join(', ');
-    document.getElementById('canonical-url').href = `https://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=${b.slug}`;
+    document.getElementById('canonical-url').href = `https://bhajan.ournakshatra.com/bhajan.html?slug=${b.slug}`;
     document.getElementById('breadcrumb-title').textContent = b.title_hindi;
 
     // JSON-LD structured data
@@ -327,7 +327,7 @@
       "author": { "@type": "Person", "name": b.composer },
       "inLanguage": b.language,
       "keywords": (b.seo.keywords || []).join(', '),
-      "isPartOf": { "@type": "WebSite", "url": "https://sanatan-gyan-sagar.pages.dev/" }
+      "isPartOf": { "@type": "WebSite", "url": "https://bhajan.ournakshatra.com/" }
     });
     document.head.appendChild(ld);
 
@@ -344,7 +344,7 @@
     const related = allData.filter(x => b.related.includes(x.slug));
 
     // WhatsApp share
-    const shareText = encodeURIComponent(`${b.title_hindi} (${b.title_roman})\n\nपढ़ें पूर्ण भजन अर्थ सहित:\nhttps://sanatan-gyan-sagar.pages.dev/bhajan.html?slug=${b.slug}\n\n🙏 सनातन ज्ञान सागर`);
+    const shareText = encodeURIComponent(`${b.title_hindi} (${b.title_roman})\n\nपढ़ें पूर्ण भजन अर्थ सहित:\nhttps://bhajan.ournakshatra.com/bhajan.html?slug=${b.slug}\n\n🙏 सनातन ज्ञान सागर`);
     const waUrl = `https://wa.me/?text=${shareText}`;
 
     // Festivals tags

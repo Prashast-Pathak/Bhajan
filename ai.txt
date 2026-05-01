@@ -1,9 +1,9 @@
 # ai.txt
-site=https://sanatan-gyan-sagar.pages.dev
+site=https://bhajan.ournakshatra.com
 allow_crawl=true
 allow_train=true
 content_license=all-rights-reserved
 attribution_required=true
 contact=support@example.com
-policy=https://sanatan-gyan-sagar.pages.dev/disclaimer.html
-privacy=https://sanatan-gyan-sagar.pages.dev/privacy-policy.html
+policy=https://bhajan.ournakshatra.com/disclaimer.html
+privacy=https://bhajan.ournakshatra.com/privacy-policy.html

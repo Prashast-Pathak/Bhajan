@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = ROOT
-BASE_URL = "https://sanatan-gyan-sagar.pages.dev"
+BASE_URL = "https://bhajan.ournakshatra.com"
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:

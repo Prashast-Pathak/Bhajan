@@ -1,18 +1,18 @@
 # llms.txt
 Site: Sanatan Gyan Sagar
-Base URL: https://sanatan-gyan-sagar.pages.dev
+Base URL: https://bhajan.ournakshatra.com
 Primary language: Hindi, Sanskrit, English
 Purpose: Spiritual and educational reference content only.
 
 Key sections:
-- https://sanatan-gyan-sagar.pages.dev/bhajans.html
-- https://sanatan-gyan-sagar.pages.dev/bhagavad-gita.html
-- https://sanatan-gyan-sagar.pages.dev/shlokas.html
-- https://sanatan-gyan-sagar.pages.dev/prayers.html
-- https://sanatan-gyan-sagar.pages.dev/upanishads.html
-- https://sanatan-gyan-sagar.pages.dev/wisdom.html
+- https://bhajan.ournakshatra.com/bhajans.html
+- https://bhajan.ournakshatra.com/bhagavad-gita.html
+- https://bhajan.ournakshatra.com/shlokas.html
+- https://bhajan.ournakshatra.com/prayers.html
+- https://bhajan.ournakshatra.com/upanishads.html
+- https://bhajan.ournakshatra.com/wisdom.html
 
 Policy notes:
 - No medical, legal, or financial guarantees.
 - Content is devotional and educational.
-- Refer to https://sanatan-gyan-sagar.pages.dev/disclaimer.html and https://sanatan-gyan-sagar.pages.dev/privacy-policy.html
+- Refer to https://bhajan.ournakshatra.com/disclaimer.html and https://bhajan.ournakshatra.com/privacy-policy.html

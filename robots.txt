@@ -17,4 +17,4 @@ User-agent: anthropic-ai
 Allow: /llms.txt
 Allow: /ai.txt
 
-Sitemap: https://sanatan-gyan-sagar.pages.dev/sitemap.xml
+Sitemap: https://bhajan.ournakshatra.com/sitemap.xml
