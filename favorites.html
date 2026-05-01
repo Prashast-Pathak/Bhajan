@@ -108,6 +108,60 @@
     .bnav-item span:first-child { font-size: 20px; }
     @media(max-width:600px) { .bottom-nav { display: block; } body { padding-bottom: 60px; } nav { display: none; } .page-title { font-size: 22px; } }
     @media(min-width:601px) { nav { display: flex; } }
+  
+    /* ── Jyotish Dropdown Nav ─── */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+    .nav-dropdown > a::after { content: '▾'; font-size: .65rem; opacity: .7; }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--surface, #EDE6D8);
+      border: 1px solid var(--border, #D9CDBA);
+      border-radius: 10px;
+      padding: 10px 0;
+      min-width: 520px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.16);
+      z-index: 999;
+      display: none;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    .dropdown-col { padding: 8px 0; }
+    .dropdown-col-title {
+      font-size: .62rem;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--saffron, #C96A1F);
+      padding: 4px 18px 8px;
+      border-bottom: 1px solid var(--border, #D9CDBA);
+      margin-bottom: 4px;
+    }
+    .dropdown-menu a {
+      display: block;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--text-sec, #5C3D20);
+      padding: 5px 18px;
+      text-decoration: none;
+      border-radius: 0;
+      transition: background .15s, color .15s;
+    }
+    .dropdown-menu a:hover {
+      background: var(--surface2, #E6DDD0);
+      color: var(--saffron, #C96A1F);
+    }
+    @media(max-width:600px) { .nav-dropdown { display: none; } }
+
   </style>
   
   <script>
