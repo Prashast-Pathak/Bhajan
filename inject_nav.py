@@ -169,7 +169,7 @@ for page in ROOT_PAGES:
         changed = True
 
     # ── 2. Inject dropdown into desktop nav ───────────────────
-    if 'nav-dropdown' not in content or 'dropdown-menu' not in content:
+    if 'class="nav-dropdown"' not in content:
         # Find the closing </nav> of the desktop nav and insert before it
         if 'desktop-nav' in content:
             content = content.replace(

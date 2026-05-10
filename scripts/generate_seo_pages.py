@@ -110,15 +110,7 @@ def generate():
     
     # ONLY generate pages for bhajans that actually have content (verses)
     bhajans = [b for b in bhajans if b.get("verses") and len(b.get("verses")) > 0]
-    b_intents = [
-        {"suffix": "", "title_append": "Lyrics & Meaning"},
-        {"suffix": "-hindi-lyrics", "title_append": "Hindi Lyrics (हिंदी में)"},
-        {"suffix": "-english-meaning", "title_append": "English Meaning"},
-        {"suffix": "-benefits", "title_append": "Chanting Benefits"},
-        {"suffix": "-audio-song", "title_append": "Audio Info"},
-        {"suffix": "-pdf", "title_append": "PDF Free Download"},
-        {"suffix": "-fast-chanting", "title_append": "Fast Chanting Version"}
-    ]
+    b_intents = [{"suffix": "", "title_append": ""}]
     b_count = 0
     for item in bhajans:
         slug = item["slug"]
@@ -134,35 +126,12 @@ def generate():
             write_page(route, out_html)
             b_count += 1
         
-        # Verse Level
-        verses = item.get("verses", [])
-        v_idx = 1
-        for v in verses:
-            v_type = (v.get("type") or "verse").lower()
-            v_label = v.get("label_english") or f"Verse {v_idx}"
-            
-            # Meaning and Lyrics pages for the specific verse
-            v_intents = [
-                {"suffix": f"-{v_type}-{v_idx}-lyrics", "t": f"Lyrics"},
-                {"suffix": f"-{v_type}-{v_idx}-meaning", "t": f"Meaning"}
-            ]
-            for i in v_intents:
-                route = f"bhajan/{slug}{i['suffix']}"
-                seo_t = f"{base_t} {v_label} {i['t']} | Sanatan Gyan Sagar"
-                seo_d = f"Complete meaning and translation for {v_label} of {base_t}."
-                base_route = f"bhajan/{slug}"
-                canonical = f"{BASE_URL}/{base_route}/"
-                schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-                # Auto-scroll to line-v_idx-0 (The ID format in bhajan.html is line-{vi}-{li})
-                out_html = inject_seo(b_template, slug, seo_t, seo_d, canonical, schema, scroll_hash=f"line-{v_idx-1}-0")
-                write_page(route, out_html)
-                b_count += 1
-            v_idx += 1
+        
 
     # 2. SHLOKAS
     s_template = (ROOT / "shlokas.html").read_text(encoding="utf-8")
     shlokas = load_json(DATA / "shlokas.json")
-    s_intents = ["", "-meaning", "-sanskrit-lyrics", "-benefits"]
+    s_intents = [""]
     s_count = 0
     for item in shlokas:
         slug = item["slug"]
@@ -181,7 +150,7 @@ def generate():
     # 3. PRAYERS
     p_template = (ROOT / "prayers.html").read_text(encoding="utf-8")
     prayers = load_json(DATA / "prayers.json").get("prayers", [])
-    p_intents = ["", "-steps", "-meaning"]
+    p_intents = [""]
     p_count = 0
     for item in prayers:
         slug = item["slug"]
@@ -200,7 +169,7 @@ def generate():
     # 4. UPANISHADS
     u_template = (ROOT / "upanishads.html").read_text(encoding="utf-8")
     upanishads = load_json(DATA / "upanishads.json")
-    u_intents = ["", "-quotes", "-summary"]
+    u_intents = [""]
     u_count = 0
     for item in upanishads:
         slug = item["slug"]
@@ -219,7 +188,7 @@ def generate():
     # 5. WISDOM
     w_template = (ROOT / "wisdom.html").read_text(encoding="utf-8")
     wisdom = load_json(DATA / "wisdom.json").get("topics", [])
-    w_intents = ["", "-quotes", "-spiritual-meaning"]
+    w_intents = [""]
     w_count = 0
     for item in wisdom:
         slug = item["slug"]
@@ -248,7 +217,7 @@ def generate():
             
             # The Gita template uses ?chapter=X&verse=Y
             # We will hijack the slug variable logic here uniquely
-            v_intents = ["", "-meaning", "-sanskrit"]
+            v_intents = [""]
             for i in v_intents:
                 route = f"gita/{c_num}/{v_num}{i}"
                 seo_t = f"Bhagavad Gita Chapter {c_num} Verse {v_num} {i.replace('-',' ').title()}"
