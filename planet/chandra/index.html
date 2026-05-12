@@ -620,10 +620,11 @@
   @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
 <style id="header-collision-fix">
-  /* Responsive header — always show NAKSHATRA, hide BHAJAN subtitle on small screens */
-  @media (max-width: 480px) {
+  /* Mobile header: hide pill (it lives in drawer), show NAKSHATRA brand cleanly */
+  @media (max-width: 640px) {
+    .hub-nav-pill { display: none; }
     .hub-logo-text em { display: none; }
-    .hub-nav-pill { font-size: 10px; padding: 4px 9px; letter-spacing: 0; }
+    .main-header { padding: 0 16px; }
   }
   @media (max-width: 340px) {
     .hub-logo-text { display: none; }
