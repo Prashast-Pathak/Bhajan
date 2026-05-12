@@ -1,0 +1,2 @@
+ssh deploy@178.104.128.201
+cd /var/www/Bhajan && git pull origin main
