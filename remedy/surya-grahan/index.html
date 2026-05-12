@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surya Grahan Dosha Guide — Bhajan & Mantra | bhajan.ournakshatra.com</title>
-  <meta name="description" content="Learn about Surya Grahan Dosha, its effects, primary mantra, and step-by-step guidance. Deity: Lord Surya." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Surya Grahan Dosha Guide — Bhajan &amp; Mantra | bhajan.ournakshatra.com</title>
+<meta content="Learn about Surya Grahan Dosha, its effects, primary mantra, and step-by-step guidance. Deity: Lord Surya." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --bg: #F5F0E8;
       --surface: #EDE6D8;
@@ -291,390 +292,403 @@
 </style>
 
 <style id="phase1-content-styles">
-  .p1-wrap { max-width:680px; margin:0 auto; padding:0 20px 32px; }
-  .p1-card { background:#fff; border:1px solid #D9CDBA; border-radius:14px;
-    box-shadow:0 4px 20px rgba(0,0,0,.04); overflow:hidden; margin-bottom:24px; }
-  .p1-card-header { padding:14px 20px; border-bottom:1px solid #EDE6D8;
-    display:flex; align-items:center; gap:10px;
-    background:linear-gradient(135deg,rgba(201,106,31,.07),rgba(110,21,21,.05)); }
-  .p1-card-icon { width:34px; height:34px; border-radius:50%;
+  /* ── Phase-1 Mantra Card ── */
+  .p1-mantra-card, .p1-bhajan-card, .p1-faq-card {
+    background:#fff; border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:0 4px 20px rgba(0,0,0,.03);
+    animation:fadeUp .4s ease both; overflow:hidden;
+  }
+  .p1-card-hdr {
+    display:flex; align-items:center; gap:12px;
+    padding:15px 22px; border-bottom:1px solid var(--surface);
+    background:rgba(0,0,0,.012);
+  }
+  .p1-card-ico {
+    width:34px; height:34px; border-radius:8px;
     background:linear-gradient(135deg,#C96A1F,#6E1515);
     display:flex; align-items:center; justify-content:center;
-    font-size:15px; color:#fff; flex-shrink:0; }
-  .p1-card-title { font-size:.68rem; font-weight:900; letter-spacing:.15em;
-    text-transform:uppercase; color:#C96A1F; }
-  .p1-card-body { padding:18px 20px; }
-  .p1-mantra-deva { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1.18rem; line-height:2; color:#2A1A08; margin-bottom:10px;
-    padding:14px 16px; background:#FBF7F0; border-radius:10px;
-    border-left:3px solid #C96A1F; }
-  .p1-mantra-roman { font-size:.83rem; color:#5C3D20; font-style:italic;
-    margin-bottom:8px; line-height:1.7; }
-  .p1-mantra-meaning { font-size:.83rem; color:#8C6A45; line-height:1.7;
-    padding:10px 14px; background:#F5F0E8; border-radius:8px; margin-bottom:12px; }
-  .p1-chant { font-size:.8rem; color:#5C3D20; line-height:1.6;
-    padding:10px 14px; border:1px dashed #D9CDBA; border-radius:8px; }
-  .p1-bhajan-preview { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1rem; line-height:2.1; color:#2A1A08;
-    padding:14px 16px; background:#FBF7F0; border-radius:10px; margin-bottom:14px; }
-  .p1-bhajan-btn { display:inline-flex; align-items:center; gap:8px;
+    font-size:14px; color:#fff; flex-shrink:0;
+  }
+  .p1-card-ttl { font-size:1rem; font-weight:900; color:var(--text); }
+  .p1-card-body { padding:20px 22px; }
+
+  /* ── Mantra Display ── */
+  .p1-deva {
+    font-family:var(--font-hindi); font-size:1.2rem;
+    line-height:2; color:var(--text);
+    padding:16px; background:#FBF7F0; border-radius:10px;
+    border-left:3px solid var(--saffron); margin-bottom:12px;
+  }
+  .p1-roman {
+    font-size:.84rem; color:var(--text-sec);
+    font-style:italic; line-height:1.75; margin-bottom:10px;
+  }
+  .p1-meaning {
+    font-size:.84rem; color:var(--text-muted); line-height:1.75;
+    padding:10px 14px; background:var(--surface);
+    border-radius:8px; margin-bottom:12px;
+  }
+  .p1-chant {
+    font-size:.81rem; color:var(--text-sec); line-height:1.65;
+    padding:10px 14px; border:1px dashed var(--border); border-radius:8px;
+  }
+
+  /* ── Bhajan Card ── */
+  .p1-bhajan-prev {
+    font-family:var(--font-hindi); font-size:1.05rem;
+    line-height:2.1; color:var(--text);
+    padding:14px 16px; background:#FBF7F0;
+    border-radius:10px; margin-bottom:14px;
+  }
+  .p1-bhajan-btn {
+    display:inline-flex; align-items:center; gap:8px;
     background:linear-gradient(135deg,#C96A1F,#6E1515); color:#fff;
     text-decoration:none; padding:11px 22px; border-radius:30px;
     font-size:.82rem; font-weight:900; letter-spacing:.06em;
-    transition:transform .2s; }
+    transition:transform .2s;
+  }
   .p1-bhajan-btn:hover { transform:translateY(-1px); }
-  .p1-article-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 20px; background:#F5F0E8; border-radius:10px;
-    text-decoration:none; transition:background .2s; flex-wrap:wrap; gap:10px; }
-  .p1-article-cta:hover { background:#EDE6D8; }
-  .p1-article-label { font-size:.68rem; font-weight:900; letter-spacing:.14em;
-    text-transform:uppercase; color:#C96A1F; margin-bottom:3px; }
-  .p1-article-title { font-size:.9rem; font-weight:700; color:#2A1A08; }
-  .p1-article-arrow { font-size:1.2rem; color:#C96A1F; flex-shrink:0; }
-  .p1-kundali-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 20px; background:linear-gradient(135deg,#6E1515,#C96A1F);
-    border-radius:10px; text-decoration:none; gap:10px; flex-wrap:wrap; }
-  .p1-kundali-text { color:#fff; font-size:.86rem; font-weight:700; }
-  .p1-kundali-btn { background:#fff; color:#6E1515; font-size:.75rem;
-    font-weight:900; padding:8px 16px; border-radius:20px;
-    text-decoration:none; white-space:nowrap; flex-shrink:0; }
-  .p1-faq-item { border-bottom:1px solid #EDE6D8; padding:14px 0; }
-  .p1-faq-item:last-child { border-bottom:none; }
-  .p1-faq-q { font-size:.88rem; font-weight:700; color:#2A1A08; margin-bottom:7px;
-    display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
-  .p1-faq-q::after { content:'+'; color:#C96A1F; font-size:1.1rem; flex-shrink:0; }
-  .p1-faq-a { font-size:.83rem; color:#5C3D20; line-height:1.75; }
-</style>
-</head>
+
+  /* ── Article CTA ── */
+  .p1-article-cta {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 22px; background:var(--surface);
+    border-radius:var(--radius); text-decoration:none;
+    border:1px solid var(--border);
+    transition:background .2s; flex-wrap:wrap; gap:10px;
+  }
+  .p1-article-cta:hover { background:var(--surface2); }
+  .p1-article-lbl {
+    font-size:.66rem; font-weight:900; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--saffron); margin-bottom:3px;
+  }
+  .p1-article-ttl { font-size:.9rem; font-weight:700; color:var(--text); }
+  .p1-article-arrow { font-size:1.2rem; color:var(--saffron); flex-shrink:0; }
+
+  /* ── Kundali CTA ── */
+  .p1-kundali-cta {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 24px;
+    background:linear-gradient(135deg,#6E1515 0%,#C96A1F 100%);
+    border-radius:var(--radius); text-decoration:none;
+    gap:12px; flex-wrap:wrap;
+    box-shadow:0 6px 24px rgba(110,21,21,.22);
+  }
+  .p1-kundali-txt { color:#fff; font-size:.9rem; font-weight:700; }
+  .p1-kundali-txt em {
+    display:block; font-style:normal;
+    font-size:.72rem; font-weight:400; color:rgba(255,255,255,.7);
+    margin-top:2px;
+  }
+  .p1-kundali-btn {
+    background:#fff; color:#6E1515; font-size:.76rem;
+    font-weight:900; padding:10px 20px; border-radius:20px;
+    text-decoration:none; white-space:nowrap; flex-shrink:0;
+    letter-spacing:.04em;
+  }
+
+  /* ── FAQ ── */
+  .p1-faq-item {
+    border-bottom:1px solid var(--surface);
+    padding:14px 0;
+  }
+  .p1-faq-item:last-child { border-bottom:none; padding-bottom:0; }
+  .p1-faq-q {
+    font-size:.88rem; font-weight:700; color:var(--text);
+    margin-bottom:7px; display:flex;
+    justify-content:space-between; align-items:flex-start; gap:8px;
+  }
+  .p1-faq-q::after { content:'+'; color:var(--saffron); font-size:1.1rem; flex-shrink:0; }
+  .p1-faq-a { font-size:.83rem; color:var(--text-sec); line-height:1.75; }
+
+  @media (max-width:480px) {
+    .p1-card-body { padding:16px; }
+    .p1-card-hdr { padding:13px 16px; }
+    .p1-kundali-cta { padding:16px; }
+    .p1-deva { font-size:1.05rem; padding:12px; }
+  }
+</style></head>
 <body>
-
 <header class="main-header" id="siteHeader">
-  <div class="hub-header-inner">
-    <div class="hub-header-left">
-      <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
-        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
-      <a href="https://bhajan.ournakshatra.com/" class="hub-logo-link">
-        <span class="hub-logo-om">ॐ</span>
-        <span class="hub-logo-text">NAKSHATRA<em>BHAJAN</em></span>
-      </a>
-    </div>
-    <div class="hub-header-right">
-      <a href="https://ournakshatra.com/" class="hub-nav-pill" target="_blank" rel="noopener">ournakshatra.com ↗</a>
-      <button class="hub-fav-btn" id="headerFavBtn" title="Saved" aria-label="Saved" onclick="window.location.href='https://bhajan.ournakshatra.com/favorites.html'">❤️</button>
-    </div>
-  </div>
+<div class="hub-header-inner">
+<div class="hub-header-left">
+<button aria-label="Open Menu" class="hamburger-btn" onclick="toggleMobileMenu()">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="20"><path d="M3 12h18M3 6h18M3 18h18"></path></svg>
+</button>
+<a class="hub-logo-link" href="https://bhajan.ournakshatra.com/">
+<span class="hub-logo-om">ॐ</span>
+<span class="hub-logo-text">NAKSHATRA<em>BHAJAN</em></span>
+</a>
+</div>
+<div class="hub-header-right">
+<a class="hub-nav-pill" href="https://ournakshatra.com/" rel="noopener" target="_blank">ournakshatra.com ↗</a>
+<button aria-label="Saved" class="hub-fav-btn" id="headerFavBtn" onclick="window.location.href='https://bhajan.ournakshatra.com/favorites.html'" title="Saved">❤️</button>
+</div>
+</div>
 </header>
-
-<div id="mobileMenuOverlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
-<div id="mobileMenu" class="mobile-menu-drawer">
-  <div class="mobile-menu-header">
-    <div style="display:flex;align-items:center;gap:8px;">
-      <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
-      <span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA BHAJAN</span>
-    </div>
-    <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
-  </div>
-  <div class="mobile-menu-links">
-    <a href="https://bhajan.ournakshatra.com/">🏠 Bhajan Home</a>
-    <a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
-    <a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
-    <div class="menu-divider"></div>
-    <div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🌐 MAIN WEBSITE</div>
-    <a href="https://ournakshatra.com/" style="color:#6E1515;font-weight:bold;">🏠 ournakshatra.com</a>
-    <a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
-    <a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
-    <div class="menu-divider"></div>
-    <div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🔭 JYOTISH LIBRARY</div>
-    <details><summary>🪐 Navagraha</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/planet/surya/">Surya</a><a href="https://bhajan.ournakshatra.com/planet/chandra/">Chandra</a><a href="https://bhajan.ournakshatra.com/planet/mangal/">Mangal</a><a href="https://bhajan.ournakshatra.com/planet/budha/">Budha</a><a href="https://bhajan.ournakshatra.com/planet/guru/">Guru</a><a href="https://bhajan.ournakshatra.com/planet/shukra/">Shukra</a><a href="https://bhajan.ournakshatra.com/planet/shani/">Shani</a><a href="https://bhajan.ournakshatra.com/planet/rahu/">Rahu</a><a href="https://bhajan.ournakshatra.com/planet/ketu/">Ketu</a></div></details>
-    <details><summary>⭐ 27 Nakshatras</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a><a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a><a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a><a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a><a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a><a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a><a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a><a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a><a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a><a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">P.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">U.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a><a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a><a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a><a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a><a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a><a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">P.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">U.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a><a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">P.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">U.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a></div></details>
-    <details><summary>♈ 12 Rashis</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh</a><a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha</a><a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna</a><a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka</a><a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha</a><a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya</a><a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula</a><a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika</a><a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu</a><a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara</a><a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha</a><a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena</a></div></details>
-    <details><summary>🛡️ Yogas &amp; Doshas</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/remedy/">✨ View All</a><a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a><a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp</a><a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a><a href="https://bhajan.ournakshatra.com/remedy/hamsa-yoga/">Hamsa Yoga</a><a href="https://bhajan.ournakshatra.com/remedy/dhana-yoga/">Dhana Yoga</a></div></details>
-    <details><summary>🌙 Tithi &amp; Muhurat</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a><a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a><a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a><a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a></div></details>
-    <div class="menu-divider"></div>
-    <a href="https://bhajan.ournakshatra.com/about.html">ℹ️ About</a>
-    <a href="https://bhajan.ournakshatra.com/contact.html">📞 Contact</a>
-  </div>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+<div class="mobile-menu-drawer" id="mobileMenu">
+<div class="mobile-menu-header">
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
+<span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA BHAJAN</span>
 </div>
-
-
-<div id="mobileMenu" class="mobile-menu-drawer">
-  <div class="mobile-menu-header">
-    <div class="logo-om" style="width:36px;height:36px;font-size:18px;">ॐ</div>
-    <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
-  </div>
-  <div class="mobile-menu-links">
-    <a href="https://bhajan.ournakshatra.com/">🏠 Home</a>
-    <a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
-    <a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
-    <div class="menu-divider"></div>
-    <div style="padding:8px 14px 4px;font-size:.65rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);">🌐 MAIN WEBSITE</div>
-    <a href="https://ournakshatra.com/" style="color:var(--maroon);font-weight:bold;">🏠 ournakshatra.com</a>
-    <a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
-    <a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
-    <div class="menu-divider"></div>
-    <div style="padding:8px 14px 4px;font-size:.65rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);">🔭 THE JYOTISH LIBRARY</div>
-    <details>
-      <summary>🪐 Navagraha</summary>
-      <div class="details-content">
-        <a href="https://bhajan.ournakshatra.com/planet/surya/">Surya</a>
-        <a href="https://bhajan.ournakshatra.com/planet/chandra/">Chandra</a>
-        <a href="https://bhajan.ournakshatra.com/planet/mangal/">Mangal</a>
-        <a href="https://bhajan.ournakshatra.com/planet/budha/">Budha</a>
-        <a href="https://bhajan.ournakshatra.com/planet/guru/">Guru</a>
-        <a href="https://bhajan.ournakshatra.com/planet/shukra/">Shukra</a>
-        <a href="https://bhajan.ournakshatra.com/planet/shani/">Shani</a>
-        <a href="https://bhajan.ournakshatra.com/planet/rahu/">Rahu</a>
-        <a href="https://bhajan.ournakshatra.com/planet/ketu/">Ketu</a>
-      </div>
-    </details>
-    <details>
-      <summary>⭐ 27 Nakshatras</summary>
-      <div class="details-content">
-        <a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a><a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a><a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a><a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a><a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a><a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">P. Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">U. Phalguni</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a><a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a><a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a><a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">P. Ashadha</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">U. Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">P. Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">U. Bhadrapada</a>
-        <a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a>
-      </div>
-    </details>
-    <details>
-      <summary>♈ 12 Rashis</summary>
-      <div class="details-content">
-        <a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh</a><a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha</a>
-        <a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna</a><a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka</a>
-        <a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha</a><a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya</a>
-        <a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula</a><a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika</a>
-        <a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu</a><a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara</a>
-        <a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha</a><a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena</a>
-      </div>
-    </details>
-    <details>
-      <summary>🛡️ Yogas &amp; Doshas</summary>
-      <div class="details-content full-col">
-        <a href="https://bhajan.ournakshatra.com/remedy/">✨ View All Yogas &amp; Doshas</a>
-        <a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a>
-        <a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp Dosha</a>
-        <a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a>
-        <a href="https://bhajan.ournakshatra.com/remedy/hamsa-yoga/">Hamsa Yoga</a>
-        <a href="https://bhajan.ournakshatra.com/remedy/dhana-yoga/">Dhana Yoga</a>
-      </div>
-    </details>
-    <details>
-      <summary>🌙 Tithi &amp; Muhurat</summary>
-      <div class="details-content full-col">
-        <a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a>
-        <a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a>
-        <a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a>
-        <a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a>
-      </div>
-    </details>
-    <div class="menu-divider"></div>
-    <a href="https://bhajan.ournakshatra.com/about.html">ℹ️ About Us</a>
-    <a href="https://bhajan.ournakshatra.com/contact.html">📞 Contact</a>
-  </div>
+<button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
 </div>
-
-
-
+<div class="mobile-menu-links">
+<a href="https://bhajan.ournakshatra.com/">🏠 Bhajan Home</a>
+<a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
+<a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
+<div class="menu-divider"></div>
+<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🌐 MAIN WEBSITE</div>
+<a href="https://ournakshatra.com/" style="color:#6E1515;font-weight:bold;">🏠 ournakshatra.com</a>
+<a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
+<a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
+<div class="menu-divider"></div>
+<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🔭 JYOTISH LIBRARY</div>
+<details><summary>🪐 Navagraha</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/planet/surya/">Surya</a><a href="https://bhajan.ournakshatra.com/planet/chandra/">Chandra</a><a href="https://bhajan.ournakshatra.com/planet/mangal/">Mangal</a><a href="https://bhajan.ournakshatra.com/planet/budha/">Budha</a><a href="https://bhajan.ournakshatra.com/planet/guru/">Guru</a><a href="https://bhajan.ournakshatra.com/planet/shukra/">Shukra</a><a href="https://bhajan.ournakshatra.com/planet/shani/">Shani</a><a href="https://bhajan.ournakshatra.com/planet/rahu/">Rahu</a><a href="https://bhajan.ournakshatra.com/planet/ketu/">Ketu</a></div></details>
+<details><summary>⭐ 27 Nakshatras</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a><a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a><a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a><a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a><a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a><a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a><a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a><a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a><a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a><a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">P.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">U.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a><a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a><a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a><a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a><a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a><a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">P.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">U.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a><a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">P.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">U.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a></div></details>
+<details><summary>♈ 12 Rashis</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh</a><a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha</a><a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna</a><a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka</a><a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha</a><a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya</a><a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula</a><a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika</a><a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu</a><a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara</a><a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha</a><a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena</a></div></details>
+<details><summary>🛡️ Yogas &amp; Doshas</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/remedy/">✨ View All</a><a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a><a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp</a><a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a><a href="https://bhajan.ournakshatra.com/remedy/hamsa-yoga/">Hamsa Yoga</a><a href="https://bhajan.ournakshatra.com/remedy/dhana-yoga/">Dhana Yoga</a></div></details>
+<details><summary>🌙 Tithi &amp; Muhurat</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a><a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a><a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a><a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a></div></details>
+<div class="menu-divider"></div>
+<a href="https://bhajan.ournakshatra.com/about.html">ℹ️ About</a>
+<a href="https://bhajan.ournakshatra.com/contact.html">📞 Contact</a>
+</div>
+</div>
+<div class="mobile-menu-drawer" id="mobileMenu">
+<div class="mobile-menu-header">
+<div class="logo-om" style="width:36px;height:36px;font-size:18px;">ॐ</div>
+<button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+</div>
+<div class="mobile-menu-links">
+<a href="https://bhajan.ournakshatra.com/">🏠 Home</a>
+<a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
+<a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
+<div class="menu-divider"></div>
+<div style="padding:8px 14px 4px;font-size:.65rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);">🌐 MAIN WEBSITE</div>
+<a href="https://ournakshatra.com/" style="color:var(--maroon);font-weight:bold;">🏠 ournakshatra.com</a>
+<a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
+<a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
+<div class="menu-divider"></div>
+<div style="padding:8px 14px 4px;font-size:.65rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);">🔭 THE JYOTISH LIBRARY</div>
+<details>
+<summary>🪐 Navagraha</summary>
+<div class="details-content">
+<a href="https://bhajan.ournakshatra.com/planet/surya/">Surya</a>
+<a href="https://bhajan.ournakshatra.com/planet/chandra/">Chandra</a>
+<a href="https://bhajan.ournakshatra.com/planet/mangal/">Mangal</a>
+<a href="https://bhajan.ournakshatra.com/planet/budha/">Budha</a>
+<a href="https://bhajan.ournakshatra.com/planet/guru/">Guru</a>
+<a href="https://bhajan.ournakshatra.com/planet/shukra/">Shukra</a>
+<a href="https://bhajan.ournakshatra.com/planet/shani/">Shani</a>
+<a href="https://bhajan.ournakshatra.com/planet/rahu/">Rahu</a>
+<a href="https://bhajan.ournakshatra.com/planet/ketu/">Ketu</a>
+</div>
+</details>
+<details>
+<summary>⭐ 27 Nakshatras</summary>
+<div class="details-content">
+<a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a><a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a><a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a><a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a><a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a><a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">P. Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">U. Phalguni</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a><a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a><a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a><a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">P. Ashadha</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">U. Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">P. Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">U. Bhadrapada</a>
+<a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a>
+</div>
+</details>
+<details>
+<summary>♈ 12 Rashis</summary>
+<div class="details-content">
+<a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh</a><a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha</a>
+<a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna</a><a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka</a>
+<a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha</a><a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya</a>
+<a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula</a><a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika</a>
+<a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu</a><a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara</a>
+<a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha</a><a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena</a>
+</div>
+</details>
+<details>
+<summary>🛡️ Yogas &amp; Doshas</summary>
+<div class="details-content full-col">
+<a href="https://bhajan.ournakshatra.com/remedy/">✨ View All Yogas &amp; Doshas</a>
+<a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a>
+<a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp Dosha</a>
+<a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a>
+<a href="https://bhajan.ournakshatra.com/remedy/hamsa-yoga/">Hamsa Yoga</a>
+<a href="https://bhajan.ournakshatra.com/remedy/dhana-yoga/">Dhana Yoga</a>
+</div>
+</details>
+<details>
+<summary>🌙 Tithi &amp; Muhurat</summary>
+<div class="details-content full-col">
+<a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a>
+<a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a>
+<a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a>
+<a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a>
+</div>
+</details>
+<div class="menu-divider"></div>
+<a href="https://bhajan.ournakshatra.com/about.html">ℹ️ About Us</a>
+<a href="https://bhajan.ournakshatra.com/contact.html">📞 Contact</a>
+</div>
+</div>
 <div class="hero">
-  <div class="hero-tag">⚠ Dosha Remedy Guide</div>
-  <div class="hero-hindi">सूर्य ग्रहण दोष</div>
-  <div class="hero-name">Surya Grahan Dosha</div>
-  <div class="hero-deity">☀️ Presiding Deity: <strong>Lord Surya</strong></div>
+<div class="hero-tag">⚠ Dosha Remedy Guide</div>
+<div class="hero-hindi">सूर्य ग्रहण दोष</div>
+<div class="hero-name">Surya Grahan Dosha</div>
+<div class="hero-deity">☀️ Presiding Deity: <strong>Lord Surya</strong></div>
 </div>
-
 <main class="content-wrapper">
-
-  <!-- Explanation -->
-  <div class="card" style="animation-delay:.05s">
-    <div class="card-header">
-      <div class="card-icon">📖</div>
-      <div class="card-title">What is Surya Grahan Dosha?</div>
-    </div>
-    <div class="card-body">
-      <p class="explanation-text">Surya Grahan Dosha occurs when the Sun is afflicted by Rahu or Ketu. It can lead to a lack of confidence, issues with authority figures, and vitality problems.</p>
-    </div>
-  </div>
-
-  <!-- Primary Mantra -->
-  <div class="card" style="animation-delay:.10s">
-    <div class="card-header">
-      <div class="card-icon">🎵</div>
-      <div class="card-title">Primary Mantra / Bhajan</div>
-    </div>
-    <div class="card-body">
-      <div class="mantra-box">
-        <div class="mantra-icon">☀️</div>
-        <div>
-          <div class="mantra-label">Recommended Daily Practice</div>
-          <div class="mantra-name">Aditya Hridaya Stotram</div>
-          <div class="mantra-sub">Dedicated to Lord Surya · Recite with sincere devotion</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Remedial Steps / Guidance -->
-  <div class="card" style="animation-delay:.15s">
-    <div class="card-header">
-      <div class="card-icon">🪴</div>
-      <div class="card-title">Step-by-Step Remedial Actions</div>
-    </div>
-    <div class="card-body">
-      
-        <div class="step">
-          <div class="step-num" style="background:#B45309;color:#fff;">1</div>
-          <div class="step-text">Offer Arghya (water) to Surya Dev at sunrise</div>
-        </div>
-        <div class="step">
-          <div class="step-num" style="background:#B45309;color:#fff;">2</div>
-          <div class="step-text">Recite Aditya Hridaya Stotram</div>
-        </div>
-        <div class="step">
-          <div class="step-num" style="background:#B45309;color:#fff;">3</div>
-          <div class="step-text">Respect your father and elders</div>
-        </div>
-        <div class="step">
-          <div class="step-num" style="background:#B45309;color:#fff;">4</div>
-          <div class="step-text">Donate wheat and jaggery on Sundays</div>
-        </div>
-    </div>
-  </div>
-
-  
-  <!-- Severity Warning -->
-  <div class="warning-box" style="animation-delay:.20s">
-    <div class="warning-header">
-      <div class="warning-badge">⚠ Severity Notice</div>
-      <div class="severity-level" style="color:#DC2626; border-color:#DC2626; background:rgba(220,38,38,0.1);">Severity: Moderate to High</div>
-    </div>
-    <div class="warning-title">Important Guidance for Surya Grahan Dosha</div>
-    <p class="warning-text">This dosha represents an area of karmic challenge. However, sincere spiritual practice, awareness, and remedial actions can significantly mitigate its negative effects.</p>
-  </div>
-
-  <!-- CTA Banner -->
-  <div class="cta-banner" style="animation-delay:.25s">
-    <div class="cta-eyebrow">✦ Know Your Chart ✦</div>
-    <div class="cta-headline">
-      <em>Check for Surya Grahan Dosha in your chart</em>
-    </div>
-    <a class="cta-btn" href="https://ournakshatra.com/yogas" target="_blank" rel="noopener">
-      Check at ournakshatra.com →
-    </a>
-    <div class="cta-sub">
-      Explore all planetary combinations at <a href="https://bhajan.ournakshatra.com/remedy/" target="_blank">bhajan.ournakshatra.com/remedy/</a>
-
-
-<div class="p1-wrap">
-
-  <div class="p1-card">
-    <div class="p1-card-header">
-      <div class="p1-card-icon">ॐ</div>
-      <div class="p1-card-title">Primary Mantra — Aditya Hridayam Opening</div>
-    </div>
-    <div class="p1-card-body">
-      <div class="p1-mantra-deva">ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम्।<br>रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम्।।</div>
-      <div class="p1-mantra-roman">Tato yuddha-parishraantam samare chintaya sthitam,<br>Raavanam chaagrato drishtva yuddhaaya samupasthitam.</div>
-      <div class="p1-mantra-meaning">Seeing the exhausted Rama standing in battle, deeply reflective, with Ravana before him ready to fight — the sage Agastya arrived and taught the Aditya Hridayam.</div>
-      <div class="p1-chant">🕐 <strong>How to chant:</strong> Recite Aditya Hridayam at sunrise, especially on Sundays. Offer water to the Sun (Arghya) at sunrise. Copper vessel, red flowers, and chandan are traditional offerings.</div>
-    </div>
-  </div>
-
-  <div class="p1-card">
-    <div class="p1-card-header">
-      <div class="p1-card-icon">♪</div>
-      <div class="p1-card-title">Recommended Bhajan — Ram Siya Ram</div>
-    </div>
-    <div class="p1-card-body">
-      <div class="p1-bhajan-preview">राम सिया राम, सिया राम जय जय राम।<br>राम सिया राम, सिया राम जय जय राम।।</div>
-      <a href="/bhajan/ram-siya-ram/" class="p1-bhajan-btn">Read Full Ram Siya Ram →</a>
-    </div>
-  </div>
-
-  <a href="https://ournakshatra.com/articles/what-is-grahan-dosh" class="p1-article-cta" target="_blank" rel="noopener">
-    <div>
-      <div class="p1-article-label">Read: In-Depth Article</div>
-      <div class="p1-article-title">What is Grahan Dosh?</div>
-    </div>
-    <div class="p1-article-arrow">→</div>
-  </a>
-
-  <a href="https://ournakshatra.com/janam-kundali" class="p1-kundali-cta" target="_blank" rel="noopener">
-    <div class="p1-kundali-text">Check Sun-Rahu or Sun-Ketu aspect in your chart</div>
-    <span class="p1-kundali-btn">Open Free Kundali →</span>
-  </a>
-
-  <div class="p1-card">
-    <div class="p1-card-header">
-      <div class="p1-card-icon">?</div>
-      <div class="p1-card-title">Frequently Asked Questions</div>
-    </div>
-    <div class="p1-card-body">
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">What is Surya Grahan Dosha?</div>
-        <div class="p1-faq-a">Surya Grahan Dosha may occur when the Sun is conjunct Rahu or Ketu in the birth chart, creating an eclipse-like condition. It may affect confidence, authority, and the father's influence in one's life.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">Is this the same as a solar eclipse?</div>
-        <div class="p1-faq-a">No. In Jyotish, a natal Surya Grahan refers to the Sun's position near the lunar nodes at birth — not a physical eclipse event. However, birth during or near an actual solar eclipse is sometimes considered significant.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">What areas may be affected?</div>
-        <div class="p1-faq-a">Self-expression, career authority, relationship with father, government-related matters, and vitality may be associated with a challenged Sun.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">What is the traditional remedy?</div>
-        <div class="p1-faq-a">Aditya Hridayam recitation, Sunday Surya Arghya (water offering to the Sun at sunrise), and offering red flowers at Surya temples are traditional practices.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">Which deity is primary?</div>
-        <div class="p1-faq-a">Lord Surya (Sun) and Lord Ram (closely associated with solar energy in the Ramayana tradition) are the primary deities.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">Can Surya Grahan Dosha be cancelled?</div>
-        <div class="p1-faq-a">Yes — Sun in its own sign (Leo) or exaltation (Aries), or with Jupiter's aspect, may significantly reduce the dosha's expression.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">Does this affect government service?</div>
-        <div class="p1-faq-a">Classical texts associate a challenged Sun with difficulties in government or authority-related careers. However, many IAS officers and politicians have this combination — chart context matters.</div>
-      </div>
-      <div class="p1-faq-item">
-        <div class="p1-faq-q">What is the role of the Sun in health?</div>
-        <div class="p1-faq-a">The Sun governs vitality and life force in Vedic thought. This is not medical guidance — for health concerns, please consult a qualified medical professional.</div>
-      </div>
-    </div>
-  </div>
-
+<!-- Explanation -->
+<div class="card" style="animation-delay:.05s">
+<div class="card-header">
+<div class="card-icon">📖</div>
+<div class="card-title">What is Surya Grahan Dosha?</div>
 </div>
+<div class="card-body">
+<p class="explanation-text">Surya Grahan Dosha occurs when the Sun is afflicted by Rahu or Ketu. It can lead to a lack of confidence, issues with authority figures, and vitality problems.</p>
+</div>
+</div>
+<!-- Primary Mantra -->
 
+<!-- Remedial Steps / Guidance -->
+
+<!-- Phase1: Primary Mantra -->
+<div class="p1-mantra-card" style="animation-delay:.10s">
+<div class="p1-card-hdr">
+<div class="p1-card-ico">ॐ</div>
+<div class="p1-card-ttl">Primary Mantra — Aditya Hridayam Opening</div>
+</div>
+<div class="p1-card-body">
+<div class="p1-deva">ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम्।<br/>रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम्।।</div>
+<div class="p1-roman">Tato yuddha-parishraantam samare chintaya sthitam,<br/>Raavanam chaagrato drishtva yuddhaaya samupasthitam.</div>
+<div class="p1-meaning">Seeing the exhausted Rama standing in battle, deeply reflective, with Ravana before him ready to fight — the sage Agastya arrived and taught the Aditya Hridayam.</div>
+<div class="p1-chant">🕐 <strong>How to chant:</strong> Recite Aditya Hridayam at sunrise, especially on Sundays. Offer water to the Sun (Arghya) at sunrise. Copper vessel, red flowers, and chandan are traditional offerings.</div>
+</div>
+</div>
+<!-- Phase1: Recommended Bhajan -->
+<div class="p1-bhajan-card" style="animation-delay:.15s">
+<div class="p1-card-hdr">
+<div class="p1-card-ico">♪</div>
+<div class="p1-card-ttl">Recommended Bhajan — Ram Siya Ram</div>
+</div>
+<div class="p1-card-body">
+<div class="p1-bhajan-prev">राम सिया राम, सिया राम जय जय राम।<br/>राम सिया राम, सिया राम जय जय राम।।</div>
+<a class="p1-bhajan-btn" href="/bhajan/ram-siya-ram/">Read Full Ram Siya Ram →</a>
+</div>
+</div><div class="card" style="animation-delay:.15s">
+<div class="card-header">
+<div class="card-icon">🪴</div>
+<div class="card-title">Step-by-Step Remedial Actions</div>
+</div>
+<div class="card-body">
+<div class="step">
+<div class="step-num" style="background:#B45309;color:#fff;">1</div>
+<div class="step-text">Offer Arghya (water) to Surya Dev at sunrise</div>
+</div>
+<div class="step">
+<div class="step-num" style="background:#B45309;color:#fff;">2</div>
+<div class="step-text">Recite Aditya Hridaya Stotram</div>
+</div>
+<div class="step">
+<div class="step-num" style="background:#B45309;color:#fff;">3</div>
+<div class="step-text">Respect your father and elders</div>
+</div>
+<div class="step">
+<div class="step-num" style="background:#B45309;color:#fff;">4</div>
+<div class="step-text">Donate wheat and jaggery on Sundays</div>
+</div>
+</div>
+</div>
+<!-- Severity Warning -->
+<div class="warning-box" style="animation-delay:.20s">
+<div class="warning-header">
+<div class="warning-badge">⚠ Severity Notice</div>
+<div class="severity-level" style="color:#DC2626; border-color:#DC2626; background:rgba(220,38,38,0.1);">Severity: Moderate to High</div>
+</div>
+<div class="warning-title">Important Guidance for Surya Grahan Dosha</div>
+<p class="warning-text">This dosha represents an area of karmic challenge. However, sincere spiritual practice, awareness, and remedial actions can significantly mitigate its negative effects.</p>
+</div>
+<!-- Phase1: Article CTA -->
+<a class="p1-article-cta" href="https://ournakshatra.com/articles/what-is-grahan-dosh" rel="noopener" style="animation-delay:.28s" target="_blank">
+<div>
+<div class="p1-article-lbl">Read: In-Depth Article on ournakshatra.com</div>
+<div class="p1-article-ttl">What is Grahan Dosh?</div>
+</div>
+<div class="p1-article-arrow">→</div>
+</a>
+<!-- Phase1: Kundali CTA (replaces original cta-banner) -->
+<a class="p1-kundali-cta" href="https://ournakshatra.com/janam-kundali" rel="noopener" style="animation-delay:.32s" target="_blank">
+<div class="p1-kundali-txt">
+      Check Sun-Rahu or Sun-Ketu aspect in your chart
+      <em>Free birth chart analysis — ournakshatra.com</em>
+</div>
+<span class="p1-kundali-btn">Open Free Kundali →</span>
+</a>
+<!-- Phase1: FAQ -->
+<div class="p1-faq-card" style="animation-delay:.36s">
+<div class="p1-card-hdr">
+<div class="p1-card-ico">?</div>
+<div class="p1-card-ttl">Frequently Asked Questions</div>
+</div>
+<div class="p1-card-body">
+<div class="p1-faq-item">
+<div class="p1-faq-q">What is Surya Grahan Dosha?</div>
+<div class="p1-faq-a">Surya Grahan Dosha may occur when the Sun is conjunct Rahu or Ketu in the birth chart, creating an eclipse-like condition. It may affect confidence, authority, and the father's influence in one's life.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">Is this the same as a solar eclipse?</div>
+<div class="p1-faq-a">No. In Jyotish, a natal Surya Grahan refers to the Sun's position near the lunar nodes at birth — not a physical eclipse event. However, birth during or near an actual solar eclipse is sometimes considered significant.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">What areas may be affected?</div>
+<div class="p1-faq-a">Self-expression, career authority, relationship with father, government-related matters, and vitality may be associated with a challenged Sun.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">What is the traditional remedy?</div>
+<div class="p1-faq-a">Aditya Hridayam recitation, Sunday Surya Arghya (water offering to the Sun at sunrise), and offering red flowers at Surya temples are traditional practices.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">Which deity is primary?</div>
+<div class="p1-faq-a">Lord Surya (Sun) and Lord Ram (closely associated with solar energy in the Ramayana tradition) are the primary deities.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">Can Surya Grahan Dosha be cancelled?</div>
+<div class="p1-faq-a">Yes — Sun in its own sign (Leo) or exaltation (Aries), or with Jupiter's aspect, may significantly reduce the dosha's expression.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">Does this affect government service?</div>
+<div class="p1-faq-a">Classical texts associate a challenged Sun with difficulties in government or authority-related careers. However, many IAS officers and politicians have this combination — chart context matters.</div>
+</div>
+<div class="p1-faq-item">
+<div class="p1-faq-q">What is the role of the Sun in health?</div>
+<div class="p1-faq-a">The Sun governs vitality and life force in Vedic thought. This is not medical guidance — for health concerns, please consult a qualified medical professional.</div>
+</div>
+</div>
+</div>
+<!-- CTA Banner -->
 </main>
-
 <footer>
-  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Astrological Remedies &amp; Bhakti for Every Soul</p>
+<p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Astrological Remedies &amp; Bhakti for Every Soul</p>
 </footer>
-
-
-
-
-
 <!-- Promotional Popup -->
-<div id="sitePopup" role="dialog" aria-label="Visit ournakshatra.com">
-  <button class="popup-close" onclick="closePopup()" aria-label="Close">✕</button>
-  <div class="popup-badge">✦ Free Astrology Tool ✦</div>
-  <div class="popup-title">Know Your Nakshatra, Rashi & Kundli</div>
-  <div class="popup-sub">Get your detailed birth chart instantly — 100% free on ournakshatra.com</div>
-  <a class="popup-btn" href="https://ournakshatra.com/janam_landing.html" target="_blank" rel="noopener" onclick="closePopup()">Calculate Free →</a>
-  <div class="popup-timer" id="popupTimer"></div>
+<div aria-label="Visit ournakshatra.com" id="sitePopup" role="dialog">
+<button aria-label="Close" class="popup-close" onclick="closePopup()">✕</button>
+<div class="popup-badge">✦ Free Astrology Tool ✦</div>
+<div class="popup-title">Know Your Nakshatra, Rashi &amp; Kundli</div>
+<div class="popup-sub">Get your detailed birth chart instantly — 100% free on ournakshatra.com</div>
+<a class="popup-btn" href="https://ournakshatra.com/janam_landing.html" onclick="closePopup()" rel="noopener" target="_blank">Calculate Free →</a>
+<div class="popup-timer" id="popupTimer"></div>
 </div>
 <script>
 function toggleMobileMenu(){
@@ -692,8 +706,6 @@ document.addEventListener('DOMContentLoaded',function(){
   if(isDark)document.body.classList.add('dark-mode');
 });
 </script>
-
-
 <script id="popup-script">
 (function(){
   var t1 = setTimeout(function(){
@@ -711,6 +723,5 @@ window.closePopup = function(){
   }
 };
 </script>
-
 </body>
 </html>
