@@ -330,6 +330,13 @@
   .cta-btn { word-break: break-word; white-space: normal; }
   @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
+
+<style id="phase-strip-fix">
+  .phase-strip {
+    display: none !important;  /* Hidden — causes visual overflow on mobile */
+  }
+</style>
+
 </head>
 <body>
 <h1 class="sr-h1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Chaturthi — Tithi Guide, Fasting & Mantra</h1>
@@ -486,7 +493,7 @@
 </div>
 
 <div class="hero">
-  <div class="hero-icon">🐘</div>
+  <div class="hero-icon">◆</div>
   <div class="hero-tag">☽ 4th Tithi · Sacred Tithi</div>
   <div class="hero-hindi">चतुर्थी</div>
   <div class="hero-name">Chaturthi</div>
@@ -592,20 +599,24 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 
-<script>
+
+<script id="popup-script">
 (function(){
-  var shown = sessionStorage.getItem('nakPopupShown');
-  if(shown) return;
   var t1 = setTimeout(function(){
     var p = document.getElementById('sitePopup');
-    if(p){ p.classList.add('show'); sessionStorage.setItem('nakPopupShown','1'); }
-    var t2 = setTimeout(function(){ closePopup(); }, 5000);
+    if(p){ p.classList.add('show'); }
+    setTimeout(function(){ closePopup(); }, 5000);
   }, 3000);
-  window.closePopup = function(){
-    var p = document.getElementById('sitePopup');
-    if(p){ p.style.transition='opacity .3s'; p.style.opacity='0'; setTimeout(function(){ p.style.display='none'; },300); }
-  };
 })();
+window.closePopup = function(){
+  var p = document.getElementById('sitePopup');
+  if(p){
+    p.style.opacity = '0';
+    p.style.transform = 'translateX(-50%) translateY(120px)';
+    setTimeout(function(){ p.style.display='none'; }, 400);
+  }
+};
 </script>
+
 </body>
 </html>

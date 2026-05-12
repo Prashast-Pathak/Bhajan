@@ -545,20 +545,24 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 
-<script>
+
+<script id="popup-script">
 (function(){
-  var shown = sessionStorage.getItem('nakPopupShown');
-  if(shown) return;
   var t1 = setTimeout(function(){
     var p = document.getElementById('sitePopup');
-    if(p){ p.classList.add('show'); sessionStorage.setItem('nakPopupShown','1'); }
-    var t2 = setTimeout(function(){ closePopup(); }, 5000);
+    if(p){ p.classList.add('show'); }
+    setTimeout(function(){ closePopup(); }, 5000);
   }, 3000);
-  window.closePopup = function(){
-    var p = document.getElementById('sitePopup');
-    if(p){ p.style.transition='opacity .3s'; p.style.opacity='0'; setTimeout(function(){ p.style.display='none'; },300); }
-  };
 })();
+window.closePopup = function(){
+  var p = document.getElementById('sitePopup');
+  if(p){
+    p.style.opacity = '0';
+    p.style.transform = 'translateX(-50%) translateY(120px)';
+    setTimeout(function(){ p.style.display='none'; }, 400);
+  }
+};
 </script>
+
 </body>
 </html>
