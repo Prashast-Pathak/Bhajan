@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google AdSense Auto Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8437539747039479"
-     crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-03ZRSSBHGJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-03ZRSSBHGJ');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaal Sarp Dosha Remedy — Bhajan & Mantra | bhajan.ournakshatra.com</title>
-  <meta name="description" content="Learn about Kaal Sarp Dosha, its effects, primary mantra, and step-by-step remedial actions. Deity: Lord Shiva." />
+  <title>Kaal Sarp Dosha Guide — Bhajan & Mantra | bhajan.ournakshatra.com</title>
+  <meta name="description" content="Learn about Kaal Sarp Dosha, its effects, primary mantra, and step-by-step guidance. Deity: Lord Shiva." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
@@ -53,106 +40,73 @@
 
     /* ── HEADER ── */
     header {
+      background: rgba(22, 17, 36, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 16px 24px;
+      display: flex; justify-content: space-between; align-items: center;
       position: sticky; top: 0; z-index: 100;
-      background: rgba(245,240,232,0.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 28px; height: 62px;
-      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     .logo {
-      font-weight: 900; font-size: 1rem;
-      letter-spacing: .14em; text-transform: uppercase;
-      color: var(--maroon); text-decoration: none;
+      font-size: 1.1rem; font-weight: 900; letter-spacing: 0.15em;
+      color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px;
     }
-    .logo em { font-style: normal; color: var(--accent); }
+    .logo em { color: var(--saffron); font-style: normal; font-size: 1.2rem; }
     nav a {
-      font-size: 0.8rem; font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--text-sec);
-      text-decoration: none; padding: 6px 16px;
-      border-radius: 20px; border: 1px solid var(--border);
+      color: var(--saffron); text-decoration: none; font-size: 0.8rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      border: 1px solid var(--saffron); border-radius: 20px; padding: 6px 16px;
       transition: all .2s;
     }
-    nav a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+    nav a:hover { background: var(--saffron); color: var(--bg); }
 
     /* ── HERO ── */
     .hero {
-      position: relative; overflow: hidden;
-      padding: 68px 24px 54px; text-align: center;
-      border-bottom: 4px solid var(--accent);
-      background:
-        radial-gradient(ellipse 80% 65% at 50% 0%, var(--accent-soft) 0%, transparent 70%),
-        var(--bg);
-    }
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 12% 88%, var(--accent-mid) 0%, transparent 38%),
-        radial-gradient(circle at 88% 12%, var(--accent-mid) 0%, transparent 32%);
-      pointer-events: none;
+      text-align: center; padding: 80px 20px 60px;
+      background: linear-gradient(to bottom, var(--surface) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
     }
     .hero-tag {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.67rem; font-weight: 700; letter-spacing: .22em;
-      text-transform: uppercase; color: var(--accent);
-      border: 1px solid var(--accent); border-radius: 20px;
-      padding: 4px 14px; margin-bottom: 20px; position: relative;
+      display: inline-block; background: var(--accent-soft); color: var(--accent);
+      font-size: 0.75rem; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 6px 18px; border-radius: 20px; margin-bottom: 20px;
     }
     .hero-hindi {
-      font-family: var(--font-hindi);
-      font-size: clamp(2.8rem, 9vw, 5.8rem);
-      color: var(--accent); line-height: 1.05;
-      position: relative; margin-bottom: 8px;
+      font-family: var(--font-hindi); font-size: 2.8rem; color: var(--accent);
+      line-height: 1; margin-bottom: 5px; opacity: 0.9;
     }
     .hero-name {
-      font-size: clamp(1.1rem, 3vw, 1.55rem);
-      font-weight: 300; letter-spacing: .32em;
-      text-transform: uppercase; color: var(--text-sec);
-      position: relative; margin-bottom: 14px;
+      font-size: 2.2rem; font-weight: 900; color: var(--text);
+      letter-spacing: -0.02em; margin-bottom: 16px;
     }
     .hero-deity {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.88rem; color: var(--text-muted);
-      position: relative;
-    }
-    .hero-deity strong { color: var(--accent); font-weight: 700; }
-
-    /* ── CONTENT ── */
-    .content-wrapper {
-      max-width: 740px; margin: 0 auto;
-      padding: 44px 24px 80px;
-      display: flex; flex-direction: column; gap: 32px;
+      font-size: 0.9rem; color: var(--text-sec);
     }
 
     /* ── CARDS ── */
+    .content-wrapper {
+      max-width: 680px; margin: 40px auto; padding: 0 20px;
+      display: flex; flex-direction: column; gap: 32px;
+    }
     .card {
-      background: var(--surface);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      overflow: hidden;
-      animation: fadeUp .45s ease both;
+      background: #fff; border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      animation: fadeUp .4s ease both;
     }
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(14px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .card-header {
       display: flex; align-items: center; gap: 12px;
-      padding: 16px 22px 13px;
-      border-bottom: 1px solid var(--border);
-      background: var(--surface2);
+      padding: 16px 22px; border-bottom: 1px solid var(--surface);
+      background: rgba(0,0,0,0.01);
     }
+    .card-title { font-size: 1.05rem; font-weight: 900; color: var(--text); }
     .card-icon {
-      width: 34px; height: 34px; border-radius: 50%;
+      width: 34px; height: 34px; border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; flex-shrink: 0;
-      background: var(--accent-soft);
-      border: 2px solid var(--accent);
-    }
-    .card-title {
-      font-size: 0.67rem; font-weight: 900;
-      letter-spacing: .2em; text-transform: uppercase;
+      background: var(--accent-soft); font-size: 1.1rem;
       color: var(--accent);
     }
     .card-body { padding: 20px 22px; }
@@ -217,13 +171,6 @@
       text-transform: uppercase; background: var(--saffron); color: #fff;
       border-radius: 20px; padding: 3px 12px;
     }
-    .severity-level {
-      font-size: 0.78rem; font-weight: 700;
-      color: #DC2626;
-      background: rgba(220,38,38, 0.1);
-      border: 1px solid #DC2626;
-      border-radius: 20px; padding: 2px 10px;
-    }
     .warning-title {
       font-size: 0.88rem; font-weight: 900;
       color: #92400E; margin-bottom: 8px;
@@ -284,55 +231,25 @@
     }
     footer a { color: var(--saffron); text-decoration: none; font-weight: 600; }
 
+    /* ── FIX FOR MOBILE HEADER CLIPPING ── */
     @media (max-width: 480px) {
+      header { padding: 12px 14px; }
+      .logo { font-size: 0.8rem; letter-spacing: 0.08em; gap: 4px; }
+      .logo em { font-size: 1rem; }
+      nav a { font-size: 0.65rem; padding: 6px 10px; letter-spacing: 0.05em; }
+      
       .hero { padding: 50px 16px 40px; }
       .card-body, .card-header { padding-left: 14px; padding-right: 14px; }
       .cta-banner { padding: 28px 18px; }
       .mantra-box { flex-direction: column; gap: 12px; }
     }
   </style>
-
-  <link rel="canonical" href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/" />
-
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Kaal Sarp Dosha Remedy — Bhajan & Mantra | bhajan.ournakshatra.com" />
-  <meta property="og:description" content="Learn about Kaal Sarp Dosha, its effects, primary mantra, and step-by-step remedial actions. Deity: Lord Shiva." />
-  <meta property="og:url" content="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/" />
-  <meta property="og:site_name" content="NAKSHATRA — Hindu Devotional Library" />
-  <meta property="og:locale" content="hi_IN" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kaal Sarp Dosha Remedy — Bhajan & Mantra | bhajan.ournakshatra.com" />
-  <meta name="twitter:site" content="@ournakshatra" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Kaal Sarp Dosha Remedy — Bhajan & Mantra | bhajan.ournakshatra.com",
-    "description": "Learn about Kaal Sarp Dosha, its effects, primary mantra, and step-by-step remedial actions. Deity: Lord Shiva.",
-    "url": "https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/",
-    "inLanguage": "hi",
-    "publisher": {
-      "@type": "Organization",
-      "name": "NAKSHATRA — Hindu Devotional Library",
-      "url": "https://bhajan.ournakshatra.com"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/"
-    }
-  }
-  </script>
-  <meta name="robots" content="index, follow" />
 </head>
 <body>
-<h1 class="sr-h1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Kaal Sarp Dosha Remedy — Bhajan & Mantra</h1>
-
 
 <header>
   <a href="https://bhajan.ournakshatra.com" class="logo">NAKSHATRA <em>✦</em> BHAJAN</a>
-  <nav><a href="https://ournakshatra.com/yogas" target="_blank">View Yogas</a></nav>
+  <nav><a href="https://bhajan.ournakshatra.com/remedy/" target="_blank">View All Yogas & Doshas</a></nav>
 </header>
 
 <div class="hero">
@@ -359,7 +276,7 @@
   <div class="card" style="animation-delay:.10s">
     <div class="card-header">
       <div class="card-icon">🎵</div>
-      <div class="card-title">Primary Mantra / Bhajan for Remedy</div>
+      <div class="card-title">Primary Mantra / Bhajan</div>
     </div>
     <div class="card-body">
       <div class="mantra-box">
@@ -373,7 +290,7 @@
     </div>
   </div>
 
-  <!-- Remedial Steps -->
+  <!-- Remedial Steps / Guidance -->
   <div class="card" style="animation-delay:.15s">
     <div class="card-header">
       <div class="card-icon">🪴</div>
@@ -400,14 +317,15 @@
     </div>
   </div>
 
+  
   <!-- Severity Warning -->
   <div class="warning-box" style="animation-delay:.20s">
     <div class="warning-header">
       <div class="warning-badge">⚠ Severity Notice</div>
-      <div class="severity-level">Severity: High</div>
+      <div class="severity-level" style="color:#DC2626; border-color:#DC2626; background:rgba(220,38,38,0.1);">Severity: Moderate to High</div>
     </div>
     <div class="warning-title">Important Guidance for Kaal Sarp Dosha</div>
-    <p class="warning-text">Kaal Sarp Dosha is considered one of the most impactful planetary afflictions. Its severity depends on the specific type (Anant, Kulik, etc.) and the strength of Rahu and Ketu in the chart. Professional guidance is strongly advised.</p>
+    <p class="warning-text">This dosha represents an area of karmic challenge. However, sincere spiritual practice, awareness, and remedial actions can significantly mitigate its negative effects.</p>
   </div>
 
   <!-- CTA Banner -->
@@ -420,14 +338,14 @@
       Check at ournakshatra.com →
     </a>
     <div class="cta-sub">
-      Also explore all planetary Yogas at <a href="https://ournakshatra.com/yogas" target="_blank">ournakshatra.com/yogas</a>
+      Explore all planetary combinations at <a href="https://bhajan.ournakshatra.com/remedy/" target="_blank">bhajan.ournakshatra.com/remedy/</a>
     </div>
   </div>
 
 </main>
 
 <footer>
-  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Dosha Remedies &amp; Bhakti for Every Soul</p>
+  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Astrological Remedies &amp; Bhakti for Every Soul</p>
 </footer>
 
 </body>
