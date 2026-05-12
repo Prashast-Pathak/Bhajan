@@ -279,251 +279,112 @@
   }
   </script>
   <meta name="robots" content="index, follow" />
-<style id="premium-header-styles">
-  /* ── HEADER ── */
-  .main-header {
-    position: sticky; top: 0; z-index: 1000;
-    background: rgba(245,240,232,0.92) !important;
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid rgba(0,0,0,0.07);
-    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-    padding: 0 20px;
-  }
-  body.dark-mode .main-header {
-    background: rgba(22,22,22,0.92) !important;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .main-header .header-inner {
-    max-width: 1200px; margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 16px;
-    height: 64px;
-  }
-
-  /* Logo */
-  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-  .logo-om {
-    width: 40px; height: 40px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--saffron), var(--maroon));
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-hindi); font-size: 20px; color: #fff;
-    flex-shrink: 0;
-  }
-  .logo-text { display: flex; flex-direction: column; }
-  .logo-title { font-family: var(--font-hindi); font-size: 17px; font-weight: 700; color: var(--maroon); line-height: 1.2; }
-  .logo-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.3px; }
-
-  /* Desktop Nav — center column */
-  .desktop-nav {
-    display: flex; gap: 2px; align-items: center; justify-content: center;
-  }
-  .desktop-nav a {
-    text-decoration: none; color: var(--text-sec); font-size: 13px; font-weight: 600;
-    padding: 7px 11px; border-radius: 8px; transition: all 0.18s;
-    white-space: nowrap;
-  }
-  .desktop-nav a:hover { background: var(--surface); color: var(--saffron); }
-  .desktop-nav a.active { background: var(--surface2); color: var(--saffron); }
-
-  /* Icons — right column */
-  .header-icons { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
-  .header-icon-btn {
-    background: transparent; border: 1px solid transparent; cursor: pointer;
-    font-size: 17px; width: 38px; height: 38px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    color: var(--maroon); transition: all 0.18s; flex-shrink: 0;
-  }
-  .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
-
-  /* Hamburger & Back Button */
-  .hamburger-btn, .back-btn {
-    background: transparent; border: none; color: var(--text);
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
-  }
-  .hamburger-btn { display: none; }
-  .hamburger-btn:hover, .back-btn:hover { background: var(--surface2); }
-
-  /* Mobile Menu */
-  .mobile-menu-overlay {
-    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
-    z-index: 1999; opacity: 0; pointer-events: none; transition: 0.3s ease;
-  }
+<style id="hub-header-styles">
+  .main-header { position: sticky; top: 0; z-index: 1000; background: rgba(245,240,232,0.96); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.08); box-shadow: 0 1px 8px rgba(0,0,0,0.04); }
+  .hub-header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 16px; height: 56px; max-width: 1200px; margin: 0 auto; }
+  .hub-header-left { display: flex; align-items: center; gap: 10px; }
+  .hub-header-right { display: flex; align-items: center; gap: 8px; }
+  .hamburger-btn { background: none; border: none; cursor: pointer; padding: 6px; border-radius: 8px; color: #6E1515; display: flex; align-items: center; transition: background .18s; flex-shrink: 0; }
+  .hamburger-btn:hover { background: #EDE6D8; }
+  .hub-logo-link { display: flex; align-items: center; gap: 7px; text-decoration: none; }
+  .hub-logo-om { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg,#C96A1F,#6E1515); display: flex; align-items: center; justify-content: center; font-size: 16px; color: #fff; flex-shrink: 0; }
+  .hub-logo-text { font-size: 13px; font-weight: 900; letter-spacing: 0.06em; color: #6E1515; line-height: 1; }
+  .hub-logo-text em { display: block; font-style: normal; font-size: 10px; font-weight: 400; color: #8C6A45; letter-spacing: 0.1em; margin-top: 1px; }
+  .hub-nav-pill { text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: #C96A1F; border: 1.5px solid #C96A1F; border-radius: 20px; padding: 5px 11px; transition: all .18s; white-space: nowrap; }
+  .hub-nav-pill:hover { background: #C96A1F; color: #fff; }
+  .hub-fav-btn { background: none; border: none; cursor: pointer; font-size: 18px; padding: 4px; }
+  /* Mobile Menu Drawer */
+  .mobile-menu-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 1999; opacity: 0; pointer-events: none; transition: opacity .3s; }
   .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
-  .mobile-menu-drawer {
-    position: fixed; top: 0; left: -300px; bottom: 0; width: 280px;
-    background: var(--bg); z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,0.12);
-    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex; flex-direction: column;
-  }
+  .mobile-menu-drawer { position: fixed; top: 0; left: -300px; bottom: 0; width: 280px; background: #F5F0E8; z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,.12); transition: left .3s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; overflow: hidden; }
   .mobile-menu-drawer.active { left: 0; }
-  .mobile-menu-header {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 20px 24px; border-bottom: 1px solid var(--border);
-  }
-  .close-menu-btn { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; }
-  .mobile-menu-links { padding: 20px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
-  .mobile-menu-links a {
-    text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600;
-    padding: 11px 14px; border-radius: 8px; transition: 0.18s;
-  }
-  .mobile-menu-links a:hover { background: var(--surface); color: var(--saffron); }
-  .menu-divider { height: 1px; background: var(--border); margin: 8px 0; }
-
-  /* Chanting mode — hide all meaning blocks */
-  body.chanting-mode .meaning-section,
-  body.chanting-mode .line-meaning-hindi,
-  body.chanting-mode .line-meaning-en,
-  body.chanting-mode .line-meaning-label { display: none !important; }
-
-  @media (max-width: 960px) {
-    .desktop-nav { display: none !important; }
-    .hamburger-btn { display: flex !important; }
-    .logo-text { display: none; }
-    .main-header .header-inner { grid-template-columns: auto auto; }
-    .chanting-btn { display: none !important; }
-  }
+  .mobile-menu-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #D9CDBA; flex-shrink: 0; }
+  .close-menu-btn { background: none; border: none; font-size: 22px; color: #8C6A45; cursor: pointer; }
+  .mobile-menu-links { padding: 10px 0; display: flex; flex-direction: column; gap: 2px; overflow-y: auto; flex: 1; }
+  .mobile-menu-links > a { text-decoration: none; color: #2A1A08; font-size: 14px; font-weight: 600; padding: 10px 20px; transition: background .18s; }
+  .mobile-menu-links > a:hover { background: #EDE6D8; color: #C96A1F; }
+  .menu-divider { height: 1px; background: #D9CDBA; margin: 6px 0; }
+  .mobile-menu-links details { border-bottom: 1px solid #D9CDBA; }
+  .mobile-menu-links details summary { padding: 10px 20px; color: #5C3D20; font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .mobile-menu-links details summary::-webkit-details-marker { display: none; }
+  .mobile-menu-links details summary::after { content: '+'; font-size: 1.1rem; color: #C96A1F; }
+  .mobile-menu-links details[open] summary::after { content: '−'; }
+  .mobile-menu-links details[open] summary { background: #E6DDD0; color: #C96A1F; }
+  .details-content { background: #EDE6D8; padding: 10px 16px 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .details-content a { padding: 5px 10px; font-size: .78rem; background: rgba(255,255,255,.6); border: 1px solid #D9CDBA; border-radius: 50px; text-decoration: none; color: #5C3D20; }
+  .details-content a:hover { background: #C96A1F; color: #fff; border-color: #C96A1F; }
+  .details-content.full-col { flex-direction: column; gap: 0; padding: 0; }
+  .details-content.full-col a { background: none; border: none; border-radius: 0; padding: 9px 20px; border-bottom: 1px solid rgba(0,0,0,.05); font-size: .87rem; }
+  /* Popup */
+  #sitePopup { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(120px); z-index: 9999; width: min(360px, calc(100vw - 32px)); background: linear-gradient(135deg,#6E1515 0%,#C96A1F 100%); border-radius: 18px; padding: 20px 22px 18px; box-shadow: 0 12px 40px rgba(0,0,0,.35); opacity: 0; transition: transform .4s cubic-bezier(.34,1.56,.64,1), opacity .4s; pointer-events: none; }
+  #sitePopup.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+  #sitePopup .popup-close { position: absolute; top: 10px; right: 12px; background: rgba(255,255,255,.2); border: none; color: #fff; font-size: 16px; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  #sitePopup .popup-badge { font-size: .62rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 6px; }
+  #sitePopup .popup-title { font-size: 1.05rem; font-weight: 900; color: #fff; line-height: 1.3; margin-bottom: 4px; }
+  #sitePopup .popup-sub { font-size: .8rem; color: rgba(255,255,255,.8); margin-bottom: 14px; }
+  #sitePopup .popup-btn { display: inline-block; background: #fff; color: #6E1515; font-weight: 900; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 10px 22px; border-radius: 30px; transition: transform .2s; }
+  #sitePopup .popup-btn:hover { transform: translateY(-1px); }
+  #sitePopup .popup-timer { position: absolute; bottom: 0; left: 0; height: 3px; background: rgba(255,255,255,.45); border-radius: 0 0 18px 18px; animation: popupTimer 5s linear forwards; }
+  @keyframes popupTimer { from { width: 100%; } to { width: 0%; } }
+  /* Mobile CTA card word-break fix */
+  .cta-btn { word-break: break-word; white-space: normal; }
+  @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
 </head>
 <body>
 <h1 class="sr-h1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Pradosh Vrat — Tithi Guide, Fasting & Mantra</h1>
 
 
-<header class="main-header">
-  <div class="header-inner">
-    <!-- Left: Logo + Hamburger -->
-    <div style="display:flex; align-items:center; gap:4px;">
-      <script>
-        function handleMainHeaderBack() {
-          const p = window.location.pathname;
-          const isTopLevel = p === '/' || p === '/index.html' || p.endsWith('/bhajans.html') || p.endsWith('/shlokas.html') || p.endsWith('/wisdom.html') || p.endsWith('/prayers.html') || p.endsWith('/upanishads.html') || p.endsWith('/bhagavad-gita.html') || p.endsWith('/favorites.html');
-          
-          if (isTopLevel) {
-            window.location.href = '/';
-          } else if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
-            window.history.back();
-          } else {
-            window.location.href = '/';
-          }
-        }
-      </script>
-      <button class="back-btn" onclick="handleMainHeaderBack()" aria-label="Go Back" title="Go Back">
-        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      </button>
+<header class="main-header" id="siteHeader">
+  <div class="hub-header-inner">
+    <div class="hub-header-left">
       <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
-        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
       </button>
-      <a href="index.html" class="logo-link">
-        <div class="logo-om">ॐ</div>
-        <div class="logo-text">
-          <span class="logo-title">सनातन ज्ञान सागर</span>
-          <span class="logo-sub">The Ocean of Eternal Wisdom</span>
-        </div>
+      <a href="https://bhajan.ournakshatra.com/" class="hub-logo-link">
+        <span class="hub-logo-om">ॐ</span>
+        <span class="hub-logo-text">NAKSHATRA<em>BHAJAN</em></span>
       </a>
     </div>
-
-    <!-- Center: Desktop Nav -->
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="bhajans.html">Bhajans</a>
-      <a href="bhagavad-gita.html">Gita</a>
-      <a href="shlokas.html">Shlokas</a>
-      <a href="prayers.html">Prayers</a>
-      <a href="upanishads.html">Upanishads</a>
-      <a href="wisdom.html">Wisdom</a>
-      <a href="https://ournakshatra.com/janam_landing.html" style="color:var(--saffron); font-weight: 700;">✨ Free Kundli</a>
-          <div class="nav-dropdown">
-        <a href="#" onclick="return false;" role="button" aria-haspopup="true">🔭 Jyotish</a>
-        <div class="dropdown-menu" role="menu">
-          <div class="dropdown-grid">
-            <div class="dropdown-col">
-              <div class="dropdown-col-title">🪐 Navagraha</div>
-              <a href="https://bhajan.ournakshatra.com/planet/surya/">☀ Surya (Sun)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/chandra/">☽ Chandra (Moon)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/mangal/">♂ Mangal (Mars)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/budha/">☿ Budha (Mercury)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/guru/">♃ Guru (Jupiter)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/shukra/">♀ Shukra (Venus)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/shani/">♄ Shani (Saturn)</a>
-              <a href="https://bhajan.ournakshatra.com/planet/rahu/">☊ Rahu</a>
-              <a href="https://bhajan.ournakshatra.com/planet/ketu/">☋ Ketu</a>
-            </div>
-            <div class="dropdown-col">
-              <div class="dropdown-col-title">⭐ Nakshatras</div>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">Purva Phalguni</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">Uttara Phalguni</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">Purva Ashadha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">Uttara Ashadha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">Purva Bhadrapada</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">Uttara Bhadrapada</a>
-              <a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a>
-            </div>
-            <div class="dropdown-col">
-              <div class="dropdown-col-title">♈ Rashis</div>
-              <a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh (Aries)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha (Taurus)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna (Gemini)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka (Cancer)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha (Leo)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya (Virgo)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula (Libra)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika (Scorpio)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu (Sagittarius)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara (Capricorn)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha (Aquarius)</a>
-              <a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena (Pisces)</a>
-              <div class="dropdown-col-title" style="margin-top:10px;">🛡️ Remedies</div>
-              <a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a>
-              <a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp Dosha</a>
-              <a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a>
-              <a href="https://bhajan.ournakshatra.com/remedy/pitru-dosha/">Pitru Dosha</a>
-              <a href="https://bhajan.ournakshatra.com/remedy/guru-chandal/">Guru Chandal</a>
-              <div class="dropdown-col-title" style="margin-top:10px;">🌙 Tithi & Muhurat</div>
-              <a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a>
-              <a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a>
-              <a href="https://bhajan.ournakshatra.com/tithi/amavasya/">Amavasya</a>
-              <a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a>
-              <a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Right: Icons -->
-    <div class="header-icons">
-      <button class="header-icon-btn" id="darkToggle" aria-label="Dark mode" title="Dark mode">🌙</button>
-      <button class="header-icon-btn" id="headerFavBtn" onclick="window.location.href='favorites.html'" title="Saved" aria-label="Saved">❤️</button>
+    <div class="hub-header-right">
+      <a href="https://ournakshatra.com/" class="hub-nav-pill" target="_blank" rel="noopener">ournakshatra.com ↗</a>
+      <button class="hub-fav-btn" id="headerFavBtn" title="Saved" aria-label="Saved" onclick="window.location.href='https://bhajan.ournakshatra.com/favorites.html'">❤️</button>
     </div>
   </div>
 </header>
 
-<!-- Mobile Menu Overlay -->
 <div id="mobileMenuOverlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+<div id="mobileMenu" class="mobile-menu-drawer">
+  <div class="mobile-menu-header">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
+      <span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA BHAJAN</span>
+    </div>
+    <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="https://bhajan.ournakshatra.com/">🏠 Bhajan Home</a>
+    <a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
+    <a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
+    <div class="menu-divider"></div>
+    <div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🌐 MAIN WEBSITE</div>
+    <a href="https://ournakshatra.com/" style="color:#6E1515;font-weight:bold;">🏠 ournakshatra.com</a>
+    <a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
+    <a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
+    <div class="menu-divider"></div>
+    <div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🔭 JYOTISH LIBRARY</div>
+    <details><summary>🪐 Navagraha</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/planet/surya/">Surya</a><a href="https://bhajan.ournakshatra.com/planet/chandra/">Chandra</a><a href="https://bhajan.ournakshatra.com/planet/mangal/">Mangal</a><a href="https://bhajan.ournakshatra.com/planet/budha/">Budha</a><a href="https://bhajan.ournakshatra.com/planet/guru/">Guru</a><a href="https://bhajan.ournakshatra.com/planet/shukra/">Shukra</a><a href="https://bhajan.ournakshatra.com/planet/shani/">Shani</a><a href="https://bhajan.ournakshatra.com/planet/rahu/">Rahu</a><a href="https://bhajan.ournakshatra.com/planet/ketu/">Ketu</a></div></details>
+    <details><summary>⭐ 27 Nakshatras</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/nakshatra/ashwini/">Ashwini</a><a href="https://bhajan.ournakshatra.com/nakshatra/bharani/">Bharani</a><a href="https://bhajan.ournakshatra.com/nakshatra/krittika/">Krittika</a><a href="https://bhajan.ournakshatra.com/nakshatra/rohini/">Rohini</a><a href="https://bhajan.ournakshatra.com/nakshatra/mrigashira/">Mrigashira</a><a href="https://bhajan.ournakshatra.com/nakshatra/ardra/">Ardra</a><a href="https://bhajan.ournakshatra.com/nakshatra/punarvasu/">Punarvasu</a><a href="https://bhajan.ournakshatra.com/nakshatra/pushya/">Pushya</a><a href="https://bhajan.ournakshatra.com/nakshatra/ashlesha/">Ashlesha</a><a href="https://bhajan.ournakshatra.com/nakshatra/magha/">Magha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-phalguni/">P.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-phalguni/">U.Phalguni</a><a href="https://bhajan.ournakshatra.com/nakshatra/hasta/">Hasta</a><a href="https://bhajan.ournakshatra.com/nakshatra/chitra/">Chitra</a><a href="https://bhajan.ournakshatra.com/nakshatra/swati/">Swati</a><a href="https://bhajan.ournakshatra.com/nakshatra/vishakha/">Vishakha</a><a href="https://bhajan.ournakshatra.com/nakshatra/anuradha/">Anuradha</a><a href="https://bhajan.ournakshatra.com/nakshatra/jyeshtha/">Jyeshtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/mula/">Mula</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-ashadha/">P.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-ashadha/">U.Ashadha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shravana/">Shravana</a><a href="https://bhajan.ournakshatra.com/nakshatra/dhanishtha/">Dhanishtha</a><a href="https://bhajan.ournakshatra.com/nakshatra/shatabhisha/">Shatabhisha</a><a href="https://bhajan.ournakshatra.com/nakshatra/purva-bhadrapada/">P.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/uttara-bhadrapada/">U.Bhadrapada</a><a href="https://bhajan.ournakshatra.com/nakshatra/revati/">Revati</a></div></details>
+    <details><summary>♈ 12 Rashis</summary><div class="details-content"><a href="https://bhajan.ournakshatra.com/rashi/mesh/">Mesh</a><a href="https://bhajan.ournakshatra.com/rashi/vrishabha/">Vrishabha</a><a href="https://bhajan.ournakshatra.com/rashi/mithuna/">Mithuna</a><a href="https://bhajan.ournakshatra.com/rashi/karka/">Karka</a><a href="https://bhajan.ournakshatra.com/rashi/simha/">Simha</a><a href="https://bhajan.ournakshatra.com/rashi/kanya/">Kanya</a><a href="https://bhajan.ournakshatra.com/rashi/tula/">Tula</a><a href="https://bhajan.ournakshatra.com/rashi/vrischika/">Vrischika</a><a href="https://bhajan.ournakshatra.com/rashi/dhanu/">Dhanu</a><a href="https://bhajan.ournakshatra.com/rashi/makara/">Makara</a><a href="https://bhajan.ournakshatra.com/rashi/kumbha/">Kumbha</a><a href="https://bhajan.ournakshatra.com/rashi/meena/">Meena</a></div></details>
+    <details><summary>🛡️ Yogas &amp; Doshas</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/remedy/">✨ View All</a><a href="https://bhajan.ournakshatra.com/remedy/mangal-dosha/">Mangal Dosha</a><a href="https://bhajan.ournakshatra.com/remedy/kaal-sarp-dosha/">Kaal Sarp</a><a href="https://bhajan.ournakshatra.com/remedy/sade-sati/">Sade Sati</a><a href="https://bhajan.ournakshatra.com/remedy/hamsa-yoga/">Hamsa Yoga</a><a href="https://bhajan.ournakshatra.com/remedy/dhana-yoga/">Dhana Yoga</a></div></details>
+    <details><summary>🌙 Tithi &amp; Muhurat</summary><div class="details-content full-col"><a href="https://bhajan.ournakshatra.com/tithi/ekadashi/">Ekadashi</a><a href="https://bhajan.ournakshatra.com/tithi/purnima/">Purnima</a><a href="https://bhajan.ournakshatra.com/muhurat/vivah/">Vivah Muhurat</a><a href="https://bhajan.ournakshatra.com/muhurat/griha-pravesh/">Griha Pravesh</a></div></details>
+    <div class="menu-divider"></div>
+    <a href="https://bhajan.ournakshatra.com/about.html">ℹ️ About</a>
+    <a href="https://bhajan.ournakshatra.com/contact.html">📞 Contact</a>
+  </div>
+</div>
+
+
 <div id="mobileMenu" class="mobile-menu-drawer">
   <div class="mobile-menu-header">
     <div class="logo-om" style="width:36px;height:36px;font-size:18px;">ॐ</div>
@@ -705,35 +566,46 @@
 
 
 
+<!-- Promotional Popup -->
+<div id="sitePopup" role="dialog" aria-label="Visit ournakshatra.com">
+  <button class="popup-close" onclick="closePopup()" aria-label="Close">✕</button>
+  <div class="popup-badge">✦ Free Astrology Tool ✦</div>
+  <div class="popup-title">Know Your Nakshatra, Rashi & Kundli</div>
+  <div class="popup-sub">Get your detailed birth chart instantly — 100% free on ournakshatra.com</div>
+  <a class="popup-btn" href="https://ournakshatra.com/janam_landing.html" target="_blank" rel="noopener" onclick="closePopup()">Calculate Free →</a>
+  <div class="popup-timer" id="popupTimer"></div>
+</div>
 <script>
-function toggleMobileMenu() {
-  var menu = document.getElementById('mobileMenu');
-  var overlay = document.getElementById('mobileMenuOverlay');
-  if (!menu || !overlay) return;
-  var isOpen = menu.classList.contains('active');
-  menu.classList.toggle('active', !isOpen);
-  overlay.classList.toggle('active', !isOpen);
-  document.body.style.overflow = isOpen ? '' : 'hidden';
+function toggleMobileMenu(){
+  var m=document.getElementById('mobileMenu'), o=document.getElementById('mobileMenuOverlay');
+  if(!m||!o)return;
+  var open=m.classList.toggle('active');
+  o.classList.toggle('active',open);
+  document.body.style.overflow=open?'hidden':'';
 }
-function handleMainHeaderBack() {
-  window.history.length > 1 ? window.history.back() : window.location.href = 'https://bhajan.ournakshatra.com';
+function handleMainHeaderBack(){
+  window.history.length>1?window.history.back():window.location.href='https://bhajan.ournakshatra.com';
 }
-document.addEventListener('DOMContentLoaded', function() {
-  var isDark = localStorage.getItem('sgs_dark') === 'true';
-  if (isDark) document.body.classList.add('dark-mode');
-  var darkBtn = document.getElementById('darkToggle');
-  if (darkBtn) {
-    darkBtn.addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('sgs_dark', document.body.classList.contains('dark-mode'));
-    });
-  }
-  var favBtn = document.getElementById('headerFavBtn');
-  if (favBtn) {
-    favBtn.onclick = function() { window.location.href = 'https://bhajan.ournakshatra.com/favorites.html'; };
-  }
+document.addEventListener('DOMContentLoaded',function(){
+  var isDark=localStorage.getItem('sgs_dark')==='true';
+  if(isDark)document.body.classList.add('dark-mode');
 });
 </script>
 
+<script>
+(function(){
+  var shown = sessionStorage.getItem('nakPopupShown');
+  if(shown) return;
+  var t1 = setTimeout(function(){
+    var p = document.getElementById('sitePopup');
+    if(p){ p.classList.add('show'); sessionStorage.setItem('nakPopupShown','1'); }
+    var t2 = setTimeout(function(){ closePopup(); }, 5000);
+  }, 3000);
+  window.closePopup = function(){
+    var p = document.getElementById('sitePopup');
+    if(p){ p.style.transition='opacity .3s'; p.style.opacity='0'; setTimeout(function(){ p.style.display='none'; },300); }
+  };
+})();
+</script>
 </body>
 </html>
