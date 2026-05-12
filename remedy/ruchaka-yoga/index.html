@@ -280,14 +280,13 @@
   @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
 <style id="header-collision-fix">
-  /* Prevent logo + pill collision on small phones */
-  @media (max-width: 400px) {
-    .hub-logo-text { display: none; }
-    .hub-nav-pill { font-size: 10px; padding: 4px 8px; letter-spacing: 0; }
-  }
-  @media (min-width: 401px) and (max-width: 480px) {
+  /* Responsive header — always show NAKSHATRA, hide BHAJAN subtitle on small screens */
+  @media (max-width: 480px) {
     .hub-logo-text em { display: none; }
-    .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 9px; letter-spacing: 0; }
+  }
+  @media (max-width: 340px) {
+    .hub-logo-text { display: none; }
   }
 </style>
 
