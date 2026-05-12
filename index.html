@@ -487,8 +487,8 @@
 
   
     /* Mobile Accordion Styles */
-    .mobile-menu details { margin: 0; }
-    .mobile-menu summary {
+    .mobile-menu-drawer details { margin: 0; }
+    .mobile-menu-drawer summary {
       padding: 12px 20px;
       color: var(--text-sec);
       font-size: 1.05rem;
@@ -498,24 +498,40 @@
       border-bottom: 1px solid var(--border);
       transition: background 0.2s;
     }
-    .mobile-menu summary::-webkit-details-marker { display: none; }
-    .mobile-menu summary::after { content: '+'; font-size: 1.2rem; color: var(--saffron); font-weight: bold; }
-    .mobile-menu details[open] summary::after { content: '−'; }
-    .mobile-menu details[open] summary { background: var(--surface2); color: var(--saffron); font-weight: 700; }
-    .mobile-menu .details-content {
+    .mobile-menu-drawer summary::-webkit-details-marker { display: none; }
+    .mobile-menu-drawer summary::after { content: '+'; font-size: 1.2rem; color: var(--saffron); font-weight: bold; }
+    .mobile-menu-drawer details[open] summary::after { content: '−'; }
+    .mobile-menu-drawer details[open] summary { background: var(--surface2); color: var(--saffron); font-weight: 700; }
+    .mobile-menu-drawer .details-content {
       background: var(--surface);
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
-    .mobile-menu .details-content a {
-      padding: 10px 15px;
-      font-size: 0.85rem;
-      border-bottom: 1px solid rgba(0,0,0,0.04);
-      border-right: 1px solid rgba(0,0,0,0.04);
+    .mobile-menu-drawer .details-content a {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      background: rgba(255,255,255,0.5);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      text-decoration: none;
+      color: var(--text-sec);
+      display: inline-block;
     }
-    .mobile-menu .details-content.full-col { grid-template-columns: 1fr; }
-    .mobile-menu .details-content.full-col a { padding-left: 30px; }
+    .mobile-menu-drawer .details-content a:hover {
+      background: var(--saffron);
+      color: #fff;
+      border-color: var(--saffron);
+    }
+    .mobile-menu-drawer .details-content.full-col {
+      flex-direction: column;
+    }
+    .mobile-menu-drawer .details-content.full-col a {
+      background: none; border: none; border-radius: 0;
+      padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
 
   </style>
   <link rel="manifest" href="/manifest.json">
