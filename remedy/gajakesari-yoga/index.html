@@ -278,6 +278,17 @@
   .cta-btn { word-break: break-word; white-space: normal; }
   @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
+<style id="header-collision-fix">
+  /* Prevent logo + pill collision on small phones */
+  @media (max-width: 400px) {
+    .hub-logo-text { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 8px; letter-spacing: 0; }
+  }
+  @media (min-width: 401px) and (max-width: 480px) {
+    .hub-logo-text em { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
+  }
+</style>
 </head>
 <body>
 
@@ -423,7 +434,7 @@
   <div class="hero-tag">✨ Auspicious Yoga Guide</div>
   <div class="hero-hindi">गजकेसरी योग</div>
   <div class="hero-name">Gajakesari Yoga</div>
-  <div class="hero-deity">🐘 Presiding Deity: <strong>Lord Ganesha / Shiva</strong></div>
+  <div class="hero-deity">✦ Presiding Deity: <strong>Lord Ganesha / Shiva</strong></div>
 </div>
 
 <main class="content-wrapper">
@@ -447,7 +458,7 @@
     </div>
     <div class="card-body">
       <div class="mantra-box">
-        <div class="mantra-icon">🐘</div>
+        <div class="mantra-icon">✦</div>
         <div>
           <div class="mantra-label">Recommended Daily Practice</div>
           <div class="mantra-name">Om Namah Shivaya</div>

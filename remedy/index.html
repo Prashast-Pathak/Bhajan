@@ -110,6 +110,17 @@
   .cta-btn { word-break: break-word; white-space: normal; }
   @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
 </style>
+<style id="header-collision-fix">
+  /* Prevent logo + pill collision on small phones */
+  @media (max-width: 400px) {
+    .hub-logo-text { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 8px; letter-spacing: 0; }
+  }
+  @media (min-width: 401px) and (max-width: 480px) {
+    .hub-logo-text em { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
+  }
+</style>
 </head>
 <body>
 <header class="main-header" id="siteHeader">
@@ -265,7 +276,7 @@
           </div>
         </a>
         <a href="ruchaka-yoga/" class="hub-link" style="border-left: 4px solid #DC2626">
-          <div class="hub-icon" style="color: #DC2626; background: rgba(220,38,38,0.1)">🐒</div>
+          <div class="hub-icon" style="color: #DC2626; background: rgba(220,38,38,0.1)">✦</div>
           <div class="hub-content">
             <div class="hub-title">Ruchaka Yoga</div>
             <div class="hub-desc">रुचक योग</div>
@@ -300,7 +311,7 @@
           </div>
         </a>
         <a href="gajakesari-yoga/" class="hub-link" style="border-left: 4px solid #F59E0B">
-          <div class="hub-icon" style="color: #F59E0B; background: rgba(245,158,11,0.1)">🐘</div>
+          <div class="hub-icon" style="color: #F59E0B; background: rgba(245,158,11,0.1)">✦</div>
           <div class="hub-content">
             <div class="hub-title">Gajakesari Yoga</div>
             <div class="hub-desc">गजकेसरी योग</div>
@@ -326,7 +337,7 @@
   <div class="grid">
     
         <a href="mangal-dosha/" class="hub-link" style="border-left: 4px solid #DC2626">
-          <div class="hub-icon" style="color: #DC2626; background: rgba(220,38,38,0.1)">🐒</div>
+          <div class="hub-icon" style="color: #DC2626; background: rgba(220,38,38,0.1)">✦</div>
           <div class="hub-content">
             <div class="hub-title">Mangal Dosha</div>
             <div class="hub-desc">मंगल दोष</div>
@@ -361,7 +372,7 @@
           </div>
         </a>
         <a href="angarak-dosha/" class="hub-link" style="border-left: 4px solid #B91C1C">
-          <div class="hub-icon" style="color: #B91C1C; background: rgba(185,28,28,0.1)">🐒</div>
+          <div class="hub-icon" style="color: #B91C1C; background: rgba(185,28,28,0.1)">✦</div>
           <div class="hub-content">
             <div class="hub-title">Angarak Dosha</div>
             <div class="hub-desc">अंगारक दोष</div>
@@ -403,7 +414,7 @@
           </div>
         </a>
         <a href="gandmool/" class="hub-link" style="border-left: 4px solid #047857">
-          <div class="hub-icon" style="color: #047857; background: rgba(4,120,87,0.1)">🐘</div>
+          <div class="hub-icon" style="color: #047857; background: rgba(4,120,87,0.1)">✦</div>
           <div class="hub-content">
             <div class="hub-title">Gandmool Dosha</div>
             <div class="hub-desc">गंडमूल दोष</div>

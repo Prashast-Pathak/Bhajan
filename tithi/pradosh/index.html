@@ -337,6 +337,17 @@
   }
 </style>
 
+<style id="header-collision-fix">
+  /* Prevent logo + pill collision on small phones */
+  @media (max-width: 400px) {
+    .hub-logo-text { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 8px; letter-spacing: 0; }
+  }
+  @media (min-width: 401px) and (max-width: 480px) {
+    .hub-logo-text em { display: none; }
+    .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
+  }
+</style>
 </head>
 <body>
 <h1 class="sr-h1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Pradosh Vrat — Tithi Guide, Fasting & Mantra</h1>
