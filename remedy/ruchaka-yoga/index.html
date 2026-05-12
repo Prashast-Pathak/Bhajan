@@ -289,59 +289,61 @@
     .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
   }
 </style>
+
 <style id="phase1-content-styles">
-  .p1-section { width:100%; margin:0 0 24px; padding:0; }
+  .p1-wrap { max-width:680px; margin:0 auto; padding:0 20px 32px; }
   .p1-card { background:#fff; border:1px solid #D9CDBA; border-radius:14px;
-    box-shadow:0 4px 20px rgba(0,0,0,.04); overflow:hidden; margin-bottom:28px; }
-  .p1-card-header { padding:18px 22px 14px; border-bottom:1px solid #EDE6D8;
-    display:flex; align-items:center; gap:10px; }
-  .p1-card-icon { width:36px; height:36px; border-radius:50%;
+    box-shadow:0 4px 20px rgba(0,0,0,.04); overflow:hidden; margin-bottom:24px; }
+  .p1-card-header { padding:14px 20px; border-bottom:1px solid #EDE6D8;
+    display:flex; align-items:center; gap:10px;
+    background:linear-gradient(135deg,rgba(201,106,31,.07),rgba(110,21,21,.05)); }
+  .p1-card-icon { width:34px; height:34px; border-radius:50%;
     background:linear-gradient(135deg,#C96A1F,#6E1515);
     display:flex; align-items:center; justify-content:center;
-    font-size:16px; color:#fff; flex-shrink:0; }
-  .p1-card-title { font-size:.7rem; font-weight:900; letter-spacing:.16em;
+    font-size:15px; color:#fff; flex-shrink:0; }
+  .p1-card-title { font-size:.68rem; font-weight:900; letter-spacing:.15em;
     text-transform:uppercase; color:#C96A1F; }
-  .p1-card-body { padding:20px 22px; }
-  .mantra-devanagari { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1.25rem; line-height:1.9; color:#2A1A08; margin-bottom:10px;
-    padding:16px; background:#FBF7F0; border-radius:10px;
+  .p1-card-body { padding:18px 20px; }
+  .p1-mantra-deva { font-family:'Tiro Devanagari Hindi',serif;
+    font-size:1.18rem; line-height:2; color:#2A1A08; margin-bottom:10px;
+    padding:14px 16px; background:#FBF7F0; border-radius:10px;
     border-left:3px solid #C96A1F; }
-  .mantra-roman { font-size:.85rem; color:#5C3D20; font-style:italic;
+  .p1-mantra-roman { font-size:.83rem; color:#5C3D20; font-style:italic;
     margin-bottom:8px; line-height:1.7; }
-  .mantra-meaning { font-size:.85rem; color:#8C6A45; line-height:1.7;
+  .p1-mantra-meaning { font-size:.83rem; color:#8C6A45; line-height:1.7;
     padding:10px 14px; background:#F5F0E8; border-radius:8px; margin-bottom:12px; }
-  .chanting-guide { font-size:.82rem; color:#5C3D20; line-height:1.6;
+  .p1-chant { font-size:.8rem; color:#5C3D20; line-height:1.6;
     padding:10px 14px; border:1px dashed #D9CDBA; border-radius:8px; }
-  .bhajan-preview { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1rem; line-height:2; color:#2A1A08;
+  .p1-bhajan-preview { font-family:'Tiro Devanagari Hindi',serif;
+    font-size:1rem; line-height:2.1; color:#2A1A08;
     padding:14px 16px; background:#FBF7F0; border-radius:10px; margin-bottom:14px; }
-  .bhajan-link { display:inline-flex; align-items:center; gap:8px;
+  .p1-bhajan-btn { display:inline-flex; align-items:center; gap:8px;
     background:linear-gradient(135deg,#C96A1F,#6E1515); color:#fff;
     text-decoration:none; padding:11px 22px; border-radius:30px;
     font-size:.82rem; font-weight:900; letter-spacing:.06em;
     transition:transform .2s; }
-  .bhajan-link:hover { transform:translateY(-1px); }
-  .article-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 22px; background:#F5F0E8; border-radius:10px;
-    text-decoration:none; transition:background .2s; flex-wrap:wrap; gap:12px; }
-  .article-cta:hover { background:#EDE6D8; }
-  .article-cta-label { font-size:.7rem; font-weight:900; letter-spacing:.14em;
+  .p1-bhajan-btn:hover { transform:translateY(-1px); }
+  .p1-article-cta { display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; background:#F5F0E8; border-radius:10px;
+    text-decoration:none; transition:background .2s; flex-wrap:wrap; gap:10px; }
+  .p1-article-cta:hover { background:#EDE6D8; }
+  .p1-article-label { font-size:.68rem; font-weight:900; letter-spacing:.14em;
     text-transform:uppercase; color:#C96A1F; margin-bottom:3px; }
-  .article-cta-title { font-size:.92rem; font-weight:700; color:#2A1A08; }
-  .article-cta-arrow { font-size:1.3rem; color:#C96A1F; flex-shrink:0; }
-  .kundali-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 22px; background:linear-gradient(135deg,#6E1515,#C96A1F);
-    border-radius:10px; text-decoration:none; gap:12px; flex-wrap:wrap; }
-  .kundali-cta-text { color:#fff; font-size:.88rem; font-weight:700; }
-  .kundali-cta-btn { background:#fff; color:#6E1515; font-size:.75rem;
-    font-weight:900; padding:8px 18px; border-radius:20px;
+  .p1-article-title { font-size:.9rem; font-weight:700; color:#2A1A08; }
+  .p1-article-arrow { font-size:1.2rem; color:#C96A1F; flex-shrink:0; }
+  .p1-kundali-cta { display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; background:linear-gradient(135deg,#6E1515,#C96A1F);
+    border-radius:10px; text-decoration:none; gap:10px; flex-wrap:wrap; }
+  .p1-kundali-text { color:#fff; font-size:.86rem; font-weight:700; }
+  .p1-kundali-btn { background:#fff; color:#6E1515; font-size:.75rem;
+    font-weight:900; padding:8px 16px; border-radius:20px;
     text-decoration:none; white-space:nowrap; flex-shrink:0; }
-  .faq-item { border-bottom:1px solid #EDE6D8; padding:16px 0; }
-  .faq-item:last-child { border-bottom:none; }
-  .faq-q { font-size:.9rem; font-weight:700; color:#2A1A08; margin-bottom:8px;
-    cursor:pointer; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-  .faq-q::after { content:'+'; color:#C96A1F; font-size:1.2rem; flex-shrink:0; }
-  .faq-a { font-size:.85rem; color:#5C3D20; line-height:1.75; }
+  .p1-faq-item { border-bottom:1px solid #EDE6D8; padding:14px 0; }
+  .p1-faq-item:last-child { border-bottom:none; }
+  .p1-faq-q { font-size:.88rem; font-weight:700; color:#2A1A08; margin-bottom:7px;
+    display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .p1-faq-q::after { content:'+'; color:#C96A1F; font-size:1.1rem; flex-shrink:0; }
+  .p1-faq-a { font-size:.83rem; color:#5C3D20; line-height:1.75; }
 </style>
 </head>
 <body>
@@ -570,100 +572,90 @@
     </a>
     <div class="cta-sub">
       Explore all planetary combinations at <a href="https://bhajan.ournakshatra.com/remedy/" target="_blank">bhajan.ournakshatra.com/remedy/</a>
-    </div>
-  </div>
 
 
+<div class="p1-wrap">
 
-    <div class="p1-card-body">
-      <div class="mantra-devanagari">धरणीगर्भसम्भूतं विद्युत्कान्तिसमप्रभम्।<br>कुमारं शक्तिहस्तं च मंगलं प्रणमाम्यहम्।।</div>
-      <div class="mantra-roman">Dharanigarbhasambhutam vidyutkanti samaprabham,<br>Kumaram shaktihastam cha Mangalam pranamaamyaham.</div>
-      <div class="mantra-meaning">I bow to Mangal (Mars), born of the Earth's womb, radiant as lightning, ever youthful, holding a spear — the granter of courage and energy.</div>
-      <div class="chanting-guide">🕐 <strong>How to chant:</strong> Recite 108 times on Tuesdays at sunrise. Offer red flowers to Lord Hanuman or Lord Kartikeya.</div>
-    </div>
-  </div>
-</div>
-
-    <div class="p1-card-body">
-      <div class="bhajan-preview">श्रीगुरु चरण सरोज रज, निज मनु मुकुरु सुधारि।<br>बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि।।</div>
-      <a href="/bhajan/hanuman-chalisa/" class="bhajan-link">
-        Read Full Hanuman Chalisa →
-      </a>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="p1-card-body">
-    <div class="faq-item">
-      <div class="faq-q">What is Ruchaka Yoga?</div>
-      <div class="faq-a">Ruchaka Yoga is one of the five Pancha Mahapurusha Yogas. It tends to form when Mars occupies a kendra house (1st, 4th, 7th, or 10th) in its own sign (Aries or Scorpio) or exaltation sign (Capricorn).</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What qualities may Ruchaka Yoga support?</div>
-      <div class="faq-a">Physical strength, leadership, courage, administrative ability, and a competitive spirit are commonly associated with a strong Ruchaka Yoga.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Is Ruchaka Yoga common?</div>
-      <div class="faq-a">It occurs whenever Mars transits through Aries, Scorpio, or Capricorn in a kendra — repeating roughly every two years. Individual chart context determines actual strength.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Does this yoga affect temperament?</div>
-      <div class="faq-a">Often yes — Mars energy tends to create directness, impatience, and drive. A well-placed Ruchaka may channel this into leadership; a heavily afflicted Mars may create friction.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What is the presiding deity?</div>
-      <div class="faq-a">Lord Hanuman, Lord Kartikeya (Murugan), and Mangal Graha are the primary associated deities.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Can Ruchaka Yoga be cancelled?</div>
-      <div class="faq-a">Yes — Mars in combustion, debilitation, or under heavy malefic aspect may reduce the yoga. The ascendant lord's relationship with Mars also modifies outcomes.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Which careers tend to suit Ruchaka Yoga?</div>
-      <div class="faq-a">Military, sports, surgery, engineering, law enforcement, and leadership roles are often associated. Outcomes depend on the 10th house and its lord.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How does this differ from Mangal Dosha?</div>
-      <div class="faq-a">Ruchaka Yoga is a positive combination of Mars strength; Mangal Dosha relates to Mars placement in specific houses affecting relationships. Both can coexist in the same chart.</div>
-    </div>
-    </div>
-  </div>
-</div>
-<div class="p1-section">
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">ॐ</div>
       <div class="p1-card-title">Primary Mantra — Mangal Vandana</div>
     </div>
-<div class="p1-section">
+    <div class="p1-card-body">
+      <div class="p1-mantra-deva">धरणीगर्भसम्भूतं विद्युत्कान्तिसमप्रभम्।<br>कुमारं शक्तिहस्तं च मंगलं प्रणमाम्यहम्।।</div>
+      <div class="p1-mantra-roman">Dharanigarbhasambhutam vidyutkanti samaprabham,<br>Kumaram shaktihastam cha Mangalam pranamaamyaham.</div>
+      <div class="p1-mantra-meaning">I bow to Mangal (Mars), born of the Earth's womb, radiant as lightning, ever youthful, holding a spear — the granter of courage and energy.</div>
+      <div class="p1-chant">🕐 <strong>How to chant:</strong> Recite 108 times on Tuesdays at sunrise. Offer red flowers to Lord Hanuman or Lord Kartikeya.</div>
+    </div>
+  </div>
+
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">♪</div>
       <div class="p1-card-title">Recommended Bhajan — Hanuman Chalisa</div>
     </div>
-<div class="p1-section">
-  <a href="https://ournakshatra.com/articles/pancha-mahapurusha-yogas-explained" class="article-cta" target="_blank" rel="noopener">
-    <div>
-      <div class="article-cta-label">Read: In-Depth Article</div>
-      <div class="article-cta-title">Pancha Mahapurusha Yogas Explained</div>
+    <div class="p1-card-body">
+      <div class="p1-bhajan-preview">श्रीगुरु चरण सरोज रज, निज मनु मुकुरु सुधारि।<br>बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि।।</div>
+      <a href="/bhajan/hanuman-chalisa/" class="p1-bhajan-btn">Read Full Hanuman Chalisa →</a>
     </div>
-    <div class="article-cta-arrow">→</div>
+  </div>
+
+  <a href="https://ournakshatra.com/articles/pancha-mahapurusha-yogas-explained" class="p1-article-cta" target="_blank" rel="noopener">
+    <div>
+      <div class="p1-article-label">Read: In-Depth Article</div>
+      <div class="p1-article-title">Pancha Mahapurusha Yogas Explained</div>
+    </div>
+    <div class="p1-article-arrow">→</div>
   </a>
-</div>
-<div class="p1-section">
-  <a href="https://ournakshatra.com/yogas" class="kundali-cta" target="_blank" rel="noopener">
-    <div class="kundali-cta-text">Check for Ruchaka Yoga in your chart</div>
-    <span class="kundali-cta-btn">Open Free Kundali →</span>
+
+  <a href="https://ournakshatra.com/yogas" class="p1-kundali-cta" target="_blank" rel="noopener">
+    <div class="p1-kundali-text">Check for Ruchaka Yoga in your chart</div>
+    <span class="p1-kundali-btn">Open Free Kundali →</span>
   </a>
-</div>
-<div class="p1-section">
+
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">?</div>
       <div class="p1-card-title">Frequently Asked Questions</div>
     </div>
+    <div class="p1-card-body">
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What is Ruchaka Yoga?</div>
+        <div class="p1-faq-a">Ruchaka Yoga is one of the five Pancha Mahapurusha Yogas. It tends to form when Mars occupies a kendra house (1st, 4th, 7th, or 10th) in its own sign (Aries or Scorpio) or exaltation sign (Capricorn).</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What qualities may Ruchaka Yoga support?</div>
+        <div class="p1-faq-a">Physical strength, leadership, courage, administrative ability, and a competitive spirit are commonly associated with a strong Ruchaka Yoga.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Is Ruchaka Yoga common?</div>
+        <div class="p1-faq-a">It occurs whenever Mars transits through Aries, Scorpio, or Capricorn in a kendra — repeating roughly every two years. Individual chart context determines actual strength.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Does this yoga affect temperament?</div>
+        <div class="p1-faq-a">Often yes — Mars energy tends to create directness, impatience, and drive. A well-placed Ruchaka may channel this into leadership; a heavily afflicted Mars may create friction.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What is the presiding deity?</div>
+        <div class="p1-faq-a">Lord Hanuman, Lord Kartikeya (Murugan), and Mangal Graha are the primary associated deities.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Can Ruchaka Yoga be cancelled?</div>
+        <div class="p1-faq-a">Yes — Mars in combustion, debilitation, or under heavy malefic aspect may reduce the yoga. The ascendant lord's relationship with Mars also modifies outcomes.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Which careers tend to suit Ruchaka Yoga?</div>
+        <div class="p1-faq-a">Military, sports, surgery, engineering, law enforcement, and leadership roles are often associated. Outcomes depend on the 10th house and its lord.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">How does this differ from Mangal Dosha?</div>
+        <div class="p1-faq-a">Ruchaka Yoga is a positive combination of Mars strength; Mangal Dosha relates to Mars placement in specific houses affecting relationships. Both can coexist in the same chart.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 </main>
 
 <footer>

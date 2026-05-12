@@ -289,59 +289,61 @@
     .hub-nav-pill { font-size: 10px; padding: 4px 9px; }
   }
 </style>
+
 <style id="phase1-content-styles">
-  .p1-section { width:100%; margin:0 0 24px; padding:0; }
+  .p1-wrap { max-width:680px; margin:0 auto; padding:0 20px 32px; }
   .p1-card { background:#fff; border:1px solid #D9CDBA; border-radius:14px;
-    box-shadow:0 4px 20px rgba(0,0,0,.04); overflow:hidden; margin-bottom:28px; }
-  .p1-card-header { padding:18px 22px 14px; border-bottom:1px solid #EDE6D8;
-    display:flex; align-items:center; gap:10px; }
-  .p1-card-icon { width:36px; height:36px; border-radius:50%;
+    box-shadow:0 4px 20px rgba(0,0,0,.04); overflow:hidden; margin-bottom:24px; }
+  .p1-card-header { padding:14px 20px; border-bottom:1px solid #EDE6D8;
+    display:flex; align-items:center; gap:10px;
+    background:linear-gradient(135deg,rgba(201,106,31,.07),rgba(110,21,21,.05)); }
+  .p1-card-icon { width:34px; height:34px; border-radius:50%;
     background:linear-gradient(135deg,#C96A1F,#6E1515);
     display:flex; align-items:center; justify-content:center;
-    font-size:16px; color:#fff; flex-shrink:0; }
-  .p1-card-title { font-size:.7rem; font-weight:900; letter-spacing:.16em;
+    font-size:15px; color:#fff; flex-shrink:0; }
+  .p1-card-title { font-size:.68rem; font-weight:900; letter-spacing:.15em;
     text-transform:uppercase; color:#C96A1F; }
-  .p1-card-body { padding:20px 22px; }
-  .mantra-devanagari { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1.25rem; line-height:1.9; color:#2A1A08; margin-bottom:10px;
-    padding:16px; background:#FBF7F0; border-radius:10px;
+  .p1-card-body { padding:18px 20px; }
+  .p1-mantra-deva { font-family:'Tiro Devanagari Hindi',serif;
+    font-size:1.18rem; line-height:2; color:#2A1A08; margin-bottom:10px;
+    padding:14px 16px; background:#FBF7F0; border-radius:10px;
     border-left:3px solid #C96A1F; }
-  .mantra-roman { font-size:.85rem; color:#5C3D20; font-style:italic;
+  .p1-mantra-roman { font-size:.83rem; color:#5C3D20; font-style:italic;
     margin-bottom:8px; line-height:1.7; }
-  .mantra-meaning { font-size:.85rem; color:#8C6A45; line-height:1.7;
+  .p1-mantra-meaning { font-size:.83rem; color:#8C6A45; line-height:1.7;
     padding:10px 14px; background:#F5F0E8; border-radius:8px; margin-bottom:12px; }
-  .chanting-guide { font-size:.82rem; color:#5C3D20; line-height:1.6;
+  .p1-chant { font-size:.8rem; color:#5C3D20; line-height:1.6;
     padding:10px 14px; border:1px dashed #D9CDBA; border-radius:8px; }
-  .bhajan-preview { font-family:'Tiro Devanagari Hindi',serif;
-    font-size:1rem; line-height:2; color:#2A1A08;
+  .p1-bhajan-preview { font-family:'Tiro Devanagari Hindi',serif;
+    font-size:1rem; line-height:2.1; color:#2A1A08;
     padding:14px 16px; background:#FBF7F0; border-radius:10px; margin-bottom:14px; }
-  .bhajan-link { display:inline-flex; align-items:center; gap:8px;
+  .p1-bhajan-btn { display:inline-flex; align-items:center; gap:8px;
     background:linear-gradient(135deg,#C96A1F,#6E1515); color:#fff;
     text-decoration:none; padding:11px 22px; border-radius:30px;
     font-size:.82rem; font-weight:900; letter-spacing:.06em;
     transition:transform .2s; }
-  .bhajan-link:hover { transform:translateY(-1px); }
-  .article-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 22px; background:#F5F0E8; border-radius:10px;
-    text-decoration:none; transition:background .2s; flex-wrap:wrap; gap:12px; }
-  .article-cta:hover { background:#EDE6D8; }
-  .article-cta-label { font-size:.7rem; font-weight:900; letter-spacing:.14em;
+  .p1-bhajan-btn:hover { transform:translateY(-1px); }
+  .p1-article-cta { display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; background:#F5F0E8; border-radius:10px;
+    text-decoration:none; transition:background .2s; flex-wrap:wrap; gap:10px; }
+  .p1-article-cta:hover { background:#EDE6D8; }
+  .p1-article-label { font-size:.68rem; font-weight:900; letter-spacing:.14em;
     text-transform:uppercase; color:#C96A1F; margin-bottom:3px; }
-  .article-cta-title { font-size:.92rem; font-weight:700; color:#2A1A08; }
-  .article-cta-arrow { font-size:1.3rem; color:#C96A1F; flex-shrink:0; }
-  .kundali-cta { display:flex; align-items:center; justify-content:space-between;
-    padding:16px 22px; background:linear-gradient(135deg,#6E1515,#C96A1F);
-    border-radius:10px; text-decoration:none; gap:12px; flex-wrap:wrap; }
-  .kundali-cta-text { color:#fff; font-size:.88rem; font-weight:700; }
-  .kundali-cta-btn { background:#fff; color:#6E1515; font-size:.75rem;
-    font-weight:900; padding:8px 18px; border-radius:20px;
+  .p1-article-title { font-size:.9rem; font-weight:700; color:#2A1A08; }
+  .p1-article-arrow { font-size:1.2rem; color:#C96A1F; flex-shrink:0; }
+  .p1-kundali-cta { display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; background:linear-gradient(135deg,#6E1515,#C96A1F);
+    border-radius:10px; text-decoration:none; gap:10px; flex-wrap:wrap; }
+  .p1-kundali-text { color:#fff; font-size:.86rem; font-weight:700; }
+  .p1-kundali-btn { background:#fff; color:#6E1515; font-size:.75rem;
+    font-weight:900; padding:8px 16px; border-radius:20px;
     text-decoration:none; white-space:nowrap; flex-shrink:0; }
-  .faq-item { border-bottom:1px solid #EDE6D8; padding:16px 0; }
-  .faq-item:last-child { border-bottom:none; }
-  .faq-q { font-size:.9rem; font-weight:700; color:#2A1A08; margin-bottom:8px;
-    cursor:pointer; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-  .faq-q::after { content:'+'; color:#C96A1F; font-size:1.2rem; flex-shrink:0; }
-  .faq-a { font-size:.85rem; color:#5C3D20; line-height:1.75; }
+  .p1-faq-item { border-bottom:1px solid #EDE6D8; padding:14px 0; }
+  .p1-faq-item:last-child { border-bottom:none; }
+  .p1-faq-q { font-size:.88rem; font-weight:700; color:#2A1A08; margin-bottom:7px;
+    display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .p1-faq-q::after { content:'+'; color:#C96A1F; font-size:1.1rem; flex-shrink:0; }
+  .p1-faq-a { font-size:.83rem; color:#5C3D20; line-height:1.75; }
 </style>
 </head>
 <body>
@@ -571,100 +573,90 @@
     </a>
     <div class="cta-sub">
       Explore all planetary combinations at <a href="https://bhajan.ournakshatra.com/remedy/" target="_blank">bhajan.ournakshatra.com/remedy/</a>
-    </div>
-  </div>
 
 
+<div class="p1-wrap">
 
-    <div class="p1-card-body">
-      <div class="mantra-devanagari">नीलाञ्जनसमाभासं रविपुत्रं यमाग्रजम्।<br>छायामार्तण्डसम्भूतं तं नमामि शनैश्चरम्।।</div>
-      <div class="mantra-roman">Nilanjana samabhasam raviputram yamagrajam,<br>Chhayamartandasambhutam tam namami shanaiswcharam.</div>
-      <div class="mantra-meaning">I bow to Shani (Saturn), dark as blue collyrium, son of the Sun, elder brother of Yama, born of Chhaya — the slow-moving one who teaches through patience and perseverance.</div>
-      <div class="chanting-guide">🕐 <strong>How to chant:</strong> Recite 108 times on Saturdays. Offer sesame seeds (til) and mustard oil lamp to Lord Shani. Acts of service and feeding the poor are also traditionally recommended.</div>
-    </div>
-  </div>
-</div>
-
-    <div class="p1-card-body">
-      <div class="bhajan-preview">ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।<br>भक्त जनों के संकट, क्षण में दूर करे।।</div>
-      <a href="/bhajan/om-jai-jagdish-hare/" class="bhajan-link">
-        Read Full Om Jai Jagdish Hare →
-      </a>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="p1-card-body">
-    <div class="faq-item">
-      <div class="faq-q">What is Sade Sati?</div>
-      <div class="faq-a">Sade Sati is a roughly 7.5-year period when Saturn transits through the sign before, the same sign as, and the sign after your natal Moon sign. It tends to bring tests of patience, restructuring, and gradual growth.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Is Sade Sati always difficult?</div>
-      <div class="faq-a">Not always. Many people report career growth, spiritual maturity, and clarity during Sade Sati. The experience depends on Saturn's natal strength and the houses it transits.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How many phases does Sade Sati have?</div>
-      <div class="faq-a">Three phases — Rising (Saturn enters the sign before Moon), Peak (Saturn conjuncts natal Moon), and Setting (Saturn moves past Moon sign). Each phase tends to affect different life domains.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What is the mantra for Sade Sati?</div>
-      <div class="faq-a">The Shani Vandana above is traditional and widely practised. Dasharatha Shani Stotra is another classical text associated with Saturn propitiation.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Does Sade Sati repeat?</div>
-      <div class="faq-a">Yes — approximately every 29.5 years, since Saturn takes that long to complete one orbit. Most people experience it two to three times in a lifetime.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What is the best remedy for Sade Sati?</div>
-      <div class="faq-a">Consistent Saturday discipline — early rising, acts of service, avoiding harm to others — tends to be more effective than one-off rituals. Saturn responds to sustained effort.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Can a strong Saturn actually help during Sade Sati?</div>
-      <div class="faq-a">Often yes. Individuals with Saturn well-placed natally may find Sade Sati brings discipline and long-term gains rather than disruption.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Should I be afraid of Sade Sati?</div>
-      <div class="faq-a">Fear is not warranted. Saturn's energy in Vedic tradition represents karma, not punishment — it tends to align your life more closely with your actual dharma, which may feel uncomfortable but is rarely arbitrary.</div>
-    </div>
-    </div>
-  </div>
-</div>
-<div class="p1-section">
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">ॐ</div>
       <div class="p1-card-title">Primary Mantra — Shani Vandana</div>
     </div>
-<div class="p1-section">
+    <div class="p1-card-body">
+      <div class="p1-mantra-deva">नीलाञ्जनसमाभासं रविपुत्रं यमाग्रजम्।<br>छायामार्तण्डसम्भूतं तं नमामि शनैश्चरम्।।</div>
+      <div class="p1-mantra-roman">Nilanjana samabhasam raviputram yamagrajam,<br>Chhayamartandasambhutam tam namami shanaiswcharam.</div>
+      <div class="p1-mantra-meaning">I bow to Shani (Saturn), dark as blue collyrium, son of the Sun, elder brother of Yama, born of Chhaya — the slow-moving one who teaches through patience and perseverance.</div>
+      <div class="p1-chant">🕐 <strong>How to chant:</strong> Recite 108 times on Saturdays. Offer sesame seeds (til) and mustard oil lamp to Lord Shani. Acts of service and feeding the poor are also traditionally recommended.</div>
+    </div>
+  </div>
+
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">♪</div>
       <div class="p1-card-title">Recommended Bhajan — Om Jai Jagdish Hare</div>
     </div>
-<div class="p1-section">
-  <a href="https://ournakshatra.com/articles/what-is-sade-sati" class="article-cta" target="_blank" rel="noopener">
-    <div>
-      <div class="article-cta-label">Read: In-Depth Article</div>
-      <div class="article-cta-title">What is Sade Sati?</div>
+    <div class="p1-card-body">
+      <div class="p1-bhajan-preview">ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।<br>भक्त जनों के संकट, क्षण में दूर करे।।</div>
+      <a href="/bhajan/om-jai-jagdish-hare/" class="p1-bhajan-btn">Read Full Om Jai Jagdish Hare →</a>
     </div>
-    <div class="article-cta-arrow">→</div>
+  </div>
+
+  <a href="https://ournakshatra.com/articles/what-is-sade-sati" class="p1-article-cta" target="_blank" rel="noopener">
+    <div>
+      <div class="p1-article-label">Read: In-Depth Article</div>
+      <div class="p1-article-title">What is Sade Sati?</div>
+    </div>
+    <div class="p1-article-arrow">→</div>
   </a>
-</div>
-<div class="p1-section">
-  <a href="https://ournakshatra.com/transits" class="kundali-cta" target="_blank" rel="noopener">
-    <div class="kundali-cta-text">Check your current Sade Sati phase</div>
-    <span class="kundali-cta-btn">Open Free Kundali →</span>
+
+  <a href="https://ournakshatra.com/transits" class="p1-kundali-cta" target="_blank" rel="noopener">
+    <div class="p1-kundali-text">Check your current Sade Sati phase</div>
+    <span class="p1-kundali-btn">Open Free Kundali →</span>
   </a>
-</div>
-<div class="p1-section">
+
   <div class="p1-card">
     <div class="p1-card-header">
       <div class="p1-card-icon">?</div>
       <div class="p1-card-title">Frequently Asked Questions</div>
     </div>
+    <div class="p1-card-body">
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What is Sade Sati?</div>
+        <div class="p1-faq-a">Sade Sati is a roughly 7.5-year period when Saturn transits through the sign before, the same sign as, and the sign after your natal Moon sign. It tends to bring tests of patience, restructuring, and gradual growth.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Is Sade Sati always difficult?</div>
+        <div class="p1-faq-a">Not always. Many people report career growth, spiritual maturity, and clarity during Sade Sati. The experience depends on Saturn's natal strength and the houses it transits.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">How many phases does Sade Sati have?</div>
+        <div class="p1-faq-a">Three phases — Rising (Saturn enters the sign before Moon), Peak (Saturn conjuncts natal Moon), and Setting (Saturn moves past Moon sign). Each phase tends to affect different life domains.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What is the mantra for Sade Sati?</div>
+        <div class="p1-faq-a">The Shani Vandana above is traditional and widely practised. Dasharatha Shani Stotra is another classical text associated with Saturn propitiation.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Does Sade Sati repeat?</div>
+        <div class="p1-faq-a">Yes — approximately every 29.5 years, since Saturn takes that long to complete one orbit. Most people experience it two to three times in a lifetime.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">What is the best remedy for Sade Sati?</div>
+        <div class="p1-faq-a">Consistent Saturday discipline — early rising, acts of service, avoiding harm to others — tends to be more effective than one-off rituals. Saturn responds to sustained effort.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Can a strong Saturn actually help during Sade Sati?</div>
+        <div class="p1-faq-a">Often yes. Individuals with Saturn well-placed natally may find Sade Sati brings discipline and long-term gains rather than disruption.</div>
+      </div>
+      <div class="p1-faq-item">
+        <div class="p1-faq-q">Should I be afraid of Sade Sati?</div>
+        <div class="p1-faq-a">Fear is not warranted. Saturn's energy in Vedic tradition represents karma, not punishment — it tends to align your life more closely with your actual dharma, which may feel uncomfortable but is rarely arbitrary.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 </main>
 
 <footer>
