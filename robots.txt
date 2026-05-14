@@ -3,5 +3,6 @@ Allow: /
 
 # Standard crawl controls
 Disallow: /templates/
+Disallow: /programmatic/
 
 Sitemap: https://bhajan.ournakshatra.com/sitemap.xml
