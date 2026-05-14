@@ -117,7 +117,20 @@
   @media (max-width: 640px) { .hub-nav-pill { display: none; } .hub-logo-text em { display: none; } }
   @media (max-width: 320px) { .hub-logo-text { display: none; } }
 </style>
-</meta></head>
+</meta>
+  <link rel="manifest" href="/manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(reg => {
+          console.log('[SW] Registered: ', reg.scope);
+        }).catch(err => {
+          console.log('[SW] Registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</head>
 <body>
 <header class="main-header" id="siteHeader">
 <div class="hub-header-inner">

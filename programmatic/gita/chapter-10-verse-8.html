@@ -13,6 +13,19 @@
     .meta { color: #5b5672; font-size: .95rem; margin-bottom: 18px; }
     .card { border: 1px solid #e6e3f1; border-radius: 12px; padding: 16px; background: #faf9ff; }
   </style>
+
+  <link rel="manifest" href="/manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(reg => {
+          console.log('[SW] Registered: ', reg.scope);
+        }).catch(err => {
+          console.log('[SW] Registration failed: ', err);
+        });
+      });
+    }
+  </script>
 </head>
 <body>
   <h1>Bhagavad Gita 10.8</h1>
