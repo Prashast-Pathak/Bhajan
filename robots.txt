@@ -1,20 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /scripts/
-Disallow: /data/
-Disallow: /*.py$
 
-# Explicitly allow AI bots to read our LLM manifest
-User-agent: GPTBot
-Allow: /llms.txt
-Allow: /ai.txt
-
-User-agent: ClaudeBot
-Allow: /llms.txt
-Allow: /ai.txt
-
-User-agent: anthropic-ai
-Allow: /llms.txt
-Allow: /ai.txt
+# Standard crawl controls
+Disallow: /templates/
 
 Sitemap: https://bhajan.ournakshatra.com/sitemap.xml

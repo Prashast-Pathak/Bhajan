@@ -10,7 +10,7 @@ ROMAN_BEEJ_RE = re.compile(
     r"\b(phat|kshroum|ayeim)\b",
     flags=re.IGNORECASE,
 )
-DEVANAGARI_BEEJ_RE = re.compile(r"(ऐं|फट्|क्ष्रौं)")
+DEVANAGARI_BEEJ_RE = re.compile(r"(?:^|[\s,.\\\"'\[\]()।॥\-])(ऐं|फट्|क्ष्रौं)(?:[\s,.\\\"'\[\]()।॥\-]|$)")
 
 
 def load(path):

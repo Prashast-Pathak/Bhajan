@@ -83,6 +83,19 @@ def programmatic_urls(base: str):
         urls.append(to_url(base, rel))
     return sorted(set(urls))
 
+def remedy_urls(base: str):
+    remedy_root = ROOT / "remedy"
+    if not remedy_root.exists():
+        return []
+    urls = []
+    for file in remedy_root.rglob("*.html"):
+        # For folders like remedy/sasa-yoga/index.html, output /remedy/sasa-yoga/
+        rel = "/" + str(file.relative_to(ROOT)).replace("\\", "/")
+        if rel.endswith("/index.html"):
+            rel = rel[:-10]
+        urls.append(to_url(base, rel))
+    return sorted(set(urls))
+
 
 def write_sitemap(base: str):
     static_paths = [
@@ -100,7 +113,7 @@ def write_sitemap(base: str):
         "/terms.html",
         "/disclaimer.html",
     ]
-    urls = [to_url(base, p) for p in static_paths] + dynamic_urls(base)
+    urls = [to_url(base, p) for p in static_paths] + dynamic_urls(base) + programmatic_urls(base) + remedy_urls(base)
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
