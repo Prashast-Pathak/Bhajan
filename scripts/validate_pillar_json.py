@@ -7,10 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
 ROMAN_BEEJ_RE = re.compile(
-    r"\b(hreem|shreem|kleem|phat|hroum|kshroum|ayeim)\b",
+    r"\b(phat|kshroum|ayeim)\b",
     flags=re.IGNORECASE,
 )
-DEVANAGARI_BEEJ_RE = re.compile(r"(ह्रीं|श्रीं|क्लीं|ऐं|फट्|फट)")
+DEVANAGARI_BEEJ_RE = re.compile(r"(ऐं|फट्|क्ष्रौं)")
 
 
 def load(path):

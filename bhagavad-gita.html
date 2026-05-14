@@ -1156,29 +1156,7 @@ function renderChapterPage(ch) {
 </div>
 </div>
 
-<!-- ─── DISCOVER YOUR COSMIC PATH (JYOTISH FUNNEL) ─── -->
-<div class="card mb-6 no-print mt-8" style="background:linear-gradient(135deg, rgba(201,106,31,0.08) 0%, rgba(201,168,76,0.08) 100%); border: 1px solid rgba(201,168,76,0.3); text-align:center;">
-  <h3 style="font-size:20px; color:var(--saffron); font-weight:800; margin-bottom:10px;">✨ Discover Your Cosmic Path</h3>
-  <p style="color:var(--text-sec); margin-bottom:18px; font-size:15px; max-width:550px; margin-left:auto; margin-right:auto; line-height:1.6;">
-    The Bhagavad Gita reveals the eternal truth. Now, decode your own karmic journey. Generate your free Vedic Birth Chart and explore your Janma Kundali at NAKSHATRA.
-  </p>
-  <a href="https://ournakshatra.com/" target="_blank" class="toggle-btn" 
-     style="text-decoration:none; display:inline-flex; padding:0 28px; background:linear-gradient(135deg, #C9A84C 0%, #C96A1F 100%); color:white; border:none; font-weight:700; box-shadow:0 4px 14px rgba(201,106,31,0.35);">
-    Get Your Free Birth Chart →
-  </a>
-</div>
 
-<!-- ─── ALL CHAPTERS ─── -->
-<div class="card mb-6 no-print mt-6" style="background:var(--surface);">
-  <h3 style="font-size:18px; color:var(--krishna); font-weight:700; margin-bottom:16px;">📚 Read Other Chapters</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-    ${gitaData.chapters.map(c => 
-      `<a href="/bhagavad-gita.html?chapter=${c.chapter}" style="text-decoration:none; display:block; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:8px; transition:0.2s; color:var(--text); font-size:14px; font-weight:600;">
-         Chapter ${c.chapter}: ${c.title_english.split('—')[0].trim()}
-       </a>`
-    ).join('')}
-  </div>
-</div>
 
 `;
 
