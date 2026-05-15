@@ -1041,23 +1041,27 @@ ${wordRows ? `
   <p style="font-size:17px;line-height:1.8;color:var(--text);font-style:italic;">"${v.english_translation}"</p>
 </div>
 
+${v.purport_hindi ? `
 <!-- ─── HINDI COMMENTARY ─── -->
 <div class="card mb-5">
   <div class="section-heading">📖 Hindi Commentary — हिंदी व्याख्या</div>
-  <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text-sec);">${v.hindi_commentary}</p>
-</div>
+  <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text-sec);">${v.purport_hindi}</p>
+</div>` : ''}
 
+${v.purport_english ? `
 <!-- ─── ENGLISH COMMENTARY ─── -->
 <div class="card mb-5">
   <div class="section-heading">📝 English Commentary</div>
-  <p style="font-size:16px;line-height:1.85;color:var(--text-sec);">${v.english_commentary}</p>
-</div>
+  <p style="font-size:16px;line-height:1.85;color:var(--text-sec);">${v.purport_english}</p>
+</div>` : ''}
 
+${(v.practical_application_english || v.practical_application_hindi) ? `
 <!-- ─── LIFE APPLICATION ─── -->
 <div class="card mb-5" style="background:rgba(201,106,31,0.06);border-color:var(--saffron);">
   <div class="section-heading" style="color:var(--saffron);">🌟 Life Application — जीवन में उपयोग</div>
-  <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text);">${v.life_application}</p>
-</div>
+  ${v.practical_application_english ? `<p style="font-size:16px;line-height:1.85;color:var(--text);">${v.practical_application_english}</p>` : ''}
+  ${v.practical_application_hindi ? `<p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text);margin-top:8px;">${v.practical_application_hindi}</p>` : ''}
+</div>` : ''}
 
 <!-- ─── TOPICS ─── -->
 ${topicChips ? `
