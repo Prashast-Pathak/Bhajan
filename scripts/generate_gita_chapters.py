@@ -7,61 +7,45 @@ DATA = ROOT / 'data' / 'gita.json'
 OUT = ROOT / 'gita'
 
 def safe(v):
-    return html.escape(str(v or ""))
+    if v is None: return ""
+    # We want to keep <br> tags if they exist or replace newlines, but html.escape escapes them.
+    # So we'll escape first, then replace newlines with <br>
+    return html.escape(str(v)).replace('&#x27;', "'").replace('&quot;', '"')
 
-def generate_chapter_pages():
+def generate():
     with open(DATA, 'r', encoding='utf-8') as f:
         data = json.load(f)
         
     OUT.mkdir(exist_ok=True)
     
+    # Extract CSS and JS template (Simplified version of bhagavad-gita.html)
     for ch in data.get('chapters', []):
         ch_num = ch['chapter']
         slug = f"chapter-{ch_num}"
         ch_dir = OUT / slug
         ch_dir.mkdir(exist_ok=True)
         
-        verses_html = ""
-        for v in ch.get('verses', []):
+        # Serialize only this chapter's data to inject into JS for instant modal loading
+        ch_json = json.dumps(ch, ensure_ascii=False)
+        
+        # Build the verse list for the main page
+        verse_list_html = ""
+        for v in sorted(ch.get('verses', []), key=lambda x: x['verse']):
             v_num = v['verse']
-            sanskrit = safe(v.get('sanskrit', '')).replace('\\n', '<br>')
-            sanskrit_snippet = safe(v.get('sanskrit', '')).split('\\n')[0][:40] + "..." if v.get('sanskrit') else ""
-            roman = safe(v.get('roman', '')).replace('\\n', '<br>')
-            hindi = safe(v.get('hindi_translation', ''))
-            english = safe(v.get('english_translation', ''))
+            sanskrit_first_line = v.get('sanskrit', '').split('\n')[0].replace('\r', '')
+            english_snippet = v.get('english_translation', '')[:100] + '...'
+            famous_html = '<span style="font-size:11px;color:var(--gold);">⭐ Famous</span>' if v.get('famous') else ''
             
-            verses_html += f"""
-            <details id="verse-{v_num}" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
-                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
-                    <span style="display: flex; align-items: center; gap: 12px;">
-                        <span class="gita-badge">Verse {v_num}</span>
-                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">{sanskrit_snippet}</span>
-                    </span>
-                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
-                </summary>
-                
-                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
-                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
-                        <button class="toggle-btn" onclick="copyVerseLink({ch_num}, {v_num}); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                    </div>
-                    
-                    <div class="verse-devanagari" style="margin-bottom: 16px;">
-                        {sanskrit}
-                    </div>
-                    
-                    <div class="verse-roman" style="margin-bottom: 20px;">
-                        {roman}
-                    </div>
-                    
-                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                        <strong style="color:var(--saffron);">Hindi:</strong> {hindi}
-                    </div>
-                    
-                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                        <strong style="color:var(--krishna);">English:</strong> {english}
-                    </div>
-                </div>
-            </details>
+            verse_list_html += f"""
+            <a href="#verse-{v_num}" onclick="openVerseModal({v_num}); event.preventDefault();"
+               class="card card-hover {'famous-verse' if v.get('famous') else ''}" style="text-decoration:none;display:block;">
+              <div class="flex items-center justify-between mb-2">
+                <span class="chapter-badge">Verse {v_num}</span>
+                {famous_html}
+              </div>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">{sanskrit_first_line}</p>
+              <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">{english_snippet}</p>
+            </a>
             """
             
         page_html = f"""<!DOCTYPE html>
@@ -71,216 +55,289 @@ def generate_chapter_pages():
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Read all verses of Bhagavad Gita Chapter {ch_num}: {safe(ch.get('title_english', ''))}. Complete Sanskrit slokas, Hindi meaning, and English translation.">
+  <meta name="description" content="Read all verses of Bhagavad Gita Chapter {ch_num}: {safe(ch.get('title_english', ''))}.">
   
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <style>
     :root {{
-      --bg: #F5F0E8;
-      --surface: #EDE6D8;
-      --surface2: #E6DDD0;
-      --saffron: #C96A1F;
-      --maroon: #6E1515;
-      --gold: #A8832A;
-      --text: #2A1A08;
-      --text-sec: #5C3D20;
-      --text-muted: #8C6A45;
-      --border: #D9CDBA;
-      --krishna: #7C3AED;
+      --bg: #F5F0E8; --surface: #EDE6D8; --surface2: #E6DDD0;
+      --saffron: #C96A1F; --maroon: #6E1515; --gold: #A8832A;
+      --text: #2A1A08; --text-sec: #5C3D20; --text-muted: #8C6A45;
+      --border: #D9CDBA; --krishna: #7C3AED;
     }}
+    body.dark-mode {{ --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }}
+    
     * {{ box-sizing: border-box; }}
-    body {{
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }}
-    .container {{
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 16px 80px;
-    }}
+    body {{ background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; padding: 0; }}
+    
     .devanagari {{ font-family: 'Tiro Devanagari Hindi', serif; }}
+    body.fs-small  .verse-devanagari {{ font-size: 18px !important; }}
+    body.fs-normal .verse-devanagari {{ font-size: 22px !important; }}
+    body.fs-large  .verse-devanagari {{ font-size: 26px !important; }}
+    body.fs-xlarge .verse-devanagari {{ font-size: 30px !important; }}
     
-    .card {{
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-    }}
+    body.script-roman    .devanagari-only  {{ display: none !important; }}
+    body.script-devanagari .roman-only     {{ display: none !important; }}
     
-    /* Accordion styles */
-    details > summary::-webkit-details-marker {{ display: none; }}
-    details[open] .expand-icon {{ transform: rotate(180deg); }}
-    .expand-icon {{ transition: transform 0.3s ease; }}
-    details[open] {{ box-shadow: 0 4px 12px rgba(201,106,31,0.08); border-color: rgba(201,106,31,0.4); }}
+    .verse-devanagari {{ font-family: 'Tiro Devanagari Hindi', serif; font-size: 22px; line-height: 1.8; color: var(--text); }}
+    .verse-roman {{ font-size: 16px; font-style: italic; color: var(--text-sec); line-height: 1.7; }}
     
-    .verse-devanagari {{
-      font-family: 'Tiro Devanagari Hindi', serif;
-      font-size: 22px;
-      line-height: 1.8;
-      color: var(--text);
-    }}
-    .verse-roman {{
-      font-size: 16px;
-      font-style: italic;
-      color: var(--text-sec);
-      line-height: 1.7;
-    }}
-    .gita-badge {{
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: rgba(124, 58, 237, 0.10);
-      border: 1px solid rgba(124, 58, 237, 0.4);
-      color: #5b21b6;
-      border-radius: 99px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-    }}
+    .card {{ background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }}
+    .card-hover {{ transition: border-color 0.15s, box-shadow 0.15s; }}
+    .card-hover:hover {{ border-color: var(--saffron); box-shadow: 0 2px 8px rgba(201,106,31,0.12); }}
     
-    header {{
-      text-align: center;
-      margin-bottom: 40px;
-    }}
-    h1 {{
-      font-size: 28px;
-      color: var(--maroon);
-      margin-bottom: 8px;
-    }}
-    h2 {{
-      font-size: 18px;
-      color: var(--text-sec);
-      font-weight: 600;
-      margin-top: 0;
-    }}
-    .summary {{
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      margin-bottom: 40px;
-      color: var(--text-sec);
-      font-size: 15px;
-    }}
+    .gita-badge {{ display: inline-flex; align-items: center; gap: 5px; background: rgba(124, 58, 237, 0.10); border: 1px solid rgba(124, 58, 237, 0.4); color: #5b21b6; border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }}
+    .chapter-badge {{ background: rgba(168, 131, 42, 0.12); border: 1px solid rgba(168, 131, 42, 0.45); color: var(--gold); border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }}
+    .topic-chip {{ display: inline-block; background: rgba(201, 106, 31, 0.1); border: 1px solid rgba(201, 106, 31, 0.3); color: var(--saffron); border-radius: 99px; font-size: 11px; font-weight: 600; padding: 3px 10px; margin-right:4px; }}
     
-    #toast {{
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%) translateY(100px);
-      background: #333;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 99px;
-      font-weight: 600;
-      opacity: 0;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }}
-    #toast.show {{
-      transform: translateX(-50%) translateY(0);
-      opacity: 1;
-    }}
-    .nav-buttons {{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 40px;
-    }}
-    .nav-btn {{
-      padding: 12px 24px;
-      background: var(--surface2);
-      color: var(--text);
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      border: 1px solid var(--border);
-      transition: background 0.2s;
-    }}
-    .nav-btn:hover {{
-      background: var(--surface);
-    }}
+    .toggle-btn {{ min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-sec); font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 14px; transition: all 0.15s; }}
+    .toggle-btn.active {{ background: var(--saffron); color: white; border-color: var(--saffron); }}
+    .toggle-btn:hover:not(.active) {{ border-color: var(--saffron); color: var(--saffron); }}
+    
+    .section-heading {{ font-size: 16px; font-weight: 700; color: var(--maroon); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }}
+    
+    .word-table th {{ background: var(--surface2); color: var(--text-sec); font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 8px 12px; text-align: left; }}
+    .word-table td {{ padding: 8px 12px; border-top: 1px solid var(--border); font-size: 14px; vertical-align: top; }}
+    
+    .action-bar {{ position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: 1px solid var(--border); padding: 10px 16px; z-index: 3500; display:flex; gap:8px; justify-content:center; }}
+    .action-btn {{ flex: 1; max-width: 120px; min-height: 44px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: 2px solid transparent; display: flex; align-items: center; justify-content: center; gap: 5px; background:var(--surface2); color:var(--text); }}
+    .btn-whatsapp {{ background: #25D366; color: white; }}
+    
+    .verse-nav-btn {{ min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text-sec); font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none; padding: 0 16px; }}
+    .verse-nav-btn.disabled {{ opacity: 0.4; pointer-events: none; }}
+    
+    #toast {{ position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--text); color: white; padding: 10px 20px; border-radius: 99px; font-size: 13px; font-weight: 600; z-index: 4000; opacity: 0; transition: all 0.3s; pointer-events: none; }}
+    #toast.show {{ opacity: 1; transform: translateX(-50%) translateY(0); }}
+    
+    /* MODAL STYLES */
+    #verse-modal {{ position: fixed; inset: 0; background: var(--bg); z-index: 3000; overflow-y: auto; display: none; padding-bottom: 80px; }}
+    #verse-modal.active {{ display: block; }}
+    .modal-close {{ position: fixed; top: 16px; right: 16px; background: var(--surface2); border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--text); cursor: pointer; z-index: 3100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }}
   </style>
 </head>
-<body>
+<body class="fs-normal script-both">
 
-  <div class="container">
+  <!-- THE CHAPTER PAGE (Grid of verses) -->
+  <div id="chapter-view" class="max-w-5xl mx-auto px-4 py-6 pb-24">
     <div style="margin-bottom: 20px;">
       <a href="/bhagavad-gita.html" style="color:var(--saffron); text-decoration:none; font-weight:600;">← Back to Gita Hub</a>
     </div>
     
-    <header>
-      <div class="gita-badge" style="margin-bottom: 12px; background: rgba(168, 131, 42, 0.12); color: var(--gold); border-color: rgba(168, 131, 42, 0.45);">Chapter {ch_num}</div>
-      <h1 class="devanagari">{safe(ch.get('title_hindi', ''))}</h1>
-      <h2>{safe(ch.get('title_english', ''))}</h2>
-    </header>
-    
-    <div class="summary">
-      <p style="margin-top:0; margin-bottom:12px;"><strong>Summary:</strong> {safe(ch.get('summary_english', ''))}</p>
-      <p class="devanagari" style="margin:0;"><strong>सारांश:</strong> {safe(ch.get('summary_hindi', ''))}</p>
+    <div class="card mb-5" style="border-left:4px solid var(--krishna);">
+      <h1 class="devanagari" style="font-size:28px;font-weight:700;color:var(--maroon);margin:0 0 4px 0;">{safe(ch.get('title_sanskrit', ''))}</h1>
+      <p style="font-size:18px;color:var(--text-sec);margin:0 0 16px 0;">{safe(ch.get('title_english', ''))}</p>
+      <h2 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">सारांश / Summary</h2>
+      <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text-sec);margin-bottom:12px;">{safe(ch.get('summary_hindi', ''))}</p>
+      <p style="font-size:15px;line-height:1.8;color:var(--text-muted);">{safe(ch.get('summary_english', ''))}</p>
     </div>
-
-    <div style="margin-bottom: 24px; color: var(--text-muted); font-size: 14px; text-align: center;">
-      Click any verse to expand and read translations
-    </div>
-
-    <!-- VERSES -->
-    {verses_html}
     
-    <div class="nav-buttons">
-      {f'<a href="/gita/chapter-{ch_num-1}/" class="nav-btn">← Chapter {ch_num-1}</a>' if ch_num > 1 else '<div></div>'}
-      {f'<a href="/gita/chapter-{ch_num+1}/" class="nav-btn">Chapter {ch_num+1} →</a>' if ch_num < 18 else '<div></div>'}
+    <div class="mb-3" style="color:var(--text-muted);font-size:14px;text-align:center;">
+      Click any verse to read full translation and meaning
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {verse_list_html}
     </div>
   </div>
-  
+
+  <!-- THE POP-UP MODAL (For Individual Verses) -->
+  <div id="verse-modal">
+    <button class="modal-close" onclick="closeVerseModal()">✕</button>
+    <div id="modal-content" class="max-w-3xl mx-auto px-4 py-8"></div>
+    <div class="action-bar" id="action-bar" style="display:none;">
+      <button class="action-btn btn-whatsapp" onclick="shareWhatsApp()">📱 Share</button>
+      <button class="action-btn" onclick="copyVerse()">📋 Copy</button>
+    </div>
+  </div>
+
   <div id="toast"></div>
 
   <script>
+    const CHAPTER_DATA = {ch_json};
+    let currentVerse = null;
+    
+    let scriptPref = localStorage.getItem('sgs_script') || 'both';
+    let fontPref = localStorage.getItem('sgs_font') || 'normal';
+    applyPrefs();
+    
+    function applyPrefs() {{
+      document.body.className = document.body.className.replace(/fs-\w+/, '').trim();
+      document.body.classList.add('fs-' + fontPref);
+      document.body.classList.remove('script-devanagari', 'script-roman', 'script-both');
+      document.body.classList.add('script-' + scriptPref);
+    }}
+    
+    function setScript(pref) {{
+      scriptPref = pref;
+      localStorage.setItem('sgs_script', pref);
+      applyPrefs();
+      document.querySelectorAll('.script-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.querySelector(`.script-btn[data-val="${{pref}}"]`);
+      if(activeBtn) activeBtn.classList.add('active');
+    }}
+    
+    function setFont(pref) {{
+      fontPref = pref;
+      localStorage.setItem('sgs_font', pref);
+      applyPrefs();
+      document.querySelectorAll('.font-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.querySelector(`.font-btn[data-val="${{pref}}"]`);
+      if(activeBtn) activeBtn.classList.add('active');
+    }}
+
+    function openVerseModal(verseNum) {{
+      const v = CHAPTER_DATA.verses.find(x => x.verse == verseNum);
+      if(!v) return;
+      currentVerse = v;
+      
+      const sorted = [...CHAPTER_DATA.verses].sort((a,b)=>a.verse-b.verse);
+      const idx = sorted.findIndex(x => x.verse == verseNum);
+      const prevV = idx > 0 ? sorted[idx-1] : null;
+      const nextV = idx < sorted.length-1 ? sorted[idx+1] : null;
+      
+      const wordRows = (v.word_meanings || []).map(w => `
+        <tr>
+          <td class="devanagari" style="font-size:18px;font-weight:600;color:var(--krishna);">${{w.word}}</td>
+          <td class="devanagari" style="color:var(--text-sec);font-size:16px;">${{w.meaning_hindi || ''}}</td>
+          <td style="color:var(--text-muted);font-style:italic;">${{w.meaning_english || ''}}</td>
+        </tr>`).join('');
+        
+      const html = `
+        <nav class="breadcrumb text-sm mb-5" style="color:var(--text-muted);">
+          <a href="/bhagavad-gita.html" style="color:var(--saffron);">Gita</a> &rsaquo;
+          <a href="#" onclick="closeVerseModal();return false;" style="color:var(--saffron);">Chapter ${{CHAPTER_DATA.chapter}}</a> &rsaquo;
+          <span>Verse ${{v.verse}}</span>
+        </nav>
+        
+        <div class="flex items-center justify-between mb-5">
+          <button onclick="${{prevV ? `openVerseModal(${{prevV.verse}})` : 'return false'}}" class="verse-nav-btn ${{!prevV ? 'disabled' : ''}}">← Prev</button>
+          <span style="color:var(--text-muted);font-size:12px;">Chapter ${{CHAPTER_DATA.chapter}} of 18</span>
+          <button onclick="${{nextV ? `openVerseModal(${{nextV.verse}})` : 'return false'}}" class="verse-nav-btn ${{!nextV ? 'disabled' : ''}}">Next →</button>
+        </div>
+        
+        <div class="flex flex-wrap gap-2 mb-5">
+          <div class="flex gap-1">
+            <button class="toggle-btn script-btn ${{scriptPref==='both'?'active':''}}" data-val="both" onclick="setScript('both')">हिंदी+Roman</button>
+            <button class="toggle-btn script-btn ${{scriptPref==='devanagari'?'active':''}}" data-val="devanagari" onclick="setScript('devanagari')">हिंदी</button>
+            <button class="toggle-btn script-btn ${{scriptPref==='roman'?'active':''}}" data-val="roman" onclick="setScript('roman')">Roman</button>
+          </div>
+          <div class="flex gap-1">
+            <button class="toggle-btn font-btn ${{fontPref==='small'?'active':''}}" data-val="small" onclick="setFont('small')">A-</button>
+            <button class="toggle-btn font-btn ${{fontPref==='normal'?'active':''}}" data-val="normal" onclick="setFont('normal')">A</button>
+            <button class="toggle-btn font-btn ${{fontPref==='large'?'active':''}}" data-val="large" onclick="setFont('large')">A+</button>
+          </div>
+        </div>
+
+        <div class="card mb-5" style="border-left:4px solid var(--krishna);">
+          <div class="section-heading">🕉️ Sanskrit Original — संस्कृत</div>
+          <p class="verse-devanagari devanagari-only mb-3" style="white-space:pre-line;">${{v.sanskrit.replace(/\\n/g, '<br>')}}</p>
+          <p class="verse-roman roman-only" style="white-space:pre-line;">${{(v.roman||'').replace(/\\n/g, '<br>')}}</p>
+        </div>
+        
+        ${{wordRows ? `
+        <div class="card mb-5">
+          <div class="section-heading">📚 Word by Word — शब्द-अर्थ</div>
+          <div style="overflow-x:auto;">
+            <table class="word-table w-full" style="border-collapse:collapse;">
+              <thead><tr><th>Sanskrit</th><th>Hindi</th><th>English</th></tr></thead>
+              <tbody>${{wordRows}}</tbody>
+            </table>
+          </div>
+        </div>` : ''}}
+        
+        <div class="card mb-5">
+          <div class="section-heading">🇮🇳 Hindi Translation</div>
+          <p class="devanagari" style="font-size:18px;line-height:1.9;">${{v.hindi_translation}}</p>
+        </div>
+        
+        <div class="card mb-5" style="border-left:3px solid var(--gold);">
+          <div class="section-heading">🌐 English Translation</div>
+          <p style="font-size:17px;line-height:1.8;font-style:italic;">"${{v.english_translation}}"</p>
+        </div>
+        
+        ${{v.hindi_commentary ? `
+        <div class="card mb-5">
+          <div class="section-heading">📖 Hindi Commentary</div>
+          <p class="devanagari" style="font-size:17px;line-height:1.9;">${{v.hindi_commentary}}</p>
+        </div>` : ''}}
+        
+        ${{v.english_commentary ? `
+        <div class="card mb-5">
+          <div class="section-heading">📝 English Commentary</div>
+          <p style="font-size:16px;line-height:1.85;">${{v.english_commentary}}</p>
+        </div>` : ''}}
+      `;
+      
+      document.getElementById('modal-content').innerHTML = html;
+      document.getElementById('verse-modal').classList.add('active');
+      document.getElementById('action-bar').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      
+      // Update URL without reloading
+      history.pushState(null, null, '#verse-' + verseNum);
+      
+      // Scroll modal to top
+      document.getElementById('verse-modal').scrollTo(0, 0);
+    }}
+    
+    function closeVerseModal() {{
+      document.getElementById('verse-modal').classList.remove('active');
+      document.getElementById('action-bar').style.display = 'none';
+      document.body.style.overflow = '';
+      history.pushState(null, null, window.location.pathname);
+    }}
+    
     function showToast(msg) {{
       const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
+      t.textContent = msg; t.classList.add('show');
       setTimeout(() => t.classList.remove('show'), 2500);
     }}
     
-    function copyVerseLink(ch, v) {{
-      const url = window.location.origin + window.location.pathname + '#verse-' + v;
-      navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!'));
+    function copyVerse() {{
+      if(!currentVerse) return;
+      const v = currentVerse;
+      const url = window.location.origin + window.location.pathname + '#verse-' + v.verse;
+      const text = `Bhagavad Gita Chapter ${{CHAPTER_DATA.chapter}}, Verse ${{v.verse}}\\n\\n${{v.hindi_translation}}\\n\\n${{url}}`;
+      navigator.clipboard.writeText(text).then(() => showToast('📋 Copied to clipboard!'));
     }}
     
-    // Auto-scroll logic and expand accordion if opened with a hash
+    function shareWhatsApp() {{
+      if(!currentVerse) return;
+      const v = currentVerse;
+      const url = window.location.origin + window.location.pathname + '#verse-' + v.verse;
+      const msg = `🙏 *Bhagavad Gita — Chapter ${{CHAPTER_DATA.chapter}}, Verse ${{v.verse}}*\\n\\n${{v.sanskrit}}\\n\\n*अर्थ:* ${{v.hindi_translation}}\\n\\n👇\\n${{url}}`;
+      window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+    }}
+    
+    // Auto-open modal if URL has hash
     window.addEventListener('load', () => {{
-      if (window.location.hash) {{
-        const el = document.querySelector(window.location.hash);
-        if (el && el.tagName === 'DETAILS') {{
-          el.open = true; // Expand the accordion
-          setTimeout(() => el.scrollIntoView({{ behavior: 'smooth', block: 'start' }}), 100);
-          el.style.borderColor = 'var(--saffron)';
-          el.style.boxShadow = '0 0 0 2px var(--saffron)';
-          setTimeout(() => {{
-            el.style.borderColor = 'var(--border)';
-            el.style.boxShadow = 'none';
-          }}, 2000);
-        }}
+      if (window.location.hash && window.location.hash.startsWith('#verse-')) {{
+        const vNum = parseInt(window.location.hash.replace('#verse-', ''));
+        if (vNum) openVerseModal(vNum);
+      }}
+    }});
+    
+    // Handle browser back button to close modal
+    window.addEventListener('popstate', () => {{
+      if (!window.location.hash.startsWith('#verse-')) {{
+        document.getElementById('verse-modal').classList.remove('active');
+        document.getElementById('action-bar').style.display = 'none';
+        document.body.style.overflow = '';
+      }} else {{
+        const vNum = parseInt(window.location.hash.replace('#verse-', ''));
+        if (vNum) openVerseModal(vNum);
       }}
     }});
   </script>
 </body>
 </html>"""
-
         with open(ch_dir / 'index.html', 'w', encoding='utf-8') as f:
             f.write(page_html)
             
-    print(f"Generated 18 Master Chapter pages in {OUT}")
+    print("Generated 18 Master Chapter pages with Pop-Up Modal UI!")
 
 if __name__ == "__main__":
-    generate_chapter_pages()
+    generate()
