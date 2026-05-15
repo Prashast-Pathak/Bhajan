@@ -930,7 +930,8 @@ function routePage() {
 //  RENDER: VERSE PAGE (MODAL)
 // ═══════════════════════════════════════════
 function openVerseModal(ch, v) {
-  document.getElementById('loading-state').innerHTML = '';
+  const ls = document.getElementById('loading-state');
+  if (ls) ls.style.display = 'none';
   document.getElementById('action-bar').style.display = 'flex';
 
   currentChapter = ch;
@@ -1143,7 +1144,8 @@ function closeVerseModal() {
 //  RENDER: CHAPTER PAGE
 // ═══════════════════════════════════════════
 function renderChapterPage(ch, doScroll = true) {
-  document.getElementById('loading-state').innerHTML = '';
+  const ls = document.getElementById('loading-state');
+  if (ls) ls.style.display = 'none';
   document.getElementById('action-bar').style.display = 'none';
 
   const seoTitle = `Bhagavad Gita Chapter ${ch.chapter}: ${ch.title_english} — Sanskrit, Hindi & English`;
@@ -1241,7 +1243,8 @@ ${ctaBlock}
 //  RENDER: BROWSE PAGE (index)
 // ═══════════════════════════════════════════
 function renderBrowsePage() {
-  document.getElementById('loading-state').innerHTML = '';
+  const ls = document.getElementById('loading-state');
+  if (ls) ls.style.display = 'none';
   document.getElementById('action-bar').style.display = 'none';
 
   updateSEO(
