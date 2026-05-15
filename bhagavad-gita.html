@@ -406,6 +406,23 @@
     }
     @media(max-width:600px) { .nav-dropdown { display: none; } }
 
+    /* ===== MODAL ===== */
+    .modal-backdrop { position: fixed; inset: 0; z-index: 3000; background: rgba(42,26,8,0.65); backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; padding: 16px; overflow-y: auto; }
+    .modal-backdrop.open { display: flex; }
+    .modal { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 780px; margin: auto; animation: modalIn 0.2s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.25); position: relative; }
+    @keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(0.97); } to { opacity: 1; transform: none; } }
+    .modal-header { display: flex; align-items: flex-start; justify-content: flex-start; gap: 12px; padding: 24px 24px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 10; border-radius: 12px 12px 0 0; }
+    .modal-title-en { font-size: 22px; font-weight: 700; color: var(--maroon); line-height:1.2; }
+    .modal-title-hi { font-family: 'Tiro Devanagari Hindi', serif; font-size: 17px; color: var(--text-sec); margin-top: 2px; }
+    .modal-close { background: transparent; border: none; flex-shrink: 0; cursor: pointer; color: var(--text); display: flex; align-items: center; justify-content: center; transition: background 0.2s; padding: 8px; border-radius: 8px; margin-left: -8px; width: auto; height: auto; }
+    .modal-close:hover { background: var(--surface2); color: var(--saffron); }
+    .modal-body { padding: 20px 24px; display: flex; flex-direction: column; gap: 20px; }
+    
+    @media(max-width: 600px) {
+      .modal-backdrop { padding: 0; }
+      .modal { border-radius: 0; min-height: 100vh; display: flex; flex-direction: column; }
+      .modal-header { border-radius: 0; }
+    }
   </style>
   
   <script>
@@ -804,11 +821,26 @@ function toggleMobileMenu() {
      STICKY ACTION BAR
 ══════════════════════════════════════════════ -->
 <div class="action-bar no-print" id="action-bar" style="display:none;">
-  <div class="flex gap-2 max-w-lg mx-auto">
+  <div class="flex gap-2 max-w-lg mx-auto w-full">
     <button class="action-btn btn-whatsapp" onclick="shareWhatsApp()">📱 Share</button>
     <button class="action-btn btn-copy" onclick="copyVerse()">📋 Copy</button>
     <button class="action-btn btn-fav" id="fav-btn" onclick="toggleFavorite()">❤️ Save</button>
-    <button class="action-btn btn-print" onclick="window.print()">🖨️</button>
+  </div>
+</div>
+
+<!-- THE POP-UP MODAL -->
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
+  <div class="modal" id="modalBox">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeVerseModal()" aria-label="Go Back">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </button>
+      <div>
+        <div class="modal-title-en" id="modalTitleEn">Bhagavad Gita</div>
+        <div class="modal-title-hi" id="modalTitleHi">भगवद गीता</div>
+      </div>
+    </div>
+    <div class="modal-body" id="modal-content"></div>
   </div>
 </div>
 
@@ -877,14 +909,17 @@ function routePage() {
     if (!v) { show404(); return; }
     currentChapter = ch;
     currentVerse = v;
-    currentView = 'verse';
-    renderVersePage(ch, v);
+    
+    // Render the chapter in the background
+    renderChapterPage(ch, false); // pass false so we don't scroll
+    // Then pop the modal
+    openVerseModal(ch, v);
   } else if (chapter && !verse) {
     const ch = gitaData.chapters.find(c => c.chapter == chapter);
     if (!ch) { show404(); return; }
     currentChapter = ch;
     currentView = 'chapter';
-    renderChapterPage(ch);
+    renderChapterPage(ch, true);
   } else {
     currentView = 'browse';
     renderBrowsePage();
@@ -892,11 +927,19 @@ function routePage() {
 }
 
 // ═══════════════════════════════════════════
-//  RENDER: VERSE PAGE
+//  RENDER: VERSE PAGE (MODAL)
 // ═══════════════════════════════════════════
-function renderVersePage(ch, v) {
+function openVerseModal(ch, v) {
   document.getElementById('loading-state').innerHTML = '';
-  document.getElementById('action-bar').style.display = '';
+  document.getElementById('action-bar').style.display = 'flex';
+
+  currentChapter = ch;
+  currentVerse = v;
+  currentView = 'verse';
+
+  // Set modal headers
+  document.getElementById('modalTitleEn').textContent = `Chapter ${ch.chapter} Verse ${v.verse}`;
+  document.getElementById('modalTitleHi').textContent = ch.title_sanskrit;
 
   // SEO
   const seoTitle = `Bhagavad Gita Chapter ${ch.chapter} Verse ${v.verse} — Hindi & English Meaning`;
@@ -928,30 +971,20 @@ function renderVersePage(ch, v) {
     `<a href="/wisdom/${t}/" class="topic-chip">${t}</a>`).join(' ');
 
   const html = `
-<!-- Breadcrumb -->
-<nav class="breadcrumb text-sm mb-5 no-print" style="color:var(--text-muted);">
-  <a href="/">Home</a> &rsaquo;
-  <a href="bhagavad-gita.html">भगवद गीता</a> &rsaquo;
-  <a href="/bhagavad-gita.html?chapter=${ch.chapter}">Chapter ${ch.chapter}</a> &rsaquo;
-  <span>Verse ${v.verse}</span>
-</nav>
-
 <!-- Badge row -->
 <div class="flex flex-wrap items-center gap-2 mb-4">
   <span class="gita-badge">📖 Bhagavad Gita</span>
-  <span class="chapter-badge">Chapter ${ch.chapter}: ${ch.title_english.split('—')[0].trim()}</span>
+  <span class="chapter-badge">Chapter ${ch.chapter}</span>
   <span class="chapter-badge">Verse ${v.verse}</span>
   ${v.famous ? '<span style="background:rgba(168,131,42,0.15);border:1px solid var(--gold);color:var(--gold);border-radius:99px;font-size:11px;font-weight:700;padding:3px 10px;">⭐ Famous Verse</span>' : ''}
 </div>
 
 <!-- Chapter nav -->
 <div class="flex items-center justify-between mb-5 no-print">
-  <a href="${prevV ? `/bhagavad-gita.html?chapter=${ch.chapter}&verse=${prevV.verse}` : '#'}" 
+  <a href="${prevV ? `/bhagavad-gita.html?chapter=${ch.chapter}&verse=${prevV.verse}` : '#'}" onclick="${prevV ? `event.preventDefault(); navigateVerseModal(${ch.chapter}, ${prevV.verse});` : 'return false;'}"
      class="verse-nav-btn ${!prevV ? 'disabled' : ''}">← Prev</a>
-  <a href="/bhagavad-gita.html?chapter=${ch.chapter}" class="verse-nav-btn text-center" style="flex:1;margin:0 8px;">
-    <span style="color:var(--text-muted);font-size:12px;">Chapter ${ch.chapter} of ${gitaData.chapters.length}</span>
-  </a>
-  <a href="${nextV ? `/bhagavad-gita.html?chapter=${ch.chapter}&verse=${nextV.verse}` : '#'}" 
+  <span style="color:var(--text-muted);font-size:12px;">Verse ${v.verse} of ${ch.verses.length}</span>
+  <a href="${nextV ? `/bhagavad-gita.html?chapter=${ch.chapter}&verse=${nextV.verse}` : '#'}" onclick="${nextV ? `event.preventDefault(); navigateVerseModal(${ch.chapter}, ${nextV.verse});` : 'return false;'}"
      class="verse-nav-btn ${!nextV ? 'disabled' : ''}">Next →</a>
 </div>
 
@@ -1037,7 +1070,7 @@ ${topicChips ? `
   <div class="section-heading">📖 More from Chapter ${ch.chapter}</div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     ${sortedVerses.filter(x => x.verse !== v.verse).slice(0,4).map(ov => `
-      <a href="/gita/${ch.chapter}/${ov.verse}/"
+      <a href="/bhagavad-gita.html?chapter=${ch.chapter}&verse=${ov.verse}" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${ov.verse});"
          class="card card-hover" style="text-decoration:none;display:block;">
         <div class="flex items-center gap-2 mb-2">
           <span class="chapter-badge">Verse ${ov.verse}</span>
@@ -1062,28 +1095,54 @@ ${topicChips ? `
 <!-- ─── CHAPTER-LEVEL CTA (FUNNEL) ─── -->
 ${ctaBlock}
 
-<!-- ─── ALL CHAPTERS ─── -->
-<div class="card mb-6 no-print mt-6" style="background:var(--surface);">
-  <h3 style="font-size:18px; color:var(--krishna); font-weight:700; margin-bottom:16px;">📚 Read Other Chapters</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-    ${gitaData.chapters.map(c => 
-      `<a href="/bhagavad-gita.html?chapter=${c.chapter}" style="text-decoration:none; display:block; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:8px; transition:0.2s; color:var(--text); font-size:14px; font-weight:600;">
-         Chapter ${c.chapter}: ${c.title_english.split('—')[0].trim()}
-       </a>`
-    ).join('')}
+  <!-- ─── ALL CHAPTERS ─── -->
+  <div class="card mb-6 no-print mt-6" style="background:var(--surface);">
+    <h3 style="font-size:18px; color:var(--krishna); font-weight:700; margin-bottom:16px;">📚 Read Other Chapters</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      ${gitaData.chapters.map(c => 
+        `<a href="/bhagavad-gita.html?chapter=${c.chapter}" onclick="event.preventDefault(); closeVerseModal(); history.pushState(null, '', '/bhagavad-gita.html?chapter=${c.chapter}'); routePage();" style="text-decoration:none; display:block; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:8px; transition:0.2s; color:var(--text); font-size:14px; font-weight:600;">
+           Chapter ${c.chapter}: ${c.title_english.split('—')[0].trim()}
+         </a>`
+      ).join('')}
+    </div>
   </div>
-</div>
-`;
+  `;
 
-  document.getElementById('main-content').innerHTML = html;
+  document.getElementById('modal-content').innerHTML = html;
   updateFavBtn(isSaved);
-  window.scrollTo(0, 0);
+  
+  document.getElementById('modalBackdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  history.pushState(null, '', `/bhagavad-gita.html?chapter=${ch.chapter}&verse=${v.verse}`);
+  document.getElementById('modalBackdrop').scrollTo(0, 0);
+}
+
+function navigateVerseModal(chapterNum, verseNum) {
+  const ch = gitaData.chapters.find(c => c.chapter == chapterNum);
+  const v = ch.verses.find(x => x.verse == verseNum);
+  if(ch && v) openVerseModal(ch, v);
+}
+
+function closeVerseModal() {
+  document.getElementById('modalBackdrop').classList.remove('open');
+  document.getElementById('action-bar').style.display = 'none';
+  document.body.style.overflow = '';
+  
+  if (currentChapter) {
+    history.pushState(null, '', `/bhagavad-gita.html?chapter=${currentChapter.chapter}`);
+    document.title = `Bhagavad Gita Chapter ${currentChapter.chapter} | Sanatan Gyan Sagar`;
+    currentView = 'chapter';
+  } else {
+    history.pushState(null, '', `/bhagavad-gita.html`);
+    document.title = `Bhagavad Gita — All Chapters & Verses | Sanatan Gyan Sagar`;
+    currentView = 'browse';
+  }
 }
 
 // ═══════════════════════════════════════════
 //  RENDER: CHAPTER PAGE
 // ═══════════════════════════════════════════
-function renderChapterPage(ch) {
+function renderChapterPage(ch, doScroll = true) {
   document.getElementById('loading-state').innerHTML = '';
   document.getElementById('action-bar').style.display = 'none';
 
@@ -1094,7 +1153,7 @@ function renderChapterPage(ch) {
   const ctaBlock = getChapterCTA(ch.chapter);
 
   const verseCards = sortedVerses.map(v => `
-    <a href="/gita/${ch.chapter}/${v.verse}/"
+    <a href="/bhagavad-gita.html?chapter=${ch.chapter}&verse=${v.verse}" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${v.verse});"
        class="card card-hover ${v.famous ? 'famous-verse' : ''}" style="text-decoration:none;display:block;">
       <div class="flex items-center justify-between mb-2">
         <span class="chapter-badge">Verse ${v.verse}</span>
@@ -1208,7 +1267,7 @@ function renderBrowsePage() {
   );
 
   const famousCards = famousVerses.slice(0,6).map(v => `
-    <a href="/gita/${v.chapter}/${v.verse}/"
+    <a href="/bhagavad-gita.html?chapter=${v.chapter}&verse=${v.verse}" onclick="event.preventDefault(); navigateVerseModal(${v.chapter}, ${v.verse});"
        class="card card-hover famous-verse" style="text-decoration:none;display:block;">
       <div class="flex gap-2 items-center mb-2">
         <span class="gita-badge">Ch ${v.chapter}, V ${v.verse}</span>
@@ -1495,9 +1554,8 @@ function handleSearch(q) {
   const results = fuseSearch.search(q).slice(0, 8);
   if (!results.length) { el.classList.add('hidden'); return; }
   el.innerHTML = results.map(r => `
-    <a href="${r.item.url}" style="display:block;padding:10px 14px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);"
-       onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background=''"
-       onclick="document.getElementById('search-bar').classList.add('hidden');">
+    <a href="${r.item.url}" onclick="event.preventDefault(); navigateVerseModal(${r.item.chapter}, ${r.item.verse}); document.getElementById('search-bar').classList.add('hidden');" style="display:block;padding:10px 14px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);"
+       onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background=''">
       <div class="flex gap-2 items-center">
         <span class="gita-badge">Ch ${r.item.chapter}, V ${r.item.verse}</span>
       </div>
