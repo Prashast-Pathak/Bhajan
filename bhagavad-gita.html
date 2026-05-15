@@ -1395,18 +1395,18 @@ function getChapterCTA(chapter) {
   const defaultCta = { title: '✨ Discover Your Cosmic Path', text: 'The Bhagavad Gita reveals the eternal truth. Now, decode your own karmic journey. Generate your free Vedic Birth Chart and explore your Janma Kundali at NAKSHATRA.', btn: 'Get Your Free Birth Chart →', url: 'https://ournakshatra.com/' };
   const c = ctas[chapter] || defaultCta;
   
-  return \`
+  return `
 <div class="card mb-6 no-print mt-8" style="background:linear-gradient(135deg, rgba(201,106,31,0.08) 0%, rgba(201,168,76,0.08) 100%); border: 1px solid rgba(201,168,76,0.3); text-align:center;">
-  <h3 style="font-size:20px; color:var(--saffron); font-weight:800; margin-bottom:10px;">✨ \${c.title}</h3>
+  <h3 style="font-size:20px; color:var(--saffron); font-weight:800; margin-bottom:10px;">✨ ${c.title}</h3>
   <p style="color:var(--text-sec); margin-bottom:18px; font-size:15px; max-width:550px; margin-left:auto; margin-right:auto; line-height:1.6;">
-    \${c.text}
+    ${c.text}
   </p>
-  <a href="\${c.url}" target="_blank" class="toggle-btn" 
+  <a href="${c.url}" target="_blank" class="toggle-btn" 
      style="text-decoration:none; display:inline-flex; padding:0 28px; background:linear-gradient(135deg, #C9A84C 0%, #C96A1F 100%); color:white; border:none; font-weight:700; box-shadow:0 4px 14px rgba(201,106,31,0.35);">
-    \${c.btn}
+    ${c.btn}
   </a>
 </div>
-\`;
+`;
 }
 
 // ═══════════════════════════════════════════
