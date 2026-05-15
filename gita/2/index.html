@@ -21,8 +21,8 @@
     }
     body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
     
-    * { box-sizing: border-box; }
-    body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; }
     
     .devanagari { font-family: 'Tiro Devanagari Hindi', serif; }
     body.fs-small  .verse-devanagari { font-size: 18px !important; }
@@ -40,12 +40,10 @@
     .card-hover { transition: border-color 0.15s, box-shadow 0.15s; }
     .card-hover:hover { border-color: var(--saffron); box-shadow: 0 2px 8px rgba(201,106,31,0.12); }
     
-    .gita-badge { display: inline-flex; align-items: center; gap: 5px; background: rgba(124, 58, 237, 0.10); border: 1px solid rgba(124, 58, 237, 0.4); color: #5b21b6; border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }
     .chapter-badge { background: rgba(168, 131, 42, 0.12); border: 1px solid rgba(168, 131, 42, 0.45); color: var(--gold); border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }
     
     .toggle-btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-sec); font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 14px; transition: all 0.15s; }
     .toggle-btn.active { background: var(--saffron); color: white; border-color: var(--saffron); }
-    .toggle-btn:hover:not(.active) { border-color: var(--saffron); color: var(--saffron); }
     
     .section-heading { font-size: 16px; font-weight: 700; color: var(--maroon); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
     
@@ -63,13 +61,13 @@
     #toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--text); color: white; padding: 10px 20px; border-radius: 99px; font-size: 13px; font-weight: 600; z-index: 4000; opacity: 0; transition: all 0.3s; pointer-events: none; }
     #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
     
-    /* ===== MODAL (WISDOM STYLE) ===== */
+    /* ===== MODAL ===== */
     .modal-backdrop { position: fixed; inset: 0; z-index: 3000; background: rgba(42,26,8,0.65); backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; padding: 16px; overflow-y: auto; }
     .modal-backdrop.open { display: flex; }
     .modal { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 780px; margin: auto; animation: modalIn 0.2s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.25); position: relative; }
     @keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(0.97); } to { opacity: 1; transform: none; } }
     .modal-header { display: flex; align-items: flex-start; justify-content: flex-start; gap: 12px; padding: 24px 24px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 10; border-radius: var(--radius) var(--radius) 0 0; }
-    .modal-title-en { font-size: 22px; font-weight: 700; color: var(--maroon); }
+    .modal-title-en { font-size: 22px; font-weight: 700; color: var(--maroon); line-height:1.2; }
     .modal-title-hi { font-family: 'Tiro Devanagari Hindi', serif; font-size: 17px; color: var(--text-sec); margin-top: 2px; }
     .modal-close { background: transparent; border: none; flex-shrink: 0; cursor: pointer; color: var(--text); display: flex; align-items: center; justify-content: center; transition: background 0.2s; padding: 8px; border-radius: 8px; margin-left: -8px; margin-top: 0px; width: auto; height: auto; }
     .modal-close:hover { background: var(--surface2); color: var(--saffron); }
@@ -82,14 +80,182 @@
       .action-bar { position: sticky; bottom: 0; }
     }
   </style>
+
+  <style id="premium-header-styles">
+    /* ── HEADER ── */
+    .main-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(245,240,232,0.92) !important;
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      padding: 0 20px;
+    }
+    body.dark-mode .main-header {
+      background: rgba(22,22,22,0.92) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .main-header .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 16px;
+      height: 64px;
+    }
+    .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .logo-om {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--maroon));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-hindi); font-size: 20px; color: #fff;
+      flex-shrink: 0;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; font-weight: 700; color: var(--maroon); line-height: 1.2; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.3px; }
+    .desktop-nav { display: flex; gap: 2px; align-items: center; justify-content: center; }
+    .desktop-nav a {
+      text-decoration: none; color: var(--text-sec); font-size: 13px; font-weight: 600;
+      padding: 7px 11px; border-radius: 8px; transition: all 0.18s; white-space: nowrap;
+    }
+    .desktop-nav a:hover { background: var(--surface); color: var(--saffron); }
+    .header-icons { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .header-icon-btn {
+      background: transparent; border: 1px solid transparent; cursor: pointer;
+      font-size: 17px; width: 38px; height: 38px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--maroon); transition: all 0.18s; flex-shrink: 0;
+    }
+    .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
+    .hamburger-btn, .back-btn {
+      background: transparent; border: none; color: var(--text);
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
+    }
+    .hamburger-btn { display: none; }
+    .hamburger-btn:hover, .back-btn:hover { background: var(--surface2); }
+    .mobile-menu-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+      z-index: 1999; opacity: 0; pointer-events: none; transition: 0.3s ease;
+    }
+    .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
+    .mobile-menu-drawer {
+      position: fixed; top: 0; left: -300px; bottom: 0; width: 280px;
+      background: var(--bg); z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex; flex-direction: column;
+    }
+    .mobile-menu-drawer.active { left: 0; }
+    .mobile-menu-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; border-bottom: 1px solid var(--border);
+    }
+    .close-menu-btn { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; }
+    .mobile-menu-links { padding: 20px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+    .mobile-menu-links a {
+      text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600;
+      padding: 11px 14px; border-radius: 8px; transition: 0.18s;
+    }
+    .mobile-menu-links a:hover { background: var(--surface); color: var(--saffron); }
+    .menu-divider { height: 1px; background: var(--border); margin: 8px 0; }
+    @media (max-width: 960px) {
+      .desktop-nav { display: none !important; }
+      .hamburger-btn { display: flex !important; }
+      .logo-text { display: none; }
+      .main-header .header-inner { grid-template-columns: auto auto; }
+    }
+  </style>
+
+  <style id="rich-mobile-menu-styles">
+    .mobile-menu-links details { border-bottom: 1px solid var(--border, #D9CDBA); }
+    .mobile-menu-links details summary { padding: 10px 20px; color: var(--text-sec, #5C3D20); font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .mobile-menu-links details summary::-webkit-details-marker { display: none; }
+    .mobile-menu-links details summary::after { content: '+'; font-size: 1.1rem; color: var(--saffron, #C96A1F); }
+    .mobile-menu-links details[open] summary::after { content: '−'; }
+    .mobile-menu-links details[open] summary { background: var(--surface2, #E6DDD0); color: var(--saffron, #C96A1F); }
+    .details-content { background: var(--surface, #EDE6D8); padding: 10px 16px 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .details-content a { padding: 5px 10px; font-size: .78rem; background: rgba(255,255,255,.6); border: 1px solid var(--border, #D9CDBA); border-radius: 50px; text-decoration: none; color: var(--text-sec, #5C3D20); }
+    .details-content a:hover { background: var(--saffron, #C96A1F); color: #fff !important; border-color: var(--saffron, #C96A1F); }
+  </style>
 </head>
 <body class="fs-normal script-both">
 
-  <!-- THE CHAPTER PAGE (Grid of verses) -->
-  <div id="chapter-view" class="max-w-5xl mx-auto px-4 py-6 pb-24">
-    <div style="margin-bottom: 20px;">
-      <a href="/bhagavad-gita.html" style="color:var(--saffron); text-decoration:none; font-weight:600;">← Back to Gita Hub</a>
+  <header class="main-header">
+    <div class="header-inner">
+      <div style="display:flex; align-items:center; gap:4px;">
+        <script>
+          function handleMainHeaderBack() {
+            window.location.href = '/bhagavad-gita.html';
+          }
+        </script>
+        <button class="back-btn" onclick="handleMainHeaderBack()" aria-label="Go Back" title="Go Back">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+        <a href="/index.html" class="logo-link">
+          <div class="logo-om">ॐ</div>
+          <div class="logo-text">
+            <span class="logo-title">सनातन ज्ञान सागर</span>
+            <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/index.html">Home</a>
+        <a href="/bhajans.html">Bhajans</a>
+        <a href="/bhagavad-gita.html" class="active">Gita</a>
+        <a href="/shlokas.html">Shlokas</a>
+        <a href="/prayers.html">Prayers</a>
+        <a href="/upanishads.html">Upanishads</a>
+        <a href="/wisdom.html">Wisdom</a>
+      </nav>
+
+      <div class="header-icons">
+        <button class="header-icon-btn" onclick="document.body.classList.toggle('dark-mode')" aria-label="Dark mode" title="Dark mode">🌙</button>
+      </div>
     </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+  <div class="mobile-menu-drawer" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
+        <span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA</span>
+      </div>
+      <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="/">🏠 Home</a>
+      <a href="/bhajans.html">🪔 Bhajans</a>
+      <a href="/bhagavad-gita.html">📖 Gita</a>
+      <a href="/shlokas.html">🕉️ Shlokas</a>
+      <a href="/prayers.html">🙏 Prayers</a>
+      <a href="/upanishads.html">📚 Upanishads</a>
+      <a href="/wisdom.html">💬 Wisdom</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const overlay = document.getElementById('mobileMenuOverlay');
+      menu.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+  <!-- THE CHAPTER PAGE -->
+  <main id="chapter-view" class="max-w-5xl mx-auto px-4 py-6 pb-24">
+    <nav class="text-sm mb-5" style="color:var(--text-muted); font-size:13px; font-weight:600;">
+      <a href="/bhagavad-gita.html" style="color:var(--saffron); text-decoration:none;">← Back to Gita Hub</a>
+    </nav>
     
     <div class="card mb-5" style="border-left:4px solid var(--krishna);">
       <h1 class="devanagari" style="font-size:28px;font-weight:700;color:var(--maroon);margin:0 0 4px 0;">साङ्ख्य योग</h1>
@@ -111,7 +277,11 @@
                 <span class="chapter-badge">Verse 1</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच
+
+तं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।
+
+विषीदन्तमिदं वाक्यमुवाच मधुसूदनः॥2.1॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Sanjaya said: To him, who was thus overcome with pity, despondent, with eyes full of tears and agita...</p>
             </a>
             
@@ -121,7 +291,11 @@
                 <span class="chapter-badge">Verse 2</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच
+
+कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।
+
+अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन॥2.2॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The Blessed Lord said, "From whence has this perilous strait come upon you, this dejection which is ...</p>
             </a>
             
@@ -131,7 +305,9 @@
                 <span class="chapter-badge">Verse 3</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।
+
+क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥2.3॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Do not yield to impotence, O Arjuna, son of Pritha. It does not befit you. Cast off this mean weakne...</p>
             </a>
             
@@ -141,7 +317,11 @@
                 <span class="chapter-badge">Verse 4</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच
+
+कथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।
+
+इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन॥2.4॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Arjuna said, "O Madhusudana, how can I fight in battle with arrows against Bhishma and Drona, who ar...</p>
             </a>
             
@@ -151,7 +331,13 @@
                 <span class="chapter-badge">Verse 5</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">गुरूनहत्वा हि महानुभावान्</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">गुरूनहत्वा हि महानुभावान्
+
+श्रेयो भोक्तुं भैक्ष्यमपीह लोके।
+
+हत्वार्थकामांस्तु गुरूनिहैव
+
+भुञ्जीय भोगान् रुधिरप्रदिग्धान्॥2.5॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Better it is, indeed, in this world to accept alms than to slay the most noble teachers. But if I we...</p>
             </a>
             
@@ -161,7 +347,13 @@
                 <span class="chapter-badge">Verse 6</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न चैतद्विद्मः कतरन्नो गरीयो</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न चैतद्विद्मः कतरन्नो गरीयो
+
+यद्वा जयेम यदि वा नो जयेयुः।
+
+यानेव हत्वा न जिजीविषाम
+
+स्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः॥2.6॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">I can hardly tell which would be better, that we should conquer them or that they should conquer us....</p>
             </a>
             
@@ -171,7 +363,13 @@
                 <span class="chapter-badge">Verse 7</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कार्पण्यदोषोपहतस्वभावः</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कार्पण्यदोषोपहतस्वभावः
+
+पृच्छामि त्वां धर्मसंमूढचेताः।
+
+यच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे
+
+शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्॥2.7॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">My heart is overpowered by the taint of pity; my mind is confused as to my duty. I ask Thee: Tell me...</p>
             </a>
             
@@ -181,7 +379,13 @@
                 <span class="chapter-badge">Verse 8</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न हि प्रपश्यामि ममापनुद्या</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न हि प्रपश्यामि ममापनुद्या
+
+द्यच्छोकमुच्छोषणमिन्द्रियाणाम्।
+
+अवाप्य भूमावसपत्नमृद्धम्
+
+राज्यं सुराणामपि चाधिपत्यम्॥2.8॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">I do not see that this sorrow that burns up my senses would be removed, even if I were to attain pro...</p>
             </a>
             
@@ -191,7 +395,11 @@
                 <span class="chapter-badge">Verse 9</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच
+
+एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।
+
+न योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह॥2.9॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Sanjaya said: Having spoken thus to Hrishikesha, the Lord of the senses, Arjuna, the conqueror of sl...</p>
             </a>
             
@@ -201,7 +409,9 @@
                 <span class="chapter-badge">Verse 10</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तमुवाच हृषीकेशः प्रहसन्निव भारत।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तमुवाच हृषीकेशः प्रहसन्निव भारत।
+
+सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः॥2.10॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">To him who was despondent in the midst of the two armies, Krishna, smiling, O Bharata, spoke these w...</p>
             </a>
             
@@ -211,7 +421,11 @@
                 <span class="chapter-badge">Verse 11</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच
+
+अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।
+
+गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥2.11॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The Blessed Lord said, "You have grieved for those who should not be grieved for; yet, you speak wor...</p>
             </a>
             
@@ -221,7 +435,9 @@
                 <span class="chapter-badge">Verse 12</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।
+
+न चैव न भविष्यामः सर्वे वयमतः परम्॥2.12॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Nor, at any time, was I not, nor thou, nor these rulers of men; nor, verily, shall we ever cease to ...</p>
             </a>
             
@@ -231,7 +447,9 @@
                 <span class="chapter-badge">Verse 13</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।
+
+तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति॥2.13॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Just as the embodied soul passes through childhood, youth, and old age in this body, so too does it ...</p>
             </a>
             
@@ -241,7 +459,9 @@
                 <span class="chapter-badge">Verse 14</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।
+
+आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥2.14॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The contact of the senses with the objects, O son of Kunti, which causes heat and cold, pleasure and...</p>
             </a>
             
@@ -251,7 +471,9 @@
                 <span class="chapter-badge">Verse 15</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।
+
+समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते॥2.15॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">That firm man, whom surely these afflictions do not, O chief among men, to whom pleasure and pain ar...</p>
             </a>
             
@@ -261,7 +483,9 @@
                 <span class="chapter-badge">Verse 16</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नासतो विद्यते भावो नाभावो विद्यते सतः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नासतो विद्यते भावो नाभावो विद्यते सतः।
+
+उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः॥2.16॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The unreal has no being; there is no non-being of the real; the truth about both has been seen by th...</p>
             </a>
             
@@ -271,7 +495,9 @@
                 <span class="chapter-badge">Verse 17</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।
+
+विनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति॥2.17॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Know that to be indestructible, by which all this is pervaded. No one can cause the destruction of t...</p>
             </a>
             
@@ -281,7 +507,9 @@
                 <span class="chapter-badge">Verse 18</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।
+
+अनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत॥2.18॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">These bodies of the embodied Self, which are eternal, indestructible, and immeasurable, are said to ...</p>
             </a>
             
@@ -291,7 +519,9 @@
                 <span class="chapter-badge">Verse 19</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।
+
+उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥2.19॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">He who takes the Self to be the slayer and he who thinks it is slain, neither of them knows. It does...</p>
             </a>
             
@@ -301,7 +531,13 @@
                 <span class="chapter-badge">Verse 20</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न जायते म्रियते वा कदाचि</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न जायते म्रियते वा कदाचि
+
+न्नायं भूत्वा भविता वा न भूयः।
+
+अजो नित्यः शाश्वतोऽयं पुराणो
+
+न हन्यते हन्यमाने शरीरे॥2.20॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">It is not born, nor does it ever die; after having been, it again does not cease to be; unborn, eter...</p>
             </a>
             
@@ -311,7 +547,9 @@
                 <span class="chapter-badge">Verse 21</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">वेदाविनाशिनं नित्यं य एनमजमव्ययम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">वेदाविनाशिनं नित्यं य एनमजमव्ययम्।
+
+कथं स पुरुषः पार्थ कं घातयति हन्ति कम्॥2.21॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Whoever knows it to be indestructible, eternal, unborn, and inexhaustible, how can that person slay,...</p>
             </a>
             
@@ -321,7 +559,13 @@
                 <span class="chapter-badge">Verse 22</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">वासांसि जीर्णानि यथा विहाय</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">वासांसि जीर्णानि यथा विहाय
+
+नवानि गृह्णाति नरोऽपराणि।
+
+तथा शरीराणि विहाय जीर्णा
+
+न्यन्यानि संयाति नवानि देही॥2.22॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Just as a man casts off worn-out clothes and puts on new ones, so too the embodied Self casts off wo...</p>
             </a>
             
@@ -331,7 +575,9 @@
                 <span class="chapter-badge">Verse 23</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।
+
+न चैनं क्लेदयन्त्यापो न शोषयति मारुतः॥2.23॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Weapons cannot cut it, fire cannot burn it, water cannot wet it, wind cannot dry it....</p>
             </a>
             
@@ -341,7 +587,9 @@
                 <span class="chapter-badge">Verse 24</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।
+
+नित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः॥2.24॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">This Self cannot be cut, burned, wetted, nor dried up; it is eternal, all-pervasive, stable, immovab...</p>
             </a>
             
@@ -351,7 +599,9 @@
                 <span class="chapter-badge">Verse 25</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।
+
+तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि॥2.25॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">This Self is said to be unmanifested, unthinkable, and unchangeable. Therefore, knowing this to be s...</p>
             </a>
             
@@ -361,7 +611,9 @@
                 <span class="chapter-badge">Verse 26</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।
+
+तथापि त्वं महाबाहो नैवं शोचितुमर्हसि॥2.26॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">But even if thou thinkest of It as constantly being born and constantly dying, even then, O mighty-a...</p>
             </a>
             
@@ -371,7 +623,9 @@
                 <span class="chapter-badge">Verse 27</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।
+
+तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि॥2.27॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">For the born, death is certain, and for the dead, birth is certain; therefore, you should not grieve...</p>
             </a>
             
@@ -381,7 +635,9 @@
                 <span class="chapter-badge">Verse 28</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।
+
+अव्यक्तनिधनान्येव तत्र का परिदेवना॥2.28॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Beings are unmanifest in their beginning, manifest in their middle state, O Arjuna, and unmanifest a...</p>
             </a>
             
@@ -391,7 +647,13 @@
                 <span class="chapter-badge">Verse 29</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आश्चर्यवत्पश्यति कश्चिदेन</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आश्चर्यवत्पश्यति कश्चिदेन
+
+माश्चर्यवद्वदति तथैव चान्यः।
+
+आश्चर्यवच्चैनमन्यः श्रृणोति
+
+श्रुत्वाप्येनं वेद न चैव कश्चित्॥2.29॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">One sees this (the Self) as a wonder; another speaks of it as a wonder; another hears of it as a won...</p>
             </a>
             
@@ -401,7 +663,9 @@
                 <span class="chapter-badge">Verse 30</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">देही नित्यमवध्योऽयं देहे सर्वस्य भारत।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">देही नित्यमवध्योऽयं देहे सर्वस्य भारत।
+
+तस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि॥2.30॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">This indweller in the body of everyone is ever indestructible, O Arjuna; therefore, you should not g...</p>
             </a>
             
@@ -411,7 +675,9 @@
                 <span class="chapter-badge">Verse 31</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।
+
+धर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते॥2.31॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Further, having regard to your duty, you should not waver, for there is nothing higher for a Kshatri...</p>
             </a>
             
@@ -421,7 +687,9 @@
                 <span class="chapter-badge">Verse 32</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।
+
+सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्॥2.32॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Happy are the Kshatriyas, O Arjuna! who are called to fight in such a battle that comes of its own a...</p>
             </a>
             
@@ -431,7 +699,9 @@
                 <span class="chapter-badge">Verse 33</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।
+
+ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि॥2.33॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">But if you will not fight this righteous war, then having abandoned your own duty and reputation, yo...</p>
             </a>
             
@@ -441,7 +711,9 @@
                 <span class="chapter-badge">Verse 34</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।
+
+संभावितस्य चाकीर्तिर्मरणादतिरिच्यते॥2.34॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">People will also recount your everlasting dishonor; and for one who has been honored, dishonor is wo...</p>
             </a>
             
@@ -451,7 +723,9 @@
                 <span class="chapter-badge">Verse 35</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।
+
+येषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्॥2.35॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The great chariot-warriors will think that you have withdrawn from the battle out of fear, and you w...</p>
             </a>
             
@@ -461,7 +735,9 @@
                 <span class="chapter-badge">Verse 36</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।
+
+निन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्॥2.36॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Your enemies, scoffing at your power, will speak many abusive words—what could be more painful than ...</p>
             </a>
             
@@ -471,7 +747,9 @@
                 <span class="chapter-badge">Verse 37</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।
+
+तस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः॥2.37॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Slain, you will obtain heaven; victorious, you will enjoy the earth; therefore, stand up, O son of K...</p>
             </a>
             
@@ -481,7 +759,9 @@
                 <span class="chapter-badge">Verse 38</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।
+
+ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि॥2.38॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Having made pleasure and pain, gain and loss, victory and defeat equal, engage in battle for the sak...</p>
             </a>
             
@@ -491,7 +771,9 @@
                 <span class="chapter-badge">Verse 39</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।
+
+बुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि॥2.39॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">This, which has been taught to you, is wisdom concerning Sankhya. Now listen to wisdom concerning Yo...</p>
             </a>
             
@@ -501,7 +783,9 @@
                 <span class="chapter-badge">Verse 40</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।
+
+स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्॥2.40॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">In this, there is no loss of effort, nor is there any harm produced, nor any transgression. Even a l...</p>
             </a>
             
@@ -511,7 +795,9 @@
                 <span class="chapter-badge">Verse 41</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।
+
+बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्॥2.41॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Here, O joy of the Kurus, there is only one single-pointed determination; many-branched and endless ...</p>
             </a>
             
@@ -521,7 +807,9 @@
                 <span class="chapter-badge">Verse 42</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः।
+
+वेदवादरताः पार्थ नान्यदस्तीति वादिनः॥2.42॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The unwise, taking pleasure in the eulogizing words of the Vedas, utter flowery speech, saying, "The...</p>
             </a>
             
@@ -531,7 +819,9 @@
                 <span class="chapter-badge">Verse 43</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।
+
+क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति॥2.43॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Full of desires, with heaven as their goal, (they speak words that are directed to ends) leading to ...</p>
             </a>
             
@@ -541,7 +831,9 @@
                 <span class="chapter-badge">Verse 44</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।
+
+व्यवसायात्मिका बुद्धिः समाधौ न विधीयते॥2.44॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">For those who are attached to pleasure and power, whose minds are drawn away by such teachings, thei...</p>
             </a>
             
@@ -551,7 +843,9 @@
                 <span class="chapter-badge">Verse 45</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।
+
+निर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्॥2.45॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The Vedas deal with the three attributes; be thou above these three attributes. O Arjuna, free yours...</p>
             </a>
             
@@ -561,7 +855,9 @@
                 <span class="chapter-badge">Verse 46</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यावानर्थ उदपाने सर्वतः संप्लुतोदके।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यावानर्थ उदपाने सर्वतः संप्लुतोदके।
+
+तावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः॥2.46॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">To the Brahmana who has known the Self, all the Vedas are of as much use as a reservoir of water wou...</p>
             </a>
             
@@ -571,7 +867,9 @@
                 <span class="chapter-badge">Verse 47</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
+
+मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥2.47॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Your right is only to work, but not to its results; do not let the results of action be your motive,...</p>
             </a>
             
@@ -581,7 +879,9 @@
                 <span class="chapter-badge">Verse 48</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।
+
+सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते॥2.48॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Perform action, O Arjuna, being steadfast in Yoga, abandoning attachment and balanced in success and...</p>
             </a>
             
@@ -591,7 +891,9 @@
                 <span class="chapter-badge">Verse 49</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।
+
+बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः॥2.49॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Far lower than the Yoga of wisdom is action, O Arjuna. Seek thou refuge in wisdom; wretched are thos...</p>
             </a>
             
@@ -601,7 +903,9 @@
                 <span class="chapter-badge">Verse 50</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।
+
+तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्॥2.50॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Endowed with wisdom and evenness of mind, one casts off in this life both good and evil deeds; there...</p>
             </a>
             
@@ -611,7 +915,9 @@
                 <span class="chapter-badge">Verse 51</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।
+
+जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्॥2.51॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The wise, possessing knowledge, having abandoned the fruits of their actions, and being freed from t...</p>
             </a>
             
@@ -621,7 +927,9 @@
                 <span class="chapter-badge">Verse 52</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।
+
+तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च॥2.52॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">When your intellect passes beyond the mire of delusion, then you will attain indifference to what ha...</p>
             </a>
             
@@ -631,7 +939,9 @@
                 <span class="chapter-badge">Verse 53</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।
+
+समाधावचला बुद्धिस्तदा योगमवाप्स्यसि॥2.53॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">When your intellect, which is perplexed by the Vedic texts you have read, stands immovable and stead...</p>
             </a>
             
@@ -641,7 +951,11 @@
                 <span class="chapter-badge">Verse 54</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच
+
+स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।
+
+स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्॥2.54॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Arjuna said, "O Krishna, what is the description of one who has steady wisdom and is merged in the s...</p>
             </a>
             
@@ -651,7 +965,11 @@
                 <span class="chapter-badge">Verse 55</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्री भगवानुवाच
+
+प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्।
+
+आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते॥2.55॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The Blessed Lord said, "When a man completely casts off, O Arjuna, all the desires of the mind and i...</p>
             </a>
             
@@ -661,7 +979,9 @@
                 <span class="chapter-badge">Verse 56</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।
+
+वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते॥2.56॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">He whose mind is not shaken by adversity, who does not long for pleasures, and is free from attachme...</p>
             </a>
             
@@ -671,7 +991,9 @@
                 <span class="chapter-badge">Verse 57</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।
+
+नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता॥2.57॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">He who is everywhere without attachment, upon encountering anything good or bad, neither rejoices no...</p>
             </a>
             
@@ -681,7 +1003,9 @@
                 <span class="chapter-badge">Verse 58</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।
+
+इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता॥2.58॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">When, like the tortoise which withdraws all its limbs on all sides, he withdraws his senses from the...</p>
             </a>
             
@@ -691,7 +1015,9 @@
                 <span class="chapter-badge">Verse 59</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">विषया विनिवर्तन्ते निराहारस्य देहिनः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">विषया विनिवर्तन्ते निराहारस्य देहिनः।
+
+रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते॥2.59॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The objects of the senses turn away from the abstinent man, leaving the longing behind; but his long...</p>
             </a>
             
@@ -701,7 +1027,9 @@
                 <span class="chapter-badge">Verse 60</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।
+
+इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः॥2.60॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The turbulent senses, O Arjuna, can violently carry away the mind of a wise person, even though they...</p>
             </a>
             
@@ -711,7 +1039,9 @@
                 <span class="chapter-badge">Verse 61</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तानि सर्वाणि संयम्य युक्त आसीत मत्परः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तानि सर्वाणि संयम्य युक्त आसीत मत्परः।
+
+वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता॥2.61॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Having restrained them all, he should sit steadfast, intent on Me; his wisdom is steady whose senses...</p>
             </a>
             
@@ -721,7 +1051,9 @@
                 <span class="chapter-badge">Verse 62</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।
+
+सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते॥2.62॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">When one thinks of objects, attachment to them arises; from attachment, desire is born; from desire,...</p>
             </a>
             
@@ -731,7 +1063,9 @@
                 <span class="chapter-badge">Verse 63</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।
+
+स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति॥2.63॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Anger leads to delusion, which causes loss of memory; this, in turn, leads to the destruction of dis...</p>
             </a>
             
@@ -741,7 +1075,9 @@
                 <span class="chapter-badge">Verse 64</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।
+
+आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति॥2.64॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">But the self-controlled man, moving among objects with the senses restrained and free from attractio...</p>
             </a>
             
@@ -751,7 +1087,9 @@
                 <span class="chapter-badge">Verse 65</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">प्रसादे सर्वदुःखानां हानिरस्योपजायते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">प्रसादे सर्वदुःखानां हानिरस्योपजायते।
+
+प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते॥2.65॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">In that peace, all pains are destroyed; for the intellect of the tranquil-minded soon becomes steady...</p>
             </a>
             
@@ -761,7 +1099,9 @@
                 <span class="chapter-badge">Verse 66</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।
+
+न चाभावयतः शान्तिरशान्तस्य कुतः सुखम्॥2.66॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">There is no knowledge of the Self for the unsteady, and no meditation is possible for the unsteady, ...</p>
             </a>
             
@@ -771,7 +1111,9 @@
                 <span class="chapter-badge">Verse 67</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।
+
+तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि॥2.67॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">For the mind, which follows in the wake of the wandering senses, carries away his discrimination, as...</p>
             </a>
             
@@ -781,7 +1123,9 @@
                 <span class="chapter-badge">Verse 68</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।
+
+इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता॥2.68॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Therefore, O mighty-armed Arjuna, his knowledge is steady whose senses are completely restrained fro...</p>
             </a>
             
@@ -791,7 +1135,9 @@
                 <span class="chapter-badge">Verse 69</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">या निशा सर्वभूतानां तस्यां जागर्ति संयमी।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">या निशा सर्वभूतानां तस्यां जागर्ति संयमी।
+
+यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः॥2.69॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">That which is night to all beings, in that the self-controlled man is awake; when all beings are awa...</p>
             </a>
             
@@ -801,7 +1147,13 @@
                 <span class="chapter-badge">Verse 70</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आपूर्यमाणमचलप्रतिष्ठं</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आपूर्यमाणमचलप्रतिष्ठं
+
+समुद्रमापः प्रविशन्ति यद्वत्।
+
+तद्वत्कामा यं प्रविशन्ति सर्वे
+
+स शान्तिमाप्नोति न कामकामी॥2.70॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">He attains peace into whom all desires enter, just as waters enter the ocean which, filled from all ...</p>
             </a>
             
@@ -811,7 +1163,9 @@
                 <span class="chapter-badge">Verse 71</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।
+
+निर्ममो निरहंकारः स शांतिमधिगच्छति॥2.71॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">That person attains peace who, abandoning all desires, moves about without longing, without the sens...</p>
             </a>
             
@@ -821,14 +1175,24 @@
                 <span class="chapter-badge">Verse 72</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।
+
+स्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति॥2.72॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">O son of Pritha, this is the eternal state, the Brahmic seat. Attaining this, one is not deluded. Be...</p>
             </a>
             
     </div>
-  </div>
+  </main>
+  
+  <footer style="background:var(--surface); border-top:1px solid var(--border); padding:32px 16px; text-align:center;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div style="font-family:var(--font-hindi); font-size:32px; color:var(--saffron); margin-bottom:8px;">ॐ</div>
+      <p style="font-family:var(--font-hindi); font-size:15px; color:var(--text-sec); margin-bottom:16px;">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+      <div style="font-size:12px; color:var(--text-muted);">© 2026 NAKSHATRA. All rights reserved.</div>
+    </div>
+  </footer>
 
-  <!-- THE POP-UP MODAL (Wisdom.html Style) -->
+  <!-- THE POP-UP MODAL -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
     <div class="modal" id="modalBox">
       <div class="modal-header">
@@ -965,15 +1329,10 @@
       document.getElementById('modal-content').innerHTML = html;
       document.getElementById('modalBackdrop').classList.add('open');
       document.getElementById('action-bar').style.display = 'flex';
-      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      document.body.style.overflow = 'hidden';
       
-      // Update URL to /gita/4/2/ format
       history.pushState(null, null, '/gita/' + CHAPTER_DATA.chapter + '/' + verseNum + '/');
-      
-      // Update SEO Meta Tags
       document.title = `Bhagavad Gita Chapter ${CHAPTER_DATA.chapter} Verse ${verseNum}`;
-      
-      // Scroll modal to top
       document.getElementById('modalBackdrop').scrollTo(0, 0);
     }
     
@@ -1007,7 +1366,6 @@
       window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
     }
     
-    // Auto-open modal if URL matches /gita/C/V/
     window.addEventListener('load', () => {
       const pathParts = window.location.pathname.split('/').filter(p => p);
       if (pathParts.length >= 3 && pathParts[0] === 'gita') {
@@ -1016,7 +1374,6 @@
       }
     });
     
-    // Handle browser back button
     window.addEventListener('popstate', () => {
       const pathParts = window.location.pathname.split('/').filter(p => p);
       if (pathParts.length < 3) {

@@ -21,8 +21,8 @@
     }
     body.dark-mode { --bg: #1a1a1a; --surface: #2d2d2d; --surface2: #3d3d3d; --text: #e8e8e8; --text-sec: #b8b8b8; --text-muted: #888; --border: #444; }
     
-    * { box-sizing: border-box; }
-    body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; }
     
     .devanagari { font-family: 'Tiro Devanagari Hindi', serif; }
     body.fs-small  .verse-devanagari { font-size: 18px !important; }
@@ -40,12 +40,10 @@
     .card-hover { transition: border-color 0.15s, box-shadow 0.15s; }
     .card-hover:hover { border-color: var(--saffron); box-shadow: 0 2px 8px rgba(201,106,31,0.12); }
     
-    .gita-badge { display: inline-flex; align-items: center; gap: 5px; background: rgba(124, 58, 237, 0.10); border: 1px solid rgba(124, 58, 237, 0.4); color: #5b21b6; border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }
     .chapter-badge { background: rgba(168, 131, 42, 0.12); border: 1px solid rgba(168, 131, 42, 0.45); color: var(--gold); border-radius: 99px; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 10px; }
     
     .toggle-btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-sec); font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 14px; transition: all 0.15s; }
     .toggle-btn.active { background: var(--saffron); color: white; border-color: var(--saffron); }
-    .toggle-btn:hover:not(.active) { border-color: var(--saffron); color: var(--saffron); }
     
     .section-heading { font-size: 16px; font-weight: 700; color: var(--maroon); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
     
@@ -63,13 +61,13 @@
     #toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--text); color: white; padding: 10px 20px; border-radius: 99px; font-size: 13px; font-weight: 600; z-index: 4000; opacity: 0; transition: all 0.3s; pointer-events: none; }
     #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
     
-    /* ===== MODAL (WISDOM STYLE) ===== */
+    /* ===== MODAL ===== */
     .modal-backdrop { position: fixed; inset: 0; z-index: 3000; background: rgba(42,26,8,0.65); backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; padding: 16px; overflow-y: auto; }
     .modal-backdrop.open { display: flex; }
     .modal { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); width: 100%; max-width: 780px; margin: auto; animation: modalIn 0.2s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.25); position: relative; }
     @keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(0.97); } to { opacity: 1; transform: none; } }
     .modal-header { display: flex; align-items: flex-start; justify-content: flex-start; gap: 12px; padding: 24px 24px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 10; border-radius: var(--radius) var(--radius) 0 0; }
-    .modal-title-en { font-size: 22px; font-weight: 700; color: var(--maroon); }
+    .modal-title-en { font-size: 22px; font-weight: 700; color: var(--maroon); line-height:1.2; }
     .modal-title-hi { font-family: 'Tiro Devanagari Hindi', serif; font-size: 17px; color: var(--text-sec); margin-top: 2px; }
     .modal-close { background: transparent; border: none; flex-shrink: 0; cursor: pointer; color: var(--text); display: flex; align-items: center; justify-content: center; transition: background 0.2s; padding: 8px; border-radius: 8px; margin-left: -8px; margin-top: 0px; width: auto; height: auto; }
     .modal-close:hover { background: var(--surface2); color: var(--saffron); }
@@ -82,14 +80,182 @@
       .action-bar { position: sticky; bottom: 0; }
     }
   </style>
+
+  <style id="premium-header-styles">
+    /* ── HEADER ── */
+    .main-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(245,240,232,0.92) !important;
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      padding: 0 20px;
+    }
+    body.dark-mode .main-header {
+      background: rgba(22,22,22,0.92) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .main-header .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 16px;
+      height: 64px;
+    }
+    .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .logo-om {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--maroon));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-hindi); font-size: 20px; color: #fff;
+      flex-shrink: 0;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-title { font-family: var(--font-hindi); font-size: 17px; font-weight: 700; color: var(--maroon); line-height: 1.2; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.3px; }
+    .desktop-nav { display: flex; gap: 2px; align-items: center; justify-content: center; }
+    .desktop-nav a {
+      text-decoration: none; color: var(--text-sec); font-size: 13px; font-weight: 600;
+      padding: 7px 11px; border-radius: 8px; transition: all 0.18s; white-space: nowrap;
+    }
+    .desktop-nav a:hover { background: var(--surface); color: var(--saffron); }
+    .header-icons { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .header-icon-btn {
+      background: transparent; border: 1px solid transparent; cursor: pointer;
+      font-size: 17px; width: 38px; height: 38px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--maroon); transition: all 0.18s; flex-shrink: 0;
+    }
+    .header-icon-btn:hover { background: var(--surface); border-color: var(--border); }
+    .hamburger-btn, .back-btn {
+      background: transparent; border: none; color: var(--text);
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      padding: 8px; border-radius: 8px; transition: 0.2s; flex-shrink: 0;
+    }
+    .hamburger-btn { display: none; }
+    .hamburger-btn:hover, .back-btn:hover { background: var(--surface2); }
+    .mobile-menu-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+      z-index: 1999; opacity: 0; pointer-events: none; transition: 0.3s ease;
+    }
+    .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
+    .mobile-menu-drawer {
+      position: fixed; top: 0; left: -300px; bottom: 0; width: 280px;
+      background: var(--bg); z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex; flex-direction: column;
+    }
+    .mobile-menu-drawer.active { left: 0; }
+    .mobile-menu-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; border-bottom: 1px solid var(--border);
+    }
+    .close-menu-btn { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; }
+    .mobile-menu-links { padding: 20px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+    .mobile-menu-links a {
+      text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600;
+      padding: 11px 14px; border-radius: 8px; transition: 0.18s;
+    }
+    .mobile-menu-links a:hover { background: var(--surface); color: var(--saffron); }
+    .menu-divider { height: 1px; background: var(--border); margin: 8px 0; }
+    @media (max-width: 960px) {
+      .desktop-nav { display: none !important; }
+      .hamburger-btn { display: flex !important; }
+      .logo-text { display: none; }
+      .main-header .header-inner { grid-template-columns: auto auto; }
+    }
+  </style>
+
+  <style id="rich-mobile-menu-styles">
+    .mobile-menu-links details { border-bottom: 1px solid var(--border, #D9CDBA); }
+    .mobile-menu-links details summary { padding: 10px 20px; color: var(--text-sec, #5C3D20); font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .mobile-menu-links details summary::-webkit-details-marker { display: none; }
+    .mobile-menu-links details summary::after { content: '+'; font-size: 1.1rem; color: var(--saffron, #C96A1F); }
+    .mobile-menu-links details[open] summary::after { content: '−'; }
+    .mobile-menu-links details[open] summary { background: var(--surface2, #E6DDD0); color: var(--saffron, #C96A1F); }
+    .details-content { background: var(--surface, #EDE6D8); padding: 10px 16px 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .details-content a { padding: 5px 10px; font-size: .78rem; background: rgba(255,255,255,.6); border: 1px solid var(--border, #D9CDBA); border-radius: 50px; text-decoration: none; color: var(--text-sec, #5C3D20); }
+    .details-content a:hover { background: var(--saffron, #C96A1F); color: #fff !important; border-color: var(--saffron, #C96A1F); }
+  </style>
 </head>
 <body class="fs-normal script-both">
 
-  <!-- THE CHAPTER PAGE (Grid of verses) -->
-  <div id="chapter-view" class="max-w-5xl mx-auto px-4 py-6 pb-24">
-    <div style="margin-bottom: 20px;">
-      <a href="/bhagavad-gita.html" style="color:var(--saffron); text-decoration:none; font-weight:600;">← Back to Gita Hub</a>
+  <header class="main-header">
+    <div class="header-inner">
+      <div style="display:flex; align-items:center; gap:4px;">
+        <script>
+          function handleMainHeaderBack() {
+            window.location.href = '/bhagavad-gita.html';
+          }
+        </script>
+        <button class="back-btn" onclick="handleMainHeaderBack()" aria-label="Go Back" title="Go Back">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+        <a href="/index.html" class="logo-link">
+          <div class="logo-om">ॐ</div>
+          <div class="logo-text">
+            <span class="logo-title">सनातन ज्ञान सागर</span>
+            <span class="logo-sub">The Ocean of Eternal Wisdom</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/index.html">Home</a>
+        <a href="/bhajans.html">Bhajans</a>
+        <a href="/bhagavad-gita.html" class="active">Gita</a>
+        <a href="/shlokas.html">Shlokas</a>
+        <a href="/prayers.html">Prayers</a>
+        <a href="/upanishads.html">Upanishads</a>
+        <a href="/wisdom.html">Wisdom</a>
+      </nav>
+
+      <div class="header-icons">
+        <button class="header-icon-btn" onclick="document.body.classList.toggle('dark-mode')" aria-label="Dark mode" title="Dark mode">🌙</button>
+      </div>
     </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+  <div class="mobile-menu-drawer" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
+        <span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA</span>
+      </div>
+      <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="/">🏠 Home</a>
+      <a href="/bhajans.html">🪔 Bhajans</a>
+      <a href="/bhagavad-gita.html">📖 Gita</a>
+      <a href="/shlokas.html">🕉️ Shlokas</a>
+      <a href="/prayers.html">🙏 Prayers</a>
+      <a href="/upanishads.html">📚 Upanishads</a>
+      <a href="/wisdom.html">💬 Wisdom</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const overlay = document.getElementById('mobileMenuOverlay');
+      menu.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+  <!-- THE CHAPTER PAGE -->
+  <main id="chapter-view" class="max-w-5xl mx-auto px-4 py-6 pb-24">
+    <nav class="text-sm mb-5" style="color:var(--text-muted); font-size:13px; font-weight:600;">
+      <a href="/bhagavad-gita.html" style="color:var(--saffron); text-decoration:none;">← Back to Gita Hub</a>
+    </nav>
     
     <div class="card mb-5" style="border-left:4px solid var(--krishna);">
       <h1 class="devanagari" style="font-size:28px;font-weight:700;color:var(--maroon);margin:0 0 4px 0;">अर्जुनविषादयोग</h1>
@@ -111,7 +277,11 @@
                 <span class="chapter-badge">Verse 1</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">धृतराष्ट्र उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">धृतराष्ट्र उवाच
+
+धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।
+
+मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥1.1॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Dhritarashtra said, "What did my people and the sons of Pandu do when they had assembled together, e...</p>
             </a>
             
@@ -121,7 +291,11 @@
                 <span class="chapter-badge">Verse 2</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच
+
+दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।
+
+आचार्यमुपसङ्गम्य राजा वचनमब्रवीत्॥1.2॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Sanjaya said: Having seen the army of the Pandavas drawn up in battle array, King Duryodhana approac...</p>
             </a>
             
@@ -131,7 +305,9 @@
                 <span class="chapter-badge">Verse 3</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।
+
+व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥1.3॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Behold, O Teacher! This mighty army of the sons of Pandu, arrayed by the son of Drupada, thy wise di...</p>
             </a>
             
@@ -141,7 +317,9 @@
                 <span class="chapter-badge">Verse 4</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
+
+युयुधानो विराटश्च द्रुपदश्च महारथः॥1.4॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Here are heroes, mighty archers, equal in battle to Bhima and Arjuna, Yuyudhana (Satyaki), Virata, a...</p>
             </a>
             
@@ -151,7 +329,9 @@
                 <span class="chapter-badge">Verse 5</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।
+
+पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः॥1.5॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Dhrishtaketu, Chekitana, the valiant king of Kasi, Purujit, Kuntibhoja, and Saibya—the best of men....</p>
             </a>
             
@@ -161,7 +341,9 @@
                 <span class="chapter-badge">Verse 6</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।
+
+सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः॥1.6॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The strong Yudhamanyu and the brave Uttamaujas, the son of Subhadra (Abhimanyu, the son of Subhadra ...</p>
             </a>
             
@@ -171,7 +353,9 @@
                 <span class="chapter-badge">Verse 7</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।
+
+नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते॥1.7॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Know also, O best among the twice-born! the names of those who are the most distinguished amongst ou...</p>
             </a>
             
@@ -181,7 +365,9 @@
                 <span class="chapter-badge">Verse 8</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।
+
+अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च॥1.8॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">"Thou thyself, Bhishma, Karna, Kripa, the victorious in war, Asvatthama, Vikarna, and Bhurisrava, th...</p>
             </a>
             
@@ -191,7 +377,9 @@
                 <span class="chapter-badge">Verse 9</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।
+
+नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः॥1.9॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">And also many other heroes, ready to give up their lives for my sake, armed with various weapons and...</p>
             </a>
             
@@ -201,7 +389,9 @@
                 <span class="chapter-badge">Verse 10</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।
+
+पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्॥1.10॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Our army, marshalled by Bhishma, is insufficient, whereas theirs, marshalled by Bhima, is sufficient...</p>
             </a>
             
@@ -211,7 +401,9 @@
                 <span class="chapter-badge">Verse 11</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अयनेषु च सर्वेषु यथाभागमवस्थिताः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अयनेषु च सर्वेषु यथाभागमवस्थिताः।
+
+भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि॥1.11॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Therefore, do all of you, stationed in your respective positions in the several divisions of the arm...</p>
             </a>
             
@@ -221,7 +413,9 @@
                 <span class="chapter-badge">Verse 12</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।
+
+सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्॥1.12॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">His glorious grandsire, the oldest of the Kauravas, roared like a lion to cheer Duryodhana and blew ...</p>
             </a>
             
@@ -231,7 +425,9 @@
                 <span class="chapter-badge">Verse 13</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः।
+
+सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्॥1.13॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Then, suddenly, conches, kettledrums, tabors, drums, and cow horns blared forth from the Kaurava sid...</p>
             </a>
             
@@ -241,7 +437,9 @@
                 <span class="chapter-badge">Verse 14</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।
+
+माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः॥1.14॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Then, Madhava (Krishna) and the son of Pandu (Arjuna), seated in the magnificent chariot yoked with ...</p>
             </a>
             
@@ -251,7 +449,9 @@
                 <span class="chapter-badge">Verse 15</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।
+
+पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः॥1.15॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Hrishikesha blew the Panchajanya, Arjuna blew the Devadatta, and Bhima, the wolf-bellied doer of ter...</p>
             </a>
             
@@ -261,7 +461,9 @@
                 <span class="chapter-badge">Verse 16</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।
+
+नकुलः सहदेवश्च सुघोषमणिपुष्पकौ॥1.16॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">King Yudhishthira, the son of Kunti, blew the Anantavijaya; Nakula and Sahadeva blew the Sughosha an...</p>
             </a>
             
@@ -271,7 +473,9 @@
                 <span class="chapter-badge">Verse 17</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">काश्यश्च परमेष्वासः शिखण्डी च महारथः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">काश्यश्च परमेष्वासः शिखण्डी च महारथः।
+
+धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः॥1.17॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The king of Kasi, an excellent archer, Sikhandi, the mighty car-warrior, Dhrishtadyumna, Virata, and...</p>
             </a>
             
@@ -281,7 +485,9 @@
                 <span class="chapter-badge">Verse 18</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।
+
+सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्॥1.18॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Drupada and the sons of Draupadi, O Lord of the Earth, and the son of Subhadra, the mighty-armed, bl...</p>
             </a>
             
@@ -291,7 +497,9 @@
                 <span class="chapter-badge">Verse 19</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।
+
+नभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्॥1.19॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The tumultuous sound rent the hearts of Dhritarashtra's party, reverberating through both heaven and...</p>
             </a>
             
@@ -301,7 +509,9 @@
                 <span class="chapter-badge">Verse 20</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।
+
+प्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः॥1.20॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Then, seeing the people of Dhritarashtra's party standing arrayed and the discharge of weapons about...</p>
             </a>
             
@@ -311,7 +521,11 @@
                 <span class="chapter-badge">Verse 21</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच
+
+हृषीकेशं तदा वाक्यमिदमाह महीपते।
+
+सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत॥1.21॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold...</p>
             </a>
             
@@ -321,7 +535,9 @@
                 <span class="chapter-badge">Verse 22</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।
+
+कैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे॥1.22॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold...</p>
             </a>
             
@@ -331,7 +547,9 @@
                 <span class="chapter-badge">Verse 23</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।
+
+धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः॥1.23॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">For I desire to observe those who are assembled here to fight, wishing to please in battle the evil-...</p>
             </a>
             
@@ -341,7 +559,11 @@
                 <span class="chapter-badge">Verse 24</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">संजय उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">संजय उवाच
+
+एवमुक्तो हृषीकेशो गुडाकेशेन भारत।
+
+सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्॥1.24॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Sanjaya said, Thus addressed by Arjuna, Krishna stationed the best of chariots, O Dhritarashtra, in ...</p>
             </a>
             
@@ -351,7 +573,9 @@
                 <span class="chapter-badge">Verse 25</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।
+
+उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति॥1.25॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">In front of Bhishma and Drona, and all the rulers of the earth, he said: "O Arjuna, son of Pritha, b...</p>
             </a>
             
@@ -361,7 +585,9 @@
                 <span class="chapter-badge">Verse 26</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।
+
+आचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा॥1.26॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Then, Arjuna (son of Pritha) saw there (in the armies) stationed fathers, grandfathers, teachers, ma...</p>
             </a>
             
@@ -371,7 +597,9 @@
                 <span class="chapter-badge">Verse 27</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।
+
+तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्॥1.27॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">He saw fathers-in-law and friends in both the armies. The son of Kunti, Arjuna, seeing all those kin...</p>
             </a>
             
@@ -381,7 +609,11 @@
                 <span class="chapter-badge">Verse 28</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अर्जुन उवाच
+
+कृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।
+
+दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्॥1.28॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Arjuna said, "O Krishna, seeing my kinsmen arrayed here, eager to fight,...</p>
             </a>
             
@@ -391,7 +623,9 @@
                 <span class="chapter-badge">Verse 29</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सीदन्ति मम गात्राणि मुखं च परिशुष्यति।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सीदन्ति मम गात्राणि मुखं च परिशुष्यति।
+
+वेपथुश्च शरीरे मे रोमहर्षश्च जायते॥1.29॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">My limbs fail, my mouth is parched, my body quivers, and my hair stands on end....</p>
             </a>
             
@@ -401,7 +635,9 @@
                 <span class="chapter-badge">Verse 30</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।
+
+न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः॥1.30॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">The Gandiva slips from my hand, and my skin burns all over; I am unable to stand, and my mind is ree...</p>
             </a>
             
@@ -411,7 +647,9 @@
                 <span class="chapter-badge">Verse 31</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">निमित्तानि च पश्यामि विपरीतानि केशव।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">निमित्तानि च पश्यामि विपरीतानि केशव।
+
+न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे॥1.31॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">And I see ill omens, O Kesava. I do not see any good in slaying my kinsmen in battle....</p>
             </a>
             
@@ -421,7 +659,9 @@
                 <span class="chapter-badge">Verse 32</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।
+
+किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा॥1.32॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">I desire not victory, O Krishna, nor kingdom, nor pleasures.
 What use is dominion to us, O Krishna, ...</p>
             </a>
@@ -432,7 +672,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 33</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।
+
+त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च॥1.33॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Those for whose sake we desire kingdom, enjoyments, and pleasures stand here in battle, having renou...</p>
             </a>
             
@@ -442,7 +684,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 34</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आचार्याः पितरः पुत्रास्तथैव च पितामहाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">आचार्याः पितरः पुत्रास्तथैव च पितामहाः।
+
+मातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा॥1.34॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Teachers, fathers, sons, and grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-l...</p>
             </a>
             
@@ -452,7 +696,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 35</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।
+
+अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते॥1.35॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">These I do not wish to kill, O Krishna, even though they kill me, for the sake of dominion over the ...</p>
             </a>
             
@@ -462,7 +708,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 36</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।
+
+पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः॥1.36॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">By killing these sons of Dhritarashtra, what pleasure could be ours, O Janardana? Only sin would acc...</p>
             </a>
             
@@ -472,7 +720,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 37</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।
+
+स्वजनं हि कथं हत्वा सुखिनः स्याम माधव॥1.37॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Therefore, we should not kill the sons of Dhritarashtra, our relatives; for how can we be happy by k...</p>
             </a>
             
@@ -482,7 +732,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 38</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।
+
+कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्॥1.38॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Though they, with intelligence overpowered by greed, see no evil in the destruction of families and ...</p>
             </a>
             
@@ -492,7 +744,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 39</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।
+
+कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन॥1.39॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Why should we not, who clearly see the evil in the destruction of families, learn to turn away from ...</p>
             </a>
             
@@ -502,7 +756,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 40</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।
+
+धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत॥1.40॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">In the destruction of a family, the immemorial religious rites of that family perish; on the destruc...</p>
             </a>
             
@@ -512,7 +768,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 41</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।
+
+स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः॥1.41॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">O Krishna, by the prevalence of impiety, the women of the family become corrupt; and, when women are...</p>
             </a>
             
@@ -522,7 +780,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 42</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सङ्करो नरकायैव कुलघ्नानां कुलस्य च।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सङ्करो नरकायैव कुलघ्नानां कुलस्य च।
+
+पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः॥1.42॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Confusion of castes leads to hell for the slayers of the family, for their forebears fall, deprived ...</p>
             </a>
             
@@ -532,7 +792,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 43</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।
+
+उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः॥1.43॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">By these evil deeds of the destroyers of the family, which cause confusion of castes, the eternal re...</p>
             </a>
             
@@ -542,7 +804,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 44</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।
+
+नरकेऽनियतं वासो भवतीत्यनुशुश्रुम॥1.44॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">We have heard, O Janardana, that those men in whose families the religious practices have been destr...</p>
             </a>
             
@@ -552,7 +816,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 45</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अहो बत महत्पापं कर्तुं व्यवसिता वयम्।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">अहो बत महत्पापं कर्तुं व्यवसिता वयम्।
+
+यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः॥1.45॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Alas! We are involved in a great sin, for we are prepared to kill our kinsmen, out of greed for the ...</p>
             </a>
             
@@ -562,7 +828,9 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 46</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।
+
+धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्॥1.46॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">If the sons of Dhritarashtra, with weapons in hand, should slay me in battle, unresisting and unarme...</p>
             </a>
             
@@ -572,14 +840,26 @@ What use is dominion to us, O Krishna, ...</p>
                 <span class="chapter-badge">Verse 47</span>
                 
               </div>
-              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच</p>
+              <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">सञ्जय उवाच
+
+एवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत्।
+
+विसृज्य सशरं चापं शोकसंविग्नमानसः॥1.47॥</p>
               <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">Sanjaya said, Having thus spoken in the midst of the battlefield, Arjuna cast away his bow and arrow...</p>
             </a>
             
     </div>
-  </div>
+  </main>
+  
+  <footer style="background:var(--surface); border-top:1px solid var(--border); padding:32px 16px; text-align:center;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div style="font-family:var(--font-hindi); font-size:32px; color:var(--saffron); margin-bottom:8px;">ॐ</div>
+      <p style="font-family:var(--font-hindi); font-size:15px; color:var(--text-sec); margin-bottom:16px;">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+      <div style="font-size:12px; color:var(--text-muted);">© 2026 NAKSHATRA. All rights reserved.</div>
+    </div>
+  </footer>
 
-  <!-- THE POP-UP MODAL (Wisdom.html Style) -->
+  <!-- THE POP-UP MODAL -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
     <div class="modal" id="modalBox">
       <div class="modal-header">
@@ -716,15 +996,10 @@ What use is dominion to us, O Krishna, ...</p>
       document.getElementById('modal-content').innerHTML = html;
       document.getElementById('modalBackdrop').classList.add('open');
       document.getElementById('action-bar').style.display = 'flex';
-      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      document.body.style.overflow = 'hidden';
       
-      // Update URL to /gita/4/2/ format
       history.pushState(null, null, '/gita/' + CHAPTER_DATA.chapter + '/' + verseNum + '/');
-      
-      // Update SEO Meta Tags
       document.title = `Bhagavad Gita Chapter ${CHAPTER_DATA.chapter} Verse ${verseNum}`;
-      
-      // Scroll modal to top
       document.getElementById('modalBackdrop').scrollTo(0, 0);
     }
     
@@ -758,7 +1033,6 @@ What use is dominion to us, O Krishna, ...</p>
       window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
     }
     
-    // Auto-open modal if URL matches /gita/C/V/
     window.addEventListener('load', () => {
       const pathParts = window.location.pathname.split('/').filter(p => p);
       if (pathParts.length >= 3 && pathParts[0] === 'gita') {
@@ -767,7 +1041,6 @@ What use is dominion to us, O Krishna, ...</p>
       }
     });
     
-    // Handle browser back button
     window.addEventListener('popstate', () => {
       const pathParts = window.location.pathname.split('/').filter(p => p);
       if (pathParts.length < 3) {
