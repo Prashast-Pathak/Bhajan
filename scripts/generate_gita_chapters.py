@@ -8,8 +8,6 @@ OUT = ROOT / 'gita'
 
 def safe(v):
     if v is None: return ""
-    # We want to keep <br> tags if they exist or replace newlines, but html.escape escapes them.
-    # So we'll escape first, then replace newlines with <br>
     return html.escape(str(v)).replace('&#x27;', "'").replace('&quot;', '"')
 
 def generate():
@@ -18,17 +16,19 @@ def generate():
         
     OUT.mkdir(exist_ok=True)
     
-    # Extract CSS and JS template (Simplified version of bhagavad-gita.html)
+    redirects_entries = []
+    
     for ch in data.get('chapters', []):
         ch_num = ch['chapter']
-        slug = f"chapter-{ch_num}"
-        ch_dir = OUT / slug
+        # The URL structure is /gita/1/, /gita/2/, etc.
+        ch_dir = OUT / str(ch_num)
         ch_dir.mkdir(exist_ok=True)
         
-        # Serialize only this chapter's data to inject into JS for instant modal loading
+        # Add 200 rewrite rule for Cloudflare so /gita/4/2/ serves /gita/4/index.html
+        redirects_entries.append(f"/gita/{ch_num}/*   /gita/{ch_num}/index.html   200")
+        
         ch_json = json.dumps(ch, ensure_ascii=False)
         
-        # Build the verse list for the main page
         verse_list_html = ""
         for v in sorted(ch.get('verses', []), key=lambda x: x['verse']):
             v_num = v['verse']
@@ -37,7 +37,7 @@ def generate():
             famous_html = '<span style="font-size:11px;color:var(--gold);">⭐ Famous</span>' if v.get('famous') else ''
             
             verse_list_html += f"""
-            <a href="#verse-{v_num}" onclick="openVerseModal({v_num}); event.preventDefault();"
+            <a href="/gita/{ch_num}/{v_num}/" onclick="openVerseModal({v_num}); event.preventDefault();"
                class="card card-hover {'famous-verse' if v.get('famous') else ''}" style="text-decoration:none;display:block;">
               <div class="flex items-center justify-between mb-2">
                 <span class="chapter-badge">Verse {v_num}</span>
@@ -56,6 +56,7 @@ def generate():
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Read all verses of Bhagavad Gita Chapter {ch_num}: {safe(ch.get('title_english', ''))}.">
+  <link rel="canonical" href="https://bhajan.ournakshatra.com/gita/{ch_num}/">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -208,7 +209,7 @@ def generate():
       const html = `
         <nav class="breadcrumb text-sm mb-5" style="color:var(--text-muted);">
           <a href="/bhagavad-gita.html" style="color:var(--saffron);">Gita</a> &rsaquo;
-          <a href="#" onclick="closeVerseModal();return false;" style="color:var(--saffron);">Chapter ${{CHAPTER_DATA.chapter}}</a> &rsaquo;
+          <a href="/gita/${{CHAPTER_DATA.chapter}}/" onclick="closeVerseModal();return false;" style="color:var(--saffron);">Chapter ${{CHAPTER_DATA.chapter}}</a> &rsaquo;
           <span>Verse ${{v.verse}}</span>
         </nav>
         
@@ -276,8 +277,11 @@ def generate():
       document.getElementById('action-bar').style.display = 'flex';
       document.body.style.overflow = 'hidden'; // Prevent background scroll
       
-      // Update URL without reloading
-      history.pushState(null, null, '#verse-' + verseNum);
+      // Update URL to /gita/4/2/ format
+      history.pushState(null, null, '/gita/' + CHAPTER_DATA.chapter + '/' + verseNum + '/');
+      
+      // Update SEO Meta Tags
+      document.title = `Bhagavad Gita Chapter ${{CHAPTER_DATA.chapter}} Verse ${{verseNum}}`;
       
       // Scroll modal to top
       document.getElementById('verse-modal').scrollTo(0, 0);
@@ -287,7 +291,8 @@ def generate():
       document.getElementById('verse-modal').classList.remove('active');
       document.getElementById('action-bar').style.display = 'none';
       document.body.style.overflow = '';
-      history.pushState(null, null, window.location.pathname);
+      history.pushState(null, null, '/gita/' + CHAPTER_DATA.chapter + '/');
+      document.title = `Bhagavad Gita Chapter ${{CHAPTER_DATA.chapter}} | NAKSHATRA`;
     }}
     
     function showToast(msg) {{
@@ -299,7 +304,7 @@ def generate():
     function copyVerse() {{
       if(!currentVerse) return;
       const v = currentVerse;
-      const url = window.location.origin + window.location.pathname + '#verse-' + v.verse;
+      const url = window.location.origin + window.location.pathname;
       const text = `Bhagavad Gita Chapter ${{CHAPTER_DATA.chapter}}, Verse ${{v.verse}}\\n\\n${{v.hindi_translation}}\\n\\n${{url}}`;
       navigator.clipboard.writeText(text).then(() => showToast('📋 Copied to clipboard!'));
     }}
@@ -307,27 +312,32 @@ def generate():
     function shareWhatsApp() {{
       if(!currentVerse) return;
       const v = currentVerse;
-      const url = window.location.origin + window.location.pathname + '#verse-' + v.verse;
+      const url = window.location.origin + window.location.pathname;
       const msg = `🙏 *Bhagavad Gita — Chapter ${{CHAPTER_DATA.chapter}}, Verse ${{v.verse}}*\\n\\n${{v.sanskrit}}\\n\\n*अर्थ:* ${{v.hindi_translation}}\\n\\n👇\\n${{url}}`;
       window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
     }}
     
-    // Auto-open modal if URL has hash
+    // Auto-open modal if URL matches /gita/C/V/
     window.addEventListener('load', () => {{
-      if (window.location.hash && window.location.hash.startsWith('#verse-')) {{
-        const vNum = parseInt(window.location.hash.replace('#verse-', ''));
+      const pathParts = window.location.pathname.split('/').filter(p => p);
+      // pathParts might be ['gita', '4', '2']
+      if (pathParts.length >= 3 && pathParts[0] === 'gita') {{
+        const vNum = parseInt(pathParts[2]);
         if (vNum) openVerseModal(vNum);
       }}
     }});
     
-    // Handle browser back button to close modal
+    // Handle browser back button
     window.addEventListener('popstate', () => {{
-      if (!window.location.hash.startsWith('#verse-')) {{
+      const pathParts = window.location.pathname.split('/').filter(p => p);
+      if (pathParts.length < 3) {{
+        // We went back to /gita/4/
         document.getElementById('verse-modal').classList.remove('active');
         document.getElementById('action-bar').style.display = 'none';
         document.body.style.overflow = '';
       }} else {{
-        const vNum = parseInt(window.location.hash.replace('#verse-', ''));
+        // We went to /gita/4/3/
+        const vNum = parseInt(pathParts[2]);
         if (vNum) openVerseModal(vNum);
       }}
     }});
@@ -337,7 +347,27 @@ def generate():
         with open(ch_dir / 'index.html', 'w', encoding='utf-8') as f:
             f.write(page_html)
             
-    print("Generated 18 Master Chapter pages with Pop-Up Modal UI!")
+    # Update _redirects file to ensure /gita/4/2/ serves /gita/4/index.html (200 rewrite)
+    redirects_path = ROOT / '_redirects'
+    existing_redirects = ""
+    if redirects_path.exists():
+        with open(redirects_path, 'r', encoding='utf-8') as f:
+            existing_redirects = f.read()
+            
+    # Remove old gita redirects if they exist to avoid duplicates
+    new_redirects = []
+    for line in existing_redirects.split('\n'):
+        if not line.startswith('/gita/'):
+            new_redirects.append(line)
+            
+    # Append the new ones
+    new_redirects.append("\n# Gita SPA Routes for 18 Master Pages")
+    new_redirects.extend(redirects_entries)
+    
+    with open(redirects_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(new_redirects))
+            
+    print("Generated 18 Master Chapter pages with Same-URL Cloudflare configuration!")
 
 if __name__ == "__main__":
     generate()

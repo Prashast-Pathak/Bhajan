@@ -4,3 +4,24 @@
 
 # Route raw parameterized template visits to home (or rely on canonicals)
 # Note: Full 301 logic for ?slug= to /path/ is better handled via JS in this static setup.
+
+
+# Gita SPA Routes for 18 Master Pages
+/gita/1/*   /gita/1/index.html   200
+/gita/2/*   /gita/2/index.html   200
+/gita/3/*   /gita/3/index.html   200
+/gita/4/*   /gita/4/index.html   200
+/gita/5/*   /gita/5/index.html   200
+/gita/6/*   /gita/6/index.html   200
+/gita/7/*   /gita/7/index.html   200
+/gita/8/*   /gita/8/index.html   200
+/gita/9/*   /gita/9/index.html   200
+/gita/10/*   /gita/10/index.html   200
+/gita/11/*   /gita/11/index.html   200
+/gita/12/*   /gita/12/index.html   200
+/gita/13/*   /gita/13/index.html   200
+/gita/14/*   /gita/14/index.html   200
+/gita/15/*   /gita/15/index.html   200
+/gita/16/*   /gita/16/index.html   200
+/gita/17/*   /gita/17/index.html   200
+/gita/18/*   /gita/18/index.html   200
