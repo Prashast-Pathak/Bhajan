@@ -47,6 +47,13 @@
       border-radius: 12px;
       padding: 20px;
     }
+    
+    /* Accordion styles */
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .expand-icon { transform: rotate(180deg); }
+    .expand-icon { transition: transform 0.3s ease; }
+    details[open] { box-shadow: 0 4px 12px rgba(201,106,31,0.08); border-color: rgba(201,106,31,0.4); }
+    
     .verse-devanagari {
       font-family: 'Tiro Devanagari Hindi', serif;
       font-size: 22px;
@@ -131,6 +138,10 @@
       border-radius: 8px;
       font-weight: 600;
       border: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .nav-btn:hover {
+      background: var(--surface);
     }
   </style>
 </head>
@@ -152,765 +163,1046 @@
       <p class="devanagari" style="margin:0;"><strong>सारांश:</strong> भगवद गीता का आठवां अध्याय अक्षरब्रह्मयोग है। इस अध्याय में, कृष्ण मृत्यु से पहले अंतिम विचार का महत्व बताते हैं। अगर हम मृत्यु के समय कृष्ण को याद कर लें तो हम निश्चित रूप से उन्हें प्राप्त करेंगे। इसलिए हर समय प्रभु के बारे में जागरूकता रखना, उनके बारे में सोचना और हर समय उनके नामों का जप करना बहुत महत्वपूर्ण है। अपने मन को पूरी तरह से कृष्ण की निरंतर भक्ति में समाहित करके हम इस भौतिक संसार से परे भगवान के सर्वोच्च निवास तक जा सकते हैं।</p>
     </div>
 
+    <div style="margin-bottom: 24px; color: var(--text-muted); font-size: 14px; text-align: center;">
+      Click any verse to expand and read translations
+    </div>
+
     <!-- VERSES -->
     
-            <div id="verse-1" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 1</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 1)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-1" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 1</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अर्जुन उवाच
+
+किं तद्ब्रह्म किमध्यात्मं क...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अर्जुन उवाच
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 1); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अर्जुन उवाच
 
 किं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम।
 
 अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते॥8.1॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    arjuna uvācha
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        arjuna uvācha
 kiṁ tad brahma kim adhyātmaṁ kiṁ karma puruṣhottama
 adhibhūtaṁ cha kiṁ proktam adhidaivaṁ kim uchyate
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> अर्जुन बोले -- हे पुरुषोत्तम ! वह ब्रह्म क्या है? अध्यात्म क्या है? कर्म क्या है? अधिभूत किसको कहा गया है? और अधिदैव किसको कहा जाता है? यहाँ अधियज्ञ कौन है और वह इस देहमें कैसे है? हे मधूसूदन ! नियतात्मा (वशीभूत अंतःकरण वाले) मनुष्यके द्वारा अन्तकालमें आप कैसे जाननेमें आते हैं?
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Arjuna said, &quot;What is Brahman? What is Adhyatma? What is action, O best among men? What is Adhibhuta declared to be? And, what is Adhidaiva said to be?&quot;
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> अर्जुन बोले -- हे पुरुषोत्तम ! वह ब्रह्म क्या है? अध्यात्म क्या है? कर्म क्या है? अधिभूत किसको कहा गया है? और अधिदैव किसको कहा जाता है? यहाँ अधियज्ञ कौन है और वह इस देहमें कैसे है? हे मधूसूदन ! नियतात्मा (वशीभूत अंतःकरण वाले) मनुष्यके द्वारा अन्तकालमें आप कैसे जाननेमें आते हैं?
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Arjuna said, &quot;What is Brahman? What is Adhyatma? What is action, O best among men? What is Adhibhuta declared to be? And, what is Adhidaiva said to be?&quot;
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-2" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 2</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 2)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-2" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 2</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।
+...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 2); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।
 
 प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः॥8.2॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    adhiyajñaḥ kathaṁ ko ’tra dehe ’smin madhusūdana
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        adhiyajñaḥ kathaṁ ko ’tra dehe ’smin madhusūdana
 prayāṇa-kāle cha kathaṁ jñeyo ’si niyatātmabhiḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> अर्जुन बोले -- हे पुरुषोत्तम ! वह ब्रह्म क्या है? अध्यात्म क्या है? कर्म क्या है? अधिभूत किसको कहा गया है? और अधिदैव किसको कहा जाता है? यहाँ अधियज्ञ कौन है और वह इस देहमें कैसे है? हे मधूसूदन ! नियतात्मा (वशीभूत अन्तःकरणवाले) मनुष्यके द्वारा अन्तकालमें आप कैसे जाननेमें आते हैं?
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Who and how is Adhiyajna here in this body, O destroyer of Madhu? And how, at the time of death, are You to be known by the self-controlled?
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> अर्जुन बोले -- हे पुरुषोत्तम ! वह ब्रह्म क्या है? अध्यात्म क्या है? कर्म क्या है? अधिभूत किसको कहा गया है? और अधिदैव किसको कहा जाता है? यहाँ अधियज्ञ कौन है और वह इस देहमें कैसे है? हे मधूसूदन ! नियतात्मा (वशीभूत अन्तःकरणवाले) मनुष्यके द्वारा अन्तकालमें आप कैसे जाननेमें आते हैं?
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Who and how is Adhiyajna here in this body, O destroyer of Madhu? And how, at the time of death, are You to be known by the self-controlled?
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-3" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 3</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 3)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-3" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 3</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">श्री भगवानुवाच
+
+अक्षरं ब्रह्म परमं स्वभा...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    श्री भगवानुवाच
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 3); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        श्री भगवानुवाच
 
 अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते।
 
 भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः॥8.3॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    śhrī bhagavān uvācha
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        śhrī bhagavān uvācha
 akṣharaṁ brahma paramaṁ svabhāvo ’dhyātmam uchyate
 bhūta-bhāvodbhava-karo visargaḥ karma-sanjñitaḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> श्रीभगवान् बोले -- परम अक्षर ब्रह्म है और जीवका अपना जो होनापन है, उसको अध्यात्म कहते हैं। प्राणियों का उद्भव (सत्ता को प्रकट) करनेवाला जो त्याग है उसको कर्म कहा जाता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> The Blessed Lord said, &quot;Brahman is the Imperishable, the Supreme; its essential nature is called Self-knowledge; the offering (to the gods) that causes the existence and manifestation of beings and sustains them is called action.&quot;
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> श्रीभगवान् बोले -- परम अक्षर ब्रह्म है और जीवका अपना जो होनापन है, उसको अध्यात्म कहते हैं। प्राणियों का उद्भव (सत्ता को प्रकट) करनेवाला जो त्याग है उसको कर्म कहा जाता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> The Blessed Lord said, &quot;Brahman is the Imperishable, the Supreme; its essential nature is called Self-knowledge; the offering (to the gods) that causes the existence and manifestation of beings and sustains them is called action.&quot;
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-4" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 4</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 4)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-4" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 4</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।
+
+अ...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 4); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।
 
 अधियज्ञोऽहमेवात्र देहे देहभृतां वर॥8.4॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    adhibhūtaṁ kṣharo bhāvaḥ puruṣhaśh chādhidaivatam
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        adhibhūtaṁ kṣharo bhāvaḥ puruṣhaśh chādhidaivatam
 adhiyajño ’ham evātra dehe deha-bhṛitāṁ vara
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे देहधारियोंमें श्रेष्ठ अर्जुन ! क्षरभाव अर्थात् नाशवान् पदार्थको अधिभूत कहते हैं, पुरुष अर्थात् हिरण्यगर्भ ब्रह्माजी अधिदैव हैं और इस देहमें अन्तर्यामीरूपसे मैं ही अधियज्ञ हूँ।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Adhibhuta—knowledge of the elements—pertains to My perishable nature, and the Purusha, or the Soul, is the Adhidaiva; I alone am the Adhiyajna here in this body, O best among the embodied.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे देहधारियोंमें श्रेष्ठ अर्जुन ! क्षरभाव अर्थात् नाशवान् पदार्थको अधिभूत कहते हैं, पुरुष अर्थात् हिरण्यगर्भ ब्रह्माजी अधिदैव हैं और इस देहमें अन्तर्यामीरूपसे मैं ही अधियज्ञ हूँ।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Adhibhuta—knowledge of the elements—pertains to My perishable nature, and the Purusha, or the Soul, is the Adhidaiva; I alone am the Adhiyajna here in this body, O best among the embodied.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-5" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 5</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 5)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-5" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 5</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 5); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।
 
 यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः॥8.5॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    anta-kāle cha mām eva smaran muktvā kalevaram
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        anta-kāle cha mām eva smaran muktvā kalevaram
 yaḥ prayāti sa mad-bhāvaṁ yāti nāstyatra sanśhayaḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> जो मनुष्य अन्तकालमें भी मेरा स्मरण करते हुए शरीर छोड़कर जाता है, वह मेरे स्वरुप को ही प्राप्त होता है, इसमें सन्देह नहीं है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> And whoever, leaving their body, goes forth remembering Me alone at the time of death, they will attain My Being; there is no doubt about this.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> जो मनुष्य अन्तकालमें भी मेरा स्मरण करते हुए शरीर छोड़कर जाता है, वह मेरे स्वरुप को ही प्राप्त होता है, इसमें सन्देह नहीं है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> And whoever, leaving their body, goes forth remembering Me alone at the time of death, they will attain My Being; there is no doubt about this.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-6" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 6</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 6)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-6" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 6</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 6); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।
 
 तं तमेवैति कौन्तेय सदा तद्भावभावितः॥8.6॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    yaṁ yaṁ vāpi smaran bhāvaṁ tyajatyante kalevaram
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        yaṁ yaṁ vāpi smaran bhāvaṁ tyajatyante kalevaram
 taṁ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे कुन्तीपुत्र अर्जुन ! मनुष्य अन्तकाल में जिस-जिस भी भावका स्मरण करते हुए शरीर छोड़ता है वह उस (अन्तकालके) भावसे सदा भावित होता हुआ उस-उसको ही प्राप्त होता है अर्थात् उस-उस योनिमें ही चला जाता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Whoever at the end leaves the body, thinking of any being, to that being only does he go, O son of Kunti (Arjuna), due to his constant thought of that being.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे कुन्तीपुत्र अर्जुन ! मनुष्य अन्तकाल में जिस-जिस भी भावका स्मरण करते हुए शरीर छोड़ता है वह उस (अन्तकालके) भावसे सदा भावित होता हुआ उस-उसको ही प्राप्त होता है अर्थात् उस-उस योनिमें ही चला जाता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Whoever at the end leaves the body, thinking of any being, to that being only does he go, O son of Kunti (Arjuna), due to his constant thought of that being.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-7" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 7</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 7)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-7" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 7</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 7); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।
 
 मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्॥8.7॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    tasmāt sarveṣhu kāleṣhu mām anusmara yudhya cha
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        tasmāt sarveṣhu kāleṣhu mām anusmara yudhya cha
 mayyarpita-mano-buddhir mām evaiṣhyasyasanśhayam
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> इसलिये तू सब समयमें मेरा स्मरण कर और युद्ध भी कर। मेरेमें मन और बुद्धि अर्पित करनेवाला तू निःसन्देह मेरेको ही प्राप्त होगा।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Therefore, at all times, remember Me only and fight. With your mind and intellect fixed on Me, you will undoubtedly come to Me alone.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> इसलिये तू सब समयमें मेरा स्मरण कर और युद्ध भी कर। मेरेमें मन और बुद्धि अर्पित करनेवाला तू निःसन्देह मेरेको ही प्राप्त होगा।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Therefore, at all times, remember Me only and fight. With your mind and intellect fixed on Me, you will undoubtedly come to Me alone.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-8" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 8</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 8)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-8" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 8</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।
+
+परम...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 8); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।
 
 परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्॥8.8॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    abhyāsa-yoga-yuktena chetasā nānya-gāminā
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        abhyāsa-yoga-yuktena chetasā nānya-gāminā
 paramaṁ puruṣhaṁ divyaṁ yāti pārthānuchintayan
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन ! अभ्यासयोगसे युक्त और अन्यका चिन्तन न करनेवाले चित्तसे परम दिव्य पुरुषका चिन्तन करता हुआ (शरीर छोड़नेवाला मनुष्य) उसीको प्राप्त हो जाता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> With the mind not moving towards any other thing, made steadfast through the practice of habitual meditation, and constantly meditating, one goes to the Supreme Person, the Resplendent, O Arjuna.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन ! अभ्यासयोगसे युक्त और अन्यका चिन्तन न करनेवाले चित्तसे परम दिव्य पुरुषका चिन्तन करता हुआ (शरीर छोड़नेवाला मनुष्य) उसीको प्राप्त हो जाता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> With the mind not moving towards any other thing, made steadfast through the practice of habitual meditation, and constantly meditating, one goes to the Supreme Person, the Resplendent, O Arjuna.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-9" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 9</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 9)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-9" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 9</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">कविं पुराणमनुशासितार
+
+मणोरणीयांसमनुस्मरे...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    कविं पुराणमनुशासितार
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 9); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        कविं पुराणमनुशासितार
 
 मणोरणीयांसमनुस्मरेद्यः।
 
 सर्वस्य धातारमचिन्त्यरूप
 
 मादित्यवर्णं तमसः परस्तात्॥8.9॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    kaviṁ purāṇam anuśhāsitāram
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        kaviṁ purāṇam anuśhāsitāram
 aṇor aṇīyānsam anusmared yaḥ
 sarvasya dhātāram achintya-rūpam
 āditya-varṇaṁ tamasaḥ parastāt
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> जो सर्वज्ञ, पुराण, शासन करनेवाला, सूक्ष्म-से-सूक्ष्म, सबका धारण-पोषण करनेवाला, अज्ञानसे अत्यन्त परे, सूर्यकी तरह प्रकाशस्वरूप -- ऐसे अचिन्त्य स्वरूपका चिन्तन करता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Whosoever meditates on the Omniscient, the Ancient, the Ruler of the whole world, minuter than an atom, the supporter of all, of inconceivable form, effulgent like the sun and beyond the darkness of ignorance.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> जो सर्वज्ञ, पुराण, शासन करनेवाला, सूक्ष्म-से-सूक्ष्म, सबका धारण-पोषण करनेवाला, अज्ञानसे अत्यन्त परे, सूर्यकी तरह प्रकाशस्वरूप -- ऐसे अचिन्त्य स्वरूपका चिन्तन करता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Whosoever meditates on the Omniscient, the Ancient, the Ruler of the whole world, minuter than an atom, the supporter of all, of inconceivable form, effulgent like the sun and beyond the darkness of ignorance.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-10" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 10</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 10)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-10" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 10</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">प्रयाणकाले मनसाऽचलेन
+
+भक्त्या युक्तो योग...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    प्रयाणकाले मनसाऽचलेन
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 10); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        प्रयाणकाले मनसाऽचलेन
 
 भक्त्या युक्तो योगबलेन चैव।
 
 भ्रुवोर्मध्ये प्राणमावेश्य सम्यक्
 
 स तं परं पुरुषमुपैति दिव्यम्॥8.10॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    prayāṇa-kāle manasāchalena
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        prayāṇa-kāle manasāchalena
 bhaktyā yukto yoga-balena chaiva
 bhruvor madhye prāṇam āveśhya samyak
 sa taṁ paraṁ puruṣham upaiti divyam
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> वह भक्तियुक्त मनुष्य अन्तसमयमें अचल मनसे और योगबलके द्वारा भृकुटीके मध्यमें प्राणोंको अच्छी तरहसे प्रविष्ट करके (शरीर छोड़नेपर) उस परम दिव्य पुरुषको ही प्राप्त होता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> At the time of death, with an unwavering mind, endowed with devotion, by the power of Yoga, fixing the whole life-breath in the middle of the two eyebrows, he reaches that resplendent Supreme Person.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> वह भक्तियुक्त मनुष्य अन्तसमयमें अचल मनसे और योगबलके द्वारा भृकुटीके मध्यमें प्राणोंको अच्छी तरहसे प्रविष्ट करके (शरीर छोड़नेपर) उस परम दिव्य पुरुषको ही प्राप्त होता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> At the time of death, with an unwavering mind, endowed with devotion, by the power of Yoga, fixing the whole life-breath in the middle of the two eyebrows, he reaches that resplendent Supreme Person.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-11" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 11</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 11)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-11" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 11</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">यदक्षरं वेदविदो वदन्ति
+
+विशन्ति यद्यतयो ...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    यदक्षरं वेदविदो वदन्ति
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 11); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        यदक्षरं वेदविदो वदन्ति
 
 विशन्ति यद्यतयो वीतरागाः।
 
 यदिच्छन्तो ब्रह्मचर्यं चरन्ति
 
 तत्ते पदं संग्रहेण प्रवक्ष्ये॥8.11॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    yad akṣharaṁ veda-vido vadanti
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        yad akṣharaṁ veda-vido vadanti
 viśhanti yad yatayo vīta-rāgāḥ
 yad ichchhanto brahmacharyaṁ charanti
 tat te padaṁ saṅgraheṇa pravakṣhye
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> वेदवेत्ता लोग जिसको अक्षर कहते हैं, वीतराग यति जिसको प्राप्त करते हैं और साधक जिसकी प्राप्तिकी इच्छा करते हुए ब्रह्मचर्यका पालन करते हैं, वह पद मैं तेरे लिये संक्षेपसे कहूँगा।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> That which is declared to be Imperishable by those who know the Vedas, that which the self-controlled (ascetics or Sannyasins) and passion-free enter, that goal, desiring which celibacy is practised, I will declare to thee in brief.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> वेदवेत्ता लोग जिसको अक्षर कहते हैं, वीतराग यति जिसको प्राप्त करते हैं और साधक जिसकी प्राप्तिकी इच्छा करते हुए ब्रह्मचर्यका पालन करते हैं, वह पद मैं तेरे लिये संक्षेपसे कहूँगा।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> That which is declared to be Imperishable by those who know the Vedas, that which the self-controlled (ascetics or Sannyasins) and passion-free enter, that goal, desiring which celibacy is practised, I will declare to thee in brief.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-12" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 12</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 12)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-12" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 12</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।
+...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 12); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।
 
 मूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्॥8.12॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    sarva-dvārāṇi sanyamya mano hṛidi nirudhya cha
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        sarva-dvārāṇi sanyamya mano hṛidi nirudhya cha
 mūrdhnyādhāyātmanaḥ prāṇam āsthito yoga-dhāraṇām
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> (इन्द्रियोंके) सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो &#x27;ऊँ&#x27; इस एक अक्षर ब्रह्मका  उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Having closed all the gates, confined the mind in the heart, and fixed the life-breath in the head, engage in the practice of concentration.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> (इन्द्रियोंके) सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो &#x27;ऊँ&#x27; इस एक अक्षर ब्रह्मका  उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Having closed all the gates, confined the mind in the heart, and fixed the life-breath in the head, engage in the practice of concentration.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-13" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 13</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 13)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-13" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 13</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 13); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।
 
 यः प्रयाति त्यजन्देहं स याति परमां गतिम्॥8.13॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    oṁ ityekākṣharaṁ brahma vyāharan mām anusmaran
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        oṁ ityekākṣharaṁ brahma vyāharan mām anusmaran
 yaḥ prayāti tyajan dehaṁ sa yāti paramāṁ gatim
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> (इन्द्रियोंके) सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो साधक  &#x27;ऊँ&#x27; इस एक अक्षर ब्रह्मका उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Uttering the one-syllabled Om, the Brahman, and remembering Me, he who departs, leaving the body, attains the Supreme Goal.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> (इन्द्रियोंके) सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो साधक  &#x27;ऊँ&#x27; इस एक अक्षर ब्रह्मका उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Uttering the one-syllabled Om, the Brahman, and remembering Me, he who departs, leaving the body, attains the Supreme Goal.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-14" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 14</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 14)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-14" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 14</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अनन्यचेताः सततं यो मां स्मरति नित्यशः।
+
+...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अनन्यचेताः सततं यो मां स्मरति नित्यशः।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 14); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अनन्यचेताः सततं यो मां स्मरति नित्यशः।
 
 तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः॥8.14॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    ananya-chetāḥ satataṁ yo māṁ smarati nityaśhaḥ
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        ananya-chetāḥ satataṁ yo māṁ smarati nityaśhaḥ
 tasyāhaṁ sulabhaḥ pārtha nitya-yuktasya yoginaḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन ! अनन्यचित्तवाला जो मनुष्य मेरा नित्य-निरन्तर स्मरण करता है, उस नित्ययुक्त योगीके लिये मैं सुलभ हूँ अर्थात् उसको सुलभतासे प्राप्त हो जाता हूँ।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> I am easily attainable by that ever-steadfast yogi who constantly and daily remembers me for a long time, not thinking of anything else with a single-minded or one-pointed focus, O Partha.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन ! अनन्यचित्तवाला जो मनुष्य मेरा नित्य-निरन्तर स्मरण करता है, उस नित्ययुक्त योगीके लिये मैं सुलभ हूँ अर्थात् उसको सुलभतासे प्राप्त हो जाता हूँ।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> I am easily attainable by that ever-steadfast yogi who constantly and daily remembers me for a long time, not thinking of anything else with a single-minded or one-pointed focus, O Partha.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-15" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 15</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 15)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-15" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 15</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।
+
+न...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 15); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।
 
 नाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः॥8.15॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    mām upetya punar janma duḥkhālayam aśhāśhvatam
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        mām upetya punar janma duḥkhālayam aśhāśhvatam
 nāpnuvanti mahātmānaḥ sansiddhiṁ paramāṁ gatāḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> महात्मालोग मुझे प्राप्त करके दुःखालय और अशाश्वत पुनर्जन्मको प्राप्त नहीं होते; क्योंकि वे परमसिद्धिको प्राप्त हो गये हैं अर्थात् उनको परम प्रेमकी प्राप्ति हो गयी है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Having attained Me, these great souls do not take birth again here—a place of pain and impermanence—but have reached the highest perfection of liberation.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> महात्मालोग मुझे प्राप्त करके दुःखालय और अशाश्वत पुनर्जन्मको प्राप्त नहीं होते; क्योंकि वे परमसिद्धिको प्राप्त हो गये हैं अर्थात् उनको परम प्रेमकी प्राप्ति हो गयी है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Having attained Me, these great souls do not take birth again here—a place of pain and impermanence—but have reached the highest perfection of liberation.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-16" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 16</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 16)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-16" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 16</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।
+...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 16); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।
 
 मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते॥8.16॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    ā-brahma-bhuvanāl lokāḥ punar āvartino ’rjuna
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        ā-brahma-bhuvanāl lokāḥ punar āvartino ’rjuna
 mām upetya tu kaunteya punar janma na vidyate
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे अर्जुन ! ब्रह्मलोकतक सभी लोक पुनरावर्ती है; परन्तु हे कौन्तेय ! मुझे प्राप्त होनेपर पुनर्जन्म नहीं होता।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> All the worlds, including the world of Brahma, are subject to return again, O Arjuna; but he who reaches Me, O son of Kunti, has no rebirth.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे अर्जुन ! ब्रह्मलोकतक सभी लोक पुनरावर्ती है; परन्तु हे कौन्तेय ! मुझे प्राप्त होनेपर पुनर्जन्म नहीं होता।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> All the worlds, including the world of Brahma, are subject to return again, O Arjuna; but he who reaches Me, O son of Kunti, has no rebirth.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-17" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 17</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 17)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-17" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 17</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।
+
+र...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 17); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।
 
 रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः॥8.17॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    sahasra-yuga-paryantam ahar yad brahmaṇo viduḥ
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        sahasra-yuga-paryantam ahar yad brahmaṇo viduḥ
 rātriṁ yuga-sahasrāntāṁ te ’ho-rātra-vido janāḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> जो मनुष्य ब्रह्माके एक हज़ार चतुर्युगीवाले एक दिनको और सहस्त्र चतुर्युगीपर्यन्त एक रातको जानते हैं, वे मनुष्य ब्रह्माके दिन और रातको जाननेवाले हैं।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Those who know the day of Brahma, which lasts a thousand Yugas, and the night, which also lasts a thousand Yugas, know day and night.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> जो मनुष्य ब्रह्माके एक हज़ार चतुर्युगीवाले एक दिनको और सहस्त्र चतुर्युगीपर्यन्त एक रातको जानते हैं, वे मनुष्य ब्रह्माके दिन और रातको जाननेवाले हैं।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Those who know the day of Brahma, which lasts a thousand Yugas, and the night, which also lasts a thousand Yugas, know day and night.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-18" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 18</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 18)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-18" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 18</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहराग...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 18); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।
 
 रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके॥8.18॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    avyaktād vyaktayaḥ sarvāḥ prabhavantyahar-āgame
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        avyaktād vyaktayaḥ sarvāḥ prabhavantyahar-āgame
 rātryāgame pralīyante tatraivāvyakta-sanjñake
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> ब्रह्माजीके दिनके आरम्भकालमें अव्यक्त- (ब्रह्माजीके सूक्ष्म-शरीर-) से सम्पूर्ण प्राणी पैदा होते हैं और ब्रह्माजीकी रातके आरम्भकालमें उसी अव्यक्तमें सम्पूर्ण प्राणी लीन हो जाते हैं।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> From the Unmanifested, all the manifested worlds proceed upon the arrival of the &#x27;day&#x27;; upon the arrival of the &#x27;night&#x27;, they dissolve indeed into that which is known as the Unmanifested.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> ब्रह्माजीके दिनके आरम्भकालमें अव्यक्त- (ब्रह्माजीके सूक्ष्म-शरीर-) से सम्पूर्ण प्राणी पैदा होते हैं और ब्रह्माजीकी रातके आरम्भकालमें उसी अव्यक्तमें सम्पूर्ण प्राणी लीन हो जाते हैं।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> From the Unmanifested, all the manifested worlds proceed upon the arrival of the &#x27;day&#x27;; upon the arrival of the &#x27;night&#x27;, they dissolve indeed into that which is known as the Unmanifested.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-19" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 19</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 19)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-19" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 19</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 19); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।
 
 रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे॥8.19॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    bhūta-grāmaḥ sa evāyaṁ bhūtvā bhūtvā pralīyate
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        bhūta-grāmaḥ sa evāyaṁ bhūtvā bhūtvā pralīyate
 rātryāgame ’vaśhaḥ pārtha prabhavatyahar-āgame
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे पार्थ ! वही यह प्राणिसमुदाय उत्पन्न हो-होकर प्रकृतिके परवश हुआ ब्रह्माके दिनके समय उत्पन्न होता है और ब्रह्माकी रात्रिके समय लीन होता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> This same multitude of beings, being born again and again, helplessly dissolves, O Arjuna, into the Unmanifested at the coming of the night and comes forth at the coming of the day.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे पार्थ ! वही यह प्राणिसमुदाय उत्पन्न हो-होकर प्रकृतिके परवश हुआ ब्रह्माके दिनके समय उत्पन्न होता है और ब्रह्माकी रात्रिके समय लीन होता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> This same multitude of beings, being born again and again, helplessly dissolves, O Arjuna, into the Unmanifested at the coming of the night and comes forth at the coming of the day.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-20" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 20</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 20)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-20" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 20</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 20); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।
 
 यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति॥8.20॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    paras tasmāt tu bhāvo ’nyo ’vyakto ’vyaktāt sanātanaḥ
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        paras tasmāt tu bhāvo ’nyo ’vyakto ’vyaktāt sanātanaḥ
 yaḥ sa sarveṣhu bhūteṣhu naśhyatsu na vinaśhyati
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> परन्तु उस अव्यक्त- (ब्रह्माजीके सूक्ष्म-शरीर-) से अन्य अनादि सर्वश्रेष्ठ भावरूप जो अव्यक्त है, उसका सम्पूर्ण प्राणियोंके नष्ट होनेपर भी नाश नहीं होता।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> But verily, there exists higher than this Unmanifested, another Unmanifested Eternal, which is not destroyed even when all beings are destroyed.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> परन्तु उस अव्यक्त- (ब्रह्माजीके सूक्ष्म-शरीर-) से अन्य अनादि सर्वश्रेष्ठ भावरूप जो अव्यक्त है, उसका सम्पूर्ण प्राणियोंके नष्ट होनेपर भी नाश नहीं होता।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> But verily, there exists higher than this Unmanifested, another Unmanifested Eternal, which is not destroyed even when all beings are destroyed.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-21" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 21</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 21)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-21" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 21</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गति...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 21); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।
 
 यं प्राप्य न निवर्तन्ते तद्धाम परमं मम॥8.21॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    avyakto ’kṣhara ityuktas tam āhuḥ paramāṁ gatim
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        avyakto ’kṣhara ityuktas tam āhuḥ paramāṁ gatim
 yaṁ prāpya na nivartante tad dhāma paramaṁ mama
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> उसीको अव्यक्त और अक्षर कहा गया है और उसीको परमगति कहा गया है तथा जिसको प्राप्त होनेपर जीव फिर लौटकर नहीं आते, वह मेरा परमधाम है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> What is known as the Unmanifested and the Imperishable, That is said to be the highest goal. Those who reach It do not return (to this Samsara). That is My supreme abode (place or state).
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> उसीको अव्यक्त और अक्षर कहा गया है और उसीको परमगति कहा गया है तथा जिसको प्राप्त होनेपर जीव फिर लौटकर नहीं आते, वह मेरा परमधाम है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> What is known as the Unmanifested and the Imperishable, That is said to be the highest goal. Those who reach It do not return (to this Samsara). That is My supreme abode (place or state).
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-22" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 22</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 22)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-22" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 22</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्य...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 22); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।
 
 यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्॥8.22॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    puruṣhaḥ sa paraḥ pārtha bhaktyā labhyas tvananyayā
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        puruṣhaḥ sa paraḥ pārtha bhaktyā labhyas tvananyayā
 yasyāntaḥ-sthāni bhūtāni yena sarvam idaṁ tatam
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन अर्जुन ! सम्पूर्ण प्राणी जिसके अन्तर्गत हैं और जिससे यह सम्पूर्ण संसार व्याप्त है, वह परम पुरुष परमात्मा तो अनन्यभक्तिसे प्राप्त होनेयोग्य है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> That highest Purusha, O Arjuna, is attainable by unswerving devotion to Him alone, within Whom all beings dwell and by Whom all this is pervaded.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन अर्जुन ! सम्पूर्ण प्राणी जिसके अन्तर्गत हैं और जिससे यह सम्पूर्ण संसार व्याप्त है, वह परम पुरुष परमात्मा तो अनन्यभक्तिसे प्राप्त होनेयोग्य है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> That highest Purusha, O Arjuna, is attainable by unswerving devotion to Him alone, within Whom all beings dwell and by Whom all this is pervaded.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-23" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 23</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 23)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-23" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 23</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिन...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 23); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।
 
 प्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ॥8.23॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    yatra kāle tvanāvṛittim āvṛittiṁ chaiva yoginaḥ
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        yatra kāle tvanāvṛittim āvṛittiṁ chaiva yoginaḥ
 prayātā yānti taṁ kālaṁ vakṣhyāmi bharatarṣhabha
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे भरतवंशियोंमें श्रेष्ठ अर्जुन ! जिस काल अर्थात् मार्गमें शरीर छोड़कर गये हुए योगी अनावृत्तिको प्राप्त होते हैं अर्थात् पीछे लौटकर नहीं आते और (जिस मार्गमें गये हुए) आवृत्तिको प्राप्त होते हैं अर्थात् पीछे लौटकर आते हैं, उस कालको अर्थात् दोनों मार्गोंको मैं कहूँगा।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Now I will tell you, O chief of the Bharatas, the times of departure at which the Yogis will return or not return.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे भरतवंशियोंमें श्रेष्ठ अर्जुन ! जिस काल अर्थात् मार्गमें शरीर छोड़कर गये हुए योगी अनावृत्तिको प्राप्त होते हैं अर्थात् पीछे लौटकर नहीं आते और (जिस मार्गमें गये हुए) आवृत्तिको प्राप्त होते हैं अर्थात् पीछे लौटकर आते हैं, उस कालको अर्थात् दोनों मार्गोंको मैं कहूँगा।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Now I will tell you, O chief of the Bharatas, the times of departure at which the Yogis will return or not return.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-24" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 24</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 24)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-24" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 24</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायण...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 24); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।
 
 तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः॥8.24॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    agnir jyotir ahaḥ śhuklaḥ ṣhaṇ-māsā uttarāyaṇam
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        agnir jyotir ahaḥ śhuklaḥ ṣhaṇ-māsā uttarāyaṇam
 tatra prayātā gachchhanti brahma brahma-vido janāḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> जिस मार्गमें प्रकाशस्वरूप अग्निका अधिपति देवता, दिनका अधिपति देवता, शुक्लपक्षका अधिपति देवता, और छः महीनोंवाले उत्तरायणका अधिपति देवता है, शरीर छोड़कर उस मार्गसे गये हुए ब्रह्मवेत्ता पुरुष (पहले ब्रह्मलोकको प्राप्त होकर पीछे ब्रह्माजीके साथ) ब्रह्मको प्राप्त हो जाते हैं।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Fire, light, daytime, the bright fortnight, the six months of the northern path of the sun (the northern solstice) departing, then men who know Brahman go to Brahman.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> जिस मार्गमें प्रकाशस्वरूप अग्निका अधिपति देवता, दिनका अधिपति देवता, शुक्लपक्षका अधिपति देवता, और छः महीनोंवाले उत्तरायणका अधिपति देवता है, शरीर छोड़कर उस मार्गसे गये हुए ब्रह्मवेत्ता पुरुष (पहले ब्रह्मलोकको प्राप्त होकर पीछे ब्रह्माजीके साथ) ब्रह्मको प्राप्त हो जाते हैं।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Fire, light, daytime, the bright fortnight, the six months of the northern path of the sun (the northern solstice) departing, then men who know Brahman go to Brahman.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-25" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 25</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 25)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-25" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 25</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणाय...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 25); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।
 
 तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते॥8.25॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    dhūmo rātris tathā kṛiṣhṇaḥ ṣhaṇ-māsā dakṣhiṇāyanam
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        dhūmo rātris tathā kṛiṣhṇaḥ ṣhaṇ-māsā dakṣhiṇāyanam
 tatra chāndramasaṁ jyotir yogī prāpya nivartate
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> जिस मार्गमें धूमका अधिपति देवता, रात्रिका अधिपति देवता, कृष्णपक्षका अधिपति देवता और छः महीनोंवाले दक्षिणायनका अधिपति देवता है, शरीर छोड़कर उस मार्गसे गया हुआ योगी (सकाम मनुष्य) चन्द्रमाकी ज्योतिको प्राप्त होकर लौट आता है अर्थात् जन्म-मरणको प्राप्त होता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Attaining the lunar light through smoke, night time, the dark fortnight, and the six months of the southern path of the sun (the southern solstice), the yogi returns.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> जिस मार्गमें धूमका अधिपति देवता, रात्रिका अधिपति देवता, कृष्णपक्षका अधिपति देवता और छः महीनोंवाले दक्षिणायनका अधिपति देवता है, शरीर छोड़कर उस मार्गसे गया हुआ योगी (सकाम मनुष्य) चन्द्रमाकी ज्योतिको प्राप्त होकर लौट आता है अर्थात् जन्म-मरणको प्राप्त होता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Attaining the lunar light through smoke, night time, the dark fortnight, and the six months of the southern path of the sun (the southern solstice), the yogi returns.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-26" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 26</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 26)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-26" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 26</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 26); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।
 
 एकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः॥8.26॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    śhukla-kṛiṣhṇe gatī hyete jagataḥ śhāśhvate mate
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        śhukla-kṛiṣhṇe gatī hyete jagataḥ śhāśhvate mate
 ekayā yātyanāvṛittim anyayāvartate punaḥ
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> क्योंकि शुक्ल और कृष्ण -- ये दोनों गतियाँ अनादिकालसे जगत्-(प्राणिमात्र-) के साथ सम्बन्ध रखनेवाली मानी गई हैं। इनमेंसे एक गतिमें जानेवालेको लौटना नहीं पड़ता और दूसरी गतिमें जानेवालेको लौटना पड़ता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> The bright and dark paths of the world are thought to be eternal; one leads to no return, and the other leads to return.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> क्योंकि शुक्ल और कृष्ण -- ये दोनों गतियाँ अनादिकालसे जगत्-(प्राणिमात्र-) के साथ सम्बन्ध रखनेवाली मानी गई हैं। इनमेंसे एक गतिमें जानेवालेको लौटना नहीं पड़ता और दूसरी गतिमें जानेवालेको लौटना पड़ता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> The bright and dark paths of the world are thought to be eternal; one leads to no return, and the other leads to return.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-27" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 27</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 27)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-27" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 27</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 27); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।
 
 तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन॥8.27॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    naite sṛitī pārtha jānan yogī muhyati kaśhchana
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        naite sṛitī pārtha jānan yogī muhyati kaśhchana
 tasmāt sarveṣhu kāleṣhu yoga-yukto bhavārjuna
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन  ! इन दोनों मार्गोंको जाननेवाला कोई भी योगी मोहित नहीं होता। अतः हे अर्जुन ! तू सब समयमें योगयुक्त हो जा।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Knowing these paths, O Arjuna, no yogi is deluded; therefore, at all times, be steadfast in yoga.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> हे पृथानन्दन  ! इन दोनों मार्गोंको जाननेवाला कोई भी योगी मोहित नहीं होता। अतः हे अर्जुन ! तू सब समयमें योगयुक्त हो जा।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Knowing these paths, O Arjuna, no yogi is deluded; therefore, at all times, be steadfast in yoga.
-                </div>
-            </div>
+            </details>
             
-            <div id="verse-28" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse 28</span>
-                    <button class="toggle-btn" onclick="copyVerseLink(8, 28)" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-28" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse 28</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">वेदेषु यज्ञेषु तपःसु चैव
+
+दानेषु यत्पुण्...</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    वेदेषु यज्ञेषु तपःसु चैव
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink(8, 28); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        वेदेषु यज्ञेषु तपःसु चैव
 
 दानेषु यत्पुण्यफलं प्रदिष्टम्।
 
 अत्येति तत्सर्वमिदं विदित्वा
 
 योगी परं स्थानमुपैति चाद्यम्॥8.28॥
-                </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    vedeṣhu yajñeṣhu tapaḥsu chaiva
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        vedeṣhu yajñeṣhu tapaḥsu chaiva
 dāneṣhu yat puṇya-phalaṁ pradiṣhṭam
 atyeti tat sarvam idaṁ viditvā
 yogī paraṁ sthānam upaiti chādyam
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> योगी इसको (शुक्ल और कृष्णमार्गके रहस्यको) जानकर वेदोंमें, यज्ञोंमें, तपोंमें तथा दानमें जो-जो पुण्यफल कहे गये हैं, उन सभी पुण्यफलोंका अतिक्रमण कर जाता है और आदिस्थान परमात्माको प्राप्त हो जाता है।
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> Whatever fruit of merit is declared (in the scriptures) to accrue from (the study of) the Vedas, (the performance of) sacrifices, (the practice of) austerities, and gifts, beyond all this goes the Yogi, having known this; and he attains to the Supreme, Primeval (first or ancient) Abode.
+                    </div>
                 </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> योगी इसको (शुक्ल और कृष्णमार्गके रहस्यको) जानकर वेदोंमें, यज्ञोंमें, तपोंमें तथा दानमें जो-जो पुण्यफल कहे गये हैं, उन सभी पुण्यफलोंका अतिक्रमण कर जाता है और आदिस्थान परमात्माको प्राप्त हो जाता है।
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> Whatever fruit of merit is declared (in the scriptures) to accrue from (the study of) the Vedas, (the performance of) sacrifices, (the practice of) austerities, and gifts, beyond all this goes the Yogi, having known this; and he attains to the Supreme, Primeval (first or ancient) Abode.
-                </div>
-            </div>
+            </details>
             
     
     <div class="nav-buttons">
@@ -934,18 +1226,18 @@ yogī paraṁ sthānam upaiti chādyam
       navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!'));
     }
     
-    // Auto-scroll logic if opened with a hash
+    // Auto-scroll logic and expand accordion if opened with a hash
     window.addEventListener('load', () => {
       if (window.location.hash) {
         const el = document.querySelector(window.location.hash);
-        if (el) {
+        if (el && el.tagName === 'DETAILS') {
+          el.open = true; // Expand the accordion
           setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
           el.style.borderColor = 'var(--saffron)';
           el.style.boxShadow = '0 0 0 2px var(--saffron)';
           setTimeout(() => {
             el.style.borderColor = 'var(--border)';
             el.style.boxShadow = 'none';
-            el.style.transition = 'all 1s';
           }, 2000);
         }
       }

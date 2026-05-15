@@ -25,40 +25,45 @@ def generate_chapter_pages():
         for v in ch.get('verses', []):
             v_num = v['verse']
             sanskrit = safe(v.get('sanskrit', '')).replace('\\n', '<br>')
+            sanskrit_snippet = safe(v.get('sanskrit', '')).split('\\n')[0][:40] + "..." if v.get('sanskrit') else ""
             roman = safe(v.get('roman', '')).replace('\\n', '<br>')
             hindi = safe(v.get('hindi_translation', ''))
             english = safe(v.get('english_translation', ''))
             
             verses_html += f"""
-            <div id="verse-{v_num}" class="card verse-card" style="margin-bottom: 24px; scroll-margin-top: 100px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
-                    <span class="gita-badge">Verse {v_num}</span>
-                    <button class="toggle-btn" onclick="copyVerseLink({ch_num}, {v_num})" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
-                </div>
+            <details id="verse-{v_num}" class="card verse-card" style="margin-bottom: 12px; scroll-margin-top: 100px; cursor: pointer; transition: all 0.3s;">
+                <summary style="display:flex; justify-content:space-between; align-items:center; font-size: 16px; font-weight: 600; list-style: none; outline: none;">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span class="gita-badge">Verse {v_num}</span>
+                        <span class="devanagari" style="font-size: 18px; color: var(--text-sec);">{sanskrit_snippet}</span>
+                    </span>
+                    <span class="expand-icon" style="color: var(--saffron); font-size: 14px;">▼</span>
+                </summary>
                 
-                <div class="verse-devanagari" style="margin-bottom: 16px;">
-                    {sanskrit}
+                <div class="verse-content" style="padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--border); cursor: default;">
+                    <div style="display:flex; justify-content:flex-end; margin-bottom: 16px;">
+                        <button class="toggle-btn" onclick="copyVerseLink({ch_num}, {v_num}); event.preventDefault();" aria-label="Copy Link" style="min-width:32px; min-height:32px; font-size:16px;">🔗</button>
+                    </div>
+                    
+                    <div class="verse-devanagari" style="margin-bottom: 16px;">
+                        {sanskrit}
+                    </div>
+                    
+                    <div class="verse-roman" style="margin-bottom: 20px;">
+                        {roman}
+                    </div>
+                    
+                    <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
+                        <strong style="color:var(--saffron);">Hindi:</strong> {hindi}
+                    </div>
+                    
+                    <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
+                        <strong style="color:var(--krishna);">English:</strong> {english}
+                    </div>
                 </div>
-                
-                <div class="verse-roman" style="margin-bottom: 20px;">
-                    {roman}
-                </div>
-                
-                <div style="background: rgba(201, 106, 31, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron); margin-bottom: 12px;">
-                    <strong style="color:var(--saffron);">Hindi:</strong> {hindi}
-                </div>
-                
-                <div style="background: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; border-left: 4px solid var(--krishna);">
-                    <strong style="color:var(--krishna);">English:</strong> {english}
-                </div>
-            </div>
+            </details>
             """
             
-        # Get CTA for this chapter
-        cta_html = ""
-        # The CTA logic was in scripts/generate_programmatic_pages.py, I'll add a simplified generic one here
-        # that redirects back to the main UI or tools
-        
         page_html = f"""<!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -108,6 +113,13 @@ def generate_chapter_pages():
       border-radius: 12px;
       padding: 20px;
     }}
+    
+    /* Accordion styles */
+    details > summary::-webkit-details-marker {{ display: none; }}
+    details[open] .expand-icon {{ transform: rotate(180deg); }}
+    .expand-icon {{ transition: transform 0.3s ease; }}
+    details[open] {{ box-shadow: 0 4px 12px rgba(201,106,31,0.08); border-color: rgba(201,106,31,0.4); }}
+    
     .verse-devanagari {{
       font-family: 'Tiro Devanagari Hindi', serif;
       font-size: 22px;
@@ -192,6 +204,10 @@ def generate_chapter_pages():
       border-radius: 8px;
       font-weight: 600;
       border: 1px solid var(--border);
+      transition: background 0.2s;
+    }}
+    .nav-btn:hover {{
+      background: var(--surface);
     }}
   </style>
 </head>
@@ -211,6 +227,10 @@ def generate_chapter_pages():
     <div class="summary">
       <p style="margin-top:0; margin-bottom:12px;"><strong>Summary:</strong> {safe(ch.get('summary_english', ''))}</p>
       <p class="devanagari" style="margin:0;"><strong>सारांश:</strong> {safe(ch.get('summary_hindi', ''))}</p>
+    </div>
+
+    <div style="margin-bottom: 24px; color: var(--text-muted); font-size: 14px; text-align: center;">
+      Click any verse to expand and read translations
     </div>
 
     <!-- VERSES -->
@@ -237,18 +257,18 @@ def generate_chapter_pages():
       navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!'));
     }}
     
-    // Auto-scroll logic if opened with a hash
+    // Auto-scroll logic and expand accordion if opened with a hash
     window.addEventListener('load', () => {{
       if (window.location.hash) {{
         const el = document.querySelector(window.location.hash);
-        if (el) {{
+        if (el && el.tagName === 'DETAILS') {{
+          el.open = true; // Expand the accordion
           setTimeout(() => el.scrollIntoView({{ behavior: 'smooth', block: 'start' }}), 100);
           el.style.borderColor = 'var(--saffron)';
           el.style.boxShadow = '0 0 0 2px var(--saffron)';
           setTimeout(() => {{
             el.style.borderColor = 'var(--border)';
             el.style.boxShadow = 'none';
-            el.style.transition = 'all 1s';
           }}, 2000);
         }}
       }}
