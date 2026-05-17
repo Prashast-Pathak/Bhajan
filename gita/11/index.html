@@ -1497,21 +1497,21 @@ function routePage() {
     
     if (verse) {
         const v = ch.verses.find(x => x.verse == verse);
+        
+        // Auto-scroll the background page to the verse
+        setTimeout(() => {
+            const el = document.getElementById('verse-' + verse);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.style.transition = 'box-shadow 0.3s ease';
+                el.style.boxShadow = '0 0 15px 5px rgba(201,106,31,0.5)';
+                setTimeout(() => el.style.boxShadow = 'none', 2000);
+            }
+        }, 300);
+
         if (v) {
             // Then pop the modal
-            openVerseModal(ch, v);
-        } else {
-            // Auto-scroll to the verse if not found in data somehow
-            setTimeout(() => {
-                const el = document.getElementById('verse-' + verse);
-                if (el) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    // Flash highlight
-                    el.style.transition = 'box-shadow 0.3s ease';
-                    el.style.boxShadow = '0 0 15px 5px rgba(201,106,31,0.5)';
-                    setTimeout(() => el.style.boxShadow = 'none', 2000);
-                }
-            }, 500);
+            setTimeout(() => openVerseModal(ch, v), 100);
         }
     }
   } else {
