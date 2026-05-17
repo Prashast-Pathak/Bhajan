@@ -89,15 +89,35 @@ def write_sitemap(base: str):
             pri, freq = classify(rel)
             add(rel, pri, freq)
 
-    # ── 1. Scan dist/ — the built SSR pages ───────────────────────────────────
-    scan_dir(dist, dist)
+    # Junk folders to skip inside dist/
+    SKIP_DIRS = {
+        "node_modules", "templates", "backend", "scratch",
+        "ai-index", "programmatic", "data", ".venv", "favicon_io", "docs",
+    }
+
+    def scan_dist(root_dir: Path):
+        if not root_dir.exists():
+            return
+        for html in sorted(root_dir.rglob("*.html")):
+            # Skip any path that contains a junk directory
+            parts = set(html.relative_to(root_dir).parts)
+            if parts & SKIP_DIRS:
+                continue
+            rel = "/" + str(html.relative_to(root_dir)).replace("\\", "/")
+            if rel.endswith("/index.html"):
+                rel = rel[: -len("index.html")]
+            pri, freq = classify(rel)
+            add(rel, pri, freq)
+
+    # ── 1. Scan dist/ — the built SSR pages (skip junk) ──────────────────────
+    scan_dist(dist)
 
     # ── 2. Scan root-level content folders (nakshatra, planet, rashi, etc.) ───
     #    These exist as separate directories at the project root on the server
     root_content_dirs = [
         "nakshatra", "planet", "rashi", "remedy", "muhurat",
         "bhajan", "gita", "prayer", "shloka", "upanishad",
-        "wisdom", "tithi", "programmatic",
+        "wisdom", "tithi",
     ]
     for dirname in root_content_dirs:
         folder = ROOT / dirname
@@ -133,8 +153,15 @@ def write_robots(base: str):
     content = f"""User-agent: *
 Allow: /
 
-# Standard crawl controls
+# Block dev artifacts and junk
 Disallow: /templates/
+Disallow: /node_modules/
+Disallow: /backend/
+Disallow: /scratch/
+Disallow: /ai-index/
+Disallow: /programmatic/
+Disallow: /data/
+Disallow: /.venv/
 
 Sitemap: {base}/sitemap.xml
 """

@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
 
-# Standard crawl controls
+# Block dev artifacts and junk
 Disallow: /templates/
+Disallow: /node_modules/
+Disallow: /backend/
+Disallow: /scratch/
+Disallow: /ai-index/
 Disallow: /programmatic/
+Disallow: /data/
+Disallow: /.venv/
 
 Sitemap: https://bhajan.ournakshatra.com/sitemap.xml
