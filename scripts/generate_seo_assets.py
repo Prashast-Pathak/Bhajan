@@ -23,65 +23,23 @@ def to_url(base: str, path: str) -> str:
     return f"{base}{path if path.startswith('/') else '/' + path}"
 
 
-def dynamic_urls(base: str):
-    urls = []
+def gita_chapter_urls(base: str):
+    """Generate clean /gita/N/ URLs for all 18 chapters."""
+    return [to_url(base, f"/gita/{c}/") for c in range(1, 19)]
 
-    bhajans = load_json(DATA / "bhajans.json")
+
+def bhajan_urls(base: str):
+    """Generate clean /bhajan/slug/ URLs from bhajans.json."""
+    urls = []
+    bhajans_file = DATA / "bhajans.json"
+    if not bhajans_file.exists():
+        return []
+    bhajans = load_json(bhajans_file)
     for row in bhajans:
         slug = str(row.get("slug", "")).strip()
         if slug:
-            urls.append(f"/bhajan.html?slug={slug}")
-
-    shlokas = load_json(DATA / "shlokas.json")
-    for row in shlokas:
-        slug = str(row.get("slug", "")).strip()
-        if slug:
-            urls.append(f"/shlokas.html?slug={slug}")
-
-    prayers = load_json(DATA / "prayers.json").get("prayers", [])
-    for row in prayers:
-        slug = str(row.get("slug", "")).strip()
-        if slug:
-            urls.append(f"/prayers.html?slug={slug}")
-
-    upanishads = load_json(DATA / "upanishads.json")
-    for row in upanishads:
-        slug = str(row.get("slug", "")).strip()
-        if slug:
-            urls.append(f"/upanishads.html?slug={slug}")
-
-    wisdom_topics = load_json(DATA / "wisdom.json").get("topics", [])
-    for row in wisdom_topics:
-        slug = str(row.get("slug", "")).strip()
-        if slug:
-            urls.append(f"/wisdom.html?topic={slug}")
-
-    gita_chapters = load_json(DATA / "gita.json").get("chapters", [])
-    for chapter in gita_chapters:
-        c = chapter.get("chapter")
-        for verse in chapter.get("verses", []):
-            v = verse.get("verse")
-            if c is not None and v is not None:
-                urls.append(f"/bhagavad-gita.html?chapter={c}&verse={v}")
-
-    # Dedupe while preserving order
-    seen = set()
-    ordered = []
-    for u in urls:
-        if u not in seen:
-            seen.add(u)
-            ordered.append(u)
-    return [to_url(base, u) for u in ordered]
-
-def programmatic_urls(base: str):
-    prog_root = ROOT / "programmatic"
-    if not prog_root.exists():
-        return []
-    urls = []
-    for file in prog_root.rglob("*.html"):
-        rel = "/" + str(file.relative_to(ROOT)).replace("\\", "/")
-        urls.append(to_url(base, rel))
-    return sorted(set(urls))
+            urls.append(to_url(base, f"/bhajan/{slug}/"))
+    return urls
 
 def remedy_urls(base: str):
     remedy_root = ROOT / "remedy"
@@ -113,7 +71,7 @@ def write_sitemap(base: str):
         "/terms.html",
         "/disclaimer.html",
     ]
-    urls = [to_url(base, p) for p in static_paths] + dynamic_urls(base) + programmatic_urls(base) + remedy_urls(base)
+    urls = [to_url(base, p) for p in static_paths] + gita_chapter_urls(base) + bhajan_urls(base) + remedy_urls(base)
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
