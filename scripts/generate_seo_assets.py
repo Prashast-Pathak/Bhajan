@@ -62,37 +62,59 @@ def write_sitemap(base: str):
     urls = []
 
     def add(path: str, priority: str = "0.7", freq: str = "monthly"):
+        # Normalize: strip trailing slash for dedup key, keep slash in URL
         key = path.rstrip("/") or "/"
         if key not in seen:
             seen.add(key)
             urls.append((to_url(base, path), priority, freq))
 
-    # ── 1. Scan dist/ — every index.html becomes a clean URL ──────────────────
-    if dist.exists():
-        for idx in sorted(dist.rglob("index.html")):
-            rel = "/" + str(idx.relative_to(dist)).replace("\\", "/")
-            # convert /foo/bar/index.html → /foo/bar/
-            rel = rel[: -len("index.html")] if rel.endswith("/index.html") else rel
-            # assign higher priority to key hub pages
-            if rel in ("/", "/index.html"):
-                add(rel, "1.0", "daily")
-            elif any(rel.startswith(p) for p in ("/gita/", "/bhajan/", "/nakshatra/")):
-                add(rel, "0.9", "weekly")
-            else:
-                add(rel, "0.7", "monthly")
+    def classify(rel: str):
+        """Return (priority, freq) based on the URL path."""
+        if rel in ("/", ""):
+            return "1.0", "daily"
+        if any(rel.startswith(p) for p in ("/gita/", "/bhajan/", "/nakshatra/")):
+            return "0.9", "weekly"
+        return "0.7", "monthly"
 
-    # ── 2. Static .html files at root that are NOT in dist ────────────────────
+    def scan_dir(root_dir: Path, base_dir: Path):
+        """Walk root_dir and add every page as a clean URL."""
+        if not root_dir.exists():
+            return
+        for html in sorted(root_dir.rglob("*.html")):
+            rel = "/" + str(html.relative_to(base_dir)).replace("\\", "/")
+            # /foo/bar/index.html → /foo/bar/
+            if rel.endswith("/index.html"):
+                rel = rel[: -len("index.html")]
+            # skip raw .html files in dist root (handled separately)
+            pri, freq = classify(rel)
+            add(rel, pri, freq)
+
+    # ── 1. Scan dist/ — the built SSR pages ───────────────────────────────────
+    scan_dir(dist, dist)
+
+    # ── 2. Scan root-level content folders (nakshatra, planet, rashi, etc.) ───
+    #    These exist as separate directories at the project root on the server
+    root_content_dirs = [
+        "nakshatra", "planet", "rashi", "remedy", "muhurat",
+        "bhajan", "gita", "prayer", "shloka", "upanishad",
+        "wisdom", "tithi", "programmatic",
+    ]
+    for dirname in root_content_dirs:
+        folder = ROOT / dirname
+        scan_dir(folder, ROOT)
+
+    # ── 3. Static .html files at root ─────────────────────────────────────────
     static_roots = [
         "/bhajans.html", "/bhagavad-gita.html", "/shlokas.html",
         "/prayers.html", "/upanishads.html", "/wisdom.html",
         "/about.html", "/privacy-policy.html", "/contact.html",
         "/terms.html", "/disclaimer.html", "/methodology.html",
-        "/favorites.html",
+        "/favorites.html", "/bhajan.html",
     ]
     for p in static_roots:
         add(p, "0.6", "monthly")
 
-    # ── 3. Write XML ───────────────────────────────────────────────────────────
+    # ── 4. Write XML ───────────────────────────────────────────────────────────
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for url, priority, freq in urls:
         lines.append("  <url>")
