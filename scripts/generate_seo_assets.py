@@ -56,34 +56,55 @@ def remedy_urls(base: str):
 
 
 def write_sitemap(base: str):
-    static_paths = [
-        "/",
-        "/index.html",
-        "/bhajans.html",
-        "/bhagavad-gita.html",
-        "/shlokas.html",
-        "/prayers.html",
-        "/upanishads.html",
-        "/wisdom.html",
-        "/about.html",
-        "/privacy-policy.html",
-        "/contact.html",
-        "/terms.html",
-        "/disclaimer.html",
-    ]
-    urls = [to_url(base, p) for p in static_paths] + gita_chapter_urls(base) + bhajan_urls(base) + remedy_urls(base)
+    dist = ROOT / "dist"
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    seen = set()
+    urls = []
 
+    def add(path: str, priority: str = "0.7", freq: str = "monthly"):
+        key = path.rstrip("/") or "/"
+        if key not in seen:
+            seen.add(key)
+            urls.append((to_url(base, path), priority, freq))
+
+    # ── 1. Scan dist/ — every index.html becomes a clean URL ──────────────────
+    if dist.exists():
+        for idx in sorted(dist.rglob("index.html")):
+            rel = "/" + str(idx.relative_to(dist)).replace("\\", "/")
+            # convert /foo/bar/index.html → /foo/bar/
+            rel = rel[: -len("index.html")] if rel.endswith("/index.html") else rel
+            # assign higher priority to key hub pages
+            if rel in ("/", "/index.html"):
+                add(rel, "1.0", "daily")
+            elif any(rel.startswith(p) for p in ("/gita/", "/bhajan/", "/nakshatra/")):
+                add(rel, "0.9", "weekly")
+            else:
+                add(rel, "0.7", "monthly")
+
+    # ── 2. Static .html files at root that are NOT in dist ────────────────────
+    static_roots = [
+        "/bhajans.html", "/bhagavad-gita.html", "/shlokas.html",
+        "/prayers.html", "/upanishads.html", "/wisdom.html",
+        "/about.html", "/privacy-policy.html", "/contact.html",
+        "/terms.html", "/disclaimer.html", "/methodology.html",
+        "/favorites.html",
+    ]
+    for p in static_roots:
+        add(p, "0.6", "monthly")
+
+    # ── 3. Write XML ───────────────────────────────────────────────────────────
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for url in urls:
+    for url, priority, freq in urls:
         lines.append("  <url>")
         lines.append(f"    <loc>{url}</loc>")
         lines.append(f"    <lastmod>{now}</lastmod>")
-        lines.append("    <changefreq>weekly</changefreq>")
-        lines.append("    <priority>0.8</priority>")
+        lines.append(f"    <changefreq>{freq}</changefreq>")
+        lines.append(f"    <priority>{priority}</priority>")
         lines.append("  </url>")
     lines.append("</urlset>")
-    (ROOT / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    out = ROOT / "sitemap.xml"
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"  ✓ sitemap.xml — {len(urls)} URLs")
 
 
 def write_robots(base: str):
