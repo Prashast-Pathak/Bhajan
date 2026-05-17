@@ -23,26 +23,50 @@ def build_schema(title, desc, url):
     }
     return json.dumps(schema, indent=4)
 
-def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_json, scroll_hash=""):
+def generate_ssr_html(item):
+    """Generates server-side rendered HTML for Googlebot indexing."""
+    title = item.get('title_hindi') or item.get('title_english') or item.get('name_english') or item.get('name_hindi') or 'Title'
+    desc = item.get('description_english') or item.get('intro_english') or item.get('theme_english') or ''
+    
+    html_out = f'<div id="ssr-content" style="padding: 20px;">\n'
+    html_out += f'<h1>{safe(title)}</h1>\n'
+    html_out += f'<p>{safe(desc)}</p>\n'
+    
+    if "verses" in item:
+        for v in item["verses"]:
+            html_out += "<div class='verse-block'>\n"
+            if "lines" in v:
+                for l in v["lines"]:
+                    html_out += f"<p>{safe(l.get('hindi', ''))}</p>\n"
+                    html_out += f"<p>{safe(l.get('meaning_hindi', ''))}</p>\n"
+                    html_out += f"<p>{safe(l.get('meaning_en', ''))}</p>\n"
+            elif "sanskrit" in v: # For Gita
+                html_out += f"<p>{safe(v.get('sanskrit', ''))}</p>\n"
+                html_out += f"<p>{safe(v.get('hindi_translation', ''))}</p>\n"
+                html_out += f"<p>{safe(v.get('english_translation', ''))}</p>\n"
+            html_out += "</div>\n"
+            
+    if "quotes" in item:
+        for q in item["quotes"]:
+            html_out += f"<blockquote>{safe(q.get('quote_english', ''))}</blockquote>\n"
+            
+    html_out += f'</div>\n'
+    return html_out
+
+def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_json, ssr_content="", scroll_hash=""):
     """
     Takes the master UI HTML and injects perfectly optimized SEO metadata,
-    JSON-LD, and the auto-scroll + slug logic without changing the design.
+    JSON-LD, SSR content and the auto-scroll + slug logic.
     """
-    # Replace standard title
     import re
     html_out = re.sub(r'<title.*?</title>', f'<title>{seo_title}</title>', template_html, flags=re.IGNORECASE)
-    
-    # Replace meta description
     html_out = re.sub(r'<meta.*?name="description".*?>', f'<meta name="description" content="{seo_desc}">', html_out, flags=re.IGNORECASE)
     
-    # Replace or Inject canonical link
     if re.search(r'<link.*?rel="canonical".*?>', html_out, flags=re.IGNORECASE):
         html_out = re.sub(r'<link.*?rel="canonical".*?>', f'<link rel="canonical" href="{canonical_url}">', html_out, flags=re.IGNORECASE)
     else:
         html_out = html_out.replace('</head>', f'  <link rel="canonical" href="{canonical_url}">\n</head>')
     
-    # Fix asset paths since the generated files are deeper in the directory structure
-    # Change href="bhajans.html" to href="/bhajans.html" etc.
     html_out = html_out.replace('href="index.html"', 'href="/index.html"')
     html_out = html_out.replace('href="bhajans.html"', 'href="/bhajans.html"')
     html_out = html_out.replace('href="bhagavad-gita.html"', 'href="/bhagavad-gita.html"')
@@ -59,12 +83,9 @@ def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_j
     html_out = html_out.replace('href="bhajans.html?', 'href="/bhajans.html?')
     html_out = html_out.replace('src="manifest.json"', 'src="/manifest.json"')
     html_out = html_out.replace('href="manifest.json"', 'href="/manifest.json"')
-    # CRITICAL: Fix data fetch paths — generated pages are 2 levels deep so
-    # relative fetch('data/...') would look in the wrong folder. Force absolute.
     html_out = html_out.replace("fetch('data/", "fetch('/data/")
     html_out = html_out.replace('fetch("data/', 'fetch("/data/')
 
-    # Inject the Schema, Prerendered Slug, and Auto-Scroll Script into <head>
     scroll_script = ""
     if scroll_hash:
         scroll_script = f"""
@@ -78,7 +99,14 @@ def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_j
         }}, 800);
         """
 
+    # Inject OpenGraph tags and SSR script
     head_injection = f"""
+    <meta property="og:title" content="{seo_title}">
+    <meta property="og:description" content="{seo_desc}">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{BASE_URL}/icon-512.png">
+    <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">{schema_json}</script>
     <script>
         window.__PRERENDERED_SLUG__ = "{slug}";
@@ -86,6 +114,13 @@ def inject_seo(template_html, slug, seo_title, seo_desc, canonical_url, schema_j
     </script>
     """
     html_out = html_out.replace("</head>", f"{head_injection}\n</head>")
+    
+    # Inject SSR Content right inside <main id="content-wrapper"> or equivalent
+    if ssr_content:
+        # For general pages it's usually <div class="content-wrapper" id="content-wrapper">
+        html_out = html_out.replace('<div class="loading">', f'{ssr_content}\n<div class="loading">')
+        # For Gita it's <main id="main-content"
+        html_out = html_out.replace('<div id="loading-state">', f'{ssr_content}\n<div id="loading-state">')
     
     return html_out
 
@@ -122,7 +157,8 @@ def generate():
             base_route = f"bhajan/{slug}"
             canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-            out_html = inject_seo(b_template, slug, seo_t, seo_d, canonical, schema)
+            ssr = generate_ssr_html(item)
+            out_html = inject_seo(b_template, slug, seo_t, seo_d, canonical, schema, ssr_content=ssr)
             write_page(route, out_html)
             b_count += 1
         
@@ -143,7 +179,8 @@ def generate():
             base_route = f"shloka/{slug}"
             canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-            out_html = inject_seo(s_template, slug, seo_t, seo_d, canonical, schema)
+            ssr = generate_ssr_html(item)
+            out_html = inject_seo(s_template, slug, seo_t, seo_d, canonical, schema, ssr_content=ssr)
             write_page(route, out_html)
             s_count += 1
 
@@ -162,7 +199,8 @@ def generate():
             base_route = f"prayer/{slug}"
             canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-            out_html = inject_seo(p_template, slug, seo_t, seo_d, canonical, schema)
+            ssr = generate_ssr_html(item)
+            out_html = inject_seo(p_template, slug, seo_t, seo_d, canonical, schema, ssr_content=ssr)
             write_page(route, out_html)
             p_count += 1
 
@@ -181,7 +219,8 @@ def generate():
             base_route = f"upanishad/{slug}"
             canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-            out_html = inject_seo(u_template, slug, seo_t, seo_d, canonical, schema)
+            ssr = generate_ssr_html(item)
+            out_html = inject_seo(u_template, slug, seo_t, seo_d, canonical, schema, ssr_content=ssr)
             write_page(route, out_html)
             u_count += 1
 
@@ -200,7 +239,8 @@ def generate():
             base_route = f"wisdom/{slug}"
             canonical = f"{BASE_URL}/{base_route}/"
             schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-            out_html = inject_seo(w_template, slug, seo_t, seo_d, canonical, schema)
+            ssr = generate_ssr_html(item)
+            out_html = inject_seo(w_template, slug, seo_t, seo_d, canonical, schema, ssr_content=ssr)
             write_page(route, out_html)
             w_count += 1
 
@@ -210,42 +250,42 @@ def generate():
     g_count = 0
     for ch in gita_chapters:
         c_num = ch.get("chapter")
-        verses = ch.get("verses", [])
-        for v in verses:
-            v_num = v.get("verse")
-            slug = f"gita-{c_num}-{v_num}"
-            
-            # The Gita template uses ?chapter=X&verse=Y
-            # We will hijack the slug variable logic here uniquely
-            v_intents = [""]
-            for i in v_intents:
-                route = f"gita/{c_num}/{v_num}{i}"
-                seo_t = f"Bhagavad Gita Chapter {c_num} Verse {v_num} {i.replace('-',' ').title()}"
-                seo_d = f"Read Bhagavad Gita Chapter {c_num} Verse {v_num} meaning and translation."
-                base_route = f"gita/{c_num}/{v_num}"
-                canonical = f"{BASE_URL}/{base_route}/"
-                schema = build_schema(seo_t, seo_d, f"{BASE_URL}/{route}/")
-                
-                # Special Gita JS injection to bypass URL params
-                gita_injection = f"""
-                <script type="application/ld+json">{schema}</script>
-                <script>
-                    window.__PRERENDERED_CHAPTER__ = "{c_num}";
-                    window.__PRERENDERED_VERSE__ = "{v_num}";
-                </script>
-                """
-                out_html = g_template.replace("</head>", f"{gita_injection}\n</head>")
-                # Fix standard meta stuff
-                import re
-                out_html = re.sub(r'<title.*?</title>', f'<title>{seo_t}</title>', out_html, flags=re.IGNORECASE)
-                out_html = re.sub(r'<meta.*?name="description".*?>', f'<meta name="description" content="{seo_d}">', out_html, flags=re.IGNORECASE)
-                out_html = re.sub(r'<link.*?rel="canonical".*?>', f'<link rel="canonical" href="{canonical}">', out_html, flags=re.IGNORECASE)
-                
-                # Fix paths
-                out_html = out_html.replace('href="', 'href="/').replace('href="//', 'href="/').replace('href="/http', 'href="http')
-                
-                write_page(route, out_html)
-                g_count += 1
+        
+        # 1. Generate the Chapter Hub Page
+        route_ch = f"gita/{c_num}"
+        seo_t_ch = f"Bhagavad Gita Chapter {c_num} | Sanatan Gyan Sagar"
+        seo_d_ch = f"Read Bhagavad Gita Chapter {c_num} with translation and meaning."
+        base_route_ch = route_ch
+        canonical_ch = f"{BASE_URL}/{base_route_ch}/"
+        schema_ch = build_schema(seo_t_ch, seo_d_ch, f"{BASE_URL}/{route_ch}/")
+        
+        gita_injection_ch = f"""
+        <meta property="og:title" content="{seo_t_ch}">
+        <meta property="og:description" content="{seo_d_ch}">
+        <meta property="og:url" content="{canonical_ch}">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="{BASE_URL}/icon-512.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <script type="application/ld+json">{schema_ch}</script>
+        <script>
+            window.__PRERENDERED_CHAPTER__ = "{c_num}";
+        </script>
+        """
+        out_html_ch = g_template.replace("</head>", f"{gita_injection_ch}\n</head>")
+        
+        # Inject SSR
+        ssr_ch = generate_ssr_html(ch)
+        out_html_ch = out_html_ch.replace('<div id="loading-state">', f'{ssr_ch}\n<div id="loading-state">')
+        
+        import re
+        out_html_ch = re.sub(r'<title.*?</title>', f'<title>{seo_t_ch}</title>', out_html_ch, flags=re.IGNORECASE)
+        out_html_ch = re.sub(r'<meta.*?name="description".*?>', f'<meta name="description" content="{seo_d_ch}">', out_html_ch, flags=re.IGNORECASE)
+        out_html_ch = re.sub(r'<link.*?rel="canonical".*?>', f'<link rel="canonical" href="{canonical_ch}">', out_html_ch, flags=re.IGNORECASE)
+        out_html_ch = out_html_ch.replace('href="', 'href="/').replace('href="//', 'href="/').replace('href="/http', 'href="http')
+        out_html_ch = out_html_ch.replace("fetch('data/", "fetch('/data/").replace('fetch("data/', 'fetch("/data/')
+        out_html_ch = out_html_ch.replace('src="manifest.json"', 'src="/manifest.json"')
+        write_page(route_ch, out_html_ch)
+        g_count += 1
 
     total = b_count + s_count + p_count + u_count + w_count + g_count
     print(f"Generated {total} EXACT CLONE Programmatic SEO Pages!")

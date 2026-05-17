@@ -199,6 +199,41 @@
     body.hide-hindi .line-hindi, body.hide-hindi .line-meaning-hindi { display: none; }
     body.hide-meaning .line-meaning-hindi, body.hide-meaning .line-meaning-en, body.hide-meaning .line-meaning-label { display: none; }
   
+    /* FAMOUS KUNDLI BANNER */
+    .famous-kundli-banner {
+        background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+        border: 2px solid var(--saffron);
+        border-radius: var(--radius);
+        padding: 24px;
+        margin: 32px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    .famous-kundli-banner::after {
+        content: '✨';
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        font-size: 100px;
+        opacity: 0.05;
+        pointer-events: none;
+    }
+    .fk-icon { font-size: 48px; flex-shrink: 0; line-height: 1; z-index: 1; }
+    .fk-content { flex: 1; z-index: 1; }
+    .fk-eyebrow { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--saffron); margin-bottom: 6px; }
+    .fk-title { font-size: 20px; font-weight: 800; color: var(--text); line-height: 1.3; margin-bottom: 8px; }
+    .fk-desc { font-size: 14px; color: var(--text-sec); margin-bottom: 16px; }
+    .fk-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--saffron); color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.2s, opacity 0.2s; box-shadow: 0 4px 12px rgba(201, 106, 31, 0.3); }
+    .fk-btn:hover { transform: translateY(-2px); opacity: 0.9; color: #fff; }
+    @media(max-width:600px) {
+        .famous-kundli-banner { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px; }
+        .famous-kundli-banner::after { font-size: 80px; }
+    }
+
     /* ── Jyotish Dropdown Nav ─── */
     .nav-dropdown { position: relative; }
     .nav-dropdown > a { display: flex; align-items: center; gap: 4px; cursor: pointer; }
@@ -378,7 +413,26 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<style id="rich-mobile-menu-styles">
+  .mobile-menu-links details { border-bottom: 1px solid var(--border, #D9CDBA); }
+  .mobile-menu-links details summary { padding: 10px 20px; color: var(--text-sec, #5C3D20); font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .mobile-menu-links details summary::-webkit-details-marker { display: none; }
+  .mobile-menu-links details summary::after { content: '+'; font-size: 1.1rem; color: var(--saffron, #C96A1F); }
+  .mobile-menu-links details[open] summary::after { content: '−'; }
+  .mobile-menu-links details[open] summary { background: var(--surface2, #E6DDD0); color: var(--saffron, #C96A1F); }
+  .details-content { background: var(--surface, #EDE6D8); padding: 10px 16px 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .details-content a { padding: 5px 10px; font-size: .78rem; background: rgba(255,255,255,.6); border: 1px solid var(--border, #D9CDBA); border-radius: 50px; text-decoration: none; color: var(--text-sec, #5C3D20); }
+  .details-content a:hover { background: var(--saffron, #C96A1F); color: #fff !important; border-color: var(--saffron, #C96A1F); }
+  .details-content.full-col { flex-direction: column; gap: 0; padding: 0; }
+  .details-content.full-col a { background: none; border: none; border-radius: 0; padding: 9px 20px; border-bottom: 1px solid rgba(0,0,0,.05); font-size: .87rem; }
+</style>
 
+    <meta property="og:title" content="Hanuman Chalisa  | हनुमान चालीसा">
+    <meta property="og:description" content="Read the  of Hanuman Chalisa.">
+    <meta property="og:url" content="https://bhajan.ournakshatra.com/bhajan/hanuman-chalisa/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://bhajan.ournakshatra.com/icon-512.png">
+    <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -441,6 +495,7 @@
       <a href="/prayers.html">Prayers</a>
       <a href="/upanishads.html">Upanishads</a>
       <a href="/wisdom.html">Wisdom</a>
+      <a href="https://ournakshatra.com/janam_landing.html" style="color:var(--saffron); font-weight: 700;">✨ Free Kundli</a>
           <div class="nav-dropdown">
         <a href="#" onclick="return false;" role="button" aria-haspopup="true">🔭 Jyotish</a>
         <div class="dropdown-menu" role="menu">
@@ -528,25 +583,41 @@
 </header>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobileMenuOverlay" class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
-<div id="mobileMenu" class="mobile-menu-drawer">
-  <div class="mobile-menu-header">
-    <div class="logo-om" style="width:36px;height:36px;font-size:18px;">ॐ</div>
-    <button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
-  </div>
-  <div class="mobile-menu-links">
-    <a href="/index.html">🏠 Home</a>
-    <a href="/bhajans.html">🪔 Bhajans</a>
-    <a href="/bhagavad-gita.html">📖 Bhagavad Gita</a>
-    <a href="/shlokas.html">🕉️ Sacred Shlokas</a>
-    <a href="/prayers.html">🙏 Prayers &amp; Puja</a>
-    <a href="/upanishads.html">📚 Upanishads</a>
-    <a href="/wisdom.html">💬 Life Wisdom</a>
-    <div class="menu-divider"></div>
-    <a href="/favorites.html">❤️ Saved Favorites</a>
-    <a href="/about.html">ℹ️ About Us</a>
-    <a href="/contact.html">📞 Contact</a>
-  </div>
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+<div class="mobile-menu-drawer" id="mobileMenu">
+<div class="mobile-menu-header">
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
+<span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA BHAJAN</span>
+</div>
+<button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
+</div>
+<div class="mobile-menu-links">
+<a href="/">🏠 Bhajan Home</a>
+<a href="/bhajans.html">🪔 Bhajans</a>
+<a href="/bhagavad-gita.html">📖 Bhagavad Gita</a>
+<a href="/shlokas.html">🕉️ Sacred Shlokas</a>
+<a href="/prayers.html">🙏 Prayers &amp; Puja</a>
+<a href="/upanishads.html">📚 Upanishads</a>
+<a href="/wisdom.html">💬 Life Wisdom</a>
+<div class="menu-divider"></div>
+<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🌐 MAIN WEBSITE</div>
+<a href="https://ournakshatra.com/" style="color:#6E1515;font-weight:bold;">🏠 ournakshatra.com</a>
+<a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
+<a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
+<div class="menu-divider"></div>
+<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🔭 JYOTISH LIBRARY</div>
+<details><summary>🪐 Navagraha</summary><div class="details-content"><a href="/planet/surya/">Surya</a><a href="/planet/chandra/">Chandra</a><a href="/planet/mangal/">Mangal</a><a href="/planet/budha/">Budha</a><a href="/planet/guru/">Guru</a><a href="/planet/shukra/">Shukra</a><a href="/planet/shani/">Shani</a><a href="/planet/rahu/">Rahu</a><a href="/planet/ketu/">Ketu</a></div></details>
+<details><summary>⭐ 27 Nakshatras</summary><div class="details-content"><a href="/nakshatra/ashwini/">Ashwini</a><a href="/nakshatra/bharani/">Bharani</a><a href="/nakshatra/krittika/">Krittika</a><a href="/nakshatra/rohini/">Rohini</a><a href="/nakshatra/mrigashira/">Mrigashira</a><a href="/nakshatra/ardra/">Ardra</a><a href="/nakshatra/punarvasu/">Punarvasu</a><a href="/nakshatra/pushya/">Pushya</a><a href="/nakshatra/ashlesha/">Ashlesha</a><a href="/nakshatra/magha/">Magha</a><a href="/nakshatra/purva-phalguni/">P.Phalguni</a><a href="/nakshatra/uttara-phalguni/">U.Phalguni</a><a href="/nakshatra/hasta/">Hasta</a><a href="/nakshatra/chitra/">Chitra</a><a href="/nakshatra/swati/">Swati</a><a href="/nakshatra/vishakha/">Vishakha</a><a href="/nakshatra/anuradha/">Anuradha</a><a href="/nakshatra/jyeshtha/">Jyeshtha</a><a href="/nakshatra/mula/">Mula</a><a href="/nakshatra/purva-ashadha/">P.Ashadha</a><a href="/nakshatra/uttara-ashadha/">U.Ashadha</a><a href="/nakshatra/shravana/">Shravana</a><a href="/nakshatra/dhanishtha/">Dhanishtha</a><a href="/nakshatra/shatabhisha/">Shatabhisha</a><a href="/nakshatra/purva-bhadrapada/">P.Bhadrapada</a><a href="/nakshatra/uttara-bhadrapada/">U.Bhadrapada</a><a href="/nakshatra/revati/">Revati</a></div></details>
+<details><summary>♈ 12 Rashis</summary><div class="details-content"><a href="/rashi/mesh/">Mesh</a><a href="/rashi/vrishabha/">Vrishabha</a><a href="/rashi/mithuna/">Mithuna</a><a href="/rashi/karka/">Karka</a><a href="/rashi/simha/">Simha</a><a href="/rashi/kanya/">Kanya</a><a href="/rashi/tula/">Tula</a><a href="/rashi/vrischika/">Vrischika</a><a href="/rashi/dhanu/">Dhanu</a><a href="/rashi/makara/">Makara</a><a href="/rashi/kumbha/">Kumbha</a><a href="/rashi/meena/">Meena</a></div></details>
+<details><summary>🛡️ Yogas &amp; Doshas</summary><div class="details-content full-col"><a href="/remedy/">✨ View All</a><a href="/remedy/mangal-dosha/">Mangal Dosha</a><a href="/remedy/kaal-sarp-dosha/">Kaal Sarp</a><a href="/remedy/sade-sati/">Sade Sati</a><a href="/remedy/hamsa-yoga/">Hamsa Yoga</a><a href="/remedy/dhana-yoga/">Dhana Yoga</a></div></details>
+<details><summary>🌙 Tithi &amp; Muhurat</summary><div class="details-content full-col"><a href="/tithi/ekadashi/">Ekadashi</a><a href="/tithi/purnima/">Purnima</a><a href="/muhurat/vivah/">Vivah Muhurat</a><a href="/muhurat/griha-pravesh/">Griha Pravesh</a></div></details>
+<div class="menu-divider"></div>
+<a href="/favorites.html">❤️ Saved Favorites</a>
+<a href="/about.html">ℹ️ About Us</a>
+<a href="/contact.html">📞 Contact</a>
+</div>
 </div>
 
 <script>
@@ -626,7 +697,354 @@ function toggleMobileMenu() {
 </div>
 
 <div class="content-wrapper" id="content-wrapper">
-  <div class="loading">
+  <div id="ssr-content" style="padding: 20px;">
+<h1>हनुमान चालीसा</h1>
+<p></p>
+<div class='verse-block'>
+<p>श्री गुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।</p>
+<p></p>
+<p></p>
+<p>बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि॥</p>
+<p></p>
+<p></p>
+<p>बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।</p>
+<p></p>
+<p></p>
+<p>बल बुद्धि विद्या देहु मोहि, हरहु कलेस विकार॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जय हनुमान ज्ञान गुण सागर।</p>
+<p></p>
+<p></p>
+<p>जय कपीस तिहुं लोक उजागर॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>राम दूत अतुलित बल धामा।</p>
+<p></p>
+<p></p>
+<p>अंजनि-पुत्र पवन-सुत नामा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>महावीर विक्रम बजरंगी।</p>
+<p></p>
+<p></p>
+<p>कुमति निवार सुमति के संगी॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>कंचन बरन बिराज सुबेसा।</p>
+<p></p>
+<p></p>
+<p>कानन कुंडल कुंचित केसा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>हाथ बज्र और ध्वजा बिराजे।</p>
+<p></p>
+<p></p>
+<p>कांधे मूंज जनेऊ साजे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>शंकर सुवन केसरी नंदन।</p>
+<p></p>
+<p></p>
+<p>तेज प्रताप महा जग बंदन॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>विद्यावान गुनी अति चातुर।</p>
+<p></p>
+<p></p>
+<p>राम काज करिबे को आतुर॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>प्रभु चरित्र सुनिबे को रसिया।</p>
+<p></p>
+<p></p>
+<p>राम लखन सीता मन बसिया॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>सूक्ष्म रूप धरि सियहि दिखावा।</p>
+<p></p>
+<p></p>
+<p>बिकट रूप धरि लंक जरावा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>भीम रूप धरि असुर संहारे।</p>
+<p></p>
+<p></p>
+<p>रामचंद्र के काज संवारे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>लाय संजीवन लखन जियाए।</p>
+<p></p>
+<p></p>
+<p>श्री रघुबीर हरषि उर लाए॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>रघुपति कीन्ही बहुत बड़ाई।</p>
+<p></p>
+<p></p>
+<p>तुम मम प्रिय भरतहि सम भाई॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>सहस बदन तुम्हरो जस गावे।</p>
+<p></p>
+<p></p>
+<p>अस कहि श्रीपति कंठ लगावे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>सनकादिक ब्रह्मादि मुनीसा।</p>
+<p></p>
+<p></p>
+<p>नारद सारद सहित अहीसा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जम कुबेर दिगपाल जहां ते।</p>
+<p></p>
+<p></p>
+<p>कवि कोबिद कहि सके कहां ते॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>तुम उपकार सुग्रीवहि कीन्हा।</p>
+<p></p>
+<p></p>
+<p>राम मिलाय राज पद दीन्हा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>तुम्हरो मंत्र विभीषन माना।</p>
+<p></p>
+<p></p>
+<p>लंकेश्वर भए सब जग जाना॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जुग सहस्र जोजन पर भानू।</p>
+<p></p>
+<p></p>
+<p>लील्यो ताहि मधुर फल जानू॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>प्रभु मुद्रिका मेलि मुख माहीं।</p>
+<p></p>
+<p></p>
+<p>जलधि लांघि गए अचरज नाहीं॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>दुर्गम काज जगत के जेते।</p>
+<p></p>
+<p></p>
+<p>सुगम अनुग्रह तुम्हरे तेते॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>राम दुआरे तुम रखवारे।</p>
+<p></p>
+<p></p>
+<p>होत न आज्ञा बिनु पैसारे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>सब सुख लहे तुम्हारी सरना।</p>
+<p></p>
+<p></p>
+<p>तुम रक्षक काहू को डर ना॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>आपन तेज सम्हारो आपै।</p>
+<p></p>
+<p></p>
+<p>तीनों लोक हांक ते कांपे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>भूत पिसाच निकट नहिं आवे।</p>
+<p></p>
+<p></p>
+<p>महाबीर जब नाम सुनावे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>नासे रोग हरे सब पीरा।</p>
+<p></p>
+<p></p>
+<p>जपत निरंतर हनुमत बीरा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>संकट ते हनुमान छुड़ावे।</p>
+<p></p>
+<p></p>
+<p>मन क्रम बचन ध्यान जो लावे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>सब पर राम तपस्वी राजा।</p>
+<p></p>
+<p></p>
+<p>तिन के काज सकल तुम साजा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>और मनोरथ जो कोई लावे।</p>
+<p></p>
+<p></p>
+<p>सोई अमित जीवन फल पावे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>चारों जुग परताप तुम्हारा।</p>
+<p></p>
+<p></p>
+<p>है परसिद्ध जगत उजियारा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>साधु संत के तुम रखवारे।</p>
+<p></p>
+<p></p>
+<p>असुर निकंदन राम दुलारे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>अष्ट सिद्धि नव निधि के दाता।</p>
+<p></p>
+<p></p>
+<p>अस बर दीन जानकी माता॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>राम रसायन तुम्हरे पासा।</p>
+<p></p>
+<p></p>
+<p>सदा रहो रघुपति के दासा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>तुम्हरे भजन राम को पावे।</p>
+<p></p>
+<p></p>
+<p>जन्म जन्म के दुख बिसरावे॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>अंत काल रघुबर पुर जाई।</p>
+<p></p>
+<p></p>
+<p>जहां जन्म हरिभक्त कहाई॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>और देवता चित्त न धरई।</p>
+<p></p>
+<p></p>
+<p>हनुमत सेई सर्व सुख करई॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>संकट कटे मिटे सब पीरा।</p>
+<p></p>
+<p></p>
+<p>जो सुमिरे हनुमत बलबीरा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जय जय जय हनुमान गोसाई।</p>
+<p></p>
+<p></p>
+<p>कृपा करहु गुरु देव की नाई॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जो सत बार पाठ कर कोई।</p>
+<p></p>
+<p></p>
+<p>छूटहि बंदि महा सुख होई॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>जो यह पढ़े हनुमान चालीसा।</p>
+<p></p>
+<p></p>
+<p>होय सिद्धि साखी गौरीसा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>तुलसीदास सदा हरि चेरा।</p>
+<p></p>
+<p></p>
+<p>कीजे नाथ हृदय मह डेरा॥</p>
+<p></p>
+<p></p>
+</div>
+<div class='verse-block'>
+<p>पवनतनय संकट हरन, मंगल मूरति रूप।</p>
+<p></p>
+<p></p>
+<p>राम लखन सीता सहित, हृदय बसहु सुर भूप॥</p>
+<p></p>
+<p></p>
+</div>
+</div>
+
+<div class="loading">
     <div>🙏</div>
     <p>Loading bhajan...</p>
     <p style="font-size:15px;font-family:var(--font-ui);color:var(--text-muted);margin-top:8px">भजन लोड हो रहा है...</p>
@@ -637,6 +1055,12 @@ function toggleMobileMenu() {
   <div class="footer-inner">
     <div class="footer-om">ॐ</div>
     <p class="footer-tagline">सनातन ज्ञान सागर — The Ocean of Eternal Wisdom</p>
+        <div class="footer-links" style="margin-bottom: 8px;">
+      <a href="https://ournakshatra.com/janam_landing.html">Free Birth Chart</a>
+      <a href="https://ournakshatra.com/kundli_matching_landing.html">Matchmaking</a>
+      <a href="https://ournakshatra.com/panchang_landing.html">Daily Panchang</a>
+      <a href="https://ournakshatra.com/tools.html">Yoga Directory</a>
+    </div>
     <div class="footer-links">
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
@@ -847,6 +1271,33 @@ function toggleMobileMenu() {
     const deityPrefix = FEMALE_DEITIES.includes(b.deity) ? 'Goddess ' : 'Lord ';
     const deityDisplayTitle = deityPrefix + b.deity;
 
+    // Famous Kundli Mapping
+    const getFamousKundli = (deity) => {
+      const map = {
+        'Shiva': { name: 'Lord Shiva', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🔱', desc: 'Explore the astrological alignments of the Supreme Yogi.' },
+        'Krishna': { name: 'Lord Krishna', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🦚', desc: 'Discover the extraordinary birth chart of the eighth avatar of Vishnu.' },
+        'Rama': { name: 'Lord Rama', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🏹', desc: 'See the highly exalted planetary positions of Maryada Purushottam.' },
+        'Hanuman': { name: 'Lord Hanuman', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🐒', desc: 'Analyze the birth chart reflecting boundless devotion and strength.' },
+        'Ganesha': { name: 'Lord Ganesha', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🐘', desc: 'Explore the chart of the remover of obstacles.' }
+      };
+      return map[deity] || { name: 'Famous Devotees & Deities', url: 'https://ournakshatra.com/famous-kundli.html', icon: '📜', desc: 'Explore the astrological charts of legendary saints, kings, and deities.' };
+    };
+
+    const fk = getFamousKundli(b.deity);
+    const famousKundliHTML = `
+      <div class="famous-kundli-banner">
+        <div class="fk-icon">${fk.icon}</div>
+        <div class="fk-content">
+          <div class="fk-eyebrow">Astrological Deep Dive</div>
+          <div class="fk-title">View the Birth Chart of ${fk.name}</div>
+          <div class="fk-desc">${fk.desc}</div>
+          <a href="${fk.url}" target="_blank" rel="noopener" class="fk-btn">
+            Explore Chart →
+          </a>
+        </div>
+      </div>
+    `;
+
     document.getElementById('content-wrapper').innerHTML = `
       <!-- LEFT / MAIN COLUMN -->
       <div>
@@ -895,6 +1346,7 @@ function toggleMobileMenu() {
         <!-- VERSES -->
         <div class="content-body" style="padding-bottom:60px;">
           ${versesHTML}
+          ${famousKundliHTML}
           ${referenceHTML}
         </div>
 

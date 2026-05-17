@@ -199,6 +199,41 @@
     body.hide-hindi .line-hindi, body.hide-hindi .line-meaning-hindi { display: none; }
     body.hide-meaning .line-meaning-hindi, body.hide-meaning .line-meaning-en, body.hide-meaning .line-meaning-label { display: none; }
   
+    /* FAMOUS KUNDLI BANNER */
+    .famous-kundli-banner {
+        background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+        border: 2px solid var(--saffron);
+        border-radius: var(--radius);
+        padding: 24px;
+        margin: 32px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    .famous-kundli-banner::after {
+        content: '✨';
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        font-size: 100px;
+        opacity: 0.05;
+        pointer-events: none;
+    }
+    .fk-icon { font-size: 48px; flex-shrink: 0; line-height: 1; z-index: 1; }
+    .fk-content { flex: 1; z-index: 1; }
+    .fk-eyebrow { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--saffron); margin-bottom: 6px; }
+    .fk-title { font-size: 20px; font-weight: 800; color: var(--text); line-height: 1.3; margin-bottom: 8px; }
+    .fk-desc { font-size: 14px; color: var(--text-sec); margin-bottom: 16px; }
+    .fk-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--saffron); color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.2s, opacity 0.2s; box-shadow: 0 4px 12px rgba(201, 106, 31, 0.3); }
+    .fk-btn:hover { transform: translateY(-2px); opacity: 0.9; color: #fff; }
+    @media(max-width:600px) {
+        .famous-kundli-banner { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px; }
+        .famous-kundli-banner::after { font-size: 80px; }
+    }
+
     /* ── Jyotish Dropdown Nav ─── */
     .nav-dropdown { position: relative; }
     .nav-dropdown > a { display: flex; align-items: center; gap: 4px; cursor: pointer; }
@@ -865,6 +900,33 @@ function toggleMobileMenu() {
     const deityPrefix = FEMALE_DEITIES.includes(b.deity) ? 'Goddess ' : 'Lord ';
     const deityDisplayTitle = deityPrefix + b.deity;
 
+    // Famous Kundli Mapping
+    const getFamousKundli = (deity) => {
+      const map = {
+        'Shiva': { name: 'Lord Shiva', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🔱', desc: 'Explore the astrological alignments of the Supreme Yogi.' },
+        'Krishna': { name: 'Lord Krishna', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🦚', desc: 'Discover the extraordinary birth chart of the eighth avatar of Vishnu.' },
+        'Rama': { name: 'Lord Rama', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🏹', desc: 'See the highly exalted planetary positions of Maryada Purushottam.' },
+        'Hanuman': { name: 'Lord Hanuman', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🐒', desc: 'Analyze the birth chart reflecting boundless devotion and strength.' },
+        'Ganesha': { name: 'Lord Ganesha', url: 'https://ournakshatra.com/famous-kundli.html', icon: '🐘', desc: 'Explore the chart of the remover of obstacles.' }
+      };
+      return map[deity] || { name: 'Famous Devotees & Deities', url: 'https://ournakshatra.com/famous-kundli.html', icon: '📜', desc: 'Explore the astrological charts of legendary saints, kings, and deities.' };
+    };
+
+    const fk = getFamousKundli(b.deity);
+    const famousKundliHTML = `
+      <div class="famous-kundli-banner">
+        <div class="fk-icon">${fk.icon}</div>
+        <div class="fk-content">
+          <div class="fk-eyebrow">Astrological Deep Dive</div>
+          <div class="fk-title">View the Birth Chart of ${fk.name}</div>
+          <div class="fk-desc">${fk.desc}</div>
+          <a href="${fk.url}" target="_blank" rel="noopener" class="fk-btn">
+            Explore Chart →
+          </a>
+        </div>
+      </div>
+    `;
+
     document.getElementById('content-wrapper').innerHTML = `
       <!-- LEFT / MAIN COLUMN -->
       <div>
@@ -913,6 +975,7 @@ function toggleMobileMenu() {
         <!-- VERSES -->
         <div class="content-body" style="padding-bottom:60px;">
           ${versesHTML}
+          ${famousKundliHTML}
           ${referenceHTML}
         </div>
 

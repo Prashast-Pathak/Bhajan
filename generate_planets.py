@@ -282,6 +282,18 @@ def make_bhajan_items(bhajans: list[str], color: str) -> str:
     return items
 
 
+FAMOUS_KUNDLI_MAP = {
+    "surya": {"name": "Lord Rama", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🏹", "desc": "Born in the Suryavansha, see his exalted Sun."},
+    "chandra": {"name": "Lord Krishna", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🦚", "desc": "Born in the Chandravansha, explore his chart."},
+    "mangal": {"name": "Lord Hanuman", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🐒", "desc": "Analyze the chart reflecting boundless devotion and strength."},
+    "budha": {"name": "Swami Vivekananda", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🧠", "desc": "Explore the chart of intellect and wisdom."},
+    "guru": {"name": "Adi Shankaracharya", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🕉️", "desc": "See the chart of the great spiritual teacher."},
+    "shukra": {"name": "Lata Mangeshkar", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🎵", "desc": "Discover the planetary alignments of art and beauty."},
+    "shani": {"name": "Shani Dev", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "⚖️", "desc": "Explore charts highlighting the Lord of Karma."},
+    "rahu": {"name": "Albert Einstein", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🔬", "desc": "See how Rahu influences profound unorthodox genius."},
+    "ketu": {"name": "Ramana Maharshi", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "🧘", "desc": "Analyze the chart of a true spiritual liberator."}
+}
+
 def generate_html(planet: dict) -> str:
     color      = planet["color"]
     name       = planet["name"]
@@ -296,6 +308,29 @@ def generate_html(planet: dict) -> str:
     day        = planet["day"]
     pid        = planet["id"]
     bhajan_html = make_bhajan_items(planet["bhajans"], color)
+
+    fk = FAMOUS_KUNDLI_MAP.get(pid, {"name": "Famous Figures", "url": "https://ournakshatra.com/famous-kundli.html", "icon": "📜", "desc": "Explore astrological charts of legendary figures."})
+    famous_kundli_html = f"""
+        <!-- ── FAMOUS KUNDLI BANNER ───────────────────────── -->
+        <div class="cta-banner" style="margin-top:0; margin-bottom:1.75rem; border-color: {color}; background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);" role="complementary" aria-label="Famous Kundli">
+            <div style="font-size:3rem; line-height:1; margin-right:1rem;">{fk['icon']}</div>
+            <div class="cta-text">
+                <div class="cta-eyebrow" style="color: {color};">Astrological Deep Dive</div>
+                <p class="cta-headline">
+                    View the Birth Chart of <em>{fk['name']}</em><br>
+                    <span style="font-size:0.9rem; font-weight:400; color:var(--text-sec);">{fk['desc']}</span>
+                </p>
+            </div>
+            <a href="{fk['url']}"
+               class="cta-btn"
+               style="background: {color}; box-shadow: 0 4px 12px {color}40;"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore Chart
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+"""
 
     # Compute a lighter tint of the planet color for subtle backgrounds (10% opacity)
     # We do this inline via CSS rgba — just pass the hex and let CSS handle it
@@ -882,6 +917,7 @@ def generate_html(planet: dict) -> str:
             </div>
         </div>
 
+{famous_kundli_html}
         <!-- ── RECOMMENDED BHAJANS ────────────────────────── -->
         <div class="section-card">
             <div class="section-label">Recommended Bhajans</div>

@@ -794,13 +794,18 @@ def _build_sitemap(cfg: Mapping[str, Any], paths: List[str]) -> None:
         seen.add(loc)
         xml_parts.append(_url(loc, pri, freq))
 
-    for loc in paths:
-        if not loc.startswith("/"):
-            continue
-        if loc in seen:
-            continue
-        seen.add(loc)
-        xml_parts.append(_url(loc, "0.7", "monthly"))
+    for html_file in DIST.rglob("*.html"):
+        rel_path = str(html_file.relative_to(DIST))
+        if rel_path == "index.html":
+            loc = "/"
+        elif rel_path.endswith("/index.html"):
+            loc = "/" + rel_path[:-10]
+        else:
+            loc = "/" + rel_path
+            
+        if loc not in seen:
+            seen.add(loc)
+            xml_parts.append(_url(loc, "0.7", "monthly"))
 
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'

@@ -902,24 +902,28 @@ function routePage() {
   const verse = params.get('verse') || window.__PRERENDERED_VERSE__;
   const chapterOnly = chapter && !verse;
 
-  if (chapter && verse) {
-    const ch = gitaData.chapters.find(c => c.chapter == chapter);
-    if (!ch) { show404(); return; }
-    const v = ch.verses.find(v => v.verse == verse);
-    if (!v) { show404(); return; }
-    currentChapter = ch;
-    currentVerse = v;
-    
-    // Render the chapter in the background
-    renderChapterPage(ch, false); // pass false so we don't scroll
-    // Then pop the modal
-    openVerseModal(ch, v);
-  } else if (chapter && !verse) {
+  if (chapter) {
     const ch = gitaData.chapters.find(c => c.chapter == chapter);
     if (!ch) { show404(); return; }
     currentChapter = ch;
     currentView = 'chapter';
-    renderChapterPage(ch, true);
+    
+    // Render the whole chapter with all verses
+    renderChapterPage(ch);
+    
+    if (verse) {
+        // Auto-scroll to the verse
+        setTimeout(() => {
+            const el = document.getElementById('verse-' + verse);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // Flash highlight
+                el.style.transition = 'box-shadow 0.3s ease';
+                el.style.boxShadow = '0 0 15px 5px rgba(201,106,31,0.5)';
+                setTimeout(() => el.style.boxShadow = 'none', 2000);
+            }
+        }, 500);
+    }
   } else {
     currentView = 'browse';
     renderBrowsePage();
@@ -927,8 +931,15 @@ function routePage() {
 }
 
 // ═══════════════════════════════════════════
-//  RENDER: VERSE PAGE (MODAL)
+//  NAVIGATION
 // ═══════════════════════════════════════════
+function navigateVerseModal(chapterNum, verseNum) {
+  window.location.href = `/bhagavad-gita.html?chapter=${chapterNum}&verse=${verseNum}`;
+}
+
+function closeVerseModal() {
+  window.location.href = `/bhagavad-gita.html`;
+}
 function openVerseModal(ch, v) {
   const ls = document.getElementById('loading-state');
   if (ls) ls.style.display = 'none';
@@ -1158,19 +1169,83 @@ function renderChapterPage(ch, doScroll = true) {
   const ctaBlock = getChapterCTA(ch.chapter);
 
   const verseCards = sortedVerses.map(v => `
-    <a href="/bhagavad-gita.html?chapter=${ch.chapter}&verse=${v.verse}" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${v.verse});"
-       class="card card-hover ${v.famous ? 'famous-verse' : ''}" style="text-decoration:none;display:block;">
-      <div class="flex items-center justify-between mb-2">
+    <div id="verse-${v.verse}" class="card mb-8 p-6 ${v.famous ? 'famous-verse' : ''}" style="scroll-margin-top: 100px;">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
         <span class="chapter-badge">Verse ${v.verse}</span>
-        ${v.famous ? '<span style="font-size:11px;color:var(--gold);">⭐ Famous</span>' : ''}
+        ${v.famous ? '<span style="background:rgba(168,131,42,0.15);border:1px solid var(--gold);color:var(--gold);border-radius:99px;font-size:11px;font-weight:700;padding:3px 10px;">⭐ Famous Verse</span>' : ''}
       </div>
-      <p class="verse-devanagari devanagari-only" style="font-size:18px;margin:0 0 6px 0;white-space:pre-line;">${v.sanskrit.split('\n')[0]}</p>
-      <p class="roman-only" style="font-size:14px;font-style:italic;color:var(--text-sec);margin:0 0 6px 0;">${v.roman.split('\n')[0]}</p>
-      <p style="font-size:13px;color:var(--text-muted);margin:0 0 6px 0;">${v.english_translation.substring(0,100)}...</p>
-      <div class="flex flex-wrap gap-1 mt-2">
-        ${(v.topics||[]).slice(0,3).map(t=>`<span class="topic-chip" style="font-size:10px;padding:2px 8px;">${t}</span>`).join('')}
+
+      <!-- ─── SANSKRIT ORIGINAL ─── -->
+      <div class="mb-5" style="border-left:4px solid var(--krishna); padding-left: 16px;">
+        <p class="verse-devanagari devanagari-only mb-3" style="white-space:pre-line;">${v.sanskrit}</p>
+        <p class="verse-roman roman-only" style="white-space:pre-line;">${v.roman}</p>
       </div>
-    </a>`).join('');
+
+      <!-- ─── HINDI TRANSLATION ─── -->
+      <div class="mb-4">
+        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">हिंदी अनुवाद</h4>
+        <p class="devanagari" style="font-size:18px;line-height:1.9;color:var(--text);">${v.hindi_translation}</p>
+      </div>
+
+      <!-- ─── ENGLISH TRANSLATION ─── -->
+      <div class="mb-4">
+        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">English Translation</h4>
+        <p style="font-size:17px;line-height:1.8;color:var(--text);font-style:italic;">"${v.english_translation}"</p>
+      </div>
+
+      ${v.hindi_commentary ? `
+      <!-- ─── HINDI COMMENTARY ─── -->
+      <div class="mb-4 mt-4 pt-4" style="border-top:1px dashed var(--border);">
+        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">व्याख्या</h4>
+        <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text-sec);">${v.hindi_commentary}</p>
+      </div>` : ''}
+
+      ${v.english_commentary ? `
+      <!-- ─── ENGLISH COMMENTARY ─── -->
+      <div class="mb-4 mt-2">
+        <p style="font-size:16px;line-height:1.85;color:var(--text-sec);">${v.english_commentary}</p>
+      </div>` : ''}
+
+      ${v.life_application ? `
+      <!-- ─── LIFE APPLICATION ─── -->
+      <div class="mb-4 mt-4 p-4" style="background:rgba(201,106,31,0.06);border-left:4px solid var(--saffron); border-radius: 4px;">
+        <h4 style="font-size:14px;font-weight:700;color:var(--saffron);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">🌟 Life Application</h4>
+        <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text);">${v.life_application}</p>
+      </div>` : ''}
+      
+      <!-- Word Meanings -->
+      ${(v.word_meanings && v.word_meanings.length > 0) ? `
+      <details class="mt-4 no-print">
+        <summary style="font-size:14px; font-weight:600; color:var(--text-sec); cursor:pointer;">Show Word Meanings (शब्द-अर्थ)</summary>
+        <div style="overflow-x:auto; margin-top:12px;">
+          <table class="word-table w-full" style="border-collapse:collapse; background: var(--surface); border-radius: 8px;">
+            <thead>
+              <tr>
+                <th style="border-radius: 8px 0 0 0;">Sanskrit</th>
+                <th>Hindi अर्थ</th>
+                <th style="border-radius: 0 8px 0 0;">English Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${v.word_meanings.map(w => `
+              <tr>
+                <td class="devanagari" style="font-size:16px;font-weight:600;color:var(--krishna);">${w.word}</td>
+                <td class="devanagari" style="color:var(--text-sec);font-size:15px;">${w.meaning_hindi}</td>
+                <td style="color:var(--text-muted);font-style:italic;font-size:14px;">${w.meaning_english}</td>
+              </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      ` : ''}
+      
+      <!-- Action Buttons -->
+      <div class="flex gap-2 mt-6 pt-4 no-print" style="border-top:1px dashed var(--border);">
+          <button class="action-btn btn-copy" onclick="copySpecificVerse(${ch.chapter}, ${v.verse})" style="flex:0 auto; padding:0 16px;">📋 Copy</button>
+          <button class="action-btn btn-whatsapp" onclick="shareSpecificVerse(${ch.chapter}, ${v.verse})" style="flex:0 auto; padding:0 16px;">📱 Share</button>
+      </div>
+    </div>
+  `).join('');
 
   const html = `
 <nav class="breadcrumb text-sm mb-5">
@@ -1214,7 +1289,7 @@ function renderChapterPage(ch, doScroll = true) {
   Showing ${sortedVerses.length} of ${ch.verse_count} verses from Chapter ${ch.chapter}
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 gap-6">
   ${verseCards}
 </div>
 
@@ -1273,7 +1348,7 @@ function renderBrowsePage() {
   );
 
   const famousCards = famousVerses.slice(0,6).map(v => `
-    <a href="/bhagavad-gita.html?chapter=${v.chapter}&verse=${v.verse}" onclick="event.preventDefault(); navigateVerseModal(${v.chapter}, ${v.verse});"
+    <a href="/bhagavad-gita.html?chapter=${v.chapter}&verse=${v.verse}"
        class="card card-hover famous-verse" style="text-decoration:none;display:block;">
       <div class="flex gap-2 items-center mb-2">
         <span class="gita-badge">Ch ${v.chapter}, V ${v.verse}</span>
@@ -1501,28 +1576,41 @@ function updateFavBtn(saved) {
   btn.innerHTML = saved ? '❤️ Saved' : '❤️ Save';
 }
 
-// ═══════════════════════════════════════════
-//  SHARE + COPY
-// ═══════════════════════════════════════════
 function shareWhatsApp() {
   if (!currentVerse || !currentChapter) return;
-  const v = currentVerse;
-  const msg = `🙏 *Bhagavad Gita — Chapter ${currentChapter.chapter}, Verse ${v.verse}*\n\n` +
-    `${v.sanskrit}\n\n` +
-    `*अर्थ:* ${v.hindi_translation}\n\n` +
-    `*Meaning:* ${v.english_translation}\n\n` +
-    `पूरी व्याख्या 👇\n${window.location.href}\n\n📿 सनातन ज्ञान सागर`;
-  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+  shareSpecificVerse(currentChapter.chapter, currentVerse.verse);
 }
 
 function copyVerse() {
   if (!currentVerse || !currentChapter) return;
-  const v = currentVerse;
-  const text = `Bhagavad Gita — Chapter ${currentChapter.chapter}, Verse ${v.verse}\n\n` +
+  copySpecificVerse(currentChapter.chapter, currentVerse.verse);
+}
+
+function shareSpecificVerse(chNum, vNum) {
+  const ch = gitaData.chapters.find(c => c.chapter == chNum);
+  if (!ch) return;
+  const v = ch.verses.find(x => x.verse == vNum);
+  if (!v) return;
+  
+  const msg = `🙏 *Bhagavad Gita — Chapter ${ch.chapter}, Verse ${v.verse}*\n\n` +
+    `${v.sanskrit}\n\n` +
+    `*अर्थ:* ${v.hindi_translation}\n\n` +
+    `*Meaning:* ${v.english_translation}\n\n` +
+    `पूरी व्याख्या 👇\nhttps://bhajan.ournakshatra.com/gita/${ch.chapter}/?verse=${v.verse}\n\n📿 सनातन ज्ञान सागर`;
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
+
+function copySpecificVerse(chNum, vNum) {
+  const ch = gitaData.chapters.find(c => c.chapter == chNum);
+  if (!ch) return;
+  const v = ch.verses.find(x => x.verse == vNum);
+  if (!v) return;
+
+  const text = `Bhagavad Gita — Chapter ${ch.chapter}, Verse ${v.verse}\n\n` +
     `Sanskrit:\n${v.sanskrit}\n\n` +
     `Hindi: ${v.hindi_translation}\n\n` +
     `English: ${v.english_translation}\n\n` +
-    `Source: ${window.location.href}`;
+    `Source: https://bhajan.ournakshatra.com/gita/${ch.chapter}/?verse=${v.verse}`;
   navigator.clipboard.writeText(text).then(() => showToast('📋 Copied!'));
 }
 
