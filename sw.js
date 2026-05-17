@@ -78,9 +78,19 @@ self.addEventListener('fetch', event => {
 
       // Not in cache — fetch from network and cache it
       return fetch(event.request).then(response => {
-        if (!response || response.status !== 200 || response.type === 'opaque') {
-          return response;
+        // Handle 404s for legacy Gita verse URLs (e.g. /gita/1/7/)
+        if (response && response.status === 404) {
+          const url = new URL(event.request.url);
+          const match = url.pathname.match(/^\/gita\/(\d+)\/(\d+)\/?$/);
+          if (match) {
+            return Response.redirect(`/bhagavad-gita.html?chapter=${match[1]}&verse=${match[2]}`, 301);
+          }
         }
+
+        if (!response || response.status !== 200 || response.type === 'opaque') {
+          return response || new Response('', { status: 502 });
+        }
+        
         const responseToCache = response.clone();
         caches.open(CACHE_NAME).then(cache => {
           cache.put(event.request, responseToCache);
@@ -89,8 +99,11 @@ self.addEventListener('fetch', event => {
       }).catch(() => {
         // Offline fallback for HTML pages
         if (event.request.headers.get('Accept') && event.request.headers.get('Accept').includes('text/html')) {
-          return caches.match('/index.html');
+          return caches.match('/index.html').then(fallback => {
+             return fallback || new Response('Offline. Please connect to the internet.', { status: 503, statusText: 'Service Unavailable' });
+          });
         }
+        return new Response('Offline', { status: 503 });
       });
     })
   );

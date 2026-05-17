@@ -912,17 +912,23 @@ function routePage() {
     renderChapterPage(ch);
     
     if (verse) {
-        // Auto-scroll to the verse
-        setTimeout(() => {
-            const el = document.getElementById('verse-' + verse);
-            if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                // Flash highlight
-                el.style.transition = 'box-shadow 0.3s ease';
-                el.style.boxShadow = '0 0 15px 5px rgba(201,106,31,0.5)';
-                setTimeout(() => el.style.boxShadow = 'none', 2000);
-            }
-        }, 500);
+        const v = ch.verses.find(x => x.verse == verse);
+        if (v) {
+            // Then pop the modal
+            openVerseModal(ch, v);
+        } else {
+            // Auto-scroll to the verse if not found in data somehow
+            setTimeout(() => {
+                const el = document.getElementById('verse-' + verse);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Flash highlight
+                    el.style.transition = 'box-shadow 0.3s ease';
+                    el.style.boxShadow = '0 0 15px 5px rgba(201,106,31,0.5)';
+                    setTimeout(() => el.style.boxShadow = 'none', 2000);
+                }
+            }, 500);
+        }
     }
   } else {
     currentView = 'browse';
@@ -1240,9 +1246,10 @@ function renderChapterPage(ch, doScroll = true) {
       ` : ''}
       
       <!-- Action Buttons -->
-      <div class="flex gap-2 mt-6 pt-4 no-print" style="border-top:1px dashed var(--border);">
-          <button class="action-btn btn-copy" onclick="copySpecificVerse(${ch.chapter}, ${v.verse})" style="flex:0 auto; padding:0 16px;">📋 Copy</button>
-          <button class="action-btn btn-whatsapp" onclick="shareSpecificVerse(${ch.chapter}, ${v.verse})" style="flex:0 auto; padding:0 16px;">📱 Share</button>
+      <div class="flex flex-wrap gap-2 mt-6 pt-4 no-print" style="border-top:1px dashed var(--border);">
+          <button class="action-btn" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${v.verse})" style="flex:1 1 100%; padding:10px 16px; background:linear-gradient(135deg, var(--krishna) 0%, var(--maroon) 100%); color:white; border:none; font-weight:700; box-shadow:0 4px 10px rgba(124,58,237,0.3); font-size:15px; margin-bottom:4px;">📖 Read in Immersive Mode (Popup)</button>
+          <button class="action-btn btn-copy" onclick="copySpecificVerse(${ch.chapter}, ${v.verse})" style="flex:1; padding:8px 16px;">📋 Copy</button>
+          <button class="action-btn btn-whatsapp" onclick="shareSpecificVerse(${ch.chapter}, ${v.verse})" style="flex:1; padding:8px 16px;">📱 Share</button>
       </div>
     </div>
   `).join('');
