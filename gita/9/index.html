@@ -1465,67 +1465,9 @@ function renderChapterPage(ch, doScroll = true) {
         <p class="verse-roman roman-only" style="white-space:pre-line;">${v.roman}</p>
       </div>
 
-      <!-- ─── HINDI TRANSLATION ─── -->
-      <div class="mb-4">
-        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">हिंदी अनुवाद</h4>
-        <p class="devanagari" style="font-size:18px;line-height:1.9;color:var(--text);">${v.hindi_translation}</p>
-      </div>
-
-      <!-- ─── ENGLISH TRANSLATION ─── -->
-      <div class="mb-4">
-        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">English Translation</h4>
-        <p style="font-size:17px;line-height:1.8;color:var(--text);font-style:italic;">"${v.english_translation}"</p>
-      </div>
-
-      ${v.hindi_commentary ? `
-      <!-- ─── HINDI COMMENTARY ─── -->
-      <div class="mb-4 mt-4 pt-4" style="border-top:1px dashed var(--border);">
-        <h4 style="font-size:14px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">व्याख्या</h4>
-        <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text-sec);">${v.hindi_commentary}</p>
-      </div>` : ''}
-
-      ${v.english_commentary ? `
-      <!-- ─── ENGLISH COMMENTARY ─── -->
-      <div class="mb-4 mt-2">
-        <p style="font-size:16px;line-height:1.85;color:var(--text-sec);">${v.english_commentary}</p>
-      </div>` : ''}
-
-      ${v.life_application ? `
-      <!-- ─── LIFE APPLICATION ─── -->
-      <div class="mb-4 mt-4 p-4" style="background:rgba(201,106,31,0.06);border-left:4px solid var(--saffron); border-radius: 4px;">
-        <h4 style="font-size:14px;font-weight:700;color:var(--saffron);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">🌟 Life Application</h4>
-        <p class="devanagari" style="font-size:17px;line-height:1.9;color:var(--text);">${v.life_application}</p>
-      </div>` : ''}
-      
-      <!-- Word Meanings -->
-      ${(v.word_meanings && v.word_meanings.length > 0) ? `
-      <details class="mt-4 no-print">
-        <summary style="font-size:14px; font-weight:600; color:var(--text-sec); cursor:pointer;">Show Word Meanings (शब्द-अर्थ)</summary>
-        <div style="overflow-x:auto; margin-top:12px;">
-          <table class="word-table w-full" style="border-collapse:collapse; background: var(--surface); border-radius: 8px;">
-            <thead>
-              <tr>
-                <th style="border-radius: 8px 0 0 0;">Sanskrit</th>
-                <th>Hindi अर्थ</th>
-                <th style="border-radius: 0 8px 0 0;">English Meaning</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${v.word_meanings.map(w => `
-              <tr>
-                <td class="devanagari" style="font-size:16px;font-weight:600;color:var(--krishna);">${w.word}</td>
-                <td class="devanagari" style="color:var(--text-sec);font-size:15px;">${w.meaning_hindi}</td>
-                <td style="color:var(--text-muted);font-style:italic;font-size:14px;">${w.meaning_english}</td>
-              </tr>`).join('')}
-            </tbody>
-          </table>
-        </div>
-      </details>
-      ` : ''}
-      
       <!-- Action Buttons -->
-      <div class="flex flex-wrap gap-2 mt-6 pt-4 no-print" style="border-top:1px dashed var(--border);">
-          <button class="action-btn" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${v.verse})" style="flex:1 1 100%; padding:10px 16px; background:linear-gradient(135deg, var(--krishna) 0%, var(--maroon) 100%); color:white; border:none; font-weight:700; box-shadow:0 4px 10px rgba(124,58,237,0.3); font-size:15px; margin-bottom:4px;">📖 Read in Immersive Mode (Popup)</button>
+      <div class="flex flex-wrap gap-2 mt-2 pt-4 no-print" style="border-top:1px dashed var(--border);">
+          <button class="action-btn" onclick="event.preventDefault(); navigateVerseModal(${ch.chapter}, ${v.verse})" style="flex:1 1 100%; padding:10px 16px; background:linear-gradient(135deg, var(--krishna) 0%, var(--maroon) 100%); color:white; border:none; font-weight:700; box-shadow:0 4px 10px rgba(124,58,237,0.3); font-size:15px; margin-bottom:4px;">📖 View Meaning & Translation</button>
           <button class="action-btn btn-copy" onclick="copySpecificVerse(${ch.chapter}, ${v.verse})" style="flex:1; padding:8px 16px;">📋 Copy</button>
           <button class="action-btn btn-whatsapp" onclick="shareSpecificVerse(${ch.chapter}, ${v.verse})" style="flex:1; padding:8px 16px;">📱 Share</button>
       </div>
@@ -1570,8 +1512,22 @@ function renderChapterPage(ch, doScroll = true) {
   </div>
 </div>
 
-<div class="mb-3" style="color:var(--text-muted);font-size:14px;">
-  Showing ${sortedVerses.length} of ${ch.verse_count} verses from Chapter ${ch.chapter}
+<div class="mb-3" style="color:var(--text-muted);font-size:14px; display:flex; justify-content:space-between; align-items:center;">
+  <span>Showing ${sortedVerses.length} of ${ch.verse_count} verses from Chapter ${ch.chapter}</span>
+</div>
+
+<!-- ─── VERSE NAVIGATION GRID ─── -->
+<div class="card mb-6 no-print" style="padding:16px;">
+  <h3 style="font-size:14px;font-weight:700;color:var(--text-sec);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.05em;">Quick Navigate to Verse</h3>
+  <div class="flex flex-wrap gap-2">
+    ${sortedVerses.map(v => `
+      <a href="/#verse-${v.verse}" onclick="document.getElementById('verse-${v.verse}').scrollIntoView({behavior:'smooth'}); return false;"
+         style="display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--text-sec); font-weight:600; font-size:14px; text-decoration:none; transition:0.2s;"
+         onmouseover="this.style.background='var(--krishna)'; this.style.color='white';" onmouseout="this.style.background='var(--surface)'; this.style.color='var(--text-sec)';">
+        ${v.verse}
+      </a>
+    `).join('')}
+  </div>
 </div>
 
 <div class="grid grid-cols-1 gap-6">
