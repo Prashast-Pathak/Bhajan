@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Guru Chandal Dosha Guide — Bhajan &amp; Mantra | bhajan.ournakshatra.com</title>
-<meta content="Learn about Guru Chandal Dosha, its effects, primary mantra, and step-by-step guidance. Deity: Lord Vishnu." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guru Chandal Dosha Remedy — Bhajan & Mantra | bhajan.ournakshatra.com</title>
+  <meta name="description" content="Learn about Guru Chandal Dosha, its effects, primary mantra, and step-by-step remedial actions. Deity: Lord Vishnu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <style>
     :root {
       --bg: #F5F0E8;
       --surface: #EDE6D8;
@@ -39,53 +38,108 @@
       line-height: 1.7;
     }
 
-    /* ── HERO BANNER ── */
-    .hero {
-      text-align: center; padding: 80px 20px 60px;
-      background: linear-gradient(to bottom, var(--surface) 0%, var(--bg) 100%);
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245,240,232,0.94);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
+      padding: 0 28px; height: 62px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-weight: 900; font-size: 1rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--maroon); text-decoration: none;
+    }
+    .logo em { font-style: normal; color: var(--accent); }
+    nav a {
+      font-size: 0.8rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text-sec);
+      text-decoration: none; padding: 6px 16px;
+      border-radius: 20px; border: 1px solid var(--border);
+      transition: all .2s;
+    }
+    nav a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: 68px 24px 54px; text-align: center;
+      border-bottom: 4px solid var(--accent);
+      background:
+        radial-gradient(ellipse 80% 65% at 50% 0%, var(--accent-soft) 0%, transparent 70%),
+        var(--bg);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 12% 88%, var(--accent-mid) 0%, transparent 38%),
+        radial-gradient(circle at 88% 12%, var(--accent-mid) 0%, transparent 32%);
+      pointer-events: none;
     }
     .hero-tag {
-      display: inline-block; background: var(--accent-soft); color: var(--accent);
-      font-size: 0.75rem; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase;
-      padding: 6px 18px; border-radius: 20px; margin-bottom: 20px;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.67rem; font-weight: 700; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--accent);
+      border: 1px solid var(--accent); border-radius: 20px;
+      padding: 4px 14px; margin-bottom: 20px; position: relative;
     }
     .hero-hindi {
-      font-family: var(--font-hindi); font-size: 2.8rem; color: var(--accent);
-      line-height: 1; margin-bottom: 5px; opacity: 0.9;
+      font-family: var(--font-hindi);
+      font-size: clamp(2.8rem, 9vw, 5.8rem);
+      color: var(--accent); line-height: 1.05;
+      position: relative; margin-bottom: 8px;
     }
     .hero-name {
-      font-size: 2.2rem; font-weight: 900; color: var(--text);
-      letter-spacing: -0.02em; margin-bottom: 16px;
+      font-size: clamp(1.1rem, 3vw, 1.55rem);
+      font-weight: 300; letter-spacing: .32em;
+      text-transform: uppercase; color: var(--text-sec);
+      position: relative; margin-bottom: 14px;
     }
     .hero-deity {
-      font-size: 0.9rem; color: var(--text-sec);
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.88rem; color: var(--text-muted);
+      position: relative;
+    }
+    .hero-deity strong { color: var(--accent); font-weight: 700; }
+
+    /* ── CONTENT ── */
+    .content-wrapper {
+      max-width: 740px; margin: 0 auto;
+      padding: 44px 24px 80px;
+      display: flex; flex-direction: column; gap: 32px;
     }
 
     /* ── CARDS ── */
-    .content-wrapper {
-      max-width: 680px; margin: 40px auto; padding: 0 20px;
-      display: flex; flex-direction: column; gap: 32px;
-    }
     .card {
-      background: #fff; border: 1px solid var(--border);
-      border-radius: var(--radius); box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-      animation: fadeUp .4s ease both;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      animation: fadeUp .45s ease both;
     }
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
     .card-header {
       display: flex; align-items: center; gap: 12px;
-      padding: 16px 22px; border-bottom: 1px solid var(--surface);
-      background: rgba(0,0,0,0.01);
+      padding: 16px 22px 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface2);
     }
-    .card-title { font-size: 1.05rem; font-weight: 900; color: var(--text); }
     .card-icon {
-      width: 34px; height: 34px; border-radius: 8px;
+      width: 34px; height: 34px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      background: var(--accent-soft); font-size: 1.1rem;
+      font-size: 1rem; flex-shrink: 0;
+      background: var(--accent-soft);
+      border: 2px solid var(--accent);
+    }
+    .card-title {
+      font-size: 0.67rem; font-weight: 900;
+      letter-spacing: .2em; text-transform: uppercase;
       color: var(--accent);
     }
     .card-body { padding: 20px 22px; }
@@ -150,6 +204,13 @@
       text-transform: uppercase; background: var(--saffron); color: #fff;
       border-radius: 20px; padding: 3px 12px;
     }
+    .severity-level {
+      font-size: 0.78rem; font-weight: 700;
+      color: #D97706;
+      background: rgba(217,119,6, 0.1);
+      border: 1px solid #D97706;
+      border-radius: 20px; padding: 2px 10px;
+    }
     .warning-title {
       font-size: 0.88rem; font-weight: 900;
       color: #92400E; margin-bottom: 8px;
@@ -171,7 +232,7 @@
       color: rgba(255,255,255,0.04);
       top: -30px; right: -10px; line-height: 1;
       pointer-events: none;
-     opacity: 0.05;}
+    }
     .cta-eyebrow {
       font-size: 0.65rem; font-weight: 700; letter-spacing: .24em;
       text-transform: uppercase; color: rgba(255,255,255,.55);
@@ -210,436 +271,120 @@
     }
     footer a { color: var(--saffron); text-decoration: none; font-weight: 600; }
 
-    /* ── FIX FOR MOBILE HEADER CLIPPING ── */
     @media (max-width: 480px) {
-      header { padding: 12px 14px; }
-      .logo { font-size: 0.8rem; letter-spacing: 0.08em; gap: 4px; }
-      .logo em { font-size: 1rem; }
-      nav a { font-size: 0.65rem; padding: 6px 10px; letter-spacing: 0.05em; }
-      
       .hero { padding: 50px 16px 40px; }
       .card-body, .card-header { padding-left: 14px; padding-right: 14px; }
       .cta-banner { padding: 28px 18px; }
       .mantra-box { flex-direction: column; gap: 12px; }
     }
-    @media (max-width: 480px) {
-      .cta-btn { word-break: break-word; white-space: normal; font-size: 0.8rem; padding: 12px 20px; }
-      .cta-banner { padding: 28px 18px; }
-      .cta-headline { font-size: 1.1rem; }
-    }
   </style>
-<style id="hub-header-styles">
-  .main-header { position: sticky; top: 0; z-index: 1000; background: rgba(245,240,232,0.96); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.08); box-shadow: 0 1px 8px rgba(0,0,0,0.04); }
-  .hub-header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 0 20px; height: 56px; max-width: 1200px; margin: 0 auto; }
-  .hub-header-left { display: flex; align-items: center; }
-  .hub-header-center { display: flex; align-items: center; justify-content: center; }
-  .hub-header-right { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
-  .hamburger-btn { background: none; border: none; cursor: pointer; padding: 6px; border-radius: 8px; color: #6E1515; display: flex; align-items: center; transition: background .18s; flex-shrink: 0; }
-  .hamburger-btn:hover { background: #EDE6D8; }
-  .hub-logo-link { display: flex; align-items: center; gap: 7px; text-decoration: none; }
-  .hub-logo-om { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg,#C96A1F,#6E1515); display: flex; align-items: center; justify-content: center; font-size: 16px; color: #fff; flex-shrink: 0; }
-  .hub-logo-text { font-size: 13px; font-weight: 900; letter-spacing: 0.06em; color: #6E1515; line-height: 1; }
-  .hub-logo-text em { display: block; font-style: normal; font-size: 10px; font-weight: 400; color: #8C6A45; letter-spacing: 0.1em; margin-top: 1px; }
-  .hub-nav-pill { text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: #C96A1F; border: 1.5px solid #C96A1F; border-radius: 20px; padding: 5px 11px; transition: all .18s; white-space: nowrap; }
-  .hub-nav-pill:hover { background: #C96A1F; color: #fff; }
-  .hub-fav-btn { background: none; border: none; cursor: pointer; font-size: 18px; padding: 4px; }
-  /* Mobile Menu Drawer */
-  .mobile-menu-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 1999; opacity: 0; pointer-events: none; transition: opacity .3s; }
-  .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
-  .mobile-menu-drawer { position: fixed; top: 0; left: -300px; bottom: 0; width: 280px; background: #F5F0E8; z-index: 2000; box-shadow: 4px 0 24px rgba(0,0,0,.12); transition: left .3s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; overflow: hidden; }
-  .mobile-menu-drawer.active { left: 0; }
-  .mobile-menu-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #D9CDBA; flex-shrink: 0; }
-  .close-menu-btn { background: none; border: none; font-size: 22px; color: #8C6A45; cursor: pointer; }
-  .mobile-menu-links { padding: 10px 0; display: flex; flex-direction: column; gap: 2px; overflow-y: auto; flex: 1; }
-  .mobile-menu-links > a { text-decoration: none; color: #2A1A08; font-size: 14px; font-weight: 600; padding: 10px 20px; transition: background .18s; }
-  .mobile-menu-links > a:hover { background: #EDE6D8; color: #C96A1F; }
-  .menu-divider { height: 1px; background: #D9CDBA; margin: 6px 0; }
-  .mobile-menu-links details { border-bottom: 1px solid #D9CDBA; }
-  .mobile-menu-links details summary { padding: 10px 20px; color: #5C3D20; font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-  .mobile-menu-links details summary::-webkit-details-marker { display: none; }
-  .mobile-menu-links details summary::after { content: '+'; font-size: 1.1rem; color: #C96A1F; }
-  .mobile-menu-links details[open] summary::after { content: '−'; }
-  .mobile-menu-links details[open] summary { background: #E6DDD0; color: #C96A1F; }
-  .details-content { background: #EDE6D8; padding: 10px 16px 14px; display: flex; flex-wrap: wrap; gap: 6px; }
-  .details-content a { padding: 5px 10px; font-size: .78rem; background: rgba(255,255,255,.6); border: 1px solid #D9CDBA; border-radius: 50px; text-decoration: none; color: #5C3D20; }
-  .details-content a:hover { background: #C96A1F; color: #fff; border-color: #C96A1F; }
-  .details-content.full-col { flex-direction: column; gap: 0; padding: 0; }
-  .details-content.full-col a { background: none; border: none; border-radius: 0; padding: 9px 20px; border-bottom: 1px solid rgba(0,0,0,.05); font-size: .87rem; }
-  /* Popup */
-  #sitePopup { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(120px); z-index: 9999; width: min(360px, calc(100vw - 32px)); background: linear-gradient(135deg,#6E1515 0%,#C96A1F 100%); border-radius: 18px; padding: 20px 22px 18px; box-shadow: 0 12px 40px rgba(0,0,0,.35); opacity: 0; transition: transform .4s cubic-bezier(.34,1.56,.64,1), opacity .4s; pointer-events: none; }
-  #sitePopup.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
-  #sitePopup .popup-close { position: absolute; top: 10px; right: 12px; background: rgba(255,255,255,.2); border: none; color: #fff; font-size: 16px; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-  #sitePopup .popup-badge { font-size: .62rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 6px; }
-  #sitePopup .popup-title { font-size: 1.05rem; font-weight: 900; color: #fff; line-height: 1.3; margin-bottom: 4px; }
-  #sitePopup .popup-sub { font-size: .8rem; color: rgba(255,255,255,.8); margin-bottom: 14px; }
-  #sitePopup .popup-btn { display: inline-block; background: #fff; color: #6E1515; font-weight: 900; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 10px 22px; border-radius: 30px; transition: transform .2s; }
-  #sitePopup .popup-btn:hover { transform: translateY(-1px); }
-  #sitePopup .popup-timer { position: absolute; bottom: 0; left: 0; height: 3px; background: rgba(255,255,255,.45); border-radius: 0 0 18px 18px; animation: popupTimer 5s linear forwards; }
-  @keyframes popupTimer { from { width: 100%; } to { width: 0%; } }
-  /* Mobile CTA card word-break fix */
-  .cta-btn { word-break: break-word; white-space: normal; }
-  @media (max-width: 480px) { .cta-btn { font-size: .8rem; padding: 12px 18px; } .cta-banner { padding: 28px 18px; } }
-</style>
-<style id="header-collision-fix">
-  /* Centered brand layout: hide pill on mobile, BHAJAN subtitle on small screens */
-  @media (max-width: 640px) { .hub-nav-pill { display: none; } .hub-logo-text em { display: none; } }
-  @media (max-width: 320px) { .hub-logo-text { display: none; } }
-</style>
-<style id="phase1-content-styles">
-  /* ── Phase-1 Mantra Card ── */
-  .p1-mantra-card, .p1-bhajan-card, .p1-faq-card {
-    background:#fff; border:1px solid var(--border);
-    border-radius:var(--radius);
-    box-shadow:0 4px 20px rgba(0,0,0,.03);
-    animation:fadeUp .4s ease both; overflow:hidden;
-  }
-  .p1-card-hdr {
-    display:flex; align-items:center; gap:12px;
-    padding:15px 22px; border-bottom:1px solid var(--surface);
-    background:rgba(0,0,0,.012);
-  }
-  .p1-card-ico {
-    width:34px; height:34px; border-radius:8px;
-    background:linear-gradient(135deg,#C96A1F,#6E1515);
-    display:flex; align-items:center; justify-content:center;
-    font-size:14px; color:#fff; flex-shrink:0;
-  }
-  .p1-card-ttl { font-size:1rem; font-weight:900; color:var(--text); }
-  .p1-card-body { padding:20px 22px; }
-
-  /* ── Mantra Display ── */
-  .p1-deva {
-    font-family:var(--font-hindi); font-size:1.2rem;
-    line-height:2; color:var(--text);
-    padding:16px; background:#FBF7F0; border-radius:10px;
-    border-left:3px solid var(--saffron); margin-bottom:12px;
-  }
-  .p1-roman {
-    font-size:.84rem; color:var(--text-sec);
-    font-style:italic; line-height:1.75; margin-bottom:10px;
-  }
-  .p1-meaning {
-    font-size:.84rem; color:var(--text-muted); line-height:1.75;
-    padding:10px 14px; background:var(--surface);
-    border-radius:8px; margin-bottom:12px;
-  }
-  .p1-chant {
-    font-size:.81rem; color:var(--text-sec); line-height:1.65;
-    padding:10px 14px; border:1px dashed var(--border); border-radius:8px;
-  }
-
-  /* ── Bhajan Card ── */
-  .p1-bhajan-prev {
-    font-family:var(--font-hindi); font-size:1.05rem;
-    line-height:2.1; color:var(--text);
-    padding:14px 16px; background:#FBF7F0;
-    border-radius:10px; margin-bottom:14px;
-  }
-  .p1-bhajan-btn {
-    display:inline-flex; align-items:center; gap:8px;
-    background:linear-gradient(135deg,#C96A1F,#6E1515); color:#fff;
-    text-decoration:none; padding:11px 22px; border-radius:30px;
-    font-size:.82rem; font-weight:900; letter-spacing:.06em;
-    transition:transform .2s;
-  }
-  .p1-bhajan-btn:hover { transform:translateY(-1px); }
-
-  /* ── Article CTA ── */
-  .p1-article-cta {
-    display:flex; align-items:center; justify-content:space-between;
-    padding:16px 22px; background:var(--surface);
-    border-radius:var(--radius); text-decoration:none;
-    border:1px solid var(--border);
-    transition:background .2s; flex-wrap:wrap; gap:10px;
-  }
-  .p1-article-cta:hover { background:var(--surface2); }
-  .p1-article-lbl {
-    font-size:.66rem; font-weight:900; letter-spacing:.15em;
-    text-transform:uppercase; color:var(--saffron); margin-bottom:3px;
-  }
-  .p1-article-ttl { font-size:.9rem; font-weight:700; color:var(--text); }
-  .p1-article-arrow { font-size:1.2rem; color:var(--saffron); flex-shrink:0; }
-
-  /* ── Kundali CTA ── */
-  .p1-kundali-cta {
-    display:flex; align-items:center; justify-content:space-between;
-    padding:20px 24px;
-    background:linear-gradient(135deg,#6E1515 0%,#C96A1F 100%);
-    border-radius:var(--radius); text-decoration:none;
-    gap:12px; flex-wrap:wrap;
-    box-shadow:0 6px 24px rgba(110,21,21,.22);
-  }
-  .p1-kundali-txt { color:#fff; font-size:.9rem; font-weight:700; }
-  .p1-kundali-txt em {
-    display:block; font-style:normal;
-    font-size:.72rem; font-weight:400; color:rgba(255,255,255,.7);
-    margin-top:2px;
-  }
-  .p1-kundali-btn {
-    background:#fff; color:#6E1515; font-size:.76rem;
-    font-weight:900; padding:10px 20px; border-radius:20px;
-    text-decoration:none; white-space:nowrap; flex-shrink:0;
-    letter-spacing:.04em;
-  }
-
-  /* ── FAQ ── */
-  .p1-faq-item {
-    border-bottom:1px solid var(--surface);
-    padding:14px 0;
-  }
-  .p1-faq-item:last-child { border-bottom:none; padding-bottom:0; }
-  .p1-faq-q {
-    font-size:.88rem; font-weight:700; color:var(--text);
-    margin-bottom:7px; display:flex;
-    justify-content:space-between; align-items:flex-start; gap:8px;
-  }
-  .p1-faq-q::after { content:'+'; color:var(--saffron); font-size:1.1rem; flex-shrink:0; }
-  .p1-faq-a { font-size:.83rem; color:var(--text-sec); line-height:1.75; }
-
-  @media (max-width:480px) {
-    .p1-card-body { padding:16px; }
-    .p1-card-hdr { padding:13px 16px; }
-    .p1-kundali-cta { padding:16px; }
-    .p1-deva { font-size:1.05rem; padding:12px; }
-  }
-</style>
-  <link rel="manifest" href="/manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(reg => {
-          console.log('[SW] Registered: ', reg.scope);
-        }).catch(err => {
-          console.log('[SW] Registration failed: ', err);
-        });
-      });
-    }
-  </script>
 </head>
 <body>
-<header class="main-header" id="siteHeader">
-<div class="hub-header-inner">
-<div class="hub-header-left"><button aria-label="Open Menu" class="hamburger-btn" onclick="toggleMobileMenu()">
-<svg fill="none" height="20" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="20"><path d="M3 12h18M3 6h18M3 18h18"></path></svg>
-</button></div><div class="hub-header-center"><a class="hub-logo-link" href="https://bhajan.ournakshatra.com/">
-<span class="hub-logo-om">ॐ</span>
-<span class="hub-logo-text">NAKSHATRA<em>BHAJAN</em></span>
-</a></div>
-<div class="hub-header-right">
-<a class="hub-nav-pill" href="https://ournakshatra.com/" rel="noopener" target="_blank">ournakshatra.com ↗</a>
-<button aria-label="Saved" class="hub-fav-btn" id="headerFavBtn" onclick="window.location.href='https://bhajan.ournakshatra.com/favorites.html'" title="Saved">❤️</button>
-</div>
-</div>
+
+<header>
+  <a href="https://bhajan.ournakshatra.com" class="logo">NAKSHATRA <em>✦</em> BHAJAN</a>
+  <nav><a href="https://ournakshatra.com/yogas" target="_blank">View Yogas</a></nav>
 </header>
-<div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
-<div class="mobile-menu-drawer" id="mobileMenu">
-<div class="mobile-menu-header">
-<div style="display:flex;align-items:center;gap:8px;">
-<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#C96A1F,#6E1515);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;">ॐ</div>
-<span style="font-size:12px;font-weight:900;color:#6E1515;letter-spacing:.06em;">NAKSHATRA BHAJAN</span>
-</div>
-<button class="close-menu-btn" onclick="toggleMobileMenu()">✕</button>
-</div>
-<div class="mobile-menu-links">
-<a href="https://bhajan.ournakshatra.com/">🏠 Bhajan Home</a>
-<a href="https://bhajan.ournakshatra.com/bhajans.html">🪔 Bhajans</a>
-<a href="https://bhajan.ournakshatra.com/bhagavad-gita.html">📖 Bhagavad Gita</a>
-<div class="menu-divider"></div>
-<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🌐 MAIN WEBSITE</div>
-<a href="https://ournakshatra.com/" style="color:#6E1515;font-weight:bold;">🏠 ournakshatra.com</a>
-<a href="https://ournakshatra.com/janam_landing.html">✨ Free Kundli</a>
-<a href="https://ournakshatra.com/match_landing.html">💞 Match Making</a>
-<div class="menu-divider"></div>
-<div style="padding:6px 20px 3px;font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#C96A1F;">🔭 JYOTISH LIBRARY</div>
-<details><summary>🪐 Navagraha</summary><div class="details-content"><a href="/planet/surya/">Surya</a><a href="/planet/chandra/">Chandra</a><a href="/planet/mangal/">Mangal</a><a href="/planet/budha/">Budha</a><a href="/planet/guru/">Guru</a><a href="/planet/shukra/">Shukra</a><a href="/planet/shani/">Shani</a><a href="/planet/rahu/">Rahu</a><a href="/planet/ketu/">Ketu</a></div></details>
-<details><summary>⭐ 27 Nakshatras</summary><div class="details-content"><a href="/nakshatra/ashwini/">Ashwini</a><a href="/nakshatra/bharani/">Bharani</a><a href="/nakshatra/krittika/">Krittika</a><a href="/nakshatra/rohini/">Rohini</a><a href="/nakshatra/mrigashira/">Mrigashira</a><a href="/nakshatra/ardra/">Ardra</a><a href="/nakshatra/punarvasu/">Punarvasu</a><a href="/nakshatra/pushya/">Pushya</a><a href="/nakshatra/ashlesha/">Ashlesha</a><a href="/nakshatra/magha/">Magha</a><a href="/nakshatra/purva-phalguni/">P.Phalguni</a><a href="/nakshatra/uttara-phalguni/">U.Phalguni</a><a href="/nakshatra/hasta/">Hasta</a><a href="/nakshatra/chitra/">Chitra</a><a href="/nakshatra/swati/">Swati</a><a href="/nakshatra/vishakha/">Vishakha</a><a href="/nakshatra/anuradha/">Anuradha</a><a href="/nakshatra/jyeshtha/">Jyeshtha</a><a href="/nakshatra/mula/">Mula</a><a href="/nakshatra/purva-ashadha/">P.Ashadha</a><a href="/nakshatra/uttara-ashadha/">U.Ashadha</a><a href="/nakshatra/shravana/">Shravana</a><a href="/nakshatra/dhanishtha/">Dhanishtha</a><a href="/nakshatra/shatabhisha/">Shatabhisha</a><a href="/nakshatra/purva-bhadrapada/">P.Bhadrapada</a><a href="/nakshatra/uttara-bhadrapada/">U.Bhadrapada</a><a href="/nakshatra/revati/">Revati</a></div></details>
-<details><summary>♈ 12 Rashis</summary><div class="details-content"><a href="/rashi/mesh/">Mesh</a><a href="/rashi/vrishabha/">Vrishabha</a><a href="/rashi/mithuna/">Mithuna</a><a href="/rashi/karka/">Karka</a><a href="/rashi/simha/">Simha</a><a href="/rashi/kanya/">Kanya</a><a href="/rashi/tula/">Tula</a><a href="/rashi/vrischika/">Vrischika</a><a href="/rashi/dhanu/">Dhanu</a><a href="/rashi/makara/">Makara</a><a href="/rashi/kumbha/">Kumbha</a><a href="/rashi/meena/">Meena</a></div></details>
-<details><summary>🛡️ Yogas &amp; Doshas</summary><div class="details-content full-col"><a href="/remedy/">✨ View All</a><a href="/remedy/mangal-dosha/">Mangal Dosha</a><a href="/remedy/kaal-sarp-dosha/">Kaal Sarp</a><a href="/remedy/sade-sati/">Sade Sati</a><a href="/remedy/hamsa-yoga/">Hamsa Yoga</a><a href="/remedy/dhana-yoga/">Dhana Yoga</a></div></details>
-<details><summary>🌙 Tithi &amp; Muhurat</summary><div class="details-content full-col"><a href="/tithi/ekadashi/">Ekadashi</a><a href="/tithi/purnima/">Purnima</a><a href="/muhurat/vivah/">Vivah Muhurat</a><a href="/muhurat/griha-pravesh/">Griha Pravesh</a></div></details>
-<div class="menu-divider"></div>
-<a href="/about.html">ℹ️ About</a>
-<a href="/contact.html">📞 Contact</a>
-</div>
-</div>
 
 <div class="hero">
-<div class="hero-tag">⚠ Dosha Remedy Guide</div>
-<div class="hero-hindi">गुरु चांडाल दोष</div>
-<div class="hero-name">Guru Chandal Dosha</div>
-<div class="hero-deity">🌸 Presiding Deity: <strong>Lord Vishnu</strong></div>
+  <div class="hero-tag">⚠ Dosha Remedy Guide</div>
+  <div class="hero-hindi">गुरु चांडाल दोष</div>
+  <div class="hero-name">Guru Chandal Dosha</div>
+  <div class="hero-deity">🌸 Presiding Deity: <strong>Lord Vishnu</strong></div>
 </div>
+
 <main class="content-wrapper">
-<!-- Explanation -->
-<div class="card" style="animation-delay:.05s">
-<div class="card-header">
-<div class="card-icon">📖</div>
-<div class="card-title">What is Guru Chandal Dosha?</div>
-</div>
-<div class="card-body">
-<p class="explanation-text">Guru Chandal Dosha forms when Jupiter is conjunct or aspected by Rahu. It corrupts one's wisdom, ethics, and can lead a person toward false teachers or immoral paths.</p>
-</div>
-</div>
-<!-- Primary Mantra -->
-<!-- Remedial Steps / Guidance -->
-<!-- Phase1: Primary Mantra -->
-<div class="p1-mantra-card" style="animation-delay:.10s">
-<div class="p1-card-hdr">
-<div class="p1-card-ico">ॐ</div>
-<div class="p1-card-ttl">Primary Mantra — Guru Vandana</div>
-</div>
-<div class="p1-card-body">
-<div class="p1-deva">देवानां च ऋषीणां च गुरुं काञ्चनसन्निभम्।<br/>बुद्धिभूतं त्रिलोकेशं तं नमामि बृहस्पतिम्।।</div>
-<div class="p1-roman">Devanam cha rishinam cha gurum kanchana sannibham,<br/>Buddhimantam trilokesham tam namami Brihaspatim.</div>
-<div class="p1-meaning">I bow to Brihaspati (Jupiter), golden in radiance, the teacher of gods and sages, the intelligent lord of the three worlds.</div>
-<div class="p1-chant">🕐 <strong>How to chant:</strong> Recite 108 times on Thursdays. Offer yellow flowers and turmeric. Seeking knowledge, teaching others, and acts of dharmic generosity are traditional Jupiter remedies.</div>
-</div>
-</div>
-<!-- Phase1: Recommended Bhajan -->
-<div class="p1-bhajan-card" style="animation-delay:.15s">
-<div class="p1-card-hdr">
-<div class="p1-card-ico">♪</div>
-<div class="p1-card-ttl">Recommended Bhajan — Om Jai Jagdish Hare</div>
-</div>
-<div class="p1-card-body">
-<div class="p1-bhajan-prev">ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।<br/>भक्त जनों के संकट, क्षण में दूर करे।।</div>
-<a class="p1-bhajan-btn" href="/bhajan/om-jai-jagdish-hare/">Read Full Om Jai Jagdish Hare →</a>
-</div>
-</div><div class="card" style="animation-delay:.15s">
-<div class="card-header">
-<div class="card-icon">🪴</div>
-<div class="card-title">Step-by-Step Remedial Actions</div>
-</div>
-<div class="card-body">
-<div class="step">
-<div class="step-num" style="background:#A8832A;color:#fff;">1</div>
-<div class="step-text">Chant Vishnu Sahasranama every Thursday</div>
-</div>
-<div class="step">
-<div class="step-num" style="background:#A8832A;color:#fff;">2</div>
-<div class="step-text">Donate yellow items like turmeric and yellow cloth</div>
-</div>
-<div class="step">
-<div class="step-num" style="background:#A8832A;color:#fff;">3</div>
-<div class="step-text">Wear a yellow sapphire (Pukhraj) after consulting an astrologer</div>
-</div>
-<div class="step">
-<div class="step-num" style="background:#A8832A;color:#fff;">4</div>
-<div class="step-text">Fast on Thursdays and offer prayers to Lord Vishnu</div>
-</div>
-</div>
-</div>
-<!-- Severity Warning -->
-<div class="warning-box" style="animation-delay:.20s">
-<div class="warning-header">
-<div class="warning-badge">⚠ Severity Notice</div>
-<div class="severity-level" style="color:#DC2626; border-color:#DC2626; background:rgba(220,38,38,0.1);">Severity: Moderate to High</div>
-</div>
-<div class="warning-title">Important Guidance for Guru Chandal Dosha</div>
-<p class="warning-text">This dosha represents an area of karmic challenge. However, sincere spiritual practice, awareness, and remedial actions can significantly mitigate its negative effects.</p>
-</div>
-<!-- Phase1: Article CTA -->
-<a class="p1-article-cta" href="https://ournakshatra.com/articles/what-is-gajakesari-yoga" rel="noopener" style="animation-delay:.28s" target="_blank">
-<div>
-<div class="p1-article-lbl">Read: In-Depth Article on ournakshatra.com</div>
-<div class="p1-article-ttl">What is Guru Chandal Yoga?</div>
-</div>
-<div class="p1-article-arrow">→</div>
-</a>
-<!-- Phase1: Kundali CTA (replaces original cta-banner) -->
-<a class="p1-kundali-cta" href="https://ournakshatra.com/janam-kundali" rel="noopener" style="animation-delay:.32s" target="_blank">
-<div class="p1-kundali-txt">
-      Check Jupiter-Rahu conjunction in your chart
-      <em>Free birth chart analysis — ournakshatra.com</em>
-</div>
-<span class="p1-kundali-btn">Open Free Kundali →</span>
-</a>
-<!-- Phase1: FAQ -->
-<div class="p1-faq-card" style="animation-delay:.36s">
-<div class="p1-card-hdr">
-<div class="p1-card-ico">?</div>
-<div class="p1-card-ttl">Frequently Asked Questions</div>
-</div>
-<div class="p1-card-body">
-<div class="p1-faq-item">
-<div class="p1-faq-q">What is Guru Chandal Yoga?</div>
-<div class="p1-faq-a">Guru Chandal Yoga tends to form when Jupiter and Rahu are conjunct in the same house. It may create tension between Jupiter's dharmic wisdom and Rahu's unconventional, boundary-pushing energy.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">Is Guru Chandal Yoga always negative?</div>
-<div class="p1-faq-a">No. Many original thinkers, reformers, and spiritual teachers have this combination. The outcome often depends on the sign, house, and overall chart strength.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">What are the typical effects?</div>
-<div class="p1-faq-a">Effects may include unconventional beliefs, spiritual seeking outside mainstream traditions, or periods of confusion followed by clarity. Jupiter's dignity in the chart modifies this significantly.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">Which deity to worship?</div>
-<div class="p1-faq-a">Lord Vishnu and Brihaspati (Jupiter) are the primary deities. Thursday observance with yellow flowers and charitable giving is traditionally recommended.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">Can Guru Chandal Yoga be beneficial?</div>
-<div class="p1-faq-a">Often yes — particularly for individuals in research, philosophy, innovation, or spiritual guidance. Rahu amplifies Jupiter's expansive quality in unconventional ways.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">What is the role of Rahu in this yoga?</div>
-<div class="p1-faq-a">Rahu tends to amplify and distort the planet it conjoins. With Jupiter, this may create an intense hunger for knowledge, sometimes leading to unconventional spiritual paths.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">Does the sign matter?</div>
-<div class="p1-faq-a">Significantly. Jupiter is strong in Cancer and Sagittarius; Rahu tends to behave differently in each sign. A chart-specific reading is recommended for accurate interpretation.</div>
-</div>
-<div class="p1-faq-item">
-<div class="p1-faq-q">What practical steps help balance this combination?</div>
-<div class="p1-faq-a">Consistent study of classical wisdom, service to teachers or educational causes, and Thursday fasting tend to be recommended. Avoiding shortcuts in ethical matters is also traditionally advised.</div>
-</div>
-</div>
-</div>
-<!-- CTA Banner -->
+
+  <!-- Explanation -->
+  <div class="card" style="animation-delay:.05s">
+    <div class="card-header">
+      <div class="card-icon">📖</div>
+      <div class="card-title">What is Guru Chandal Dosha?</div>
+    </div>
+    <div class="card-body">
+      <p class="explanation-text" style="margin-bottom: 18px;">Guru Chandal Dosha forms when Jupiter is conjunct or aspected by Rahu. It corrupts one's wisdom, ethics, and can lead a person toward false teachers or immoral paths.</p>
+      <p class="explanation-text">Jupiter (Guru) represents divine wisdom, morality, wealth, and higher learning. Rahu represents obsession, illusion, rule-breaking, and materialism. When these two collide, Rahu's smoke clouds Jupiter's pure light. The individual might possess immense intelligence but may use it for manipulative or purely materialistic ends. They might struggle to respect traditional teachers or authority figures, or ironically, might fall prey to fraudulent gurus. The core lesson of this dosha is the purification of the intellect. Healing involves anchoring oneself to timeless, incorruptible wisdom and avoiding ethical shortcuts. Devotion to Lord Vishnu, the preserver of cosmic order (Dharma), helps clear the illusions cast by Rahu.</p>
+    </div>
+  </div>
+
+  <!-- Primary Mantra -->
+  <div class="card" style="animation-delay:.10s">
+    <div class="card-header">
+      <div class="card-icon">🎵</div>
+      <div class="card-title">Primary Mantra / Bhajan for Remedy</div>
+    </div>
+    <div class="card-body">
+      <div class="mantra-box">
+        <div class="mantra-icon">🌸</div>
+        <div>
+          <div class="mantra-label">Recommended Daily Practice</div>
+          <div class="mantra-name">Vishnu Sahasranama</div>
+          <div class="mantra-sub">Dedicated to Lord Vishnu · Recite with sincere devotion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remedial Steps -->
+  <div class="card" style="animation-delay:.15s">
+    <div class="card-header">
+      <div class="card-icon">🪴</div>
+      <div class="card-title">Step-by-Step Remedial Actions</div>
+    </div>
+    <div class="card-body">
+      
+        <div class="step">
+          <div class="step-num" style="background:#A8832A;color:#fff;">1</div>
+          <div class="step-text">Chant Vishnu Sahasranama every Thursday</div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#A8832A;color:#fff;">2</div>
+          <div class="step-text">Donate yellow items like turmeric and yellow cloth</div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#A8832A;color:#fff;">3</div>
+          <div class="step-text">Wear a yellow sapphire (Pukhraj) after consulting an astrologer</div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#A8832A;color:#fff;">4</div>
+          <div class="step-text">Fast on Thursdays and offer prayers to Lord Vishnu</div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#A8832A;color:#fff;">5</div>
+          <div class="step-text">Respect teachers, elders, and strictly avoid unethical shortcuts</div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Severity Warning -->
+  <div class="warning-box" style="animation-delay:.20s">
+    <div class="warning-header">
+      <div class="warning-badge">⚠ Severity Notice</div>
+      <div class="severity-level">Severity: Moderate</div>
+    </div>
+    <div class="warning-title">Important Guidance for Guru Chandal Dosha</div>
+    <p class="warning-text">Guru Chandal Dosha's severity depends heavily on Jupiter's overall strength in the chart. If Jupiter is exalted or in its own sign, the Rahu influence is weaker. A learned Jyotishi should assess the full chart before concluding its strength.</p>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner" style="animation-delay:.25s">
+    <div class="cta-eyebrow">✦ Know Your Chart ✦</div>
+    <div class="cta-headline">
+      <em>Check your Jupiter placement and active Yogas</em>
+    </div>
+    <a class="cta-btn" href="https://ournakshatra.com/yogas" target="_blank" rel="noopener">
+      Check at ournakshatra.com →
+    </a>
+    <div class="cta-sub">
+      Also explore all planetary Yogas at <a href="https://ournakshatra.com/yogas" target="_blank">ournakshatra.com/yogas</a>
+    </div>
+  </div>
+
 </main>
+
 <footer>
-<p>© 2026 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Astrological Remedies &amp; Bhakti for Every Soul</p>
+  <p>© 2024 <a href="https://bhajan.ournakshatra.com">bhajan.ournakshatra.com</a> — Dosha Remedies &amp; Bhakti for Every Soul</p>
 </footer>
-<!-- Promotional Popup -->
-<div aria-label="Visit ournakshatra.com" id="sitePopup" role="dialog">
-<button aria-label="Close" class="popup-close" onclick="closePopup()">✕</button>
-<div class="popup-badge">✦ Free Remedy Check ✦</div>
-<div class="popup-title">Check Which Doshas &amp; Yogas Exist in Your Chart</div>
-<div class="popup-sub">Free birth chart — instantly shows your Doshas, Yogas &amp; planetary strength</div>
-<a class="popup-btn" href="https://ournakshatra.com/janam_landing.html" onclick="closePopup()" rel="noopener" target="_blank">Calculate Free →</a>
-<div class="popup-timer" id="popupTimer"></div>
-</div>
-<script>
-function toggleMobileMenu(){
-  var m=document.getElementById('mobileMenu'), o=document.getElementById('mobileMenuOverlay');
-  if(!m||!o)return;
-  var open=m.classList.toggle('active');
-  o.classList.toggle('active',open);
-  document.body.style.overflow=open?'hidden':'';
-}
-function handleMainHeaderBack(){
-  window.history.length>1?window.history.back():window.location.href='https://bhajan.ournakshatra.com';
-}
-document.addEventListener('DOMContentLoaded',function(){
-  var isDark=localStorage.getItem('sgs_dark')==='true';
-  if(isDark)document.body.classList.add('dark-mode');
-});
-</script>
-<script id="popup-script">
-(function(){
-  var t1 = setTimeout(function(){
-    var p = document.getElementById('sitePopup');
-    if(p){ p.classList.add('show'); }
-    setTimeout(function(){ closePopup(); }, 5000);
-  }, 3000);
-})();
-window.closePopup = function(){
-  var p = document.getElementById('sitePopup');
-  if(p){
-    p.style.opacity = '0';
-    p.style.transform = 'translateX(-50%) translateY(120px)';
-    setTimeout(function(){ p.style.display='none'; }, 400);
-  }
-};
-</script>
+
 </body>
 </html>
